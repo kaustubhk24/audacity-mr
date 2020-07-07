@@ -236,42 +236,62 @@
 <h3><span class="mw-headline" id="Remove_vocals">Remove vocals</span></h3>
 <ul><li> <b><a href="invert.html" title="Invert">Invert</a>:</b> This effect flips the audio samples upside-down.  This normally does not affect the sound of the audio at all.  It is occasionally useful for vocal removal.</li>
 <li> <b><a href="vocal_reduction_and_isolation.html" title="Vocal Reduction and Isolation">Vocal Reduction and Isolation</a>:</b>  Attempts to remove or isolate center-panned audio from a stereo track.  Most  "Remove" options in this effect preserve the stereo image. </li>
-<li> <b><a href="vocal_remover.html" title="Vocal Remover">Vocal Remover</a>:</b> (Legacy effect) Attempts to remove center-panned vocals from a stereo track. The output from this effect will always be mono. Help text is available from within the dialog.</li></ul>
-<h3><span class="mw-headline" id="Manipulate_Audio">Manipulate Audio</span></h3>
-<ul><li><b><a href="repeat.html" title="Repeat">Repeat</a>:</b> Repeats the selection the specified number of times.</li>
-<li><b><a href="reverse.html" title="Reverse">Reverse</a>:</b> Reverses the selected audio; after the effect the end of the audio will be heard first and the beginning last.</li></ul>
-<h3><span class="mw-headline" id="Invoke_Nyquist">Invoke Nyquist</span></h3>
-<ul><li><b><a href="nyquist_prompt.html" title="Nyquist Prompt">Nyquist Prompt</a>:</b> Brings up a dialog where you can enter Nyquist commands. Nyquist is a programming language for generating, processing and analyzing audio. For more information see <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist_Plugins_Reference">Nyquist Plug-ins Reference</a>.</li></ul>
+<li> <b><a href="vocal_remover.html" title="Vocal Remover">गायन 
+कढनारे</a>:</b> (लीगेसी इफेक्ट) स्टिरिओ ध्वनी वरून केंद्र-पॅन केलेला व्होकल्स काढण्याचा प्रयत्न. या परिणामाचे आउटपुट नेहमी मोनो असेल. संवाद मधून मदत मजकूर उपलब्ध आहे.</li></ul>
+<h3><span class="mw-headline" id="Manipulate_Audio">ध्वनी हाताळणे</span></h3>
+<ul><li><b><a href="repeat.html" title="Repeat">Repeat</a>:</b> 
+निवडीची निर्दिष्ट केलेल्या वेळाची पुनरावृत्ती करते.</li>
+<li><b><a href="reverse.html" title="Reverse">
+उलट</a>:</b> निवडलेला ध्वनीओ उलट करतो; प्रभावानंतर ध्वनीचा शेवट प्रथम ऐकला जाईल आणि शेवट शेवटपर्यंत.</li></ul>
+<h3><span class="mw-headline" id="Invoke_Nyquist">
+Nyquist प्रारंभ करा</span></h3>
+<ul><li><b><a href="nyquist_prompt.html" title="Nyquist Prompt">Nyquist Prompt</a>:</b> आपण Nyquist आदेश प्रविष्ट करू शकता जेथे संवाद आणते. ध्वनी निर्मिती, प्रक्रिया आणि विश्लेषणासाठी Nyquist एक प्रोग्रामिंग भाषा आहे. अधिक माहितीसाठी पहा<a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist_Plugins_Reference">
+Nyquist प्लग-इन संदर्भ</a>.</li></ul>
 <p><br />
 </p>
 <div id="generators"></div>
-<h2><span class="mw-headline" id="Generators_by_Function">Generators by Function</span></h2>
-<p>See the <a href="generate_menu.html" title="Generate Menu">Generate Menu</a> for further details.
+<h2><span class="mw-headline" id="Generators_by_Function">
+कार्य करून उत्पन्न</span></h2>
+<p>अधिक माहितीसाठी <a href="generate_menu.html" title="Generate Menu">यादी उत्पन्न </a>
+ पहा.
 </p>
-<h3><span class="mw-headline" id="Generate_Tones">Generate Tones</span></h3>
-<ul><li> <b><a href="generate_menu.html#chirp" title="Generate Menu">Chirp</a>:</b> Generates four different types of tone waveform like the <a href="#tone">Tone Generator</a>, but additionally allows setting of the starting and ending amplitude and frequency.</li>
+<h3><span class="mw-headline" id="Generate_Tones">स्वर उत्पन्न</span></h3>
+<ul><li> <b><a href="generate_menu.html#chirp" title="Generate Menu">Chirp</a>:</b> सारखे चार भिन्न प्रकारचे टोन तरंग व्युत्पन्न करते<a href="#tone">स्वर उत्पन्न</a>, परंतु याव्यतिरिक्त प्रारंभ आणि शेवट मोठेपणा आणि वारंवारता करण्यास अनुमती देते.</li>
 <li> <b><a href="generate_menu.html#dtmf" title="Generate Menu">DTMF Tones</a>:</b> Generates dual-tone multi-frequency (DTMF) tones like those produced by the keypad on telephones.</li>
-<li> <b><a href="generate_menu.html#tone" title="Generate Menu">Tone</a>:</b> Generates one of four different tone waveforms: <i>Sine</i>, <i>Square</i>, <i>Sawtooth</i> or <i>Square (no alias)</i>, and a frequency between 1 Hz and <i>half the current project rate</i>.</li></ul>
-<h3><span class="mw-headline" id="Generate_Silence_or_Noise">Generate Silence or Noise</span></h3>
-<ul><li> <b><a href="generate_menu.html#noise" title="Generate Menu">Noise</a>:</b> Generates 'white', 'pink' or 'brown' noise.</li>
-<li> <b><a href="generate_menu.html#silence" title="Generate Menu">Silence</a>:</b> Creates audio of zero amplitude, the only configurable setting being duration.</li></ul>
-<h3><span class="mw-headline" id="Generate_Instruments_or_Metronome">Generate Instruments or Metronome</span></h3>
-<ul><li> <b><a href="rhythm_track.html" title="Rhythm Track">Rhythm Track</a>:</b> Generates a track with regularly spaced sounds at a specified tempo and number of beats per measure (bar).</li>
-<li> <b><a href="pluck.html" title="Pluck">Pluck</a>:</b> A synthesized pluck tone with abrupt or gradual fade-out, and selectable pitch corresponding to a <i><b><a href="glossary.html#midi" title="Glossary">MIDI</a></b></i> note.</li>
-<li> <b><a href="risset_drum.html" title="Risset Drum">Risset Drum</a>:</b> Produces a realistic drum sound.</li></ul>
-<h3><span class="mw-headline" id="Generate_from_Imported_Data">Generate from Imported Data</span></h3>
-<ul><li> <b><a href="sample_data_import.html" title="Sample Data Import">Sample Data Import</a></b>: Create audio from imported numeric data.</li></ul>
+<li> <b><a href="generate_menu.html#tone" title="Generate Menu">Tone</a>:</b> चार वेगवेगळ्या टोन वेव्हफॉर्मपैकी एक व्युत्पन्न करते: <i>Sine</i>, <i>चौरस</i>, <i>सावटूथ</i> or <i>
+चौरस (उपनाव नाही)</i>,
+आणि 1 हर्ट्ज आणि दरम्यानची वारंवारता<i>सध्याचा प्रकल्प दर निम्मा</i>.</li></ul>
+<h3><span class="mw-headline" id="Generate_Silence_or_Noise">
+शांतता किंवा गोंगाट व्युत्पन्न करा</span></h3>
+<ul><li> <b><a href="generate_menu.html#noise" title="Generate Menu">आवाज</a>:</b> 
+'पांढरा', 'गुलाबी' किंवा 'तपकिरी' आवाज व्युत्पन्न करते.</li>
+<li> <b><a href="generate_menu.html#silence" title="Generate Menu">शांतता</a>:</b> शून्य मोठेपणाचा गीत तयार करते, केवळ संयोजी कोंदण कालावधी.</li></ul>
+<h3><span class="mw-headline" id="Generate_Instruments_or_Metronome">
+उपकरणे किंवा मेट्रोनोम व्युत्पन्न करा</span></h3>
+<ul><li> <b><a href="rhythm_track.html" title="Rhythm Track">ताल </a>:</b> निर्दिष्ट टेम्पोवर नियमितपणे अंतर असलेल्या ध्वनीसह एक गाणे आणि प्रति मासिक बीट्सची संख्या (बार) व्युत्पन्न करते.</li>
+<li> <b><a href="pluck.html" title="Pluck">खुडणे</a>:</b> अचानक किंवा क्रमिक अस्पष्टसह संश्लेषित प्लक टोन आणि आणि त्यास अनुरूप निवडण्यायोग्य ध्वनीची उच्चनीचता <i><b><a href="glossary.html#midi" title="Glossary">MIDI</a></b></i> खूण.</li>
+<li> <b><a href="risset_drum.html" title="Risset Drum">
+रिससेट ड्रम</a>:</b> 
+एक वास्तववादी ड्रम आवाज तयार करते.</li></ul>
+<h3><span class="mw-headline" id="Generate_from_Imported_Data">आयातित डेटा वरून व्युत्पन्न करा
+</span></h3>
+<ul><li> <b><a href="sample_data_import.html" title="Sample Data Import">Sample Data Import</a></b>: आयात केलेल्या संख्यात्मक माहितीमधून गीत तयार करा</li></ul>
 <div id="analyzers"></div>
-<h2><span class="mw-headline" id="Analyzers_by_Function">Analyzers by Function</span></h2>
-<p>See the <a href="analyze_menu.html" title="Analyze Menu">Analyze Menu</a> for further details.
+<h2><span class="mw-headline" id="Analyzers_by_Function">कार्यानुसार विश्लेषक</span></h2>
+<p>पहा <a href="analyze_menu.html" title="Analyze Menu">पर्याय विश्लेषण करा</a> अधिक माहितीसाठी.
 </p>
-<h3><span class="mw-headline" id="Analyze_Amplitude_or_Other_Audio_Properties">Analyze Amplitude or Other Audio Properties</span></h3>
-<ul><li><b><a href="contrast.html" title="Contrast">Contrast</a>:</b> Analyzes a single mono or stereo speech track to determine the average <i><b><a href="glossary.html#rms" title="Glossary">RMS</a></b></i> <i>difference in volume</i> (contrast) between foreground speech and background music, audience noise or similar. The purpose is to determine if the speech will be intelligible to the hard of hearing.</li>
-<li><b><a href="find_clipping.html" title="Find Clipping">Find Clipping</a>:</b> Displays runs of <i><b><a href="glossary.html#clipping" title="Glossary">clipped</a></b></i> samples in a <a href="label_tracks.html" title="Label Tracks">Label Track</a>, as a screen-reader accessible alternative to <span class="menu">View &gt; <a href="view_menu.html#Show_Clipping" title="View Menu">Show Clipping</a></span>. A run must include at least one clipped sample, but may include unclipped samples too. </li>
-<li><b><a href="plot_spectrum.html" title="Plot Spectrum">Plot Spectrum</a>:</b> Takes the selected audio (which is a set of sound pressure values at points in time) and converts it to a graph of frequencies against <i><b><a href="glossary.html#amplitude" title="Glossary">amplitudes</a></b></i>.</li>
-<li><b><a href="sample_data_export.html" title="Sample Data Export">Sample Data Export</a>:</b> Reads the values of successive samples from the selected audio and prints this data to a plain text, CSV or HTML file. Further information may be added as a "header" at the top of the file.</li></ul>
-<h3><span class="mw-headline" id="Divide_Up_Sounds_or_Silences_using_Labels">Divide Up Sounds or Silences using Labels</span></h3>
-<ul><li><b><a href="regular_interval_labels.html" title="Regular Interval Labels">Regular Interval Labels</a>:</b> Places <a href="label_tracks.html" title="Label Tracks">labels</a> in a long track so as to divide it into smaller, equally sized  segments.</li>
+<h3><span class="mw-headline" id="Analyze_Amplitude_or_Other_Audio_Properties">
+सरासरी निश्चित करण्यासाठी एकल मोनो किंवा स्टिरिओ स्पीच ट्रॅकचे विश्लेषण करते</span></h3>
+<ul><li><b><a href="contrast.html" title="Contrast">कॉन्ट्रास्ट</a>:</b> <i><b><a href="glossary.html#rms" title="Glossary">RMS</a></b></i> <i>अग्रभाषा आणि पार्श्वभूमी संगीत, प्रेक्षकांचा आवाज किंवा तत्सम दरम्यान आवाज </ i> (तीव्रता) मधील फरक. भाषण ऐकण्याच्या कठीणतेसाठी सुगम आहे की नाही हे निर्धारित करणे हा आहे.</li>
+<li><b><a href="find_clipping.html" title="Find Clipping">कातरण शोधा </a>:</b> Displays runs of <i><b><a href="glossary.html#clipping" title="Glossary">कापलेले</a></b></i> मध्ये नमुने <a href="label_tracks.html" title="Label Tracks">Label Track</a>, चा पडदा-रीडर प्रवेश करण्यायोग्य पर्याय म्हणून <span class="menu">पहा &gt; <a href="view_menu.html#Show_Clipping" title="View Menu">दर्शवा कातरण</a></span>.
+चालू मध्ये कमीतकमी एक गीत केलेला नमुना असणे आवश्यक आहे, परंतु त्यात न पडलेले नमुनेदेखील असू शकतात. </li>
+<li><b><a href="plot_spectrum.html" title="Plot Spectrum">
+प्लॉट स्पेक्ट्रम</a>:</b> निवडलेला ध्वनी घेते (जे वेळेच्या वेळी आवाज दाबा मूल्यांचा संच आहे) आणि त्यास फ्रिक्वेन्सीच्या आलेखात रुपांतरित करते <i><b><a href="glossary.html#amplitude" title="Glossary">amplitudes</a></b></i>.</li>
+<li><b><a href="sample_data_export.html" title="Sample Data Export">
+नमुना माहिती निर्यात</a>:</b> 
+निवडलेल्या ध्वनीवरील सलग नमुन्यांची मूल्ये वाचतो आणि हा माहिती एका साध्या मजकूर, सीएसव्ही किंवा एचटीएमएल धारिकावर मुद्रित करतो. धारिकाच्या शीर्षस्थानी पुढील माहिती "शीर्षलेख" म्हणून जोडली जाऊ शकते.</li></ul>
+<h3><span class="mw-headline" id="Divide_Up_Sounds_or_Silences_using_Labels">नाव वापरुन ध्वनी किंवा शांतता विभाजित करा</span></h3>
+<ul><li><b><a href="regular_interval_labels.html" title="Regular Interval Labels">नियमित अंतराल लेबले</a>:</b> ठिकाणे <a href="label_tracks.html" title="Label Tracks">labels</a> एका लांब गाणेमध्ये जेणेकरून ते लहान, समान आकाराच्या विभागांमध्ये विभाजित करावे.</li>
 <li><b><a href="silence_finder.html" title="Silence Finder">Silence Finder</a>:</b> 
 पॉईंट लावून गाणे अप विभाजित करते<a href="label_tracks.html" title="Label Tracks">नाव</a> शांतता क्षेत्र आत. </li>
 <li><b><a href="sound_finder.html" title="Sound Finder">आवाज शोधक</a>:</b> 
@@ -361,12 +381,13 @@ Transclusion expansion time report (%,ms,calls,template)
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>Useful Links</h3>
+		<h3>उपयुक्त दुवे</h3>
 		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">WIT</a></span></li></ul>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">
+विकिपीडिया</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
+<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">व्यवहारज्ञान</a></span></li></ul>
 		</div>
 		</div>
 		
