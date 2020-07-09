@@ -63,19 +63,20 @@
 </td>
 <td align="left" valign="top">आपण संपादन करण्यापूर्वी आपण ज्या ध्वनिवर कार्य करीत आहात त्यामधील ऑफसेटची तपासणी करणे आणि काढणे आवश्यक आहे, जरी ध्वनि आपली स्वतःची ध्वनिमुद्रण नसून आपण अन्यत्र प्राप्त केलेली ध्वनि फाइल आहे.
 </td></tr></table></div>
-<ul><li>एम्प्लिफाइड किंवा सामान्यीकरण झाल्यावर डीसी ऑफसेट असलेला आवाज त्याच्या जोरात आवाजात होणार नाही. कारण ऑफसेट ध्वनिच्या शिखर पातळी आणि क्लिपिंगशिवाय कमाल शक्य पातळी दरम्यानचे हेडरूम कमी करते. <a href="glossary.html#clipping" title="Glossary">clipping</a>ही समस्या संपूर्णपणे संपूर्ण मिसळण्यापर्यंत वाढू शकते, कारण डीसी ऑफसेटसह आवाज आणि डीसी ऑफसेटविना आवाज मिसळल्यावर डीसी ऑफसेट असेल.</li>
+<ul><li>एम्प्लिफाइड किंवा सामान्यीकरण झाल्यावर डीसी ऑफसेट असलेला आवाज त्याच्या जोरात आवाजात होणार नाही. कारण ऑफसेट ध्वनिच्या शिखर पातळी आणि फितीशिवाय कमाल शक्य पातळी दरम्यानचे हेडरूम कमी करते. <a href="glossary.html#clipping" title="Glossary">clipping</a>ही समस्या संपूर्णपणे संपूर्ण मिसळण्यापर्यंत वाढू शकते, कारण डीसी ऑफसेटसह आवाज आणि डीसी ऑफसेटविना आवाज मिसळल्यावर डीसी ऑफसेट असेल.</li>
 
-<li>डीसी ऑफसेटमुळे ऐकू न येणारी निम्न स्तराची विकृती होऊ शकते. <a href="glossary.html#frequency" title="Glossary">वारंवारता </a> सामग्री बदलणारे प्रभाव लागू केल्यावर किंवा <a href="glossary.html#MP3" title="Glossary">एमपी३</a> सारख्या आकार-संकुचित स्वरूपात ऑडिओची निर्यात करताना विकृती ऐकू येऊ शकते.</li>
-<li>DC offset can cause audible clicks where audio sections are cut and pasted together, and can cause a click on playback at the start and end of the track, even without editing.</li>
-<li>DC offset will become worse if the recording is amplified.</li></ul>
-<h2><span class="mw-headline" id="Removing_DC_offset">Removing DC offset</span></h2>
-<h3><span class="mw-headline" id="Audacity.27s_Normalize_Effect">Audacity's Normalize Effect</span></h3>
-<p>Audacity's DC removal method performs a calculation to make the average positive and negative sample values equal. To perform removal, choose <span class="menu">Effect &gt; Normalize...</span>,  with the option checked "<b>Remove any DC offset (center on 0 vertically)</b>". Uncheck the "Normalize maximum amplitude..." box unless you want to run Normalize as well (see <a href="amplify_and_normalize.html" title="Amplify and Normalize">Amplify and Normalize</a> for what Normalize does and when to use it).
+<li>डीसी ऑफसेटमुळे ऐकू न येणारी निम्न स्तराची विकृती होऊ शकते. <a href="glossary.html#frequency" title="Glossary">वारंवारता </a> सामग्री बदलणारे प्रभाव लागू केल्यावर किंवा <a href="glossary.html#MP3" title="Glossary">एमपी३</a> सारख्या आकार-संकुचित स्वरूपात ध्वनिची निर्यात करताना विकृती ऐकू येऊ शकते.</li>
+<li>डीसी ऑफसेटमुळे ध्वनि क्लिक होऊ शकतात जिथे ध्वनि विभाग कापून एकत्र पेस्ट केले जातात आणि गीतपट्टाच्या सुरूवातीस आणि शेवटी, संपादन न करताही प्लेबॅक क्लिक होऊ शकतात.</li>
+
+<li>ध्वनिमुद्रण विस्तारित केल्यास डीसी ऑफसेट अधिक खराब होईल.</li></ul>
+<h2><span class="mw-headline" id="Removing_DC_offset">डीसी ऑफसेट काढणे</span></h2>
+<h3><span class="mw-headline" id="Audacity.27s_Normalize_Effect">ओड्यासिटीचा सामान्य परिणाम</span></h3>
+<p>ओड्यासिटीची डीसी काढण्याची पद्धत सरासरी सकारात्मक आणि नकारात्मक नमुन्यांची मूल्ये समान करण्यासाठी गणना करते. काढून टाकण्यासाठी, <span class="menu">प्रभाव &gt; सामान्यीकरण ... </span>निवडा, "<b>कोणताही डीसी ऑफसेट काढा (अनुलंबपणे ० वर मध्यभागी)</b>" पर्याय निवडा. जोपर्यंत आपल्याला तसेच चालवायचे नसेल तर "जास्तीत जास्त मोठेपणा सामान्य करा ..."  चौकटीतील टिक काढून टाका (सामान्यीकरण काय करते आणि त्यासाठी कधी वापरायचे यासाठी <a href="amplify_and_normalize.html" title="Amplify and Normalize"> मोठे करा आणि सामान्यीकृत पहा</a>).
 </p>
 </li></ul>
 <div id="dcremove"></div>
 <h3><span class="mw-headline" id="LADSPA_dcRemove">LADSPA dcRemove</span></h3>
-<p>An alternative method is to use the <i>dcRemove</i> plug-in in the <i>swh LADSPA plug-ins bundle</i>. Links to the bundle are on <b><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Ladspa_Plugins">this page on the Audacity wiki</a></b>. The plug-in <i>dcRemove</i> uses a <a href="high_pass_filter.html" title="High-Pass Filter">High-Pass Filter</a> to remove the DC (0 Hz) component from the audio. 
+<p>वैकल्पिक पद्धत म्हणजे <i>swh LADSPA प्लग-इन बंडल</i> मधील <i>dcRemove</i> प्लग-इन वापरणे. बंडलचे दुवे <b><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Ladspa_Plugins"> ओड्यासिटी विकीवर </a></b>या पृष्ठावरील आहेत. ध्वनीमधून डीसी (० हर्ट्ज) घटक काढण्यासाठी प्लग-इन <i>dcRemove</i> <a href="high_pass_filter.html" title="High-Pass Filter"> हाय-पास फिल्टर वापरते</a>. 
 </p>
 <div id="cancel"></div>
 <h3><span class="mw-headline" id="Cancel_DC_offset_in_sound_devices_on_Windows">Cancel DC offset in sound devices on Windows</span></h3>
