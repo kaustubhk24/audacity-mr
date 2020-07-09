@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Repair - Audacity Manual</title>
+<title>दुरुस्ती- ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,42 +25,42 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Repair</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">दुरुस्ती</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिकेकडून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Repair#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा:  <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Repair#searchInput">शोधा</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro"><b>Repair</b> removes a very short region of damaged or destroyed audio, replacing it with an estimated region of audio based on what is happening either side of the region. It may be used for example to repair a click on a vinyl record, or a tape dropout.</div>
-<dl><dd><b>Accessed by:</b> <span class="menu">Effect &gt; Repair</span></dd></dl>
+<div class="intro"><b>दुरुस्ती</b> क्षतिग्रस्त किंवा नष्ट झालेल्या ध्वनीचा एक अतिशय छोटा प्रदेश काढतो आणि त्या प्रदेशाच्या दोन्ही बाजूला काय होत आहे त्या आधारावर त्यास अंदाजे ध्वनीसह पुनर्स्थित करते. हे  ध्वनिमुद्रणावरील क्लिक दुरुस्त करण्यासाठी किंवा टेप ड्रॉपआउटसाठी वापरले जाऊ शकते.</div>
+<dl><dd><b>याद्वारे प्रवेश केलेले:</b> <span class="menu">प्रभाव &gt; दुरुस्ती</span></dd></dl>
 <div id="requirements"></div>
-<h2><span class="mw-headline" id="Requirements">Requirements</span></h2>
-<p>The Repair effect can only be used on selection regions <b>up to 128 <i><a href="glossary.html#sample" title="Glossary">samples</a></i> long</b> (for most audio, only a few thousandths of a second). Above this length, it becomes too hard to guess what should be going on in the section under repair. You will get an error message if you select too much audio to try and repair. In general, the shorter the section of audio you select to repair, the better the results will be.
-</p><p>The Repair effect is unusual because it <i><b>requires</b></i> there to be audio <i>outside</i> the selection region on at least one side of the section to be repaired. Examining this audio lets Audacity <i><b><a href="glossary.html#interpolate" title="Glossary">interpolate</a></b></i> (make an informed guess about) the bad section. If the surrounding audio in the track is very short or non-existent there may not be enough information to make the interpolation, and an error message will be shown. For example, it is not possible to select a region up to 128 samples long in one track, paste or duplicate it into a new empty track and then repair it, because there will then be no audio either side of the region to examine.     
+<h2><span class="mw-headline" id="Requirements">आवश्यकता</span></h2>
+<p>दुरुस्ती प्रभाव केवळ निवड प्रदेशांवर वापरला जाऊ शकतो <b>१२८ पर्यंत <i><a href="glossary.html#sample" title="Glossary">नमुने</a></i> लांब</b> (बर्‍याच ध्वनीसाठी, सेकंदाच्या केवळ काही हजारांश). या लांबीच्या वर, दुरुस्तीच्या विभागात काय चालले पाहिजे याचा अंदाज करणे फार कठीण आहे. आपण प्रयत्न आणि दुरुस्तीसाठी जास्त ध्वनी निवडल्यास आपल्याला त्रुटी संदेश मिळेल. सर्वसाधारणपणे, आपण दुरुस्तीसाठी निवडलेल्या ध्वनीचा विभाग जितका लहान असेल तितका परिणाम चांगले होईल.
+</p><p>दुरुस्ती परिणाम असामान्य आहे कारण तो आहे <i><b>आवश्यक आहे</b></i> तेथे ध्वनी असू<i>बाहेर</i> विभाग दुरुस्ती करण्यासाठी कमीत कमी एका बाजूला निवड प्रदेश. या ध्वनीचे परीक्षण केल्याने ओड्यासिटी होऊ शकते<i><b><a href="glossary.html#interpolate" title="Glossary">गुंडाळणे</a></b></i> खराब विभाग (त्याबद्दल माहितीबद्ध अंदाज लावा).गीतपट्टाामधील सभोवतालचा ध्वनी खूप लहान किंवा अस्तित्वात नसल्यास तेथे प्रक्षेप करण्यास पुरेसे माहिती असू शकत नाही आणि एक त्रुटी संदेश दर्शविला जाईल. उदाहरणार्थ, एका गीतपट्टाामध्ये १२८ नमुन्यांपर्यंत लांब प्रदेश निवडणे, नवीन रिकाम्या गीतपट्टाामध्ये चिकटवा किंवा त्याचे नक्कल करणे आणि नंतर दुरुस्त करणे शक्य नाही, कारण तेथे या क्षेत्राच्या दोन्ही बाजूंनी तपासणी करण्यासाठी कोणतेही ध्वनी नसतील.    
 </p>
-<div class="note">When using Repair it is often convenient to set <a href="selection_toolbar.html" title="Selection Toolbar">Selection Toolbar</a> bar to show <b>hh:mm:ss + samples</b>, then click the <b>Length</b> radio button to ensure you are only selecting up to 128 samples.</div>
+<div class="note">दुरुस्ती वापरताना ते जतन करणे बर्‍याचदा सोयीचे असते<a href="selection_toolbar.html" title="Selection Toolbar"> साधनपट्टी निवड</a> दर्शविण्यासाठी बार <b>तास :मिनिट:सेकंद + नमुने</b>, नंतर क्लिक करा<b>लांबी</b> आपण केवळ १२८ नमुने निवडत आहात हे सुनिश्चित करण्यासाठी रेडिओ कळ.</div>
 <div id="usage"></div>
-<h2><span class="mw-headline" id="Usage">Usage</span></h2>
-<ol><li> Select the approximate region of audio. <a href="zooming.html" title="Zooming">Zoom</a> in until you can start to see the individual dots (samples) in the <a href="audacity_waveform.html" title="Audacity Waveform">waveform</a>, and then reselect the shortest possible piece of audio for replacement.</li>
-<li> Click <span class="menu">Effect &gt; Repair</span> to replace the selected audio with the repaired audio.</li>
-<li> Zoom back out (or grab the handle on the horizontal scrollbar at the bottom of the screen and drag leftwards), click a few seconds before the region you were repairing, and play from there to hear if the repair sounds OK. If not, click <span class="menu">Edit &gt; <a href="edit_menu.html#Undo" title="Edit Menu">Undo</a></span> and try a different region to repair. Include a little more on either side of the problem if the original damage was still obvious, or less if the repaired region sounded different, but incorrect.</li></ol>
+<h2><span class="mw-headline" id="Usage">वापर</span></h2>
+<ol><li> ध्वनीचा अंदाजे प्रदेश निवडा.<a href="zooming.html" title="Zooming">मोठे करा</a>मध्ये आपण वैयक्तिक टिंब(नमुने) पाहणे सुरू करेपर्यंत<a href="audacity_waveform.html" title="Audacity Waveform">वेव्हफॉर्म </a>, आणि नंतर पुनर्स्थापनेसाठी ध्वनीचा सर्वात लहान तुकडा पुन्हा शोधा.</li>
+<li> क्लिक <span class="menu">प्रभाव &gt; दुरुस्ती</span> निवडलेला ध्वनी दुरुस्त केलेल्या ध्वनीसह पुनर्स्थित करण्यासाठी.</li>
+<li> परत छोटे करा (किंवा पटलाच्या तळाशी क्षैतिज स्क्रोलबारवरील हँडल पकडून डावीकडे ड्रॅग करा), आपण दुरुस्त करत असलेल्या प्रदेशाच्या काही सेकंदांपूर्वी क्लिक करा आणि दुरुस्ती ठीक वाटत असेल तर तिथून खेळा. नसल्यास क्लिक करा<span class="menu">सुधारणे &gt; <a href="edit_menu.html#Undo" title="Edit Menu">परत करा</a></span> आणि दुरुस्तीसाठी भिन्न प्रदेश वापरून पहा. मूळ नुकसान अद्याप स्पष्ट असल्यास समस्येच्या दुतर्फा थोडे अधिक समाविष्ट करा किंवा दुरुस्ती केलेल्या प्रदेशाला वेगळा वाटला, परंतु चुकीचा असेल तर कमी.</li></ol>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
 </td>
-<td align="left" valign="top"><span style="font-weight: bold; font-size:118%">Tips:</span>
-<ul><li> When trying to repair a section of audio that has been <i><b><a href="glossary.html#clipping" title="Glossary">clipped</a></b></i>, click first in the <a href="audio_tracks.html#Track_Control_Panel" title="Audio Tracks">Track Control Panel</a> to select all the track, then <span class="menu">Effect &gt; <a href="amplify.html" title="Amplify">Amplify</a></span> to make it quieter. This gives some headroom for Repair to work in. You can click <span class="menu">View &gt; Show Clipping</span> to indicate clipped samples. If there is still clipped audio after Repair, <span class="menu">Edit &gt; Undo</span>, extend the region a little further either side of the clipping, then Repair again.     </li>
-<li> If only one channel of a stereo track is damaged, you can repair only the relevant channel by clicking on the <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">Audio Track Dropdown Menu</a> and selecting <b>"Split Stereo Track"</b>. After repairing the single channel, you can rejoin the channels by using <b>"Make Stereo Track"</b> in the same menu in the upper track. </li></ul>
+<td align="left" valign="top"><span style="font-weight: bold; font-size:118%">टिपा:</span>
+<ul><li> ध्वनीचा एक विभाग दुरुस्त करण्याचा प्रयत्न करताना <i><b><a href="glossary.html#clipping" title="Glossary">कापलेले</a></b></i>, मध्ये प्रथम क्लिक करा<a href="audio_tracks.html#Track_Control_Panel" title="Audio Tracks">गीतपट्टा नियंत्रण पॅनेल</a> नंतर सर्व गीतपट्टा निवडण्यासाठी <span class="menu">प्रभाव &gt; <a href="amplify.html" title="Amplify">शक्ती वाढवणे</a></span> शांत करणे हे दुरुस्तीसाठी काम करण्यासाठी काही हेडरूम देते. आपण क्लिक करू शकता<span class="menu">पाहा &gt; दाखवा  कात्रण</span> कात्रण केलेले नमुने दर्शविण्यासाठी. दुरुस्तीनंतर अद्याप क्लिप केलेला ध्वनी असल्यास, <span class="menu">सुधारणे &gt; परत करा</span>, कात्रणे दोन्ही बाजूला थोडा पुढे प्रदेश वाढवा, नंतर पुन्हा दुरुस्ती करा.   </li>
+<li> जर स्टिरिओ गीतपट्ट्याचे  केवळ एक वाहिनी  खराब झाले असेल तर आपण केवळ संबंधित वाहिनीवर क्लिक करून दुरुस्ती करू शकता<a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">ध्वनीपट्टा  ड्रॉपडाउन मेनू</a> आणि निवडत आहे<b>" स्टिरिओ गीतपट्टा विभाजित करा "</b>. एकाच वाहिनेची दुरुस्ती केल्यानंतर, आपण वाहिनी  वापरू शकता<b>"स्टिरीओ गीतपट्टा  बनवा"</b> वरच्या गीतपट्ट्यातील  समान मेनूमध्ये. </li></ul>
 </td></tr></table>
 </div>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> Index of Effects, Generators and Analyzers</a> <br />
-</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> Effect Menu</a>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका</a> <br />
+</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> प्रभाव मेनू</a>
 </p>
 <!-- 
 NewPP limit report
