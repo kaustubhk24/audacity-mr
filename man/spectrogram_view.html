@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Spectrogram View - Audacity Manual</title>
+<title>स्पेक्ट्रोग्राम दृश्य - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,175 +25,175 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Spectrogram View</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">स्पेक्ट्रोग्राम दृश्य </h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिकेकडून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Spectrogram_View#searchInput">search</a></div>
+					<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.Audacityteam.org/man/Preferences#searchInput">शोधा</a></div>
 
 					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">The <i><b>Spectrogram</b></i> View of an audio track provides a visual indication of how the energy in different frequency bands changes over time. The Spectrogram can show sudden onset of a sound, so it can often be easier to see clicks and other glitches or to line up beats in this view rather than in one of the <a href="audio_track_dropdown_menu.html#Waveform" title="Audio Track Dropdown Menu">waveform</a> views.
-<p>To select Spectrogram view, click on the track name (or the black triangle) in the <a href="audio_tracks.html#panel" title="Audio Tracks"> Track Control Panel</a> which opens the <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">Track Dropdown Menu</a>.</p></div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro"> <i><b>स्पेक्ट्रोग्राम</b></i> गीतपट्टाचे दृश्य वेगवेगळ्या वारंवारता बँडमधील उर्जा कालानुसार बदलत जाते याचे दृष्य दर्शविते. स्पेक्ट्रोग्राम अचानक ध्वनीची सुरूवात दर्शवू शकतो, म्हणूनच यापैकी एखाद्याच्या ऐवजी क्लिक्स आणि इतर त्रुटी पाहणे किंवा या दृश्यात बीट्स अप करणे सुलभ होऊ शकते. <a href="audio_track_dropdown_menu.html#Waveform" title="Audio Track Dropdown Menu">वेव्हफॉर्म </a> दृश्ये.
+<p>स्पेक्ट्रोग्राम दृश्य निवडण्यासाठी, मधील गीतपट्टा नावावर (किंवा काळ्या त्रिकोण) वर क्लिक करा <a href="audio_tracks.html#panel" title="Audio Tracks"> गीतपट्टा नियंत्रण पॅनेल</a> जे उघडते <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">ड्रॉपडाउन मेनूचा मागोवा घ्या</a>.</p></div>
 
 
 
-<h2><span class="mw-headline" id="Contents">Contents</span></h2>
-<ol><li> <a href="#compare">Comparing Waveform View to Spectrogram View</a></li>
-<li> <a href="#meaning">What the Colors Mean</a></li>
-<li> <a href="#smear">Time Smearing and Frequency Smearing</a></li>
-<li> <a href="#zoom">Vertical Zooming</a></li>
-<li> <a href="#types">Effect of Different Window Types</a></li>
-<li> <a href="#pad">Zero padding factor</a></li>
-<li> <a href="#log">Logarithmic Spectrogram View</a></li>
-<li> <a href="#others">Mel, Bark, ERB and Period Spectrogram views</a></li>
-<li> <a href="#settings">Example of choosing the right settings for the job</a></li>
-<li> <a href="#spectral_selection">Spectral selection</a></li>
-<li> <a href="#spectrogram_settings">Per Track Spectrogram Settings</a></li></ol>
+<h2><span class="mw-headline" id="Contents">सामग्री</span></h2>
+<ol><li> <a href="#compare">वेव्हफॉर्म दृश्य तुलना स्पेक्ट्रोग्राम व्ह्यूशी करता</a></li>
+<li> <a href="#meaning">रंग म्हणजे काय</a></li>
+<li> <a href="#smear">वेळ स्मीयरिंग आणि वारंवारता स्मरिनg</a></li>
+<li> <a href="#zoom">अनुलंब झूमिंग</a></li>
+<li> <a href="#types">वेगवेगळ्या विंडो प्रकारांचा प्रभाव</a></li>
+<li> <a href="#pad">शून्य पॅडिंग घटक</a></li>
+<li> <a href="#log">लोगारिथमिक स्पेक्ट्रोग्राम दृश्य</a></li>
+<li> <a href="#others">मेल, बार्क, ईआरबी आणि पीरियड स्पेक्ट्रोग्राम दृश्ये</a></li>
+<li> <a href="#settings">नोकरीसाठी योग्य समायोजन निवडण्याचे उदाहरण</a></li>
+<li> <a href="#spectral_selection">वर्णक्रमीय निवड</a></li>
+<li> <a href="#spectrogram_settings">प्रति गीतपट्टा स्पेक्ट्रोग्राम समायोजन</a></li></ol>
 <div id="compare"></div>
-<h2><span class="mw-headline" id="Comparing_Waveform_View_to_Spectrogram_View">Comparing Waveform View to Spectrogram View</span></h2>
-<p>Here is a stereo music recording in waveform view:
+<h2><span class="mw-headline" id="Comparing_Waveform_View_to_Spectrogram_View">वेव्हफॉर्म दृश्याची तुलना स्पेक्ट्रोग्राम दृश्यशी करता</span></h2>
+<p>वेव्हफॉर्म व्ह्यूमध्ये स्टीरिओ संगीत ध्वनीमुद्रण येथे आहे:
 </p>
 <dl><dd><span title="Spectrogram example track in waveform view"><img alt="SpectrogramView Intro 01.png" src="../m/images/1/17/spectrogramview_intro_01.png" width="601" height="216" /></span></dd></dl>
-<p>Here is the same recording in spectrogram view:
+<p>येथे स्पेक्ट्रोग्राम दृश्यात समान ध्वनीमुद्रण आहे:
 </p>
 <dl><dd><span title="Spectrogram example track in spectrogram view"><img alt="SpectrogramView Intro 02.png" src="../m/images/3/3d/spectrogramview_intro_02.png" width="601" height="216" /></span></dd></dl>
-<p>The waveform view can be switched to a <i><b>Spectrogram</b></i>   view by clicking on the track name (or the black triangle) in the <a href="audio_tracks.html#panel" title="Audio Tracks"> Track Control Panel</a> which opens up the <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">Track Dropdown Menu</a> where the spectrogram view can be selected.
+<p>वेव्हफॉर्म दृश्य अ वर स्विच केले जाऊ शकते <i><b>स्पेक्ट्रोग्राम</b></i>   मधील गीतपट्टा नावावर (किंवा काळा त्रिकोण) वर क्लिक करून पहा <a href="audio_tracks.html#panel" title="Audio Tracks"> गीतपट्टा नियंत्रण पॅनेल </a> जे उघडते <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">ड्रॉपडाउन मेनूचा मागोवा घ्या</a> जिथे स्पेक्ट्रोग्राम दृश्य निवडले जाऊ शकते.
 </p>
 <div id="meaning"></div>
-<h2><span class="mw-headline" id="What_the_Colors_Mean">What the Colors Mean</span></h2>
-<p>To demonstrate how the various settings affect the appearance of an audio track in spectrogram view, we will start with this artificially constructed test track. It consists of 10 segments of a sine wave tone at 2000 Hz, each 2 seconds long. The level of each segment in dB is indicated by the labels below the audio track.
-</p><p>This is how the track appears in waveform dB view.
+<h2><span class="mw-headline" id="What_the_Colors_Mean">रंग म्हणजे काय</span></h2>
+<p>स्पेक्ट्रोग्राम दृश्यात विविध समायोजन गीतपट्टाच्या देखाव्यावर कसा परिणाम करतात हे दर्शविण्यासाठी, आम्ही कृत्रिमरित्या तयार केलेल्या चाचणी गीतपट्टासह प्रारंभ करू. यात २००० हर्ट्झ येथे साईन वेव्ह टोनचे 10 विभाग आहेत, प्रत्येक २ सेकंद लांब. ध्वनी गीतपट्टाच्या खाली असलेल्या नावाद्वारे डीबी मधील प्रत्येक विभागाची पातळी दर्शविली जाते.
+</p><p>गीतपट्टा वेव्हफॉर्म डीबी व्यूमध्ये असे दिसते.
 </p>
 <dl><dd><span title="Spectrogram test track in waveform dB view"><img alt="SpectrogramView 01.png" src="../m/images/3/35/spectrogramview_01.png" width="602" height="196" /></span></dd></dl>
-<p>This is how the track appears in spectrogram view, using the default settings.
+<p>पूर्वनिर्धारित समायोजन वापरून गीतपट्टा स्पेक्ट्रोग्राम दृश्यात कसा दिसतो.
 </p>
 <dl><dd><span title="Spectrogram test track in spectrogram view with default settings"><img alt="SpectrogramView 02.png" src="../m/images/f/f0/spectrogramview_02.png" width="618" height="224" /></span></dd></dl>
-<p>The default settings are:
+<p>पूर्वनिर्धारित समायोजन आहेत:
 </p>
-<ul><li> Window size: 1024</li>
-<li> Window type: Hanning</li>
-<li> Zero padding factor: 1</li>
-<li> Minimum frequency (Hz): 0</li>
-<li> Maximum frequency (Hz): 8000</li>
-<li> Gain (dB): 20</li>
-<li> Range (dB): 80</li>
-<li> Frequency Gain (dB/dec): 0.</li></ul>
-<p>What do these settings mean and how to they relate to what you see on the screen?</p>
-<p>As you can clearly see, the minimum and maximum frequency settings determine the minimum and maximum frequencies displayed, as indicated in the track vertical scale.</p>
-<p>Gain can be said to increase the "brightness" of the display. It does this by amplifying the signal by the indicated amount. With the default setting of 20 dB, any frequency band that originally had (before amplification) a level of -20 dB or greater (and now, after amplification has a level greater than 0 dB) will be displayed as white. Similarly the "lower" level bands will also "get brighter".</p>
-<p>There are six color bands in spectrogram view: white, red, magenta, dark blue, light blue and gray. The Range setting determines the spacing between colors.</p>
-<p>With the default settings of Gain = 20 dB and Range = 80 dB, the colors correspond to the following levels:
-<ul><li> anything above -20 dB is indistinguishably white (the tone at -10 dB in the image above is white)</li>
-<li> levels from -40 dB to -20 dB transition from red to white (the tone at -30 dB in the image above is light red)</li>
-<li> levels from -60 dB to -40 dB transition from magenta to red (the tone at -50 dB in the image above is magenta)</li>
-<li> levels from -80 dB to -60 dB transition from dark blue to magenta (the tone at -70 dB in the image above is bluish purple)</li>
-<li> levels from -100 dB to -80 dB transition from light blue to dark blue (the tone at -90 dB in the image above is light blue)</li>
-<li> anything below -100 dB is gray.</p></li></ul>
+<ul><li> विंडोचा आकार: १०२४</li>
+<li> विंडो प्रकार: हॅनिंग</li>
+<li> शून्य पॅडिंग घटक: १</li>
+<li> किमान वारंवारता (हर्ट्ज): ०</li>
+<li> जास्तीत जास्त वारंवारता (हर्ट्ज): ८०००</li>
+<li> लाभ (डीबी): २०</li>
+<li> श्रेणी (डीबी): ८०</li>
+<li> वारंवारता लाभ (डीबी / डिसें): 0.</li></ul>
+<p>या समायोजनाचा अर्थ काय आहे आणि आपण पडद्यावर काय पहाता त्याशी त्यांचा कसा संबंध आहे?</p>
+<p>जसे आपण स्पष्टपणे पाहू शकता, किमान आणि जास्तीत जास्त वारंवारता समायोजन गीतपट्टा अनुलंब प्रमाणात दर्शविल्याप्रमाणे प्रदर्शित किमान आणि कमाल वारंवारता निर्धारित करतात.</p>
+<p>मिळवण्यामुळे प्रदर्शनाची "ब्राइटनेस" वाढवता येते. हे दर्शविलेल्या रकमेद्वारे संकेत वाढवून हे करते. २० डीबीच्या पूर्वनिर्धारित समायोजन, कोणताही वारंवारता बँड ज्याचा मूळतः (प्रवर्धनापूर्वी) -२० डीबी किंवा त्यापेक्षा मोठा स्तर होता (आणि आता प्रवर्धनानंतर 0 डीबीपेक्षा जास्त पातळी) पांढरा दिसेल. त्याचप्रमाणे "खालच्या" स्तरावरील बँड देखील "उजळ होईल".</p>
+<p>स्पेक्ट्रोग्राम दृश्यात सहा रंग बँड आहेत: पांढरा, लाल, किरमिजी, गडद निळा, हलका निळा आणि राखाडी. श्रेणी समायोजन रंग दरम्यानचे अंतर निर्धारित करते.</p>
+<p>गेन = २० डीबी आणि श्रेणी = ८० डीबीच्या पूर्वनिर्धारित समायोजन, रंग खालील स्तरांशी संबंधित आहेत:
+<ul><li> -२० डीबी वरील काहीही वेगळ्या पांढर्‍या रंगात आहे (वरील प्रतिमेमधील -१० डीबीवरील टोन पांढरा आहे)</li>
+<li> -४० डीबी ते -२० डीबी ते लाल ते पांढर्‍यापर्यंत संक्रमणाची पातळी (वरील प्रतिमेमध्ये -३० डीबी वरील टोन हलका लाल आहे)</li>
+<li> -६० डीबी ते -४० डीबी ते किरमिजी ते लाल होण्याचे संक्रमण</li>
+<li> -८० डीबी ते -६० डीबी ते गडद निळ्यापासून मॅजेन्टा पर्यंत संक्रमण (वरील प्रतिमेमध्ये -70 डीबीवरील टोन निळसर जांभळा आहे)</li>
+<li> -१०० डीबी ते -८० डीबी पर्यंत पातळी हलका निळ्यापासून गडद निळ्यापर्यंत संक्रमण (वरील प्रतिमेमध्ये -९० डीबीवरील टोन हलका निळा आहे)</li>
+<li> -१०० डीबी खाली काहीही राखाडी आहे.</p></li></ul>
 
 <div id="smear"></div>
-<h2><span class="mw-headline" id="Time_Smearing_and_Frequency_Smearing">Time Smearing and Frequency Smearing</span></h2>
-<p>Spectrogram view uses the Fast Fourier Transform (FFT) to display the frequency information versus time. There is an inherent trade-off between frequency resolution and time resolution.</p>
-<p>The image below shows the spectrogram view of a pure 1000Hz tone with two clicks very close together. With a window size of 256 we can see the two clicks.</p>
+<h2><span class="mw-headline" id="Time_Smearing_and_Frequency_Smearing">वेळ कलंक डाग आणि वारंवारता कलंक डाग</span></h2>
+<p>स्पेक्ट्रोग्राम दृश्य वारंवारता माहिती विरूद्ध वेळ दर्शविण्यासाठी जलद फूरियर बदल (एफएफटी) वापरते. वारंवारता रिझोल्यूशन आणि वेळ रिजोल्यूशन दरम्यान एक मूळचा व्यापार आहे.</p>
+<p>खाली असलेली प्रतिमा दोन जवळच जवळजवळ क्लिकसह शुद्ध १००० हर्ट्झ टोनचे स्पेक्ट्रोग्राम दृश्य दर्शविते. २५६ च्या विंडो आकारासह आम्ही दोन फिती पाहू शकतो.</p>
 <dl><dd><span title="Spectrogram view showing two clicks close together with window size of 256"><img alt="SpectrogramView 03.png" src="../m/images/4/4e/spectrogramview_03.png" width="603" height="177" /></span></dd></dl>
-<p>Changing the Window Size to 2048 results in better frequency resolution (the white band is narrower). However the time resolution is worse. The two clicks have been smeared together into one.</p>
+<p>विंडोचा आकार २०४८ वर बदलल्यास अधिक वारंवारतेचे निराकरण होऊ शकते (पांढरा बँड अरुंद आहे). तथापि, वेळ रिजोल्यूशन वाईट आहे. दोन क्लिक एकत्र जोडले गेले आहेत one.</p>
 <dl><dd><span title="Spectrogram view showing time smearing with window size of 2048"><img alt="SpectrogramView 05.png" src="../m/images/6/68/spectrogramview_05.png" width="601" height="182" /></span></dd></dl>
-<p>The image below shows the spectrogram view of a musical note with many overtones. With a window size of 256 the overtones are not clear.</p>
+<p>खाली दिलेली प्रतिमा बर्‍याच ओव्हरटेन्ससह संगीत नोटचे स्पेक्ट्रोग्राम दृश्य दर्शविते. 256 च्या विंडो आकाराने ओव्हरटोन स्पष्ट नाहीत.</p>
 <dl><dd><span title="Spectrogram view showing frequency smearing of a musical note with overtones with window size of 256"><img alt="SpectrogramView 03a.png" src="../m/images/9/9a/spectrogramview_03a.png" width="602" height="154" /></span></dd></dl>
-<p>When we change the window size to 2048 we can see the overtones.</p>
+<p>जेव्हा आपण विंडोचा आकार २०४८ मध्ये बदलतो तेव्हा आपण ओव्हरटेन्स पाहू शकतो.</p>
 <dl><dd><span title="Spectrogram view showing more frequency resolution musical note with overtones with window size of 2048"><img alt="SpectrogramView 05a.png" src="../m/images/e/ef/spectrogramview_05a.png" width="601" height="154" /></span></dd></dl>
-<p>When choosing which window size to use, the general rules are:
-<ul><li> if you need good time resolution (for example to find clicks) use a smaller window size</li>
-<li> if you need good frequency resolution (for example to find an annoying tone) use a larger window size.</p></li></ul>
+<p>कोणत्या विंडोचा आकार वापरायचा हे निवडताना, सामान्य नियमः
+<ul><li> जर आपल्याला चांगला वेळ रिझोल्यूशन (उदाहरणार्थ क्लिक शोधण्यासाठी) आवश्यक असेल तर लहान विंडो आकार वापरा</li>
+<li> आपल्याला चांगल्या वारंवारतेचे निराकरण आवश्यक असल्यास (उदाहरणार्थ त्रासदायक टोन शोधण्यासाठी) मोठा विंडो आकार वापरा.</p></li></ul>
 
 <div id="zoom"></div>
-<h2><span class="mw-headline" id="Vertical_Zooming">Vertical Zooming</span></h2>
-<h3><span class="mw-headline" id="Magnifiers">Magnifiers</span></h3>
-<p>You can zoom in on the vertical (frequency) axis by <a href="vertical_zooming.html#advanced" title="Vertical Zooming">left-clicking in the Vertical Scale</a> and using the magnifiers <i>(when these are enabled in<a href="tracks_behaviors_preferences.html" title="Tracks Behaviors Preferences">Tracks Behaviors Preferences</a>)</i>.</p>
-<p>In the image below we are about to zoom in on one overtone of the musical note.</p>
+<h2><span class="mw-headline" id="Vertical_Zooming">अनुलंब झूमिंग</span></h2>
+<h3><span class="mw-headline" id="Magnifiers">भिंग</span></h3>
+<p>आपण अनुलंब (वारंवारता) अक्ष वर झूम वाढवू शकता <a href="vertical_zooming.html#advanced" title="Vertical Zooming">अनुलंब पट्टी मध्ये डावे क्लिक करा</a> आणि भिंग वापरुन <i>(जेव्हा हे सक्षम केले जातात<a href="tracks_behaviors_preferences.html" title="Tracks Behaviors Preferences">वागणूक प्राधान्ये गीतपट्टा करते</a>)</i>.</p>
+<p>खालील प्रतिमेत आम्ही संगीत नोटच्या एका ओव्हरटोनवर झूम वाढवणार आहोत.</p>
 <dl><dd><span title="Spectrogram test track in spectrogram view about to zoom in"><img alt="SpectrogramView 06.png" src="../m/images/4/47/spectrogramview_06.png" width="602" height="154" /></span></dd></dl>
-<p>After zooming in, the vertical ruler changes to allow greater precision of the scale.</p>
+<p>झूम वाढवल्यानंतर, पट्टीची अधिक सुस्पष्टता आणण्यासाठी अनुलंब शासक बदलतो.</p>
 <dl><dd><span title="Spectrogram test track in spectrogram view after zooming in"><img alt="SpectrogramView 07.png" src="../m/images/e/ef/spectrogramview_07.png" width="601" height="154" /></span></dd></dl>
 <h3><span class="mw-headline" id="Context_menu">Context menu</span></h3>
-<p>Alternatively you can right-click in the Vertical scale to bring up a dropdown context menu which has commands for <a href="vertical_zooming.html#simple" title="Vertical Zooming">vertical zooming</a>:
+<p>वैकल्पिकरित्या आपण ड्रॉपडाउन संपर्क मेनू आणण्यासाठी अनुलंबित पट्टी उजवा-क्लिक करू शकता ज्यासाठी आज्ञा आहेत <a href="vertical_zooming.html#simple" title="Vertical Zooming">अनुलंब झूमिंग</a>:
 </p>
 <dl><dd><span title="Vertical Scale (spectrogram) with context menu"><img alt="VS spectrogram context menu - Simple mode.png" src="../m/images/6/67/vs_spectrogram_context_menu_simple_mode.png" width="183" height="268" /></span> </dd></dl>
 <div id="types"></div>
 <h2><span class="mw-headline" id="Effect_of_Different_Window_Types">Effect of Different Window Types</span></h2>
-<p>The image above uses the <i>Hanning</i> Window Type.</p>
-<p>Changing to the <i>Blackman-Harris</i> Window Type gets rid of much of the spectral leakage at the expense of lower frequency resolution (note that the red band near the 2.0k mark is wider).</p>
+<p>वरील प्रतिमा <i> हॅनिंग </i> विंडो प्रकार वापरते.</p>
+<p>मध्ये बदलत आहे <i>ब्लॅकमन-हॅरिस</i> खालील वारंवारता रिझोल्यूशनच्या खर्चामुळे विंडो प्रकार बरीच वर्णक्रमीय गळतीपासून मुक्त होते (लक्षात घ्या की २.० K च्या जवळील लाल बँड रुंद आहे).</p>
 <dl><dd><span title="Spectrogram test track in spectrogram view with Blackman-Harris window"><img alt="SpectrogramView 08.png" src="../m/images/3/3a/spectrogramview_08.png" width="601" height="154" /></span></dd></dl>
-<p>Changing to a rectangular window causes the track to be redrawn a little faster at the expense of very bad spectral leakage. However, the frequency resolution is better (the red band near the 2.0k mark is narrower).</p>
+<p>आयताकृती खिडकीत बदल केल्यामुळे गीतपट्टा खूप खराब स्पेक्ट्रल गळतीच्या खर्चाने थोडा वेगवान झाला. तथापि, वारंवारता निराकरण अधिक चांगले आहे (2.0k चिन्हाजवळील लाल बँड अरुंद आहे).</p>
 <dl><dd><span title="Spectrogram test track in spectrogram view with rectangular window"><img alt="SpectrogramView 09.png" src="../m/images/0/05/spectrogramview_09.png" width="601" height="154" /></span></dd></dl>
-<p>The is no "right" window type. When you are using spectrogram view to analyze audio, or to track down certain elements in a recording, use whichever window type best highlights the information you are trying to find.</p>
+<p>हा कोणताही "उजवा" विंडो प्रकार नाही. जेव्हा आपण ध्वनीचे विश्लेषण करण्यासाठी किंवा मुद्रणामधील काही घटकांचा मागोवा घेण्यासाठी स्पेक्ट्रोग्राम दृश्य वापरत असाल, तेव्हा आपण शोधण्याचा प्रयत्न करीत असलेल्या माहितीपैकी कोणत्या विंडो प्रकारातील सर्वोत्कृष्ट हायलाइट वापरा.</p>
 <div id="pad"></div>
-<h2><span class="mw-headline" id="Zero_padding_factor">Zero padding factor</span></h2>
-<p>Larger values give finer interpolation of the colors along the vertical axis, at the expense of more computation time. This setting does not affect the time vs. frequency resolution tradeoff. In other words it does not give better frequency resolution.
+<h2><span class="mw-headline" id="Zero_padding_factor">शून्य पॅडिंग घटक</span></h2>
+<p>अधिक मूल्ये अधिक मोजण्याच्या वेळेच्या किंमतीवर, मोठे अक्षरे उभ्या अक्षांसह रंगांचा अधिक चांगला प्रक्षोभन देतात. ही समायोजन वेळ वारंवारता निराकरण ट्रेडऑफवर परिणाम करत नाही. दुसर्‍या शब्दांत ते चांगले वारंवारता ठराव देत नाही.
 </p>
-<p>Here is the musical note again, with a zero padding factor of 1.</p>
+<p>१ ची शून्य पॅडिंग फॅक्टर असलेली पुन्हा सांगितिक नोट येथे आहे.</p>
 <dl><dd><span title="Spectrogram view showing musical note with zero padding factor of 1"><img alt="SpectrogramView 07.png" src="../m/images/e/ef/spectrogramview_07.png" width="601" height="154" /></span></dd></dl>
-<p>Here is the same note, with a zero padding factor of 8.</p>
+<p>येथे समान नोट आहे, 8 च्या शून्य पॅडिंग घटक.</p>
 <dl><dd><span title="Spectrogram view showing musical note with zero padding factor of 8"><img alt="SpectrogramView 15.png" src="../m/images/b/bc/spectrogramview_15.png" width="605" height="154" /></span></dd></dl>
 <div id="log"></div>
 <h2><span class="mw-headline" id="Logarithmic_Spectrogram_View">Logarithmic Spectrogram View</span></h2>
-<p>Choosing <i>Logarithmic</i> from the <a href="audio_track_dropdown_menu.html#spgramset" title="Audio Track Dropdown Menu">Spectrogram Settings</a> in the Track Control Panel dropdown menu will display a logarithmic vertical scale.</p>
-<p>Here again is the musical note with overtones shown in Spectrogram view.</p>
+<p><i> निवड करीत आहे लोगारिथमिक</i> पासून <a href="audio_track_dropdown_menu.html#spgramset" title="Audio Track Dropdown Menu">स्पेक्ट्रोग्राम समायोजन</a> गीतपट्टा नियंत्रण पॅनेल ड्रॉपडाउन मेनूमध्ये लॉगरिथमिक अनुलंब पट्टी प्रदर्शित होईल.</p>
+<p>येथे पुन्हा स्पेक्ट्रोग्राम दृश्यात दर्शविलेल्या ओव्हरटोनसह सांगितिक नोट आहे.</p>
 <dl><dd><span title="Spectrogram view showing musical note with overtones"><img alt="SpectrogramView 05a.png" src="../m/images/e/ef/spectrogramview_05a.png" width="601" height="154" /></span></dd></dl>
-<p>Here is the same note, this time in Logarithmic Spectrogram view</p>
+<p>येथे समान चिठ्ठी, या वेळी लोगारिथमिक स्पेक्ट्रोग्राम दृश्यात आहे</p>
 <dl><dd><span title="Logarithmic Spectrogram view of musical note with overtones"><img alt="SpectrogramView 12.png" src="../m/images/a/a0/spectrogramview_12.png" width="605" height="154" /></span></dd></dl>
-<p>Musical overtones form a linear sequence and are generally best viewed in Linear Spectrogram view.</p>
-<p>Here is a chromatic scale shown in Spectrogram view.</p>
+<p>संगीतमय ओव्हरटेन्स एक रेषीय क्रम बनवतात आणि सामान्यत: रेषीय स्पेक्ट्रोग्राम दृश्यात सर्वोत्तम पाहिले जातात.</p>
+<p>येथे स्पेक्ट्रोग्राम दृश्यात एक रंगीत पट्टी दर्शविला गेला आहे.</p>
 <dl><dd><span title="Spectrogram view of a chromatic scale"><img alt="SpectrogramView 13.png" src="../m/images/f/f3/spectrogramview_13.png" width="605" height="154" /></span></dd></dl>
-<p>Here is the same scale, this time in Logarithmic Spectrogram view</p>
+<p>येथे समान प्रमाण आहे, यावेळी लोगारिथमिक स्पेक्ट्रोग्राम दृश्यात</p>
 <dl><dd><span title="Logarithmic Spectrogram view of a chromatic scale"><img alt="SpectrogramView 14.png" src="../m/images/e/e7/spectrogramview_14.png" width="605" height="154" /></span></dd></dl>
-<p>A musical scale is an exponential sequence, and is generally best viewed in Logarithmic Spectrogram view.</p>
+<p>संगीतमय प्रमाणात हा एक घातांकीय क्रम आहे आणि सामान्यत: लॉगरिथमिक स्पेक्ट्रोग्राम दृश्यात तो सर्वोत्तमपणे पाहिला जातो.</p>
 <div id="others"></div>
-<h2><span class="mw-headline" id="Mel.2C_Bark_and_ERB_Spectrogram_views">Mel, Bark and ERB Spectrogram views</span></h2>
-<p>There are three additional styles of Spectrogram view that van be selected from the Track Control Panel <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">dropdown menu</a> or from <a href="spectrograms_preferences.html" title="Spectrograms Preferences">Preferences</a>:
+<h2><span class="mw-headline" id="Mel.2C_Bark_and_ERB_Spectrogram_views">मेल, बार्क आणि ईआरबी स्पेक्ट्रोग्राम दृश्ये</span></h2>
+<p>स्पेक्ट्रोग्राम दृश्याच्या तीन अतिरिक्त शैली आहेत जी गीतपट्टा नियंत्रण पॅनेलमधून निवडली जातील <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">ड्रॉपडाउन मेनू</a> किंवा कडून <a href="spectrograms_preferences.html" title="Spectrograms Preferences">प्राधान्ये</a>:
 </p>
-<ul><li><b>Mel</b>: The name <b>Mel</b> comes from the word <b> melody</b> to indicate that the scale is based on pitch comparisons. See <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Mel_scale">this Wikipedia page</a>.</li>
-<li><b>Bark</b>: This is a psychoacoustical scale based on subjective measurements of loudness.  It is related to, but somewhat less popular than, the Mel scale.  See <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Bark_scale">this Wikipedia page</a>.</li>
-<li><b>ERB</b>: The Equivalent Rectangular bandwidth scale or ERB is a measure used in psychoacoustics, which gives an approximation to the bandwidths of the filters in human hearing. It is implemented as a function ERBS(f) which returns the number of equivalent rectangular bandwidths below the given frequency f.  See <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Equivalent_rectangular_bandwidth">this Wikipedia page</a>.</li></ul>
-<div class="note">The above three scales approximate to linear in low frequencies but to logarithmic in high frequencies, thereby concentrating screen height in middle to high frequencies.<p>These scales aid <a href="spectral_selection.html#edit" title="Spectral Selection">spectral editing</a> in that you can see down to 0 Hz without too much screen height devoted to the low frequencies, where thumps might need treating with a highpass filter in <a href="spectral_edit_multi_tool.html" title="Spectral edit multi tool">Spectral edit multi tool</a> and the geometric mean frequency line is unimportant.  In contrast, within higher frequencies you often want to set a notch with multi tool or use <a href="spectral_edit_parametric_eq.html" title="Spectral edit parametric EQ">parametric equalization</a>, drawing a spectral selection around an undesirable sound with the geometric mean line approximately centered in that selection. </p> </div>
-<h3><span class="mw-headline" id="Comparison_of_Mel.2C_Logarithmic_and_Linear_Spectrogram_views">Comparison of Mel, Logarithmic and Linear Spectrogram views</span></h3>
-<p>The image below shows the scaling differences in different Spectrogram views of the same audio:
+<ul><li><b>मेल</b>: नाव <b>मेल</b> शब्दातून येते <b> melody</b> पट्टी पिचच्या तुलनेत आधारित असल्याचे दर्शविण्यासाठी. पहा <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Mel_scale">हे विकिपीडिया पृष्ठ</a>.</li>
+<li><b>बार्क</b>: हे एक मनोवैज्ञानिक पट्टी आहे जे कर्कशतेच्या व्यक्तिनिष्ठ मापावर आधारित आहे. हे मेल पट्टीशी संबंधित आहे, परंतु काहीसे कमी लोकप्रिय आहे.  पहा <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Bark_scale">हे विकिपीडिया पृष्ठ</a>.</li>
+<li><b>ERB</b>: समतुल्य आयताकृती बँडविड्थ पट्टी किंवा ईआरबी मानसशास्त्रात वापरला जाणारा एक उपाय आहे, जो मानवी श्रवणातील फिल्टरच्या बँडविड्थांना अंदाजे स्थान देतो. हे फंक्शन ईआरबीएस (एफ) म्हणून लागू केले गेले आहे जे दिलेल्या वारंवारतेच्या खाली समांतर आयताकृती बँडविड्थची संख्या परत करते f. पहा <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Equivalent_rectangular_bandwidth">हे विकिपीडिया पृष्ठ</a>.</li></ul>
+<div class="note">वरील तीन पट्टी कमी वारंवारता मधील रेखीय परंतु उच्च वारंवारतेमध्ये लॉगॅरिथमसाठी अंदाजे, त्याद्वारे मध्यम ते उच्च वारंवारतेमध्ये स्क्रीनची उंची एकाग्र करणे.<p>ही मापे मदत करतात<a href="spectral_selection.html#edit" title="Spectral Selection">वर्णक्रमीय संपादन</a> त्यामध्ये आपण कमी आवृत्त्यासाठी जास्त पडदा उंचीशिवाय 0 हर्ट्झ पर्यंत खाली पाहू शकता, जेथे थंप्सला हायपासपास फिल्टरसह उपचार करणे आवश्यक असू शकते. <a href="spectral_edit_multi_tool.html" title="Spectral edit multi tool">वर्णक्रमीय संपादन बहु साधन</a>आणि भौमितिक क्षमतेची वारंवारता रेखा महत्त्वपूर्ण नसते. याउलट, उच्च वारंवारतेमध्ये आपण बहुतेक वेळा मल्टी टूल किंवा वापरासह एक खाच सेट करू इच्छिता <a href="spectral_edit_parametric_eq.html" title="Spectral edit parametric EQ">पॅरामेट्रिक समानता </a>, अंदाजे त्या निवडीच्या मध्यभागी भौमितीय मध्य रेखासह अनिष्ट ध्वनीभोवती एक वर्णक्रमीय निवड रेखांकन. </p> </div>
+<h3><span class="mw-headline" id="Comparison_of_Mel.2C_Logarithmic_and_Linear_Spectrogram_views">मेल, लोगारिथमिक आणि रेखीय स्पेक्ट्रोग्राम दृश्यांची तुलना </ span> </h3>
+<p> खालील प्रतिमा समान ध्वनीच्या भिन्न स्पेक्ट्रोग्राम दृश्यांमधील सपट्टी फरक दर्शविते:
 </p>
 <dl><dd><span title="Spectrogram of the same audio displayed in Mel, Logarithmic and Linear views"><img alt="Mel-Log-Linear Spectrogram annotated.png" src="../m/images/e/ed/mel_log_linear_spectrogram_annotated.png" width="592" height="343" /></span></dd></dl>
 
 <div id="period"></div>
-<h2><span class="mw-headline" id="Period_Spectrogram_view">Period Spectrogram view</span></h2>
-<ul><li><b>Period</b>: This scale is the reciprocal of frequency (1/frequency) and attempts to visualise Enhanced Autocorrelation. It is therefore best used with the "Pitch (EAC)" algorithm, which is the same as the "Pitch (EAC)" View Mode choice in previous Audacity versions. To aid comparison with other scales, small period values (high frequencies) are plotted at the top. This scale tends to give the most screen estate to plotted areas, but Logarithmic scale gives the more correct representation of pitch, because <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Equal_temperament">Equal Temperament</a> divides the octave into 12 parts, all of which are equal on a logarithmic scale. </li></ul>
+<h2><span class="mw-headline" id="Period_Spectrogram_view"> कालावधी स्पेक्ट्रोग्राम दृश्य</span></h2>
+<ul><li><b>कालावधी</b>: हा पट्टी वारंवारता (1 / वारंवारता) ची परस्पर क्रिया आहे आणि वर्धित स्वयंचलितरित्या दृश्यमान करण्याचा प्रयत्न करतो. म्हणूनच "पिच (ईएसी)" अल्गोरिदमसह हा सर्वोत्तम वापरला जातो, जो मागील ऑडॅसिटी आवृत्तीमधील "पिच (ईएसी)" व्ह्यू मोड निवडीसारखाच आहे. इतर तराजूंच्या तुलनेत मदत करण्यासाठी, लहान कालावधीची मूल्ये (उच्च वारंवारता) शीर्षस्थानी रचली जातात. हे प्रमाण प्लॉट केलेल्या भागात सर्वाधिक स्क्रीन इस्टेट देण्याकडे झुकत आहे, परंतु लोगारिथमिक पट्टी खेळपट्टीला अधिक योग्य प्रतिनिधित्व देते, कारण <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Equal_temperament">समान स्वभाव </i> ऑक्टव्हला 12 भागांमध्ये विभागते, हे सर्व लॉगरिथमिक पट्टीवर समान आहेत. </li></ul>
 <div id="settings"></div>
-<h2><span class="mw-headline" id="Example_of_choosing_the_right_settings_for_the_job">Example of choosing the right settings for the job</span></h2>
-<p>Here is a music track displayed in Spectrogram view with the default settings of: Window size of 256, Window type of Hanning, Minimum Frequency 0 and Maximum frequency 8000. This is not very useful for identifying the different musical elements.</p>
+<h2><span class="mw-headline" id="Example_of_choosing_the_right_settings_for_the_job">नोकरीसाठी योग्य समायोजन निवडण्याचे उदाहरण</span></h2>
+<p>स्पेक्ट्रोग्राम दृश्यात पूर्वनिर्धारित समायोजनासह दर्शविलेले संगीत गीतपट्टा येथे आहेः २५६ चा विंडो आकार, हानिंगचा विंडो प्रकार, किमान वारंवारता 0 आणि जास्तीत जास्त वारंवारता ८०००.. भिन्न संगीत घटक ओळखण्यासाठी हे फार उपयुक्त नाही.</p>
 <dl><dd><span title="Music track shown in Spectrogram view and default settings"><img alt="SpectrogramView 10a.png" src="../m/images/6/68/spectrogramview_10a.png" width="601" height="247" /></span></dd></dl>
-<p>Here is the same track displayed in Logarithmic Spectrogram view. This is still not very useful for identifying the different musical elements.</p>
+<p>येथे समान गीतपट्टा लॉगरिथमिक स्पेक्ट्रोग्राम दृश्यात दर्शविला गेला आहे. हे विविध संगीत घटक ओळखण्यासाठी अद्याप फारसे उपयुक्त नाही.</p>
 <dl><dd><span title="Music track shown in Logarithmic Spectrogram view and default settings"><img alt="SpectrogramView 10.png" src="../m/images/7/70/spectrogramview_10.png" width="601" height="247" /></span></dd></dl>
-<p>Different settings can improve the visibility of certain elements in the recording. In the image below the settings were:  
+<p>भिन्न समायोजन मुद्रणामधील विशिष्ट घटकांची दृश्यमानता सुधारू शकतात. खालील प्रतिमांमध्ये समायोजन होतीः  
 </p>
-<ul><li> Window size of 2048 (larger window size improves frequency resolution)</li>
-<li> Window type of Hanning (no change from previous)</li>
-<li> Zero padding factor of 1 (no change from previous)</li>
-<li> Minimum Frequency 20 (remove display of sub-sonic frequencies)</li>
-<li> Maximum frequency 22000 (include display of higher frequencies).</li></ul>
+<ul><li> २०४८ चा विंडो आकार (मोठ्या विंडोचा आकार वारंवारतेचे निराकरण सुधारित करतो)</li>
+<li> विंडोचा प्रकार हॅनिंग (पूर्वीचा कोणताही बदल नाही)</li>
+<li> 1 चा शून्य पॅडिंग घटक (पूर्वीचा कोणताही बदल नाही)</li>
+<li> किमान वारंवारता २० (उप-सोनिक वारंवारितांचे प्रदर्शन काढा)</li>
+<li>कमाल वारंवारता २२००० (उच्च वारंवारतेचे प्रदर्शन समाविष्ट करा).</li></ul>
 <dl><dd><span title="Music track shown in Logarithmic Spectrogram view with window size 2048, minimum frequency 20, and maximum frequency 22000"><img alt="SpectrogramView 11.png" src="../m/images/4/49/spectrogramview_11.png" width="601" height="247" /></span></dd></dl>
 <div id="spectral_selection"></div>
-<h2><span class="mw-headline" id="Spectral_selection">Spectral selection</span></h2>
-<div class="note">In order to define a <a href="spectral_selection.html" title="Spectral Selection">spectral selection</a> you need to be in <a href="audio_track_dropdown_menu.html#spgram" title="Audio Track Dropdown Menu"><b>Spectrogram</b></a> view. Also you must have checked on the Enable Spectral Selection in either <a href="spectrograms_preferences.html" title="Spectrograms Preferences">Spectrograms Preferences</a>, or the <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">dropdown menu</a> of the <a href="audio_tracks.html#panel" title="Audio Tracks">Track Control Panel</a> choosing <b>Spectrogram Settings...</b>.
+<h2><span class="mw-headline" id="Spectral_selection">वर्णक्रमीय निवड</span></h2>
+<div class="note">परिभाषित करण्यासाठी <a href="spectral_selection.html" title="Spectral Selection">वर्णक्रमीय निवड</a> आपण असणे आवश्यक आहे <a href="audio_track_dropdown_menu.html#spgram" title="Audio Track Dropdown Menu"><b>स्पेक्ट्रोग्राम</b></a> पहा. तसेच आपण एकतर स्पेक्ट्रल निवड सक्षम करा देखील तपासले असावे <a href="spectrograms_preferences.html" title="Spectrograms Preferences">स्पेक्ट्रोग्राम प्राधान्ये</a>, किंवा <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">ड्रॉपडाउन मेनू</a>च्या the <a href="audio_tracks.html#panel" title="Audio Tracks">गीतपट्टा नियंत्रण पॅनेल</a> निवडत आहे<b>स्पेक्ट्रोग्राम समायोजन...</b>.
 </div>
-<p>To define a time range combined with a spectral range, hover at a vertical position that you want to be the approximate center frequency to act on then click and drag a selection horizontally. A horizontal line appears beside the I-Beam mouse pointer that defines the center frequency. 
-</p><p>Drag vertically, with or without continuing to drag horizontally, to define the range of frequencies to be acted on. A "box" containing a combined frequency and time range is now drawn in a colored tint as shown below <i>(the exact color of the tint will depend on the version of Audacity and the settings of your monitor)</i>: 
+<p>वर्णक्रमीय श्रेणीसह एकत्रित केलेली वेळ श्रेणी परिभाषित करण्यासाठी, अनुलंब स्थितीवर फिरवा ज्यावर आपण कार्य करण्यासाठी अंदाजे केंद्र वारंवारता व्हायचे असल्यास क्लिकवर क्लिक करा आणि निवड आडव्या ड्रॅग करा. आय-बीम माउस पॉईंटरच्या पुढे एक आडवे रेषा दिसते जी मध्य वारंवारता परिभाषित करते.
+</p><p>क्षैतिज ओळीने आडव्या ड्रॅग करणे किंवा त्याशिवाय कार्य करणे आवश्यक असलेल्या फ्रिक्वेन्सीची श्रेणी परिभाषित करण्यासाठी ड्रॅग करा. खाली दर्शविल्यानुसार आता एकत्रित वारंवारता आणि वेळ श्रेणी असलेला "बॉक्स" रंगीत रंगछटामध्ये काढलेला आहे (टिंटचा अचूक रंग ओड्यासिटीच्या आवृत्तीवर आणि आपल्या मॉनिटरच्या सामायोजानावर अवलंबून असेल)</i>: 
 </p>
 <dl><dd><span title="Audio track in spectrogram view with annotated spectral selection"><img alt="Spectral 02.png" src="../m/images/1/11/spectral_02.png" width="559" height="194" /></span></dd></dl>
-<p>The frequencies in the spectral selection can then be  <i><b><a href="glossary.html#filter" title="Glossary">filtered</a></b></i> in various ways, affecting their <i><b><a href="glossary.html#amplitude" title="Glossary">amplitude</a></b></i>, using the special <a href="spectral_selection.html#edit" title="Spectral Selection">Spectral edit</a> effects in the <a href="effect_menu.html" title="Effect Menu">Effect Menu</a>. This can be useful to remove unwanted extraneous noises from the audio or to apply very specific tone quality changes to it. For full details, see <a href="spectral_selection.html" title="Spectral Selection">Spectral Selection</a>.
+<p>वर्णक्रमीय निवडीमधील वारंवारता नंतर असू शकतात  <i><b><a href="glossary.html#filter" title="Glossary">फिल्टर केलेले</a></b></i> विविध प्रकारे, त्यांच्यावर परिणाम करीत आहे<i><b><a href="glossary.html#amplitude" title="Glossary"> मोठेपणा</a></b></i>, विशेष वापरून <a href="spectral_selection.html#edit" title="Spectral Selection">वर्णक्रमीय संपादन</a> मध्ये प्रभाव the <a href="effect_menu.html" title="Effect Menu">प्रभाव मेनू</a>. ध्वनीमधून अवांछित बाह्य ध्वनी काढून टाकण्यासाठी किंवा त्यामध्ये अत्यंत विशिष्ट टोन गुणवत्तेत बदल लागू करण्यासाठी हे उपयुक्त ठरेल. संपूर्ण तपशीलांसाठी, पहा <a href="spectral_selection.html" title="Spectral Selection">वर्णक्रमीय निवड</a>.
 </p><p><br />
 </p>
 <div id="spectrogram_settings"></div>
-<h2><span class="mw-headline" id="Per_track_Spectrogram_Settings">Per track <a href="spectrogram_settings.html" title="Spectrogram Settings">Spectrogram Settings</a></span></h2>
-<p>It is possible to temporarily change the Spectrogram settings for a particular Spectrogram track by opening the <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">Audio Track Dropdown Menu</a> on the Spectrogram track you want to change, then choose <b>Spectrogram Settings...</b>.  This opens a dialog similar to <a href="spectrograms_preferences.html" title="Spectrograms Preferences">Spectrograms Preferences</a> with the same settings available.
+<h2><span class="mw-headline" id="Per_track_Spectrogram_Settings">प्रत्येक गीतपट्टा<a href="spectrogram_settings.html" title="Spectrogram Settings">स्पेक्ट्रोग्राम समायोजन</a></span></h2>
+<p>विशिष्ट स्पेक्ट्रोग्राम गीतपट्टासाठी स्पेक्ट्रोग्राम समायोजन अस्थायीपणे उघडणे शक्य आहे <a href="audio_track_dropdown_menu.html" title="Audio Track Dropdown Menu">आपण बदलू इच्छित स्पेक्ट्रोग्राम गीतपट्टावर ध्वनी गीतपट्टा ड्रॉपडाउन मेनू </a>, नंतर <b> स्पेक्ट्रोग्राम समायोजन निवडा...</b>.  हे सारखा संवाद उघडेल <a href="spectrograms_preferences.html" title="Spectrograms Preferences">त्याच समायोजन उपलब्ध असलेल्या स्पेक्ट्रोग्राम प्राधान्ये </a>.
 </p>
 <dl><dd><span title="Audio track Spectrogram Settings dialog"><img alt="Spectrogram Track Settings.png" src="../m/images/b/b3/spectrogram_track_settings.png" width="432" height="387" /></span></dd></dl>
-<p>Changes you make when you press the <span class="button">OK</span> button only persist for that track while the project window is open. This is the case even if you save a project. Use Spectrograms Preferences instead to make permanent changes to the default Spectrogram settings with which a new Spectrogram track will open.
+<p>आपण दाबा तेव्हा आपण केलेले बदल <span class="button">ठीक आहे</span> प्रकल्प विंडो उघडली असताना फक्त त्या गीतपट्टासाठी बटण टिकते. आपण एखादा प्रकल्प वाचविला तरीही हेच प्रकरण आहे. त्याऐवजी नवीन स्पेक्ट्रोग्राम गीतपट्टा उघडेल त्या पूर्वनिर्धारित स्पेक्ट्रोग्राम सामायोजनामध्ये कायम बदल करण्यासाठी स्पेक्ट्रोग्राम प्राधान्ये वापरा.
 </p><p>See <a href="spectrogram_settings.html" title="Spectrogram Settings">Spectrogram Settings</a> for more details.
 </p>
 <!-- 
