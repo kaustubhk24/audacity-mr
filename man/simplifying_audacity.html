@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Simplifying Audacity - ओड्यासिटी माहितीपुस्तिका</title>
+<title>सुलभता ओड्यासिटी - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,7 +25,7 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Simplifying Audacity</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">सुलभता ओड्यासिटी </h1>
 				
 				<div id="bodyContent" class="mw-body-content">
 					<div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिकेकडून</div>
@@ -41,37 +41,37 @@
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top"><b>Simplified menus no longer work in Audacity 2.1.2.</b> You can use the feature in Audacity 2.1.1 from <a rel="nofollow" class="external free" href="http://www.oldfoss.com/Audacity.html">http://www.oldfoss.com/Audacity.html</a>.
+<td align="left" valign="top"><b>सुलभता मेनू यापुढे सुलभता ओड्यासिटी  २.१.२ मध्ये कार्य करणार नाही. </b> आपण सुलभता ओड्यासिटी  २.१.१ मधील वैशिष्ट्य वापरू शकता<a rel="nofollow" class="external free" href="http://www.oldfoss.com/Audacity.html">http://www.oldfoss.com/Audacity.html</a>.
 </td></tr></table></div>
-<div class="note">This page is primarily intended for <b>teachers</b> (and anyone working with others) who want to create an easier version of Audacity with fewer menu items.</div>
-<div class="advice"><p>These are advanced instructions that let you use freely available language tools to make a customized language file for Audacity that shows fewer menu items. </p> <p>The customized language file can be in English or any other <a href="languages.html" title="Languages">supported language</a>.</p></div> 
+<div class="note">हे पृष्ठ प्रामुख्याने <b> शिक्षक </b> (आणि इतरांसह कार्य करणारे कोणीही) ज्यांना कमी मेनू पर्यायसह ओड्यासिटीची सुलभ आवृत्ती तयार करायची आहे त्यांचे हेतू आहे.</div>
+<div class="advice"><p>हे प्रगत सूचना आहेत ज्या आपल्याला ओड्यासिटीसाठी सानुकूलित भाषेची धारिका तयार करण्यासाठी मुक्तपणे उपलब्ध भाषेची साधने वापरू देतील ज्यामुळे कमी मेनू पर्याय दिसतील.</p> <p>सानुकूलित भाषेची धारिका इंग्रजी किंवा इतर कोणत्याही असू शकते <a href="languages.html" title="Languages">समर्थित भाषा</a>.</p></div> 
 <p><br />
 </p>
-<h2><span class="mw-headline" id="Instructions">Instructions</span></h2>
-<div class="note">Eventually we hope to provide a customized language file with reduced menus ourself. Meantime, you can follow the below instructions to create your own file. If you need help following these instructions, please ask on the <a rel="nofollow" class="external text" href="https://forum.audacityteam.org">Audacity Forum</a>. </div>
-<ol><li> Obtain <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/poedit/">Poedit</a>. </li>
-<li> Obtain the current version of Audacity  from <a rel="nofollow" class="external free" href="http://audacityteam.org/download/">http://audacityteam.org/download/</a>.</li>
+<h2><span class="mw-headline" id="Instructions">सूचना</span></h2>
+<div class="note">अखेरीस आम्ही स्वयंचलितरित्या कमी मेनूसह सानुकूलित भाषेची धारिका प्रदान करू अशी आमची आशा आहे. दरम्यान, आपण स्वत:ची धारिका तयार करण्यासाठी खालील सूचनांचे अनुसरण करू शकता. जर आपल्याला या सूचनांचे अनुसरण करण्यास मदत हवी असेल तर कृपया यावर विचारा <a rel="nofollow" class="external text" href="https://forum.audacityteam.org">ओड्यासिटी मंच</a>. </div>
+<ol><li>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/poedit/">Poedit</a> मिळवा. </li>
+<li>  <a rel="nofollow" class="external free" href="http://audacityteam.org/download/">http://audacityteam.org/download/</a> कडून ओड्यासिटीची सद्य आवृत्ती मिळवा.</li>
 <li> Obtain the translations file for your language from <a rel="nofollow" class="external free" href="https://github.com/audacity/audacity/tree/master/locale">https://github.com/audacity/audacity/tree/master/locale</a>.
-<ul><li> For English language, right-click over "audacity.pot" and save the link or target to your computer.</li>
-<li> For languages other than English, right-click over the ".po" file for your language and save the link or target to your computer. You can check the two digit code that corresponds to your language <a href="languages.html#list" title="Languages">here</a>.</li></ul></li>
-<li> Load the .po or .pot file into Poedit.</li>
-<li> Add a "<b>!</b>" (exclamation mark) to left of the translation of each menu item you want to hide. The .pot file will not have translations, so just add a "<b>!</b>" in the empty translation box. <div class="advice"><b>View &gt; Simplified View:</b> <ul><li>You can provide a <i>View &gt; Simplified View</i> checkbox menu item to turn your simplified language on or off. To do this, ADD "Simplified View" (without the "!") in the empty translation box in the .pot file, or REMOVE the "<b>!</b>" from the translation of "!Simplified View" in the .po file.<li>If you provide View &gt; Simplified View and use the .pot file you should translate the items you want to remove and place "!" in front of them. Otherwise when you uncheck Simplified View there will be empty menu items.</ul></div>  </li>
-<li> Click <span class="menu">File &gt; Save as...</span>, type "Audacity" (without quotes) in the file name box and save. Poedit may warn you that some strings are not translated, or that some settings have not been specified, but that is not a problem.  Poedit will save "Audacity.po" and "Audacity.mo" (or "audacity.po" and "audacity.mo" with lower case "a" on Mac and Linux). All you need is the "Audacity.mo" or "audacity.mo" file.  </li>
-<li> Open the location to install your new "Audacity.mo" file.
-<ul><li> On <b>Windows</b>, open the "Languages" directory inside the Audacity installation directory.</li>
-<li> On <b>Mac</b>, right-click or control-click over Audacity.app &gt; Show Package Contents then open the "Contents" directory then the "Resources" directory. </li>
-<li> On <b>GNU/Linux</b>, open the "locale" directory in usr/share/ (for Audacity packaged builds) or in usr/local/share (if you built Audacity yourself).</li></ul></li>
-<li> In the directory opened in Step 7 above
-<ul><li> For <b>English language</b>, on Windows and Mac, create a folder called "<b>en-simple</b>" (without quotes) and paste your saved "Audacity.mo" or "audacity.mo" file inside that. On Linux, create a folder "<b>en-simple</b>", create a folder "<b>LC_MESSAGES</b>" inside that, then paste your "audacity.mo" file inside the "LC_MESSAGES" folder.   </li>
-<li> For <b>languages other than English</b>, open the directory for your language (for example, "fr" for French) and paste in the "Audacity.mo" file you saved so that it replaces the previous "Audacity.mo". </li></ul></li>
-<li> Restart Audacity and select your modified non-English language in <a href="interface_preferences.html" title="Interface Preferences">Interface Preferences</a> (if it is not already displaying). To display the simplified English language, choose "Simplified".</li></ol>
+<ul><li>इंग्रजी भाषेसाठी "audacity.pot" वर उजवा-क्लिक करा आणि आपल्या संगणकावर दुवा किंवा लक्ष्य जतन करा.</li>
+<li> इंग्रजीशिवाय इतर भाषांसाठी आपल्या भाषेसाठी ".po" धारिकेवर उजवे क्लिक करा आणि आपल्या संगणकावर दुवा किंवा लक्ष्य जतन करा. आपण आपल्या भाषेस अनुरूप दोन अंकांचा कोड  <a href="languages.html#list" title="Languages">येथे पाहू शकता</a>.</li></ul></li>
+<li> मध्ये .po किंवा .pot धारिका लोड करा Poedit.</li>
+<li>  "<b>!</b>" (उद्गार चिन्ह) आपण लपवू इच्छित असलेल्या प्रत्येक मेनू पर्यायाकडे भाषांतर डावीकडे जोडा.  .pot धारिकेमध्ये भाषांतर असणार नाही, म्हणून फक्त "<b>!</b>"  जोडा  रिक्त अनुवाद पेटी मध्ये. <div class="advice"><b>दृश्य &gt; सरलीकृत दृश्य:</b> <ul><li>आपण एक प्रदान करू शकता <i>दृश्य &gt; सरलीकृत दृश्य</i> आपली सोपी भाषा चालू किंवा बंद करण्यासाठी चेकबॉक्स मेनू पर्याय . हे करण्यासाठी .pot धारिकेमधील रिक्त अनुवाद पेटीमध्ये "सरलीकृत दृश्य" ("!" शिवाय) जोडा किंवा काढा "<b>!</b>" "! सरलीकृत पहा" च्या भाषांतरातून .po धारिकेमध्ये. <li> आपण & gt प्रदान केल्यास; सरलीकृत आपण हटवू इच्छित असलेल्या पर्यायचे भाषांतर करावे आणि ""! "ठेवा .pot धारिका पहा आणि वापरा." त्यांच्यासमोर अन्यथा जेव्हा आपण सरलीकृत दृश्‍य अनचेक कराल तेव्हा रिक्त मेनू पर्याय असतील.</ul></div>  </li>
+<li> क्लिक करा <span class="menu">धारिका &gt; म्हणून जतन करा...</span>, धारिका नाव पेटीमध्ये "ओड्यासिटी" (कोटशिवाय) लिहा आणि जतन करा. PoEdit आपल्याला चेतावणी देईल की काही तारांचे भाषांतर केलेले नाही, किंवा काही समायोजन निर्दिष्ट केल्या गेल्या नाहीत, परंतु ती एक समस्या नाही. PoEdit "audacity.po" आणि "audacity.mo" (किंवा "audacity.po" आणि मॅक आणि लिनक्सवरील लोअर केस "ए" सह "audacity.mo") जतन करेल. आपल्याला फक्त "audacity.mo" किंवा "audacity.mo" धारिकेची आवश्यकता आहे.  </li>
+<li> आपली नवीन "Audacity.mo" धारिका स्थापित करण्यासाठी स्थान उघडा.
+<ul><li> <b> विंडोज </b> वर, ओड्यासिटी स्थापना निर्देशिका अंतर्गत "भाषा" निर्देशिका उघडा.</li>
+<li> <b> मॅक </b> वर  ओड्यासिटी अनुप्रयोगावर उजवा-क्लिक करा किंवा नियंत्रण-क्लिक करा. पॅकेज सामग्री दर्शवा नंतर "सामग्री" निर्देशिका नंतर "संसाधने" निर्देशिका उघडा. </li>
+<li><b> जीएनयू / लिनक्स </b> वर, यूएसआर / शेअर / (ओड्यासिटी पॅकेज केलेल्या बिल्ड्ससाठी) किंवा यूएसआर / लोकल / शेअरमध्ये (आपण ओड्यासिटी स्वतः तयार केली असल्यास) "लोकॅल" निर्देशिका उघडा.</li></ul></li>
+<li>वरील चरणात ७ मध्ये उघडलेल्या निर्देशिकेत
+<ul><li> च्या साठी <b>इंग्रजी भाषा</b>, विंडोज आणि मॅक वर, नावाचे निर्देशिका तयार करा"<b>en-simple</b>" (कोटशिवाय) आणि त्यामध्ये आपली जतन केलेली "audacity.mo" किंवा "audacity.mo" धारिका चिकटवा करा. लिनक्स वर एक निर्देशिका तयार करा "<b>en-simple</b>", एक निर्देशिका तयार करा "<b>LC_MESSAGES</b>" त्या आत, नंतर आपली "Audacity.mo" धारिका "एलसी_एमसॅगेस" निर्देशिकेमध्ये चिकटवा करा.   </li>
+<li> <b> इंग्रजीशिवाय इतर भाषां </b> साठी, आपल्या भाषेसाठी निर्देशिका उघडा (उदाहरणार्थ फ्रेंचसाठी "Fr") आणि आपण जतन केलेली "Audacity.mo" धारिका चिकटवा करा जेणेकरून ती मागील "ओड्यासिटी" ची जागा घेईल.  ".</li></ul></li>
+<li> ओड्यासिटी पुन्हा सुरु करा आणि त्यात आपली सुधारित इंग्रजी भाषा निवडा <a href="interface_preferences.html" title="Interface Preferences">Interface Preferences</a> (हे आधीपासून प्रदर्शित होत नसेल तर). सरलीकृत इंग्रजी भाषा प्रदर्शित करण्यासाठी, "सरलीकृत" निवडा.</li></ol>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">Not all menu and other items can be hidden yet. For example, the Mute/Solo buttons, shipped Nyquist and LADSPA plug-ins and Preferences items cannot be hidden.
+<td align="left" valign="top">सर्व मेनू आणि इतर पर्याय अद्याप लपविले जाऊ शकत नाहीत. उदाहरणार्थ, नि: शब्द / सोलो बटणे, शिप केलेले Nyquist आणि एलएडीएसपीए प्लगइन आणि प्राधान्ये पर्याय लपविला जाऊ शकत नाही.
 </td></tr></table></div>
 
 <!-- 
