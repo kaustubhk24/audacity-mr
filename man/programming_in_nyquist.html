@@ -107,7 +107,7 @@
 <p>सर्वात सामान्य प्रकारचा एक लिफाफा म्हणजे एक तुकडा-आधारित रेषीय फंक्शन, जे सह तयार केले जाऊ शकते <tt>चढाओढ</tt> कार्य. Pwl फंक्शन पॅरामीटर्सची सूची घेते जे (वेळ, मूल्य) जोड दर्शवते. (0, 0) ची एक प्रारंभिक प्रारंभिक (वेळ, मूल्य) ची जोड आणि 0 चे अंतर्भूत अंतिम मूल्य असते. अंतिम वेळ अंतर्निहित नसल्यामुळे नेहमीच एक पॅरामीटर्सची विचित्र संख्या असावी. उदाहरणार्थ:
 </p>
 <pre>  ; सममितीय वाढीस 0.7 (वेळी 1) आणि 0 वर मागे पडणे (वेळी 2):
-  (pwl 1.0 0.7 2.0)
+  (पूल 1.0 0.7 2.0)
 </pre>
 <h3><span class="mw-headline" id="Combining_sounds">एकत्रित आवाज</span></h3>
 <p>सह दोन ध्वनी गुणाकार करण्याशिवाय <tt>खूप</tt> कार्य, आपण दोन आवाज (किंवा लिफाफे) जोडू शकता <tt>जोडा</tt> कार्य.
@@ -138,49 +138,49 @@
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ऑल-पास फिल्टर, कंघी फिल्टरच्या अनुनादांशिवाय विलंब प्रभाव तयार करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(notch2 साउंड हर्ट्ज)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(notch2साउंडहर्ट्ज)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr></table>
 <h3><span class="mw-headline" id="Transforming_and_combining_sounds">स्वर बदलणे आणि एकत्रित करणे</span></h3>
-<p>It is beyond the scope of this introductory tutorial to explain all of the ways that a sound can be transformed in Nyquist. These functions do not modify sounds directly, but instead modify the Nyquist <i>environment</i>. In order for these changes to affect sounds, you must use the <tt>cue</tt> function.
+<p>Nyquist मध्ये ध्वनीचे रूपांतर कसे करता येईल या सर्व मार्गांचे स्पष्टीकरण या प्रास्ताविक ट्यूटोरियलच्या व्याप्तीच्या पलीकडे आहे. हे कार्य ध्वनी थेट सुधारित करत नाहीत तर त्याऐवजी Nyquist सुधारित करतात<i>वातावरण</i>. हे बदल ध्वनीवर परिणाम करण्यासाठी, आपण हे वापरणे आवश्यक आहे <tt>क्यू</tt> कार्य.
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
 <tr>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(stretch factor (cue sound))</b>
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(स्ट्रेच फॅक्टर (क्यू आवाज))</b>
 </td>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Changes the length of the sound being cued by the given factor.
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या घटकाद्वारे काढलेल्या आवाजाची लांबी बदलते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(scale factor (cue sound))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(स्केल फॅक्टर (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Scales the amplitude of the sound being cued by the given factor.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या घटकाद्वारे ध्वनीचे मोठेपणाचे प्रमाण मोजले जाते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(loud dB (cue sound))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(लाऊड डीबी (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Increases or decreases the volume of the sound being cued by the given number of decibels.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या डेसिबल संख्येनुसार आवाजाची मात्रा वाढवते किंवा कमी होते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(at t (cue sound))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(टी वर (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Starts the given sound at a particular time in seconds. This can’t be used to add silence at the beginning or end, but it can be used when combining two or more sounds.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेला आवाज सेकंदामध्ये एका विशिष्ट वेळी प्रारंभ करतो. याचा वापर सुरूवातीस किंवा शेवटी शांतता जोडण्यासाठी केला जाऊ शकत नाही, परंतु दोन किंवा अधिक ध्वनी एकत्रित करताना याचा वापर केला जाऊ शकतो.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(seq (cue s1) (cue s2))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(सेक (क्यू एस 1) (क्यू एस 2))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Creates a sequence of sound s1 followed by sound s2.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ध्वनी एस 1 च्या नंतर ध्वनी एस 1 चा क्रम तयार करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(sim (cue s1) (cue s2))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(सिम (क्यू एस 1) (क्यू एस 2))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Combines two sounds so that they are played simultaneously.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दोन ध्वनी एकत्र करतात जेणेकरून ते एकाच वेळी वाजवले जातील.
 </td></tr></table>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins"><b>&gt;</b>&#160; Creating Nyquist Plug-ins</a> <br />
-</p><p><a href="introduction_to_nyquist_and_lisp_programming.html" title="Introduction to Nyquist and Lisp Programming"><b>&lt;</b>&#160; Introduction to Nyquist and Lisp Programming</a> <br />
-</p><p><a href="nyquist.html" title="Nyquist"><b>|&lt;</b> Nyquist</a>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins"><b>&gt;</b>&#160; Nyquist प्लगइन तयार करत आहे</a> <br />
+</p><p><a href="introduction_to_nyquist_and_lisp_programming.html" title="Introduction to Nyquist and Lisp Programming"><b>&lt;</b>&#160; Nyquist आणि लिस्प प्रोग्रामिंगची ओळख</a> <br />
+</p><p><a href="nyquist.html" title="Nyquist"><b>|&lt;</b> nyquist</a>
 </p>
 <!-- 
 NewPP limit report
