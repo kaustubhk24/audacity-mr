@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Amplify and Normalize - Audacity Manual</title>
+<title>वर्धित करा आणि सामान्य करा - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,107 +25,112 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Amplify and Normalize</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">वर्धित करा आणि सामान्य करा</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिका वरुन</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Amplify_and_Normalize#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा: <a href="#column-one">सुचालन</a>, <a href="https://alphamanual.audacityteam.org/man/Amplify_and_Normalize#searchInput">शोध</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">Amplify and Normalize are very similar effects, but have some subtle differences. Normalize has its own option for correcting <a href="dc_offset.html" title="DC offset">DC offset</a>. Amplify has its own option to enter the volume change to be applied and to allow "clipping" by amplifying to above 0.0 dB. The two effects behave differently if used on multiple tracks or channels. </div>  
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="intro">वर्धित करा आणि सामान्य करणे हे खूप समान प्रभाव आहेत, परंतु त्यांच्यात काही सूक्ष्म फरक आहेत.  <a href="dc_offset.html" title="DC offset">डीसी ऑफसेट </a>दुरुस्त करण्यासाठी सामान्य करण्याकडे स्वतःचा पर्याय आहे. वर्धित करण्याचा लागू केलेला आवाज बदल प्रविष्ट करण्यासाठी आणि ०.० डीबीपेक्षा अधिक वाढवून "फीत" ला परवानगी देण्यासाठी स्वतःचा एक पर्याय आहे. एकाधिक गीतपट्टा किंवा वाहिनीवर वापरले असल्यास दोन प्रभाव भिन्न पद्धतीने वागतात. </div>  
+<div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Applying_level_changes"><span class="tocnumber">1</span> <span class="toctext">Applying level changes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Using_Normalize_with_DC_offset_correction"><span class="tocnumber">2</span> <span class="toctext">Using Normalize with DC offset correction</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Differences_between_Amplify_and_Normalize_on_multiple_tracks_or_channels"><span class="tocnumber">3</span> <span class="toctext">Differences between Amplify and Normalize on multiple tracks or channels</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Applying_level_changes"><span class="tocnumber">१</span> <span class="toctext">स्तर बदल लागू करत आहे</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Using_Normalize_with_DC_offset_correction"><span class="tocnumber">२</span> <span class="toctext">डीसी ऑफसेट सुधारणेसह सामान्यीकरण वापरणे</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Differences_between_Amplify_and_Normalize_on_multiple_tracks_or_channels"><span class="tocnumber">३</span> <span class="toctext">एकाधिक गीतपट्टा किंवा वाहिनीवर वर्धीकरण आणि सामान्यीकरण दरम्यान फरक</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Amplify_multiple_audio_tracks"><span class="tocnumber">3.1</span> <span class="toctext">Amplify multiple audio tracks</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Normalize_multiple_audio_tracks_or_channels"><span class="tocnumber">3.2</span> <span class="toctext">Normalize multiple audio tracks or channels</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Visual_comparison"><span class="tocnumber">3.3</span> <span class="toctext">Visual comparison</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Amplify_multiple_audio_tracks"><span class="tocnumber">३.१</span> <span class="toctext">एकाधिक ध्वनी गीतपट्टा वर्धित करा</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Normalize_multiple_audio_tracks_or_channels"><span class="tocnumber">३.२</span> <span class="toctext">एकाधिक ध्वनी गीतपट्टा किंवा वाहिनी सामान्य करा</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Visual_comparison"><span class="tocnumber">३.३</span> <span class="toctext">दृश्यमान तुलना</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-7"><a href="#Advantages_and_Disadvantages"><span class="tocnumber">4</span> <span class="toctext">Advantages and Disadvantages</span></a>
+<li class="toclevel-1 tocsection-7"><a href="#Advantages_and_Disadvantages"><span class="tocnumber">४</span> <span class="toctext"> फायदे आणि तोटे</span></a>
 <ul>
-<li class="toclevel-2 tocsection-8"><a href="#Advantages_of_Amplify"><span class="tocnumber">4.1</span> <span class="toctext">Advantages of Amplify</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Advantages_of_Normalize"><span class="tocnumber">4.2</span> <span class="toctext">Advantages of Normalize</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#When_not_to_use_Amplify"><span class="tocnumber">4.3</span> <span class="toctext">When not to use Amplify</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#When_not_to_use_Normalize"><span class="tocnumber">4.4</span> <span class="toctext">When not to use Normalize</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Advantages_of_Amplify"><span class="tocnumber">४.१</span> <span class="toctext"> विस्तारित करण्याचे फायदे
+</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Advantages_of_Normalize"><span class="tocnumber">४.२</span> <span class="toctext">सामान्य करण्याचे फायदे</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#When_not_to_use_Amplify"><span class="tocnumber">४.३</span> <span class="toctext">वर्धित करून वापरु नका तेव्हा</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#When_not_to_use_Normalize"><span class="tocnumber">४.४</span> <span class="toctext">सामान्य करून वापरु नका तेव्हा</span></a></li>
 </ul>
 </li>
 </ul>
 </div>
 
-<h3><span class="mw-headline" id="Applying_level_changes">Applying level changes</span></h3>
-<p>The Normalize effect offers the option to "Normalize maximum amplitude to" a chosen level.
-</p><p>The Amplify effect offers two interdependent options (meaning that changing one changes the other):  "Amplification (dB)", and "New Peak Amplitude (dB)". The slider can also be used to choose the amplification level without entering any text input. 
-</p><p>For a single mono track, these are essentially different ways of saying the same thing. If we have a track whose peak amplitude is -6 dB (+0.5 to -0.5 on the vertical scale), there are three ways to bring the peak up to 0 dB (+1.0 to -1.0 on the vertical scale).
+<h3><span class="mw-headline" id="Applying_level_changes">स्तर बदल लागू करत आहे</span></h3>
+<p>सामान्य करा प्रभाव निवडलेल्या स्तरावर "जास्तीत जास्त मोठेपणाचे सामान्यकरण" करण्याचा पर्याय देते.
+</p><p>सामान्य करा प्रभाव निवडलेल्या स्तरावर "जास्तीत जास्त मोठेपणाचे सामान्यकरण" करण्याचा पर्याय देते."प्रवर्धन (डीबी)" आणि "नवीन उच्च मोठेपणा (डीबी)". घसारपट्टीचा वापर मजकूर माहिती पुरवणे प्रविष्ट न करता प्रवर्धन पातळी निवडण्यासाठी देखील केला जाऊ शकतो. 
+</p><p>एका मोनो गीतपट्टासाठी, हेच सांगण्याचे मुख्यतः भिन्न मार्ग आहेत. जर आपल्याकडे एक गीतपट्टा असेल ज्याचे शिखर मोठेपणा -६ डीबी आहे (+०.५ ते -०.५ अनुलंब स्केलवर) असेल तर शिखर 0 डीबी पर्यंत आणण्याचे तीन मार्ग आहेत (+१.० ते -१.० अनुलंब प्रमाणात).
 </p>
-<ol><li> "Normalize the maximum amplitude" to -0.0 dB </li>
-<li> Set "Amplification (dB)" to 6 dB </li>
-<li> Set "New Peak Amplitude (dB)" to -0.0 dB</li></ol>
-<p>With a -6 dB track, Amplify will always default to the above "Amplification (dB)" and "New Peak Amplitude (dB)" values, because it always defaults to amplifying to 0.0 dB.  
-</p><p>If the DC offset correction in Normalize is not applied, each of these methods will do exactly the same thing and the resulting audio will be identical.
+<ol><li>  -०.० डीबी पर्यंत "जास्तीत जास्त मोठेपणा सामान्य करा" </li>
+<li> "प्रवर्धन (डीबी)" वर ६ डीबी स्थापित करा </li>
+<li>  -०.० डीबी वर "नवीन उच्च मोठेपणा (डीबी)" स्थापित करा</li></ol>
+<p> -६ डीबी गीतपट्टासह, वर्धन नेहमी वरील "प्रवर्धन (डीबी)" आणि "नवीन उच्च मोठेपणा (डीबी)" मुल्ये मध्ये पूर्वनियोजित असेल कारण ते नेहमी ०.० डीबीमध्ये वाढवते.  
+</p><p>सामान्य करा मधील डीसी ऑफसेट सुधारणा लागू न केल्यास, यापैकी प्रत्येक पद्धती अगदी तशाच गोष्टी करेल आणि परिणामी ध्वनी एकसारखे असेल.
 </p>
-<h3><span class="mw-headline" id="Using_Normalize_with_DC_offset_correction">Using Normalize with DC offset correction</span></h3>
-<p>If DC offset is present, you should always use <a href="dc_offset.html" title="DC offset">DC offset correction</a>. A minimal amount of offset is very common, but large amounts (such as in Figure 1 below) should not normally happen. 
+<h3><span class="mw-headline" id="Using_Normalize_with_DC_offset_correction">डीसी ऑफसेट सुधारणेसह सामान्यीकरण वापरणे</span></h3>
+<p>डीसी ऑफसेट असल्यास आपण नेहमी  <a href="dc_offset.html" title="DC offset">डीसी ऑफसेट सुधारणा </a>वापरली पाहिजे. कमीतकमी ऑफसेट ही सामान्य गोष्ट आहे, परंतु मोठ्या प्रमाणात (जसे की आकृती १ मध्ये) सामान्यत: असे होऊ नये. 
 </p>
 <dl><dd><span title="DC offset in the upper of two tracks"><img alt="DC-offset.png" src="../m/images/d/df/dc_offset.png" width="373" height="200" /></span></dd>
-<dd><b>Figure 1</b></dd></dl>
-<p>In Figure 1 you can see that the upper track is not centerd on the horizontal line, but above it. It is "off-set". We can correct this fault by using the Normalize effect with "Remove any DC offset" selected. Using Normalize with this selected (but with "Normalize maximum amplitude to" not selected) will correct this offset without making any other changes to the amplitude - the result will look like the lower track.
+<dd><b>आकृती १</b></dd></dl>
+<p>आकृती १ मध्ये आपण पाहू शकता की वरचा गीतपट्टा क्षैतिज रेषेत मध्यभागी नाही तर त्यापेक्षा वर आहे. हे "ऑफ-सेट" आहे. निवडलेल्या "कोणत्याही डीसी ऑफसेट काढा" सह सामान्य करा प्रभावचा वापर करून आम्ही हा दोष सुधारू शकतो. या निवडलेल्यासह सामान्यीकरण (परंतु "सामान्य करणे कमाल मोठेपणासह" निवडले नाही) हे ऑफसेटमध्ये मोठेपणामध्ये इतर कोणतेही बदल न करता दुरुस्त करेल - परिणाम कमी गीतपट्टासारखे दिसेल.
 </p>
 <dl><dd><span title="Amplified track with DC offset before and after correction"><img alt="Amplify-normalize with DC offset.png" src="../m/images/1/1b/amplify_normalize_with_dc_offset.png" width="393" height="200" /></span></dd>
-<dd><b>Figure 2</b></dd></dl>
-<p>In the upper track in Figure 2 we show the offset upper track from Figure 1 after applying Amplify. In the lower track we see that amplified waveform after applying Normalize with DC offset correction.
-</p><p>In both cases the maximum peak amplitude was set to 0.0 dB, but note that in the upper (amplified) track, the resulting waveform is noticeably smaller than in the lower (normalized) track. Note also that the DC offset has become worse after amplifying than it was in Figure 1 - the offset has also been amplified.
-</p><p>The reason that the Amplified waveform is smaller is that the positive peaks above the horizontal line have been shifted up vertically by the DC offset, so although the positive peak is at 0.0 dB (+1.0 on the vertical scale), the negative peak below the horizontal is far away from -1.0.
+<dd><b>आकृती २</b></dd></dl>
+<p>आकृती २ मधील वरच्या गीतपट्टामध्ये आम्ही वर्धित केलेले लागू केल्यावर आकृती १ पासून ऑफसेट वरच्या गीतपट्टा दर्शवितो. खालच्या गीतपट्टामध्ये आपल्याला दिसेल की डीसी ऑफसेट सुधारणेसह सामान्यीकरण लागू केल्या नंतर वर्धित झालेले तरंग आहे.
+</p><p>दोन्ही प्रकरणांमध्ये जास्तीत जास्त शिखर मोठेपणा ०.० डीबी वर स्थापित केले गेले, परंतु लक्षात घ्या की वरच्या (वर्धित केलेल्या) गीतपट्टामध्ये परिणामी तरंग खालच्या (सामान्यीकृत) गीतपट्टापेक्षा लक्षणीय लहान आहे. हे देखील लक्षात घ्या की डीसी ऑफसेट आकृती १ मधील वाढीत होणारे नंतर अधिक खराब झाली आहे - ऑफसेट देखील वर्धित केले गेले आहे.
+</p><p>वर्धित झालेली तरंग लहान आहे याचे कारण म्हणजे डीसी ऑफसेटद्वारे आडव्या रेषेवरील सकारात्मक उच्च्स अनुलंबरित्या सरकले गेले आहेत, तर धन उच्च ०.० डीबी (वर्टिकल स्केलवर +१.०) वर असूनही, खाली नकारात्मक शिखर आहे क्षैतिज -१.० पासून बरेच दूर आहे.
 </p>
-<div class="note">If your recordings regularly produce noticeable <a href="dc_offset.html" title="DC offset">DC offset</a>, this indicates a fault in your system, usually with either the audio interface or its drivers. Connecting faulty sound sources can also cause this problem. These issues should be corrected as necessary by <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Updating_Sound_Device_Drivers">updating the drivers</a> or fixing the hardware.
-<ul><li> Newer Windows PCs may have a DC offset cancellation feature when recording from the built-in sound inputs; see the <a href="dc_offset.html" title="DC offset">DC offset</a> page.</div>  </li></ul>
+<div class="note">जर आपले ध्वनिमुद्रण नियमितपणे लक्षात घेण्यायोग्य <a href="dc_offset.html" title="DC offset">डीसी ऑफसेट </a>तयार करीत असेल तर हे आपल्या प्रणालीमधील दोष दर्शवते, सहसा ध्वनी इंटरफेस किंवा ड्राइव्हर्स् सह. सदोष ध्वनी स्त्रोत जोडणे देखील या समस्येस कारणीभूत ठरू शकते. हे मुद्दे <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Updating_Sound_Device_Drivers">ड्राइव्हर्स अद्यतनित करून</a> किंवा हार्डवेअरचे निराकरण करून आवश्यकतेनुसार दुरुस्त केले पाहिजेत.
+<ul><li> अंगभूत आवाज माहिती पुरवण्यावरून ध्वनिमुद्रण करताना नवीन विंडोज पीसींमध्ये डीसी ऑफसेट रद्दीकरण वैशिष्ट्य असू शकते;  <a href="dc_offset.html" title="DC offset">डीसी ऑफसेट </a> पृष्ठ पहा.</div>  </li></ul>
 <div id="multiple"></div>
-<h2><span class="mw-headline" id="Differences_between_Amplify_and_Normalize_on_multiple_tracks_or_channels">Differences between Amplify and Normalize on multiple tracks or channels</span></h2>
-<h3><span class="mw-headline" id="Amplify_multiple_audio_tracks">Amplify multiple audio tracks</span></h3>
-<p>If you select multiple tracks and apply the Amplify effect, then <b>all audio tracks will be amplified by the same amount</b>. 
-</p><p>For example, if you enter 3 dB in "Amplification (dB)", all audio tracks will be amplified by 3 dB, irrespective of their original level. Whatever peak volume differences there were between the tracks (or channels within a track) will be preserved.  In particular Amplify will always preserve the left-right balance of a stereo pair within a track.
+<h2><span class="mw-headline" id="Differences_between_Amplify_and_Normalize_on_multiple_tracks_or_channels">एकाधिक गीतपट्टा किंवा वाहिनीवर वर्धन केलेले आणि सामान्य केलेले दरम्यान फरक</span></h2>
+<h3><span class="mw-headline" id="Amplify_multiple_audio_tracks">एकाधिक ध्वनी गीतपट्टा वर्धित करा</span></h3>
+<p>आपण एकाधिक गीतपट्टा निवडल्यास आणि वर्धन प्रभाव लागू केल्यास <b>सर्व ध्वनी गीतपट्टा समान प्रमाणात वाढविले जातील. </b>
+</p><p>उदाहरणार्थ, आपण "प्रवर्धन (डीबी)" मध्ये ३ डीबी प्रविष्ट केल्यास सर्व ध्वनी गीतपट्टा त्यांच्या मूळ स्तराकडे दुर्लक्ष करून ३ डीबीने वाढविले जातील. गीतपट्टा दरम्यान जे काही उच्च आवाज फरक आहेत (किंवा गीतपट्टामधील वाहिनी) जतन केले जातील.
+विशेषत: वर्धन नेहमी गीतपट्टामध्ये स्टिरिओ जोडीचा डावा-उजवा शिल्लक संरक्षित करते.
 </p>
-<h3><span class="mw-headline" id="Normalize_multiple_audio_tracks_or_channels">Normalize multiple audio tracks or channels</span></h3>
-<p>The Normalize effect can optionally operate evenly on the channels of a stereo pair <i>(as Amplify does)</i> thus retaining the Left-Right balance all stereo channel pairs within the selected tracks.  A new checkbox has been added: "Normalize stereo channels independently" which is set by default to "off".  If this checkbox is unchecked then <b>all selected audio tracks will be normalized to the same peak level.</b>  If this checkbox is checked then all audio channels within the selected tracks will be independently normalized to the same peak level.
+<h3><span class="mw-headline" id="Normalize_multiple_audio_tracks_or_channels">एकाधिक ध्वनी गीतपट्टा किंवा वाहिनी सामान्य करा</span></h3>
+<p>सामान्यीकरण प्रभाव स्टिरिओ जोडीच्या वाहिनीवर वैकल्पिकरित्या समान रीतीने कार्य करू शकतो <i>(वर्धन करते तसे)</i> निवडलेल्या गीतपट्टामधील सर्व स्टीरिओ वाहिनी जोड्यांना डावे-उजवीकडे संतुलित ठेवते.
+एक नवीन चेकबॉक्स जोडला गेला आहे: "स्टीरिओ वाहिनी स्वतंत्रपणे सामान्य करा" जे पूर्वनियोजननुसार "बंद" वर स्थापित केले जाते.
+जर हा चेकबॉक्स अनचेक केला नसेल तर <b>सर्व निवडलेले ध्वनी गीतपट्टा समान शिखर पातळीवर सामान्य केले जातील.</b>
+जर हा चेकबॉक्स चेक केला असेल तर निवडलेल्या गीतपट्टामधील सर्व ध्वनी वाहिनी स्वतंत्रपणे समान शिखर पातळीवर सामान्य केली जातील.
 </p>
-<h3><span class="mw-headline" id="Visual_comparison">Visual comparison</span></h3>
-<p>Let us see this comparison on a stereo track. In Figure 3 below there are two stereo tracks - they each have two audio channels, Left and Right. Note that the peak amplitude of the Left (upper) channel of each stereo pair is quite a bit greater than the peak amplitude of the Right (lower) channel.
+<h3><span class="mw-headline" id="Visual_comparison">दृश्य तुलना</span></h3>
+<p>स्टीरिओ गीतपट्टावर ही तुलना पाहू. आकृती ३ मध्ये खाली दोन स्टीरिओ गीतपट्टा आहेत - त्या प्रत्येकाकडे डावे आणि उजवे दोन ध्वनी वाहिनी आहेत. लक्षात घ्या की प्रत्येक स्टिरिओ जोडीच्या डाव्या (वरच्या) वाहिनीचे शिखर मोठेपणा उजवीकडे (खालच्या) वाहिनीच्या शिखर मोठेपणापेक्षा थोडा मोठे आहे.
 </p>
 <dl><dd><span title="Stereo tracks showing lower Right channel amplitude"><img alt="Stereo tracks.png" src="../m/images/5/56/stereo_tracks.png" width="498" height="300" /></span></dd>
-<dd><b>Figure 3</b></dd></dl>
-<p>In Figure 4 below we can see the clear difference between the processed tracks after <b>Amplifying the upper track</b> to 0.0 dB, and <b>Normalizing the lower track</b> to 0.0 dB (with stereo channels normalized independently; you can choose to "Normalize stereo channels independently" or not.  
+<dd><b>आकृती ३</b></dd></dl>
+<p>आकृती ४ मध्ये <b>वरच्या गीतपट्टाचे विस्तार</b> ०.० डीबीपर्यंत वाढवल्यानंतर आणि <b>खाली असलेल्या गीतपट्टाला</b> ०.० डीबीचे सामान्यीकरणानंतर (स्वतंत्रपणे स्टीरिओ वाहिन्यांसह सामान्यीकरण करणे; आपण "स्टीरिओ वाहिन्या स्वतंत्रपणे सामान्य बनविणे" निवडू शकता किंवा नाही) .  
 </p>
 <dl><dd><span title="Contrast between amplifying and normalising stereo tracks having lower Right channel amplitude"><img alt="Amplify-vs-Normalize.png" src="../m/images/e/ea/amplify_vs_normalize.png" width="544" height="398" /></span></dd>
-<dd><b>Figure 4</b></dd></dl>
-<p>Note that in the upper stereo track, both Left and Right channels have been amplified by the same amount (about 1.0 dB). Only the Left channel has a resultant peak value of 0.0 dB, because the Right channel was of lower amplitude. In the lower track, Normalize has processed each channel independently to give <i>both</i> channels a resultant peak value of 0.0 dB.
+<dd><b>आकृती ४</b></dd></dl>
+<p>लक्षात घ्या की वरील स्टिरीओ गीतपट्टामध्ये डावे आणि उजवे दोन्ही वाहिनी समान प्रमाणात (सुमारे १.० डीबी) वाढविले गेले आहेत. केवळ डाव्या वाहिनीचे परिणामी उच्च मूल्य ०.० डीबी असते, कारण उजवे वाहिनी कमी मोठेपणाचे होते. खालच्या गीतपट्टामध्ये, <i>दोन्ही</i> वाहिनीला ०.० डीबीचे परिणामी उच्च मूल्य देण्यासाठी सामान्य करण्याने प्रत्येक वाहिनीवर स्वतंत्रपणे प्रक्रिया केली आहे.
 </p>
-<h2><span class="mw-headline" id="Advantages_and_Disadvantages">Advantages and Disadvantages</span></h2>
-<h3><span class="mw-headline" id="Advantages_of_Amplify">Advantages of Amplify</span></h3>
-<ul><li> <b>Change the level of one or more tracks or channels by the same amount</b>, preserving the balance between them </li>
-<li> <b>Slider for quick amplification adjustment</b> </li>
-<li> <b>Automatically calculates the amplification required</b> to set the loudest track or channel to maximum volume without clipping</li>
-<li> <b>Can also be set to allow clipping</b></li></ul>
-<p>For example, to increase the level of several tracks by 2 dB, use the Amplify effect and enter "2" (without quotes) in the "Amplification (dB)" box. 
+<h2><span class="mw-headline" id="Advantages_and_Disadvantages">फायदे आणि तोटे</span></h2>
+<h3><span class="mw-headline" id="Advantages_of_Amplify">वर्धनचे फायदे</span></h3>
+<ul><li> <b>एक किंवा अधिक गीतपट्टा किंवा वाहिनीची पातळी समान प्रमाणात बदलून</b> त्या दरम्यानची शिल्लक राखून ठेवा </li>
+<li> <b>द्रुत प्रवर्धन समायोजनासाठी घसरपट्टी</b> </li>
+<li> <b>फीतशिवाय सर्वात मोठा आवाजाचे गीतपट्टा किंवा वाहिनी जास्तीत जास्त आवाजावर स्थापित करण्यासाठी आवश्यक</b> असलेल्या प्रवर्धनची स्वयंचलितपणे गणना करते</li>
+<li> <b>फीतला अनुमती देण्यासाठी देखील स्थापित केले जाऊ शकते</b></li></ul>
+<p>उदाहरणार्थ, कित्येक गीतपट्टाची पातळी २ डीबीने वाढविण्यासाठी, वर्धन प्रभाव वापरा आणि "प्रवर्धन (डीबी)" बॉक्समध्ये "2" (कोटेशिवाय) प्रविष्ट करा. 
 </p>
-<h3><span class="mw-headline" id="Advantages_of_Normalize">Advantages of Normalize</span></h3>
-<ul><li> <b>Correct DC offset</b></li>
-<li> <b>Adjust multiple audio tracks or channels to the same peak level, removing any level disparity between them</b>
-<ul><li> <b>There is an option to normalize stereo channels as a pair</b> (retaining the balance between the channels) instead of independently.</li></ul></li>
-<li> <b>Normalization above the clipping level of 0 dB is disallowed</b></li></ul>
-<p>For example, if you have accidentally recorded one channel quieter than the other in a stereo recording (a common scenario with LP or tape recordings), normalizing the channels independently will go a long way toward restoring a correct balance. Note because normalization is based on "peak" rather the "average" level, it does not necessarily result in processed tracks actually <i>sounding</i> equally loud.  
+<h3><span class="mw-headline" id="Advantages_of_Normalize">सामान्यीकरणाचे फायदे</span></h3>
+<ul><li> <b>डीसी ऑफसेट बरोबर करा</b></li>
+<li> <b>त्यांच्यामधील कोणतेही स्तर असमानता काढून समान शिखर पातळीवर अनेक ध्वनी गीतपट्टा किंवा वाहिनी समायोजित करा</b>
+<ul><li> <b>स्टीरिओ वाहिनी स्वतंत्ररित्या न ठेवता जोड्या</b> म्हणून (वाहिनीमधील समतोल राखून ठेवणे) सामान्य करण्याचा पर्याय आहे.</li></ul></li>
+<li> <b>० डीबीच्या फीत स्तराच्या वरील सामान्यीकरण अनुमत नाही</b></li></ul>
+<p>उदाहरणार्थ, आपण स्टिरिओ ध्वनिमुद्रण (एलपी किंवा टेप ध्वनिमुद्रणसह सामान्य परिस्थिती) चुकून दुसर्‍या वाहिन्यापेक्षा एक वाहिनी मुद्रण केले असल्यास, वाहिनी स्वतंत्रपणे सामान्य करणे योग्य शिल्लक पुनर्संचयित करण्यासाठी बराच काळ जाईल. लक्षात घ्या कारण सामान्यीकरण "उच्च" ऐवजी "सरासरी" स्तरावर आधारित आहे, यामुळे प्रक्रिया केलेल्या गीतपट्टा प्रत्यक्षात तितकाच मोठा <i>आवाज</i> होऊ शकत नाहीत.  
 </p>
-<h3><span class="mw-headline" id="When_not_to_use_Amplify">When not to use Amplify</span></h3>
-<p>If your audio has DC offset present, you should use Normalize to correct that offset.
-</p><p>If you are applying a <a href="macros.html" title="Macros">Macro</a> and want to bring a track or files to a specific level, use Normalize instead. Amplify in a Macro will not make the track or file as loud as possible if "New Peak Amplitude (dB)" is set to 0 dB and will not set the amplitude to any other chosen amount in that box. Because Amplify is being applied automatically it can only apply the "Amplification (dB)" amount as saved in the "Ratio" parameter.
+<h3><span class="mw-headline" id="When_not_to_use_Amplify">वर्धन वापरु नका तेव्हा</span></h3>
+<p>आपल्या ध्वनीमध्ये डीसी ऑफसेट असल्यास, आपण ते ऑफसेट दुरुस्त करण्यासाठी सामान्यीकरण वापरावे.
+</p><p>आपण <a href="macros.html" title="Macros">मॅक्रो</a> लागू करत असल्यास आणि एखाद्या विशिष्ट स्तरावर गीतपट्टा किंवा फायली आणू इच्छित असल्यास त्याऐवजी सामान्यीकरण वापरा. "नवीन उच्च मोठेपणा (डीबी)" ० डीबी वर सेट केले असल्यास आणि त्या बॉक्समधील कोणत्याही निवडलेल्या रकमेचे मोठेपणा सेट करणार नाही तर मॅक्रोमध्ये एम्प्लिफाई गीतपट्टा किंवा शक्य तितक्या मोठ्या प्रमाणात धारिका बनविणार नाही. वर्धन स्वयंचलितपणे लागू केले जात असल्याने ते "प्रमाण" (मापदंड) मध्ये जतन केलेली "प्रवर्धन (डीबी)" रक्कमच लागू करू शकते.
 </p>
-<h3><span class="mw-headline" id="When_not_to_use_Normalize">When not to use Normalize</span></h3>
-<p>If multiple tracks contain <b>intentional</b> differences in peak levels, you should never normalize any of them. The <b>only</b> way to preserve the relative balance between them is to select them all as a group and amplify them, so they are all scaled up by the same amount. 
-</p><p>You *can* normalize stereo tracks without changing their channel balance, but only if a) the stereo track is not split into Left and Right and b) "Normalize stereo channels independently" is <b>unchecked</b>.      
-</p><p>If tracks with intentional peak differences have DC offset that needs correction, then you can and should use Normalize, but with "Normalize maximum amplitude to" <b>unchecked</b>.
+<h3><span class="mw-headline" id="When_not_to_use_Normalize">सामान्य करणे वापरु नका तेव्हा</span></h3>
+<p>एकाधिक गीतपट्टामध्ये उच्च पातळीमध्ये <b>हेतुपुरस्सर</b> फरक असल्यास आपण त्यापैकी कधीही सामान्य करू नये. त्यांच्यातील सापेक्ष संतुलन टिकवण्याचा <b>एकमेव</b> मार्ग म्हणजे त्या सर्वांना एक गट म्हणून निवडणे आणि त्यांचे विस्तार करणे म्हणजे ते सर्व समान प्रमाणात वाढविले जातात. 
+</p><p>आपण स्टिरिओ गीतपट्टाचे वाहिनी शिल्लक बदलल्याशिवाय त्यांना सामान्य बनवू शकता, परंतु केवळ जर अ) तर स्टीरिओ गीतपट्टा डाव्या आणि उजवीकडे विभागला गेला नाही आणि बी) "स्टीरिओ वाहिनी स्वतंत्रपणे सामान्यीकरण करा" <b>अनचेक केले जाईल</b>.      
+</p><p>जर हेतुपुरस्सर शिखर फरक असलेल्या गीतपट्टामध्ये डीसी ऑफसेट असेल ज्यास दुरुस्ती आवश्यक असेल तर आपण सामान्यीकृत करू शकता आणि वापरू शकता परंतु "सामान्य करणे ते जास्तीत जास्त मोठेपणा" <b>अनचेक केले जाऊ शकते</b>.
 </p>
 <!-- 
 NewPP limit report
