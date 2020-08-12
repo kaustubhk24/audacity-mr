@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Programming in Nyquist - ओड्यासिटी माहितीपुस्तिका</title>
+<title>Nyquist मध्ये प्रोग्रामिंग - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,7 +25,7 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Programming in Nyquist</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Nyquist मध्ये प्रोग्रामिंग</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
 					<div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिकेकडून</div>
@@ -33,154 +33,154 @@
 										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Programming_in_Nyquist#शोधाInput">शोधा</a></div>
 
 					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Programming_in_Nyquist"><span class="tocnumber">1</span> <span class="toctext">Programming in Nyquist</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Programming_in_Nyquist"><span class="tocnumber">1</span> <span class="toctext">Nyquist मध्ये प्रोग्रामिंग</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Synthesizing"><span class="tocnumber">1.1</span> <span class="toctext">Synthesizing</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Combining_sounds"><span class="tocnumber">1.2</span> <span class="toctext">Combining sounds</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Filters"><span class="tocnumber">1.3</span> <span class="toctext">Filters</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Transforming_and_combining_sounds"><span class="tocnumber">1.4</span> <span class="toctext">Transforming and combining sounds</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="#Synthesizing"><span class="tocnumber">1.1</span> <span class="toctext">संश्लेषण</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Combining_sounds"><span class="tocnumber">1.2</span> <span class="toctext">एकत्रित आवाज</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Filters"><span class="tocnumber">1.3</span> <span class="toctext">गाळणे</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Transforming_and_combining_sounds"><span class="tocnumber">1.4</span> <span class="toctext">स्वर बदलणे आणि एकत्रित करणे</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-6"><a href="#Links"><span class="tocnumber">2</span> <span class="toctext">Links</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Programming_in_Nyquist">Programming in Nyquist</span></h2>
-<p>What makes Nyquist distinct from Lisp is that it is designed to work with sound, and has lots of built-in primitives and functions that synthesize, analyze, and manipulate sounds. Within Audacity, this makes it relatively easy to build complicated effects out of Nyquist’s palette of built-in functions.
-</p><p>In Nyquist, a variable can hold a sound just as easily as it can hold a number or a string. There are a lot of functions provided that allow you to stretch, distort, and combine sounds very efficiently. It is even possible to “rip apart” a sound and access its individual samples, but that’s beyond the scope of this tutorial.
-</p><p>To try out a Nyquist expression in Audacity, you can use <a href="nyquist_prompt.html" title="Nyquist Prompt">Nyquist Prompt</a> in the Effect menu. Whatever audio you have selected will be in the variable <tt>s</tt>, and the selection will be replaced with the result of the Nyquist expression you enter. In Part 3: <a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins">Creating Nyquist Plug-ins</a>, you will learn how to create a plug-in effect using Nyquist.
+<h2><span class="mw-headline" id="Programming_in_Nyquist">Nyquist मध्ये प्रोग्रामिंग</span></h2>
+<p>लिस्पपासून नेक्विस्टला वेगळेपणाचे बनवते हे ध्वनीसह कार्य करण्यासाठी डिझाइन केलेले आहे आणि त्यात बरेच अंगभूत आदिम आणि कार्ये आहेत जे ध्वनींचे संश्लेषण, विश्लेषण आणि हाताळणी करतात. ऑडसिटी मध्ये, हे बिल्ट-इन फंक्शन्सच्या नेक्विस्टच्या पॅलेटच्या बाहेर जटिल प्रभाव तयार करणे तुलनेने सोपे करते.
+</p><p>Nyquist मध्ये, व्हेरिएबल एक आवाज किंवा स्ट्रिंग ठेवू शकतो इतका सहजपणे आवाज ठेवू शकतो. प्रदान केलेली बरीच फंक्शन्स आहेत ज्यामुळे आपल्याला ध्वनी ताणून, विकृत करण्याची आणि कार्यक्षमतेने एकत्र करण्याची परवानगी मिळते. आवाज "फाडून टाकणे" आणि त्याच्या वैयक्तिक नमुन्यांमध्ये प्रवेश करणे देखील शक्य आहे, परंतु हे या ट्यूटोरियलच्या व्याप्तीच्या पलीकडे आहे.
+</p><p>ऑडॅसिटीमध्ये न्यक्विस्ट अभिव्यक्ती वापरुन पहाण्यासाठी आपण वापरू शकता <a href="nyquist_prompt.html" title="Nyquist Prompt">Nyquist तात्कालीन</a>प्रभाव मेनूमध्ये. आपण निवडलेला कोणताही ऑडिओ व्हेरिएबलमध्ये असेल <tt>एस</tt>, आणि आपण प्रविष्ट केलेल्या Nyquist अभिव्यक्तीच्या परिणामासह निवड पुनर्स्थित केली जाईल. भाग 3 मध्ये: <a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins">Nyquist प्लगइन तयार करत आहे</a>,आपण Nyquist चा वापर करून प्लग-इन प्रभाव कसा तयार करावा ते शिकाल.
 </p>
-<h3><span class="mw-headline" id="Synthesizing">Synthesizing</span></h3>
-<p>The following functions all create new sounds. You can use them to create “generate” plug-in effects, or you can combine these synthesized sounds with selected audio to produce interesting effects.
+<h3><span class="mw-headline" id="Synthesizing">संश्लेषण</span></h3>
+<p>पुढील कार्ये सर्व नवीन आवाज तयार करतात. आपण ते "व्युत्पन्न" प्लग-इन प्रभाव तयार करण्यासाठी वापरू शकता किंवा आपण या संश्लेषित ध्वनी निवडलेल्या ऑडिओसह एकत्रित करू शकता मनोरंजक प्रभाव तयार करण्यासाठी.
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
 <tr>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(noise)</b>
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(आवाज)</b>
 </td>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Generates white noise
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> पांढरा आवाज निर्माण करतो
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(const value [duration])</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(स्थिर मूल्य [कालावधी])</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Generates a constant (silent) signal
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> एक स्थिर (शांत) सिग्नल व्युत्पन्न करते
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(sine pitch [duration])</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(साइन पीच [कालावधी])</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Generates a sine wave at an indicated pitch and duration.The pitch is a MIDI note number, with 60 for middle C.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">दर्शविलेल्या खेळपट्टीवर आणि कालावधीवर साइन वेव्ह व्युत्पन्न करते. खेळपट्टी एक एमआयडीआय टीप क्रमांक आहे, ज्यामध्ये मध्यवर्ती सीसाठी 60 आहे.
+</td> </tr>
+<tr>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एचझेस्कोस हर्ट्ज)</b>
+</td>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हर्ट्जमधील विशिष्ट वारंवारतेवर साइन वेव्ह व्युत्पन्न करते.
+</td> </tr>
+<tr>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-सॉ हर्ट्ज)</b>
+</td>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हर्ट्झमधील विशिष्ट वारंवारतेवर भूतलाची लाट निर्माण करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(hzosc hz)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-थ्री हर्ट्ज)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Generates a sine wave at a particular frequency in Hz.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हर्ट्जमधील विशिष्ट वारंवारतेवर त्रिकोण लहर निर्माण करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(osc-saw hz)</b>
-</td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Generates a sawtooth wave at a particular frequency in Hz.
-</td></tr>
-<tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(osc-tri hz)</b>
-</td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Generates a triangle wave at a particular frequency in Hz.
-</td></tr>
-<tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(osc-pulse hz bias)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-पल्स हर्ट्ज पूर्वाग्रह)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(pluck pitch)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(पिच पीक)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr></table>
-<p><b>Envelopes</b>
-</p><p>Nyquist has support for envelopes. By applying an envelope to a sound, you can control the overall shape of its amplitude. One of the easiest ways to construct an envelope is with the <tt>env</tt> function, which takes 7 parameters that are commonly used for shaping synthesized musical notes: attack time, decay time, release time, attack level, decay level, sustain level, and overall duration.See the figure below:
+<p><b>लिफाफे</b>
+</p><p>लिफाफ्यांसाठी Nyquist चे समर्थन आहे. आवाजावर एक लिफाफा लावून, आपण त्याच्या विशालतेचे एकूण आकार नियंत्रित करू शकता. एक लिफाफा तयार करण्याचा सर्वात सोपा मार्ग म्हणजे <tt>साधारण</tt> फंक्शन, जे संश्लेषित संगीत नोट्स आकारण्यासाठी सामान्यतः वापरल्या जाणार्‍या 7 पॅरामीटर्स घेतेः हल्ल्याची वेळ, किडणे वेळ, रीलिझ वेळ, हल्ला पातळी, किडणे पातळी, टिकाव पातळी आणि एकूण कालावधी. खालील आकृती पहा:
 </p><p><a href="https://alphamanual.audacityteam.org/man/File:Nyquist-envelope.gif" class="image"><img alt="Nyquist-envelope.gif" src="../m/images/d/d9/nyquist_envelope.gif" width="467" height="200" /></a>
-</p><p>To apply an envelope to a sound, just use the <tt>mult</tt> function. So if <tt>s</tt> is a sound, then this is the sound with a simple envelope applied to it:
+</p><p>आवाजावर एक लिफाफा लागू करण्यासाठी, फक्त वापरा <tt>खूप</tt> कार्य. तर जर<tt>s</tt> एक आवाज आहे, तर हा आवाज असा आहे ज्यावर साधा लिफाफा लागू आहे:
 </p>
-<pre>  (mult s (env 0.1 0.1 0.2 1.0 0.5 0.3 1.0))
+<pre>  (मल्टी एस (साधारण ०.१ ०.० ०.२.० ०.० ०.० ०.०))
 </pre>
-<p>One of the most general type of envelope is a piece-wise linear function, which can be constructed with the <tt>pwl</tt> function. The pwl function takes a list of parameters which denote (time, value) pairs. There is an implicit initial (time, value) pair of (0, 0), and an implicit final value of 0. There should always be an odd number of parameters, since the final time is not implicit. For example:
+<p>सर्वात सामान्य प्रकारचा एक लिफाफा म्हणजे एक तुकडा-आधारित रेषीय फंक्शन, जे सह तयार केले जाऊ शकते <tt>चढाओढ</tt> कार्य.तलावफंक्शन पॅरामीटर्सची सूची घेते जे (वेळ, मूल्य) जोड दर्शवते. (0, 0) ची एक प्रारंभिक प्रारंभिक (वेळ, मूल्य) ची जोड आणि 0 चे अंतर्भूत अंतिम मूल्य असते. अंतिम वेळ अंतर्निहित नसल्यामुळे नेहमीच एक पॅरामीटर्सची विचित्र संख्या असावी. उदाहरणार्थ:
 </p>
-<pre>  ; symmetric rise to 0.7 (at time 1) and fall back to 0 (at time 2):
-  (pwl 1.0 0.7 2.0)
+<pre>  ; सममितीय वाढीस 0.7 (वेळी 1) आणि 0 वर मागे पडणे (वेळी 2):
+  (पूल 1.0 0.7 2.0)
 </pre>
-<h3><span class="mw-headline" id="Combining_sounds">Combining sounds</span></h3>
-<p>Besides multiplying two sounds with the <tt>mult</tt> function, you can add two sounds (or envelopes) with the <tt>add</tt> function.
+<h3><span class="mw-headline" id="Combining_sounds">एकत्रित आवाज</span></h3>
+<p>सह दोन ध्वनी गुणाकार करण्याशिवाय <tt>खूप</tt> कार्य, आपण दोन आवाज (किंवा लिफाफे) जोडू शकता <tt>जोडा</tt> कार्य.
 </p>
-<h3><span class="mw-headline" id="Filters">Filters</span></h3>
-<p>Nyquist comes with a number of common filters built-in. Here are some of the more common ones:
+<h3><span class="mw-headline" id="Filters">फिल्टर</span></h3>
+<p>Nyquist अंगभूत अनेक सामान्य फिल्टरसह येते. येथे काही सामान्य गोष्टी आहेत:
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
 <tr>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(lp sound cut-off)</b>
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एलपी ध्वनी कट ऑफ)</b>
 </td>
 <td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(hp sound cut-off)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एचपी ध्वनी कट ऑफ)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> High-pass filter (first-order Butterworth). Cut-off may be a float or a signal (for time-varying filtering) and expresses hertz.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हाय-पास फिल्टर (फर्स्ट-ऑर्डर बटरवर्थ). कट ऑफ एक फ्लोट किंवा सिग्नल असू शकतो (वेळानुसार फिल्टरिंगसाठी) आणि हर्ट्ज व्यक्त करतो.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(comb sound hz decay)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(कंघी ध्वनी हर्ट्ज क्षय)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Applies a comb filter to sound, which emphasizes (resonates at) frequencies that are multiples of a Hz.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">आवाजासाठी एक कंघी फिल्टर लागू करते, जे हर्ट्जच्या बहुगुणित फ्रिक्वेन्सीवर जोर देते (येथे प्रतिध्वनी करते).
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(alpass sound decay hz)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(अल्पास ध्वनी क्षय हर्ट्ज)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> All-pass filter, creating a delay effect without the resonances of a comb filter.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ऑल-पास फिल्टर, कंघी फिल्टरच्या अनुनादांशिवाय विलंब प्रभाव तयार करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(notch2 sound hz)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(notch2साउंडहर्ट्ज)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr></table>
-<h3><span class="mw-headline" id="Transforming_and_combining_sounds">Transforming and combining sounds</span></h3>
-<p>It is beyond the scope of this introductory tutorial to explain all of the ways that a sound can be transformed in Nyquist. These functions do not modify sounds directly, but instead modify the Nyquist <i>environment</i>. In order for these changes to affect sounds, you must use the <tt>cue</tt> function.
+<h3><span class="mw-headline" id="Transforming_and_combining_sounds">स्वर बदलणे आणि एकत्रित करणे</span></h3>
+<p>Nyquist मध्ये ध्वनीचे रूपांतर कसे करता येईल या सर्व मार्गांचे स्पष्टीकरण या प्रास्ताविक ट्यूटोरियलच्या व्याप्तीच्या पलीकडे आहे. हे कार्य ध्वनी थेट सुधारित करत नाहीत तर त्याऐवजी Nyquist सुधारित करतात<i>वातावरण</i>. हे बदल ध्वनीवर परिणाम करण्यासाठी, आपण हे वापरणे आवश्यक आहे <tt>क्यू</tt> कार्य.
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
 <tr>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(stretch factor (cue sound))</b>
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(स्ट्रेच फॅक्टर (क्यू आवाज))</b>
 </td>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Changes the length of the sound being cued by the given factor.
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या घटकाद्वारे काढलेल्या आवाजाची लांबी बदलते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(scale factor (cue sound))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(स्केल फॅक्टर (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Scales the amplitude of the sound being cued by the given factor.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या घटकाद्वारे ध्वनीचे मोठेपणाचे प्रमाण मोजले जाते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(loud dB (cue sound))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(लाऊड डीबी (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Increases or decreases the volume of the sound being cued by the given number of decibels.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या डेसिबल संख्येनुसार आवाजाची मात्रा वाढवते किंवा कमी होते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(at t (cue sound))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(टी वर (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Starts the given sound at a particular time in seconds. This can’t be used to add silence at the beginning or end, but it can be used when combining two or more sounds.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेला आवाज सेकंदामध्ये एका विशिष्ट वेळी प्रारंभ करतो. याचा वापर सुरूवातीस किंवा शेवटी शांतता जोडण्यासाठी केला जाऊ शकत नाही, परंतु दोन किंवा अधिक ध्वनी एकत्रित करताना याचा वापर केला जाऊ शकतो.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(seq (cue s1) (cue s2))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(सेक (क्यू एस 1) (क्यू एस 2))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Creates a sequence of sound s1 followed by sound s2.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ध्वनी एस 1 च्या नंतर ध्वनी एस 1 चा क्रम तयार करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(sim (cue s1) (cue s2))</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(सिम (क्यू एस 1) (क्यू एस 2))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Combines two sounds so that they are played simultaneously.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दोन ध्वनी एकत्र करतात जेणेकरून ते एकाच वेळी वाजवले जातील.
 </td></tr></table>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins"><b>&gt;</b>&#160; Creating Nyquist Plug-ins</a> <br />
-</p><p><a href="introduction_to_nyquist_and_lisp_programming.html" title="Introduction to Nyquist and Lisp Programming"><b>&lt;</b>&#160; Introduction to Nyquist and Lisp Programming</a> <br />
-</p><p><a href="nyquist.html" title="Nyquist"><b>|&lt;</b> Nyquist</a>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins"><b>&gt;</b>&#160; Nyquist प्लगइन तयार करत आहे</a> <br />
+</p><p><a href="introduction_to_nyquist_and_lisp_programming.html" title="Introduction to Nyquist and Lisp Programming"><b>&lt;</b>&#160; Nyquist आणि लिस्प प्रोग्रामिंगची ओळख</a> <br />
+</p><p><a href="nyquist.html" title="Nyquist"><b>|&lt;</b> nyquist</a>
 </p>
 <!-- 
 NewPP limit report
@@ -228,7 +228,7 @@ Transclusion expansion time report (%,ms,calls,template)
 <li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
 <li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
 <li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI</span></a>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओडिसीटीचा जीयूआय</span></a>
 <ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
 <li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा</span></a></li>
