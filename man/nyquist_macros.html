@@ -8,16 +8,16 @@
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी डेव्हलपमेंट महितीपुस्तिका (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Nyquist_Macros rootpage-Nyquist_Macros skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,183 +25,183 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Nyquist Macros</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Nyquist मॅक्रोस</font></font></h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका पासून</div>
+					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका</font></font></div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Nyquist_Macros#searchInput">शोध</a></div>
+										<div id="jump-to-nav" class="mw-jump">वर जा: </font></font><a href="#column-one">निर्देशक</font></font></a> , </font></font><a href="https://alphamanual.audacityteam.org/man/Nyquist_Macros#searchInput">शोध</font></font></a></div>
 
 					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"></li></ul></li></ul>
-<div class="intro"> Nyquist is a LISP like language integrated into Audacity.  It was originally written to process audio.  
-<ul><li> Nyquist now also has the ability to control Audacity, similar to how <a href="macros.html" title="Macros">Macros</a> work, but with greater flexibility.</div></li></ul>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<div class="intro">Nyquist ओड्यासिटीमध्ये समाकलित भाषेसारखी LISP आहे. </font>हे मूळतः आवाजवर प्रक्रिया करण्यासाठी लिहिले गेले होते.  
+</font></font><ul><li>नायक्विस्टमध्ये आता </font></font><a href="macros.html" title="मॅक्रो">मॅक्रोज</font></font></a> कसे </font>कार्य करतात </font>यासारखेच ओड्यासिटी नियंत्रित करण्याची क्षमता देखील आहे </font>, परंतु मोठ्या लवचिकतेसह.</font></font></li></ul></div>
+<div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</font></font></h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Comparison_of_Ordinary_Macros_to_Nyquist_Macros"><span class="tocnumber">1</span> <span class="toctext">Comparison of Ordinary Macros to Nyquist Macros</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#AUD-DO"><span class="tocnumber">2</span> <span class="toctext">AUD-DO</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Using_AUD-DO"><span class="tocnumber">3</span> <span class="toctext">Using AUD-DO</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Comparison_of_Ordinary_Macros_to_Nyquist_Macros"><span class="tocnumber">1 </font></font></span> <span class="toctext">नेयक्विस्ट मॅक्रोजशी सामान्य मॅक्रोची तुलना</font></font></span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#AUD-DO"><span class="tocnumber">2 </font></font></span> <span class="toctext">एडी-डू</font></font></span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Using_AUD-DO"><span class="tocnumber">3 </font></font></span> <span class="toctext">AUD-DO वापरणे</font></font></span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Differences_to_normal_Nyquist_Scripting"><span class="tocnumber">3.1</span> <span class="toctext">Differences to normal Nyquist Scripting</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Differences_to_normal_Nyquist_Scripting"><span class="tocnumber">3.1 </font></font></span> <span class="toctext">सामान्य Nyquist स्क्रिप्टिंग करण्यासाठी फरक</font></font></span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">4 </font></font></span> <span class="toctext">उदाहरणे</font></font></span></a>
 <ul>
-<li class="toclevel-2 tocsection-6"><a href="#Example_Using_Parameters"><span class="tocnumber">4.1</span> <span class="toctext">Example Using Parameters</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Click_Removal_Example"><span class="tocnumber">4.2</span> <span class="toctext">Click Removal Example</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#GetInfo_Example"><span class="tocnumber">4.3</span> <span class="toctext">GetInfo Example</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Example_Using_Parameters"><span class="tocnumber">1.१ </font></font></span> <span class="toctext">मापदंड वापरण्याचे उदाहरण</font></font></span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Click_Removal_Example"><span class="tocnumber">4.2 </font></font></span> <span class="toctext">काढण्याचे उदाहरण क्लिक करा</font></font></span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#GetInfo_Example"><span class="tocnumber">4.3 </font></font></span> <span class="toctext">GetInfo उदाहरण</font></font></span></a></li>
 </ul>
 </li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Comparison_of_Ordinary_Macros_to_Nyquist_Macros">Comparison of Ordinary Macros to Nyquist Macros</span></h2>
-<p>Ordinary <a href="macros.html" title="Macros">Macros</a> execute a fixed sequence of commands in a fixed order.  
-</p><p>By contrast, the Nyquist language is a full language from the LISP family. That makes it more powerful and also more complex to use. 
+<h2><span class="mw-headline" id="Comparison_of_Ordinary_Macros_to_Nyquist_Macros">ऑर्डिनरी मॅक्रोची तुलना Nyquist मॅक्रोशी आहे</font></font></span></h2>
+<p>सामान्य </font></font><a href="macros.html" title="मॅक्रो">मॅक्रो</font></font></a> एक निश्चित क्रमाने आदेशांचा निश्चित क्रम </font><a href="macros.html" title="Macros">चालवतात</font></a> .  
+</font></font></p><p>याउलट, Nyquist भाषा ही LISP कुटुंबातील संपूर्ण भाषा आहे. </font>हे अधिक सामर्थ्यवान आणि वापरण्यास अधिक जटिल बनवते. 
+</font></font></p>
+<ul><li> Nyquist कडे लॉजिक, लूप्स आणि सशर्त कोड कार्यान्वित करण्याच्या आज्ञा आहेत.</font></font></li>
+<li> Nyquist प्रवाह आणि स्ट्रिंग स्वरूपन कार्ये समर्थित करते.</font></font></li>
+<li> Nyquist डेटा स्ट्रक्चर्सना समर्थन देते, आणि खासकरुन याद्या हाताळणीत मजबूत आहे.</font></font></li>
+<li> ओड्यासिटी मध्ये Nyquist मापदंडसाठी प्रॉमप्ट करू शकते आणि नंतर त्या कोडमध्ये त्या मापदंडचा वापर करू शकतो.  </font></font></li></ul>
+<p>ऑयडिसिटी स्वतंत्रपणे ओड्यासिटी वापरली जाऊ शकते. </font>जेव्हा ओड्यासिटी मधून वापरले जाते तेव्हा ते एयूडी-डीओ अतिरिक्त आदेश प्राप्त करते.
+</font></font></p>
+<h2><span class="mw-headline" id="AUD-DO">AUD-do</font></font></span></h2>
+<p>एयूडी-डीओ एक फंक्शन आहे जे नेक्विस्टच्या क्षमता वाढवते.
+</font></font></p><p>एयूडी-डीओ नेकीक्झीट मधून सर्व ऑडेसिटी मॅक्रो स्क्रिप्टिंग आज्ञा वापरणे शक्य करते. </font>स्क्रिप्टिंग आज्ञा्स आणि त्यांचे मापदंडची पूर्ण यादी पृष्ठ </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ">स्क्रिप्टिंग संदर्भ</font></font></a> पृष्ठावर प्रदान केली आहे </font>. </font>स्क्रिप्टिंग आज्ञा एआरडी-डीओला स्ट्रिंग म्हणून दिले जातात.
+</font></font></p><p>ओड्यासिटी </font></font><a href="scripting.html" title="स्क्रिप्टिंग">पायथन स्क्रिप्टिंगसाठी</font></font></a> अगदी समान दृष्टीकोन वापरला जातो </font>. </font>आज्ञा्स स्ट्रिंग म्हणून तयार केल्या पाहिजेत आणि प्रक्रियेसाठी फंक्शनला पुरविल्या पाहिजेत. </font>पायथन स्क्रिप्टिंगपेक्षा नेयक्विस्ट मॅक्रोसचा एक फायदा असा आहे की नायक्विस्ट आधीपासून ओड्यासिटीमध्ये अंगभूत आहे.
+</font></font></p><p><br>
 </p>
-<ul><li> Nyquist has commands for logic, loops and conditionally executing code.</li>
-<li> Nyquist supports streams and string formatting functions.</li>
-<li> Nyquist supports data structures, and is especially strong in handling lists.</li>
-<li> Nyquist, in Audacity, can prompt for parameters and then use those parameters in its code.  </li></ul>
-<p>Nyquist can be used independently of Audacity.  When used from within Audacity, it gains an additional command, AUD-DO.
-</p>
-<h2><span class="mw-headline" id="AUD-DO">AUD-DO</span></h2>
-<p>AUD-DO is a function that extends Nyquist's capabailities.
-</p><p>AUD-DO makes it possible to use all Audacity Macro scripting commands from within Nyquist.  The full list of scripting commands and their parameters is provided at the page <a href="scripting_reference.html" title="Scripting Reference">Scripting Reference</a>.  The scripting commands are passed to AUD-DO as strings.
-</p><p>A very similar approach is used for Audacity <a href="scripting.html" title="Scripting">Python Scripting</a>.  Commands must be created as strings and passed to a function to process.  One advantage of Nyquist Macros over Python Scripting is that Nyquist is already built in to Audacity.
-</p><p><br />
-</p>
-<h2><span class="mw-headline" id="Using_AUD-DO">Using AUD-DO</span></h2>
-<p>Your Nyquist Script will need to have "type tool".  AUD-DO is not available for other types. 
-</p>
+<h2><span class="mw-headline" id="Using_AUD-DO">AUD-DO वापरणे</font></font></span></h2>
+<p>आपल्या Nyquist स्क्रिप्टमध्ये "टाइप साधन" असणे आवश्यक आहे. </font>इतर प्रकारच्या एडीडी-डीओ उपलब्ध नाहीत. 
+</font></font></p>
 
-<pre>;type tool
+<pre>टाइप टूल
+</font></font></pre>
+<p>Nyquist स्क्रिप्ट मध्ये खालील आज्ञा प्रोजेक्ट मधील पहिले लेबल 'foo' वर सेट करते.
+</font></font></p>
+<pre>(AUD-DO "सेट लेबल: मजकूर = \" फु \ "")
+</font></font></pre>
+<p>एयूडी-डीओ नंतर मजकूर स्ट्रिंग प्रक्रियेसाठी स्क्रिप्टिंग इंजिनला दिली जाते.
+</font></font></p><p>आपण टूल्स नायक्विस्ट प्रॉम्प्ट वर प्रविष्ट करू शकता असे एयूडी-डीओ वापरुन Nyquist स्क्रिप्टचे संपूर्ण उदाहरण खाली दिले आहे:
+</font></font></p>
+<pre>y nyquist प्लग-इन</font></font><font></font>
+$ आवृत्ती 4</font></font><font></font>
+$ प्रकार साधन</font></font><font></font>
+$ नाव (_ "माझी चाचणी घ्या")</font></font><font></font>
+ug डीबग बटण खोटे</font></font><font></font>
+$ क्रिया (_ "टेस्टमी लागू करीत आहे ...")</font></font><font></font>
+$ लेखक (_ "निमो नेमेसिस")</font></font><font></font>
+$ प्रकाशन 2.3.0</font></font><font></font>
+$ ग्रंथावरचा हक्क (_ "सार्वजनिक डोमेन")</font></font><font></font>
+<font></font>
+;; </font>नेमो नेमेसिस, ऑगस्ट 2018 द्वारे चाचणी-मी.ny</font></font><font></font>
+<font></font>
+;; </font>Nyquist प्लगइन लिहिणे आणि सुधारित करण्याबद्दल माहितीसाठी:</font></font><font></font>
+;; </font>https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_References</font></font><font></font>
+<font></font>
+(AUD-DO "सिलेक्ट टाइम: प्रारंभ = 60 समाप्त = 170")</font></font><font></font>
+(एयूडी-डीओ "सिलेक्ट गितपट्टा: गितपट्टा = 1 गितपट्टाकॉन्ट = 2") </font></font><font></font>
+<font></font>
 </pre>
-<p>The following command in a nyquist script would set the first label in a project to 'foo'
-</p>
-<pre>(AUD-DO "SetLabel: Text=\"Foo\"")
-</pre>
-<p>The text string after AUD-DO is passed to the scripting engine to process.
-</p><p>A complete example of a Nyquist Script using AUD-DO that you can enter at the Tools Nyquist Prompt is given below:
-</p>
-<pre>$nyquist plug-in
-$version 4
-$type tool
-$name (_ "Test Me")
-$debugbutton false
-$action (_ "Applying TestMe...")
-$author (_ "Nemo Nemesis")
-$release 2.3.0
-$copyright (_ "Public Domain")
-
-;; test-me.ny by Nemo Nemesis, August 2018
-
-;; For information about writing and modifying Nyquist plug-ins:
-;; https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_Reference
-
-(AUD-DO "SelectTime: Start=60 End=170")
-(AUD-DO "SelectTracks: Track=1 TrackCount=2") 
-
-</pre>
-<p>Possibly the easiest way to find the correct strings to use is to use the <a href="manage_macros.html#insert" title="Manage Macros">Macros</a> command to add commands to a macro and examine the strings added.
-</p>
+<p>संभाव्यतया योग्य तार्यांचा शोधण्याचा सर्वात सोपा मार्ग म्हणजे </font></font><a href="manage_macros.html#insert" title="मॅक्रो व्यवस्थापित करा">मॅक्रोवर</font></font></a> आज्ञा जोडण्यासाठी </font><a href="manage_macros.html#insert" title="मॅक्रो व्यवस्थापित करा">मॅक्रो</font></a> आज्ञा </font>वापरणे </font>आणि जोडलेल्या तारांची तपासणी करणे.
+</font></font></p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
 </td>
-<td align="left" valign="top">The full list of commands available via AUD-DO is given in the <a href="scripting_reference.html" title="Scripting Reference">Scripting Reference</a>
-</td></tr></table>
+<td align="left" valign="top">एयूडी-डीओ मार्फत उपलब्ध असलेल्या आज्ञाची पूर्ण यादी </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ">स्क्रिप्टिंग संदर्भात दिली आहे</font></font></a>
+</td></tr></tbody></table>
 </div>
-<h3><span class="mw-headline" id="Differences_to_normal_Nyquist_Scripting">Differences to normal Nyquist Scripting</span></h3>
-<p>The '$type' setting in Nyquist sets what <i>capabilities</i> Nyquist will have for that Nyquist script.  For example, <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">$type process</span> and <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">$type analyze</span> scripts are given the *TRACK* variable.  Process scripts, when applied, will be called repeatedly, once for each channel to process.
-</p><p>Another use of the '$type' setting is to set which <i>menu</i> in Audacity a script will be placed in.  It can occasionally be useful to place a <b>process</b>, <b>generator</b> or <b>analyze</b> Nyquist script in the tools menu, even though its functionality is one of the other types.  To do that you can use two arguments to the '$type' setting.
-</p><p>You can create nyquist plug-ins with for the Tools menu using any of the following:
-</p>
-<pre>$type tool
-$type tool process
-$type tool generator
-$type tool analyze
-
+<h3><span class="mw-headline" id="Differences_to_normal_Nyquist_Scripting">सामान्य Nyquist स्क्रिप्टिंग मध्ये फरक</font></font></span></h3>
+<p>Nyquist मधील '$ प्रकार' समयोजन Nyquist </font>मध्ये त्या Nyquist स्क्रिप्टसाठी </font>कोणती </font></font><i>क्षमता आहे हे</font></font></i> सेट करते </font>. </font>उदाहरणार्थ, </font></font><span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">$ टाइप प्रक्रिया</font></font></span> आणि </font></font><span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">$ टाइप विश्लेषण</font></font></span> स्क्रिप्ट्सला * गितपट्टा * व्हेरिएबल दिले जाते. </font>प्रक्रिया स्क्रिप्ट, लागू केल्यावर, प्रत्येक चॅनेलवर प्रक्रिया करण्यासाठी एकदा, पुन्हा कॉल केल्या जातील.
+</font></font></p><p>'$ प्रकार' समयोजनचा आणखी एक उपयोग </font>ओड्यासिटीमध्ये स्क्रिप्ट </font>कोणत्या </font></font><i>मेनूमध्ये</font></font></i> ठेवला जाईल </font>हे सेट करणे होय </font>. काहीवेळा </font>टूल्स मेनूमध्ये </font></font><b>प्रक्रिया ठेवणे</font></font></b> , </font></font><b>जनरेटर</font></font></b> किंवा </font>Nyquist स्क्रिप्टचे </font></font><b>विश्लेषण</font></font></b> करणे उपयुक्त ठरू शकते </font>, तरीही त्याची कार्यक्षमता एक आहे. इतर प्रकार. </font>असे करण्यासाठी आपण 'प्रकार' समयोजनमध्ये दोन वितर्क वापरू शकता.
+</font></font></p><p>आपण खालीलपैकी कोणतेही एक वापरुन टूल्स मेनूसाठी nyquist प्लगइन तयार करू शकता:
+</font></font></p>
+<pre>$ प्रकार साधन</font></font><font></font>
+tool प्रकारची साधन प्रक्रिया</font></font><font></font>
+tool साधन जनरेटर टाइप करा</font></font><font></font>
+tool टाइप साधन विश्लेषण</font></font><font></font>
+<font></font>
 </pre>
-<p>The first argument to 'type' determines which Audacity menu the plug-in ends up in.  All four examples are for the Tools menu.  The qualifier process / generator / analyze determines how the plug-in actually behaves.  Only '$type tool' should be used with AUD-DO.
-</p><p><br />
+<p>'प्रकार' चा प्रथम युक्तिवाद कोणत्या ओड्यासिटी मेनूमध्ये प्लग-इन समाप्त होतो हे निर्धारित करते. सर्व चार उदाहरणे साधने मेनूसाठी आहेत. </font>पात्रता प्रक्रिया / जनरेटर / विश्लेषण हे प्लग-इन प्रत्यक्ष कसे वर्तन करते हे निर्धारित करते. </font>AUD-DO सह केवळ '$ प्रकार साधन' वापरले जावे.
+</font></font></p><p><br>
 </p>
-<h2><span class="mw-headline" id="Examples">Examples</span></h2>
-<h3><span class="mw-headline" id="Example_Using_Parameters">Example Using Parameters</span></h3>
-<p>Scripts using AUD-DO can use parameters.  Probably the easiest way to pass them to AUD-DO is using the XLISP format command.
-</p>
-<pre>$nyquist plug-in
-$version 4
-$type tool
-$name (_ "Test Me2")
-$debugbutton false
-$action (_ "Applying TestMe2...")
-$author (_ "Nemo Nemesis")
-$release 2.3.0
-$copyright (_ "Public Domain")
-
-$control start (_ "Start time") float-text "" 5 nil nil
-$control end (_ "End time") float-text "" 15 nil nil
-
-;; test-me.ny by Nemo Nemesis, August 2018
-
-;; For information about writing and modifying Nyquist plug-ins:
-;; https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_Reference
-
-
-
-(AUD-DO (format nil "SelectTime: Start=~S End=~S" start end))
-(AUD-DO "SelectTracks: Track=0 TrackCount=10")
-(AUD-DO  (format nil "Message: Text=\"Start was set to ~S End to ~S\"" start end))
-
-
+<h2><span class="mw-headline" id="Examples">उदाहरणे</font></font></span></h2>
+<h3><span class="mw-headline" id="Example_Using_Parameters">मापदंड वापरण्याचे उदाहरण</font></font></span></h3>
+<p>एयूडी-डीओ वापरणारी स्क्रिप्ट मापदंड वापरू शकतात. </font>कदाचित त्यांना एयूडी-डीओकडे जाण्याचा सर्वात सोपा मार्ग म्हणजे एक्सएलआयएसपी फॉर्मेट आज्ञा वापरणे.
+</font></font></p>
+<pre>y nyquist प्लग-इन</font></font><font></font>
+$ आवृत्ती 4</font></font><font></font>
+$ प्रकार साधन</font></font><font></font>
+$ नाव (_ "कसोटी मी 2")</font></font><font></font>
+ug डीबग बटण खोटे</font></font><font></font>
+$ क्रिया (_ "TestMe2 लागू करीत आहे ...")</font></font><font></font>
+$ लेखक (_ "निमो नेमेसिस")</font></font><font></font>
+$ प्रकाशन 2.3.0</font></font><font></font>
+$ ग्रंथावरचा हक्क (_ "सार्वजनिक डोमेन")</font></font><font></font>
+<font></font>
+$ नियंत्रण प्रारंभ (_ "प्रारंभ वेळ") फ्लोट-मजकूर "" 5 शून्य</font></font><font></font>
+$ नियंत्रण समाप्ती (_ "समाप्ती वेळ") फ्लोट-मजकूर "" 15 शून्य</font></font><font></font>
+<font></font>
+;; </font>नेमो नेमेसिस, ऑगस्ट 2018 द्वारे चाचणी-मी.ny</font></font><font></font>
+<font></font>
+;; </font>Nyquist प्लगइन लिहिणे आणि सुधारित करण्याबद्दल माहितीसाठी:</font></font><font></font>
+;; </font>https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_References</font></font><font></font>
+<font></font>
+<font></font>
+<font></font>
+(एडीडी-डीओ (फॉर्मेट नील "सिलेक्टटाइमः स्टार्ट = ~ एस एंड = ~ एस" प्रारंभ समाप्त))</font></font><font></font>
+(एयूडी-डीओ "सिलेक्ट गितपट्टा: गितपट्टा = 0 गितपट्टाकॉन्ट = 10")</font></font><font></font>
+(AUD-DO (format nil "संदेश: मजकूर = \" प्रारंभ ~ S समाप्ती ~ S \ "" प्रारंभ समाप्त वर सेट केला गेला))</font></font><font></font>
+<font></font>
+<font></font>
 </pre>
-<h3><span class="mw-headline" id="Click_Removal_Example">Click Removal Example</span></h3>
-<p>On the <a href="scripting_reference.html" title="Scripting Reference">scripting page</a>, for example, the parameters for the click removal command are documented:
-</p><p><i>int <b>Threshold</b>, (default:200)</i><br />
-<i>int <b>Width</b>, (default:20)</i><br />
-</p><p>To invoke the same command in Nyquist, you need to pass a string to AUD-DO.  For example:
-</p>
-<pre>(AUD-DO "ClickRemoval: Threshold=200 Width=25")
-</pre>
-<p>Default values do not need to be specified, so a shorter version of the same command would be:
-</p>
-<pre>(AUD-DO "ClickRemoval: Width=25")
-</pre>
-<h3><span class="mw-headline" id="GetInfo_Example">GetInfo Example</span></h3>
-<p>The AUD-DO "GetInfo" Scripting commands provide results as strings, and offers three different result formats.
-</p>
+<h3><span class="mw-headline" id="Click_Removal_Example">काढण्याचे उदाहरण क्लिक करा</font></font></span></h3>
+<p>रोजी </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ">स्क्रिप्टिंग पृष्ठ</font></font></a> , उदाहरणार्थ, क्लिक करा काढण्याची आदेश मापदंड दस्तऐवजीकरण आहेत:
+</font></font></p><p><i>इंट </font></font><b>थ्रेशोल्ड</font></font></b> , (पुर्वनिर्धारित: 200) </font></font></i><br>
+<i>इंट </font></font><b>रुंदी</font></font></b> , (पुर्वनिर्धारित: 20)</font></font></i><br>
+</p><p>Nyquist मध्ये समान आज्ञासाठी, आपल्याला AUD-DO कडे एक स्ट्रिंग पास करणे आवश्यक आहे. </font>उदाहरणार्थ:
+</font></font></p>
+<pre>(एडीडी-डीओ "क्लिक रिमूव्हलः थ्रेशोल्ड = 200 रुंदी = 25")
+</font></font></pre>
+<p>पुर्वनिर्धारित मूल्य निर्दिष्ट करण्याची आवश्यकता नाही, म्हणून समान आदेशाची छोटी आवृत्ती अशी असेल:
+</font></font></p>
+<pre>(एडीडी-डीओ "क्लिक रिमूव्हल: रुंदी = 25")
+</font></font></pre>
+<h3><span class="mw-headline" id="GetInfo_Example">गेटइन्फो उदाहरण</font></font></span></h3>
+<p>एयूडी-डीओ "गेटइंफो" स्क्रिप्टिंग आज्ञा्स स्ट्रिंग म्हणून परिणाम प्रदान करतात आणि तीन भिन्न परिणाम स्वरूप ऑफर करतात.
+</font></font></p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
 </td>
-<td align="left" valign="top"> It is usually easiest, in Nyquist, to ask for the results of GetInfo commands as strings in LISP format
-</td></tr></table>
+<td align="left" valign="top"> एलआयएसपी स्वरूपात स्ट्रिंग म्हणून गेटइन्फो आज्ञाचा निकाल विचारणे, नेयक्विस्टमध्ये सहसा सोपे असते.
+</font></font></td></tr></tbody></table>
 </div>
-<p>The parameters of GetInfo are:
-</p><p><i>enum <b>Type</b>, (default:0)<br /></i>
+<p>गेटइन्फोचे मापदंड आहेतः
+</font></font></p><p><i>एनम </font></font><b>प्रकार</font></font></b> , (पुर्वनिर्धारित: 0)</font></font><br></i>
 </p>
-<ul><li> Commands</li>
-<li> Menus</li>
-<li> Preferences</li>
-<li> Tracks</li>
-<li> Clips</li>
-<li> Envelopes</li>
-<li> Labels</li>
-<li> Boxes</li></ul>
-<p><i>enum <b>Format</b>, (default:0)<br /></i>
+<ul><li> आज्ञा</font></font></li>
+<li> मेनू</font></font></li>
+<li> प्राधान्ये</font></font></li>
+<li> गितपट्टा</font></font></li>
+<li> क्लिप्स</font></font></li>
+<li> लिफाफे</font></font></li>
+<li> लेबले</font></font></li>
+<li> बॉक्स</font></font></li></ul>
+<p><i>एनम </font></font><b>स्वरूप</font></font></b> , (पुर्वनिर्धारित: 0)</font></font><br></i>
 </p>
-<ul><li> JSON</li>
-<li> LISP</li>
-<li> Brief</li></ul>
-<p>You'd use a command like the following to get a list of labels (as a string).
-</p>
-<pre>(AUD-DO "GetInfo: Type=Labels Format=LISP")
-</pre>
+<ul><li> JSON</font></font></li>
+<li> एलआयएसपी</font></font></li>
+<li> संक्षिप्त</font></font></li></ul>
+<p>लेबलांची सूची मिळविण्यासाठी आपण खालील प्रमाणे आज्ञा वापरू शकता (स्ट्रिंग म्हणून).
+</font></font></p>
+<pre>(एडीडी-डीओ "गेटइन्फोः प्रकार = लेबले स्वरूप = एलआयएसपी")
+</font></font></pre>
 <!-- 
 NewPP limit report
 Cached time: 20180917112400
