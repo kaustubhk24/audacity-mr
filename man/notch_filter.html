@@ -7,17 +7,18 @@
 
 
 
+
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी डेव्हलपमेंट मॅन्युअल (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Notch_Filter rootpage-Notch_Filter skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,53 +26,53 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Notch Filter</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">खाच गाळून</font></font></h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका पासून</div>
+					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका</font></font></div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Notch_Filter#searchInput">शोध</a></div>
+										<div id="jump-to-nav" class="mw-jump">वर जा: </font></font><a href="#column-one">निर्देशक</font></font></a> , </font></font><a href="https://alphamanual.audacityteam.org/man/Notch_Filter#searchInput">शोध</font></font></a></div>
 
 					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br>
 </p>
 
 
-<div class="intro"><i><b>Notch Filter</b></i> sharply attenuates frequency-specific noise like mains hum or electrical whistle with minimal damage to the remaining audio, by cutting a "notch" out of the frequency <i><b><a href="glossary.html#spectrum" title="Glossary">spectrum</a></b></i> at that point.</div> 
-<dl><dd><b>Accessed by:</b> <span class="menu">Effect &gt; Notch Filter...</span></dd>
-<dd><span title="Notch Filter effect dialog"><img alt="Notch Filter.png" src="../m/images/6/6f/notch_filter.png" width="474" height="178" /></span></dd></dl>
+<div class="intro"><i><b><font style="vertical-align: inherit;"></font></b></i>त्यावेळेस</font><font style="vertical-align: inherit;">फ्रिक्वेन्सी</font></font><i><b><a href="glossary.html#spectrum" title="शब्दकोष"> स्पेक्ट्रमच्या</font></font></a></b></i> बाहेर "खाच" कापून</font><i><b><font style="vertical-align: inherit;"> नॉच</font></b></i><font style="vertical-align: inherit;"> गाळून्स उर्वरित ध्वनीच्या कमीतकमी नुकसानीसह मुख्य हम किंवा इलेक्ट्रिकल व्हिसल सारख्या वारंवारते-विशिष्ट</font><i><b><font style="vertical-align: inherit;"> आवाजावर</font></b></i><font style="vertical-align: inherit;"> तीव्र वाढ करते</font><font style="vertical-align: inherit;">.</font></font></div> 
+<dl><dd><b>यावर प्रवेशः </font></font></b> <span class="menu">प्रभाव&gt; नॉच गाळून ...</font></font></span></dd>
+<dd><span title="खाच गाळून प्रभाव संवाद"><img alt="खाच गाळून.पीएनजी" src="../m/images/6/6f/notch_filter.png" width="474" height="178"></span></dd></dl>
 <div id="frequency"></div>
-<h2><span class="mw-headline" id="Frequency">Frequency</span></h2>
-<p>Enter any frequency up to half the <a href="glossary.html#sample_rate" title="Glossary">sample rate</a> into the frequency text box (default is 60 Hz). Frequency greater than half the sample rate of the track are not valid because a track can only contain frequencies up to half its sample rate.
-</p>
-<h2><span class="mw-headline" id="Q_factor">Q factor</span></h2>
-<p>This determines the width of the notch cut from your audio (default value is 1). Values above 1 create a narrower notch, and values below 1 create a wider notch. The Q Factor must be at least 0.1). 
-</p>
+<h2><span class="mw-headline" id="Frequency">वारंवारता</font></font></span></h2>
+<p>अर्धा </font></font><a href="glossary.html#sample_rate" title="शब्दकोष">नमुना</font></font></a> दरापर्यंत कोणतीही वारंवारता </font><font style="vertical-align: inherit;">मजकूर बॉक्समध्ये </font><font style="vertical-align: inherit;">प्रविष्ट करा </font><font style="vertical-align: inherit;">(पुर्वनिर्धारित 60 हर्ट्ज आहे). </font><font style="vertical-align: inherit;">गितपट्टाच्या नमुन्यापेक्षा निम्म्या दरापेक्षा जास्त वारंवारता वैध नाही कारण एखाद्या गितपट्टामध्ये केवळ त्याच्या नमुन्यापेक्षा निम्म्या दरापर्यंत वारंवारता असू शकते.
+</font></font></p>
+<h2><span class="mw-headline" id="Q_factor">प्रश्न घटक</font></font></span></h2>
+<p>हे आपल्या ध्वनीमधून कट केलेल्या खाचची रुंदी निर्धारित करते (पुर्वनिर्धारित मूल्य 1 आहे). </font><font style="vertical-align: inherit;">1 वरील मूल्ये एक अरुंद निशान तयार करतात आणि 1 च्या खाली मूल्ये विस्तीर्ण खाच तयार करतात. </font><font style="vertical-align: inherit;">क्यू फॅक्टर किमान 0.1) असणे आवश्यक आहे. 
+</font></font></p>
 <div id="buttons"></div>
-<h2><span class="mw-headline" id="Buttons">Buttons</span></h2>
-<p>Clicking on the command buttons give the following results:
+<h2><span class="mw-headline" id="Buttons">बटणे</font></font></span></h2>
+<p>आज्ञा बटणावर क्लिक केल्याने खालील परिणाम मिळतात:
+</font></font></p>
+<ul><li><span class="button">व्यवस्थापित करा</font></font></span> ड्रॉपडाउन मेनू आपल्याला साधनाचे प्रीसेट सेट करण्यास आणि टूलबद्दल काही तपशील पाहण्यास सक्षम करते. </font><font style="vertical-align: inherit;">तपशीलांसाठी </font><a href="manage_presets.html" title="Manage presets"><font style="vertical-align: inherit;">प्रीसेट्स व्यवस्थापित करा</font></a><font style="vertical-align: inherit;"> पहा</font></font><a href="manage_presets.html" title="प्रीसेट सेट करा"><font style="vertical-align: inherit;"></font></a></li>
+<li><span class="button">पूर्वावलोकन</font></font></span> ध्वनीमध्ये वास्तविक बदल न करता, प्रभाव वर्तमान सेटिंग्जसह लागू केल्यास ध्वनीला काय वाटेल हे एक लहान </font><span class="button"><font style="vertical-align: inherit;">पूर्वावलोकन</font></span><font style="vertical-align: inherit;"> प्ले करते. </font><font style="vertical-align: inherit;">पूर्वावलोकनाची लांबी </font></font><span class="menu">संपादन&gt; प्राधान्ये&gt; </font></font><a href="playback_preferences.html" title="प्लेबॅक प्राधान्ये">प्लेबॅक मधील</font></font></a></span> सेटिंग द्वारे निश्चित केली जाते </font><font style="vertical-align: inherit;">, पुर्वनिर्धारित सेटिंग 6 सेकंद असते.</font></font></li>
+<li><span class="button">ठीक आहे</font></font></span> सध्याच्या प्रभाव सेटिंग्जसह निवडलेल्या ध्वनीवर प्रभाव लागू करते आणि संवाद बंद करते</font></font></li>
+<li><span class="button">रद्द करा</font></font></span> प्रभाव सोडतो आणि संवाद बंद केल्यामुळे ध्वनीमध्ये कोणताही बदल होत नाही</font></font></li>
+<li><a href="help_button.html" title="मदत बटण"><img alt="मदत बटण" src="../m/images/d/d6/help_button.png" width="27" height="27"></a> या पृष्ठावरील मॅन्युअलमध्ये आपल्याला योग्य पृष्ठावर आणते</font></font></li></ul>
+<p><br>
 </p>
-<ul><li><span class="button">Manage</span> gives a dropdown menu enabling you to manage presets for the tool and to see some detail about the tool. For details see <a href="manage_presets.html" title="Manage presets">Manage presets</a></li>
-<li><span class="button">Preview</span> plays a short preview of what the audio would sound like if the effect is applied with the current settings, without making actual changes to the audio.  The length of preview is determined by your setting in <span class="menu">Edit &gt; Preferences &gt; <a href="playback_preferences.html" title="Playback Preferences">Playback</a></span>, the default setting is 6 seconds.</li>
-<li><span class="button">OK</span> applies the effect to the selected audio with the current effect settings and closes the dialog</li>
-<li><span class="button">Cancel</span> aborts the effect and leaves the audio unchanged, closing the dialog</li>
-<li><a href="help_button.html" title="Help Button"><img alt="Help Button" src="../m/images/d/d6/help_button.png" width="27" height="27" /></a> brings you to the appropriate page in the Manual, this page</li></ul>
-<p><br />
-</p>
-<h2><span class="mw-headline" id="Examples">Examples</span></h2>
-<div class="example"><h3><span class="mw-headline" id="Example_1:_Mains_Hum_Removal">Example 1: Mains Hum Removal</span></h3>
-Choose 60 Hz as "Frequency" for North America, or 50 Hz for the United Kingdom and most other countries. A table of mains frequencies by country is <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/List_of_countries_with_mains_power_plugs,_voltages_and_frequencies#Table_of_mains_voltages_and_frequencies">here</a>. <p>Recorded hum often contains noisy harmonic frequencies above the fundamental frequency of the hum. A good approach is thus to apply Notch Filter to the fundamental hum frequency (for example, 50 Hz or 60 Hz), then use <span class="menu">Analyze &gt; <a href="plot_spectrum.html" title="Plot Spectrum">Plot Spectrum...</a></span> to identify other broad noise spikes (for example, at 180 Hz and 300 Hz). You may want to increase the spectrum <i>Size</i> and use the "Log" <i>Axis</i> to see more clearly. Run Notch Filter again at each of the other noise frequencies, then use <span class="menu">Effect &gt; <a href="noise_reduction.html" title="Noise Reduction">Noise Reduction</a></span> at mild settings to remove any residual harmonics. </p>
-<ul><li> It is recommended to increase the Q factor when removing higher harmonics so as to lessen possible audio artifacts. Generally, a Q of between 2 and 10 works well for mains hum removal. Choosing appropriate Frequency and Q factor settings from the noise spikes in Plot Spectrum is an approximation, due to inevitable <i><b><a href="glossary.html#interpolate" title="Glossary">interpolation</a></b></i> errors from whichever "windowing" function is chosen. However a good method for calculating Frequency and Q factor from Plot Spectrum can be found in this <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewtopic.php?f=39&amp;t=40592&amp;start=20#p123749">Audacity Forum topic</a>.</li></ul>
-<p>The below image shows a spectrum plot of some music from which a notch of 60 Hz hum has been cut. Before applying the effect, the hum displayed a prominent spike at this frequency, extending to the top of the graph.
-</p>
-<dl><dd><span title="Image of spectrum with 60 Hz notch removed"><img alt="Spectrum 60Hz notched W10.png" src="../m/images/6/67/spectrum_60hz_notched_w10.png" width="590" height="513" /></span></dd></dl>
-Depending on the audio, you might find in this case that the spectrum had been notched too deeply, thus affecting the content, and that a higher Q factor would have been preferred. You might want to notch the visible spikes at about 100 and 350 Hz as well. As always with Audacity, you can <span class="menu">Edit &gt; <a href="edit_menu.html#undo" title="Edit Menu">Undo</a></span> and experiment with different notch filter settings.</div>
-<div class="example"><h3><span class="mw-headline" id="Example_2:_High_pitched_whistle">Example 2: High pitched whistle</span></h3>
-<dl><dd><span title="Frequency Analysis spectrum with a 18996 Hz whistle"><img alt="Spectrum with whistle W10.png" src="../m/images/3/34/spectrum_with_whistle_w10.png" width="590" height="513" /></span></dd></dl>
-In this case the frequency analysis at <span class="menu">Analyze &gt; <a href="plot_spectrum.html" title="Plot Spectrum">Plot Spectrum...</a></span> is fairly smooth except for a tall peak on the right. Place the mouse's cross-hair pointer over that peak. Audacity shows the peak more accurately to be at 18996 Hz which will be the frequency to enter in Notch Filter.</div>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> Index of Effects, Generators and Analyzers</a> <br />
-</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> Effect Menu</a>
+<h2><span class="mw-headline" id="Examples">उदाहरणे</font></font></span></h2>
+<div class="example"><h3><span class="mw-headline" id="Example_1:_Mains_Hum_Removal">उदाहरण 1: मेन्स हम रिमूव्हल</font></font></span></h3>
+उत्तर अमेरिकेसाठी "फ्रिक्वेन्सी" म्हणून 60 हर्ट्ज किंवा युनायटेड किंगडम आणि इतर देशांसाठी 50 हर्ट्ज निवडा. </font><font style="vertical-align: inherit;">देशानुसार मुख्य फ्रिक्वेन्सीची सारणी </font></font><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/List_of_countries_with_mains_power_plugs,_voltages_and_frequencies#Table_of_mains_voltages_and_frequencies">येथे आहे</font></font></a> .</font></font><p>रेकॉर्ड ह्यूममध्ये सहसा ह्यूमच्या मूलभूत वारंवारतेपेक्षा गोंगाट करणारी हार्मोनिक फ्रिक्वेन्सी असते. </font><font style="vertical-align: inherit;">नॉच गाळूनला मूलभूत हम फ्रिक्वेन्सीवर (उदाहरणार्थ, 50 हर्ट्ज किंवा 60 हर्ट्ज) लागू करणे चांगले आहे, नंतर </font></font><span class="menu">विश्लेषण करा </font></font><a href="plot_spectrum.html" title="प्लॉट स्पेक्ट्रम">प्लॉट स्पेक्ट्रम ...</font></font></a></span> इतर विस्तृत ध्वनी स्पाइक्स ओळखण्यासाठी (उदाहरणार्थ 180 हर्ट्ज आणि 300 हर्ट्ज येथे) ). </font><font style="vertical-align: inherit;">आपण स्पेक्ट्रम </font></font><i>आकार</font></font></i> वाढवू शकता </font><font style="vertical-align: inherit;">आणि </font><font style="vertical-align: inherit;">अधिक स्पष्टपणे पाहण्यासाठी </font><font style="vertical-align: inherit;">"लॉग" </font></font><i>अक्ष</font></font></i> वापरू </font><font style="vertical-align: inherit;">शकता. </font><font style="vertical-align: inherit;">इतर प्रत्येक ध्वनी फ्रिक्वेन्सीवर पुन्हा नॉच गाळून चालवा, नंतर </font><font style="vertical-align: inherit;">कोणतेही अवशिष्ट हार्मोनिक्स काढण्यासाठी सौम्य सेटिंग्जमध्ये </font></font><span class="menu">प्रभाव&gt; </font></font><a href="noise_reduction.html" title="गोंगाट कमी करणे">नॉइस रिडक्शन</font></font></a></span> वापरा </font><font style="vertical-align: inherit;">.</font></font></p>
+<ul><li>उच्च हार्मोनिक्स काढताना क्यू फॅक्टर वाढवण्याची शिफारस केली जाते जेणेकरून शक्य ध्वनी आर्टिफॅक्ट्स कमी करता येतील. </font><font style="vertical-align: inherit;">साधारणतया, 2 ते 10 मधील क्यू सामान्यतः काढून टाकण्यासाठी चांगले कार्य करते. </font><font style="vertical-align: inherit;">प्लॉट स्पेक्ट्रममधील ध्वनी स्पाइक वरून योग्य फ्रिक्वेन्सी आणि क्यू फॅक्टर सेटिंग्ज निवडणे अंदाजे आहे, </font><font style="vertical-align: inherit;">जे "विंडिंग" फंक्शनमधील </font><font style="vertical-align: inherit;">अपरिहार्य </font></font><i><b><a href="glossary.html#interpolate" title="शब्दकोष">प्रक्षेप</font></font></a></b></i> त्रुटीमुळे निवडले गेले आहे. </font><font style="vertical-align: inherit;">प्लॉट स्पेक्ट्रममधील फ्रीक्वेंसी आणि क्यू फॅक्टरची गणना करण्यासाठी एक चांगली पद्धत या </font></font><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewtopic.php?f=39&amp;t=40592&amp;start=20#p123749">ओड्यासिटी फोरम विषयात</font></font></a> आढळू शकते </font><font style="vertical-align: inherit;">.</font></font></li></ul>
+<p>खाली दिलेली प्रतिमा काही संगीताचा स्पेक्ट्रम प्लॉट दर्शविते ज्यामधून 60 हर्ट्ज हॅमची एक काप काढली गेली आहे. </font><font style="vertical-align: inherit;">प्रभाव लागू करण्यापूर्वी, ह्यूमने ग्राफिकच्या शीर्षस्थानी विस्तारित या वारंवारतेवर एक प्रमुख स्पाइक प्रदर्शित केला.
+</font></font></p>
+<dl><dd><span title="60 हर्ट्ज खाचसह स्पेक्ट्रमची प्रतिमा काढली"><img alt="स्पेक्ट्रम 60 हर्ट्जने डच डब्लू 10.png" src="../m/images/6/67/spectrum_60hz_notched_w10.png" width="590" height="513"></span></dd></dl>
+ध्वनीवर अवलंबून, आपल्याला या प्रकरणात आढळेल की स्पेक्ट्रम खूप खोलवर खोचला गेला आहे, ज्यामुळे सामग्रीवर परिणाम होईल आणि उच्च क्यू घटकांना प्राधान्य दिले गेले असेल. </font><font style="vertical-align: inherit;">आपणास अंदाजे 100 आणि 350 हर्ट्झ येथे दृश्यमान स्पाइक्सदेखील प्राप्त होऊ शकतात. </font><font style="vertical-align: inherit;">ओड्यासिटी प्रमाणेच, आपण </font></font><span class="menu">संपादित</font></font><a href="edit_menu.html#undo" title="मेनू संपादित करा"><font style="vertical-align: inherit;"></font></a></span> करू शकता </font><span class="menu"><font style="vertical-align: inherit;">&gt; </font></span><span class="menu"><a href="edit_menu.html#undo" title="मेनू संपादित करा"><font style="vertical-align: inherit;">पूर्ववत करा</font></a></span><font style="vertical-align: inherit;"> आणि भिन्न खाच गाळून सेटिंग्जसह प्रयोग </font><font style="vertical-align: inherit;">करू शकता </font><font style="vertical-align: inherit;">.</font></font></div>
+<div class="example"><h3><span class="mw-headline" id="Example_2:_High_pitched_whistle">उदाहरण 2: उंच शिट्टी</font></font></span></h3>
+<dl><dd><span title="18996 हर्ट्झ शिटीसह वारंवारता विश्लेषण स्पेक्ट्रम"><img alt="व्हिसल W10.png सह स्पेक्ट्रम" src="../m/images/3/34/spectrum_with_whistle_w10.png" width="590" height="513"></span></dd></dl>
+या प्रकरणात </font></font><span class="menu">विश्लेषण&gt; </font></font><a href="plot_spectrum.html" title="प्लॉट स्पेक्ट्रम">प्लॉट स्पेक्ट्रम ...</font></font></a></span> वर </font><font style="vertical-align: inherit;">वारंवारता विश्लेषण </font><font style="vertical-align: inherit;">उजवीकडे उंच शिखराशिवाय बर्&zwj;यापैकी गुळगुळीत आहे. </font><font style="vertical-align: inherit;">त्या शिखरावर माउसचा क्रॉस-हेअर अंक ठेवा. </font><font style="vertical-align: inherit;">ओड्यासिटी 18996 हर्ट्जपर्यंतची शिखर अधिक अचूकतेने दर्शवते जी नॉच गाळूनमध्ये प्रवेश करण्याची वारंवारता असेल.</font></font></div>
+<h2><span class="mw-headline" id="Links">दुवे</font></font></span></h2>
+<p><a href="index_of_effects_generators_and_analyzers.html" title="प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका"><b>| &lt;</font></font></b> प्रभाव, जनरेटर आणि विश्लेषकांचे अनुक्रमणिका</font></font></a> <br>
+</p><p><a href="effect_menu.html" title="प्रभाव मेनू"><b>| &lt;</font></font></b> प्रभाव मेनू</font></font></a>
 </p>
 <!-- 
 NewPP limit report
