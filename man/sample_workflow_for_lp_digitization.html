@@ -1,247 +1,243 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8"/>
-<<<<<<< HEAD
-<title>Sample workflow for LP digitization - Audacity Manual</title>
-=======
-<title>एलपी डिजिटायझेशनसाठी नमुना कार्यप्रवाह - ओड्यासिटी माहितीपुस्तिका</title>
->>>>>>> upstream/master
-
-
-
-
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
-
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sample_workflow_for_LP_digitization rootpage-Sample_workflow_for_LP_digitization skin-monobook action-view"><div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
-</div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Sample workflow for LP digitization</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_LP_digitization#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">This tutorial outlines a set of example steps using Audacity to digitize LPs to create files that are ready for CD creation, loading into a digital jukebox or portable music player. There is no fixed "<i><b>right</b></i>" way of working - there are many alternatives; like any recipe, it can be adapted to suit your personal needs.</div>
-<p>This workflow does not at any stage necessitate the saving of an <a href="audacity_projects.html" title="Audacity Projects">Audacity project</a> (though you may wish to do that if you need to interrupt your work). Your final goal will be to <a href="export.html" title="Export">export</a> WAV files for CD creation or other file formats which might be more suitable for your needs.
-</p><p>While all of the processing in this tutorial is carried out using Audacity, some users may prefer to use <a href="#alternative">alternative software</a> for specific sub-tasks like noise removal and the removal of clicks and pops (Audacity's Click Removal may not give as good a result as other software).
-</p><p>For more details of the steps involved in this workflow please see the tutorial set <a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="Tutorial - Copying tapes, LPs or minidiscs to CD">Copying tapes, LPs or MiniDiscs to CD</a>.
-</p>
-<h2><span class="mw-headline" id="Workflow">Workflow</span></h2>
-<ol><li> <a href="#set">Audacity Settings</a></li>
-<li> <a href="#clean">Clean the LP</a></li>
-<li> <a href="#flatten">Flattening a warped LP</a></li>
-<li> <a href="#levels">Recording levels</a></li>
-<li> <a href="#capture">Capture</a></li>
-<li> <a href="#raw">Raw master backup</a></li>
-<li> <a href="#dc">Remove DC offset</a></li>
-<li> <a href="#lf">Reduce subsonic rumble and low frequency noise</a></li>
-<li> <a href="#clicks">Remove clicks and pops</a></li>
-<li> <a href="#hf">Reduce hiss and high frequency noise</a></li>
-<li> <a href="#labels">Place the song labels</a></li>
-<li> <a href="#gaps">Silence the inter-track gaps</a></li>
-<li> <a href="#fades"> Fade Ins/Outs</a></li>
-<li> <a href="#adjust">Adjust Label positions</a></li>
-<li> <a href="#names">Track names</a></li>
-<li> <a href="#advanced">Advanced labeling techniques</a></li>
-<li> <a href="#amplify">Amplitude adjustment</a></li>
-<li> <a href="#compress">Compression</a></li>
-<li> <a href="#wavs">Export a set of WAVs</a></li>
-<li> <a href="#labex">Export labels</a></li>
-<li> <a href="#backup">Backup</a></li>
-<li> <a href="#alternative">Alternative software</a></li></ol>
-<p><br />
-</p>
-<div class="note">Making vinyl to digital transfers is a skill and the more you do the more expert you will become. 
-<ul><li>Consider starting out with some LPs or singles that you care less about, this way you will not need to go back and repeat important earlier transcriptions that you made.  </li>
-<li>Start with a recording that you are very familiar with; your first goal will be to ensure that you have as perfect a digital copy of the material as possible. </li>
-<li>Clean-up steps are optional and need only be applied if your recording requires them.</div></li></ul>
-<p><br />
-</p>
-<div id="set"></div>
-<h3><span class="mw-headline" id="Audacity_settings">Audacity settings</span></h3>
-<p>Work with Audacity set to a project rate of 44100 Hz and 32-bit sample format (these are the default <a href="quality_preferences.html" title="Quality Preferences">quality settings</a>). You may use 16-bit if you prefer; it will give smaller working file sizes but you may lose a little quality in some of the processes.  Export WAV files at 44100 Hz 16-bit PCM stereo, the standard required for <a href="burning_music_files_to_a_cd.html" title="Burning music files to a CD"> burning CDs</a>; this will also produce WAVs which are accepted for import by iTunes (and most other music player software).
-</p>
-<div id="clean"></div>
-<h3><span class="mw-headline" id="Clean_the_LP">Clean the LP</span></h3>
-<p>Cleaning the LP carefully and thoroughly before recording it will reduce the number of clicks and pops and will improve the quality of your recording.
-</p><p>Prepare a solution of lukewarm water mixed with a little dish washing detergent. Use a soft, clean washcloth (or piece of velvet) to carefully wipe the LP's surfaces - try not to get the label wet.  The detergent will float away all the greasy fingerprints - a gentle scrubbing motion will help. Rinse in lukewarm water until all the detergent is gone. Finally, rinse in distilled water (which dries and leaves no residue behind). Air dry your record thoroughly before playing - do not be tempted to play the record "wet" as this may damage the LP and possibly your stylus.
-</p><p>There are a number of commercially available cleaning fluids and cleaning machines that you may wish to consider:
-</p>
-<ul><li>KAB EV-1 Record Cleaner &amp; KAB cleaning solution</li>
-<li>Disco Antistat</li>
-<li>Discwasher</li></ul>
-<div id="flatten"></div>
-<h3><span class="mw-headline" id="Flattening_a_warped_LP">Flattening a warped LP</span></h3>
-<p>If an LP is warped it may not track or play properly; if so, you could try to ease the warps in the vinyl. Place the album in its sleeve and cover between two sheets of flat wood, plywood, glass or similar in a warm room and place some heavy (but not too heavy) weight on top. Leave in the warm room for several days and then try playing it. 
-</p><p>Alternatively, stabilizing rims or clamps on a conventional turntable can be used to safely play all but the most extremely warped LPs <i>(some high-end turntables come supplied with such a clamp)</i>.  A more expensive alternative is to use a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Laser_turntable">laser turntable</a>.
-</p>
-<div id="levels"></div>
-<h3><span class="mw-headline" id="Recording_levels">Recording levels</span></h3>
-<p>Read this page about making a <a href="tutorial_making_a_test_recording.html" title="Tutorial - Making a Test Recording">test recording</a> then make a test recording of portions of the LP (or even a whole side) so as to check the levels. It is important to avoid any <i><b><a href="glossary.html#clipping" title="Glossary">clipping</a></b></i> during the recording!  Try to aim for a maximum peak of around –6 <i><b><a href="glossary.html#decibel" title="Glossary">dB</a></b></i> (or 0.5 if you have your meter set to linear rather than dB).
-</p>
-<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
-
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
-</td>
-<td align="left" valign="top">Enlarging the Recording Meter Toolbar by clicking and dragging helps with this task; you should read this section about <a href="meter_toolbar.html#resizing" title="Meter Toolbar">resizing the Meter Toolbars</a>.
-</td></tr></table>
-</div>
-<div id="capture"></div>
-<h3><span class="mw-headline" id="Capture">Capture</span></h3>
-<p>Record both sides into the project prior to doing the processing.  You can either <b>Stop</b> the recording after the first side using the <img alt="The Stop button" src="../m/images/f/f9/stop.png" title="The Stop button" width="16" height="16" /> button or <span class="menu">Transport &gt; <a href="transport_toolbar.html#stop" title="Transport Toolbar">Stop</a></span> and then use <span class="menu">Transport &gt; <a href="transport_toolbar.html#record" title="Transport Toolbar">Record</a></span> (or use <span class="kbrd" style="background-color: #d0d0f8">Shift + R</span>) to restart recording when you are ready. Alternatively you can pause by pressing the <img alt="The Pause button" src="../m/images/4/47/pause.png" title="The Pause button" width="16" height="16" /> button (or use <span class="menu">Transport &gt; <a href="transport_toolbar.html#pause" title="Transport Toolbar">Pause</a></span>) at the end of the first side and then press  the <img alt="The Pause button" src="../m/images/4/47/pause.png" title="The Pause button" width="16" height="16" /> button again once you are ready to record the second side.
-</p><p>After recording you may find it helpful to <a href="zooming.html" title="Zooming"> zoom out</a> to display the entire recording in the Audacity window.
-</p><p>You may prefer to work with a single side of an LP at a time as that gives a smaller working set.
-</p>
-<div id="raw"></div>
-<h3><span class="mw-headline" id="Raw_master_backup">Raw master backup</span></h3>
-<p><a href="exporting_audio.html" title="Exporting Audio">Export</a> a single WAV for this recording at 32-bit float <i>(not 16-bit)</i>. 
-</p><p>Retain this WAV file as a maximum quality "raw capture" file that you can <a href="file_menu.html#Import" title="File Menu">import</a> back into Audacity later to start over (if you damage the project while working on it).
-</p>
-<div id="dc"></div>
-<h3><span class="mw-headline" id="Remove_DC_offset">Remove DC offset</span></h3>
-<p>DC offset can occur at the recording stage so that the recorded <a href="audacity_waveform.html" title="Audacity Waveform">waveform</a> is not centered on the horizontal line at 0.0 <i><b><a href="glossary.html#amplitude" title="Glossary">amplitude</a></b></i>.  If this is the case with your recordings, see the <a href="normalize.html" title="Normalize">Normalize</a> page for how to use Normalize to remove <a href="glossary.html#dc_offset" title="Glossary">DC offset</a> and how to check if your Windows sound device can perform this correction automatically.
-</p>
-<div id="lf"></div>
-<h3><span class="mw-headline" id="Reduce_subsonic_rumble_and_low_frequency_noise">Reduce subsonic rumble and low frequency noise</span></h3>
-<div class="note">This step can probably be omitted given a flat record and high quality turntable, arm and cartridge.</div>
-<p>Use <span class="menu">Effect &gt; <a href="high_pass_filter.html" title="High-Pass Filter">High Pass Filter...</a></span> with a setting of 24 dB per octave <a href="glossary.html#roll-off" title="Glossary">roll-off</a>, and a cutoff frequency of 20 - 30 Hz to reduce unwanted subsonic frequencies which can cause clicks when editing. If your record is warped, this will definitely generate unwanted subsonics, in which case consider a lower cutoff frequency.
-</p>
-<div id="clicks"></div>
-<h3><span class="mw-headline" id="Remove_clicks_and_pops">Remove clicks and pops</span></h3>
-<p>There are a number of ways you can use Audacity to remove clicks and pops from your recording. First, without zooming in too far, visually inspect your recording for clicks - they will show up as abnormally tall (sticking up or down), very narrow (one or two pixels wide) vertical lines protruding from the waveform. Select a region with one or more of these spikes and listen to it to ensure that they are clicks. After determining that your selection indeed needs to have clicks removed use the <a href="click_removal.html" title="Click Removal">Click Removal</a> effect with various settings - preview the effect with these different settings to get the best results. Then, using the settings from your preview testing, use the Click Removal effect on selected regions of audio or on the whole project. 
-</p><p>Clicks which did not get removed with Click Removal can be treated individually with other methods. These methods are only really useful if you have a relatively small number of clicks and pops to deal with; otherwise, these approaches will be too labor-intensive and time-consuming:
-</p>
-<ul><li> Try Audacity's <a href="repair.html" title="Repair">Repair</a> effect.  This repairs a very short length of up to 128 <i><b><a href="glossary.html#sample" title="Glossary">samples</a></b></i> by <i><b><a href="glossary.html#interpolate" title="Glossary">interpolating</a></b></i> from the neighboring samples. You will need to zoom in to see the individual samples to use this effect.</li>
-<li> For hard to spot clicks you may want to try <a href="click_removal_using_the_spectrogram_view.html" title="Click removal using the Spectrogram view">Click removal using the Spectrogram view</a>.</li>
-<li> For somewhat longer regions of audio, try: 
-<ul><li> <a href="tools_toolbar.html#draw" title="Tools Toolbar">Draw Tool</a>.  You need to be zoomed in to the individual samples to use this.  Some patience may be needed with this tool, but the principle is to put samples back into line with their neighbors so that a smooth contour is presented. </li>
-<li> <span class="menu">Edit &gt; Remove Special &gt; <a href="edit_menu_remove_special.html#silence" title="Edit Menu: Remove Special">Silence Audio</a></span>. You don't need to be zoomed in so far as to see the individual samples, but the silenced sections must be short enough so as to not be audible. </li></ul></li></ul>
-
-<p>See <a href="tutorial_click_and_pop_removal_techniques.html" title="Tutorial - Click and pop removal techniques">Click and pop removal techniques</a> for a detailed tutorial on these  tools.  Also see further down this page for a set of <a href="#alternative">alternative tools</a> known to work well in removing clicks and pops.
-</p>
-<div id="hf"></div>
-<h3><span class="mw-headline" id="Reduce_hiss_and_high_frequency_noise">Reduce hiss and high frequency noise</span></h3>
-<div class="note">Whether you need to use <a href="noise_reduction.html" title="Noise Reduction">Noise Reduction</a> will depend on the quality of your LPs, your stylus and cartridge.</div>
-<p>Use the <a href="noise_reduction.html" title="Noise Reduction">Noise Reduction</a> effect's <b>Get Noise Profile</b> to obtain a noise sample from either the lead-in grooves immediately before the music starts, or from a lead-in between tracks. The length is not important but, typically, it will be less than a second; what is important is that you have a true representative sample of the noise without any audio signal at all (such as a very quiet fade lead in). Try amplifying the sample and audition it to ensure that no real audio signal is present.  If it's OK, undo the amplify, then re-apply the Noise Removal effect with these recommended settings:
-</p>
-<ul><li>Noise reduction - no more than 12 dB (9 dB is a good guideline)</li>
-<li>Sensitivity - 6.00</li>
-<li>Frequency smoothing (bands) - no more than 6 (3 or lower is a good setting for Music)</li></ul>
-<p>Noise reduction is always a compromise because, on the one hand, you can have all the music and a lot of noise and, on the other hand, no noise and only some of the music. Try different settings on the "Noise Reduction (dB)" slider until you get the best compromise.
-</p>
-<div id="labels"></div>
-<h3><span class="mw-headline" id="Place_the_song_labels">Place the song labels</span></h3>
-<p>Mark the approximate <a href="label_tracks.html" title="Label Tracks">label</a> points - click in the <a href="audacity_waveform.html" title="Audacity Waveform">waveform</a> at the approximate point between the tracks on the album, press <span class="kbrd" style="background-color: #d0d0f8">Ctrl + B</span> then <span class="kbrd" style="background-color: #e0e0f0">Enter</span>. Don't forget to insert a label at the beginning for the first track. Alternatively you can mark a label point while recording (or on playback) using <span class="kbrd" style="background-color: #d0d0f8">Ctrl + M</span> ( <i><span class="kbrd" style="background-color: #d0d0f8">&#8984; + .&#160;</span> on Mac</i> ).
-</p>
-</li></ul>
-<div id="gaps"></div>
-<h3><span class="mw-headline" id="Silence_the_inter-track_gaps">Silence the inter-track gaps</span></h3>
-<p>These are rarely truly silent so you may want to replace them with silence by selecting the gap and using <span class="kbrd" style="background-color: #d0d0f8">Ctrl + L</span> or the <a href="generate_menu.html#silence" title="Generate Menu">Silence Generator effect</a>. Edit the inter-track gap as desired to around a maximum of 2 seconds; you may wish to use a shorter gap or even no gap at all for some recordings.  
-</p>
-<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
-
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
-</td>
-<td align="left" valign="top">By default CD burning software almost always adds a 2-second gap between tracks. Check for any options to turn this off, for "gapless burning" or "Disc-at-once (DAO)" that you can enable.
-</td></tr></table></div>
-<div id="fades"></div>
-<h3><span class="mw-headline" id="Fade_Ins.2FOuts">Fade Ins/Outs</span></h3>
-<p>You may wish to more cleanly fade-in and fade-out the song beginnings and endings by using <span class="menu">Effect &gt; <a href="fades.html#linearfade" title="Fades">Fade In</a></span> and <span class="menu">Effect &gt; <a href="fades.html#linearfade" title="Fades">Fade Out</a></span>. Normally fade outs should be longer <i>(typically a few seconds)</i>, and fade ins, if required, quite short <i>(typically a fraction of a second)</i>. 
-</p><p>Consider using <span class="menu">Effect &gt; <a href="fades.html#studio_fadeout" title="Fades">Studio Fade Out</a></span> instead of the linear <b>Fade Out</b>.  It applies a more musical fade out to the selected audio, giving a more pleasing (more "professional studio") sounding result.
-</p><p>You may also get a more musical fade-in by applying <span class="menu">Effect &gt; <a href="fades.html#linearfade" title="Fades">Fade In</a></span> multiple times to the selected audio, three times is a good guideline.  This will produce a shaped, curved, fade rather than a linear one.
-</p>
-<div class="note">Although no keyboard shortcuts for effects are provided by default in Audacity it is possible to set up your own shortcuts for any effects you choose.  You may find it particularly beneficial to assign shortcuts for <b>Fade In</b> and <b>Fade Out</b> (or <b>Studio Fade Out</b>) as these will used repeatedly for LP digitization.<p>For instructions on how to do this please see the <a href="keyboard_preferences.html" title="Keyboard Preferences">Keyboard Preferences</a> page in the manual.</p></div>
-<div id="adjust"></div>
-<h3><span class="mw-headline" id="Adjust_label_positions">Adjust label positions</span></h3>
-<p>If you are using a 2-second gap, adjust the label position as desired to be  0.5 seconds before the start of the next track. To move the label, drag it by its center circle.
-</p>
-<div id="names"></div>
-<h3><span class="mw-headline" id="Track_names">Track names</span></h3>
-<p>Edit the labels for the song names - we suggest using "01 First Song Name", "02 Second Song Name", and so on as this helps keep them in the right order for CD production or loading into iTunes.  You may find that changing the zoom level will help you with this task; you can advance to the next label by ensuring that the focus is in the current label then using <span class="kbrd" style="background-color: #e0e0f0">Tab</span>.
-</p><p>If you wish you may instead automatically prefix named tracks with a sequential two-digit number. <br />To do this, in the "Name files" section of the Export Multiple dialog select the <span class="button">Numbering before Label/Track Name</span> radio button.
-</p>
-<div id="advanced"></div>
-<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
-
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
-</td>
-<td align="left" valign="top">
-<h3><span class="mw-headline" id="Advanced_labeling_techniques">Advanced labeling techniques</span></h3>
-<ul><li>You may wish to label each track with its full text while you are recording. To do so, use <span class="kbrd" style="background-color: #d0d0f8">Ctrl + M</span> ( <i><span class="kbrd" style="background-color: #d0d0f8">&#8984; + .&#160;</span> on Mac</i> ) to mark each track end as the recording progresses.  This saves time in the processing <i>(which can be important when you have a lot of LPs)</i>. You do have to be <b>very careful</b> to make sure that focus remains on the label as otherwise you will get the unexpected halt to the recording when you type "space-bar" in what you think is a label.  Also ensure that you do not click in the <a href="timeline.html" title="Timeline">Timeline</a> as that will also stop the recording and instead play from the clicked position.</li>
-<li>If the LP has track timings listed you can enhance this step of the process by setting up an empty project with the labels placed at the listed track boundary timings and a further label slightly beyond the end at the end - then zoom the project to fit (use <span class="kbrd" style="background-color: #d0d0f8">Ctrl + F</span>) and then start recording. The text of each label can be typed, once again with <b>great care</b>, while you are making the recording.</li></ul>
-</td></tr></table>
-</div>
-<div id="amplify"></div>
-<h3><span class="mw-headline" id="Amplitude_adjustment">Amplitude adjustment</span></h3>
-<p>Normalize the amplitude of the recording; either do each track of the recording individually (especially if the tracks will be randomly played from a library containing many different styles of music) or, do the whole recording at once (which will work fine if all the tracks have the same average volume).  Use <span class="menu">Effect &gt; <a href="normalize.html" title="Normalize">Normalize</a></span> as the last editing step, setting "Normalize maximum amplitude to" to around -3 dB or similar, to give some headroom below the distortion level.  The Normalize effect can be set to either:
-</p>
-<ul><li>Adjust the amplitude of both stereo channels by the same amount (thus preserving the original stereo balance), or</li>
-<li>Adjust each stereo channel independently (this can be useful if your equipment is not balanced).</li></ul>
-<div id="compress"></div>
-<h3><span class="mw-headline" id="Compression">Compression</span></h3>
-<p>The <a href="compressor.html" title="Compressor">Compressor</a> effect reduces the dynamic range of audio. One of the main purposes of reducing dynamic range is to permit the audio to be amplified further (without clipping) than would be otherwise possible.
-</p><p>Compressor makes the loud parts quieter and (optionally) the quiet parts louder. It can be very useful for listening to classical music in a car. Such music normally has a wide dynamic range and can thus be difficult to listen to in a car without constant volume re-adjustment.
-</p>
-<div id="wavs"></div>
-<h3><span class="mw-headline" id="Export_a_set_of_WAVs">Export a set of WAVs</span></h3>
-<p>Use <span class="menu">File &gt; Export &gt; <a href="export_multiple.html" title="Export Multiple">Export Multiple...</a></span> to produce a set of WAVs for each track on the LP at 44100 Hz 16-bit PCM stereo. Audacity will down-sample on export from 32-bit to 16-bit. Shaped <a href="dither.html" title="Dither">dither</a> noise will be applied by default to cover any defects (clicky noise) that may result from the conversion from 32-bit to 16-bit. Advanced users can change the type of [[Dither|dither], or turn it off, in <a href="quality_preferences.html#conversion" title="Quality Preferences">Quality Preferences</a>.
-</p><p>In order to facilitate later retrieval and use, place all the files for a particular album in a specifically named folder for that album.
-</p>
-<div id="labex"></div>
-<h3><span class="mw-headline" id="Export_Labels">Export Labels</span></h3>
-<p>Some users advise a final step of exporting a file containing the labels.  Use <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportlabels" title="File Menu: Export">Export Labels...</a></span> This produces a text file that you can later re-import using <span class="menu">File &gt; Import &gt; <a href="file_menu_import.html#labels" title="File Menu: Import">Labels...</a></span> should you wish to re-edit from the raw capture file that you backed up earlier in the workflow.
-</p>
-<div id="backup"></div>
-<h3><span class="mw-headline" id="Backup">Backup</span></h3>
-<p>Backup your exported WAV or MP3 files - you don't want to lose all that valuable work and have to do it all over again, do you? Computer hard drives can fail, destroying all data. 
-</p><p>Ideally use a dedicated drive <i>(1+ TB external magnetic drives are convenient and economical)</i>, or upload to an online (cloud) storage service to store the WAVs or MP3s. Better still is to make two copies on different external devices and even better is to hold an online backup as well as the local copies. 
-</p><p>You may want to create a taxonomic file structure - for example each album can be stored in its own folder (named for the album) within a folder named for the artist (or, perhaps, composer for classical music) to make searching and retrieval easier.
-</p>
-<div id="alternative"></div>
-<h2><span class="mw-headline" id="Alternative_software">Alternative software</span></h2>
-<ul><li><b><a rel="nofollow" class="external text" href="http://www.goldwave.com">GoldWave</a></b>: Though nominally not free it is a top class, free trial click remover as well as an excellent alternative audio editor. Its click removal is an effect, just like in Audacity, and there is a "Smoother" effect for broad unwanted noises and an excellent "Noise Reduction" effect for steady noise. The trial version limits you to a hundred or so commands per session, and a total number of several thousand commands before it expires, but if you export from Audacity as 32-bit WAV and just do Click Removal in it, you should be able to declick several hundred records for free. </li>
-<li><b><a rel="nofollow" class="external text" href="http://gwc.sourceforge.net/">Gnome Wave Cleaner</a></b>: Only for Linux users.  Digital restoration of CD-quality audio files. Dehiss, declick and decrackle in a GUI environment. It can also automatically mark song boundaries if required.</li></ul>
-<h3><span class="mw-headline" id="Clicks_and_pops">Clicks and pops</span></h3>
-<ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net">ClickRepair</a></b>:  An excellent tool for removing <i>clicks</i> and <i>pops</i> is Brian Davies' ClickRepair. Some new users may find it a bit intimidating as an entry level tool but, once you have understood the settings you want to use, it is effectively an automated tool.  It requires Java and is not free, but many users report that it saves a lot of time and produces good results.  Since ClickRepair will work with 32-bit files it is worth exporting a 32-bit float WAV file for processing though ClickRepair and importing back into Audacity, that way no dithering will be applied in the process. </li></ul>
-<div class="note">You may find the default settings for this application remove a little too much signal.  An alternative recommendation:
-<ul><li>DeClick = 30 (default is 50)</li>
-<li>Pitch Protection = "on" (default is "off") though leave this "off" for brass recordings</li>
-<li>Reverse = "on" (there is no processing penalty for this and it helps on percussive music)</li>
-<li>Method = Wavelet</div></li></ul>
-<h3><span class="mw-headline" id="Hiss_and_noise_removal">Hiss and noise removal</span></h3>
-<ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net">DeNoise</a></b>:  Brian Davies also supplies a tool called DeNoise; this is effective at removing noise and hiss.  As with ClickRepair, some new users may find it similarly intimidating as an entry level tool. Users report that settings normally have to be reset for each recording to optimize the noise removal thus making it difficult to use in a semi-automated way.
-<ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net">DeNoiseLF</a></b> is supplied as a separate package bundled with DeNoise. It is used for reducing low-frequency noise (such as turntable rumble) and hum.</li></ul></li></ul>
-<div id="chris"></div>
-<h3><span class="mw-headline" id="Compression_2">Compression</span></h3>
-<p>Please see <a href="chris_s_dynamic_compressor.html" title="Chris's Dynamic Compressor">Chris's Dynamic Compressor</a> for a popular alternative compressor which may be downloaded for free.  It works by trying to even out abrupt changes of volume by employing "lookahead" <i>(this attempts to anticipate volume changes by starting to apply compression before the volume rises to the threshold level)</i>. It has options to soften the softer audio and invert loudness.
-</p>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="Tutorial - Copying tapes, LPs or minidiscs to CD"><b>|&lt;</b> Tutorial - Copying tapes, LPs or MiniDiscs to CD</a><br />
-</p><p><a href="recording_78_rpm_records.html" title="Recording 78 rpm records"><b>&gt;</b>&#160; See also tutorial on: Recording 78 rpm records</a> <br />
-</p>
+<html class="client-nojs" lang="mr" dir="ltr"><head>
+	<meta charset="UTF-8">
+	<title>एलपी डिजिटलायझेशनसाठी नमुना वर्कफ्लो - ओड्यासिटी महितीपुस्तिका</title>
+	
+	
+	
+	
+	<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
+	<meta name="ResourceLoaderDynamicStyles" content="">
+	
+	<meta name="generator" content="MediaWiki 1.28.2">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी डेव्हलपमेंट महितीपुस्तिका (इं)">
+	<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+	<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+	
+	<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+	</head>
+	<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sample_workflow_for_LP_digitization rootpage-Sample_workflow_for_LP_digitization skin-monobook action-view"><div id="globalWrapper">
+			<div id="column-content">
+				<div id="content" class="mw-body" role="main">
+					<a id="top"></a>
+					
+					<div class="mw-indicators">
+	</div>
+					<h1 id="firstHeading" class="firstHeading" lang="en"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एलपी डिजिटलायझेशनसाठी नमुना कार्यप्रवाह</font></font></h1>
+					
+					<div id="bodyContent" class="mw-body-content">
+						<div id="siteSub"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओड्यासिटी विकास महितीपुस्तिकेकडून
+						</font></font></div>
+						<div id="contentSub"></div>
+											<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_LP_digitization#searchInput">search</a></div>
+	
+						<!-- start content -->
+						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+	<div class="intro"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हे प्रशिक्षण सीडी तयार करण्यासाठी तयार असलेल्या धारिका तयार करण्यासाठी ओड्यासिटीचा वापर करुन एलपीजचे डिजिटलाइजेशन करण्यासाठी असलेल्या चरणांच्या संचाचा एक आराखडा, डिजिटल ज्यूकबॉक्स किंवा पोर्टेबल संगीत प्लेयरमध्ये लोड करीत आहे. </font><font style="vertical-align: inherit;">कार्य करण्याचा </font><font style="vertical-align: inherit;">कोणताही निश्चित " </font></font><i><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">योग्य</font></font></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> " मार्ग नाही - तेथे बरेच पर्याय आहेत; </font><font style="vertical-align: inherit;">कोणत्याही कृतीप्रमाणेच ते आपल्या वैयक्तिक आवश्यकतानुसार अनुकूल केले जाऊ शकते.</font></font></div>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हा वर्कफ्लो कोणत्याही टप्प्यावर </font></font><a href="audacity_projects.html" title="धृष्टता प्रकल्प"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओड्यासिटी प्रकल्पाची</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बचत करण्याची आवश्यकता नाही </font><font style="vertical-align: inherit;">(जरी आपल्याला आपल्या कामात व्यत्यय </font><font style="vertical-align: inherit;">आणण्याची आवश्यकता </font><font style="vertical-align: inherit;">असल्यास आपण ते करू इच्छित असाल). </font><font style="vertical-align: inherit;">आपले अंतिम लक्ष्य </font><font style="vertical-align: inherit;">सीडी तयार </font></font><a href="export.html" title="निर्यात करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">करण्यासाठी</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> डब्ल्यूएव्ही धारिका किंवा आपल्या आवश्यकतेसाठी अधिक योग्य असू शकतील अशा इतर धारिका स्वरूपनांचे </font><a href="export.html" title="निर्यात करा"><font style="vertical-align: inherit;">निर्यात</font></a><font style="vertical-align: inherit;"> करणे हे आहे.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या प्रशिक्षणामध्ये सर्व प्रक्रिया ओड्यासिटीचा वापर करुन केली जात आहे, परंतु काही वापरकर्ते </font><font style="vertical-align: inherit;">विशिष्ट उप-कार्यांसाठी </font></font><a href="#alternative"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पर्यायी अनुप्रयोग</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरण्यास प्राधान्य देऊ शकतात </font><font style="vertical-align: inherit;">जसे की आवाज काढणे आणि फीत आणि पॉप्स काढणे (ओड्यासिटीचे क्लिक काढणे कदाचित इतरांसारखे चांगले परिणाम देऊ शकत नाहीत) अनुप्रयोग).
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या कार्यप्रवाहात सामील असलेल्या चरणांच्या अधिक तपशीलांसाठी कृपया </font></font><a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="ट्यूटोरियल - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सीडीमध्ये नक्कल, टेप, एलपी किंवा मिनीडिस्कीक</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रशिक्षण संच पहा </font><font style="vertical-align: inherit;">.
+	</font></font></p>
+	<h2><span class="mw-headline" id="Workflow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कार्यप्रवाह</font></font></span></h2>
+	<ol><li> <a href="#set"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओड्यासिटी समायोजन</font></font></a></li>
+	<li> <a href="#clean"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एलपी स्वच्छ करा</font></font></a></li>
+	<li> <a href="#flatten"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एक विकृत एलपी सपाट करणे</font></font></a></li>
+	<li> <a href="#levels"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनीमुद्रण स्तर</font></font></a></li>
+	<li> <a href="#capture"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हस्तगत करा</font></font></a></li>
+	<li> <a href="#raw"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">रॉ मास्टर बॅकअप</font></font></a></li>
+	<li> <a href="#dc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीसी ऑफसेट काढा</font></font></a></li>
+	<li> <a href="#lf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सबसॉनिक रम्बल आणि कमी वारंवारतेचा आवाज कमी करा</font></font></a></li>
+	<li> <a href="#clicks"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक आणि पॉप काढा</font></font></a></li>
+	<li> <a href="#hf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हिस आणि उच्च वारंवारतेचा आवाज कमी करा</font></font></a></li>
+	<li> <a href="#labels"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गाण्याचे नावपट्टीे ठेवा</font></font></a></li>
+	<li> <a href="#gaps"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">इंटर-गीतपट्टा अंतरांवर शांतता घ्या</font></font></a></li>
+	<li> <a href="#fades"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> फेड आत/बाहेर</font></font></a></li>
+	<li> <a href="#adjust"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टी स्थिती समायोजित करा</font></font></a></li>
+	<li> <a href="#names"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावे मागोवा घ्या</font></font></a></li>
+	<li> <a href="#advanced"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रगत नावपट्टीिंग तंत्र</font></font></a></li>
+	<li> <a href="#amplify"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मोठेपणा समायोजन</font></font></a></li>
+	<li> <a href="#compress"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकुचन</font></font></a></li>
+	<li> <a href="#wavs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्हीचा संच निर्यात करा</font></font></a></li>
+	<li> <a href="#labex"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टीे निर्यात करा</font></font></a></li>
+	<li> <a href="#backup"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बॅकअप</font></font></a></li>
+	<li> <a href="#alternative"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिक अनुप्रयोग</font></font></a></li></ol>
+	<p><br>
+	</p>
+	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डिजिटल हस्तांतरणामध्ये विनाइल बनविणे एक कौशल्य आहे आणि आपण जितके अधिक तज्ञ बनवाल तितके आपण व्हाल. 
+	</font></font><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्याला कमी काळजी वाटणार्&zwj;या काही एलपी किंवा एकेरीपासून सुरुवात करण्याचा विचार करा, या मार्गाने आपल्याला परत जाण्याची आवश्यकता नाही आणि आपण केलेल्या पूर्वीच्या महत्त्वपूर्ण ट्रान्सक्रिप्शनची पुनरावृत्ती करण्याची आवश्यकता नाही.  </font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण ज्यास परिचित आहात अशा ध्वनीमुद्रणसह प्रारंभ करा; </font><font style="vertical-align: inherit;">आपले प्रथम लक्ष्य आपल्याकडे शक्य तितक्या योग्य सामग्रीची डिजिटल प्रत आहे याची खात्री करणे आहे.</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लीन-अप चरणे पर्यायी आहेत आणि केवळ आपल्या ध्वनीमुद्रणची आवश्यकता असल्यास ते लागू करणे आवश्यक आहे.</font></font></li></ul></div>
+	<p><br>
+	</p>
+	<div id="set"></div>
+	<h3><span class="mw-headline" id="Audacity_settings"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओड्यासिटी समायोजन</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रकल्प दर ४४१०० हर्ट्ज आणि ३२-बिट नमुना स्वरूपात (हे पूर्वनिर्धारित </font></font><a href="quality_preferences.html" title="गुणवत्ता प्राधान्ये"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गुणवत्ता समायोजन आहेत</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) </font><font style="vertical-align: inherit;">ओड्यासिटीसह कार्य </font><a href="quality_preferences.html" title="गुणवत्ता प्राधान्ये"><font style="vertical-align: inherit;">करा</font></a><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">आपण प्राधान्य दिल्यास आपण १६-बिट वापरू शकता; </font><font style="vertical-align: inherit;">हे कार्यशीलतेचे छोटे आकार देईल परंतु काही प्रक्रियांमध्ये आपण थोडी गुणवत्ता गमावू शकता. </font><font style="vertical-align: inherit;">४४१०० हर्ट्ज १६-बिट पीसीएम स्टीरिओवर डब्ल्यूएव्ही धारिका निर्यात करा, </font></font><a href="burning_music_files_to_a_cd.html" title="सीडीवर संगीत धारिका बर्न करत आहे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सीडी जाळण्यासाठी</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आवश्यक मानक </font><font style="vertical-align: inherit;">; </font><font style="vertical-align: inherit;">हे डब्ल्यूएव्ही देखील तयार करेल जे आयट्यून्स (आणि इतर बरेच संगीत प्लेअर अनुप्रयोग) आयात करण्यासाठी स्वीकारले गेले आहेत.
+	</font></font></p>
+	<div id="clean"></div>
+	<h3><span class="mw-headline" id="Clean_the_LP"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एलपी स्वच्छ करा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनीमुद्रणपूर्वी एलपीची काळजीपूर्वक आणि  साफ केल्यास क्लिक आणि पॉपची संख्या कमी होईल आणि तुमच्या ध्वनीमुद्रणची गुणवत्ता सुधारेल.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">थोडासा डिश वॉशिंग डिटर्जंट मिसळून कोमट पाण्याचा सोल्यूशन तयार करा. </font><font style="vertical-align: inherit;">एलपीची पृष्ठभाग काळजीपूर्वक पुसण्यासाठी मऊ, स्वच्छ वॉशक्लोथ (किंवा मखमलीचा तुकडा) वापरा - नावपट्टी ओले होऊ नये यासाठी प्रयत्न करा. </font><font style="vertical-align: inherit;">डिटर्जंट सर्व चिकट फिंगरप्रिंट्स फ्लोट करेल - एक सभ्य स्क्रबिंग मोशन मदत करेल. </font><font style="vertical-align: inherit;">सर्व डिटर्जंट मिळेपर्यंत कोमट पाण्यात स्वच्छ धुवा. </font><font style="vertical-align: inherit;">शेवटी, डिस्टिल्ड पाण्यात स्वच्छ धुवा (जे कोरडे होते आणि मागे काही उरले नाही). </font><font style="vertical-align: inherit;"> प्ले करण्यापूर्वी आपले ध्वनीमुद्रण पूर्णपणे वाळवा - ध्वनीमुद्रण "ओले" प्ले करण्याचा मोह करू नका कारण यामुळे एलपीला आणि कदाचित आपल्या स्टाईलसला नुकसान होऊ शकते.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अशी अनेक व्यावसायिक उपलब्ध स्वच्छतेचे फ्लुईड आणि क्लीनिंग मशीन आहेत ज्यांचा आपण विचार करू शकता:
+	</font></font></p>
+	<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">केएबी ईव्ही -1 ध्वनीमुद्रण क्लीनर आणि केएबी स्वच्छता समाधान</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डिस्को अँटिस्टेट</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डिस्वाशर</font></font></li></ul>
+	<div id="flatten"></div>
+	<h3><span class="mw-headline" id="Flattening_a_warped_LP"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एक विकृत एलपी सपाट करणे</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">जर एलपीला  आला असेल तर तो गीतपट्टा करू शकत नाही किंवा योग्यरित्या प्ले करत नाही; </font><font style="vertical-align: inherit;">तसे असल्यास, आपण वायनिल मध्ये warps सुलभ प्रयत्न करू शकता. </font><font style="vertical-align: inherit;">अल्बम त्याच्या स्लीव्हमध्ये ठेवा आणि सपाट लाकूड, प्लायवुड, काच किंवा तत्सम दोन पत्रकांदरम्यान गरम खोलीत झाकून ठेवा आणि वर काही वजनदार (परंतु जास्त वजन नसलेले) ठेवा. </font><font style="vertical-align: inherit;">कित्येक दिवस उबदार खोलीत रहा आणि नंतर ते खेळण्याचा प्रयत्न करा. 
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिकरित्या, पारंपारिक टर्नटेबलवर रिम्स किंवा क्लॅम्पस स्थिर ठेवण्याचा वापर सर्वात अत्यंत रेपयुक्त एलपीशिवाय </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(काही उच्च-अंत टर्नटेबल्स अशा क्लॅम्पसह पुरविला</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> जातो) सुरक्षितपणे खेळण्यासाठी केला जाऊ शकतो </font><font style="vertical-align: inherit;">. </font></font><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Laser_turntable"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">लेसर टर्नटेबल</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरणे हा एक अधिक महाग पर्याय आहे </font><font style="vertical-align: inherit;">.
+	</font></font></p>
+	<div id="levels"></div>
+	<h3><span class="mw-headline" id="Recording_levels"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनीमुद्रण स्तर</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"></font><a href="tutorial_making_a_test_recording.html" title="प्रशिक्षण - एक चाचणी ध्वनीमुद्रण बनविणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">चाचणी ध्वनीमुद्रण</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करण्याबद्दल हे पृष्ठ वाचा आणि </font><font style="vertical-align: inherit;">नंतर पातळी तपासण्यासाठी एलपीच्या काही भागाची (किंवा अगदी संपूर्ण बाजू) चाचणी ध्वनीमुद्रण करा. </font><font style="vertical-align: inherit;">ध्वनीमुद्रण दरम्यान </font><font style="vertical-align: inherit;">कोणत्याही </font></font><i><b><a href="glossary.html#clipping" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिपिंग</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> टाळणे महत्वाचे आहे </font><font style="vertical-align: inherit;">! </font><font style="vertical-align: inherit;">जास्तीत जास्त d6 </font></font><i><b><a href="glossary.html#decibel" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीबी</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (किंवा आपल्या मीटरने डीबीऐवजी रेखीय वर सेट केले असल्यास 0.5) </font><font style="vertical-align: inherit;">कमाल शिखरासाठी लक्ष्य करण्याचा प्रयत्न करा </font><font style="vertical-align: inherit;">.
+	</font></font></p>
+	<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+	<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+	
+	<tbody><tr>
+	<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+	</td>
+	<td align="left" valign="top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक करुन ड्रॅग करून ध्वनीमुद्रण मीटर साधनपट्टी विस्तृत करणे या कार्यास मदत करते; </font></font><a href="meter_toolbar.html#resizing" title="मीटर साधनपट्टी"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मीटर साधनपट्टीचे आकार बदलण्याबद्दल</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आपण हा विभाग वाचला पाहिजे </font><font style="vertical-align: inherit;">.
+	</font></font></td></tr></tbody></table>
+	</div>
+	<div id="capture"></div>
+	<h3><span class="mw-headline" id="Capture"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हस्तगत करा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रक्रिया करण्यापूर्वी दोन्ही बाजूंना प्रकल्पात ध्वनीमुद्रण करा. </font><font style="vertical-align: inherit;">आपण एकतर </font><font style="vertical-align: inherit;">बटण </font><font style="vertical-align: inherit;">वापरुन ध्वनीमुद्रण </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">थांबवू</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> शकता </font></font><img alt="थांबा बटण" src="../m/images/f/f9/stop.png" title="थांबा बटण" width="16" height="16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">किंवा </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">परिवहन&gt; </font></font><a href="transport_toolbar.html#stop" title="परिवहन साधनपट्टी"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">थांबा</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि नंतर </font><font style="vertical-align: inherit;">आपण तयार असाल तेव्हा ध्वनीमुद्रण पुन्हा सुरु  </font><font style="vertical-align: inherit;">करण्यासाठी </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">परिवहन&gt; </font></font><a href="transport_toolbar.html#record" title="परिवहन साधनपट्टी"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनीमुद्रण</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (किंवा </font></font><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">शिफ्ट + आर</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरा </font><font style="vertical-align: inherit;">) </font><font style="vertical-align: inherit;">वापरू </font><font style="vertical-align: inherit;">शकता. </font><font style="vertical-align: inherit;">वैकल्पिकरित्या आपण </font><font style="vertical-align: inherit;">पहिल्या बाजूच्या शेवटी </font></font><img alt="विराम द्या बटण" src="../m/images/4/47/pause.png" title="विराम द्या बटण" width="16" height="16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बटण </font><font style="vertical-align: inherit;">दाबून विराम देऊ शकता </font><font style="vertical-align: inherit;">(किंवा </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">परिवहन&gt; </font></font><a href="transport_toolbar.html#pause" title="परिवहन साधनपट्टी"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">विराम द्या</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरा </font><font style="vertical-align: inherit;">) आणि नंतर </font></font><img alt="विराम द्या बटण" src="../m/images/4/47/pause.png" title="विराम द्या बटण" width="16" height="16"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण दुसरी बाजू ध्वनीमुद्रण करण्यास तयार झाल्यावर पुन्हा बटण </font><font style="vertical-align: inherit;">दाबा </font><font style="vertical-align: inherit;">.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनीमुद्रणनंतर </font><font style="vertical-align: inherit;">ओड्यासिटी विंडोमध्ये संपूर्ण ध्वनीमुद्रण प्रदर्शित </font><font style="vertical-align: inherit;">करण्यासाठी </font></font><a href="zooming.html" title="झूम करत आहे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">झूम कमी</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करणे उपयुक्त ठरेल </font><font style="vertical-align: inherit;">.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">तुम्ही एलपीच्या एका बाजूने काम करण्यास प्राधान्य देऊ शकता कारण त्यायोगे एक लहान कामकाजाचा सेट मिळेल.
+	</font></font></p>
+	<div id="raw"></div>
+	<h3><span class="mw-headline" id="Raw_master_backup"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">रॉ मास्टर बॅकअप</font></font></span></h3>
+	<p><a href="exporting_audio.html" title="ध्वनी निर्यात करीत आहे"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या ध्वनीमुद्रणसाठी एकच डब्ल्यूएव्ही </font><a href="exporting_audio.html" title="ध्वनी निर्यात करीत आहे"><font style="vertical-align: inherit;">निर्यात</font></a><font style="vertical-align: inherit;"> ३२-बिट फ्लोट </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(१६-बिट नाही) वर करा</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . 
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या डब्ल्यूएव्ही धारिकेला जास्तीत जास्त गुणवत्तेची "कच्ची हस्तगत" धारिका म्हणून पुन्हा ठेवा जी आपण </font><font style="vertical-align: inherit;">पुन्हा सुरू करण्यासाठी ओड्यासिटीमध्ये परत </font></font><a href="file_menu.html#Import" title="धारिका मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयात</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करू शकता </font><font style="vertical-align: inherit;">(आपण त्यावर काम करत असताना प्रकल्पाचे नुकसान केल्यास).
+	</font></font></p>
+	<div id="dc"></div>
+	<h3><span class="mw-headline" id="Remove_DC_offset"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीसी ऑफसेट काढा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीसी ऑफसेट ध्वनीमुद्रणच्या टप्प्यावर उद्भवू शकते जेणेकरून ध्वनीमुद्रण केलेले </font></font><a href="audacity_waveform.html" title="ओड्यासिटी वेव्हफॉर्म"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वेव्हफॉर्म</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 0.0 </font></font><i><b><a href="glossary.html#amplitude" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मोठेपणाच्या</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्षैतिज रेषावर केंद्रित होणार नाही </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">जर आपल्या ध्वनीमुद्रणमध्ये अशी स्थिती </font><font style="vertical-align: inherit;">असेल तर </font><a href="glossary.html#dc_offset" title="शब्दकोष"><font style="vertical-align: inherit;">डीसी ऑफसेट</font></a><font style="vertical-align: inherit;"> काढण्यासाठी नॉर्मलाइझ कसे वापरावे </font><font style="vertical-align: inherit;">आणि आपले विंडोज आवाज उपकरण स्वयंचलितपणे ही दुरुस्ती करू शकते किंवा नाही हे कसे तपासावे </font><font style="vertical-align: inherit;">यासाठी </font></font><a href="normalize.html" title="सामान्य करणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सामान्यीकरण</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पृष्ठ </font><font style="vertical-align: inherit;">पहा </font><font style="vertical-align: inherit;">.
+	</font></font><a href="glossary.html#dc_offset" title="शब्दकोष"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+	<div id="lf"></div>
+	<h3><span class="mw-headline" id="Reduce_subsonic_rumble_and_low_frequency_noise"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सबसॉनिक रम्बल आणि कमी वारंवारतेचा आवाज कमी करा</font></font></span></h3>
+	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सपाट ध्वनीमुद्रण आणि उच्च दर्जाचे टर्नटेबल, आर्म आणि कार्ट्रिज देऊन हे चरण कदाचित वगळले जाऊ शकते.</font></font></div>
+	<p><font style="vertical-align: inherit;"></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रभाव&gt; </font></font><a href="high_pass_filter.html" title="हाय-पास फिल्टर"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">उच्च पास फिल्टर ...</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रति ऑक्टाव्ह </font></font><a href="glossary.html#roll-off" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">रोल-</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ऑफवरील २४ डीबी समायोजनासह </font><font style="vertical-align: inherit;">आणि अवांछित सबसॉनिक वारंवारता कमी करण्यासाठी २०-३० हर्ट्जची कटऑफ वारंवारता </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">ज्यामुळे संपादन करताना क्लिक होऊ शकतात. </font><font style="vertical-align: inherit;">जर आपल्या ध्वनीमुद्रणला जाळे दिले असेल तर हे निश्चितपणे अवांछित सबसॉनिक्स व्युत्पन्न करेल, अशा प्रकरणात कमी कटऑफची वारंवारता विचारात घ्या.
+	</font></font></p>
+	<div id="clicks"></div>
+	<h3><span class="mw-headline" id="Remove_clicks_and_pops"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक आणि पॉप काढा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्या ध्वनीमुद्रणमधून क्लिक आणि पॉप काढण्यासाठी आपण ओड्यासिटी वापरू शकता असे बरेच मार्ग आहेत. </font><font style="vertical-align: inherit;">प्रथम, खूपच दूर झूम न करता, क्लिकसाठी आपल्या ध्वनीमुद्रणची नेत्रहीन तपासणी करा - ते वेव्हफॉर्ममधून पुढे गेलेल्या अतिशय अरुंद (एक किंवा दोन पिक्सेल रुंद) उभ्या रेषा असामान्य उंच (चिकटून किंवा खाली) दर्शविल्या जातील. </font><font style="vertical-align: inherit;">यापैकी एक किंवा अधिक स्पाइक असलेला एक प्रदेश निवडा आणि ते क्लिक आहेत हे सुनिश्चित करण्यासाठी ते ऐका. </font><font style="vertical-align: inherit;">आपल्या निवडीत खरोखरच क्लिक्स </font></font><a href="click_removal.html" title="क्लिक करा काढणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काढणे</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आवश्यक आहे हे निर्धारित केल्यानंतर </font><font style="vertical-align: inherit;">विविध समायोजनसह </font><a href="click_removal.html" title="क्लिक करा काढणे"><font style="vertical-align: inherit;">क्लिक निकास</font></a><font style="vertical-align: inherit;"> प्रभावांचा </font><font style="vertical-align: inherit;">वापर </font><font style="vertical-align: inherit;">करा - उत्कृष्ट परिणाम मिळविण्यासाठी या भिन्न समायोजनसह प्रभावाचे पूर्वावलोकन करा. </font><font style="vertical-align: inherit;">त्यानंतर आपल्या पूर्वावलोकन चाचणीमधून समायोजन वापरुन ध्वनीच्या निवडलेल्या प्रदेशात किंवा संपूर्ण प्रोजेक्टवर क्लिक निकास प्रभावांचा वापर करा. 
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक निकाससह काढले न गेलेले क्लिक इतर पद्धतींसह वैयक्तिकरित्या हाताळले जाऊ शकतात. </font><font style="vertical-align: inherit;">या पद्धती केवळ खरोखरच उपयुक्त आहेत जर आपल्याकडे सामोरे जाण्यासाठी तुलनेने कमी क्लिक आणि पॉप असतील तर; </font><font style="vertical-align: inherit;">अन्यथा, हे दृष्टिकोन खूप श्रम-केंद्रित आणि वेळ घेणारे असतील:
+	</font></font></p>
+	<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओड्यासिटीचा </font></font><a href="repair.html" title="दुरुस्ती"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">दुरुस्ती</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रभाव </font><font style="vertical-align: inherit;">वापरून पहा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">या दुरुस्ती १२८ पर्यंत एक खूप कमी लांबीचा </font></font><i><b><a href="glossary.html#sample" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नमुने</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करून </font></font><i><b><a href="glossary.html#interpolate" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">इंटरपोलटिंग</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> शेजारच्या नमुने पासून. </font><font style="vertical-align: inherit;">हा प्रभाव वापरण्यासाठी आपल्याला वैयक्तिक नमुने पाहण्यासाठी झूम वाढवणे आवश्यक आहे.</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक करण्यासाठी स्पॉट टू क्लिक्ससाठी आपण </font></font><a href="click_removal_using_the_spectrogram_view.html" title="स्पेक्ट्रोग्राम व्ह्यू वापरून निकास क्लिक करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्पेक्ट्रोग्राम व्ह्यू वापरून क्लिक निकास वापरुन पाहू शकता</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ध्वनीच्या काही काळ प्रदीर्घ प्रदेशांसाठी, प्रयत्न करा: 
+	</font></font><ul><li> <a href="tools_toolbar.html#draw" title="साधने साधनपट्टी"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">साधन काढा</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">हे वापरण्यासाठी आपल्याला वैयक्तिक नमुन्यांमध्ये झूम करणे आवश्यक आहे. </font><font style="vertical-align: inherit;">या साधनासह काही संयमांची आवश्यकता असू शकते, परंतु तत्त्व म्हणजे त्यांच्या शेजाऱ्यांसह नमुने परत ठेवणे जेणेकरून एक गुळगुळीत समोच्च सादर केले जाईल.</font></font></li>
+	<li> <span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपादित करा&gt; विशेष&gt; </font></font><a href="edit_menu_remove_special.html#silence" title="मेनू संपादित करा: विशेष काढा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मौन ध्वनी</font></font></a></span><font style="vertical-align: inherit;"><span class="menu"><font style="vertical-align: inherit;"> काढा</font></span><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">वैयक्तिक नमुने पाहण्यासाठी आपल्याला आतापर्यंत झूम करणे आवश्यक नाही, परंतु ऐकण्यासारखे भाग कमी असणे आवश्यक आहे जेणेकरून ऐकू येईल.</font></font></li></ul></li></ul>
+	
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या साधनांवरील तपशीलवार प्रशिक्षणासाठी </font></font><a href="tutorial_click_and_pop_removal_techniques.html" title="प्रशिक्षण - क्लिक आणि पॉप काढण्याची तंत्रे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक आणि पॉप काढण्याची तंत्रे</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पहा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">क्लिक आणि पॉप्स काढून टाकण्यासाठी चांगल्या प्रकारे परिचित </font><font style="vertical-align: inherit;">असलेल्या </font></font><a href="#alternative"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिक साधनांच्या</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> संचासाठी हे पृष्ठ खाली पुढे पहा </font><font style="vertical-align: inherit;">.
+	</font></font></p>
+	<div id="hf"></div>
+	<h3><span class="mw-headline" id="Reduce_hiss_and_high_frequency_noise"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हिस आणि उच्च वारंवारतेचा आवाज कमी करा</font></font></span></h3>
+	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्याला </font></font><a href="noise_reduction.html" title="गोंगाट कमी करणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनी कपात</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करण्याची आवश्यकता असल्यास </font><font style="vertical-align: inherit;">आपल्या एलपी, आपल्या स्टाईलस आणि काड्रिजच्या गुणवत्तेवर अवलंबून असेल.</font></font></div>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संगीत सुरू होण्यापूर्वी ताबडतोब लीड-इन ग्रूव्सकडून किंवा गीतपट्टा दरम्यान लीड-इनमधून आवाजाचा नमुना प्राप्त करण्यासाठी </font></font><a href="noise_reduction.html" title="गोंगाट कमी करणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गोंगाट रिडक्शन</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रभावांचे </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गॉझ गोंगाट प्रोधारिका</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">लांबी महत्त्वपूर्ण नाही परंतु सामान्यत: ते एका सेकंदापेक्षा कमी असेल; </font><font style="vertical-align: inherit;">सर्वात महत्त्वाचे म्हणजे आपल्याकडे कोणाचाही ध्वनी संकेतशिवाय गोंगाटाचा खरा प्रतिनिधी नमुना आहे (जसे की अत्यंत शांत फीड लीड इन). </font><font style="vertical-align: inherit;">नमुना वाढविण्याचा प्रयत्न करा आणि कोणतेही ध्वनी संकेत अस्तित्त्वात नसल्याचे सुनिश्चित करण्यासाठी ऑडिशन करा. </font><font style="vertical-align: inherit;">जर ते ठीक आहे, तर एम्पलीफाईड पूर्ववत करा, नंतर या शिफारस केलेल्या समायोजनसह गोंगाट निकास प्रभावां पुन्हा लागू करा:
+	</font></font></p>
+	<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आवाज कमी करणे - १२ डीबीपेक्षा जास्त नाही (९ डीबी एक चांगली मार्गदर्शकतत्त्व आहे)</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संवेदनशीलता - ६.००</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फ्रीक्वेंसी स्मूथिंग (बँड) - ६ पेक्षा जास्त (३ किंवा त्यापेक्षा कमी संगीतसाठी चांगली सेटिंग नाही)</font></font></li></ul>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गोंगाट कमी करणे ही नेहमीच एक तडजोड असते कारण एकीकडे, आपल्याकडे सर्व संगीत आणि बरेच आवाज असू शकतात आणि दुसरीकडे, गोंगाट होऊ शकत नाही आणि केवळ काही संगीत असू शकते. </font><font style="vertical-align: inherit;">आपल्याला उत्तम तडजोड होईपर्यंत "गोंगाट कमी करणे (डीबी)" स्लाइडरवर भिन्न समायोजन वापरून पहा.
+	</font></font></p>
+	<div id="labels"></div>
+	<h3><span class="mw-headline" id="Place_the_song_labels"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गाण्याचे नावपट्टीे ठेवा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अंदाजे </font></font><a href="label_tracks.html" title="नावपट्टी गीतपट्टा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टी</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बिंदू </font><font style="vertical-align: inherit;">चिन्हांकित </font><font style="vertical-align: inherit;">करा - </font><font style="vertical-align: inherit;">अल्बमवरील गीतपट्टा दरम्यान अंदाजे बिंदूवर </font></font><a href="audacity_waveform.html" title="ओड्यासिटी वेव्हफॉर्म"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वेव्हफॉर्मवर</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्लिक करा </font><font style="vertical-align: inherit;">, </font></font><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ctrl + B</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> नंतर </font></font><span class="kbrd" style="background-color: #e0e0f0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एंटर</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> दाबा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">पहिल्या गीतपट्टासाठी सुरुवातीला नावपट्टी घालायला विसरू नका. </font><font style="vertical-align: inherit;">वैकल्पिकरित्या आपण </font></font><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ctrl + M</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ( </font><i><font style="vertical-align: inherit;">Mac </font></i></font><i><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+.&nbsp;</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Mac वर</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) ध्वनीमुद्रण करताना (किंवा प्लेबॅक वर) नावपट्टी बिंदू चिन्हांकित करू शकता </font><font style="vertical-align: inherit;">.
+	</font></font></p>
+	
+	<div id="gaps"></div>
+	<h3><span class="mw-headline" id="Silence_the_inter-track_gaps"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">इंटर-गीतपट्टा अंतरांवर शांतता घ्या</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हे क्वचितच खरोखर शांत आहेत म्हणून आपणास ते अंतर निवडून आणि </font></font><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ctrl + L</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा </font></font><a href="generate_menu.html#silence" title="मेनू व्युत्पन्न करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">शांतात निर्माता प्रभाव</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरून शांततेसह पुनर्स्थित करू इच्छित असाल </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">जास्तीत जास्त 2 सेकंदांच्या इच्छिततेनुसार इंटर-गीतपट्टा अंतर संपादित करा; </font><font style="vertical-align: inherit;">आपण काही ध्वनीमुद्रणसाठी कमी अंतर किंवा अगदी अंतर देखील वापरू इच्छित असाल.  
+	</font></font></p>
+	<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+	<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+	
+	<tbody><tr>
+	<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
+	</td>
+	<td align="left" valign="top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पूर्वनिर्धारितनुसार सीडी बर्न अनुप्रयोग नेहमीच गीतपट्टा दरम्यान २-सेकंद अंतर जोडते. </font><font style="vertical-align: inherit;">आपण सक्षम करू शकणार्&zwj;या "गॅपलेस बर्निंग" किंवा "डिस्क-अॉन-वन-बार (डीएओ)" यासाठी हे बंद करण्यासाठी कोणत्याही पर्यायांची तपासणी करा.
+	</font></font></td></tr></tbody></table></div>
+	<div id="fades"></div>
+	<h3><span class="mw-headline" id="Fade_Ins.2FOuts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फेड इन / आउट</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपणास </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रभाव&gt; </font></font><a href="fades.html#linearfade" title="फिकट"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फेड इन</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रभावां&gt; </font></font><a href="fades.html#linearfade" title="फिकट"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फॅड आऊटचा</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापर करुन गाण्याची सुरुवात आणि समाप्ती अधिक स्वच्छतेने फीड-इन आणि फेड-आउट करण्याची इच्छा असू शकते </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">सामान्यत: फिकट आऊट जास्त लांब </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(सामान्यत: काही सेकंद) असावे</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि आवश्यक असल्यास आवश्यक असल्यास थोड्या वेळाने </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(सामान्यत: सेकंदाचा भाग)</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . 
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">रेखीय </font><b><font style="vertical-align: inherit;">फॅड </font></b><span class="menu"><a href="fades.html#studio_fadeout" title="फिकट"><font style="vertical-align: inherit;">आउटऐवजी</font></a></span></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रभाव&gt; </font></font><a href="fades.html#studio_fadeout" title="फिकट"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्टुडिओ फेड आउट</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरण्याचा विचार करा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">हे निवडक ध्वनीवर अधिक संगीतमय फीड लागू करते, अधिक आकर्षक (अधिक "व्यावसायिक स्टुडिओ") दणदणीत निकाल देतात.
+	</font></font><b><font style="vertical-align: inherit;"></font></b><font style="vertical-align: inherit;"></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपणास </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रभाव&gt; </font></font><a href="fades.html#linearfade" title="फिकट"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फिकट</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> लागू </font><font style="vertical-align: inherit;">करून निवडक ध्वनीवर एकाधिक वेळा तीन वेळा चांगली मार्गदर्शक </font><span class="menu"><a href="fades.html#linearfade" title="फिकट"><font style="vertical-align: inherit;">सुचना</font></a></span><font style="vertical-align: inherit;"> देखील मिळू शकते </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">हे रेखीयऐवजी आकार, वक्र, फिकट तयार करेल.
+	</font></font></p>
+	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओड्यासिटीमध्ये पूर्वनिर्धारितनुसार प्रभावांसाठी कोणतेही कळफलक आडमार्ग प्रदान केलेले नसले तरीही आपण निवडलेल्या कोणत्याही प्रभावांसाठी आपले स्वतःचे आडमार्ग जतन करणे शक्य आहे. </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फॅड इन</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फेड आउट</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (किंवा </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्टुडिओ फेड आउट</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) </font><font style="vertical-align: inherit;">साठी आडमार्ग नियुक्त करणे आपल्याला फायदेशीर ठरेल </font><font style="vertical-align: inherit;">कारण एलपी डिजिटलायझेशनसाठी हे वारंवार वापरले जातील.</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हे कसे करावे यावरील सूचनांसाठी कृपया </font><font style="vertical-align: inherit;">महितीपुस्तिकामध्ये </font></font><a href="keyboard_preferences.html" title="कळफलक प्राधान्ये"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कळफलक प्राधान्ये</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पृष्ठ </font><font style="vertical-align: inherit;">पहा </font><font style="vertical-align: inherit;">.</font></font></p></div>
+	<div id="adjust"></div>
+	<h3><span class="mw-headline" id="Adjust_label_positions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टी स्थिती समायोजित करा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण २-सेकंद अंतर वापरत असल्यास, पुढील गीतपट्टाच्या सुरूवातीच्या 0.५ सेकंद आधी इच्छित नावपट्टीची स्थिती समायोजित करा. </font><font style="vertical-align: inherit;">नावपट्टी हलविण्यासाठी, त्यास मध्यवर्ती मंडळाने ड्रॅग करा.
+	</font></font></p>
+	<div id="names"></div>
+	<h3><span class="mw-headline" id="Track_names"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावे मागोवा घ्या</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गाण्यांच्या नावांसाठी नावपट्टीे संपादित करा - आम्ही "०१ प्रथम गाण्याचे नाव", "02 द्वितीय गाण्याचे नाव" वापरण्याचे सुचवितो आणि यामुळे त्यांना सीडी उत्पादन किंवा आयट्यून्समध्ये लोड करण्यासाठी योग्य क्रमाने ठेवण्यात मदत होते. </font><font style="vertical-align: inherit;">आपणास असे वाटेल की झूम पातळी बदलल्यास या कार्यात आपल्याला मदत होईल; </font><font style="vertical-align: inherit;">सध्याच्या नावपट्टीवर लक्ष दिले आहे की त्यानंतर </font></font><span class="kbrd" style="background-color: #e0e0f0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">टॅब</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरुन आपण पुढील नावपट्टीवर जाऊ शकता </font><font style="vertical-align: inherit;">.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपली इच्छा असल्यास आपण त्याऐवजी अनुक्रमे दोन-अंकी क्रमांकासह नामांकित गीतपट्टाचा उपसर्ग करू शकता. </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">असे करण्यासाठी, एक्सपोर्ट डायलॉगच्या "धारिका्सचे नाव" विभागात, </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टी / गीतपट्टा नेम</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> रेडिओ </font><span class="button"><font style="vertical-align: inherit;">बटणापूर्वी क्रमांकांक</font></span><font style="vertical-align: inherit;"> निवडा </font><font style="vertical-align: inherit;">.
+	</font></font></p>
+	<div id="advanced"></div>
+	<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+	<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+	
+	<tbody><tr>
+	<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+	</td>
+	<td align="left" valign="top">
+	<h3><span class="mw-headline" id="Advanced_labeling_techniques"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रगत नावपट्टी तंत्र</font></font></span></h3>
+	<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण ध्वनीमुद्रण करत असताना प्रत्येक गीतपट्टाच्या पूर्ण मजकुरासह नावपट्टी करण्याची आपली इच्छा असू शकते. </font><font style="vertical-align: inherit;">असे करण्यासाठी, </font><font style="vertical-align: inherit;">प्रत्येक गीतपट्टाचा शेवट ध्वनीमुद्रणच्या प्रगतीवर चिन्हांकित </font><font style="vertical-align: inherit;">करण्यासाठी </font></font><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ctrl + M</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ( </font><i><font style="vertical-align: inherit;">मॅक </font></i></font><i><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+&nbsp;</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> मॅक वर</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">हे प्रक्रियेत वेळ वाचवते </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(जेव्हा आपल्याकडे भरपूर एलपी असतात तेव्हा ते महत्त्वपूर्ण असू शकते)</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">आपण </font><font style="vertical-align: inherit;">नावपट्टीवर लक्ष केंद्रित केले आहे याची खात्री </font><font style="vertical-align: inherit;">करण्यासाठी आपण </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">खूप सावधगिरी बाळगली</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पाहिजे अन्यथा जेव्हा आपण "जागा-बार" लेखन करता तेव्हा आपल्याला जे नावपट्टी वाटते त्यानुसार ध्वनीमुद्रणमध्ये अनपेक्षित थांब मिळेल. </font><font style="vertical-align: inherit;">आपण </font></font><a href="timeline.html" title="वेळे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वेळेमध्ये</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्लिक केले नाही हे देखील सुनिश्चित करा </font><font style="vertical-align: inherit;">जेणेकरून ध्वनीमुद्रण देखील थांबेल आणि त्याऐवजी क्लिक केलेल्या स्थानावरून प्ले होईल.</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">जर एलपीकडे गीतपट्टाची वेळ सूचीबद्ध असेल तर आपण सूचीबद्ध गीतपट्टा सीमेवरील वेळेवर ठेवलेल्या नावपट्टीांसह रिक्त प्रकल्प स्थापित करुन प्रक्रियेच्या या टप्प्यात वर्धित करू शकता - नंतर फिट होण्यासाठी प्रकल्प झूम करा ( </font></font><span class="kbrd" style="background-color: #d0d0f8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ctrl + F</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरा </font><font style="vertical-align: inherit;">) आणि नंतर ध्वनीमुद्रण प्रारंभ करा. </font><font style="vertical-align: inherit;">आपण ध्वनीमुद्रण करत असताना </font><font style="vertical-align: inherit;">प्रत्येक नावपट्टीचा मजकूर पुन्हा </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मोठ्या काळजीने</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> लेखन केला जाऊ शकतो </font><font style="vertical-align: inherit;">.</font></font></li></ul>
+	</td></tr></tbody></table>
+	</div>
+	<div id="amplify"></div>
+	<h3><span class="mw-headline" id="Amplitude_adjustment"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मोठेपणा समायोजन</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनीमुद्रणचे मोठेपणा सामान्य करा; </font><font style="vertical-align: inherit;">एकतर प्रत्येक ध्वनीमुद्रणचा गीतपट्टा स्वतंत्रपणे करा (विशेषत: जर गीतपट्टा यादृच्छिकपणे संगीताच्या वेगवेगळ्या शैली असलेल्या लायब्ररीतून प्ले केले जातील तर) किंवा, संपूर्ण ध्वनीमुद्रण एकाच वेळी करा (जे सर्व गीतपट्टाचे समान सरासरी आवाज असल्यास सर्व चांगले कार्य करेल) . </font><font style="vertical-align: inherit;">वापर </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रभाव&gt; </font></font><a href="normalize.html" title="सामान्य करणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नेहमीसारखा</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> अंतिम संपादित पाऊल म्हणून, डीबी किंवा तत्सम सुमारे -३ 'ते नेहमीसारखा जास्तीत जास्त मोठेपणा "समायोजन कुरूपता पातळी खाली काही मोठ्या वाहनांना पुलाखालून जाण्यासाठी असणारी पुरेशी जागा देणे. </font><font style="vertical-align: inherit;">नॉर्मलाइझ प्रभाव एकतर जतन केला जाऊ शकतो:
+	</font></font></p>
+	<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">दोन्ही स्टिरिओ वाहिनीचे मोठेपणा समान प्रमाणात समायोजित करा (अशा प्रकारे मूळ स्टिरीओ शिल्लक टिकवून ठेवा), किंवा</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रत्येक स्टीरिओ वाहिनी स्वतंत्रपणे समायोजित करा (आपले उपकरण संतुलित नसल्यास हे उपयुक्त ठरू शकते).</font></font></li></ul>
+	<div id="compress"></div>
+	<h3><span class="mw-headline" id="Compression"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकुचन</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"></font><a href="compressor.html" title="कंप्रेसर"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकुचित</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> परिणाम ध्वनी डायनॅमिक श्रेणी कमी होतो. </font><font style="vertical-align: inherit;">डायनॅमिक रेंज कमी करण्याच्या मुख्य उद्देशांपैकी एक म्हणजे ध्वनीला अन्यथा शक्य होण्यापेक्षा पुढे (फितीशिवाय) परवानगी दिली जाणे.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकुचित मोठ्याने भाग शांत करतो आणि (पर्यायी) शांत भाग अधिक जोरात बनवितो. </font><font style="vertical-align: inherit;">कारमध्ये शास्त्रीय संगीत ऐकण्यासाठी हे खूप उपयुक्त ठरू शकते. </font><font style="vertical-align: inherit;">अशा संगीताची साधारणत: रुंद डायनॅमिक श्रेणी असते आणि त्यामुळे सतत आवाज परत जतन केल्याशिवाय कारमध्ये ऐकणे कठीण होते.
+	</font></font></p>
+	<div id="wavs"></div>
+	<h3><span class="mw-headline" id="Export_a_set_of_WAVs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्हीचा संच निर्यात करा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">44100 हर्ट्ज १६-बिट पीसीएम स्टीरिओवर एलपीवरील प्रत्येक गीतपट्टासाठी डब्ल्यूएव्हीचा एक संच तयार करण्यासाठी </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">धारिका&gt; निर्यात&gt; </font></font><a href="export_multiple.html" title="एकाधिक निर्यात करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एकाधिक</font></font></a></span><font style="vertical-align: inherit;"><span class="menu"><font style="vertical-align: inherit;"> निर्यात </font></span><span class="menu"><a href="export_multiple.html" title="एकाधिक निर्यात करा"><font style="vertical-align: inherit;">करा ...</font></a></span><font style="vertical-align: inherit;"> वापरा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">ओड्यासिटी निर्यातीवर ३२-बिट ते १६-बिट पर्यंत खाली नमुना होईल. </font><font style="vertical-align: inherit;">आकार </font></font><a href="dither.html" title="एकतर"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">थरथर कापणे</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आवाज कोणत्याही दोष (clicky आवाज) ३२-बीट १६-बिट परिवर्तन पासून होऊ शकते की आच्छादन आपोआप लागू केले जाईल. </font><font style="vertical-align: inherit;">प्रगत वापरकर्ते </font></font><a href="quality_preferences.html#conversion" title="गुणवत्ता प्राधान्ये"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गुणवत्ता प्राधान्यांमध्ये</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> [[दिवे | दुर करणे]] बदलू किंवा बंद करू शकतात </font><font style="vertical-align: inherit;">.
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नंतर पुनर्प्राप्ती आणि वापरण्यास सुलभतेसाठी त्या अल्बमसाठी विशिष्ट धारिका विशिष्ट अल्बमसाठी ठेवा.
+	</font></font></p>
+	<div id="labex"></div>
+	<h3><span class="mw-headline" id="Export_Labels"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टीे निर्यात करा</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काही वापरकर्ते नावपट्टीे असलेली धारिका निर्यात करण्याच्या अंतिम टप्प्याचा सल्ला देतात. </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">धारिका</font></font><a href="file_menu_export.html#exportlabels" title="धारिका मेनू: निर्यात करा"><font style="vertical-align: inherit;"></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरा </font><span class="menu"><font style="vertical-align: inherit;">&gt; निर्यात करा&gt; </font></span><span class="menu"><a href="file_menu_export.html#exportlabels" title="File Menu: Export"><font style="vertical-align: inherit;">नावपट्टीे</font></a></span><span class="menu"><font style="vertical-align: inherit;"> निर्यात </font></span><span class="menu"><a href="file_menu_export.html#exportlabels" title="File Menu: Export"><font style="vertical-align: inherit;">करा ...</font></a></span><font style="vertical-align: inherit;"> यामुळे एक मजकूर धारिका तयार होते जी आपण नंतर </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">धारिका&gt; आयात&gt; </font></font><a href="file_menu_import.html#labels" title="धारिका मेनू: आयात करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नावपट्टीे</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरून पुन्हा आयात करू शकता </font><span class="menu"><a href="file_menu_import.html#labels" title="File Menu: Import"><font style="vertical-align: inherit;">...</font></a></span><font style="vertical-align: inherit;"> आपण यापूर्वी यापूर्वी बॅक अप घेतलेल्या कच्च्या हस्तगत धारिकामधून पुन्हा संपादन करू इच्छित असाल तर कार्यप्रवाह
+	</font></font></p>
+	<div id="backup"></div>
+	<h3><span class="mw-headline" id="Backup"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बॅकअप</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्या निर्यात केलेल्या डब्ल्यूएव्ही किंवा एमपी 3 धारिकांचा बॅकअप घ्या - आपल्याला ते सर्व मौल्यवान काम गमवायचे नाही आणि पुन्हा हे सर्व करावे लागेल, आपण काय? </font><font style="vertical-align: inherit;">संगणक हार्ड ड्राइव्ह अयशस्वी होऊ शकतात, सर्व डेटा नष्ट करते. 
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">योग्यरित्या एक समर्पित ड्राइव्ह वापरा </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1+ टीबी बाह्य चुंबकीय ड्राइव्ह सोयीस्कर आणि किफायतशीर आहेत)</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा डब्ल्यूएव्ही किंवा एमपी 3 संचयित करण्यासाठी ऑनलाइन (क्लाऊड) स्टोरेज सेवेवर अपलोड करा. </font><font style="vertical-align: inherit;">वेगवेगळ्या बाह्य उपकरणांवर दोन प्रती बनविणे अद्याप चांगले आहे आणि त्याशिवाय स्थानिक प्रती तसेच ऑनलाइन बॅकअप ठेवणे हे अधिक चांगले आहे. 
+	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण एक वर्गीकरण धारिका रचना तयार करू शकता - उदाहरणार्थ प्रत्येक अल्बम शोधण्यासाठी आणि पुनर्प्राप्ती सुलभ करण्यासाठी कलाकार (किंवा, शास्त्रीय संगीतासाठी संगीतकार) नावाच्या फोल्डरमध्ये त्याच्या स्वत: च्या फोल्डरमध्ये (अल्बमचे नाव असलेले) संग्रहित केले जाऊ शकते. .
+	</font></font></p>
+	<div id="alternative"></div>
+	<h2><span class="mw-headline" id="Alternative_software"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिक अनुप्रयोग</font></font></span></h2>
+	<ul><li><b><a rel="nofollow" class="external text" href="http://www.goldwave.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गोल्डवेव्ह</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : नाममात्र विनामूल्य नसले तरी ते एक उच्च श्रेणी आहे, विनामूल्य चाचणी क्लिक रीमूव्हर तसेच उत्कृष्ट पर्यायी ध्वनी संपादक आहे. </font><font style="vertical-align: inherit;">ओड्यासिटी प्रमाणेच त्याचे क्लिक हटविणे देखील प्रभावी आहे आणि व्यापक अवांछित आवाजासाठी "स्मूद" प्रभाव आहे आणि स्थिर आवाजासाठी उत्कृष्ट "गोंगाट रिडक्शन" प्रभाव आहे. </font><font style="vertical-align: inherit;">चाचणी आवृत्ती आपल्याला प्रति सत्र शंभर किंवा इतकी आज्ञा मर्यादित करते आणि ती कालबाह्य होण्यापूर्वी एकूण हजारो आदेशांची एकूण संख्या, परंतु आपण जर ओड्यासिटीकडून 32-बिट डब्ल्यूएव्ही म्हणून निर्यात केले आणि त्यामध्ये फक्त काढणे क्लिक केले तर आपण सक्षम होऊ शकता कित्येक शंभर ध्वनीमुद्रण विनामूल्य करा.</font></font></li>
+	<li><b><a rel="nofollow" class="external text" href="http://gwc.sourceforge.net/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ग्नोम वेव्ह क्लीनर</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : फक्त लिनक्स वापरकर्त्यांसाठी. </font><font style="vertical-align: inherit;">सीडी-गुणवत्तेच्या ध्वनी धारिकांचे डिजिटल जीर्णोद्धार. </font><font style="vertical-align: inherit;">जीयूआय वातावरणात डेहिस, डिक्लिक आणि डिक्रॅकल. </font><font style="vertical-align: inherit;">आवश्यक असल्यास ते स्वयंचलितपणे गाण्याच्या सीमा देखील चिन्हांकित करू शकते.</font></font></li></ul>
+	<h3><span class="mw-headline" id="Clicks_and_pops"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिक आणि पॉप</font></font></span></h3>
+	<ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">क्लिकरपेअर</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :</font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्लिक</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि</font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पॉप्स</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> काढून टाकण्यासाठी एक उत्कृष्ट साधन</font><font style="vertical-align: inherit;">म्हणजे ब्रायन डेव्हिसचे क्लिकरेपियर. </font><font style="vertical-align: inherit;">काही नवीन वापरकर्त्यांना एंट्री लेव्हल साधन म्हणून थोडा त्रासदायक वाटू शकते परंतु एकदा आपण वापरू इच्छित समायोजन समजल्यानंतर हे प्रभावीपणे स्वयंचलित साधन आहे. </font><font style="vertical-align: inherit;">यासाठी जावा आवश्यक आहे आणि ते विनामूल्य नाही, परंतु बर्&zwj;याच वापरकर्त्यांनी असे सांगितले आहे की यामुळे बराच वेळ वाचतो आणि चांगले परिणाम मिळतात. </font><font style="vertical-align: inherit;">क्लिकरपेअर -२-बिट धारिका्ससह कार्य करेल कारण क्लिकरेपरवर प्रक्रिया करण्यासाठी आणि ओड्यासिटीमध्ये परत आयात करण्यासाठी २-बिट फ्लोट डब्ल्यूएव्ही धारिका निर्यात करणे फायद्याचे आहे, अशा प्रकारे प्रक्रियेमध्ये कोणत्याही प्रकारचे डाईनिंग लागू होणार नाही.</font></font></li></ul>
+	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या अनुप्रयोगासाठी आपल्याला पूर्वनिर्धारित समायोजन थोडीशी अधिक संकेत काढू शकतात. </font><font style="vertical-align: inherit;">पर्यायी शिफारसः
+	</font></font><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीक्लिक = ३० (पूर्वनिर्धारित ५० आहे)</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पिच सुरक्षा = "चालू" (पूर्वनिर्धारित "बंद" आहे) तरीही पितळ ध्वनीमुद्रणसाठी हे "बंद" सोडा</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">माघारी = "ऑन" (यासाठी कोणतेही दंड आकारले जात नाही आणि ते संवेदनाक्षम संगीतास मदत करते)</font></font></li>
+	<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पद्धत = वेव्हलेट</font></font></li></ul></div>
+	<h3><span class="mw-headline" id="Hiss_and_noise_removal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हिस आणि आवाज काढणे</font></font></span></h3>
+	<ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीएनॉईझः</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ब्रायन डेव्हिस डिनोइस नावाचे साधनसुद्धा पुरवतो; </font><font style="vertical-align: inherit;">हे आवाज आणि कटाक्ष दूर करण्यात प्रभावी आहे. </font><font style="vertical-align: inherit;">क्लिकरपेअर प्रमाणेच, काही नवीन वापरकर्त्यांना हे आतील पातळी साधन म्हणून धमकावणारे देखील आढळू शकते. </font><font style="vertical-align: inherit;">वापरकर्ते नोंदवतात की ध्वनी काढणे ऑप्टिमाइझ करण्यासाठी प्रत्येक ध्वनीमुद्रणसाठी समायोजन सहसा पूर्ववत केल्या पाहिजेत त्यामुळे अर्ध स्वयंचलित मार्गाने वापरणे अवघड होते.
+	</font></font><ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डीनोईझएलएफ डीएगोंगाटसह</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> एकत्रित केलेले स्वतंत्र पॅकेज म्हणून पुरविले जाते. </font><font style="vertical-align: inherit;">कमी-वारंवारतेचा आवाज कमी करण्यासाठी (जसे टर्नटेबल रम्बल) आणि हमरचा वापर केला जातो.</font></font></li></ul></li></ul>
+	<div id="chris"></div>
+	<h3><span class="mw-headline" id="Compression_2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकुचन</font></font></span></h3>
+	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कृपया </font><font style="vertical-align: inherit;">विनामूल्य डाऊनलोड केले जाऊ शकणार्&zwj;या लोकप्रिय वैकल्पिक कंप्रेसरसाठी </font></font><a href="chris_s_dynamic_compressor.html" title="ख्रिस चे डायनॅमिक संकुचित"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ख्रिसचे डायनॅमिक संकुचित</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पहा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">हे "लुकहेड" वापरुन आवाजामधील अचानक बदल करण्याचा प्रयत्न करण्याद्वारे कार्य करते </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(हा आवाज उंबरठा स्तरावर जाण्यापूर्वी कंप्रेशन लागू करून आवाजातील बदलांचा अंदाज घेण्याचा प्रयत्न करतो)</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">त्यामध्ये सॉफ्ट ध्वनी मऊ करण्यासाठी आणि जोरात उलटण्यासाठी पर्याय आहेत.
+	</font></font></p>
+	<h2><span class="mw-headline" id="Links"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">दुवे</font></font></span></h2>
+	<p><a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="ट्यूटोरियल - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| &lt;</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रशिक्षण - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे</font></font></a><br>
+	</p><p><a href="recording_78_rpm_records.html" title="ध्वनीमुद्रण 78 आरपीएम ध्वनीमुद्रण"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp; यावरील प्रशिक्षण देखील पहा: ७८ आरपीएम ध्वनीमुद्रण </font></font></a> <br>
+	</p>
 <!-- 
 NewPP limit report
 Cached time: 20180917111843
@@ -288,45 +284,65 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>Navigation</h3>
+		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">Manual Home Page</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">Using Audacity</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">Tour Guide</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">New Features</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">Getting Started</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">Tutorials</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">Tips</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">Audacity GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">Menu Bar</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">Toolbars</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">Tracks</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">Effects</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">Customizing Audacity</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">Preferences</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">Key-bindings</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">Plug-ins</span></a></li></ul></li></ul>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">महितीपुस्तिका मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य
+</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे
+</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या
+</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा
+</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI
+</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार
+</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी
+</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
+</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव
+</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ओड्यासिटी सानुकूलित करत आहे
+</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
+</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता
+</span></a></li>
+<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स
+</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>Reference</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">Reference</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">Digital Audio</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">Glossary</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">All Commands</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">Index</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">FAQ</span></a></li></ul>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ
+			</span></a>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी
+</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष
+</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा
+</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका
+</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>Useful Links</h3>
+		<h3>उपयुक्त दुवे
+		</h3>
 		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">WIT</a></span></li></ul>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच
+			</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
+<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लूआयटी(WIT)</a></span></li></ul>
 		</div>
 		</div>
 		
@@ -341,7 +357,9 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>This version created on 2018-09-17 - <a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_LP_digitization">Check current version of this page (development Manual)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
+			<a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_LP_digitization">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
+			</a></li></ul></div>
 </div>
 		</div>
 		</body></html>
