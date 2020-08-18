@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Tutorial - Recording Computer Playback on Windows - Audacity Manual</title>
+<title>प्रशिक्षण - विंडोजवर संगणक प्लेबॅक ध्वनिमुद्रण - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी विकास माहितीपुस्तिका (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+ </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorial_-_Recording_Computer_Playback_on_Windows rootpage-Tutorial_-_Recording_Computer_Playback_on_Windows skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,107 +25,106 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Tutorial - Recording Computer Playback on Windows</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">  प्रशिक्षण - विंडोजवर ध्वनिमुद्रण संगणक प्लेबॅक  </h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">  ओड्यासिटी विकास माहितीपुस्तिका वरून  </div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Tutorial_-_Recording_Computer_Playback_on_Windows#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">  येथे जा:   <a href="#column-one">  सुचालन  </a>   ,   <a href="https://alphamanual.audacityteam.org/man/Tutorial_-_Recording_Computer_Playback_on_Windows#searchInput">  शोध  </a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">Recording computer playback can be confusing because there are several different ways the audio can be recorded.
-<ul><li> <b>Software playthrough</b> (e.g. a stereo-mix option on Windows 'Sound control panel') - If available, this is usually best.  The computer generated audio is mixed digitally with the other recorded audio with no loss of quality.</li>
-<li> <b>Hardware playthrough</b> (e.g. using a loopback cable) - The computer generated audio is converted to analog, mixed with any incoming audio, and converted back to digital again.</li>
-<li> <b>Overdub</b> - This option in Audacity is for a different purpose.  It allows you to listen to other audio that you have already in Audacity as you record new audio.  For example you could listen to vocals on your headphones as you record a backing track.  There is no need to record these other tracks, because they are already in Audacity and available for mixing.</div></li></ul>
-<div class="note">On Windows, sound devices often lack a "Stereo Mix" or similar input, or it must be specially enabled in the Windows "Sound" Control Panel. On these operating systems. You can also choose Windows <a href="#wasapi">WASAPI</a> host and the <a href="#wasapi">(loopback)</a> input choice in <a href="device_toolbar.html" title="Device Toolbar">Device Toolbar</a>. This will record computer playback even if the computer sound device lacks its own input to do this.  </div>
+<div class="intro">  ध्वनिमुद्रण संगणक प्लेबॅक गोंधळात टाकणारे असू शकते कारण तेथे ध्वनी ध्वनिमुद्रण करण्याचे अनेक भिन्न मार्ग आहेत.
+  <ul><li> <b>  सॉफ्टवेअर प्लेथ्रू  </b>   (उदा. विंडोज 'आवाज नियंत्रण फळी' वर एक स्टिरिओ-मिक्स पर्याय) - उपलब्ध असल्यास, हे सहसा सर्वोत्कृष्ट असते.   संगणकाद्वारे व्युत्पन्न केलेला ध्वनी गुणवत्तेत कोणतीही हानी न होता इतर ध्वनिमुद्रण केलेल्या ध्वनीसह डिजिटलपणे मिसळला जातो.  </li>
+<li> <b>  हार्डवेअर प्लेथ्रू  </b>   (उदा. लूपबॅक केबल वापरणे) - संगणकाद्वारे व्युत्पन्न केलेला ध्वनी कोणत्याही इनकमिंग ध्वनीसह मिसळला जातो आणि त्याला पुन्हा डिजिटलमध्ये रुपांतरित केले जाते.  </li>
+<li> <b>  ओव्हरडब  </b>   -  <b> ओड्यासिटीमधील </b>  हा पर्याय वेगळ्या उद्देशाने आहे.   आपण नवीन ध्वनी ध्वनिमुद्रण केल्यामुळे आपल्याकडे आधीपासून ओड्यासिटीमध्ये असलेला अन्य ध्वनी ऐकण्याची आपल्याला परवानगी देते.   उदाहरणार्थ जेव्हा आपण बॅकिंग गीतपट्टा ध्वनिमुद्रण करता तेव्हा आपण आपल्या हेडफोन्सवर स्वर ऐकू शकता.   हे इतर गीतपट्टा ध्वनिमुद्रण करण्याची आवश्यकता नाही, कारण ते आधीपासूनच ओड्यासिटीमध्ये आहेत आणि मिश्रणासाठी उपलब्ध आहेत.  </li></ul></div>
+<div class="note">  विंडोजवर, ध्वनी उपकरणांमध्ये बर्&zwj;याचदा "स्टीरिओ मिक्स" किंवा तत्सम इनपुटची कमतरता असते किंवा ते विशेषतः विंडोज "आवाज" नियंत्रण फळीमध्ये सक्षम केलेले असणे आवश्यक आहे.   या कार्य प्रणालीवर.   आपण विंडोज   <a href="#wasapi">  डब्ल्यूएएसएपीआय  </a>   होस्ट आणि  <a href="device_toolbar.html" title="साधन साधनपट्टी"> साधन साधनपट्टीमध्ये  </a> <a href="#wasapi">  (लूपबॅक)  </a>   इनपुट निवड   देखील निवडू शकता   .   संगणक ध्वनी साधना मध्ये असे करण्यासाठी स्वतःचे इनपुट नसले तरीही हे संगणक प्लेबॅक ध्वनिमुद्रण करेल.    <a href="device_toolbar.html" title="साधन साधनपट्टी">  </a>  </div>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
 </td>
 <td align="left" valign="top">
-<ul><li> <b>Copyright or website restrictions may prevent you recording or distributing material.</b> Check first.</li>
-<li> <b>When recording computer playback, ensure the menu item <span class="menu">Transport &gt; Transport Options &gt; <a href="transport_menu_transport_options.html#software_playthrough_onoff" title="Transport Menu: Transport Options">Software Playthrough (on/off)</a></span> is off.</b> If the item has a checkmark, click it  to turn off playthrough. Otherwise you will hear and record echoes or distorted sound. </li></ul>
-</td></tr></table></div>
-<h2><span class="mw-headline" id="Choosing_the_recording_device_in_Audacity">Choosing the recording device in Audacity</span></h2>
-<p>In <a href="device_toolbar.html" title="Device Toolbar">Device Toolbar</a> (pictured below) or in <a href="devices_preferences.html" title="Devices Preferences">Devices Preferences</a>, choose "MME" or "Windows DirectSound" in the Audio Host box. In the Recording Device box, look if there is an input meant for recording computer playback. This input could be called "Stereo Mix", "Wave Out", "Sum", "What U Hear", "Loopback" or other names, depending on your sound device. 
-</p>
-<dl><dd><dl><dd><span title="Device Toolbar"><img alt="DeviceToolbarWin7Basic.png" src="../m/images/a/aa/devicetoolbarwin7basic.png" width="599" height="96" /></span></dd></dl></dd></dl>
-<p>If you do not see Stereo Mix or similar:
-</p>
-<ul><li> Make sure you have the latest correct <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Updating_Sound_Device_Drivers">audio drivers</a> meant for your version of Windows  </li>
-<li> Go to the <a href="#control_panel">Windows Control Panel</a> to see if stereo mix can be enabled</li>
-<li> On Windows, choose the <a href="#wasapi">Windows WASAPI loopback</a> recording method instead.</li></ul>
-<div class="note"><b>You must play the audio you want to record using the same sound device that has the "Stereo Mix" or similar input.</b> You cannot play audio through an HDMI output or through a headset, headphones or speakers that connect via USB or wirelessly then record that playback using the stereo mix input of the built-in sound device. <p>Choose the Windows WASAPI host (next section) if you want to record playback of a USB, wireless or external sound device.</p></div>
+<ul><li> <b>  प्रतराइट किंवा संकेतस्थळ प्रतिबंध आपल्यास सामग्री ध्वनिमुद्रण किंवा वितरण रोखू शकतात.   </b>  प्रथम तपासा.  </li>
+<li> <b>  संगणक प्लेबॅक ध्वनिमुद्रण करताना, मेनू आयटमची खात्री करा   <span class="menu">  परिवहन&gt; परिवहन पर्याय&gt;   <a href="transport_menu_transport_options.html#software_playthrough_onoff" title="परिवहन मेनू: परिवहन पर्याय">  सॉफ्टवेअर प्लेथ्रू (चालू / बंद)  </a></span>   बंद आहे.   </b>  आयटमकडे चेकमार्क असल्यास, प्लेथ्रू बंद करण्यासाठी त्यावर क्लिक करा.   अन्यथा आपण ऐकू आणि प्रतिध्वनी किंवा विकृत ध्वनी ध्वनिमुद्रण कराल.  </li></ul>
+</td></tr></tbody></table></div>
+<h2><span class="mw-headline" id="Choosing_the_recording_device_in_Audacity">  ओड्यासिटीमध्ये ध्वनिमुद्रण साधन निवडत आहे  </span></h2>
+<p>  मध्ये   <a href="device_toolbar.html" title="साधन साधनपट्टी">  साधन साधनपट्टी  </a>   (खाली चित्रात) किंवा   <a href="devices_preferences.html" title="साधनप्राधान्ये">  साधने प्राधान्ये  </a>   , "MME" किंवा "विंडोज DirectSound" निवडा ध्वनी यजमान बॉक्स मध्ये.   ध्वनिमुद्रण साधन बॉक्समध्ये, संगणक प्लेबॅक ध्वनिमुद्रण करण्यासाठी एखादे इनपुट आहे का ते पहा.   आपल्या इनपुटला आपल्या आवाज साधना वर अवलंबून "स्टीरिओ मिक्स", "तरंग बाहेर", "सम", "काय ऐकावे", "लूपबॅक" किंवा अन्य नावे म्हटले जाऊ शकतात. 
+  </p>
+<dl><dd><dl><dd><span title="साधन साधनपट्टी"><img alt="साधना साधनपट्टीविइन 7 बेसिक.पीएनजी" src="../m/images/a/aa/devicetoolbarwin7basic.png" width="599" height="96"></span></dd></dl></dd></dl>
+<p>  आपण स्टिरिओ मिक्स किंवा तत्सम दिसत नसल्यास:
+  </p>
+<ul><li>  आपल्याकडे   आपल्या विंडोजच्या आवृत्तीसाठी     सर्वात नवीन अचूक   <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Updating_Sound_Device_Drivers">  ध्वनी ड्राइव्हर्स  </a>   असल्याचे सुनिश्चित करा  </li>
+<li>  स्टिरिओ मिक्स सक्षम करता येईल का ते पाहण्यासाठी   <a href="#control_panel">  विंडोज नियंत्रण फळीवर  </a>   जा  </li>
+<li>  विंडोज वर,   त्याऐवजी   <a href="#wasapi">  विंडोज वासापी लूपबॅक  </a>   ध्वनिमुद्रण पद्धत   निवडा   .  </li></ul>
+<div class="note"><b>  आपण "स्टीरिओ मिक्स" किंवा तत्सम इनपुट असलेले समान ध्वनी साधनवापरुन ध्वनिमुद्रण करू इच्छित ध्वनी प्ले करणे आवश्यक आहे.   </b>  आपण एचडीएमआय उत्पादितद्वारे किंवा हेडसेट, हेडफोन्स किंवा स्पीकर्सद्वारे ध्वनी प्ले करू शकत नाही जे यूएसबीद्वारे किंवा वायरलेसद्वारे जोडणी होते नंतर अंगभूत ध्वनी साधना चे स्टिरीओ मिक्स इनपुट वापरुन ते प्लेबॅक ध्वनिमुद्रण करा.  <p>  आपण यूएसबी, वायरलेस किंवा बाह्य ध्वनी उपकरणाचे प्लेबॅक ध्वनिमुद्रण करू इच्छित असल्यास विंडोज व्हीएसएपीआय होस्ट (पुढील विभाग) निवडा.  </p></div>
 <div id="wasapi"></div> 
-<h3><span class="mw-headline" id="Windows_WASAPI_loopback_recording">Windows WASAPI loopback recording</span></h3>
-<p><b>On Windows</b>, you can choose the <i><b><a href="glossary.html#wasapi" title="Glossary">Windows WASAPI</a></b></i> &#160;Audio Host and then the "<a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd316551(v=vs.85).aspx">(loopback)</a>"  input in the Recording Device box. Choose the loopback input for the computer playback device you will be listening to (for example, "Speakers (loopback)" ).  The loopback input records computer playback even if your sound device lacks its own stereo mix or similar input: 
-</p>
-<dl><dd><span title="WASAPI loopback input in Device Toolbar"><img alt="DeviceToolbarStreamingAudio - WASAPI loopback.png" src="../m/images/2/26/devicetoolbarstreamingaudio_wasapi_loopback.png" width="806" height="28" /></span></dd></dl>
-<p>WASAPI loopback has an advantage over stereo mix or similar inputs provided by the audio interface that the capture is entirely digital (rather than converting to analog for playback, then back to digital when Audacity receives it). System sounds playing through the device selected for WASAPI loopback are still captured.
-</p>
-<h4><span class="mw-headline" id="Playback_and_Recording_sliders">Playback and Recording sliders</span></h4>
-<p>The behavior of the Audacity playback and recording sliders may vary according to the sound device you are recording from. 
-</p>
-<ul><li> <b>On some devices the <a href="mixer_toolbar.html" title="Mixer Toolbar">Mixer Toolbar</a> recording volume slider will be grayed out when selecting the Windows WASAPI host</b>, and even if not grayed out, the device may not support Audacity or the system input slider adjusting its volume. To control the recording level on those systems, you can try adjusting the <i>playback</i> level of the audio. This is best done in the application that is playing the audio, for example the video or audio player on the website you are recording from. If this does not work then Audacity will record at a fixed, safe level irrespective of the playback level of the audio. </li>
-<li> <b>On many other devices, the Audacity recording volume and playback volume sliders will be "linked"</b> so that both sliders move when you move either slider, and either slider will affect the level of the audio that you hear. This will often happen if in Audacity you set the (loopback) recording device to the same built-in device as the one selected for playback. </li>
-<li> <b>When the Audacity recording and playback sliders are linked, adjusting either slider will often not affect the level already being recorded.</b> This means that if you do not want to hear what you are recording, you can simply turn down either Audacity volume slider. However on some devices, turning down either slider may turn down or silence the achieved recording level. If this happens then to make a recording without hearing it, you can try the following:
-<ul><li> Click the speaker by the system clock, click the "Mixer" link, then mute the "Device" slider at far left of the "Volume Mixer" window    </li>
-<li> Plug in external speakers or headphones and turn those down</li>
-<li> Plug in any 1/8 inch (3.5 mm) minijack plug with no lead attached.  </li></ul></li></ul>
-<div class="note"><b>Tips for WASAPI loopback recording:</b> 
-<ul><li> You will normally need to start playing the stream (or to have previously played some other audio in the application you are using for playback) <b>before</b> pressing Record in Audacity.   </li>
-<li> WASAPI loopback may not be able to record in mono on all devices. If mono recording produces an error, change Device Toolbar to "2 (Stereo) Recording Channels". You can convert a stereo recording to mono using <span class="menu">Tracks &gt; Mix &gt; <a href="tracks_menu_mix.html" title="Tracks Menu: Mix">Stereo Down to Mono</a></span>.</div>    </li></ul>
-<p><b>If you do not see any input for recording computer playback</b>, exit Audacity and continue reading below. 
-</p>
+<h3><span class="mw-headline" id="Windows_WASAPI_loopback_recording">  विंडोज WASAPI लूपबॅक ध्वनिमुद्रण  </span></h3>
+<p><b>  विंडोज वर  </b>   , आपण   ध्वनिमुद्रण साधनबॉक्समध्ये   <i><b><a href="glossary.html#wasapi" title="शब्दकोष">  विंडोज वासापी  </a></b></i>    &nbsp;ध्वनी होस्ट आणि नंतर "   <a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd316551(v=vs.85).aspx">  (लूपबॅक)  </a>   " इनपुट   निवडू शकता   .   आपण ऐकत असलेल्या संगणक प्लेबॅक साधना साठी लूपबॅक इनपुट निवडा (उदाहरणार्थ, "स्पीकर्स (लूपबॅक)").   लूपबॅक इनपुटमध्ये संगणक प्लेबॅक ध्वनिमुद्रण आहे जरी आपल्या ध्वनी साधना मध्ये स्वत: चे स्टिरिओ मिक्स किंवा तत्सम इनपुट नसल्यास: 
+  </p>
+<dl><dd><span title="साधन साधनपट्टीमधील वासापी लूपबॅक इनपुट"><img alt="साधना साधनपट्टीस्ट्रीमिंग ध्वनी - WASAPI लूपबॅक.पीएनजी" src="../m/images/2/26/devicetoolbarstreamingaudio_wasapi_loopback.png" width="806" height="28"></span></dd></dl>
+<p>  ध्वनी संवादपटलद्वारे प्रदान केलेले स्टीरिओ मिक्स किंवा तत्सम इनपुटपेक्षा वासापी लूपबॅकचा फायदा आहे की कॅप्चर संपूर्णपणे डिजिटल आहे (प्लेबॅकसाठी अ&zwj;ॅनालॉगमध्ये रुपांतरित करण्याऐवजी ओड्यासिटी प्राप्त झाल्यावर परत डिजिटलवर परत जाणे).   डब्ल्यूएएसएपीआय लूपबॅकसाठी निवडलेल्या साधना द्वारे प्ले करणारे प्रणाली ध्वनी अद्याप पकडलेले आहेत.
+  </p>
+<h4><span class="mw-headline" id="Playback_and_Recording_sliders">  प्लेबॅक आणि ध्वनिमुद्रण घसरपट्टी  </span></h4>
+<p>  ओड्यासिटी प्लेबॅक आणि ध्वनिमुद्रण घसरपट्टीचे वर्तन आपण ज्या ध्वनी ध्वनिमुद्रण करीत आहात त्यानुसार बदलू शकते. 
+  </p>
+<ul><li> <b>  विंडोज डब्ल्यूएएसएपीआय होस्ट निवडताना   काही उपकरणांवर   <a href="mixer_toolbar.html" title="मिक्सर साधनपट्टी">  मिक्सर साधनपट्टी  </a>   ध्वनिमुद्रण आवाज घसरपट्टी राखाडी बनविला जाईल  </b>   आणि राखाडी न झाल्यास, साधन ओड्यासिटी किंवा प्रणाली इनपुट घसरपट्टीला त्याचे आवाज समायोजित करण्यास समर्थन देत नाही.   त्या प्रणालीवरील ध्वनिमुद्रण पातळी नियंत्रित करण्यासाठी आपण   ध्वनीचा   <i>  प्लेबॅक  </i>   स्तर   समायोजित करण्याचा प्रयत्न करू शकता   .   ध्वनी प्ले करत असलेल्या अनुप्रयोगमध्ये हे सर्वोत्कृष्ट केले जाते, उदाहरणार्थ आपण ज्या संकेतस्थळवरून ध्वनिमुद्रण करीत आहात त्या व्हिडिओ किंवा व्हिडिओवरील ध्वनी प्लेयर.   हे कार्य करत नसल्यास ऑडिसीच्या प्लेबॅक पातळीची पर्वा न करता ओड्यासिटी एका निश्चित, सुरक्षित पातळीवर ध्वनिमुद्रण करेल.  </li>
+<li> <b>  इतर बर्&zwj;याच साधनावर ओड्यासिटी ध्वनिमुद्रण आवाज आणि प्लेबॅक आवाज घसरपट्टी "दुवा साधलेले" असतील  </b>   जेणेकरून आपण घसरपट्टी हलविता तेव्हा दोन्ही घसरपट्टी हलतात आणि एकतर घसरपट्टी आपल्या ऐकू  <b> येणार्&zwj;या </b>  ध्वनीच्या पातळीवर परिणाम करेल.   ओड्यासिटीमध्ये आपण प्लेबॅकसाठी निवडलेल्या प्रमाणेच अंगभूत साधना वर (लूपबॅक) ध्वनिमुद्रण साधनस्थापित केल्यास हे बर्&zwj;याचदा घडते.  </li>
+<li> <b>  जेव्हा ओड्यासिटी ध्वनिमुद्रण आणि प्लेबॅक घसरपट्टी दुवा साधला जातो, तेव्हा एकतर घसरपट्टी समायोजित केल्याने आधीपासून ध्वनिमुद्रण केलेल्या पातळीवर परिणाम होणार नाही.   </b>  याचा अर्थ असा की आपण जे ध्वनिमुद्रण करीत आहात ते ऐकायचे नसल्यास आपण केवळ ओड्यासिटी आवाज घसरपट्टी खाली करू शकता.   तथापि काही उपकरणांवर, एकतर घसरपट्टी खाली आणणे कदाचित ध्वनिमुद्रण पातळी खाली किंवा खाली करू शकते.   जर असे होत असेल तर ध्वनिमुद्रण न ऐकता बनविण्याकरिता, आपण पुढील गोष्टी वापरून पहा:
+  <ul><li>   प्रणाली घड्याळाद्वारे स्पीकरवर क्लिक करा, "मिक्सर" दुव्यावर क्लिक करा, नंतर "आवाज मिक्सर" विंडोच्या डाव्या बाजूला "साधना " घसरपट्टी नि: शब्द करा.      </li>
+<li>   बाह्य स्पीकर्स किंवा हेडफोन्स प्लग इन करा आणि ते खाली करा  </li>
+<li>   लीड जोडल्याशिवाय कोणताही १/८ इंच (३.५ मिमी) मिनीझॅक प्लग इन करा.    </li></ul></li></ul>
+<div class="note"><b>  WASAPI लूपबॅक ध्वनिमुद्रणसाठी टिपा:  </b> 
+<ul><li>  आपण साधारणपणे प्रवाह वाजवणे सुरू करण्यासाठी (किंवा पूर्वी आपण प्लेबॅक करीता वापरत असलेले अनुप्रयोग मध्ये काही इतर ध्वनी वाजवला आहे) आवश्यक असेल   <b>  आधी  </b>   ओड्यासिटी ध्वनिमुद्रण दाबून.     </li>
+<li>  वासापी लूपबॅक सर्व साधना वरील मोनोमध्ये ध्वनिमुद्रण करण्यात सक्षम होऊ शकणार नाही.   जर मोनो ध्वनिमुद्रणमध्ये त्रुटी निर्माण झाली तर साधन साधनपट्टी "२ (स्टीरिओ) ध्वनिमुद्रण वाहिनी" वर बदला.   आपण स्टिरीओ ध्वनिमुद्रण मोनो मध्ये   <span class="menu">  गीतपट्टा&gt; मिक्स&gt;   <a href="tracks_menu_mix.html" title="गीतपट्टा मेनू: मिक्स">  स्टीरिओ डाऊन  </a></span>   मोनो मध्ये रुपांतरित करू शकता   .  </li></ul></div>    
+<p><b>  आपणास संगणक प्लेबॅक ध्वनिमुद्रण करण्यासाठी कोणतेही इनपुट दिसत नसल्यास  </b>   ओड्यासिटीमधून बाहेर पडा आणि खाली वाचन सुरू ठेवा. 
+  </p>
 <div id="control_panel"></div>
-<h2><span class="mw-headline" id="Windows_Control_Panel_for_sounds">Windows Control Panel for sounds</span></h2>
-<p><b>Windows, computers almost always only have microphone inputs enabled by default.</b> Earlier Windows systems may also need the input for recording computer playback to be made visible before Audacity can use it. To show or enable inputs, launch the sound device control panel from the Windows Control Panel or from the system tray (by the clock). 
-</p>
-<ol><li> Right-click over the <span class="menu">Speaker icon</span> by the system clock then choose <span class="menu">Recording Devices</span> to open the Recording tab of "Sound".   </li>
-<li> Right-click anywhere inside the Recording tab and choose <b>"Show disabled devices"</b> then right-click again and choose <b>"Show Disconnected Devices"</b>. </li>
-<li> Right-click specifically over the input device you want to record with (in this case "Stereo Mix" or whatever alternative you have), and if visible, choose <b>"Enable"</b>.</li>
-<li> Sometimes it helps to right-click over the "stereo mix" or similar device again and choose "Set as Default Device".  </li>
-<li> If you need more help, see these <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/index.php?title=Mixer_Toolbar_Issues#vistacp">Wiki instructions for Windows</a>.</li></ol>
-<h2><span class="mw-headline" id="RealTek_and_other_audio_interface_control_panels">RealTek and other audio interface control panels</span></h2>
-<p>If you still have no stereo mix input in Windows, sometimes this input can be enabled in the audio interface's own control panel, especially with older RealTek devices. The audio interface's own control panel can be found in the Windows Control Panel. Hints for RealTek control panels:
-</p>
-<ul><li> Some panels "select" an input by muting all but one, so in this case, mute everything except Stereo Mix </li>
-<li> If you do not see Stereo Mix, click the wrench or spanner icon and enable Stereo Mix in the dialog that appears </li>
-<li> In some panels the option to choose is "Enabled recording multi-streaming" </li>
-<li> You should now see a volume control for Stereo Mix; make sure it is selected or unmuted.</li></ul>
-<h2><span class="mw-headline" id="Updating_sound_device_drivers">Updating sound device drivers</span></h2>
-<p>If there is still no suitable input, try <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Updating_Sound_Device_Drivers">updating the sound device drivers</a> for your audio interface. This can sometimes produce an additional input for recording computer playback, and may fix other problems such as poor quality or <a href="faq_recording_troubleshooting.html#skips" title="FAQ:Recording - Troubleshooting">skipping</a>.
-</p>
+<h2><span class="mw-headline" id="Windows_Control_Panel_for_sounds">  आवाजांसाठी विंडोज नियंत्रण फळी  </span></h2>
+<p><b>  विंडोज, संगणकांकडे नेहमीच मायक्रोफोन इनपुट पूर्वनिर्धारितनुसार सक्षम केले जाते.   </b>  पूर्वीच्या विंडोज प्रणालीला ओड्यासिटी वापरण्यापूर्वी संगणक प्लेबॅक ध्वनिमुद्रण करण्यासाठी इनपुट देखील आवश्यक असू शकते.   इनपुट दर्शविण्यासाठी किंवा सक्षम करण्यासाठी, विंडोज नियंत्रण फळीमधून किंवा प्रणाली ट्रेवरून (घड्याळाने) आवाज साधननियंत्रण फळी लाँच करा. 
+  </p>
+<ol><li>  प्रणाली घड्याळाद्वारे   <span class="menu">  स्पीकर चिन्हावर  </span>   उजवे क्लिक करा आणि   नंतर   "आवाज" चा ध्वनिमुद्रण टॅब उघडण्यासाठी   <span class="menu">  ध्वनिमुद्रण साधना   </span>   निवडा   .     </li>
+<li>  ध्वनिमुद्रण टॅबच्या आत कुठेही उजवे-क्लिक करा आणि   <b>  "अक्षम केलेले साधन दर्शवा"  </b>   निवडा   त्यानंतर पुन्हा उजवे-क्लिक करा आणि   <b>  "खंडित केलेले साधन दर्शवा"  </b>   निवडा   .  </li>
+<li>  आपण ज्या इनपुट साधना सह ध्वनिमुद्रण करू इच्छिता त्यावर विशेषत: राइट-क्लिक करा (या प्रकरणात "स्टीरिओ मिक्स" किंवा आपल्याकडे कोणताही पर्याय असल्यास) आणि जर दृश्यमान असेल तर   <b>  "सक्षम करा"  </b>   निवडा   .  </li>
+<li>   काहीवेळा हे पुन्हा "स्टीरिओ मिक्स" किंवा तत्सम साधना वर उजवे-क्लिक करण्यास आणि "पूर्वनिर्धारित साधन म्हणून स्थापित करा" निवडण्यास मदत करते.    </li>
+<li>  आपल्याला अधिक मदतीची आवश्यकता असल्यास,   <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/index.php?title=Mixer_Toolbar_Issues#vistacp">  विंडोजसाठी  </a>   या  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/index.php?title=Mixer_Toolbar_Issues#vistacp"> विकी सूचना </a>  पहा   .  </li></ol>
+<h2><span class="mw-headline" id="RealTek_and_other_audio_interface_control_panels">  रीअलटेक आणि इतर ध्वनी संवादपटल नियंत्रण फळी  </span></h2>
+<p>  आपल्याकडे अद्याप विंडोजमध्ये स्टीरिओ मिक्स इनपुट नसल्यास, कधीकधी हे इनपुट ध्वनी संवादपटलच्या स्वतःच्या नियंत्रण फळीमध्ये सक्षम केले जाऊ शकते, विशेषत: जुन्या रीअलटेक साधना सह.   ध्वनी संवादपटलचे स्वतःचे नियंत्रण फळी विंडोज नियंत्रण फळीमध्ये आढळू शकते.   रियलटेक नियंत्रण फळीसाठी सूचनाः
+  </p>
+<ul><li>   काही फळी एकाशिवाय इतर सर्व निःशब्द करून इनपुट "निवडतात", म्हणून या प्रकरणात, स्टिरिओ मिक्स व्यतिरिक्त सर्वकाही नि: शब्द करा   </li>
+<li>   आपल्याला स्टीरिओ मिक्स दिसत नसेल तर पानावर किंवा स्पॅनर चिन्हावर क्लिक करा आणि दिसणार्&zwj;या संवादात स्टीरिओ मिक्स सक्षम करा.   </li>
+<li>   काही फळीमध्ये निवडण्याचा पर्याय म्हणजे "सक्षम ध्वनिमुद्रण बहु -स्ट्रीमिंग"   </li>
+<li>  आपण आता स्टिरिओ मिक्ससाठी आवाज नियंत्रण पाहिले पाहिजे;   ते निवडलेले किंवा सशब्द असल्याची खात्री करा.  </li></ul>
+<h2><span class="mw-headline" id="Updating_sound_device_drivers">  आवाज साधनड्राइव्हर्स् सुधारीत करत आहे  </span></h2>
+<p>  अद्याप तेथे योग्य इनपुट नसल्यास   आपल्या ध्वनी संवादपटलसाठी   <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Updating_Sound_Device_Drivers">  ध्वनी साधन ड्राइव्हर्स अद्यतनित  </a>   करण्याचा प्रयत्न   करा.   हे कधीकधी संगणक प्लेबॅक ध्वनिमुद्रण करण्यासाठी अतिरिक्त इनपुट तयार करू शकते आणि खराब गुणवत्ता किंवा   <a href="faq_recording_troubleshooting.html#skips" title="FAQ: ध्वनिमुद्रण - समस्यानिवारण">  वगळणे  </a>   यासारख्या अन्य समस्यांचे निराकरण करू शकते   .
+  </p>
 <div id="cable"></div>
-<h2><span class="mw-headline" id="Loopback_cable">Loopback cable</span></h2>
-<p>An alternative method of recording audio playing on the computer is to buy a cable with 1/8 inch (3.5 mm) stereo connectors at each end. Suitable cables are available from almost any audio retailer. Connect one end of the cable to the computer's audio output (green) and the other end to the line-in input (blue). Then choose the line-in as input device in Audacity. 
-</p>
+<h2><span class="mw-headline" id="Loopback_cable">  लूपबॅक केबल  </span></h2>
+<p>  संगणकावर ध्वनी प्ले करणे ध्वनिमुद्रण करण्याची पर्यायी पद्धत म्हणजे प्रत्येक टोकाला १/८ इंच (३.५ मिमी) स्टीरिओ जोडणीर्ससह केबल खरेदी करणे.   जवळजवळ कोणत्याही ध्वनी विक्रेत्याकडून योग्य केबल्स उपलब्ध आहेत.   केबलच्या एका टोकाला संगणकाच्या ध्वनी उत्पादित (हिरवा) आणि दुसरा टोक लाइन-इनपुट (निळा) शी जोडा.   त्यानंतर ओड्यासिटीमध्ये इनपुट साधनम्हणून लाइन-इन निवडा. 
+  </p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
 </td>
-<td align="left" valign="top">Connecting to the microphone input (red) may produce mono sound or poor quality.
-</td></tr></table></div>
-<div class="note">To hear what is playing while you record it, buy a single stereo to double stereo adaptor to plug into the audio output. This gives you a spare jack to plug the speakers or headphones into.</div> 
+<td align="left" valign="top">  मायक्रोफोन इनपुट (लाल) शी जोडणी करणे मोनो ध्वनी किंवा निकृष्ट गुणवत्तेची निर्मिती करू शकते.
+  </td></tr></tbody></table></div>
+<div class="note">  आपण ध्वनिमुद्रण करीत असताना काय चालत आहे हे ऐकण्यासाठी, ध्वनी उत्पादितमध्ये प्लग करण्यासाठी दुहेरी स्टिरीओ अ&zwj;ॅडॉप्टरसाठी एक स्टिरिओ खरेदी करा.   हे आपल्याला स्पीकर्स किंवा हेडफोन्स प्लग इन करण्यासाठी सुटे जॅक देते.  </div> 
 <div id="alt"></div>
-<h2><span class="mw-headline" id="Alternative_applications_for_recording_computer_playback">Alternative applications for recording computer playback</span></h2>
-<p>You can use other applications to record computer playback that do not rely on the computer sound device having this ability. These applications will make an audio file which can then be imported into Audacity for editing. 
-</p><p>All the options below grab the audio digitally from the application producing the sound. This has  advantages over stereo mix recording. Lossy digital-analog-digital conversions are avoided
-and also unwanted system beeps and alerts are not captured. 
-</p>
-<ul><li> <a rel="nofollow" class="external text" href="http://www.milosoftware.com/en/index.php?body=soundleech.php">SoundLeech</a> is a free application for Windows which runs from the system tray. It records to lossless WAV format only.  </li>
-<li> <a rel="nofollow" class="external text" href="http://vb-audio.pagesperso-orange.fr/Cable/index.htm">VB-Audio Virtual Cable</a> is a donation-ware application for Windows. You can set the Cable Input as default playback device then set Audacity to record from the Cable Output.</li>
-<li> <a rel="nofollow" class="external text" href="http://www.highcriteria.com/">TotalRecorder</a> is a low cost recording package. Internet streams can optionally be captured at faster than real-time rates <i>(monitoring is not available in that mode)</i>.</li></ul>
-<h2><span class="mw-headline" id="External_audio_interfaces">External audio interfaces</span></h2>
-<p>A further alternative is an external USB audio interface with a "Stereo Mix" type of option. An example known to work on all versions of Windows is "Trust Sound Expert External".  Not all USB audio interfaces offer a Stereo Mix option, so read the specifications carefully before purchasing.
-</p>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="tutorial_recording_audio_playing_on_the_computer.html#setup" title="Tutorial - Recording audio playing on the computer"><b>|&lt;</b> Tutorial - Recording audio playing on the computer</a>
+<h2><span class="mw-headline" id="Alternative_applications_for_recording_computer_playback">  संगणक प्लेबॅक ध्वनिमुद्रण करण्यासाठी पर्यायी अनुप्रयोग  </span></h2>
+<p>  आपण संगणक प्लेबॅक ध्वनिमुद्रण करण्यासाठी इतर अनुप्रयोग वापरू शकता जे या क्षमता असलेल्या संगणक ध्वनी साधना वर विसंबून नाहीत.   हे अनुप्रयोग ध्वनी धारिकाबनवतील जे संपादनासाठी ओड्यासिटीमध्ये आयात केले जाऊ शकतात. 
+  </p><p>  खाली असलेले सर्व पर्याय आवाज निर्माण करणार्&zwj;या अनुप्रयोगामधून ध्वनी डिजिटल रूपात घेतात.   स्टिरिओ मिक्स ध्वनिमुद्रणपेक्षा याचे बरेच फायदे आहेत.   गमावलेले डिजिटल-एनालॉग-डिजिटल रूपांतरणे टाळली जातात आणि अवांछित प्रणाली बीप आणि सतर्कते देखील हस्तगत केली जात नाहीत. 
+  </p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.milosoftware.com/en/index.php?body=soundleech.php">  आवाजलीच  </a>   विंडोजसाठी एक विनामूल्य अनुप्रयोग आहे जो प्रणाली ट्रेमधून चालतो.   हे केवळ दोषरहित डब्ल्यूएव्ही स्वरूपात ध्वनिमुद्रण करते.    </li>
+<li> <a rel="nofollow" class="external text" href="http://vb-audio.pagesperso-orange.fr/Cable/index.htm">  व्हीबी-ध्वनी व्हर्च्युअल केबल  </a>   ही विंडोजसाठी देणगी-वेअर अनुप्रयोग आहे.   आपण केबल इनपुटला पूर्वनिर्धारित प्लेबॅक साधनम्हणून स्थापित करू शकता नंतर केबल उत्पादितमधून ध्वनिमुद्रण करण्यासाठी ओड्यासिटी स्थापित करू शकता.  </li>
+<li> <a rel="nofollow" class="external text" href="http://www.highcriteria.com/">  एकूण ध्वनिमुद्रणर  </a>   हे कमी किंमतीचे ध्वनिमुद्रण पॅकेज आहे.   चालू-वेळेत दरापेक्षा आंतरजाल प्रवाह वैकल्पिकरित्या पकडले जाऊ शकतात   <i>  (त्या मोडमध्ये देखरेख उपलब्ध नाही)  </i>   .  </li></ul>
+<h2><span class="mw-headline" id="External_audio_interfaces">  बाह्य ध्वनी संवादपटल  </span></h2>
+<p>  पुढील विकल्प म्हणजे बाह्य यूएसबी ध्वनी संवादपटल, ज्यामध्ये "स्टीरिओ मिक्स" प्रकारचा पर्याय आहे.   विंडोजच्या सर्व आवृत्त्यांवर कार्य करण्यासाठी प्रसिद्ध उदाहरण म्हणजे "विश्वास आवाज तज्ञ बाह्य".   सर्व यूएसबी ध्वनी संवादपटल स्टीरिओ मिक्स पर्याय देत नाहीत, म्हणून खरेदी करण्यापूर्वी तपशील काळजीपूर्वक वाचा.
+  </p>
+<h2><span class="mw-headline" id="Links">  दुवे  </span></h2>
+<p><a href="tutorial_recording_audio_playing_on_the_computer.html#setup" title="प्रशिक्षण - संगणकावर ध्वनी प्ले ध्वनिमुद्रण"><b>  | &lt;  </b>   प्रशिक्षण - संगणकावर ध्वनी प्ले ध्वनिमुद्रण  </a>
 </p>
 <!-- 
 NewPP limit report
