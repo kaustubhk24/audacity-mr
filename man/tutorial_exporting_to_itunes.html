@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Tutorial - Exporting to iTunes - Audacity Manual</title>
+<title>प्रशिक्षण - आयट्यून्सवर निर्यात करत आहे - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी विकास माहितीपुस्तिका (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+ </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorial_-_Exporting_to_iTunes rootpage-Tutorial_-_Exporting_to_iTunes skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,116 +25,115 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Tutorial - Exporting to iTunes</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">  प्रशिक्षण - आयट्यून्स निर्यात  </h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">  ओड्यासिटी विकास माहितीपुस्तिका वरून  </div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Tutorial_-_Exporting_to_iTunes#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">  येथे जा:   <a href="#column-one">  सुचालन  </a>   ,   <a href="https://alphamanual.audacityteam.org/man/Tutorial_-_Exporting_to_iTunes#searchInput">  शोध  </a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 
-<div class="intro">Before exporting audio for use in iTunes it is important to consider which audio file <a href="#format">format</a> you want to use.  <a href="#wavaiff">WAV</a> and <a href="#wavaiff">AIFF</a> files produce high quality lossless audio files but consume a lot of disk space.  <a href="#mp3">MP3</a> and <a href="#aac">AAC</a> files are compressed so they occupy less disk space, but audio damage may result as a result of the compression especially when using low bitrates.</div>
-<div class="note">Submitting a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Podcast">podcast</a> to the <b>iTunes Store</b> is a different process than exporting an Audacity file to an iTunes library. See our Tutorial on <a href="tutorial_mixing_a_narration_with_background_music.html" title="Tutorial - Mixing a Narration With Background Music">Tutorial - Mixing a Narration With Background Music</a> and our Wiki page on <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/How_to_publish_a_Podcast">How to publish a Podcast</a> for more help with creating and publishing a podcast.</div>
-<h2><span class="mw-headline" id="Contents">Contents</span></h2>
-<ol><li><a href="#iTunes">Exporting audio for loading into iTunes - <i>a quick overview</i></a></li>
-<li><a href="#format">What format should I export to?</a>
-<ol><li><a href="#wavaiff">WAV or AIFF - <i>universal support, lossless, large files, best for CD burning</i></a></li>
-<li><a href="#mp3">MP3 - <i>universal support, small files, lossy</i></a></li>
-<li><a href="#aac">AAC - <i>Apple's proprietary format, small files, lossy</i></a></li>
-<li><a href="#alac">Apple Lossless - <i>Apple's proprietary format, lossless, size compressed</i></a></li></ol></li>
-<li><a href="#conversion">Format conversion in iTunes</a></li>
-<li><a href="#location">Export location</a></li></ol>
-<p><br />
+<div class="intro">  आयट्यून्समध्ये वापरासाठी ध्वनी निर्यात करण्यापूर्वी   आपण   कोणता ध्वनी धारिका   <a href="#format">  स्वरूप  </a>   वापरू इच्छिता   याचा विचार करणे महत्वाचे आहे   .    <a href="#wavaiff">  डब्ल्यूएव्ही  </a>   आणि   <a href="#wavaiff">  एआयएफएफ  </a>   धारिका उच्च गुणवत्तेच्या दोषरहित ध्वनी धारिका तयार करतात परंतु बर्&zwj;याच डिस्क स्पेसचा वापर करतात.    <a href="#mp3">  एमपी 3  </a>   आणि   <a href="#aac">  एएसी  </a>   धारिका संकुचित केल्या आहेत ज्यामुळे त्यांच्याकडे कमी डिस्क जागा व्यापली आहे, परंतु विशेषत: कमी बिटरेट्स वापरताना संकुचनचा परिणाम म्हणून ध्वनी हानी होऊ शकते.  </div>
+<div class="note">  एक सादर करत आहे   <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Podcast">  पॉडकास्ट  </a>   करण्यासाठी   <b>  आयट्यून्स संग्रह  </b>   एक आयट्यून्स संग्रहालय एक ओड्यासिटी   धारिका निर्यात पेक्षा वेगळे प्रक्रिया आहे.   आमचे प्रशिक्षण वरील   <a href="tutorial_mixing_a_narration_with_background_music.html" title="प्रशिक्षण - पार्श्वभूमी संगीत एक नरेशन मिसळणे">  प्रशिक्षण -   </a>  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/How_to_publish_a_Podcast">  एक पॉडकास्ट  </a>   तयार आणि प्रकाशित करण्यात अधिक मदतीसाठी  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/How_to_publish_a_Podcast"> पॉडकास्ट कसे प्रकाशित करावे </a>  यावरील  <a href="tutorial_mixing_a_narration_with_background_music.html" title="Tutorial - Mixing a Narration With Background Music"> पार्श्वभूमी संगीत </a>  आणि आपले विकी पृष्ठासह  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/How_to_publish_a_Podcast"> एक कथन </a>  मिसळा.  </div>
+<h2><span class="mw-headline" id="Contents">  सामग्री  </span></h2>
+<ol><li><a href="#iTunes">  आयट्यून्समध्ये लोड करण्यासाठी ध्वनी निर्यात करत आहे -   <i>  एक द्रुत विहंगावलोकन  </i></a></li>
+<li><a href="#format">  मी कोणत्या स्वरूपात निर्यात करावे?  </a>
+<ol><li><a href="#wavaiff">  डब्ल्यूएव्ही किंवा एआयएफएफ -   <i>  जागतिक आधार, दोषरहित, मोठ्या धारिका, सीडी बर्निंगसाठी सर्वोत्तम  </i></a></li>
+<li><a href="#mp3">  एमपी 3 -   <i>  सार्वत्रिक समर्थन, लहान धारिका, हानीकारक  </i></a></li>
+<li><a href="#aac">  एएसी -  <i> Apple </i>  पलचे   <i>  मालकीचे स्वरूप, छोट्या धारिका, हानीकारक  </i></a></li>
+<li><a href="#alac">  अॅप्पल दोषरहित - अॅप्पलचे   <i>  मालकीचे स्वरूप, दोषरहित, आकार संकुचित  </i></a></li></ol></li>
+<li><a href="#conversion">  आयट्यून्समध्ये रूपांतरण स्वरूपित करा  </a></li>
+<li><a href="#location">  स्थान निर्यात करा  </a></li></ol>
+<p><br>
 </p>
 <div id="iTunes"></div>
-<h2><span class="mw-headline" id="Exporting_audio_for_loading_into_iTunes">Exporting audio for loading into iTunes</span></h2>
-<p>Follow the below steps to export audio for adding to iTunes.
-</p>
-<ol><li> Use the <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportaudio" title="File Menu: Export">Export Audio...</a></span> command or  in Audacity (or <span class="menu">File &gt; Export &gt; <a href="export_multiple.html" title="Export Multiple">Export Multiple...</a></span>).</li>
-<li> Choose the export format in the Export dialog, to export the particular format you want your file(s) to be in (the best choices are <a href="#wavaiff">WAV</a>, <a href="#wavaiff">AIFF</a>, <a href="#mp3">MP3</a> or <a href="#aac">AAC</a>).</li>
-<li> Move the file(s) into iTunes from the location you exported it to, using the iTunes <span class="menu">File &gt; Add File to Library...</span> (or <span class="menu">File &gt; Add Folder to Library...</span>) command.</li>
-<li> Or you can set the file location on export from Audacity to <a href="#auto">auto-import</a> into iTunes</li></ol>
-<div class="note">You may also want to read this workflow tutorial <a href="sample_workflow_for_exporting_to_itunes.html" title="Sample workflow for exporting to iTunes">Sample workflow for exporting to iTunes</a>. </div>
+<h2><span class="mw-headline" id="Exporting_audio_for_loading_into_iTunes">  आयट्यून्समध्ये लोड करण्यासाठी ध्वनी निर्यात करीत आहे  </span></h2>
+<p>  आयट्यून्समध्ये जोडण्यासाठी ध्वनी निर्यात करण्यासाठी खालील चरणांचे अनुसरण करा.
+  </p>
+<ol><li>  <span class="menu">  धारिका&gt; निर्यात&gt;   <a href="file_menu_export.html#exportaudio" title="धारिका मेनू: निर्यात करा">  ध्वनी  </a></span> <span class="menu">  निर्यात  </span><span class="menu"><a href="file_menu_export.html#exportaudio" title="File Menu: Export"> करा ... </a></span>  आज्ञा किंवा ओड्यासिटीमध्ये (किंवा   <span class="menu">  धारिका&gt; निर्यात&gt;   <a href="export_multiple.html" title="एकाधिक निर्यात करा">  एकाधिक  </a></span> <span class="menu">  निर्यात  </span><span class="menu"><a href="export_multiple.html" title="Export Multiple"> करा ... </a></span>  )   वापरा   .  </li>
+<li>  आपली धारिका (ली) मध्ये असाव्यात असे विशिष्ट स्वरूप निर्यात करण्यासाठी निर्यात संवादामध्ये निर्यात स्वरूप निवडा (सर्वोत्तम पर्याय   <a href="#wavaiff">  डब्ल्यूएव्ही  </a>   ,   <a href="#wavaiff">  एआयएफएफ  </a>   ,   <a href="#mp3">  एमपी 3  </a>   किंवा   <a href="#aac">  एएसी आहेत  </a>   ).  </li>
+<li>  आयट्यून्स   <span class="menu">  धारिका&gt; संग्रहालयमध्ये धारिका जोडा ...  </span>   (किंवा   <span class="menu">  धारिका&gt; फोल्डरला संग्रहालयमध्ये जोडा ...  </span>   ) आज्ञाचा   वापर करुन आपण ज्या धारिकावर निर्यात केली त्या स्थानावरून धारिका (ओं) मध्ये हलवा   .  </li>
+<li>  किंवा आपण ओड्यासिटी   वरून आयट्यून्समध्ये   <a href="#auto">  स्व आयात  </a>   करण्यासाठी निर्यातीवर धारिका स्थान सेट करू शकता  </li></ol>
+<div class="note">  <a href="sample_workflow_for_exporting_to_itunes.html" title="ITunes निर्यात करण्यासाठी नमुना कार्यप्रवाह">  ITunes वर एक्सपोर्ट करण्यासाठी  </a>   तुम्हाला हे कार्यप्रवाह प्रशिक्षण  <a href="sample_workflow_for_exporting_to_itunes.html" title="Sample workflow for exporting to iTunes"> नमुना कार्यप्रवाहदेखील </a>  वाचायचं आहे   .  </div>
 <div id="format"></div>
-<h2><span class="mw-headline" id="What_format_should_I_export_to.3F">What format should I export to?</span></h2>
-<p>AAC is the default format set in iTunes and the format Apple uses for audio files sold from the iTunes Store, so is the most obvious choice if you solely use Apple products. MP3 should be considered if you think that in the future you may wish to switch to an alternative portable music player or phone.  If you have plenty of storage space on your device or a relatively small music library you may wish to consider the larger lossless WAV or AIFF formats.
-</p><p>There are several advantages to using a compressed format on iPods and iPhones. The two main benefits are that you can fit many more songs into the device (for 256 kbps files you can fit about 10 times as many songs) and compressed files improve battery life, because disk reads are relatively heavy on battery power.  
-</p><p>If you choose lossy formats (MP3 or AAC) the minimum bitrate setting you should use for music is 160 kbps, though 256 kbps is probably to be preferred - and in use on an iPod is unlikely to be distinguishable from WAV or AIFF (or Apple Lossless).  For speech 128 kbps or even 64 kbps can be used as the bitrate if preferred.
-</p>
-<div class="note">Apple does not officially support <i><b><a href="glossary.html#ogg" title="Glossary">Ogg Vorbis</a></b></i> (a lossy, compressed format similar to MP3/compressed AAC) and has no support at all for  <i><b><a href="glossary.html#flac" title="Glossary">FLAC</a></b></i> (a lossless, compressed format smaller than WAV but larger than MP3/compressed AAC). If you really want to export to OGG for iTunes, see <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/OGG#qt">OGG usage in iTunes and QuickTime</a>. iPods, iPads and iPhones cannot play OGG files.</div>
+<h2><span class="mw-headline" id="What_format_should_I_export_to.3F">  मी कोणत्या स्वरूपात निर्यात करावे?  </span></h2>
+<p>  आयएट्यून्समध्ये एएसी हे पूर्वनिर्धारित स्वरूप आहे आणि अॅप्पल आयट्यून्स संग्रहमधून विकल्या गेलेल्या ध्वनी धारिकांसाठी वापरत आहे, आपण पूर्णपणे soleपल उत्पादने वापरत असाल तर सर्वात स्पष्ट पर्याय आहे.   भविष्यात आपण पर्यायी पोर्टेबल संगीत प्लेयर किंवा फोनवर स्विच करू इच्छित असाल असे वाटत असल्यास एमपी 3 चा विचार केला पाहिजे.   आपल्याकडे आपल्या उपकरणवर भरपूर स्टोरेज स्पेस किंवा तुलनेने लहान संगीत संग्रहालय असल्यास आपण मोठ्या दोषरहित डब्ल्यूएव्ही किंवा एआयएफएफ स्वरूपांचा विचार करू शकता.
+  </p><p>  आयपॉड्स आणि आयफोनवर संकुचित स्वरूप वापरण्याचे बरेच फायदे आहेत.   दोन मुख्य फायदे म्हणजे आपण उपकरणमध्ये बरीच गाणी फिट करू शकता (256 केबीपीएस धारिकासाठी तुम्ही अनेक गाण्यांपेक्षा 10 पट फिट करू शकता) आणि कॉम्प्रेस केलेल्या धारिकामुळे बॅटरीचे आयुष्य सुधारते, कारण डिस्क रीड बॅटरी उर्जेवर तुलनेने भारी असते.  
+  </p><p>  आपण हानीकारक स्वरूप (एमपी 3 किंवा एएसी) निवडल्यास आपण संगीतासाठी वापरलेली किमान बिटरेट समायोजन १६० केबीपीएस आहे, कदाचित २५६ केबीपीएस प्राधान्य दिले जावे - आणि आयपॉडवरील वापरात डब्ल्यूएव्ही किंवा एआयएफएफ (किंवा अॅप्पल) पेक्षा वेगळे असणे संभव नाही दोषरहित).   भाषणासाठी १२८ केबीपीएस किंवा ६४ केबीपीएस जरी प्राधान्य दिल्यास बिटरेट म्हणून वापरले जाऊ शकते.
+  </p>
+<div class="note">  Apple   <i><b><a href="glossary.html#ogg" title="शब्दकोष">  पल  </a></b></i>   अधिकृतपणे  <i><b><a href="glossary.html#ogg" title="Glossary"> ओग वोर्बिसचे </a></b></i>  समर्थन करीत नाही   (एमपी 3 / कॉम्प्रेस एएसीसारखे एक हानीकारक, संकुचित स्वरूप) आणि     <i><b><a href="glossary.html#flac" title="शब्दकोष">  एफएलएसीसाठी  </a></b></i>   (डब्ल्यूएव्हीपेक्षा लहान परंतु एमपी 3 / संकुचित एएसी पेक्षा मोठे) एक निराधार, संकुचित स्वरूप नाही.   आपल्याला खरोखर आयट्यून्ससाठी ओजीजी निर्यात करायचे असल्यास,   <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/OGG#qt">  आयट्यून्स आणि क्विकटाइममध्ये ओजीजी वापर  </a>   पहा   .   आयपॉड्स, आयपॅड आणि आयफोन ओजीजी धारिका खेळू शकत नाहीत.  </div>
 <div id="wavaiff"></div>
-<h3><span class="mw-headline" id="WAV_or_AIFF_.28universal_support.2C_lossless.2C_best_for_CD_burning.29"><a href="glossary.html#wav" title="Glossary">WAV</a> or <a href="glossary.html#aiff" title="Glossary">AIFF</a> (universal support, lossless, best for CD burning)</span></h3>
-<p>If you want a perfect <i><b><a href="glossary.html#lossless" title="Glossary">lossless</a></b></i> copy of your audio, or to burn it in iTunes to an <i><b><a href="glossary.html#audio_cd" title="Glossary">audio CD</a></b></i> for playing on any CD player, 
-you should choose <b>WAV</b> or <b>AIFF</b>. It is strongly recommended you export a standard "CD quality" 44100 <i><b><a href="glossary.html#hz" title="Glossary">Hz</a></b></i>, 16-bit stereo <i><b><a href="glossary.html#wav" title="Glossary">WAV</a></b></i> or AIFF to make sure iTunes understands the file. This means:
-</p>
-<ol><li> Ensure <b>Project Rate</b> at the bottom left of the Audacity project window is set to "44100" Hz.</li>
-<li> Select <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportaudio" title="File Menu: Export">Export Audio...</a></span> (or <span class="menu">File &gt; Export &gt; <a href="export_multiple.html" title="Export Multiple">Export Multiple...</a></span>) then select "WAV (Microsoft) signed 16-bit PCM" or "AIFF (Apple) signed 16-bit PCM" in the export window
-<ul><li> If you want a stereo export but your Project does not already contain a stereo track, click <span class="menu">Tracks &gt; Add New &gt; Stereo Track</span>.</li></ul></li></ol>
-<p>See <a href="burning_music_files_to_a_cd.html#iTunes" title="Burning music files to a CD">Burning music files to a CD</a> if you are only interested in burning a CD.
-</p>
-<div class="note">An advantage of exporting to AIFF is that lyrics or album art can be added to the file in iTunes, which is not possible with WAV files.</div> 
+<h3><span class="mw-headline" id="WAV_or_AIFF_.28universal_support.2C_lossless.2C_best_for_CD_burning.29"><a href="glossary.html#wav" title="शब्दकोष">  डब्ल्यूएव्ही  </a>   किंवा   <a href="glossary.html#aiff" title="शब्दकोष">  एआयएफएफ  </a>   (जागतिक आधार, दोषरहित, सीडी बर्निंगिनी सर्वोत्कृष्ट)  </span></h3>
+<p>  आपणास   आपल्या ध्वनीची   एक परिपूर्ण   <i><b><a href="glossary.html#lossless" title="शब्दकोष">  दोषरहित  </a></b></i>   प्रत   हवी असल्यास   , किंवा   कोणत्याही सीडी प्लेयरवर प्ले   करण्यासाठी   <i><b><a href="glossary.html#audio_cd" title="शब्दकोष">  ध्वनी सीडीमध्ये  </a></b></i>   आयट्यून्समध्ये जाळण्यासाठी   , आपण   <b>  डब्ल्यूएव्ही  </b>   किंवा   <b>  एआयएफएफ  </b>   निवडावे   .   आयट्यून्सला   धारिका समजली आहे हे सुनिश्चित करण्यासाठी   आपण मानक "सीडी गुणवत्ता" ४४१००   <i><b><a href="glossary.html#hz" title="शब्दकोष">  हर्ट्ज  </a></b></i>   , १६-बिट स्टीरिओ   <i><b><a href="glossary.html#wav" title="शब्दकोष">  डब्ल्यूएव्ही  </a></b></i>   किंवा एआयएफएफ   निर्यात करण्याची जोरदार शिफारस केली जाते   .   याचा अर्थ:
+  </p>
+<ol><li>  ओड्यासिटी प्रकल्प विंडोच्या तळाशी डावीकडील   <b>  प्रकल्प दर  </b>   सुनिश्चित करा   "४४१००" हर्ट्ज वर स्थापित केले आहे.  </li>
+<li>  निवडा   <span class="menu">  धारिका&gt; निर्यात&gt;   <a href="file_menu_export.html#exportaudio" title="धारिका मेनू: निर्यात करा">  निर्यात ध्वनी ...  </a></span>   (किंवा   <span class="menu">  धारिका&gt; निर्यात&gt;   <a href="export_multiple.html" title="एकाधिक निर्यात करा">  निर्यात अनेक ...  </a></span>   ) नंतर निवडा "डब्ल्यूएव्ही (मायक्रोसॉफ्ट) साइन इन 16-बिट पीसीएम" निर्यात मध्ये किंवा "एआयएफएफ (ऍपल) साइन इन १६-बिट पीसीएम" विंडो
+  <ul><li>  आपल्याला स्टीरिओ निर्यात हवा असल्यास परंतु आपल्या प्रकल्पात आधीपासून स्टिरिओ गीतपट्टा नसेल तर   <span class="menu">  गीतपट्टा&gt; नवीन जोडा&gt; स्टिरिओ गीतपट्टा  </span>   क्लिक करा   .  </li></ul></li></ol>
+<p>  जर आपल्याला फक्त सीडी जाळण्यात रस असेल तर   <a href="burning_music_files_to_a_cd.html#iTunes" title="सीडीवर संगीत धारिका बर्न करत आहे">  CD वर बर्न करणे म्युझिक धारिका  </a>   पहा   .
+  </p>
+<div class="note">  एआयएफएफला निर्यात करण्याचा एक फायदा म्हणजे आयट्यून्समधील धारिकामध्ये गीत किंवा अल्बम कला जोडली जाऊ शकते, जी डब्ल्यूएव्ही धारिकांद्वारे शक्य नाही.  </div> 
 <div id="mp3"></div>
-<h3><span class="mw-headline" id="MP3_.28universal_support.2C_small_files.2C_lossy.29"><a href="glossary.html#mp3" title="Glossary">MP3</a> (universal support, small files, lossy)</span></h3>
-<p>If you want to distribute your files on the internet (for example as a podcast), you should choose <b>MP3</b> as the Format in the Export dialog, as this is a space-saving (although slightly <i><b><a href="glossary.html#lossy" title="Glossary">lossy</a></b></i>) format that anyone should be able to play. To export as MP3 from Audacity you need first to download the <i><b><a href="glossary.html#lame" title="Glossary">LAME</a></b></i> encoder and point Audacity to it (see <a href="faq_installation_and_plug_ins.html#lame" title="FAQ:Installation and Plug-Ins">Lame Installation</a>).
-</p><p>If you want to put the files on an iPod, or simply store them in iTunes in a compact form, MP3 is also a good choice. However, there are some reports that when run on battery, recent iPods can struggle or crash when playing MP3s created in applications other than iTunes. So you may want to export as WAV or AIFF from Audacity and <a href="#conversion">convert the files to MP3 in iTunes</a> instead. 
-</p>
+<h3><span class="mw-headline" id="MP3_.28universal_support.2C_small_files.2C_lossy.29"><a href="glossary.html#mp3" title="शब्दकोष">  एमपी 3  </a>   (सार्वत्रिक समर्थन, लहान धारिका, हानीकारक)  </span></h3>
+<p>  आपणास आपल्या धारिका इंटरनेटवर वितरित करायच्या असल्यास (उदाहरणार्थ पॉडकास्ट म्हणून), आपण   निर्यात संवादात स्वरूपात   <b>  एमपी 3  </b>   निवडावे   , कारण ही जागा वाचवणारा (थोडासा   <i><b><a href="glossary.html#lossy" title="शब्दकोष">  तोटा  </a></b></i>   असणारा   ) स्वरूप आहे जो कोणीही प्ले करण्यास सक्षम असेल .   ओड्यासिटी वरून एमपी 3 म्हणून निर्यात करण्यासाठी आपल्याला प्रथम  <a href="faq_installation_and_plug_ins.html#lame" title="FAQ:Installation and Plug-Ins"> लॅम </a>  एन्कोडर   डाउनलोड करणे आवश्यक आहे आणि   <i><b><a href="glossary.html#lame" title="शब्दकोष">  त्याकडे  </a></b></i>   ओड्यासिटी दाखविणे आवश्यक आहे (   <a href="faq_installation_and_plug_ins.html#lame" title="FAQ: स्थापना आणि प्लग-इन">  लॅम स्थापना  </a>   पहा   ).
+  </p><p>  आपण आयपॉड वर धारिका ठेवू इच्छित असल्यास किंवा त्या एका घट्ट स्वरूपात फक्त आयट्यून्समध्ये साठवायच्या असल्यास, एमपी 3 देखील एक चांगली निवड आहे.   तथापि, असे काही अहवाल आहेत की बॅटरी चालू असताना, आयट्यून्स व्यतिरिक्त अन्य अनुप्रयोगांमध्ये तयार केलेले एमपी 3 प्ले करताना अलीकडील आयपॉड संघर्ष किंवा क्रॅश होऊ शकतात.   तर आपण ओड्यासिटी वरून डब्ल्यूएव्ही किंवा एआयएफएफ म्हणून निर्यात करू शकता आणि   त्याऐवजी   <a href="#conversion">  आयट्यून्समध्ये धारिका एमपी 3 मध्ये रुपांतरित  </a>   करू शकता   . 
+  </p>
 <div id="aac"></div>
-<h3><span class="mw-headline" id="AAC_.28Apple_proprietary.2C_small_files.2C_lossy.29"><a href="glossary.html#aac" title="Glossary">AAC</a> (Apple proprietary, small files, lossy)</span></h3>
-<p>Apple's proprietary format produces lossy, small, files similar to MP3, they are approximately the same quality as MP3 for a slightly smaller file size. The files are created with the .m4a extension.
-</p><p>AAC is useful for iPod or storage in iTunes due to its small file size and reduced disk occupancy, particularly if you have an iPod with a small disk.  The minimum bitrate setting you should use for music is 160 kpbs though 256 kbps is probably to be preferred and in use on an iPod is unlikely to be distinguishable from WAV or AIFF (or Apple Lossless). 
-</p><p>Audacity can export directly to AAC if you install the optional <a href="faq_installation_and_plug_ins.html#ffdown" title="FAQ:Installation and Plug-Ins">FFmpeg library</a>. To export to AAC choose <i><b>M4A (AAC) Files (FFmpeg)</b></i> in the Export Audio window then type the file name. If you are exporting an AAC file for mobile devices, you can add the M4R (ringtone) or 3GP <i><b><a href="glossary.html#extension" title="Glossary">extension</a></b></i> after the file name and dot as required by the device.
-</p>
+<h3><span class="mw-headline" id="AAC_.28Apple_proprietary.2C_small_files.2C_lossy.29"><a href="glossary.html#aac" title="शब्दकोष">  एएसी  </a>   (अॅप्पल मालकी, छोट्या धारिका, हानीकारक)  </span></h3>
+<p>  अॅप्पलचे मालकीचे स्वरूप एमपी 3 प्रमाणेच हानीकारक, लहान, धारिका तयार करते, त्या थोड्या लहान धारिका आकारासाठी एमपी 3 सारख्याच गुणवत्तेच्या असतात.   धारिका .m4a विस्तारासह तयार केल्या आहेत.
+  </p><p>  एएसी आयट्यून्समध्ये आयपॉड किंवा साठवणसाठी उपयुक्त आहे कारण त्याच्या लहान धारिकाचा आकार आणि डिस्क व्यवसाय कमी आहे, विशेषत: आपल्याकडे लहान डिस्कसह आयपॉड असल्यास.   आपण संगीतासाठी वापरलेली किमान बिटरेट समायोजन १६० केपीबीएस असली तरीही कदाचित २५६ केबीपीएस प्राधान्य दिले जावे आणि आयपॉडच्या वापरामध्ये डब्ल्यूएव्ही किंवा एआयएफएफ (किंवा अॅप्पल दोषरहित) पेक्षा वेगळे असण्याची शक्यता नाही. 
+  </p><p>  आपण पर्यायी   <a href="faq_installation_and_plug_ins.html#ffdown" title="FAQ: स्थापना आणि प्लग-इन">  FFmpeg संग्रहालय  </a>   स्थापित केल्यास ओड्यासिटी थेट एएसीवर निर्यात करू शकते   .   एएसीला निर्यात करण्यासाठी   निर्यात ध्वनी विंडोमध्ये   <i><b>  एम 4 ए (एएसी) धारिका (एफएफएमपीईजी)  </b></i>   निवडा   नंतर धारिका नाव टाइप करा.   आपण मोबाइल उपकरणसाठी एएसी धारिका निर्यात करत असल्यास, उपकरणाच्या आवश्यकतेनुसार आपण धारिकाच्या नावानंतर एम 4 आर (रिंगटोन) किंवा 3 जीपी   <i><b><a href="glossary.html#extension" title="शब्दकोष">  विस्तार  </a></b></i>   जोडू शकता   .
+  </p>
 <div id="alac"></div>
-<h3><span class="mw-headline" id="Apple_Lossless_.28Apple_proprietary.2C_lossless.2C_smaller_than_WAV.2FAIFF.29"><a href="glossary.html#alac" title="Glossary">Apple Lossless</a> (Apple proprietary, lossless, smaller than WAV/AIFF)</span></h3>
-<p>Apple Lossless Encoding (sometimes referred to as <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Apple_lossless">ALAC</a> - Apple Lossless Audio Codec) is also an Apple proprietary format. Apple Lossless is, as the name suggests, Apple's size-compressed lossless codec. Like AAC it also uses files with the M4A extension.  
-</p><p>Apple Lossless Encoder is quite similar to <i><b><a href="glossary.html#flac" title="Glossary">FLAC</a></b></i>, producing larger files than AAC or MP3 but smaller than WAV. Typically an Apple Lossless file is around half the size of an equivalent WAV file and more than three times the size of an equivalent AAC 256 kbps file.
-</p><p>You cannot export directly to Apple Lossless from the <a href="file_export_dialog.html" title="File Export Dialog">Export Audio</a> dialog. Instead, on Windows and Linux, install the optional <a href="faq_installation_and_plug_ins.html#ffdown" title="FAQ:Installation and Plug-Ins">FFmpeg library</a>. On Mac, search for and download a standalone "ffmpeg" binary online. Then export using the <b>(external program)</b> choice. Click the <span class="button">Options...</span> button, then enter the following command:
-</p>
+<h3><span class="mw-headline" id="Apple_Lossless_.28Apple_proprietary.2C_lossless.2C_smaller_than_WAV.2FAIFF.29"><a href="glossary.html#alac" title="शब्दकोष">  अॅप्पल दोषरहित  </a>   (  <a href="glossary.html#alac" title="Glossary"> अॅप्पल </a>  मालकी, दोषरहित, डब्ल्यूएव्ही / एआयएफएफ पेक्षा लहान)  </span></h3>
+<p>  अॅप्पल दोषरहित एन्कोडिंग (कधीकधी   <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Apple_lossless">  एएलएसी  </a>   - अॅप्पल दोषरहित ध्वनी कोडेक   म्हणून ओळखले जाते   ) देखील अॅप्पलचे मालकीचे स्वरूप आहे.   अॅप्पल दोषरहित हे नावाप्रमाणेच अॅप्पलचा आकार-संकुचित दोषरहित कोडेक आहे.   एएसी प्रमाणे हे एम 4 ए विस्तारासह धारिका देखील वापरते.  
+  </p><p>  ऍपल Lossless एनकोडर धनगर तत्सम आहे   <i><b><a href="glossary.html#flac" title="शब्दकोष">  फ्लॅक  </a></b></i>   एएसी किंवा एमपी 3 पण डब्ल्यूएव्ही पेक्षा लहान पेक्षा जास्त धारिका उत्पादन करीत आहे.   सामान्यत: अॅप्पल दोषरहित धारिका एक समतुल्य डब्ल्यूएव्ही धारिकाच्या अर्ध्या आकाराच्या आणि समकुल एएसी २५६ केबीपीएस धारिकाच्या आकारापेक्षा तीन पट जास्त असते.
+  </p><p>  आपण   <a href="file_export_dialog.html" title="धारिका निर्यात संवाद">  निर्यात ध्वनी  </a>   संवादातून अॅप्पल दोषरहितमध्ये थेट निर्यात करू शकत नाही   .   त्याऐवजी, विंडोज आणि लिनक्स वर, पर्यायी   <a href="faq_installation_and_plug_ins.html#ffdown" title="FAQ: स्थापना आणि प्लग-इन">  एफएफएमपीईजी संग्रहालय  </a>   स्थापित करा   .   मॅक वर, स्टँडअलोन "एफएफएमपीईजी" बायनरी शोधा आणि डाउनलोड करा.   नंतर   <b>  (बाह्य प्रोग्राम)  </b>   निवडीचा   वापर करुन निर्यात करा   .   <span class="button">  पर्याय ...  </span>   बटणावर   क्लिक   करा, त्यानंतर पुढील आज्ञा प्रविष्ट करा:
+  </p>
 <table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
-<tr>
-<td>ffmpeg -i - -acodec alac "%f"
-</td></tr></table>
-<p>On Mac, you must give the full path to ffmpeg enclosed in quotes, instead of just "ffmpeg". 
-</p><p>Finally in the Export Audio dialog, add the M4A extension after the file name and dot. See <a href="exporting_to_an_external_program.html" title="Exporting to an External Program">Exporting to an External Program</a> for more help.
-</p>
+<tbody><tr>
+<td>  ffmpeg -i - -acodec alac "% f"
+  </td></tr></tbody></table>
+<p>  मॅक वर, आपण फक्त "ffmpeg" ऐवजी कोटमध्ये बंद केलेल्या ffmpeg ला संपूर्ण मार्ग देणे आवश्यक आहे. 
+  </p><p>  शेवटी निर्यात ध्वनी संवादामध्ये धारिकाचे नाव आणि बिंदूनंतर एम 4 ए विस्तार जोडा.   अधिक मदतीसाठी   <a href="exporting_to_an_external_program.html" title="बाह्य प्रोग्राममध्ये निर्यात करणे">  बाह्य प्रोग्रामला निर्यात करणे  </a>   पहा   .
+  </p>
 <div id="conversion"></div>
-<h2><span class="mw-headline" id="Format_conversion_in_iTunes">Format conversion in iTunes</span></h2>
-<p>Alternatively you can export to WAV or AIFF and convert to MP3, AAC or Apple Lossless in iTunes:
-</p>
-<ol><li>Click <span class="menu">Edit &gt; Preferences</span> (or <span class="menu">iTunes &gt; Preferences</span> on Mac)</li>
-<li>Click on the leftmost "General" tab</li>
-<li>Click the <span class="button">Import Settings...</span> button</li>
-<li>In the "Import Using" dropdown, choose "<b>MP3 Encoder</b>",  "<b>AAC Encoder</b>" or "<b>Apple Lossless Encoder</b>" as required</li>
-<li>Click OK and OK</li>
-<li> Select the file to be converted, then use <span class="menu">File &gt; Convert</span> and choose "Create MP3 Version", "Create AAC Version" or "Create Apple Lossless Version" as appropriate.  </li></ol>
-<p>After creating the MP3, AAC or Apple Lossless version you should delete the original WAV or AIFF files to save disk space, as iTunes does not do this for you automatically.
-</p>
+<h2><span class="mw-headline" id="Format_conversion_in_iTunes">  आयट्यून्समध्ये रूपांतरण स्वरूपित करा  </span></h2>
+<p>  वैकल्पिकरित्या आपण डब्ल्यूएव्ही किंवा एआयएफएफमध्ये निर्यात करू शकता आणि आयट्यून्समध्ये एमपी 3, एएसी किंवा अॅप्पल दोषरहितमध्ये रूपांतरित करू शकता:
+  </p>
+<ol><li>  <span class="menu">  संपादित करा&gt; प्राधान्ये  </span>   (किंवा   <span class="menu">  आयट्यून्स&gt;  </span>   मॅकवरील  <span class="menu"> पसंती </span>  ) वर   क्लिक  <span class="menu"> करा </span> </li>
+<li>  डावीकडील "सामान्य" टॅबवर क्लिक करा  </li>
+<li>  क्लिक करा   <span class="button">  आयात समायोजन ...  </span>   बटण  </li>
+<li>  "इम्पोर्ट यूजिंग" ड्रॉपडाऊनमध्ये   आवश्यकतेनुसार   "   <b>  एमपी 3 एन्कोडर  </b>   ", "   <b>  एएसी एन्कोडर  </b>   " किंवा "   <b>  अॅप्पल दोषरहित एनकोडर  </b>   " निवडा.  </li>
+<li>  ओके आणि ओके क्लिक करा  </li>
+<li>  रूपांतरित करण्यासाठी धारिका निवडा, नंतर   <span class="menu">  धारिका&gt; रूपांतरण  </span>   वापरा   आणि "एमपी 3 व्हर्जन तयार करा", "एएसी आवृत्ती तयार करा" किंवा "अॅप्पल दोषरहित वर्जन तयार करा" योग्य निवडा.    </li></ol>
+<p>  एमपी 3, एएसी किंवा अॅप्पल दोषरहित आवृत्ती तयार केल्यानंतर आपण डिस्कची बचत करण्यासाठी मूळ डब्ल्यूएव्ही किंवा एआयएफएफ धारिका हटवाव्या कारण आयट्यून्स स्वयंचलितपणे आपल्यासाठी असे करत नाहीत.
+  </p>
 <div id="location"></div>
-<h2><span class="mw-headline" id="Export_location">Export location</span></h2>
-<p>You can choose any location for the export such as a "Music" folder on your Desktop or even the iTunes "Music" folder if you have one. However you must still import this file from the exported location into the iTunes Library (which makes it visible in <span class="menu">Library &gt; Music</span> on the left hand panel of iTunes). 
-</p><p>There are two ways to import your exported audio files into iTunes:
-</p>
-<ul><li> Use the <span class="menu">File &gt; Add File to Library...</span> or <span class="menu">File &gt; Add Folder to Library...</span> command from within iTunes, to add a single audio file or a folder of audio files.</li>
-<li> Select <span class="menu">Library &gt; Songs</span> in iTunes and drag the file from the location you exported it to, into the iTunes window. If you just want to <a href="burning_music_files_to_a_cd.html#iTunes" title="Burning music files to a CD">burn the files to CD</a>, it's best to drag them directly into an iTunes Playlist in the left-hand panel.</li></ul>
+<h2><span class="mw-headline" id="Export_location">  स्थान निर्यात करा  </span></h2>
+<p>  आपण आपल्या डेस्कटॉपवरील "संगीत" फोल्डर किंवा आपल्याकडे आयट्यून्स "संगीत" फोल्डर सारख्या निर्यातीसाठी कोणतेही स्थान निवडू शकता.   तथापि आपण अद्याप ही धारिका आयट्यून्स संग्रहालयमध्ये निर्यात केलेल्या स्थानावरून आयात करणे आवश्यक आहे (ज्यामुळे ते   आयट्यून्सच्या डाव्या बाजूच्या फळीवरील   <span class="menu">  संग्रहालय&gt; संगीतामध्ये  </span>   दृश्यमान होते   ). 
+  </p><p>  आयट्यून्समध्ये आपल्या निर्यात केलेल्या ध्वनी धारिका आयात करण्याचे दोन मार्ग आहेत:
+  </p>
+<ul><li>  वापरा   <span class="menu">  &gt; धारिका ग्रंथालय ... 'धारिका येथे जोड'   </span>   किंवा   <span class="menu">  &gt; धारिका फोल्डर जोडा ग्रंथालय ... करण्यासाठी  </span>   एक ध्वनी धारिका किंवा ध्वनी धारिका एक फोल्डर जोडण्यासाठी, आदेश आयट्यून्स मधून.  </li>
+<li>  आयट्यून्समधील   <span class="menu">  संग्रहालय&gt; गाणी  </span>   निवडा   आणि आपण ज्या स्थानावर निर्यात केली त्या स्थानावरून धारिका आयट्यून्स विंडोमध्ये ड्रॅग करा.   आपण फक्त   <a href="burning_music_files_to_a_cd.html#iTunes" title="सीडीवर संगीत धारिका बर्न करत आहे">  धारिका सीडी  </a>   वर  <a href="burning_music_files_to_a_cd.html#iTunes" title="Burning music files to a CD"> बर्न </a>  करू इच्छित असल्यास   डाव्या बाजूच्या फळीमधील आयट्यून्स प्लेलिस्टमध्ये थेट ड्रॅग करणे चांगले.  </li></ul>
 <div id="auto"></div>
 <div class="note">
-</li></ul>
-<p>You can export files from Audacity directly to your iTunes library.  Exporting a file to the following locations will cause iTunes to automatically place it in the Music section of your library. You can then play the audio on your computer with iTunes or add it to your iPod, iPhone or iPad.
-</p><p>Set the destination folder as:
-</p>
-<ul><li><b>Windows:</b> <span class="path">Computer\Music\iTunes\iTunes Music\Automatically Add to iTunes</span></li>
-<li><b>Mac:</b> <span class="path">Home/Music/iTunes/iTunes Media/Automatically Add to iTunes</span>.</li></ul>
+
+<p>  आपण ओड्यासिटीमधून आपल्या आयट्यून्स संग्रहालयत थेट धारिका निर्यात करू शकता.   खालील स्थानांवर धारिका निर्यात केल्याने आयट्यून्स आपोआप आपल्या संग्रहालयच्या संगीत विभागात ठेवेल.   त्यानंतर आपण आपल्या संगणकावर आयट्यून्ससह ध्वनी प्ले करू शकता किंवा आपल्या आयपॉड, आयफोन किंवा आयपॅडमध्ये जोडू शकता.
+  </p><p>  गंतव्य फोल्डर म्हणून सेट करा:
+  </p>
+<ul><li><b>  विंडोजः   </b> <span class="path">  संगणक \ संगीत \ आयट्यून्स \ आयट्यून्स संगीत \ स्वयंचलितपणे आयट्यून्समध्ये जोडा  </span></li>
+<li><b>  मॅक:   </b> <span class="path">  मुख्यपृष्ठ / संगीत / आयट्यून्स / आयट्यून्स मीडिया / स्वयंचलितपणे आयट्यून्समध्ये जोडा  </span>   .  </li></ul>
 </div>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
 </td>
-<td align="left" valign="top">By default iTunes is a "virtual" Library containing no actual files but only links to them. To avoid losing your files, do <b>*not*</b> delete the exported files from the location you exported them to, unless you have already gone to <span class="menu">Edit &gt; Preferences &gt; Advanced</span> in iTunes and enabled the "<b>Copy files to iTunes Media folder when adding to library</b>" option. <p>It is strongly recommended that you make this setting in iTunes.</p>
-</td></tr></table></div>
+<td align="left" valign="top">  पूर्वनिर्धारितनुसार आयट्यून्स एक "व्हर्च्युअल" संग्रहालय आहे ज्यामध्ये कोणतीही वास्तविक धारिका नसतात परंतु केवळ त्यांच्याशी दुवे असतात.   आपल्या धारिका गमावण्यासाठी, काय   <b>  * नाही *  </b>   आपण आधीच गेला नाही तोपर्यंत, त्यांना निर्यात स्थान निर्यात धारिका हटवा   <span class="menu">  संपादित करा&gt; पसंती&gt; प्रगत  </span>   आयट्यून्स मध्ये आणि "सक्षम   <b>  संग्रहालयमध्ये जोडताना तेव्हा iTunes मीडिया फोल्डर प्रत धारिका  </b>   " पर्याय.  <p>  आपण ही समायोजन आयट्यून्समध्ये बनविण्याची जोरदार शिफारस केली जात आहे.  </p>
+</td></tr></tbody></table></div>
 
 <!-- 
 NewPP limit report

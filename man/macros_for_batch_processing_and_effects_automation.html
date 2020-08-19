@@ -2,23 +2,23 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Macros -ओड्यासिटी महितीपुस्तिका</title>
+<title>मॅक्रोज -ओड्यासिटी महितीपुस्तिका</title>
 
 
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी विकास महितीपुस्तिका (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="canonical" href="macros.html" />
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="canonical" href="macros.html">
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Macros rootpage-Macros skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -26,73 +26,73 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Macros</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">मॅक्रो</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका पासून</div>
-					<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="https://alphamanual.audacityteam.org/m/index.php?title=Macros_-_for_batch_processing_and_effects_automation&amp;redirect=no" class="mw-redirect" title="Macros - for batch processing and effects automation">Macros - for batch processing and effects automation</a>)</span></div>
-										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Macros_-_for_batch_processing_and_effects_automation#searchInput">शोध</a></div>
+					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका</div>
+					<div id="contentSub"><span class="mw-redirectedfrom">(मॅक्रोकडून पुनर्निर्देशित <a href="https://alphamanual.audacityteam.org/m/index.php?title=Macros_-_for_batch_processing_and_effects_automation&amp;redirect=no" class="mw-redirect" title="मॅक्रो - तुकडी प्रक्रिया आणि प्रभाव स्वयंचलनसाठी">- तुकडी प्रक्रिया आणि प्रभाव स्वयंचलनसाठी</a> )</span></div>
+										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a> , <a href="https://alphamanual.audacityteam.org/man/Macros_-_for_batch_processing_and_effects_automation#searchInput">शोध</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 
 
-<div class="intro"><span style="font-weight: bold; font-size:118%">Macros - for batch processing and effects automation:</span><p>A <i><b>Macro</b></i> is a sequence of pre-configured commands (mainly effects) in a set order that can be applied automatically to <a href="audacity_projects.html" title="Audacity Projects">projects</a> or audio files. Any <a href="effect_menu.html#built-in" title="Effect Menu">built-in</a>, <a href="effect_menu.html#LADSPA_effects" title="Effect Menu">LADSPA</a>, <a href="effect_menu.html#LV2_effects" title="Effect Menu">LV2</a>, <a href="effect_menu.html#nyquist_effects" title="Effect Menu">Nyquist</a>, <a href="effect_menu.html#vst" title="Effect Menu">VST</a> or <a href="effect_menu.html#Audio_Unit_effects" title="Effect Menu">Audio Unit</a> (Mac) effect shown in the <a href="effect_menu.html" title="Effect Menu">Effect Menu</a> can be added to a Macro. You can also add plug-ins in any format that are shown in the <a href="generate_menu.html" title="Generate Menu">Generate</a> or <a href="analyze_menu.html" title="Analyze Menu">Analyze</a> Menus (including <a href="analyze_menu.html#vamp" title="Analyze Menu">Vamp</a> analysis effects), the built-in <a href="find_clipping.html" title="Find Clipping">Find Clipping</a> analyzer and a number of export commands.</p> 
-<p><i><b>Macros</b></i> follow a fixed sequence of instructions.  If you want more flexibility than that, you may want to look at <i><b><a href="scripting.html" title="Scripting">Python Scripting</a></b></i> which uses the same commands and the python language.
+<div class="intro"><span style="font-weight: bold; font-size:118%">मॅक्रो - तुकडी प्रक्रिया आणि प्रभाव स्वयंचलनसाठी:</span><p>एक <i><b>मॅक्रो</b></i> संच करण्यासाठी पूर्व-कॉन्फिगर आदेश (प्रामुख्याने प्रभाव) आपोआप लागू केले जाऊ शकते की क्रम आहे <a href="audacity_projects.html" title="धृष्टता प्रकल्प">प्रकल्प</a> किंवा ध्वनी धारीका. <a href="effect_menu.html" title="प्रभाव मेनू">प्रभाव मेनूमध्ये</a> दर्शविलेला कोणताही <a href="effect_menu.html#built-in" title="प्रभाव मेनू">अंगभूत</a> , <a href="effect_menu.html#LADSPA_effects" title="प्रभाव मेनू">एलएडीएसपीए</a> , <a href="effect_menu.html#LV2_effects" title="प्रभाव मेनू">एलव्ही 2</a> , <a href="effect_menu.html#nyquist_effects" title="प्रभाव मेनू">न्यूक्विस्ट</a> , <a href="effect_menu.html#vst" title="प्रभाव मेनू">व्हीएसटी</a> किंवा <a href="effect_menu.html#Audio_Unit_effects" title="प्रभाव मेनू">ध्वनी युनिट</a> (मॅक) प्रभाव मॅक्रोमध्ये जोडला जाऊ शकतो. आपण <a href="generate_menu.html" title="मेनू व्युत्पन्न करा">व्युत्पन्न</a> किंवा <a href="analyze_menu.html" title="मेनूचे विश्लेषण करा">विश्लेषण</a> मेनूमध्ये दर्शविलेले कोणत्याही स्वरूपात प्लग-इन जोडू शकता ( <a href="analyze_menu.html#vamp" title="मेनूचे विश्लेषण करा">व्हँप</a> विश्लेषण प्रभावांसह), अंगभूत <a href="find_clipping.html" title="क्लिपिंग शोधा">क्लिपिंग शोधा</a> विश्लेषक आणि बऱ्याच निर्यात आदेश.<a href="effect_menu.html" title="प्रभाव मेनू"></a><a href="generate_menu.html" title="मेनू व्युत्पन्न करा"></a><a href="analyze_menu.html" title="मेनूचे विश्लेषण करा"></a><a href="analyze_menu.html#vamp" title="मेनूचे विश्लेषण करा"></a><a href="find_clipping.html" title="क्लिपिंग शोधा"></a></p> 
+<p><i><b>मॅक्रोज</b></i> निर्देशांच्या निश्चित अनुक्रमांचे अनुसरण करतात. तुम्हाला त्यापेक्षा अधिक लवचिकता हवी असेल तर तुम्हाला<i><b><a href="scripting.html" title="स्क्रिप्टिंग"> पायथन स्क्रिप्टिंग बघायला</a></b></i> आवडेल ज्या मध्ये समान आज्ञा आणि अजगर भाषा वापरली जातील.
 </p>
 </div>
 
-<p><br />
+<p><br>
 </p>
-<h2><span class="mw-headline" id="What_Macros_are_For">What Macros are For</span></h2>
-<p>The three main uses of Macros are: 
-</p><p><span style="font-weight: bold; font-size:118%">Batch processing:</span> where many audio files are processed unattended with one or more effects then exported to a new file.
-</p><p><span style="font-weight: bold; font-size:118%">Effects automation:</span> where the <a href="audacity_selection.html" title="Audacity Selection">selected audio</a> in the <a href="audio_tracks.html" title="Audio Tracks"> track</a> or tracks in the current project is subjected to the same prescribed sequence of effects, and optionally, a file exported from the entire audio.  Note that Macros can contain Select commands to make their own selections as the Macro runs.
-</p><p><span style="font-weight: bold; font-size:118%">Macro presets:</span> where selected effects and their settings are stored for quick reuse.
-</p><p><br />
+<h2><span class="mw-headline" id="What_Macros_are_For">मॅक्रो कशासाठी आहेत</span></h2>
+<p>मॅक्रोचे तीन मुख्य उपयोगः 
+</p><p><span style="font-weight: bold; font-size:118%">तुकडी प्रक्रिया:</span> जिथे बऱ्याच ध्वनी धारीकांवर प्रक्रिया न करता एक किंवा अधिक प्रभावांसह नंतर नवीन धारीकावर निर्यात केली जाते.
+</p><p><span style="font-weight: bold; font-size:118%">प्रभाव स्वयंचलन:</span> जेथे <a href="audacity_selection.html" title="धृष्टता निवड">निवडलेला ध्वनी</a> मध्ये <a href="audio_tracks.html" title="ध्वनी गितपट्टा">गितपट्टा</a> वर्तमान प्रकल्पात किंवा गितपट्टा प्रभाव समान निर्धारित क्रम होता कामा आहे, आणि वैकल्पिकरित्या, धारीका संपूर्ण ध्वनी निर्यात. लक्षात घ्या की मॅक्रो चालत असताना स्वत: च्या निवडी करण्यासाठी मॅक्रोमध्ये निवड आज्ञा असू शकतात.
+</p><p><span style="font-weight: bold; font-size:118%">मॅक्रो प्रीसेटः</span> जेथे निवडलेले प्रभाव आणि त्यांच्या सेटिंग्ज द्रुत पुनर्वापरासाठी संग्रहित केल्या जातात.
+</p><p><br>
 </p>
-<h2><span class="mw-headline" id="How_to_Use_Macros">How to Use Macros</span></h2>
-<p>Macros are available from the <a href="tools_menu.html" title="Tools Menu">Tools Menu</a>.
+<h2><span class="mw-headline" id="How_to_Use_Macros">मॅक्रो कसे वापरावे</span></h2>
+<p><a href="tools_menu.html" title="साधने मेनू">साधने मेनू</a> वरून मॅक्रो उपलब्ध आहेत .
 </p>
-<ul><li> <span class="menu">Tools &gt; Macros...</span> To manage macros, i.e. <a href="manage_macros.html" title="Manage Macros">to create, edit and test</a> them.</li>
-<li> <span class="menu">Tools &gt; Apply Macro &gt; Palette...</span>  For a <a href="apply_macro.html" title="Apply Macro">toolbox of macros</a>.</li>
-<li> <span class="menu">Tools &gt; Apply Macro &gt; <i>named macro</i></span> To <a href="tools_menu_apply_macro.html" title="Tools Menu: Apply Macro">apply one named macro</a>.</li></ul>
-<p>There are also some <a href="macros_examples.html" title="Macros Examples">examples of macros and tips on using them</a>.
-</p><p><br />
+<ul><li> <span class="menu">साधने मॅक्रो ... मॅक्रो</span> व्यवस्थापित करण्यासाठी, म्हणजे <a href="manage_macros.html" title="मॅक्रो व्यवस्थापित करा">ते तयार करणे, संपादित करणे आणि त्यांची चाचणी घेणे</a> .</li>
+<li> <span class="menu">साधने मॅक्रो लागू करा पटल ...</span>   एक कारण <a href="apply_macro.html" title="मॅक्रो लागू करा">मॅक्रो च्या टूलबॉक्स</a> .</li>
+<li> <span class="menu">साधने मॅक्रो <i>नामित मॅक्रो</i></span><a href="tools_menu_apply_macro.html" title="साधने मेनू: मॅक्रो लागू करा"> लागू करा एक नामित मॅक्रो लागू</a> करण्यासाठी .</li></ul>
+<p><a href="macros_examples.html" title="मॅक्रोस उदाहरणे">मॅक्रोची</a> काही <a href="macros_examples.html" title="मॅक्रोस उदाहरणे">उदाहरणे आणि त्या वापरण्याच्या टिपा</a> देखील आहेत .
+</p><p><br>
 </p>
 <div id="edit_chains"></div>
 <div id="manage"></div>
-<h2><span class="mw-headline" id="Manage_Macros"><a href="manage_macros.html" title="Manage Macros">Manage Macros</a></span></h2>
-<p>Use <span class="menu">Tools &gt; Macros...</span> if you need to create a new Macro or to edit an existing Macro. 
-</p>
-<dl><dd><span title="Manage Macros dialog showing Macro list (left) and command list for selected Macro (right)"><img alt="ManageMacros.png" src="../m/images/5/54/managemacros.png" width="786" height="393" /></span></dd></dl>
-<p>For further details on creating, editing and sharing Macros, see the <a href="manage_macros.html" title="Manage Macros">Manage Macros</a> page.
-</p><p><br />
-</p><p><br />
+<h2><span class="mw-headline" id="Manage_Macros"><a href="manage_macros.html" title="मॅक्रो व्यवस्थापित करा">मॅक्रो व्यवस्थापित करा</a></span></h2>
+<p>आपल्याला नवीन मॅक्रो तयार करण्याची किंवा विद्यमान मॅक्रो संपादित करण्याची आवश्यकता असल्यास 
+ <span class="menu">साधने मॅक्रो</span> वापरा <span class="menu">...</span></p>
+<dl><dd><span title="निवडलेल्या मॅक्रो (उजवीकडे) साठी मॅक्रो यादी (डावीकडे) आणि आदेश यादी दर्शविणारे मॅक्रो संवाद व्यवस्थापित करा"><img alt="मॅनेजमेक्रोस.पीएनजी" src="../m/images/5/54/managemacros.png" width="786" height="393"></span></dd></dl>
+<p>मॅक्रो तयार करणे, संपादन आणि सामायिकरण करण्याच्या अधिक तपशीलांसाठी मॅक्रो <a href="manage_macros.html" title="मॅक्रो व्यवस्थापित करा">व्यवस्थापित करा</a> पृष्ठ पहा.
+</p><p><br>
+</p><p><br>
 </p>
 <div id="shrink"></div>
-<h2><span class="mw-headline" id="Macros_Palette_dialog"><a href="apply_macro.html" title="Apply Macro">Macros Palette</a> dialog</span></h2>
-<p>Use the <span class="button">Shrink</span> button to show a reduced <a href="apply_macro.html" title="Apply Macro">Macros Palette</a> dialog with a simple list of the existing Macros. 
-</p><p>This dialog is also available directly via <span class="menu">Tools &gt; Apply Macro &gt; Palette...</span>
+<h2><span class="mw-headline" id="Macros_Palette_dialog"><a href="apply_macro.html" title="मॅक्रो लागू करा">मॅक्रो पॅलेट</a> संवाद</span></h2>
+<p>विद्यमान मॅक्रोजच्या सोप्या सूचीसह कमी केलेले <a href="apply_macro.html" title="मॅक्रो लागू करा">मॅक्रोज पॅलेट</a> संवाद दर्शविण्यासाठी <span class="button">आंकुचित</span> बटण वापरा . 
+<a href="apply_macro.html" title="मॅक्रो लागू करा"></a></p><p>हा संवाद थेट <span class="menu">साधने मॅक्रो लागू करा पॅलेटद्वारे</span> देखील उपलब्ध आहे <span class="menu">...</span>
 </p>
-<dl><dd><span title="Macros Palette dialog showing Macro list"><img alt="MacrosPalette.png" src="../m/images/2/20/macrospalette.png" width="293" height="393" /></span></dd></dl>
-<p>Using the <span class="button">Expand</span> button on this reduced dialog will return you to the full <a href="#manage">Manage Macros</a> dialog.
-</p><p><br />
+<dl><dd><span title="मॅक्रो पॅलेट संवाद मॅक्रो सूची दर्शवित आहे"><img alt="मॅक्रोस्पॅलेट.पीएनजी" src="../m/images/2/20/macrospalette.png" width="293" height="393"></span></dd></dl>
+<p>या कमी झालेल्या संवादावर <span class="button">विस्तार</span> बटण वापरणे आपल्याला पूर्ण <a href="#manage">मॅक्रो व्यवस्थापित करा संवादाकडे</a> परत करेल .
+</p><p><br>
 </p>
 <div id="apply_chain"></div>
 <div id="apply"></div>
-<h3><span class="mw-headline" id="Apply_Macro_to">Apply Macro to</span></h3>
-<p>Both the Macros dialog and the Macro Palette dialog have 'Apply Macro to' Buttons.
-</p><p><span style="font-weight: bold; font-size:118%">Project:</span> Use the <span class="button">Project</span> button to apply the selected Macro to the current <a href="../index.html#Guide_to_the_Project_Window" title="Main Page">project window</a>. 
-</p><p><span style="font-weight: bold; font-size:118%">Files:</span> Use the <span class="button">Files...</span> button to apply the selected Macro to selected external audio files that are in a single directory.
-</p><p>For more details see the <a href="apply_macro.html" title="Apply Macro">Apply Macro</a> page.
+<h3><span class="mw-headline" id="Apply_Macro_to">यावर मॅक्रो लागू करा</span></h3>
+<p>दोन्ही मॅक्रो संवाद आणि मॅक्रो पॅलेट संवादात 'मॅक्रो ला लागू करा' बटणे आहेत.
+</p><p><span style="font-weight: bold; font-size:118%">प्रकल्प:</span> सध्याच्या <a href="../index.html#Guide_to_the_Project_Window" title="मुख्य पान">प्रकल्प विंडोमध्ये</a> निवडलेला मॅक्रो लागू करण्यासाठी <span class="button">प्रकल्प</span> बटण वापरा . 
+<a href="../index.html#Guide_to_the_Project_Window" title="मुख्य पान"></a></p><p><span style="font-weight: bold; font-size:118%">धारीका:</span> एकच निर्देशिकेत असलेल्या निवडलेल्या बाह्य ध्वनी धारीकांवर निवडलेला मॅक्रो लागू करण्यासाठी <span class="button">धारीका ...</span> बटण वापरा .
+</p><p>अधिक माहितीसाठी <a href="apply_macro.html" title="मॅक्रो लागू करा">मॅक्रो लागू करा</a> पृष्ठ पहा.
 </p>
 
 <div id="examples"></div>
-<h2><span class="mw-headline" id="Macros_Examples"><a href="macros_examples.html" title="Macros Examples">Macros Examples</a></span></h2>
-<p>See the <a href="macros_examples.html" title="Macros Examples">Macros Examples</a> page for examples of using Macros
-</p><p><br />
-<a href="tools_menu.html" title="Tools Menu"><b>&lt;</b>&#160; Back to: Tools Menu</a>
+<h2><span class="mw-headline" id="Macros_Examples"><a href="macros_examples.html" title="मॅक्रोस उदाहरणे">मॅक्रोस उदाहरणे</a></span></h2>
+<p><a href="macros_examples.html" title="मॅक्रोस उदाहरणे">मॅक्रो</a> वापरण्याच्या उदाहरणांसाठी <a href="macros_examples.html" title="Macros Examples">मॅक्रोची उदाहरणे</a> पृष्ठ
+ पहा</p><p><br>
+<a href="tools_menu.html" title="साधने मेनू"><b>&lt;</b> &nbsp; कडे परत: साधने मेनू</a>
 </p>
 <!-- 
 NewPP limit report

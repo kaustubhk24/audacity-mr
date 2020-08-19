@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Tutorial - Looping - Audacity Manual</title>
+<title>प्रशिक्षण - लूप - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी विकास माहितीपुस्तिका (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+ </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tutorial_-_Looping rootpage-Tutorial_-_Looping skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,77 +25,76 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Tutorial - Looping</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">  प्रशिक्षण - लूप  </h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">  ओड्यासिटी विकास माहितीपुस्तिका वरून  </div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Tutorial_-_Looping#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">  येथे जा:   <a href="#column-one">  सुचालन  </a>   ,   <a href="https://alphamanual.audacityteam.org/man/Tutorial_-_Looping#searchInput">  शोध  </a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">This page provides tips on how to make an <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Music_loop">audio loop</a> with Audacity.</div>
-<h2><span class="mw-headline" id="Contents">Contents</span></h2>
-<ol><li> <a href="#create">Creating an audio loop</a></li>
-<li> <a href="#using">Using loops in Audacity</a></li>
-<li> <a href="#exporting">Exporting Loops</a></li>
-<li> <a href="#tqp">Using Timeline Quick-Play to create loops</a></li></ol>
+<div class="intro">  हे पृष्ठ   ओड्यासिटीसह   <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Music_loop">  ध्वनी लूप  </a>   कसा बनवायचा यावर   सल्ले   प्रदान करते   .  </div>
+<h2><span class="mw-headline" id="Contents">  सामग्री  </span></h2>
+<ol><li> <a href="#create">  ध्वनी लूप तयार करत आहे  </a></li>
+<li> <a href="#using">  ओड्यासिटी मध्ये लूप वापरणे  </a></li>
+<li> <a href="#exporting">  निर्यात लूप  </a></li>
+<li> <a href="#tqp">  लूप तयार करण्यासाठी समयरेषा क्विक-प्ले वापरणे  </a></li></ol>
 <div id="create"></div>
-<h2><span class="mw-headline" id="Creating_an_audio_loop">Creating an audio loop</span></h2>
-<p>To create an audio loop from an audio track, the first step is to find a suitable section. Ideally the sound will be reasonably constant for as long as possible. Looping is much easier with mono tracks, so if you have a stereo recording but a mono track would be sufficient, the track could first be converted to mono using <span class="menu">Tracks &gt; Mix &gt; <a href="tracks_menu_mix.html#mix_stereo_down_to_mono" title="Tracks Menu: Mix">Mix Stereo down to Mono</a></span>.
-</p>
-<dl><dd><span title="Loop Selection"><img alt="Loop selection.png" src="../m/images/1/13/loop_selection.png" width="566" height="161" /></span></dd></dl>
-<p>The start of the selection should match (look like) the end of the selection as closely as possible and both selection edges should be positioned so that the blue line of the waveform seems to cross the selection edge at zero amplitude (where the horizontal line appears).
-</p>
-<div class="note">There are items in the View menu that allow jumping from one end of the selection to the other while zoomed in:
-<ul><li><span class="menu">View &gt; Skip to &gt; <a href="view_menu_skip_to.html#selectionstart" title="View Menu: Skip to">Selection Start</a></span> ( shortcut is <span class="kbrd" style="background-color: #d0d0f8">Ctrl + [&#160;</span> )</li>
-<li><span class="menu">View &gt; Skip to &gt; <a href="view_menu_skip_to.html#selectionend" title="View Menu: Skip to">Go to Selection End</a></span> ( shortcut is <span class="kbrd" style="background-color: #d0d0f8">Ctrl + ]&#160;</span> )</div></li></ul>
-<p>To look for appropriate loop points, zoom in horizontally on the start of the selection and then on the end of the selection. To zoom, place the mouse pointer at the selection edge and scroll with the wheel or ball.  Drag the selection edges leftwards or rightwards as necessary so as to find loop points that have a similar shape, amplitude and slope so that the end of the loop may flow smoothly into the start of the loop. It may also be useful to <a href="audio_tracks.html#scale" title="Audio Tracks">zoom in on the vertical scale</a> to left of the waveform, as shown in the following images: 
-</p>
-<dl><dd><dl><dd><b>Beginning of the loop selection</b></dd></dl></dd>
-<dd><span title="Beginning of the loop selection"><img alt="Loop start.png" src="../m/images/9/9f/loop_start.png" width="566" height="161" /></span></dd></dl>
-<dl><dd><dl><dd><b>End of the loop selection</b></dd></dl></dd>
-<dd><span title="End of the loop selection"><img alt="Loop end.png" src="../m/images/4/4f/loop_end.png" width="566" height="161" /></span></dd></dl>
-<p>To avoid clicks (glitches) it can often help to use <span class="menu">Select &gt; <a href="select_menu_at_zero_crossings.html" title="Select Menu: At Zero Crossings">At Zero Crossings</a></span> so as to ensure the start and end of the selection lie accurately on a  <i>zero crossing point</i>. In the image below, the sample at the end of the selection (as shown by the dot) is at 0.0 amplitude according to the vertical scale on the left.     
-</p>
-<dl><dd><dl><dd><b>Zero crossing point</b></dd></dl></dd>
-<dd><span title="Zero crossing point"><img alt="Zero-crossing.png" src="../m/images/e/e6/zero_crossing.png" width="566" height="161" /></span></dd></dl>
-<p>The loop may be tested using <i>Loop Play</i> (shortcut <span class="kbrd" style="background-color: #d0d0f8">Shift + Space</span>).
-</p>
+<h2><span class="mw-headline" id="Creating_an_audio_loop">  ध्वनी लूप तयार करत आहे  </span></h2>
+<p>  ध्वनी गीतपट्टा वरून ध्वनी लूप तयार करण्यासाठी, योग्य विभाग शोधणे ही पहिली पायरी आहे.   शक्यतोपर्यंत आवाज योग्यरित्या स्थिर असेल.   मोनो गीतपट्टासह लूप करणे अधिक सुलभ आहे, म्हणून आपल्याकडे स्टिरिओ ध्वनीमुद्रण असल्यास परंतु मोनो गीतपट्टा पुरेसा असेल तर   <span class="menu">  गीतपट्टा&gt; मिक्स&gt;   <a href="tracks_menu_mix.html#mix_stereo_down_to_mono" title="गीतपट्टा मेनू: मिक्स">  मिक्स स्टिरीओ डाऊन मोनो पर्यंत  </a></span> <span class="menu">  गीतपट्टा </span>  प्रथम मोनोमध्ये रूपांतरित केला जाऊ शकतो   .
+  </p>
+<dl><dd><span title="लूप निवड"><img alt="लूप निवड.पीएनजी" src="../m/images/1/13/loop_selection.png" width="566" height="161"></span></dd></dl>
+<p>  निवडीची सुरूवात शक्य तितक्या जवळच्या निवडीच्या शेवटी (जसे दिसते) जुळली पाहिजे आणि दोन्ही निवड कडा स्थित असाव्यात जेणेकरुन तरंगरूपची निळी रेषा शून्य मोठेपणावर (जेथे क्षैतिज रेखा दिसते तेथे) निवड धार पार करेल. ).
+  </p>
+<div class="note">  दृश्य मेनूमध्ये असे काही आयटम आहेत जे झूम वाढवताना निवडीच्या एका टोकापासून दुस to्या बाजूला जाण्यासाठी परवानगी देतात:
+  <ul><li><span class="menu">  पहा&gt; येथे जा&gt;   <a href="view_menu_skip_to.html#selectionstart" title="मेनू पहा: येथे जा">  निवड प्रारंभ  </a></span>   (आडमार्ग   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl + [आहे&nbsp;  </span>   )  </li>
+<li><span class="menu">  पहा&gt; येथे जा&gt;   <a href="view_menu_skip_to.html#selectionend" title="मेनू पहा: येथे जा">  निवडीच्या शेवटी जा  </a></span>   (आडमार्ग   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl +] आहे&nbsp;  </span>   )  </li></ul></div>
+<p>  योग्य लूप पॉईंट्स शोधण्यासाठी, निवड सुरू झाल्यावर आणि नंतर निवडीच्या शेवटी क्षैतिज झूम करा.   झूम करण्यासाठी, निवड काठावर माउस पॉईंटर ठेवा आणि चाक किंवा चेंडूसह स्क्रोल करा.   आवश्यकतेनुसार निवड कडा डावीकडे किंवा उजवीकडे ड्रॅग करा जेणेकरून समान आकार, मोठेपणा आणि उतार असलेले लूप बिंदू शोधा जेणेकरून लूपचा शेवट लूपच्या सुरूवातीस सहजतेने वाहू शकेल.   खाली दिलेल्या प्रतिमांप्रमाणेच तरंगरूपच्या डावीकडून   <a href="audio_tracks.html#scale" title="ध्वनी गीतपट्टा">  अनुलंब प्रमाणात झूम वाढविणे  </a>   देखील उपयुक्त ठरू शकेल   : 
+  </p>
+<dl><dd><dl><dd><b>  लूप निवडीस प्रारंभ  </b></dd></dl></dd>
+<dd><span title="लूप निवडीस प्रारंभ"><img alt="लूप प्रारंभ.पीएनजी" src="../m/images/9/9f/loop_start.png" width="566" height="161"></span></dd></dl>
+<dl><dd><dl><dd><b>  लूप निवडीचा शेवट  </b></dd></dl></dd>
+<dd><span title="लूप निवडीचा शेवट"><img alt="लूप एंड.पीएनजी" src="../m/images/4/4f/loop_end.png" width="566" height="161"></span></dd></dl>
+<p>  क्लिक (अडचण) टाळण्यासाठी हे बहुधा   <span class="menu">  निवड&gt;   <a href="select_menu_at_zero_crossings.html" title="मेनू निवडा: शून्य क्रॉसिंगवर">  अ शून्य ओलांडणे  </a></span>   वर वापरण्यास मदत करू शकेल   जेणेकरून निवडीची सुरूवात आणि शेवट   <i>  शून्य ओलांडण्याचा बिंदूवर  </i>   अचूकपणे पडून राहू शकेल     .   खाली दिलेल्या प्रतिमेत, निवडीच्या शेवटी नमुना (बिंदूद्वारे दर्शविल्यानुसार) डावीकडील अनुलंब मोजमापानुसार ०.० मोठेपणावर आहे.     
+  </p>
+<dl><dd><dl><dd><b>  शून्य ओलांडण्याचा बिंदू  </b></dd></dl></dd>
+<dd><span title="शून्य क्रॉसिंग पॉईंट"><img alt="शून्य-क्रॉसिंग.पीएनपी" src="../m/images/e/e6/zero_crossing.png" width="566" height="161"></span></dd></dl>
+<p>  लूपची चाचणी   <i>  लूप प्ले  </i>   (आडमार्ग   <span class="kbrd" style="background-color: #d0d0f8">  शिफ्ट + स्पेस  </span>   ) चा   वापर करुन केली जाऊ शकते   .
+  </p>
 <div id="using"></div>
-<h2><span class="mw-headline" id="Using_loops_in_Audacity">Using loops in Audacity</span></h2>
-<p>If the loop is to be used in Audacity, the selection may be trimmed: <span class="kbrd" style="background-color: #d0d0f8">Ctrl + T</span>.
-The loop may be repeated using Copy and Paste, though it is usually more convenient to use the <i>Repeat</i> function: <span class="menu">Effect &gt; <a href="effect_menu.html#repeat" title="Effect Menu">Repeat...</a></span>.
-</p>
+<h2><span class="mw-headline" id="Using_loops_in_Audacity">  ओड्यासिटी मध्ये लूप वापरणे  </span></h2>
+<p>  लूप ओड्यासिटी वापरले असेल तर, निवड सुव्यवस्थित जाऊ शकते:   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl + T  </span>   .   तो सहसा वापर अधिक सोयीस्कर आहे तरी लूप, प्रत वापरून आणि पेस्ट करा पुनरावृत्ती केली जाऊ शकते   <i>  पुनरावृत्ती  </i>   कार्य:   <span class="menu">  प्रभाव&gt;   <a href="effect_menu.html#repeat" title="प्रभाव मेनू">  पुनरावृत्ती ...  </a></span>   .
+  </p>
 <div id="exporting"></div>
-<h2><span class="mw-headline" id="Exporting_Loops">Exporting Loops</span></h2>
-<p>The selection may be exported using <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportselectedaudio" title="File Menu: Export">Export Selected Audio...</a></span>. 
-</p><p>The lossless <a href="glossary.html#wav" title="Glossary">PCM WAV</a> format is the best format for loops. Choose "WAV (Microsoft) signed 16-bit PCM" when exporting. Many lossy, size-compressed formats like <a href="glossary.html#mp3" title="Glossary">MP3</a>, <a href="glossary.html#wma" title="Glossary">WMA</a> and <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Adaptive_DPCM">ADPCM WAV</a> suffer from added silence at the the start or end of the file or other issues that do not respect the exact length.  
-</p><p>If a lossy compressed audio format is required then <a href="glossary.html#ogg" title="Glossary">OGG Vorbis</a> may be a better choice as it does not suffer from length issues.
-</p>
+<h2><span class="mw-headline" id="Exporting_Loops">  निर्यात लूप  </span></h2>
+<p>  निवड वापरून निर्यात केले जाऊ शकते   <span class="menu">  धारिका&gt; निर्यात&gt;   <a href="file_menu_export.html#exportselectedaudio" title="धारिका मेनू: निर्यात करा">  निर्यात निवडलेले ध्वनी ...  </a></span>   . 
+  </p><p>  लूपलेस   <a href="glossary.html#wav" title="शब्दकोष">  पीसीएम डब्ल्यूएव्ही  </a>   स्वरूप  <a href="glossary.html#wav" title="शब्दकोष"> लूपसाठी </a>  सर्वोत्तम स्वरूप आहे.   निर्यात करताना "डब्ल्यूएव्ही (मायक्रोसॉफ्ट) ने १६-बिट पीसीएम स्वाक्षरित" निवडा.   <a href="glossary.html#mp3" title="शब्दकोष">  एमपी ३  </a>   ,   <a href="glossary.html#wma" title="शब्दकोष">  डब्ल्यूएमए  </a>   आणि   <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Adaptive_DPCM">  एडीपीसीएम   </a> <a href="glossary.html#wma" title="शब्दकोष"> डब्ल्यूएव्ही </a>  सारख्या बर्&zwj;याच हानीकारक, आकार-संकुचित स्वरूपामध्ये   धारिकाच्या सुरूवातीस किंवा शेवटी समाप्ती किंवा इतर लांबीचा त्रास होतो ज्या अचूक लांबीचा आदर करत नाहीत.  
+  </p><p>  जर हानीकारक कॉम्प्रेस केलेले ध्वनी स्वरूपन आवश्यक असेल तर   लांबीच्या समस्येमुळे त्रास होत नाही म्हणून   <a href="glossary.html#ogg" title="शब्दकोष">  ओजीजी व्हॉर्बिस  </a>   एक चांगली निवड असू शकते.
+  </p>
 <div id="tqp"></div>
-<h2><span class="mw-headline" id="Using_Timeline_Quick-Play_to_create_loops">Using Timeline Quick-Play to create loops</span></h2>
-<p>The above process can be aided by using the <a href="timeline.html" title="Timeline">Timeline</a> to help create a seamless loop:
-</p>
-<ol><li>Ensure that <a href="timeline.html#tqp" title="Timeline">Quick-Play</a> is enabled in the Timeline right-click context <a href="timeline.html#menu" title="Timeline">menu</a>.</li>
-<li>Select "<b>Enable dragging selection</b>" in the Timeline right-click context menu.</li>
-<li>Make an approximate selection of the audio to be looped.</li>
-<li><span class="kbrd" style="background-color: #d0d0f8">Shift + Left-Click</span> within the selection to loop play the selection.</li>
-<li><span class="kbrd" style="background-color: #d0d0f8">Shift + Left-Click</span> and drag the start/end of the selection as necessary to adjust the selection closer to "seamless" looping positions.</li>
-<li>If necessary, <a href="zooming.html" title="Zooming">zoom</a> in on the start / end positions to make adjustments to the play region and selection.</li>
-<li>Note that if zooming in causes the selected region to extend beyond the visible track area, Audacity will, by default, cause the waveform to scroll. The scrolling behavior can be disabled from the Timeline right-click context menu.</li>
-<li>While zoomed in, use <span class="kbrd" style="background-color: #d0d0f8">Ctrl + [</span> and <span class="kbrd" style="background-color: #d0d0f8">Ctrl + ]</span> to view the start / end of the selection.</li>
-<li>If a long selection is being looped, playback may be stopped at any time by pressing the <span class="kbrd" style="background-color: #e0e0f0">Space</span> key, then looped Quick-Play may be restarted from a short way before the end of the selection with <span class="kbrd" style="background-color: #d0d0f8">Shift + Click</span> on the Timeline</li>
-<li>Then Optionally label the loop region (use <span class="kbrd" style="background-color: #d0d0f8">Ctrl + B</span>)</li></ol>
-<p>When the selection loops seamlessly, playback may be stopped (using <span class="button">Stop button</span> or its <span class="kbrd" style="background-color: #d0d0f8">Space</span> shortcut) and the selection exported or trimmed as required (use <span class="kbrd" style="background-color: #d0d0f8">Ctrl + T</span> to trim to the selection).
-</p><p>Seamless loops should normally be exported in a lossless format such as <a href="glossary.html#wav" title="Glossary">WAV</a>. Note that seamless loops should NOT be exported in <a href="glossary.html#mp3" title="Glossary">MP3</a> format because encoder/decoder overall delay is not defined, which means there is no official provision for gapless playback. 
-</p><p>If a compressed file format is required, try <a href="glossary.html#ogg" title="Glossary">OGG Vorbis</a> <i>(though understand that because OGG Vorbis is a lossy format, the encoded audio is not exactly identical to the original audio)</i>. OGG Vorbis loops will generally perform acceptably provided that the start / end of the loop are at <a href="edit_menu_find_zero_crossings.html" title="Edit Menu: Find Zero Crossings">zero crossing points</a>.
-</p>
-<div class="note"><b>Finding free loops created by others</b>
-<p>Try:
-</p>
-<ul><li><span title="Creative Commons logo"><img alt="CRC.png" src="../m/images/3/32/crc.png" width="20" height="20" /></span> <a rel="nofollow" class="external free" href="http://ibeat.org/">http://ibeat.org/</a> (loops are available under a <a rel="nofollow" class="external text" href="https://creativecommons.org/">Creative Commons</a> licence).  </li>
-<li> <a rel="nofollow" class="external free" href="http://www.looperman.com/">http://www.looperman.com/</a></div></li></ul>
+<h2><span class="mw-headline" id="Using_Timeline_Quick-Play_to_create_loops">  लूप तयार करण्यासाठी समयरेषा तुरंत-प्ले वापरणे  </span></h2>
+<p>  सीमलेस लूप तयार करण्यात मदत करण्यासाठी   वरील प्रक्रियेस   <a href="timeline.html" title="समयरेषा">  समयरेषाचा  </a>   वापर करुन मदत केली जाऊ शकते   :
+  </p>
+<ol><li>  समयरेषा उजवे-क्लिक संदर्भ  <a href="timeline.html#menu" title="समयरेषा"> मेनूमध्ये  </a> <a href="timeline.html#tqp" title="समयरेषा">  क्विक-प्ले  </a>   सक्षम केले   असल्याचे सुनिश्चित   करा   .  <a href="timeline.html#menu" title="समयरेषा">  </a>  </li>
+<li>  समयरेषा उजवे-क्लिक संदर्भ मेनूमध्ये "   <b>  ड्रॅगिंग निवड सक्षम करा  </b>   " निवडा   .  </li>
+<li>  लूप नेण्यासाठी ध्वनीची अंदाजे निवड करा.  </li>
+<li><span class="kbrd" style="background-color: #d0d0f8">  </span>  निवडीला लूप देण्यासाठी निवड मध्ये  <span class="kbrd" style="background-color: #d0d0f8"> शिफ्ट + डावे क्लिक करा </span>  .  </li>
+<li><span class="kbrd" style="background-color: #d0d0f8">  शिफ्ट + डावे क्लिक करा  </span>   आणि निवड "अखंड" वळण स्थितीच्या जवळ समायोजित करण्यासाठी आवश्यकतेनुसार निवडीचा प्रारंभ / अंत ड्रॅग करा.  </li>
+<li>  आवश्यक असल्यास,   वाजवण्याच्या प्रदेशात आणि निवडीमध्ये दुरुस्ती करण्यासाठी प्रारंभ / अंत जागेवर   <a href="zooming.html" title="झूम करत आहे">  झूम वाढवा  </a>   .  </li>
+<li>  लक्षात ठेवा जर झूम केल्यामुळे निवडलेले प्रदेश दृश्यमान गीतपट्टा क्षेत्राच्या पलीकडे वाढवित असेल तर ओड्यासिटी पूर्वनिर्धारितनुसार तरंगरूपला स्क्रोल करण्यास कारणीभूत ठरेल.   स्क्रोलिंग वर्तन समयरेषा उजवे-क्लिक संदर्भ मेनूमधून अक्षम केले जाऊ शकते.  </li>
+<li>  झूम वाढवताना,   निवडीचा प्रारंभ / शेवट पाहण्यासाठी   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl + [  </span>   आणि   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl +]  </span>   वापरा   .  </li>
+<li>  एखादी लांब लूप सोडली जात असल्यास,   <span class="kbrd" style="background-color: #e0e0f0">  स्पेस  </span>   की   दाबून कोणत्याही वेळी प्लेबॅक थांबविला जाऊ शकतो   , नंतर लूप क्विक-प्लेची निवड   <span class="kbrd" style="background-color: #d0d0f8">  शिफ्ट +  </span>   सह निवड संपण्यापूर्वी थोड्या मार्गाने पुन्हा सुरू केली जाऊ शकते  <span class="kbrd" style="background-color: #d0d0f8"> + </span>  समयरेषेवर  <span class="kbrd" style="background-color: #d0d0f8"> क्लिक करा </span>  .  </li>
+<li>  नंतर वैकल्पिकरित्या लूप प्रदेशाला नावपट्टी करा (   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl + B  </span>   वापरा   )  </li></ol>
+<p>  जेव्हा निवड अखंडपणे लूप करते, तेव्हा प्लेबॅक थांबविला जाऊ शकतो (   <span class="button">  स्टॉप बटण  </span>   किंवा त्याचे   <span class="kbrd" style="background-color: #d0d0f8">  स्पेस  </span>   आडमार्ग   वापरुन   ) आणि निवड निर्यात केली किंवा आवश्यकतेनुसार सुव्यवस्थित करा (   निवडीमध्ये ट्रिम करण्यासाठी   <span class="kbrd" style="background-color: #d0d0f8">  Ctrl + T  </span>   वापरा   ).
+  </p><p>  सीमलेस लूप सामान्यत:   <a href="glossary.html#wav" title="शब्दकोष">  डब्ल्यूएव्हीसारख्या  </a>   दोषरहित स्वरूपात निर्यात केले जावे   .   लक्षात घ्या की सीमलेस लूप   <a href="glossary.html#mp3" title="शब्दकोष">  एमपी 3  </a>   स्वरूपामध्ये   निर्यात करू नये   कारण एन्कोडर / डीकोडर एकंदर विलंब परिभाषित केलेला नाही, याचा अर्थ अंतरविहीन प्लेबॅकसाठी कोणतीही अधिकृत तरतूद नाही. 
+  </p><p>  संकुचित धारिका स्वरूपन आवश्यक असल्यास,   <a href="glossary.html#ogg" title="शब्दकोष">  OGG Vorbis  </a>    वापरून पहा   <i>  (जरी हे समजून घ्या की OGG Vorbis एक हानीकारक स्वरूप आहे, परंतु एन्कोड केलेला ध्वनी मूळ ध्वनीसारखेच नाही)  </i>   .   ओ.जी.जी. व्होर्बिस लूप सामान्यत: स्वीकारल्या जातील परंतु लूपचा प्रारंभ / शेवट   <a href="edit_menu_find_zero_crossings.html" title="मेनू संपादित करा: शून्य क्रॉसिंग शोधा">  शून्य क्रॉसिंग पॉईंटवर असेल तर  </a>   .
+  </p>
+<div class="note"><b>  इतरांनी तयार केलेले विनामूल्य लूप शोधत आहे  </b>
+<p>  प्रयत्न:
+  </p>
+<ul><li><span title="क्रिएटिव्ह कॉमन्सचा लोगो"><img alt="CRC.png" src="../m/images/3/32/crc.png" width="20" height="20"></span> <a rel="nofollow" class="external free" href="http://ibeat.org/">  http://ibeat.org/  </a>   (   <a rel="nofollow" class="external text" href="https://creativecommons.org/">  सर्जनशील सामान्य  </a>   परवान्या   अंतर्गत लूप उपलब्ध आहेत   ).    </li>
+<li> <a rel="nofollow" class="external free" href="http://www.looperman.com/">  http://www.looperman.com/  </a></li></ul></div>
 
 <!-- 
 NewPP limit report
