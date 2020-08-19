@@ -1,0 +1,264 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>English</th>
+      <th>Marathi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>DC offset - Audacity Manual</td>
+      <td>डीसी ऑफसेट - ओड्यासिटी माहितीपुस्तिका</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>DC offset</td>
+      <td>डीसी ऑफसेट</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>From Audacity Development Manual</td>
+      <td>ओड्यासिटी विकासाच्या माहितीपुस्तिकेवरून</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Jump to: navigation, search</td>
+      <td>येथे जा: सुचालन, शोध</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>DC offset is a mean amplitude displacement from zero.</td>
+      <td>डीसी ऑफसेट शून्य पासून क्षुद्र मोठेपणा विस्थापन आहे.</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>In Audacity it can be seen as an offset of the recorded waveform away from the center zero point.</td>
+      <td>ओड्यासिटीमध्ये हे मध्यभागी शून्य बिंदूपासून दूर ध्वनिमुद्रण केलेल्या वेव्हफॉर्मचे ऑफसेट म्हणून पाहिले जाऊ शकते.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>DC offset is a potential source of clicks, distortion and loss of audio volume.This page explains the causes and dangers of offset and how to remove it.</td>
+      <td>डीसी ऑफसेट क्लिकचे विकृतीकरण आणि ध्वनीचा आवाज नष्ट होण्याचे संभाव्य स्त्रोत आहे. हे पृष्ठ ऑफसेटची कारणे आणि धोक्यांविषयी आणि ते कसे काढावे याचे वर्णन करते.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>Ideally any DC offset that is present should be removed as the first editing step after recording audio or importing it, before any other editing is attempted.</td>
+      <td>आदर्शपणे उपस्थित असलेले कोणतेही डीसी ऑफसेट ध्वनिमुद्रण किंवा आयात केल्यानंतर प्रथम संपादन चरण म्हणून काढले जाणे आवश्यक आहे.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>Contents</td>
+      <td>सामुग्री</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>1 Background</td>
+      <td>१ पार्श्वभूमी</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>2 Removing DC offset</td>
+      <td>२ डीसी ऑफसेट काढणे</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>2.1 Audacity's Normalize Effect</td>
+      <td>२.१ ओड्यासिटीचा सामान्य परिणाम</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>2.2 LADSPA dcRemove</td>
+      <td>2.2 LADSPA dcRemove</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>2.3 Cancel DC offset in sound devices on Windows</td>
+      <td>२.३ विंडोजवरील ध्वनी उपकरणांमध्ये डीसी ऑफसेट रद्द करा</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>3 Limitations of offset removal</td>
+      <td>3 ऑफसेट काढण्याची मर्यादा</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15</td>
+      <td>Background</td>
+      <td>पार्श्वभूमी</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>DC offset is an offsetting of a signal from zero. On the Audacity waveform it would mean that the waveform in default view appears not to be centered on the 0.0 horizontal line, as in the upper track in this image:</td>
+      <td>डीसी ऑफसेट शून्यातून सिग्नलची ऑफसेटिंग असते. ओड्यासिटी वेव्हफॉर्मवर याचा अर्थ असा होईल की डीफॉल्ट दृश्यामधील वेव्हफॉर्म या प्रतिमेच्या वरच्या गीतपट्टा प्रमाणे ०.० आडव्या रेषेवर केंद्रित नसल्याचे दिसते:</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>The cause is almost always a fixed voltage offset somewhere in the audio chain before the analog signal is converted to digital values. For example, the voltage may be directly caused by a faulty audio interface, or may come from some other device that is attached to the sound card. Any offset is normally so small as to not be noticeable, but with defective or poor quality hardware it may become large enough to be a problem.</td>
+      <td>अ‍ॅनालॉग सिग्नल डिजिटल मूल्यांमध्ये रूपांतरित होण्यापूर्वी नेहमीच ध्वनि साखळीत कुठेतरी निश्चित व्होल्टेज ऑफसेट असते. उदाहरणार्थ, व्होल्टेज थेट सदोष ध्वनि मुखपृष्ठमुळे उद्भवू शकतो किंवा ध्वनी कार्डला जोडलेल्या इतर डिव्हाइसवरून येऊ शकतो. कोणतीही ऑफसेट सामान्यत: इतकी लहान असते की लक्षात येण्यासारखी नसते, परंतु सदोष किंवा खराब गुणवत्तेच्या हार्डवेअरमुळे समस्या उद्भवण्यासाठी तेवढे मोठे होऊ शकते.</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>You should check for and remove offset in any audio you are working with before editing it, even if the audio is not your own recording but an audio file you have obtained elsewhere.</td>
+      <td>आपण संपादन करण्यापूर्वी आपण ज्या ध्वनिवर कार्य करीत आहात त्यामधील ऑफसेटची तपासणी करणे आणि काढणे आवश्यक आहे, जरी ध्वनि आपली स्वतःची ध्वनिमुद्रण नसून आपण अन्यत्र प्राप्त केलेली ध्वनि फाइल आहे.</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19</td>
+      <td>A sound that has DC offset will not be at its loudest possible volume when amplified or normalized. This is because the offset reduces the headroom between the peak level of the audio and the maximum possible level without clipping. This problem can possibly extend to the mix as a whole, since a sound with DC offset and a sound without DC offset will have DC offset when mixed.</td>
+      <td>एम्प्लिफाइड किंवा सामान्यीकरण झाल्यावर डीसी ऑफसेट असलेला आवाज त्याच्या जोरात आवाजात होणार नाही. कारण ऑफसेट ध्वनिच्या शिखर पातळी आणि फितीशिवाय कमाल शक्य पातळी दरम्यानचे हेडरूम कमी करते. ही समस्या संपूर्णपणे संपूर्ण मिसळण्यापर्यंत वाढू शकते, कारण डीसी ऑफसेटसह आवाज आणि डीसी ऑफसेटविना आवाज मिसळल्यावर डीसी ऑफसेट असेल.</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20</td>
+      <td>DC offset can cause inaudible low level distortion. The distortion may become audible when effects that change the frequency content are applied, or when exporting the audio to a size-compressed format like MP3.</td>
+      <td>डीसी ऑफसेटमुळे ऐकू न येणारी निम्न स्तराची विकृती होऊ शकते. वारंवारता सामग्री बदलणारे प्रभाव लागू केल्यावर किंवा एमपी३ सारख्या आकार-संकुचित स्वरूपात ध्वनिची निर्यात करताना विकृती ऐकू येऊ शकते.</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>21</td>
+      <td>DC offset can cause audible clicks where audio sections are cut and pasted together, and can cause a click on playback at the start and end of the track, even without editing.</td>
+      <td>डीसी ऑफसेटमुळे ध्वनि क्लिक होऊ शकतात जिथे ध्वनि विभाग कापून एकत्र पेस्ट केले जातात आणि गीतपट्टाच्या सुरूवातीस आणि शेवटी, संपादन न करताही प्लेबॅक क्लिक होऊ शकतात.</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>22</td>
+      <td>DC offset will become worse if the recording is amplified.</td>
+      <td>ध्वनिमुद्रण विस्तारित केल्यास डीसी ऑफसेट अधिक खराब होईल.</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>23</td>
+      <td>Removing DC offset</td>
+      <td>डीसी ऑफसेट काढणे</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>24</td>
+      <td>Audacity's Normalize Effect</td>
+      <td>ओड्यासिटीचा सामान्य परिणाम</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>25</td>
+      <td>Audacity's DC removal method performs a calculation to make the average positive and negative sample values equal. To perform removal, choose Effect Normalize...,  with the option checked "Remove any DC offset (center on 0 vertically)".</td>
+      <td>ओड्यासिटीची डीसी काढण्याची पद्धत सरासरी सकारात्मक आणि नकारात्मक नमुन्यांची मूल्ये समान करण्यासाठी गणना करते. काढून टाकण्यासाठी, प्रभाव सामान्यीकरण ... निवडा, "कोणताही डीसी ऑफसेट काढा (अनुलंबपणे ० वर मध्यभागी)" पर्याय निवडा.</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>26</td>
+      <td>Uncheck the "Normalize maximum amplitude..." box unless you want to run Normalize as well (see Amplify and Normalize for what Normalize does and when to use it).</td>
+      <td>जोपर्यंत आपल्याला तसेच चालवायचे नसेल तर "जास्तीत जास्त मोठेपणा सामान्य करा ..."  चौकटीतील टिक काढून टाका (सामान्यीकरण काय करते आणि त्यासाठी कधी वापरायचे यासाठी मोठे करा आणि सामान्यीकृत पहा).</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>27</td>
+      <td>LADSPA dcRemove</td>
+      <td>LADSPA dcRemove</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>28</td>
+      <td>An alternative method is to use the dcRemove plug-in in the swh LADSPA plug-ins bundle. Links to the bundle are on this page on the Audacity wiki. The plug-in dcRemove uses a High-Pass Filter to remove the DC (0 Hz) component from the audio.</td>
+      <td>वैकल्पिक पद्धत म्हणजे swh LADSPA प्लग-इन बंडल मधील dcRemove प्लग-इन वापरणे. बंडलचे दुवे ओड्यासिटी विकीवर या पृष्ठावरील आहेत. ध्वनीमधून डीसी (० हर्ट्ज) घटक काढण्यासाठी प्लग-इन dcRemove हाय-पास फिल्टर वापरते.</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>29</td>
+      <td>Cancel DC offset in sound devices on Windows</td>
+      <td>विंडोजवरील ध्वनी उपकरणांमध्ये डीसी ऑफसेट रद्द करा</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>30</td>
+      <td>Newer Windows PCs may have a DC offset cancellation feature when recording from the built-in sound inputs. To check for or enable this:</td>
+      <td>अंगभूत आवाज इनपुटवरून रेकॉर्डिंग करताना नवीन विंडोज पीसींमध्ये डीसी ऑफसेट रद्दीकरण वैशिष्ट्य असू शकते. हे तपासण्यासाठी किंवा सक्षम करण्यासाठी:</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>31</td>
+      <td>Right-click over the speaker icon in the System Tray &gt; Recording Devices, or click Start &gt; Control Panel &gt; Hardware and Sound &gt; Sound, then the "Recording" tab</td>
+      <td>प्रणाली तबक &gt; ध्वनिमुद्रण डिव्हाइसमधील स्पीकर चिन्हावर उजवे-क्लिक करा किंवा प्रारंभ&gt; नियंत्रण पॅनेल&gt; हार्डवेअर आणि ध्वनी&gt; आवाज क्लिक करा, नंतर "ध्वनिमुद्रण" टॅब</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>32</td>
+      <td>Right-click over empty space, show disabled and disconnected devices, then right-click over each device and enable it</td>
+      <td>रिक्त जागेवर उजवे क्लिक करा, अक्षम आणि डिस्कनेक्ट केलेले डिव्हाइस दर्शवा, त्यानंतर प्रत्येक डिव्हाइसवर उजवे-क्लिक करा आणि सक्षम करा</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>33</td>
+      <td>Right-click or select each device, choose "Properties" then look in the "Enhancements" tab</td>
+      <td>प्रत्येक डिव्हाइसवर राइट-क्लिक करा किंवा निवडा, "गुणधर्म" निवडा त्यानंतर "वर्धित करा" टॅबमध्ये पहा</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>34</td>
+      <td>If there is no "Enhancements" tab, look in the sound device's own control panel in "Hardware and Sound".</td>
+      <td>कोणताही "वर्धित" टॅब नसल्यास, "हार्डवेअर आणि ध्वनी" मधील साऊंड डिव्हाइसचे स्वत: चे नियंत्रण पॅनेल पहा.</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>35</td>
+      <td>Limitations of offset removal</td>
+      <td>ऑफसेट काढण्याची मर्यादा</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>36</td>
+      <td>Audacity's DC offset removal method could potentially create a new offset and therefore a click in some rare cases. Two cases are noteworthy:</td>
+      <td>ओड्यासिटीची डीसी ऑफसेट काढण्याची पद्धत संभाव्यतः नवीन ऑफसेट तयार करू शकते आणि म्हणूनच क्वचित प्रसंगी क्लिक बनते. दोन प्रकरणे उल्लेखनीय आहेतः</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>37</td>
+      <td>where only part of the audio is offset, for example if absolute silence with no offset has been inserted into an offset recording.</td>
+      <td>जेथे फक्त ध्वनीचा एक भाग ऑफसेट केला जातो, उदाहरणार्थ ऑफसेट ध्वनिमुद्रणमध्ये ऑफसेटशिवाय परिपूर्ण शांतता प्रविष्ट केली असल्यास.</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>38</td>
+      <td>where the offset is not constant. Strictly speaking this is not DC offset, it is sub-sonic modulation or  "slowly changing DC bias", but over a short time period it looks very much like DC offset.</td>
+      <td>जेथे ऑफसेट स्थिर नसते. कठोरपणे बोलणे हे डीसी ऑफसेट नाही, ते उप-सोनिक मोड्यूलेशन किंवा "हळू हळू डीसी बायस बदलणे" आहे, परंतु थोड्या काळासाठी ते डीसी ऑफसेटसारखे दिसते.</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>39</td>
+      <td>In the case where some sections of the audio are clearly offset and some not, the solution in Audacity is to first carefully select each section of non-offset audio then use Edit &gt; Clip Boundaries &gt; Split New to split it a new track. Then remove the offset from the remaining audio, and paste the non-offset audio back. Use Select &gt; Region &gt; Ends to Zero Crossings before split and paste if the non-offset audio is not absolute silence.</td>
+      <td>ज्या प्रकरणात ध्वनीचे काही विभाग स्पष्टपणे ऑफसेट केले गेले आहेत आणि काही नाही, ओड्यासिटीमधील समाधान प्रथम नॉन-ऑफसेट ध्वनीचा प्रत्येक विभाग काळजीपूर्वक निवडणे आहे नंतर नवीन गीतपट्टाचे विभाजन करण्यासाठी संपादन&gt; क्लिप सीमा&gt; नवीन स्प्लिट वापरा. नंतर उर्वरित ध्वनीमधून ऑफसेट काढा आणि नॉन-ऑफसेट ध्वनी परत पेस्ट करा. नॉन-ऑफसेट ध्वनी परिपूर्ण शांतता नसल्यास विभाजित होण्यापूर्वी निवडा&gt; प्रदेश&gt; झिरो क्रॉसिंग्जवर समाप्त होवून पेस्ट करा आणि पेस्ट करा.</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>40</td>
+      <td>High-Pass DC removal may well remove offset without adding new clicks if the offset is not constant.</td>
+      <td>ऑफसेट स्थिर नसल्यास हाय-पास डीसी काढणे नवीन क्लिक न जोडता ऑफसेट काढून टाकू शकते.</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>41</td>
+      <td>Note: Removing offset after the event does not reinstate the original loss of headroom. Without offset it would have been possible to record louder, so with greater dynamic range and greater signal-to-noise ratio. It is always preferable to try to find and fix the source of the offset in the hardware. Updating your sound device drivers might help, too.</td>
+      <td>टीपः घाटानेनंतर ऑफसेट काढून टाकणे मुख्यालयाचे मूळ नुकसान पुन्हा ठेवत नाही. ऑफसेटशिवाय जोरात ध्वनिमुद्रण करणे शक्य झाले असते, जेणेकरून जास्त डायनॅमिक श्रेणी आणि मोठ्या सिग्नल-ते-गोंगाट प्रमाणासह . हार्डवेअरमध्ये ऑफसेटचा स्रोत शोधण्याचा आणि निश्चित करण्याचा प्रयत्न करणे नेहमीच श्रेयस्कर आहे. आपले ध्वनी डिव्हाइस ड्राइव्हर्स अद्यतनित करणे कदाचित देखील कदाचित मदत करेल.</td>
+    </tr>
+  </tbody>
+</table>

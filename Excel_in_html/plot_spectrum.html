@@ -1,0 +1,252 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>English</th>
+      <th>Marathi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>Plot Spectrum - Audacity Manual</td>
+      <td>प्लॉट स्पेक्ट्रम - ऑडसेट मॅन्युअल</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>Plot Spectrum</td>
+      <td>प्लॉट स्पेक्ट्रम</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>From Audacity Development Manual</td>
+      <td>ऑडसिटी डेव्हलपमेंट मॅन्युअल वरुन</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Jump to: navigation, search</td>
+      <td>येथे जा: सुचालन, शोध</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>Plot Spectrum takes the selected audio (which is a set of sound pressure values at points in time) and converts it to a graph of frequencies (the horizontal scale in</td>
+      <td>प्लॉट स्पेक्ट्रम निवडलेले ऑडिओ घेते (जे वेळी पॉईंट्स वर ध्वनी दाबा मूल्यांचा संच आहे) आणि त्याला फ्रिक्वेन्सीच्या ग्राफमध्ये रुपांतरित करते (क्षैतिज प्रमाणात</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>Hz) against amplitudes (the vertical scale in dB).</td>
+      <td>एम्प्लिट्यूड्स विरूद्ध (हर्ट्ज) (डीबी मधील अनुलंब स्केल).</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>Accessed by: Analyze &gt; Plot Spectrum...</td>
+      <td>याद्वारे प्रवेश केलेले: विश्लेषण&gt; प्लॉट स्पेक्ट्रम ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>Plots are made using a mathematical algorithm known as a Fast Fourier Transform or FFT. This gives a value for each narrow band of frequencies that represents how much of those frequencies is present. All the values are then interpolated to create the graph.</td>
+      <td>फास्ट फूरियर ट्रान्सफॉर्म किंवा एफएफटी म्हणून ओळखले जाणारे गणिती अल्गोरिदम वापरून प्लॉट्स बनविले जातात. हे फ्रिक्वेन्सीच्या प्रत्येक अरुंद बँडला मूल्य देते जे त्या वारंवारतेपैकी किती आहे हे दर्शवते. आलेख तयार करण्यासाठी नंतर सर्व मूल्ये एकमेकांना एकत्रित केली जातात.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>Plot Spectrum take the audio in blocks of 'Size' samples, does the FFT, and averages all the blocks together.</td>
+      <td>प्लॉट स्पेक्ट्रम 'आकार' नमुन्यांच्या ब्लॉकमध्ये ऑडिओ घेते, एफएफटी करते आणि सर्व ब्लॉक्सची सरासरी एकत्र करतात.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>Algorithm</td>
+      <td>अल्गोरिदम</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>Determines what type of processing is done on the audio data.</td>
+      <td>ऑडिओ डेटावर कोणत्या प्रकारची प्रक्रिया केली जाते ते निर्धारित करते.</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>Spectrum: (default) - Plots the FFT of the data as described above.</td>
+      <td>स्पेक्ट्रम: (डीफॉल्ट) - वर वर्णन केल्यानुसार डेटाचा एफएफटी प्लॉट करतो.</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>Autocorrelation: These options measure to what extent the sound repeats itself. This is done by taking two copies of the audio, and moving one forward by one sample. The two copies are then multiplied together, and all the values added up. This is repeated for two samples difference and so on, up to the number of samples in the size option. This gives a small result if the waveform is random (for example, noise) and a large result if it is repetitive (like a musical note). By looking at the peaks in the plot, the key frequencies present can be determined even if there is a lot of noise.</td>
+      <td>स्वयंचलितकरण: हे पर्याय आवाज मोजतो की किती प्रमाणात पुनरावृत्ती करतात. ऑडिओच्या दोन प्रती घेऊन आणि एकास एका नमुन्याद्वारे पुढे नेऊन हे केले जाते. त्यानंतर दोन प्रती एकत्र केल्या आणि सर्व मूल्ये जोडली जातात. हे दोन नमुन्यांच्या फरकाने पुनरावृत्ती होते आणि त्याप्रमाणे आकाराच्या पर्यायातील नमुन्यांच्या संख्येपर्यंत. जर वेव्हफॉर्म यादृच्छिक असेल तर (उदाहरणार्थ, आवाज) आणि पुनरावृत्ती (संगीतमय नोटप्रमाणे) मोठा परिणाम असल्यास हा एक छोटासा परिणाम देतो. कथानकामधील शिखरे पहात असल्यास, तेथे उपस्थित असलेल्या कित्येक वारंवारते निर्धारित केल्या जाऊ शकतात जरी तेथे खूप आवाज झाला.</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>Cepstrum: The cepstrum of an audio signal is related to the spectrum, but presents the rate of change in the different spectrum bands. It's particularly useful for properties of vocal tracks and is used, for example, in software to identify speakers by their voice characteristics.</td>
+      <td>सेपस्ट्रम: ऑडिओ सिग्नलचा सेपस्ट्रम स्पेक्ट्रमशी संबंधित आहे, परंतु भिन्न स्पेक्ट्रम बँडमधील बदलाचे दर प्रस्तुत करतो. हे व्होकल ट्रॅकच्या गुणधर्मांसाठी विशेषतः उपयुक्त आहे आणि उदाहरणार्थ, त्यांच्या आवाज वैशिष्ट्यांद्वारे स्पीकर्स ओळखण्यासाठी सॉफ्टवेअरमध्ये वापरला जातो.</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>Size</td>
+      <td>आकार</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15</td>
+      <td>This controls how many frequency divisions are used for the spectrum, or how many samples are used for autocorrelation. In Spectrum, a larger size gives more accurate frequency resolution (narrow bands), but averages the result over a longer period of time (because more samples are needed for the calculation). In Autocorrelation, a larger size looks for repeating patterns over a larger range of time offsets, and so will detect lower frequency patterns. With either algorithm, Audacity will show a warning if the selected region is too short for the chosen size.</td>
+      <td>स्पेक्ट्रमसाठी किती वारंवारता विभागणे वापरली जातात किंवा स्वयंचलितरचनासाठी किती नमुने वापरले जातात हे हे नियंत्रित करते. स्पेक्ट्रममध्ये, एक मोठा आकार अधिक अचूक वारंवारता रिझोल्यूशन (अरुंद बँड) देतो, परंतु दीर्घ कालावधीसाठी सरासरीच्या सरासरीनुसार (कारण गणनासाठी अधिक नमुने आवश्यक आहेत). ऑटोोकॉरेलेशनमध्ये, मोठ्या आकारात मोठ्या ऑफिसच्या ऑफसेटच्या पुनरावृत्ती नमुन्यांची पुनरावृत्ती होते आणि त्यामुळे कमी वारंवारतेचे नमुने सापडतात. एकतर अल्गोरिदमसह, निवडलेला प्रदेश निवडलेल्या आकारासाठी खूपच लहान असल्यास ऑडॅसिटी चेतावणी दर्शवेल.</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>There is an audio version of the Uncertainty Principle that says "Frequency_Resolution*Time_Resolution = 2." Size lets you choose the FFT size which is the number of consecutive audio samples to be analyzed. If you choose 1024 samples, you will get 512 frequency bins covering the frequency range up to half the sampling frequency. Most projects use 44100 Hz sampling frequency. Thus, in this example, Time_Resolution = 1024/44.1 = 23.2 milliseconds and the frequency resolution is 44100/2/512 = 43 Hz.</td>
+      <td>तेथे अनिश्चिततेच्या तत्त्वाची एक ऑडिओ आवृत्ती आहे ज्यामध्ये "वारंवारता_उत्पादन * वेळ_निश्चिती = २" म्हटले आहे. आकार आपल्याला एफएफटी आकार निवडू देतो जे विश्लेषण करण्यासाठी ऑडिओ नमुन्यांची संख्या आहे. आपण 1024 नमुने निवडल्यास आपल्यास सॅम्पलिंगच्या अर्ध्या आवृत्तिसाठी वारंवारता श्रेणीसाठी 512 वारंवारतेचे डिब्बे मिळतील. बर्‍याच प्रकल्पांमध्ये 44100 हर्ट्झ सॅम्पलिंग वारंवारता वापरली जाते. अशा प्रकारे, या उदाहरणात, वेळ_निश्चिती = 1024 / 44.1 = 23.2 मिलीसेकंद आणि वारंवारता रिझोल्यूशन 44100/2/512 = 43 हर्ट्ज आहे.</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>Function</td>
+      <td>कार्य</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>Function offers choices like Rectangular, Hanning, Hamming and others. We suggest you use the default Hanning (actually it is a Hann window, but Hanning is widely accepted) for most situations. The fundamental principle at work here is that the way we observe our data changes what we see. The "true spectrum" of your project would be computed over the entire project and would provide very detailed frequency resolution but essentially no time resolution at all. In other words, this "true spectrum" would offer an average frequency distribution over the entire project. If we select a short interval of audio, the short-time spectrum has frequency resolution limited by the observation window time AND the result is affected by the spectrum of the window itself. For general audio analysis, the Rectangular window is least desirable, and the other options offer slightly different effects.</td>
+      <td>फंक्शन आयताकृती, हॅनिंग, हॅमिंग आणि इतर सारख्या पर्यायांची ऑफर देते. आम्ही सूचित करतो की आपण बर्‍याच घटनांमध्ये डीफॉल्ट हॅनिंगचा वापर करा (खरंतर ती हॅन विंडो आहे, परंतु हेनिंग मोठ्या प्रमाणात स्वीकारली गेली आहे). येथे काम करण्याचे मूलभूत तत्व म्हणजे आम्ही आमच्या डेटाचे निरीक्षण करण्याच्या मार्गाने आपण पहात असलेल्या गोष्टींमध्ये बदल होतो. आपल्या प्रोजेक्टचा "ट्रू स्पेक्ट्रम" संपूर्ण प्रोजेक्टमध्ये मोजला जाईल आणि खूप तपशीलवार वारंवारता रिझोल्यूशन प्रदान करेल परंतु मुळात मुळीच वेळ नाही. दुस words्या शब्दांत, हे "ट्रू स्पेक्ट्रम" संपूर्ण प्रकल्पात सरासरी वारंवारतेचे वितरण करेल. आम्ही ऑडिओचा एक छोटा मध्यांतर निवडल्यास, शॉर्ट-टाईम स्पेक्ट्रममध्ये वारंवारता रिझोल्यूशन अवलोकन विंडोच्या वेळेद्वारे मर्यादित होते आणि परिणामी विंडोच्या स्पेक्ट्रममुळे त्याचा परिणाम होतो. सामान्य ऑडिओ विश्लेषणासाठी आयताकृती विंडो कमीतकमी वांछनीय असते आणि इतर पर्याय किंचित भिन्न प्रभाव देतात.</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19</td>
+      <td>Currently, only the first 10485760 samples (237.8 seconds at 44100 Hz sample rate) of selected audio can be analyzed.</td>
+      <td>सध्या, निवडलेल्या ऑडिओपैकी केवळ प्रथम 10485760 नमुने (44100 हर्ट्झ नमुना दरावरील 237.8 सेकंद) चे विश्लेषण केले जाऊ शकते.</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20</td>
+      <td>The spectrum analysis shows the sum of all selected channels, so shows the sum of left and right channels in a stereo track. If there are two selected channels with identical audio, the same peak will be 6 dB higher than if one channel was selected.</td>
+      <td>स्पेक्ट्रम विश्लेषण सर्व निवडलेल्या चॅनेलची बेरीज दर्शविते, म्हणून स्टीरिओ ट्रॅकमध्ये डाव्या आणि उजव्या चॅनेलची बेरीज दर्शवितो. एकसारखे ऑडिओ असलेली दोन निवडलेली चॅनेल असल्यास, एक चॅनेल निवडले गेले असेल तर समान शिखर 6 डीबीपेक्षा जास्त असेल.</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>21</td>
+      <td>Axis</td>
+      <td>अक्ष</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>22</td>
+      <td>When using the Spectrum, the frequencies can be displayed on a logarithmic scale (default)or a linear scale. The default log scale gives greater display width to low and mid-range frequencies with "mid range" frequencies occurring close to the middle of the graph. Linear view (which gives equal width to each "Hz" increment on the scale), can be useful to show high harmonics (a component frequency of the sound that is a whole number multiple of the fundamental frequency) or other very high frequency content.</td>
+      <td>स्पेक्ट्रम वापरताना, वारंवारता लॉगॅरिथमिक स्केल (डीफॉल्ट) किंवा रेखीय स्केलवर दर्शविली जाऊ शकते. डीफॉल्ट लॉग स्केल ग्राफच्या मध्यभागी जवळपास "मध्यम श्रेणी" फ्रिक्वेन्सीसह कमी आणि मध्यम-श्रेणी वारंवारतेस अधिक प्रदर्शन रूंदी देते. रेखीय दृश्य (जे प्रत्येक "हर्ट्ज" स्केलवर वाढीस समान रूंदी देते) उच्च हार्मोनिक्स (मूलभूत वारंवारतेच्या आवाजाची घटक वारंवारता जी संपूर्ण संख्येपेक्षा जास्त आहे) किंवा इतर खूप उच्च वारंवारता सामग्री दर्शविण्यासाठी उपयुक्त ठरू शकते.</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>23</td>
+      <td>Zooming</td>
+      <td>झूम करत आहे</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>24</td>
+      <td>To the right of the spectrum are two sliders to control zooming of the spectrum plot:</td>
+      <td>स्पेक्ट्रमच्या उजवीकडे स्पेक्ट्रम प्लॉटचे झूमिंग नियंत्रित करण्यासाठी दोन स्लाइडर आहेत:</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>25</td>
+      <td>The zoom slider on the far right with the magnifying glass icons. Move this up to increase the vertical magnification of the plotted spectrum and down again to reduce it.</td>
+      <td>भिंगकाच्या प्रतीकांसह अगदी उजवीकडे झूम स्लायडर. प्लॉट केलेल्या स्पेक्ट्रमच्या अनुलंब वाढीसाठी आणि खाली आणण्यासाठी हे वर हलवा.</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>26</td>
+      <td>The scroll bar, to the left of the zoom slider.</td>
+      <td>झूम स्लायडरच्या डावीकडे स्क्रोल बार.</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>27</td>
+      <td>At default normal zoom this fills the slider and is inoperable but as you increase the vertical magnification the scrollbar shrinks and can be moved up and down to show different parts of the magnified spectrum plot.</td>
+      <td>डीफॉल्ट सामान्य झूममध्ये हे स्लायडर भरते आणि अशक्य आहे परंतु जेव्हा आपण अनुलंब वाढवितो तसे स्क्रोलबार संकुचित होते आणि वर्धित स्पेक्ट्रम प्लॉटचे भिन्न भाग दर्शविण्यासाठी वर आणि खाली हलविले जाऊ शकते.</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>28</td>
+      <td>Buttons</td>
+      <td>बटणे</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>29</td>
+      <td>Export... Exports the spectrum to a text file. You could open this text file in another application for further analysis. Note that if you export again to the same file, the new spectrum will be appended underneath the previous one.</td>
+      <td>निर्यात करा ... मजकूर फाईलमध्ये स्पेक्ट्रम निर्यात करते. पुढील विश्लेषणासाठी आपण ही मजकूर फाईल दुसर्‍या अनुप्रयोगात उघडू शकता. लक्षात ठेवा आपण त्याच फाईलवर पुन्हा निर्यात केल्यास नवीन स्पेक्ट्रम मागील फाइलच्या खाली जोडले जातील.</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>30</td>
+      <td>Replot Allows you to replot the spectrum when the selection changes.</td>
+      <td>रिप्लोट जेव्हा निवड बदलते तेव्हा आपल्याला स्पेक्ट्रम रिप्लोट करण्यास अनुमती देते.</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>31</td>
+      <td>Close Closes the Frequency Analysis window and saves its current settings. If you then open a new project and open an analysis window in that project, the settings saved by the last closed analysis window will be used.</td>
+      <td>बंद करा फ्रीक्वेंसी windowनालिसिस विंडो बंद करते आणि तिची सद्य सेटिंग्ज जतन करते. आपण नंतर नवीन प्रकल्प उघडला आणि त्या प्रकल्पात विश्लेषण विंडो उघडल्यास, शेवटच्या बंद विश्लेषण विंडोद्वारे जतन केलेल्या सेटिंग्ज वापरल्या जातील.</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>32</td>
+      <td>Links to this "Plot Spectrum" page.</td>
+      <td>या "प्लॉट स्पेक्ट्रम" पृष्ठाचे दुवे.</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>33</td>
+      <td>If you close the analysis window in any other way (such as the operating system's window close button or by using File &gt; Close), the analysis settings are discarded when you close the project that was using the analysis window.</td>
+      <td>आपण विश्लेषण विंडो इतर कोणत्याही मार्गाने बंद केल्यास (जसे की ऑपरेटिंग सिस्टमची विंडो क्लोजर बटण किंवा फाइल&gt; क्लोजर वापरुन) विश्लेषण विश्लेषण विंडो वापरणारे प्रकल्प बंद करता तेव्हा विश्लेषण सेटिंग्ज टाकून दिली जातात.</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>34</td>
+      <td>Using other than the Audacity Close button may be useful if you are examining audio with settings you do not normally use. The next analysis window you open in a new project will then use your normal saved settings.</td>
+      <td>आपण सामान्यत: वापरत नसलेल्या सेटिंग्जसह ऑडिओचे परीक्षण करत असल्यास ऑडसिटी क्लोज बटणाशिवाय इतर वापरणे उपयुक्त ठरेल. आपण नवीन प्रकल्पात उघडता तेव्हा पुढील विश्लेषण विंडो नंतर आपल्या सामान्य जतन केलेल्या सेटिंग्ज वापरेल.</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>35</td>
+      <td>Grids (checkbox)</td>
+      <td>ग्रीड्स (चेकबॉक्स)</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>36</td>
+      <td>Turns the measurement grids on and off.</td>
+      <td>मापन ग्रीड चालू आणि बंद करते.</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>37</td>
+      <td>Links</td>
+      <td>दुवे</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>38</td>
+      <td>|&lt; Index of Effects, Generators and Analyzers</td>
+      <td>| &lt;प्रभाव, जनरेटर आणि विश्लेषकांचे अनुक्रमणिका</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>39</td>
+      <td>|&lt; Analyze Menu</td>
+      <td>| &lt;मेनूचे विश्लेषण करा</td>
+    </tr>
+  </tbody>
+</table>
