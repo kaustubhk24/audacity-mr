@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>LOF Files -ओड्यासिटी महितीपुस्तिका</title>
+<title>एलओएफ(LOF) धारीका -ओड्यासिटी महितीपुस्तिका</title>
 
 
 
@@ -25,7 +25,7 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">LOF Files</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">एलओएफ(LOF) धारीका</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
 					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका पासून</div>
@@ -34,37 +34,37 @@
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">A LOF file is a plain text file ending with the extension ".lof" that contains a list of audio files to import into an Audacity project window. It can optionally contain commands to create new project windows.
+<div class="intro">एक एलओएफ(LOF) धारीका एक साधा मजकूर फाईल आहे जी ".लोफ" विस्तारासह समाप्त होते ज्यामध्ये ओड्यासिटी प्रकल्प विंडोमध्ये आयात करण्यासाठी आवाज धारीकाची सूची असते. यात नवीन प्रकल्प विंडोज तयार करण्यासाठी आज्ञा वैकल्पिकरित्या असू शकतात.
 </div>
-<h3><span class="mw-headline" id="Syntax">Syntax</span></h3>
-<p>There are only two commands "file" and "window", each with associated options:
+<h3><span class="mw-headline" id="Syntax">मांडणी</span></h3>
+<p>तेथे फक्त दोन आज्ञा आहेत "धारीका" आणि "विंडो", प्रत्येक संबंधित पर्यायांसहः
 </p>
-<ul><li> <b>file</b>: <i>(required)</i> specifies the full path to the file which then imports as a new track in the current window (the path must always be in double quotes) 
-<ul><li> <b>offset</b>: an optional parameter to the <i>file</i> command, specifying the start time of the audio file in seconds</li></ul></li>
-<li> <b>window</b>: <i>(optional)</i> creates a new Audacity project window for a subsequent file in the list (the first file always creates a new window unless the existing project is empty) 
-<ul><li> <b>offset</b>: an optional parameter to the <i>window</i> command, specifying the left-most time displayed in the window</li>
-<li> <b>duration</b>: an optional parameter to the <i>window</i> command, specifying how much time should be displayed in the window</li></ul></li>
-<li> <b>#</b>: <i>(optional)</i> can be used anywhere on a line to precede a comment - everything after <b>#</b> on that line is ignored by the importer.</li></ul>
+<ul><li> <b>धारीका</b>: <i>(आवश्यक)</i> त्या संपूर्ण मार्ग निर्दिष्ट करते जे सध्याच्या विंडोमध्ये नवीन गितपट्टा म्हणून आयात करते (पथ नेहमीच दुहेरी अवतरणात असावा)
+<ul><li> <b>ऑफसेट </b>: <i> फाईल </i> आदेशासाठी पर्यायी मापदंड, सेकंदात ध्वनी धारीकाचा प्रारंभ वेळ निर्दिष्ट </li> </ul> </li>
+<li> <b> विंडो </b>: <i> (पर्यायी) </i> सूचीमधील त्यानंतरच्या धारीकासाठी नवीन ओड्यासिटी प्रकल्प विंडो तयार करते (विद्यमान प्रकल्प रिक्त नसल्यास प्रथम फाइल नेहमीच नवीन विंडो तयार करते) )
+<ul><li> <b>ऑफसेट </b>: <i> विंडो </i> आदेशाचे वैकल्पिक मापदंड, विंडोमध्ये डावीकडील सर्वात जास्त वेळ दर्शविणारा निर्दिष्ट </li>
+<li> <b> कालावधी </b>: <i> विंडो </i> आदेशाचे वैकल्पिक मापदंड, विंडोमध्ये किती वेळ दर्शविला जावा हे निर्दिष्ट करते</li></ul></li>
+<li> <b>#</b>: <i>(पर्यायी)</i> एका टिप्पणीच्या आधी एका ओळीवर कोठेही वापरले जाऊ शकते - त्या ओळीवरील <b> # </b> नंतर सर्वकाही आयातकाकडे दुर्लक्ष केले जाते.</li></ul>
 <div class="note"> 
 <p><b>टिपा:</b>
 </p>
-<ul><li> Each command must be placed on a separate line.</li>
-<li> Files are imported in the order shown in the LOF file. </li>
-<li> If the file to be imported is in the same folder as the LOF file, you need only give the file name inside double quotes.    </li></ul>
+<ul><li> प्रत्येक आज्ञा वेगळ्या ओळीवर ठेवणे आवश्यक आहे. </li>
+<li> एलओएफ धारीकामध्ये दर्शविलेल्या क्रमाने धारीका आयात केल्या जातात. </li>
+<li> जर आयात करायची धारीका एलओएफ धारीकाच्या समान धारीकामध्ये असेल तर आपल्याला दुहेरी अवतरणातील धारीकाचे नाव देणे आवश्यक आहे.    </li></ul>
 </div>
-<h3><span class="mw-headline" id="Example">Example</span></h3>
-<p>Given an empty project window, the following LOF file located at C:\Desktop imports the audio file "sample1.wav" from the Desktop into that window, followed by "sample2.wav" and "sample3.wav" from other locations underneath. Then a new project window is created and the audio file "sample4.wav" from the Desktop is imported into it.
+<h3><span class="mw-headline" id="Example">उदाहरण</span></h3>
+<p>रिकामी प्रोजेक्ट विंडो दिल्यास, सी येथे असलेली खालील एलओएफ धारीका डेस्कटॉप त्या विंडोमध्ये डेस्कटॉपवरून "नमूना 1.wav" ध्वनी धारीका आयात करते आणि त्याखालील खाली "नमून 2.wav" आणि "sample.wav" ध्वनी धारीका आयात करते. मग एक नवीन प्रोजेक्ट विंडो तयार होईल आणि त्यामध्ये डेस्कटॉप वरून "sample.wav" ध्वनी धारीका आयात केली जाईल.
 </p>
-<pre># everything following the hash character is ignored
-window # an initial window command is implicit and optional
+<pre># कॅरेक्टरच्या खालील सर्व गोष्टींकडे दुर्लक्ष केले जाते
+विंडो # इनिशियल विंडो आज्ञा अंतर्निहित आणि पर्यायी आहे
 file "sample1.wav"                   # sample1.wav is displayed
 file "C:\Ken\sample2.wav" offset 5   # sample2.wav is displayed with a 5s offset
 file "C:\Dave\sample3.wav"           # sample3.wav is displayed with no offset
 window offset 5 duration 10          # open a new window, then zoom to display
-# 10 seconds of sample4.wav from 5 seconds to 15 seconds, offsetting it by 2.5 seconds
-file "sample4.wav" offset 2.5
+5 सेकंद ते 15 सेकंद ते नमुना 4.wav चे 10 सेकंद, ते 2.5 सेकंदाने ऑफसेट करत आहे
+धारीका "sample4.wav" ऑफसेट 2.5
 </pre>
-<p>The file names shown are for a Windows system, but the same syntax applies on Macintosh and Linux with the obvious change to a suitable file path.
+<p>दर्शविलेल्या धारीकाची नावे विंडोज सिस्टमसाठी आहेत, परंतु समान सिंटॅक्स योग्य धारीका पथातील स्पष्ट बदलासह मॅकिंटोश आणि लिनक्सवर लागू होते.
 </p>
 <!-- 
 NewPP limit report

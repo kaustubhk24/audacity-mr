@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Selecting Audio - Audacity Manual</title>
+<title>ऑडिओ निवडणे - ऑडसिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,12 +25,12 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Selecting Audio</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">ऑडिओ निवडणे</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">ऑडसिटी विकास माहितीपुस्तिका वरुन</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Audacity_Selection#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा: <a href="#column-one">सुचालन</a>, <a href="https://alphamanual.audacityteam.org/man/Audacity_Selection#searchInput">शोध</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
@@ -39,80 +39,80 @@
 
 <p><br />
 </p>
-<div class="intro">Typical Audacity use involves either: 
-<ul><li> <i>selecting</i> or auto-selecting <a href="#all">the entire project</a>, or  </li>
-<li> <a href="#mouse">mouse</a>-selecting only a range of audio in one or more <a href="audio_tracks.html" title="Audio Tracks">tracks</a>, then modifying the selection's sound with an <a href="effect_menu.html" title="Effect Menu">effect</a> or <a href="edit_menu.html" title="Edit Menu">deleting or moving</a> the range of audio. </li></ul>
-<p>This page is the long version explaining selection.  To use Audacity selections, <a href="selecting_audio_the_basics.html" title="Selecting Audio - the basics">Selecting Audio - the_basics</a> is enough.
-</p><p>You can read here about selecting using only the <a href="#keyboard">keyboard</a>. An exact range accurate to various <a href="#formats">selection formats</a> (time units, <i><b><a href="glossary.html#sample" title="Glossary">samples</a></b></i> or media frames) can be selected using <a href="#selbar">Selection Toolbar</a>. 
-</p><p>You have advanced flexibility to select only some of multiple tracks then to select the entirety of those tracks or only a <a href="#range_tracks">range within them</a>. Rather than change each track the same way, you could instead select all or part of an individual track, and then change each track in a different way.
+<div class="intro">टिपिकल ऑडॅसिटी वापरात एकतर सामील आहे: 
+<ul><li><a href="#all">संपूर्ण प्रकल्प</a> <i>निवडणे </i> किंवा स्वयं-निवड , किंवा  </li>
+<li> <a href="#mouse">माउस</a>-एक किंवा अधिक मध्ये केवळ ऑडिओची श्रेणी निवडत आहे <a href="audio_tracks.html" title="Audio Tracks">ट्रॅक</a>, नंतर निवडीचा आवाज एक <a href="effect_menu.html" title="Effect Menu">प्रभाव</a> सह संपादीत करा किंवा ऑडिओची श्रेणी <a href="edit_menu.html" title="Edit Menu">हटवा किंवा हलवा</a>. </li></ul>
+<p>हे पृष्ठ निवडणे समजावून सांगणारी एक लांब आवृत्ती आहे.  ऑडसिटी निवडी वापरण्यासाठी, <a href="selecting_audio_the_basics.html" title="Selecting Audio - the basics">ऑडिओ निवडत आहे - the_basics</a> पुरेसे आहे.
+</p><p>आपण केवळ <a href="#keyboard">कीबोर्ड</a> वापरुन निवडण्याबद्दल येथे वाचू शकता. <a href="#selbar">निवड टूलबार</a> वापरून विविध <a href="#formats">निवड स्वरूप</a> (वेळ एकके, <i><b><a href="glossary.html#sample" title="Glossary">नमुने</a></b></i> किंवा मीडिया फ्रेम) ची अचूक श्रेणी निवडली जाऊ शकते. 
+</p><p>त्या ट्रॅकची संपूर्णता निवडण्यासाठी केवळ काही एकाधिक ट्रॅक निवडण्यासाठी आपल्याकडे प्रगत लवचिकता आहे किंवा फक्त एक <a href="#range_tracks">त्यांच्यात श्रेणी करा</a>. प्रत्येक ट्रॅक तशाच प्रकारे बदलण्याऐवजी आपण स्वतंत्र ट्रॅकचा सर्व किंवा काही भाग निवडू शकता आणि नंतर प्रत्येक ट्रॅकला वेगळ्या प्रकारे बदलू शकता.
 </p>
 </div>
-<h2><span class="mw-headline" id="Contents">Contents</span></h2>
-<ol><li><a href="#all">Selecting the entire project</a>
-<ul><li><a href="#auto">Auto-select, if selection required</a></li></ul></li>
-<li><a href="#mouse">Selecting regions using the mouse - <i>quick and easy</i></a>
-<ul><li> <a href="#mouse-selection-tips">Mouse selection tips</a></li></ul></li>
-<li><a href="#snapto">Snap-To</a> - <i>to force-snap the cursor or selection edges to the closest or previous position of the current selection format</i></li>
-<li><a href="#boundary-snap-guides">Boundary Snap Guides</a> - <i>facilitates making a selection that starts or ends at a physical boundary</i></li>
-<li><a href="#track_mouse">Selecting tracks using the mouse</a></li>
-<li><a href="#keyboard">Selecting using the keyboard</a> - <i>useful for visually- and motion-impaired users</i>
-<ul><li> <a href="#keyboard-selection-tips">Keyboard selection tips</a></li></ul></li>
-<li><a href="#selbar">Selection Toolbar</a> - <i>mouse and keyboard users can use this to make precise selections without zooming in</i>
-<ul><li><a href="#formats">Selection Formats</a></li></ul></li>
-<li><a href="#changing">Extending or contracting an existing selection</a></li>
-<li><a href="#menu">Menu commands for selecting</a></li>
-<li><a href="#listening">Listening to the selection</a>
-<ul><li><a href="#playing">Selecting while audio is playing</a></li></ul></li>
-<li><a href="#label">Label Tracks</a> - <i>a useful way to recall particular selections</i> </li>
-<li><a href="#spectral">Spectral selection</a></li></ol>
+<h2><span class="mw-headline" id="Contents">सामग्री</span></h2>
+<ol><li><a href="#all">संपूर्ण प्रकल्प निवडत आहे</a>
+<ul><li><a href="#auto">निवड आवश्यक असल्यास स्वयंचलितरित्या निवडा</a></li></ul></li>
+<li><a href="#mouse">माउस वापरुन विभाग निवडत आहे - <i>जलद आणि सोपे</i></a>
+<ul><li> <a href="#mouse-selection-tips">माउस निवड टिप्स</a></li></ul></li>
+<li><a href="#snapto">स्नॅप-टू</a> - <i>वर्तमान निवड स्वरूपातील सर्वात जवळच्या किंवा मागील स्थानावर कर्सर किंवा निवड कडा सक्तीने-स्नॅप करण्यासाठी करा</i></li>
+<li><a href="#boundary-snap-guides">सीमा स्नॅप मार्गदर्शक</a> - <i>फिजिकल सीमेवरील किंवा प्रारंभ होणारी निवड करण्यास सुलभ करते</i></li>
+<li><a href="#track_mouse">माउस वापरुन ट्रॅक निवडणे</a></li>
+<li><a href="#keyboard">कीबोर्ड वापरुन निवडत आहे</a> - <i>दृष्टिहीन आणि हालचाल बिघडलेल्या वापरकर्त्यांसाठी उपयुक्त</i>
+<ul><li> <a href="#keyboard-selection-tips">कीबोर्ड निवड टिपा</a></li></ul></li>
+<li><a href="#selbar">निवड टूलबार</a> - <i>माउस आणि कीबोर्ड वापरकर्ते झूम इन केल्याशिवाय अचूक निवडी करण्यासाठी हे वापरू शकतात</i>
+<ul><li><a href="#formats">निवड स्वरूप</a></li></ul></li>
+<li><a href="#changing">विद्यमान निवडीचे विस्तार किंवा करार करणे</a></li>
+<li><a href="#menu">निवडण्यासाठी मेनू आज्ञा</a></li>
+<li><a href="#listening">निवड ऐकत आहे</a>
+<ul><li><a href="#playing">ऑडिओ चालू असताना निवडत आहे</a></li></ul></li>
+<li><a href="#label">लेबल ट्रॅक</a> - <i>विशिष्ट निवडी आठवण्याचा एक उपयुक्त मार्ग</i> </li>
+<li><a href="#spectral">वर्णक्रमीय निवड</a></li></ol>
 <p><br />
 </p>
 <div id="all"></div>
-<h2><span class="mw-headline" id="Selecting_the_entire_project">Selecting the entire project</span></h2>
-<p>You can select the <b>entire length</b> of all tracks on screen with <span class="menu">Select &gt; <a href="select_menu.html#all" title="Select Menu">All</a></span> or use the shortcut <span class="kbrd" style="background-color: #d0d0f8">Ctrl + A</span> <i>(or <span class="kbrd" style="background-color: #d0d0f8">&#8984; + A</span> on a Mac)</i>. 
+<h2><span class="mw-headline" id="Selecting_the_entire_project">संपूर्ण प्रकल्प निवडत आहे</span></h2>
+<p>आपण निवडू शकता <b>संपूर्ण लांबी</b>चे सह स्क्रीनवरील सर्व ट्रॅक <span class="menu">Select &gt; <a href="select_menu.html#all" title="Select Menu">सर्व</a></span> किंवा आडमार्ग वापरा <span class="kbrd" style="background-color: #d0d0f8">Ctrl + A</span> <i>(or <span class="kbrd" style="background-color: #d0d0f8">&#8984; + A</span> मॅक वर)</i>. 
 </p>
 <div id="auto"></div>
-<h3><span class="mw-headline" id="Auto-select.2C_if_selection_required">Auto-select, if selection required</span></h3>
-<p>There is a setting in <a href="tracks_behaviors_preferences.html" title="Tracks Behaviors Preferences">Tracks Behaviors</a> Preferences called "<b>Auto-select, if selection required</b>" that auto-selects the entire project <i>(whenever you issue an editing command that depends on a selection)</i> if you have made no explicit time selection in audio tracks. 
-</p><p>If you have a Time selection, made by using the <a href="selection_toolbar.html" title="Selection Toolbar">Selection Toolbar</a>, but with no audio tracks selected, then the Auto-select will operate on just that time range in all audio tracks.
+<h3><span class="mw-headline" id="Auto-select.2C_if_selection_required">निवड आवश्यक असल्यास स्वयंचलितरित्या निवडा</span></h3>
+<p> <a href="tracks_behaviors_preferences.html" title="Tracks Behaviors Preferences">वागणूक गीतपट्टा</a>मध्ये एक सेटिंग आहे प्राधान्ये म्हणतात "<b>निवड आवश्यक असल्यास स्वयंचलितरित्या निवडा</b>"  <i> (जेव्हा जेव्हा आपण संपादनाची आज्ञा निवडवर अवलंबून असतो) </i> आपण ऑडिओ ट्रॅकमध्ये कोणतीही स्पष्ट वेळ निवड केली नसल्यास ते संपूर्ण प्रकल्प स्वयंचलितपणे निवडतात. 
+</p><p>आपल्याकडे वेळ निवड असल्यास, वापरा <a href="selection_toolbar.html" title="Selection Toolbar">निवड टूलबार</a>, परंतु कोणताही ऑडिओ ट्रॅक निवडलेला नसल्यास, स्वयं-निवड सर्व ऑडिओ ट्रॅकमध्ये त्या वेळ श्रेणीवर कार्य करेल.
 </p><p><br />
 </p>
 <div id="mouse"></div>
-<h2><span class="mw-headline" id="Selecting_regions_using_the_mouse"><a href="https://alphamanual.audacityteam.org/man/File:IBeam.png" class="image"><img alt="IBeam.png" src="../m/images/1/1f/ibeam.png" width="27" height="27" /></a> Selecting regions using the mouse</span></h2>
-<p>The easiest way to select a region of audio is to click the left mouse button anywhere inside of an audio track, then drag <i>(in either direction)</i> until the other edge of your selection is made, then release the mouse.
-</p><p>If it's not already selected, choose the Selection tool <span title="Selection tool"><img alt="IBeam.png" src="../m/images/1/1f/ibeam.png" width="20" height="20" /></span> from Tools Toolbar,  below:
+<h2><span class="mw-headline" id="Selecting_regions_using_the_mouse"><a href="https://alphamanual.audacityteam.org/man/File:IBeam.png" class="image"><img alt="IBeam.png" src="../m/images/1/1f/ibeam.png" width="27" height="27" /></a> माउस वापरुन विभाग निवडत आहे</span></h2>
+<p>ऑडिओचा प्रदेश निवडण्याचा सर्वात सोपा मार्ग म्हणजे ऑडिओ ट्रॅकच्या आतील कोठेही डाव्या माऊस बटणावर क्लिक करणे, नंतर आपल्या निवडीची दुसरी धार तयार होईपर्यंत <i> (दोन्ही दिशेने) </i> ड्रॅग करा, आणि नंतर सोडा उंदीर
+</p><p>जर ते आधीच निवडलेले नसेल तर सिलेक्शन टूल निवडा <span title="Selection tool"><img alt="IBeam.png" src="../m/images/1/1f/ibeam.png" width="20" height="20" /></span> खाली टूल्स टूलबार वरुन:
 </p>
 <dl><dd><img alt="Tools‎ Toolbar" src="../m/images/8/82/toolstoolbar.png" title="Tools‎ Toolbar" width="94" height="55" class="thumbborder" /></dd></dl>
-<p>Now click the left mouse button anywhere inside of an audio track, and click and drag to the other edge of your selection, and release.  
-</p><p>Normally, you select both the tracks and the range simultaneously, by clicking and dragging.  For example, to create the selection in the image below, make sure you're using Selection Tool <span title="Selection tool"><img alt="Tool select.png" src="../m/images/2/25/tool_select.png" width="20" height="20" /></span>, click in the track just after 7.0 seconds in the first track, then drag rightwards to 20.5 seconds as displayed on the <a href="timeline.html" title="Timeline">Timeline</a>, then downwards so that the gray selection region now includes the second track:
+<p>आता ऑडिओ ट्रॅकच्या आतील कोठेही माऊसचे डावे बटण क्लिक करा आणि क्लिक करा आणि आपल्या निवडीच्या दुसर्‍या काठावर ड्रॅग करा आणि रिलीझ करा.  
+</p><p>सामान्यपणे, आपण क्लिक आणि ड्रॅग करून एकाच वेळी दोन्ही ट्रॅक आणि श्रेणी निवडता. उदाहरणार्थ, खालील प्रतिमेत निवड तयार करण्यासाठी आपण निवड साधन वापरत असल्याचे सुनिश्चित करा <span title="Selection tool"><img alt="Tool select.png" src="../m/images/2/25/tool_select.png" width="20" height="20" /></span>, पहिल्या ट्रॅकमध्ये फक्त 7.0 सेकंदानंतर ट्रॅकवर क्लिक करा, नंतर वर दर्शविल्यानुसार उजवीकडे २०.५ सेकंद वर ड्रॅग करा <a href="timeline.html" title="Timeline">समयरेषा</a>, नंतर खाली दिशेने जेणेकरून करडा निवड प्रदेशात आता दुसरा ट्रॅक समाविष्ट आहे:
 </p>
 <dl><dd><span title="Region from 7 to 20.5 seconds in the first two tracks selected"><img alt="Selecting Audio 01.png" src="../m/images/7/7e/selecting_audio_01.png" width="709" height="417" /></span></dd></dl>
-<p>Note that because the drag started in the second track (as indicated by the yellow focus border) and extended up into the first track, only those two tracks are <i>selected</i>, as indicated by the <i>blue color</i> of the <a href="audio_tracks.html#panel" title="Audio Tracks">Track Control Panel</a>. Therefore, any operation you perform will now only affect the selected area of the first two tracks.
-</p><p>This, and the method for selecting all audio are enough for using selections in Audacity.
+<p>लक्षात घ्या की दुसर्‍या ट्रॅकवर ड्रॅग सुरू झाले (पिवळ्या फोकस बॉर्डरद्वारे दर्शविल्यानुसार) आणि पहिल्या ट्रॅकपर्यंत वाढविण्यात आले आहे, <i> निळ्या रंगाने</i> सूचित केल्याप्रमाणेच ते दोन ट्रॅक <i> निवडले </i> च्या  <a href="audio_tracks.html#panel" title="Audio Tracks">ट्रॅक नियंत्रण पॅनेल</a>. म्हणूनच, आपण केलेले कोणतेही ऑपरेशन केवळ पहिल्या दोन ट्रॅकच्या निवडलेल्या क्षेत्रावर परिणाम करेल.
+</p><p>ऑडॅसिटीमधील निवडी वापरण्यासाठी ही आणि सर्व ऑडिओ निवडण्याची पद्धत पुरेसे आहे.
 </p>
 <div id="mouse-selection-tips"></div>
-<h3><span class="mw-headline" id="Mouse_selection_tips">Mouse selection tips</span></h3>
-<p>Some tips:
+<h3><span class="mw-headline" id="Mouse_selection_tips">माउस निवड टिप्स</span></h3>
+<p>काही टिपा:
 </p>
-<ul><li> You can drag from left to right or from right to left, it does not matter.</li>
-<li> You can start your selection in one track, and end it in another track, and both tracks (plus the tracks in-between) will all end up selected.</li>
-<li> If you move the mouse past the left or right edge of the window while dragging, Audacity will scroll the window in that direction as long as the mouse button is down.</li>
-<li> <span class="kbrd" style="background-color: #e0e0f0">Esc</span> key aborts selection drags, and restores the previous time selection, frequency selection (see later on this page), and set of selected tracks.</li>
-<li> After making a selection you can modify it by going back and dragging the left or right edge.</li></ul>
+<ul><li> आपण डावीकडून उजवीकडे किंवा उजवीकडून डावीकडे ड्रॅग करू शकता, काही फरक पडत नाही.</li>
+<li> आपण आपली निवड एका ट्रॅकमध्ये प्रारंभ करू शकता आणि दुसर्‍या ट्रॅकवर समाप्त करू शकता आणि दोन्ही ट्रॅक (तसेच दरम्यानचे ट्रॅक) सर्व निवडले जातील.</li>
+<li> ड्रॅग करताना आपण विंडोच्या डाव्या किंवा उजव्या काठावरुन माउस हलविल्यास ऑडसिटी विंडो त्या दिशेने स्क्रोल करेल जोपर्यंत माउस बटण खाली असेल.</li>
+<li> <span class="kbrd" style="background-color: #e0e0f0">Esc</span> की निवड ड्रॅगचा त्याग करते आणि मागील वेळ निवड, वारंवारता निवड (या पृष्ठावरील नंतर पहा) आणि निवडलेल्या ट्रॅकचा संच पुनर्संचयित करते.</li>
+<li> निवड केल्यानंतर आपण त्यास मागे जाऊन डावीकडे किंवा उजवीकडे ड्रॅग करून सुधारित करू शकता.</li></ul>
 <p><br />
 </p>
 <div id="snapto"></div>
-<h2><span class="mw-headline" id="Snap-To">Snap-To</span></h2>
+<h2><span class="mw-headline" id="Snap-To">स्नॅप-टू</span></h2>
 
-<p>The <a href="selection_toolbar.html" title="Selection Toolbar">Selection Toolbar</a> has an <a href="selection_toolbar.html#snap" title="Selection Toolbar">Snap-To</a> option which force-snaps the cursor or selection edges to the <i>closest</i> position of the current <a href="#formats">selection format</a>. 
+<p>The <a href="selection_toolbar.html" title="Selection Toolbar">निवड टूलबार</a> एक आहे <a href="#formats">निवड स्वरूप</a> <a href="selection_toolbar.html#snap" title="Selection Toolbar">स्नॅप-टू</a> पर्याय जे वर्तमानातील <i> जवळील </i> स्थितीवर कर्सर किंवा निवड कडा सक्तीने स्नॅप करतो. 
 </p>
-<ul><li> Selecting <span class="button">Nearest &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span> from the Snap-To dropdown menu will force-snap the cursor or selection edges to the <i>closest</i>. </li>
-<li> Selecting <span class="button">Prior &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span> from the same menu will force-snap the cursor or selection edges to the <i>immediately preceding</i> position. </li></ul>
+<ul><li><span class="button">सगळ्यात जवळचे &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span>निवडणे स्नॅप-टू ड्रॉपडाउन मेनूमधून <i> जवळील </i> वर कर्सर किंवा निवड कडा सक्तीने-स्नॅप करेल. </li>
+<li><span class="button">आधी &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span> निवडणे समान मेनूमधून कर्सर सक्तीने-स्नॅप करेल किंवा <i> तत्काळ आधी </i> स्थितीत कडा निवडला जाईल. </li></ul>
 <p><br />
 </p>
 <div id="boundary-snap-guides"></div>
-<h2><span class="mw-headline" id="Boundary_Snap_Guides">Boundary Snap Guides</span></h2>
-<p><a href="boundary_snap_guides.html" title="Boundary Snap Guides">Boundary Snap Guides</a> make it easy to make a selection that starts or ends at a <i>physical</i> boundary, like a label or clip. Whenever snapping is taking place, a yellow vertical line appears to indicate the snap location.
+<h2><span class="mw-headline" id="Boundary_Snap_Guides">सीमा स्नॅप मार्गदर्शक</span></h2>
+<p><a href="boundary_snap_guides.html" title="Boundary Snap Guides">सीमा स्नॅप मार्गदर्शक</a> लेबल किंवा क्लिप सारख्या <i> भौतिक </i> सीमेवर प्रारंभ किंवा समाप्त होणारी निवड करणे सुलभ करा. जेव्हाही स्नॅपिंग चालू आहे, त्यावेळी पिवळ्या उभ्या रेषा स्नॅपचे स्थान दर्शवितात.
 </p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
@@ -120,15 +120,15 @@
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">Note carefully that this is distinct from the "<a href="selection_toolbar.html#snap" title="Selection Toolbar">Snap-To</a>" options in <a href="selection_toolbar.html" title="Selection Toolbar">Selection Toolbar</a> which snap selection edges (or the cursor) to <a href="selection_toolbar.html#formats" title="Selection Toolbar">time units, samples or media frames</a>.
+<td align="left" valign="top">काळजीपूर्वक लक्षात घ्या की हे वेगळे आहे या "<a href="selection_toolbar.html#snap" title="Selection Toolbar">स्नॅप-टू</a>" मध्ये पर्याय <a href="selection_toolbar.html" title="Selection Toolbar">निवड टूलबार</a> जे निवड कडा स्नॅप करते (किंवा कर्सर) <a href="selection_toolbar.html#formats" title="Selection Toolbar">वेळ एकके, नमुने किंवा मीडिया फ्रेम</a>.
 </td></tr></table></div>
 <p><br />
 </p>
 <div id="track_mouse"></div>
-<h2><span class="mw-headline" id="Selecting_.2F_deselecting_tracks_using_the_mouse">Selecting / deselecting tracks using the mouse</span></h2>
-<p>Tracks can be selected, deselecting any other tracks that are already selected, by clicking in the <a href="audio_tracks.html#panel" title="Audio Tracks">Track Control Panel</a> to the left of a track. Make sure that you click in a neutral area of the Track Control Panel, not inside one of the buttons or sliders. 
-</p><p>Clicking on a track's Track Control Panel selects the entire track. That's a very easy way to apply an effect to an entire track.  If you want to quickly select the entirety of all tracks, you can choose <span class="menu">Select &gt; <a href="select_menu.html#all" title="Select Menu">All</a></span> or use the <span class="kbrd" style="background-color: #e0e0f0">Ctrl + A</span> shortcut.  
-</p><p>There is another handy way to select an entire track - just double-click inside it. If the track has more than one <a href="audacity_tracks_and_clips.html" title="Audacity Tracks and Clips">clip</a>, the double-click selects just that clip. 
+<h2><span class="mw-headline" id="Selecting_.2F_deselecting_tracks_using_the_mouse">माउस वापरुन ट्रॅक निवडणे / निवड रद्द करणे</span></h2>
+<p>ट्रॅक निवडले जाऊ शकतात, आधीपासूनच निवडलेल्या इतर ट्रॅकची निवड रद्द करून, मध्ये क्लिक करून <a href="audio_tracks.html#panel" title="Audio Tracks">ट्रॅक नियंत्रण पॅनेल</a> ट्रॅकच्या डावीकडे. आपण एका बटणावर किंवा स्लाइडरच्या आत नसून ट्रॅक नियंत्रण पॅनेलच्या तटस्थ भागात क्लिक केल्याचे सुनिश्चित करा. 
+</p><p>ट्रॅकच्या ट्रॅक कंट्रोल पॅनेलवर क्लिक करणे पूर्ण ट्रॅक निवडते. संपूर्ण ट्रॅकवर प्रभाव लागू करण्याचा हा अगदी सोपा मार्ग आहे. आपणास सर्व ट्रॅकचे संपूर्ण द्रुतपणे निवड करायचे असल्यास आपण निवडू शकता <span class="menu">निवडा &gt; <a href="select_menu.html#all" title="Select Menu">सर्व</a></span> किंवा वापरा <span class="kbrd" style="background-color: #e0e0f0">Ctrl + A</span> आडमार्ग.  
+</p><p>संपूर्ण ट्रॅक निवडण्यासाठी आणखी एक सोपा मार्ग आहे - त्यामध्ये फक्त डबल-क्लिक करा. ट्रॅकमध्ये एकापेक्षा जास्त असल्यास <a href="audacity_tracks_and_clips.html" title="Audacity Tracks and Clips">फीत</a>,वर डबल क्लिक करून फक्त ती क्लिप निवडते. 
 </p><p>You can also add specific tracks to the selection and remove specific tracks from the selection as follows <i>(remember to use <span class="kbrd" style="background-color: #e0e0f0">&#8984;</span> on Mac instead of <span class="kbrd" style="background-color: #e0e0f0">Ctrl</span></i>):
 </p>
 <ul><li> Holding <span class="kbrd" style="background-color: #e0e0f0">Ctrl</span> and clicking in a track's Track Control Panel <b>toggles the selectedness</b> of that track only. So if a track is not selected, <span class="kbrd" style="background-color: #e0e0f0">Ctrl</span>-clicking its Track Control Panel selects it, or deselects it if it is already selected. </li>
