@@ -1,0 +1,660 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>English</th>
+      <th>Marathi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>Installing and updating Audacity on Linux - Audacity Manual</td>
+      <td>लिनक्सवर ऑडॅसिटी स्थापित करणे आणि अद्यतनित करणे - ऑडेसिटी मॅन्युअल</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>Installing and updating Audacity on Linux</td>
+      <td>लिनक्स वर ऑडॅसिटी स्थापित करणे आणि अद्यतनित करणे</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>From Audacity Development Manual</td>
+      <td>ऑडसिटी डेव्हलपमेंट मॅन्युअल वरुन</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Jump to: navigation, search</td>
+      <td>येथे जा: सुचालन, शोध</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>This page provides instructions for installing and updating Audacity on Linux computer platforms.</td>
+      <td>हे पृष्ठ लिनक्स संगणक प्लॅटफॉर्मवर ऑडॅसिटी स्थापित आणि अद्यतनित करण्यासाठी सूचना प्रदान करते.</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>In addition to basic Audacity you may wish to install the optional LAME MP3 encoding software</td>
+      <td>मूलभूत ऑडॅसिटी व्यतिरिक्त आपण पर्यायी एलईएमई एमपी 3 एन्कोडिंग सॉफ्टवेअर स्थापित करू शकता</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>Also the optional FFmpeg library which allows Audacity to import and export a much larger range of audio formats including M4A (AAC), AC3, AMR (narrow band) and WMA and also to import audio from most video files.</td>
+      <td>तसेच वैकल्पिक FFmpeg लायब्ररी जी ऑडसिटीला एम 4 ए (एएसी), एसी 3, एएमआर (अरुंद बँड) आणि डब्ल्यूएमए यासह मोठ्या प्रमाणात ऑडिओ स्वरूप आयात आणि निर्यात करण्यास अनुमती देते आणि बर्‍याच व्हिडिओ फायली वरून ऑडिओ आयात करण्यास परवानगी देते.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>Note carefully that simply re-installing Audacity will not clear and reset your Audacity settings for preferences and plug-ins.</td>
+      <td>सावधगिरीने लक्षात घ्या की केवळ ऑडॅसिटी पुन्हा स्थापित करणे प्राधान्ये आणि प्लगइनसाठी आपली ऑडॅसीटी सेटिंग्ज साफ आणि रीसेट करणार नाही.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>For instructions on how to achieve this please see Reset Audacity Settings.</td>
+      <td>हे कसे मिळवायचे या सूचनांसाठी कृपया ऑडसेट सेटिंग्ज रीसेट करा.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>Contents</td>
+      <td>सामग्री</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>Installation instructions</td>
+      <td>स्थापना सूचना</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>Check for Updates</td>
+      <td>अद्यतनांसाठी तपासा</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>Installing LAME</td>
+      <td>Lame स्थापित करत आहे</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>Installing the FFmpeg Import/Export Library</td>
+      <td>एफएफम्पेग आयात / निर्यात लायब्ररी स्थापित करीत आहे</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>Reset Audacity Settings</td>
+      <td>ऑडसिटी सेटिंग्ज रीसेट करा</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15</td>
+      <td>Installation instructions</td>
+      <td>स्थापना सूचना</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>The recommended way to install software for most GNU/Linux and Unix-like Desktop distributions, is to install from the official distribution repository using a package manager. Most distributions provide Audacity packages.</td>
+      <td>बहुतेक GNU / Linux आणि युनिक्स-सारख्या डेस्कटॉप वितरण करीता सॉफ्टवेअर स्थापित करण्याचा शिफारस केलेला मार्ग म्हणजे पॅकेज मॅनेजर वापरुन अधिकृत वितरण भांडारातून स्थापित करणे. बहुतेक वितरण ऑडसिटी पॅकेजेस प्रदान करतात.</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>Alternatively you can build the latest Audacity tagged release from our source code.</td>
+      <td>वैकल्पिकरित्या आपण आमच्या स्त्रोत कोडवरून नवीनतम ऑडसिटी टॅग केलेले प्रकाशन तयार करू शकता.</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>Some old versions of Audacity were https://wiki.audacityteam.org/wiki/Incorrect_wxWidgets_Version incorrectly built]. The minimum recommended version of Audacity for Linux is 2.1.2</td>
+      <td>ऑडॅसिटीच्या काही जुन्या आवृत्त्या https://wiki.audacityteam.org/wiki/Incorrect_wxWidgets_Version चुकीच्या अंगभूत आहेत]. लिनक्ससाठी ऑडॅसिटीची किमान शिफारस केलेली आवृत्ती २.१.२ आहे</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19</td>
+      <td>Note that this Manual only relates to the current release of Audacity.</td>
+      <td>लक्षात ठेवा की हे मॅन्युअल केवळ ऑडसेटच्या वर्तमान रिलीझशी संबंधित आहे.</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20</td>
+      <td>System Requirements</td>
+      <td>यंत्रणेची आवश्यकता</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>21</td>
+      <td>We recommend using the latest version of GNU/Linux from your distribution that is compatible with your hardware specifications. Audacity will run best with at least 1GB RAM and a 2 GHz processor. Because it was originally written when computers were less powerful, you may be able to run it on much less powerful hardware too. Simple recording is possible on a 700 MHz Raspberry Pi, using a USB Microphone. However, Pi operating systems are not officially supported and Audacity may be less stable on them than on desktop operating systems.</td>
+      <td>आम्ही आपल्या हार्डवेअर वैशिष्ट्यांसह सुसंगत आपल्या वितरणामधील जीएनयू / लिनक्सची नवीनतम आवृत्ती वापरण्याची शिफारस करतो. कमीतकमी 1 जीबी रॅम आणि 2 गीगाहर्ट्झ प्रोसेसरसह ऑडेसिटी सर्वोत्तम चालेल. हे मूलतः जेव्हा संगणक कमी शक्तिशाली होते तेव्हा लिहिले गेले होते, आपण कदाचित त्यास कमी शक्तिशाली हार्डवेअरवर देखील चालवू शकाल. यूएसबी मायक्रोफोन वापरुन 700 मेगाहर्ट्झच्या रास्पबेरी पाईवर साधे रेकॉर्डिंग करणे शक्य आहे. तथापि, पाई ऑपरेटिंग सिस्टम अधिकृतपणे समर्थित नाहीत आणि ऑडसिटी डेस्कटॉप ऑपरेटिंग सिस्टमपेक्षा त्यांच्यावर कमी स्थिर असू शकेल.</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>22</td>
+      <td>Projects saved by old versions of Audacity</td>
+      <td>ऑडेसिटीच्या जुन्या आवृत्त्यांद्वारे प्रकल्प जतन केले</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>23</td>
+      <td>Current Audacity is compatible with project files saved by versions of Audacity 1.3.x and later, including 2.x.x.</td>
+      <td>करंट ऑडीसिटी ऑडसिटी 1.3.x आणि नंतरच्या आवृत्तीद्वारे जतन केलेल्या प्रोजेक्ट फायलीशी सुसंगत आहे 2.x.x.</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>24</td>
+      <td>Chromebooks: Audacity does not run on Chrome OS. Although not officially supported, it is possible in principle to run Audacity on a Chromebook under a Chrome version of Linux Ubuntu.</td>
+      <td>Chromebook: Chrome OS वर धृष्टता चालत नाही. अधिकृतपणे समर्थित नसले तरीही लिनक्स उबंटूच्या क्रोम व्हर्जन अंतर्गत Chromebook वर ऑडॅसिटी चालविणे तत्त्वतः शक्य आहे.</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>25</td>
+      <td>Check for Updates</td>
+      <td>अद्यतनांसाठी तपासा</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>26</td>
+      <td>You can check to see if you have the latest version of Audacity by using Help &gt; Check for Updates....</td>
+      <td>आपण मदत&gt; अद्यतनांसाठी तपासा .... चा वापर करुन आपल्याकडे ऑडसिटीची नवीनतम आवृत्ती आहे का ते तपासू शकता.</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>27</td>
+      <td>This takes you to the Download page of the Audacity website where you can check what the latest release version of Audacity is.</td>
+      <td>हे आपल्याला ऑडसिटी वेबसाइटच्या डाउनलोड पृष्ठावर घेऊन जाईल जिथे आपण ऑडॅसिटीची नवीनतम आवृत्ती शोधू शकता.</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>28</td>
+      <td>You can then compare the latest release with the version you have now as shown by using Help &gt; About Audacity....</td>
+      <td>त्यानंतर आपण मदत&gt; ऑडॅसिटी बद्दल .... वापरून आपल्यास आत्ताच्या आवृत्तीसह नवीनतम आवृत्तीची तुलना करू शकता.</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>29</td>
+      <td>Installing LAME</td>
+      <td>Lame स्थापित करत आहे</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>30</td>
+      <td>You may download (or compile) then install a compatible version of the LAME MP3 encoder then</td>
+      <td>आपण नंतर डाउनलोड करू शकता (किंवा कंपाईल) लेम एमपी 3 एन्कोडरची सुसंगत आवृत्ती</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>31</td>
+      <td>locate it in Libraries Preferences.</td>
+      <td>ते लायब्ररी प्राधान्यांमध्ये शोधा.</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>32</td>
+      <td>Most Linux distributions have some sort of package manager that fetches software packages from the Internet and installs them for you. Open that package manager, search for LAME, and install it if it is not already installed.</td>
+      <td>बर्‍याच लिनक्स डिस्ट्रिब्युशनमध्ये काही प्रकारचे पॅकेज मॅनेजर असते जे इंटरनेट वरून सॉफ्टवेअर पॅकेजेस आणतात आणि ते तुमच्यासाठी स्थापित करतात. तो पॅकेज व्यवस्थापक उघडा, लॅमेसाठी शोधा आणि तो आधीपासूनच स्थापित केलेला नसेल तर तो स्थापित करा.</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>33</td>
+      <td>If there is not a LAME package for your distribution, go to the LAME Project home page and download the latest source code. Compile it as a shared object. When Audacity prompts you for it, it will be at /usr/local/lib/libmp3lame.so.</td>
+      <td>आपल्या वितरणासाठी एक लॅमेज पॅकेज नसल्यास, लेम प्रकल्प मुख्यपृष्ठावर जा आणि नवीनतम स्त्रोत कोड डाउनलोड करा. हे सामायिक ऑब्जेक्ट म्हणून संकलित करा. जेव्हा ऑडसिटी आपल्याला त्याबद्दल विचारेल तेव्हा ते /usr/local/lib/libmp3lame.so वर असेल.</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>34</td>
+      <td>This is for advanced users.</td>
+      <td>हे प्रगत वापरकर्त्यांसाठी आहे.</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>35</td>
+      <td>Inexperienced users are advised to look for a LAME package for their distribution.</td>
+      <td>अननुभवी वापरकर्त्यांना त्यांच्या वितरणासाठी Lame पॅकेज शोधण्याचा सल्ला दिला जातो.</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>36</td>
+      <td>Removal of Libraries Preferences</td>
+      <td>लायब्ररी प्राधान्ये काढणे</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>37</td>
+      <td>Some distributions (for example, current Ubuntu) package Audacity with MP3 encoding and FFmpeg (or Libav) already linked dynamically to the relevant system libraries. In these packaged Audacity builds there is no need to locate LAME or FFmpeg, so Audacity will have no "Libraries" Preferences.</td>
+      <td>काही वितरणे (उदाहरणार्थ, वर्तमान उबंटू) एमपी 3 एन्कोडिंग आणि एफएफम्पेग (किंवा लिबॅव) सह पॅकेज ऑडेसिटी आधीपासूनच संबंधित सिस्टम लायब्ररीत गतीशीलपणे जोडलेले आहे. या पॅकेज केलेल्या ऑडेसिटी बिल्ड्समध्ये LAME किंवा FFmpeg शोधण्याची आवश्यकता नाही, म्हणून ऑडसिटीला कोणतीही "लायब्ररी" प्राधान्ये नसतील.</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>38</td>
+      <td>Users compiling Audacity from source code can similarly remove the "Libraries" Preferences by configuring Audacity with --disable-dynamic-loading. Then build Audacity linked to the system LAME (and also to system or locally-compiled FFmpeg or libav if required).</td>
+      <td>स्त्रोत कोडमधून ऑडॅसिटीचे संकलन करणारे वापरकर्ते तसेच --disable-डायनॅमिक-लोडिंगसह ऑडॅसिटी कॉन्फिगर करून "लायब्ररी" प्राधान्ये काढू शकतात. नंतर सिस्टम लामलेशी दुवा साधलेला ऑडीसिटी बिल्ड करा (आणि सिस्टममध्ये किंवा स्थानिकरित्या-कंपाईल केलेले एफएफम्पेग किंवा आवश्यक असल्यास लिबॅव्हवर देखील).</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>39</td>
+      <td>Installing LAME on Ubuntu 11.10 and later</td>
+      <td>उबंटू ११.१० आणि नंतर लॅमे स्थापित करणे</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>40</td>
+      <td>In Ubuntu 11.10 and later the default package manager is the "Ubuntu Software Center". It is often most convenient to install the "Ubuntu Restricted Extras" as this includes LAME, FFmpeg and other useful media encoding/decoding tools.</td>
+      <td>उबंटू 11.10 मध्ये आणि नंतर डीफॉल्ट पॅकेज मॅनेजर "उबंटू सॉफ्टवेअर सेंटर" आहे. "उबंटू प्रतिबंधित अतिरिक्त" स्थापित करणे सर्वात सोयीचे असते कारण यात एलईएमई, एफएफम्पेग आणि इतर उपयुक्त मीडिया एन्कोडिंग / डिकोडिंग साधने समाविष्ट असतात.</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>41</td>
+      <td>If you wish to install only the LAME package required for MP3 export, search for LAME in the Ubuntu Software Center and install it.</td>
+      <td>आपणास एमपी 3 निर्यातीसाठी आवश्यक असलेले फक्त लॅम पॅकेज स्थापित करायचे असल्यास, उबंटू सॉफ्टवेअर सेंटरमध्ये लॅमेसाठी शोधा आणि स्थापित करा.</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>42</td>
+      <td>Installing LAME on other Debian-based systems</td>
+      <td>अन्य डेबियन-आधारित सिस्टमवर Lame स्थापित करत आहे</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>43</td>
+      <td>The following are detailed instructions for installing LAME using the Synaptic package manager on recent Debian-based systems and in Ubuntu 11.04 and earlier.</td>
+      <td>अलीकडील डेबियन-आधारित सिस्टमवर उबंटू ११.० and आणि पूर्वीच्या सिनॅप्टिक पॅकेज मॅनेजरचा वापर करून लॅमे स्थापित करण्यासाठी खालील सविस्तर सूचना आहेत.</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>44</td>
+      <td>Open Synaptic:</td>
+      <td>सिनॅप्टिक उघडा:</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>45</td>
+      <td>In GNOME (the default desktop environment for many Debian-based systems), access Synaptic by clicking System &gt; Administration</td>
+      <td>जीनोममध्ये (बर्‍याच डेबियन-आधारित सिस्टमसाठी डीफॉल्ट डेस्कटॉप वातावरण) सिस्टम&gt; अ‍ॅडमिनिस्ट्रेशन क्लिक करून सिनॅप्टिकमध्ये प्रवेश करा</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>46</td>
+      <td>In KDE there will be a similar menu accessible from the bottom-left of the screen</td>
+      <td>केडीई मध्ये पडद्याच्या तळाशी-डावीकडून एक समान मेनू आढळेल</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>47</td>
+      <td>Enter the root password when asked for it.</td>
+      <td>रूट संकेतशब्द विचारला असता तो प्रविष्ट करा.</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>48</td>
+      <td>In the Synaptic window, choose "Settings", then "Repositories"</td>
+      <td>सिनॅप्टिक विंडोमध्ये, "सेटिंग्ज" निवडा, नंतर "रिपॉझिटरीज" निवडा</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>49</td>
+      <td>In the "distribution Software" tab, check the box for "non free" (on Ubuntu based systems this is called "multiverse"), then hit the Close button.</td>
+      <td>"वितरण सॉफ्टवेअर" टॅबमध्ये, "नॉन फ्री" साठी बॉक्स निवडा (उबंटू आधारित सिस्टमवर याला "मल्टीवेर्सी" म्हटले जाते), आणि नंतर क्लोज बटणावर दाबा.</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>50</td>
+      <td>Back in the main Synaptic Window, type "lame" in the "Quick search" box.</td>
+      <td>मुख्य सिनॅप्टिक विंडोमध्ये परत, “द्रुत शोध” बॉक्समध्ये "लंगडा" टाइप करा.</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>51</td>
+      <td>The search results will show the packages "lame" and "libmp3lame0" at the top of the list - mark both for installation by double-clicking.</td>
+      <td>शोध परिणाम सूचीच्या शीर्षस्थानी "लंगडी" आणि "libmp3lame0" पॅकेजेस दर्शवेल - दोनवेळा-क्लिक करून स्थापनेसाठी दोन्ही चिन्हांकित करा.</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>52</td>
+      <td>Click "Apply", and on "OK" for any warnings; the LAME software will automatically download and install.</td>
+      <td>कोणत्याही चेतावणीसाठी "लागू करा" आणि "ओके" वर क्लिक करा; LAME सॉफ्टवेअर स्वयंचलितपणे डाउनलोड आणि स्थापित होईल.</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>53</td>
+      <td>Right-click over the entry for "libmp3lame0" &gt; Properties</td>
+      <td>"Libmp3lame0"&gt; गुणधर्मांसाठी प्रविष्टीवर राइट-क्लिक करा</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>54</td>
+      <td>On the "Installed Files" tab, note the location of "libmp3lame.so.0", probably at /usr/lib/libmp3lame.so.0</td>
+      <td>"स्थापित केलेल्या फायली" टॅबवर, "libmp3lame.so.0" चे स्थान लक्षात घ्या, कदाचित /usr/lib/libmp3lame.so.0 वर</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>55</td>
+      <td>Close all the Synaptic windows.</td>
+      <td>सर्व सिनॅप्टिक विंडो बंद करा.</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>56</td>
+      <td>Locating LAME</td>
+      <td>Lame शोधत आहे</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>57</td>
+      <td>Open Audacity, click Edit &gt; Preferences... then "Libraries" in the list on the left.</td>
+      <td>अस्पष्टता उघडा, डाव्या बाजूला यादीतील संपादन&gt; प्राधान्ये ... वर क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>58</td>
+      <td>In MP3 Export Library, check if a LAME version number displays to right of MP3 Library Version. If so, LAME has already been detected and you should now be able to export MP3 and skip the remainder of these instructions. If the MP3 Library is stated as "not found":</td>
+      <td>एमपी Ex एक्सपोर्ट लायब्ररीमध्ये, एमपी 3 लायब्ररीच्या उजवीकडील Lame आवृत्ती क्रमांक प्रदर्शित होत आहे का ते तपासा. तसे असल्यास, लेम आधीपासून शोधला गेला आहे आणि आपण आता एमपी 3 निर्यात करण्यास सक्षम असाल आणि या सूचनांचे उर्वरित भाग वगळू शकता. एमपी 3 लायब्ररी "सापडली नाही" म्हणून सांगितल्यास:</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>59</td>
+      <td>Click the Locate... button to right of MP3 Library</td>
+      <td>एमपी 3 लायब्ररीच्या उजवीकडे शोधा ... बटणावर क्लिक करा</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>60</td>
+      <td>In the "Locate Lame" dialog that appears, click "Browse"</td>
+      <td>दिसत असलेल्या "लॅमेन्ट लॅमे" संवादामध्ये, "ब्राउझ करा" क्लिक करा</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>61</td>
+      <td>In the "Where is libmp3lame.so.0?" dialog, navigate to the location you noted in step 9 in the installation instructions, select libmp3lame.so.0, click Open, then OK and OK to exit Preferences.</td>
+      <td>"Libmp3lame.so.0 कुठे आहे?" संवाद, प्रतिष्ठापन सूचनांमधील चरण 9 मध्ये आपण नोंदवलेल्या ठिकाणी नेव्हिगेट करा, libmp3lame.so.0 निवडा, प्राधान्यक्रमातून बाहेर पडण्यासाठी ओपन क्लिक करा, नंतर ओके क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>62</td>
+      <td>Installing the FFmpeg Import/Export Library</td>
+      <td>एफएफम्पेग आयात / निर्यात लायब्ररी स्थापित करीत आहे</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>63</td>
+      <td>The optional FFmpeg library allows Audacity to import and export a much larger range of audio formats including M4A (AAC), AC3, AMR (narrow band) and WMA and also to import audio from most video files.</td>
+      <td>पर्यायी FFmpeg लायब्ररी ऑडॅसिटीला एम 4 ए (एएसी), एसी 3, एएमआर (अरुंद बँड) आणि डब्ल्यूएमए यासह मोठ्या प्रमाणात ऑडिओ स्वरूप आयात आणि निर्यात करण्याची आणि बर्‍याच व्हिडिओ फायलींमधून ऑडिओ आयात करण्याची परवानगी देते.</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>64</td>
+      <td>Because of software patents, Audacity cannot include the FFmpeg software or distribute it from its own websites. Instead, use the following instructions to download and install the free and recommended FFmpeg third-party library.</td>
+      <td>सॉफ्टवेअर पेटंट्समुळे, ऑडॅसिटीमध्ये एफएफम्पेग सॉफ्टवेअर समाविष्ट होऊ शकत नाही किंवा त्याचे स्वत: च्या वेबसाइटवरून वितरण होऊ शकत नाही. त्याऐवजी, विनामूल्य आणि शिफारस केलेली एफएफएमपेग तृतीय-पक्ष लायब्ररी डाउनलोड आणि स्थापित करण्यासाठी खालील सूचना वापरा.</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>65</td>
+      <td>Advanced usage: If you already have Audacity-compatible FFmpeg 2.2.x or 2.3.x shared libraries in the system PATH, Audacity will use those as long as you do not install FFmpeg from the links below and as long as you do not specify the FFmpeg you want Audacity to use in Libraries Preferences.</td>
+      <td>प्रगत वापरः आपल्याकडे सिस्टम पीएटीएच मध्ये आधीपासून ऑडसिटी-अनुकूल सुसंगत एफएफएमपीएग 2.2.x किंवा 2.3.x सामायिक लायब्ररी असल्यास, ऑडॅसिटी जोपर्यंत आपण खालील दुव्यांमधून एफएफएमपीग स्थापित करत नाही तोपर्यंत आणि आपण निर्दिष्ट करत नाही तोपर्यंत त्या वापरेल आपण लायब्ररी प्राधान्यांमध्ये ऑडसिटी वापरू इच्छित एफएफएमपीजी.</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>66</td>
+      <td>Obtaining FFmpeg</td>
+      <td>FFmpeg मिळवत आहे</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>67</td>
+      <td>You may download (or compile) and install a compatible version of the FFmpeg or libav library for your purposes then locate it in Libraries Preferences.</td>
+      <td>आपण डाउनलोड (किंवा कंपाईल) करू शकता आणि आपल्या हेतूसाठी एफएफम्पेग किंवा लिबाव लायब्ररीची सुसंगत आवृत्ती स्थापित करू शकता आणि नंतर ती लायब्ररी प्राधान्यांमध्ये शोधू शकता.</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>68</td>
+      <td>If you download a pre-built library, this might be either a "shared" or "static" build. A static build consists of a single libavformat library, whereas a shared build has at least three libraries (libavformat, libavcodec and libavutil). It is recommended to use a shared build, but Audacity will also work with a static build.</td>
+      <td>आपण पूर्वनिर्मित लायब्ररी डाउनलोड केल्यास हे कदाचित एकतर "सामायिक" किंवा "स्थिर" बिल्ड असेल. स्टॅटिक बिल्डमध्ये एकल लिबावफॉर्मेट लायब्ररी असते, तर शेअर्ड बिल्डमध्ये कमीतकमी तीन लायब्ररी असतात (लिबावफॉर्मेट, लिबावकोडेक आणि लिबावुटिल). सामायिक बिल्ड वापरण्याची शिफारस केली जाते, परंतु ऑडसिटी स्थिर बिल्डसह देखील कार्य करेल.</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>69</td>
+      <td>To build FFmpeg, obtain the source code from the FFmpeg project. To build libav, obtain the source code from the libav project. Configure the build with --enable -shared so that it builds the necessary shared object library (.so) files. If required, you can also configure to enable or disable particular encoding/decoding libraries. When you build Audacity from our source code, it should link to the installed FFmpeg headers.</td>
+      <td>FFmpeg तयार करण्यासाठी, FFmpeg प्रकल्पातून स्त्रोत कोड मिळवा. लिबाव तयार करण्यासाठी, लिबाव प्रकल्पातून स्त्रोत कोड मिळवा. --Enable-shared सह बिल्ड कॉन्फिगर करा जेणेकरून ते आवश्यक सामायिक ऑब्जेक्ट लायब्ररी (.so) फायली तयार करेल. आवश्यक असल्यास, विशिष्ट एन्कोडिंग / डिकोडिंग लायब्ररी सक्षम किंवा अक्षम करण्यासाठी आपण कॉन्फिगर देखील करू शकता. जेव्हा आपण आमच्या स्त्रोत कोडवरून ऑडॅसिटी तयार करता तेव्हा तो स्थापित केलेल्या एफएफम्पेग शीर्षलेखांशी दुवा साधला पाहिजे.</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>70</td>
+      <td>FFmpeg version support</td>
+      <td>FFmpeg आवृत्ती समर्थन</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>71</td>
+      <td>On GNU/Linux only, Audacity 2.1.3 and later supports FFmpeg/libav up to avformat/avcodec 57.x.x, which is compatible with current FFmpeg 3.x.x/libav 12 releases.</td>
+      <td>फक्त जीएनयू / लिनक्सवर ऑडसिटी २.१..3 आणि नंतर एफएफएमपी / लिबॅव्हला अवफॉर्मेट / एव्हकोडेक. 57.एक्स.एक्स पर्यंत समर्थन देते, जे सध्याच्या एफएफएमपीजी g.x.x / लिबाव १२ रीलीझसह सुसंगत आहे.</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>72</td>
+      <td>Audacity 2.0.6 to 2.1.2 (and 2.1.3 and later on Windows and Mac) support only FFmpeg 1.2 to 2.3.x (libav 0.8 to 10).</td>
+      <td>ऑडसिटी 2.0.6 ते 2.1.2 (आणि 2.1.3 आणि नंतर विंडोज आणि मॅक वर) केवळ एफएफम्पेग 1.2 ते 2.3.x (लिबॅव 0.8 ते 10) चे समर्थन करते.</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>73</td>
+      <td>Compiling Audacity against supported FFmpeg/libav: Dynamic loading (as in default Audacity ./configure) enables Libraries Preferences for manual loading of LAME and FFmpeg/libav but requires building against the FFmpeg project.</td>
+      <td>समर्थित एफएफएमपीएग / लिबाव विरूद्ध ऑडॅसिटी संकलित करणे: डायनॅमिक लोडिंग (डीफॉल्ट ऑडॅसिटी. / कॉन्फिग्योर प्रमाणे) एलएएमई आणि एफएफम्पेग / लिबावच्या मॅन्युअल लोडिंगसाठी लायब्ररी प्राधान्ये सक्षम करते परंतु एफएफएमपीजी प्रकल्प विरूद्ध इमारत आवश्यक आहे.</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>74</td>
+      <td>No-longer-supported FFmpeg/libav: Audacity 2.0.6 and later may still build against unsupported FFmpeg/libav (such as FFmpeg 0.8 which is system-installed on Debian Wheezy), but configuring with --disable-dynamic-loading will usually be necessary. This will cause mono WMA files to export with no audio data.</td>
+      <td>यापुढे-समर्थित FFmpeg / libav: ऑडीसिटी 2.0.6 आणि नंतर असमर्थित FFmpeg / libav (जसे की FFmpeg 0.8 जे डेबियन Wheezy वर सिस्टम-इंस्टॉल केलेले आहे) विरूद्ध तयार करू शकते, परंतु - डिस्एबल-डायनेमिक-लोडिंग सह संरचीत करणे सहसा होईल आवश्यक असेल. यामुळे ऑडिओ डेटाशिवाय मोनो डब्ल्यूएमए फायली निर्यात होतील.</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>75</td>
+      <td>See the "Compiling" section in the 2.0.6 or later Release Notes for more guidance.</td>
+      <td>अधिक मार्गदर्शनासाठी 2.0.6 किंवा नंतरच्या प्रकाशन नोट्समधील "कंपाईलिंग" विभाग पहा.</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>76</td>
+      <td>Removal of Libraries Preferences</td>
+      <td>लायब्ररी प्राधान्ये काढणे</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>77</td>
+      <td>Some Linux distributions or versions thereof may package Audacity with MP3 encoding and FFmpeg support already linked dynamically to the relevant system libraries. In these packaged builds there is no need to locate LAME or FFmpeg, so Audacity will have no "Libraries" Preferences.</td>
+      <td>काही लिनक्स वितरणे किंवा त्याची आवृत्त्या एमपी enc एन्कोडिंगसह ऑडेसिटी पॅकेज करू शकतात आणि एफएफएमपीजी समर्थन आधीपासूनच संबंधित सिस्टम लायब्ररीमध्ये गतिकरित्या जोडलेले आहेत. या पॅकेज केलेल्या बिल्ड्समध्ये LAME किंवा FFmpeg शोधण्याची आवश्यकता नाही, म्हणून ऑडसिटीला कोणतीही "लायब्ररी" प्राधान्ये नाहीत.</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>78</td>
+      <td>Users compiling Audacity from source code can similarly remove the "Libraries" Preferences by configuring Audacity with --disable-dynamic-loading. Then build Audacity linked to system LAME and to a system (or locally compiled) version of FFmpeg 1.2 to 3.x.x (libav 0.8 to 12), according to the version of Audacity as described above.</td>
+      <td>स्त्रोत कोडमधून ऑडॅसिटीचे संकलन करणारे वापरकर्ते तसेच --disable-डायनॅमिक-लोडिंगसह ऑडॅसिटी कॉन्फिगर करून "लायब्ररी" प्राधान्ये काढू शकतात. नंतर वर वर्णन केल्याप्रमाणे ऑडॅसिटीच्या आवृत्तीनुसार सिस्टम एलएएमईशी जोडलेली ऑडसिटी बिल्ड करा आणि सिस्टम (किंवा स्थानिकरित्या कंपाईल केलेली) एफएफएमपीजी 1.2 ते 3.x.x (लिबॅव 0.8 ते 12) ची आवृत्ती बनवा.</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>79</td>
+      <td>Locating the FFmpeg library manually</td>
+      <td>FFmpeg लायब्ररी व्यक्तिचलितपणे शोधत आहे</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>80</td>
+      <td>Ubuntu / Debian based packages are often built with dynamic loading disabled. When dynamic loading is disabled, LAME and FFmpeg will be loaded automatically if compatible versions are installed and there will not be a "Libraries" page in Preferences.</td>
+      <td>उबंटू / डेबियन आधारित पॅकेजेस सहसा डायनॅमिक लोडिंग अक्षम केली जातात. जेव्हा डायनॅमिक लोडिंग अक्षम केले असेल, तर सुसंगत आवृत्त्या स्थापित झाल्यास Lame आणि FFmpeg स्वयंचलितपणे लोड केले जाईल आणि प्राधान्यांमध्ये "लायब्ररी" पृष्ठ नसेल.</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>81</td>
+      <td>If you installed FFmpeg while Audacity was running, or if you installed FFmpeg to a non-default location, Audacity will ask you to configure Preferences to locate the FFmpeg library. To do this, click Edit &gt; Preferences... then "Libraries" in the list on the left:</td>
+      <td>ऑडॅसिटी चालू असताना आपण एफएफएमपीएग स्थापित केले असल्यास किंवा डीफॉल्ट नसलेल्या ठिकाणी एफएफएमपीग स्थापित केल्यास ऑडॅसिटी एफएफएमपीई लायब्ररी शोधण्यासाठी प्राधान्ये कॉन्फिगर करण्यास सांगेल. हे करण्यासाठी डावीकडील सूचीत संपादित करा&gt; प्राधान्ये ... वर क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>82</td>
+      <td>As in the image above, the FFmpeg Library Version will say "not found". To correct this:</td>
+      <td>वरील प्रतिमेप्रमाणे, एफएफम्पेग लायब्ररी आवृत्ती "आढळली नाही" म्हणेल. हे दुरुस्त करण्यासाठी:</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>83</td>
+      <td>Click the Locate... button to right of FFmpeg Library:.</td>
+      <td>FFmpeg लायब्ररीच्या उजवीकडे शोधा ... बटणावर क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>84</td>
+      <td>If a "Success" message indicates Audacity has now automatically detected valid FFmpeg libraries and asks if you want to detect them manually, click No, then OK to close Preferences.</td>
+      <td>जर एखादा "यशस्वी" संदेश दर्शवितो की ऑडसिटीने आता आपोआप वैध FFmpeg लायब्ररी आढळल्या आहेत आणि आपल्याला त्या व्यक्तिचलितपणे शोधू इच्छित असल्यास विचारले तर नाही, नंतर प्राधान्ये बंद करण्यास ओके क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>85</td>
+      <td>If the "Locate FFmpeg" dialog appears, click Browse....</td>
+      <td>जर "लोकेट एफएफम्पेग" संवाद दिसून आला तर ब्राउझ करा .... क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>86</td>
+      <td>Navigate to the folder that contains FFmpeg and select the file libavformat.so.55 or other appropriate libavformat version.</td>
+      <td>FFmpeg समाविष्ट असलेल्या फोल्डरवर नॅव्हिगेट करा आणि libavformat.so.55 फाइल किंवा इतर योग्य libavformat आवृत्ती निवडा.</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>87</td>
+      <td>Click Open then OK and OK again to close Preferences.</td>
+      <td>प्राधान्ये बंद करण्यासाठी ओपन नंतर ओके आणि पुन्हा ओके क्लिक करा.</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>88</td>
+      <td>FFmpeg Library Version should now show a set of three version numbers for the sub-libraries of FFmpeg ("F" for libavformat version, "C" for libavcodec version and "U" for libavutil version). If you still see "not found", you may have installed the wrong libraries. Click the Download button to obtain the correct library for your operating system. You can also choose Help &gt; Diagnostics &gt; Show Log... to see diagnostic information about FFmpeg detection.</td>
+      <td>FFmpeg ग्रंथालय आवृत्तीने आता FFmpeg च्या उप-लायब्ररीत तीन आवृत्ती क्रमांकांचा संच दर्शविला पाहिजे (लिबावफॉर्मेट आवृत्तीसाठी "F", libavcodec आवृत्तीसाठी "C" आणि libavutil आवृत्तीसाठी "U"). आपण अद्याप "आढळले नाही" आढळल्यास कदाचित आपण चुकीची लायब्ररी स्थापित केली असेल. आपल्या ऑपरेटिंग सिस्टमसाठी योग्य ग्रंथालय प्राप्त करण्यासाठी डाउनलोड बटणावर क्लिक करा. आपण FFmpeg शोधण्याबद्दल निदान माहिती पाहण्यासाठी मदत&gt; निदान&gt; लॉग दर्शवा ... देखील निवडू शकता.</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>89</td>
+      <td>Reset Audacity Settings on Linux</td>
+      <td>लिनक्स वर ऑडसेट सेटिंग्ज रीसेट करा</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>90</td>
+      <td>As stated in the introduction on this page, simply re-installing Audacity will not clear and reset your Audacity settings for preferences and plug-ins.</td>
+      <td>या पृष्ठावरील प्रास्ताविकात म्हटल्याप्रमाणे, केवळ ऑडसिटीची पुन्हा स्थापना करणे प्राधान्ये आणि प्लगइनसाठी आपली ऑडॅसीटी सेटिंग्ज साफ आणि रीसेट करणार नाही.</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>91</td>
+      <td>The data for these are stored in a folder called audacity-data in ...</td>
+      <td>यासाठी डेटा ऑडसिटी-डेटा नावाच्या फोल्डरमध्ये संग्रहित केला जातो ...</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>92</td>
+      <td>Open the "home" folder (opens "/home/user-name" in the default file browser)</td>
+      <td>डीफॉल्ट फाइल ब्राउझरमध्ये "मुख्यपृष्ठ" फोल्डर उघडा ("मुख्यपृष्ठ / वापरकर्तानाव" उघडेल)</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>93</td>
+      <td>Use Ctrl + H to show hidden folders (works in most common file browsers, or "View menu &gt; Show hidden files")</td>
+      <td>लपविलेले फोल्डर्स दर्शविण्यासाठी Ctrl + H वापरा (बहुतेक सामान्य फाईल ब्राउझरमध्ये कार्य करते किंवा "मेनू पहा&gt; लपलेल्या फायली दर्शवा")</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>94</td>
+      <td>There it is: "./audacity-data"</td>
+      <td>ते तेथे आहे: "./audacity-data"</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>95</td>
+      <td>First you will need to quit Audacity.</td>
+      <td>प्रथम आपल्याला ऑडेसिटी सोडण्याची आवश्यकता असेल.</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>96</td>
+      <td>To completely reset your Audacity settings</td>
+      <td>आपल्या ऑडसिटी सेटिंग्ज पूर्णपणे रीसेट करण्यासाठी</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>97</td>
+      <td>Navigate to that audacity-data folder and delete the entire contents.</td>
+      <td>त्या ऑडॅसीटी-डेटा फोल्डरवर नेव्हिगेट करा आणि संपूर्ण सामग्री हटवा.</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>98</td>
+      <td>Then restart Audacity.</td>
+      <td>नंतर ऑडेसिटी रीस्टार्ट करा.</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>99</td>
+      <td>To reset just your Audacity preferences</td>
+      <td>फक्त आपल्या धोक्याची प्राधान्ये रीसेट करण्यासाठी</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>100</td>
+      <td>Navigate to that audacity-data folder and delete the audacity.cfg file.</td>
+      <td>त्या ऑडसिटी-डेटा फोल्डरवर नेव्हिगेट करा आणि ऑडॅसिटी.सीएफजी फाईल हटवा.</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>101</td>
+      <td>Then restart Audacity.</td>
+      <td>नंतर ऑडेसिटी रीस्टार्ट करा.</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>102</td>
+      <td>To reset just your plug-ins</td>
+      <td>फक्त आपले प्लगइन रीसेट करण्यासाठी</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>103</td>
+      <td>Navigate to that audacity-data folder and delete the:</td>
+      <td>त्या ऑडसिटी-डेटा फोल्डरवर नेव्हिगेट करा आणि हे हटवा:</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>104</td>
+      <td>pluginregistry.cfg file</td>
+      <td>प्लगइनरेगस्ट्री. फाईल</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>105</td>
+      <td>pluginsettings.cfg file</td>
+      <td>प्लगइनसेटिंग्ज. सीएफजी फाइल</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>106</td>
+      <td>Plug-Ins folder</td>
+      <td>प्लग-इन फोल्डर</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>107</td>
+      <td>Then restart Audacity</td>
+      <td>नंतर ऑडेसिटी रीस्टार्ट करा</td>
+    </tr>
+  </tbody>
+</table>
