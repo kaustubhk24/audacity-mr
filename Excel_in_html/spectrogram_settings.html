@@ -36,7 +36,7 @@
       <th>४</th>
       <td>४</td>
       <td>It is possible to temporarily change the Spectrogram settings for any particular Spectrogram track, overiding whatever setting you have in Spectrograms Preferences.</td>
-      <td>स्पेक्ट्रोग्राम प्राधान्यांमध्ये आपल्याकडे असलेल्या कोणत्याही सेटिंगवर ओलांडून कोणत्याही स्पेक्ट्रोग्राम गीतपट्टासाठी स्पेक्ट्रोग्राम समायोजन तात्पुरती बदलणे शक्य आहे.</td>
+      <td>स्पेक्ट्रोग्राम प्राधान्यांमध्ये आपल्याकडे असलेल्या कोणत्याही समयोजनवर ओलांडून कोणत्याही स्पेक्ट्रोग्राम गीतपट्टासाठी स्पेक्ट्रोग्राम समायोजन तात्पुरती बदलणे शक्य आहे.</td>
     </tr>
     <tr>
       <th>५</th>
@@ -96,7 +96,7 @@
       <th>१४</th>
       <td>१४</td>
       <td>The Spectrogram Settings dialog defaults to the "Use Preferences" checkbox being enabled, so on first opening the settings for a track the settings will be as already set in Spectrograms Preferences. Changing a setting in Spectrogram Settings will automatically disable the "Use Preferences" checkbox. Re-enabling the "Use Preferences" checkbox changes the settings in the dialog back to as they are in Spectrograms Preferences.</td>
-      <td>स्पेक्ट्रोग्राम समायोजन संवाद "वापरा प्राधान्ये" चेकबॉक्स सक्षम करण्यावर पूर्वनिर्धारित झाला आहे, म्हणून एखाद्या गीतपट्टासाठी समायोजन उघडण्यापूर्वी समायोजन स्पेक्ट्रोग्राम प्राधान्यांमध्ये आधीपासूनच सेट केल्या जातील. स्पेक्ट्रोग्राम समायोजनमध्ये सेटिंग बदलल्याने स्वयंचलितपणे "वापरा प्राधान्ये" चेकबॉक्स अक्षम होईल. "प्राधान्ये वापरा" चेकबॉक्स पुन्हा सक्षम केल्याने डायलॉगमधील समायोजन स्पेक्ट्रोग्राम प्राधान्यांमध्ये असल्यामुळे त्या परत केल्या जातात.</td>
+      <td>स्पेक्ट्रोग्राम समायोजन संवाद "वापरा प्राधान्ये" चेकबॉक्स सक्षम करण्यावर पूर्वनिर्धारित झाला आहे, म्हणून एखाद्या गीतपट्टासाठी समायोजन उघडण्यापूर्वी समायोजन स्पेक्ट्रोग्राम प्राधान्यांमध्ये आधीपासूनच सेट केल्या जातील. स्पेक्ट्रोग्राम समायोजनमध्ये समयोजन बदलल्याने स्वयंचलितपणे "वापरा प्राधान्ये" चेकबॉक्स अक्षम होईल. "प्राधान्ये वापरा" चेकबॉक्स पुन्हा सक्षम केल्याने डायलॉगमधील समायोजन स्पेक्ट्रोग्राम प्राधान्यांमध्ये असल्यामुळे त्या परत केल्या जातात.</td>
     </tr>
     <tr>
       <th>१५</th>
@@ -186,13 +186,13 @@
       <th>२९</th>
       <td>२९</td>
       <td>Minimum Frequency: This value corresponds to the bottom of the vertical scale in the spectrogram. Frequencies below this value will not be visible. The default value of "०" here will be treated as "१" when using "Spectrogram Logarithmic" view mode because a logarithmic scale cannot start at zero.</td>
-      <td>किमान वारंवारता: हे मूल्य स्पेक्ट्रोग्राममधील अनुलंब स्केलच्या तळाशी संबंधित आहे. या मूल्याच्या खाली वारंवारता दृश्यमान होणार नाहीत. "स्पेक्ट्रोग्राम लोगारिथमिक" व्ह्यू मोडचा वापर करताना येथे "०" चे पूर्वनिर्धारित मूल्य "१" म्हणून समजले जाईल कारण लॉगेरिथमिक स्केल शून्यावर प्रारंभ होऊ शकत नाही.</td>
+      <td>किमान वारंवारता: हे मूल्य स्पेक्ट्रोग्राममधील अनुलंब स्केलच्या तळाशी संबंधित आहे. या मूल्याच्या खाली वारंवारता दृश्यमान होणार नाहीत. "स्पेक्ट्रोग्राम लोगारिथमिक" व्ह्यू पदधतचा वापर करताना येथे "०" चे पूर्वनिर्धारित मूल्य "१" म्हणून समजले जाईल कारण लॉगेरिथमिक स्केल शून्यावर प्रारंभ होऊ शकत नाही.</td>
     </tr>
     <tr>
       <th>३०</th>
       <td>३०</td>
       <td>Maximum Frequency: This value corresponds to the top of the vertical scale. The value can be set to १०० Hz or any higher value. Irrespective of the entered value, the top of the scale will never exceed half the current sample rate of the track (for example, २२०५० Hz if the track rate is ४४१०० Hz) because any given sample rate can only carry frequencies up to half that rate. A good use of this setting is in speech recognition or pitch extraction, where you can hide the visually unimportant highest frequencies and focus on the lower frequencies.</td>
-      <td>जास्तीत जास्त वारंवारता: हे मूल्य अनुलंब स्केलच्या शीर्षाशी संबंधित आहे. मूल्य १०० हर्ट्ज किंवा कोणत्याही उच्च मूल्यावर सेट केले जाऊ शकते. प्रविष्‍ट केलेल्या मूल्याची पर्वा न करता, प्रमाणातील सर्वात वरचा भाग गीतपट्टाच्या सद्य नमुना दरापेक्षा अर्धा कधीही ओलांडू शकणार नाही (उदाहरणार्थ, गीतपट्टाचा दर ४४१०० हर्ट्ज असल्यास २२०५० हर्ट्ज) कारण कोणताही नमुना दर त्या अर्ध्या दरापर्यंत वारंवारता बाळगू शकतो. . या सेटिंगचा चांगला वापर भाषण ओळखणे किंवा पिच एक्सगीतपट्टा्शनमध्ये आहे, जिथे आपण नेत्रहीन महत्त्वाचे नसलेले उच्च वारंवारता लपवू शकता आणि कमी वारंवारतेवर लक्ष केंद्रित करू शकता.</td>
+      <td>जास्तीत जास्त वारंवारता: हे मूल्य अनुलंब स्केलच्या शीर्षाशी संबंधित आहे. मूल्य १०० हर्ट्ज किंवा कोणत्याही उच्च मूल्यावर सेट केले जाऊ शकते. प्रविष्‍ट केलेल्या मूल्याची पर्वा न करता, प्रमाणातील सर्वात वरचा भाग गीतपट्टाच्या सद्य नमुना दरापेक्षा अर्धा कधीही ओलांडू शकणार नाही (उदाहरणार्थ, गीतपट्टाचा दर ४४१०० हर्ट्ज असल्यास २२०५० हर्ट्ज) कारण कोणताही नमुना दर त्या अर्ध्या दरापर्यंत वारंवारता बाळगू शकतो. . या समयोजनचा चांगला वापर भाषण ओळखणे किंवा पिच एक्सगीतपट्टा्शनमध्ये आहे, जिथे आपण नेत्रहीन महत्त्वाचे नसलेले उच्च वारंवारता लपवू शकता आणि कमी वारंवारतेवर लक्ष केंद्रित करू शकता.</td>
     </tr>
     <tr>
       <th>३१</th>
@@ -216,7 +216,7 @@
       <th>३४</th>
       <td>३४</td>
       <td>If the display has too much "white", decrease this value.</td>
-      <td>जर डिस्प्लेमध्ये बरेच "पांढरे" असतील तर हे मूल्य कमी करा.</td>
+      <td>जर प्रदर्शनमध्ये बरेच "पांढरे" असतील तर हे मूल्य कमी करा.</td>
     </tr>
     <tr>
       <th>३५</th>
