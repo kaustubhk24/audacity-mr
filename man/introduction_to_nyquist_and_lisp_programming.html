@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>नायक्विस्ट आणि लिस्प प्रोग्रामिंगचा परिचय -ओड्यासिटीमहितीपुस्तिका</title>
+<title>Introduction to Nyquist and Lisp Programming -ओड्यासिटी महितीपुस्तिका</title>
 
 
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content="">
+<meta name="ResourceLoaderDynamicStyles" content=""/>
 
-<meta name="generator" content="MediaWiki 1.28.2">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी विकास महितीपुस्तिका (इं)">
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Introduction_to_Nyquist_and_Lisp_Programming rootpage-Introduction_to_Nyquist_and_Lisp_Programming skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,381 +25,382 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Nyquist आणि लिस्प प्रोग्रामिंगची ओळख</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Introduction to Nyquist and Lisp Programming</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ओ श्रीमती विकास महितीपुस्तिका</div>
+					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका पासून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a> , <a href="https://alphamanual.audacityteam.org/man/Introduction_to_Nyquist_and_Lisp_Programming#searchInput">शोध</a></div>
+										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Introduction_to_Nyquist_and_Lisp_Programming#searchInput">शोध</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">नायक्विस्ट <a rel="nofollow" class="external text" href="https://www-2.cs.cmu.edu/%7Erbd/">कच्चाजर बी. डॅन्नेनबर्ग</a> यांनी लिहिलेले होते आणि ध्वनी संश्लेषण आणि विश्लेषणासाठी एमआयडीआय, ध्वनी ध्वनीमुद्रण आणि पुनम्रुद्रण, धारीका आय / ओ, ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग, प्रोधारीकािंग, डिबगिंग आणि बरेच काही समर्थित म्हणून संपूर्ण प्रोग्रामिंग भाषा म्हणून वापरण्याचा त्यांचा हेतू होता . ओड्यासिटी केवळ न्यक्विस्टच्या कार्यक्षमतेचा उपसंच वापरते, आपल्याला साधी Nyquist कार्ये करण्याची आणि ध्वनी डेटावर प्रक्रिया करण्यासाठी त्यांचा वापर करण्याची परवानगी देते. ओड्यासिटीमध्ये एनक्यूइस्ट कोड डीबग करण्यासाठी कोणतेही समर्थन समाविष्ट नाही, म्हणून जर आपण एक गुंतागुंतीचे प्लग-इन लिहिण्याचा प्रयत्न करीत असाल तर आपल्याला Nyquist ची संपूर्ण आवृत्ती मिळवणे आणि तेथे विकसित करणे सुलभ वाटेल, तर त्यास ओड्यासिटी प्लग-इनमध्ये रूपांतरित करा. . कार्केगी मेलॉन युनिव्हर्सिटी संगणक संगीत प्रकल्पातून Nyquist उपलब्ध आहे. आपण येथून संपूर्ण Nyquist डाउनलोड करू शकता <a rel="nofollow" class="external text" href="https://www-2.cs.cmu.edu/%7Emusic/music.software.html">सीएमयू संगणक संगीत प्रकल्प सॉफ्टवेअर</a>. </div>
-<div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
+<div class="intro">Nyquist was written by <a rel="nofollow" class="external text" href="https://www-2.cs.cmu.edu/%7Erbd/">Roger B. Dannenberg</a> and was intended to be used as a complete programming language for audio synthesis and analysis, with support for MIDI, audio recording and playback, file I/O, object-oriented programming, profiling, debugging and more. Audacity uses only a subset of Nyquist’s functionality, allowing you to take simple Nyquist functions and use them to process audio data. Audacity doesn’t include any support for debugging Nyquist code, so if you are trying to write a complicated plug-in, you may find it easier to get the full version of Nyquist and develop there, then turn it into an Audacity plug-in. Nyquist is available from the Carnegie Mellon University Computer Music Project.
+You can download the full Nyquist from here <a rel="nofollow" class="external text" href="https://www-2.cs.cmu.edu/%7Emusic/music.software.html">CMU Computer Music Project Software</a>. </div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Nyquist"><span class="tocnumber">1 </span> <span class="toctext">Nyquist</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Nyquist"><span class="tocnumber">1</span> <span class="toctext">Nyquist</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Lisp"><span class="tocnumber">1.1 </span> <span class="toctext">लिस्प</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Lisp_function_reference"><span class="tocnumber">१.२ </span> <span class="toctext">लिस्प कार्ये संदर्भ</span></a>
+<li class="toclevel-2 tocsection-2"><a href="#Lisp"><span class="tocnumber">1.1</span> <span class="toctext">Lisp</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Lisp_function_reference"><span class="tocnumber">1.2</span> <span class="toctext">Lisp function reference</span></a>
 <ul>
-<li class="toclevel-3 tocsection-4"><a href="#Math_functions"><span class="tocnumber">१.२.१ </span> <span class="toctext">गणित कार्ये</span></a></li>
-<li class="toclevel-3 tocsection-5"><a href="#Math_Examples"><span class="tocnumber">१.२.२ </span> <span class="toctext">गणित उदाहरणे</span></a></li>
-<li class="toclevel-3 tocsection-6"><a href="#List_functions"><span class="tocnumber">१.२..3 </span> <span class="toctext">यादी कार्ये</span></a></li>
-<li class="toclevel-3 tocsection-7"><a href="#Conditional_Expressions"><span class="tocnumber">१.२.. </span> <span class="toctext">सशर्त अभिव्यक्ती</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Math_functions"><span class="tocnumber">1.2.1</span> <span class="toctext">Math functions</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Math_Examples"><span class="tocnumber">1.2.2</span> <span class="toctext">Math Examples</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#List_functions"><span class="tocnumber">1.2.3</span> <span class="toctext">List functions</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Conditional_Expressions"><span class="tocnumber">1.2.4</span> <span class="toctext">Conditional Expressions</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-8"><a href="#Links"><span class="tocnumber">2 </span> <span class="toctext">दुवे</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Links"><span class="tocnumber">2</span> <span class="toctext">Links</span></a></li>
 </ul>
 </div>
 
 <h2><span class="mw-headline" id="Nyquist">Nyquist</span></h2>
-<p>ऑयडीसिटी आपला स्वतःचा प्लग-इन प्रभाव लिहिण्यासाठी Nyquist प्रोग्रामिंग भाषा वापरण्याची परवानगी देतो. व्हीएसटी आणि एलएडीएसपीए प्लगइनच्या विपरीत, न्यक्विस्ट प्लगइन सामान्य मजकूर संपादकाचा वापर करुन लिहिले जाऊ शकतात आणि ते संकलित करण्याची आवश्यकता नाही.
-</p><p>Nyquist लिस्प सिंटॅक्स आणि एसएएल नावाच्या अधिक पारंपारिक वाक्यरचना दोन्हीचे समर्थन करते. 1.3.8 पूर्वीची ओड्यासिटी आवृत्त्या केवळ लिस्पला समर्थन देतात, परंतु सद्य ओड्यासिटी 2.0 मालिका लिस्प आणि एसएएल दोघांनाही समर्थन देते. ओड्यासिटीसह वापरासाठी प्लग-इन्स लिहिण्यासाठी आपल्या ओड्यासिटीच्या आवृत्तीसाठी प्राधान्य आणि योग्य सिंटॅक्ससाठी योग्य न्यक्विस्ट महितीपुस्तिका निवडा:
+<p>Nyquist allows you to use the Nyquist programming language to write your own plug-in effects for Audacity. Unlike VST and LADSPA plug-ins, Nyquist plug-ins can be written using an ordinary text editor and don’t need to be compiled.
+</p><p>Nyquist supports both a Lisp syntax and a more conventional syntax called SAL. Audacity versions prior to 1.3.8 only support Lisp, but the current Audacity 2.0 series supports both Lisp and SAL. To write plug-ins for use with Audacity, choose the appropriate Nyquist Manual for your version of Audacity and preferred syntax:
 </p>
-<ul><li> <a rel="nofollow" class="external text" href="http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/manual/home.html">Nyquist आवृत्ती 2.37 महितीपुस्तिका</a> - संपूर्णपणे लिस्प वाक्यरचना वापरुन</li>
-<li> <a rel="nofollow" class="external text" href="https://www.cs.cmu.edu/%7Erbd/doc/nyquist/">Nyquist 3.1x संदर्भ महितीपुस्तिका</a> - नवीनतम Nyquist महितीपुस्तिका (मुख्यतः एसएएल वाक्यरचना वापरुन).</li></ul>
-<p>लक्षात ठेवा ओडेसिटीसह वापरण्यासाठी आपल्याला साधे प्लग-इन लिहिण्यासाठी Nyquist डाउनलोड करण्याची आवश्यकता नाही. आपल्याला लिस्प आणि २.3737 महितीपुस्तिकासह कार्य करण्यासाठी आवश्यक असलेल्या सर्व मूलभूत सूचना खाली आहेत. आपण एसएएल देखील एक्सप्लोर करू इच्छित असल्यास आणि ओड्यासिटी मधील नवीनतम न्युक्विस्ट वैशिष्ट्यांसाठी , <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/">विकीवर </a><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist_Documentation">Nyquist डॉक्युमेंटेशन</a> पहा .
-<a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/"></a></p>
-<h3><span class="mw-headline" id="Lisp">लिस्प</span></h3>
-<p>Nyquist लिस्पवर आधारित आहे. जर आपण आधी लिस्पमध्ये प्रोग्राम केलेले असेल तर आपण हा विभाग वगळू शकता किंवा पुढील पृष्ठावर जाऊ <a href="programming_in_nyquist.html" title="Nyquist मध्ये प्रोग्रामिंग">शकताः प्रोग्रामिंग नायक्विस्टमध्ये</a> . अन्यथा, लिस्पची येथे एक अत्यंत संक्षिप्त ओळख आहे:
-</p><p>लिस्प (आणि म्हणून न्यक्विस्ट) मध्ये, प्रत्येक गोष्ट एस-एक्सप्रेशन असते, जी केवळ स्पेसद्वारे विभक्त आणि कंसात बंद केलेल्या टोकनची (शब्द) यादी आहे. एस-एक्सप्रेशन मधील कार्येचे नाव नेहमीच प्रथम टोकन असते आणि इतर सर्व टोकन या कार्येचे वितर्क असतात. येथे एक साधे उदाहरण आहे:
+<ul><li> <a rel="nofollow" class="external text" href="http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/manual/home.html">Nyquist version 2.37 Manual</a> – entirely using Lisp syntax </li>
+<li> <a rel="nofollow" class="external text" href="https://www.cs.cmu.edu/%7Erbd/doc/nyquist/">Nyquist 3.1x Reference Manual</a> – the latest Nyquist Manual (mostly using SAL syntax). </li></ul>
+<p>Note that you don’t need to download Nyquist in order to write simple plug-ins to use with Audacity. All the basic instructions you need to work with Lisp and the 2.37 Manual are below. If you want to explore SAL as well, and for the latest Nyquist features in Audacity, see <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist_Documentation">Nyquist Documentation</a> on the <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/">विकी</a>.
 </p>
-<pre>  (सेटफ क्षेत्र (* 3.14159 (एक्सप्ट त्रिज्या 2)))
+<h3><span class="mw-headline" id="Lisp">Lisp</span></h3>
+<p>Nyquist is based on Lisp. If you have programmed in Lisp before, you can skim this section or go directly to the next page: <a href="programming_in_nyquist.html" title="Programming in Nyquist">Programming in Nyquist</a> . Otherwise, here’s an extremely brief introduction to Lisp:
+</p><p>In Lisp (and therefore Nyquist), everything is an S-Expression, which is just a list of tokens (words) separated by whitespace and enclosed in parentheses. The name of the function is always the first token in an S-Expression, and all of the other tokens are arguments to this function. Here’s a simple example:
+</p>
+<pre>  (setf area (* 3.14159 (expt radius 2)))
 </pre>
-<p>चला या उदाहरणाचे खंडन करूया. बाहेरील एस-अभिव्यक्तीचे तीन सदस्य आहेत. पहिले <tt>सेफ</tt> , कार्येचे नाव आहे (ते सेट-फील्डसाठी वापरले जाते). व्हेरिएबलला व्हॅल्यू देण्यासाठी <tt>सेटफचा</tt> वापर केला जातो. (इतर समान कार्ये, जसे आहेत <tt>संच</tt> आणि <tt>setq</tt> , पण <tt>setf</tt> म्हणून आम्ही आमच्या उदाहरणे वापरू शकाल एक आहे, सर्वात शक्तिशाली आहे.) नंतर <tt>setf</tt> येतो <tt>क्षेत्र</tt> जे आम्ही सेट आहोत चल नाव आहे, . पुढे या व्हेरिएबलला असाइन करण्यासाठी व्हॅल्यू मिळेल, जे या प्रकरणात आणखी एक एस-एक्सप्रेशन आहे.
-</p><p>लिस्पकडे मॅथ कार्येसाठी कोणतेही विशेष ऑपदरर नसतात - ते प्रत्येकाच्या सारख्या सर्व कार्ये असतात, <i>प्रत्यय</i> नोटेशन वापरुन कार्येचे नाव (किंवा ऑपदरर) युक्तिवादापूर्वी येते. तर 3 आणि 7 च्या उत्पादनाऐवजी लिस्पमध्ये (* 3 7) लिहा. Nyquist मध्ये, <tt>एक्सप्ट</tt> (घातांक) कार्ये दुसर्&zwj;या वितर्क च्या सामर्थ्यावर आपला पहिला युक्तिवाद दर्शवितो. म्हणून <tt>(* 14.१14१15 ((एक्सप्ट रेडियस २))</tt> म्हणजे <tt>त्रिज्याच्या</tt> चौकोनच्या तुलनेत , किंवा वर्तुळाच्या क्षेत्राचे सूत्र.
-</p><p>प्रत्येक वेळी या पूर्ण अभिव्यक्तीवर टाइप करण्याऐवजी आपण वर्तुळाच्या क्षेत्रासाठी कार्ये परिभाषित करूया, ज्यावेळेस आम्हाला प्रत्येक वेळी कॉल करता येईलः
+<p>Let’s break down this example. The outermost S-expression has three members. The first one, <tt>setf</tt>, is the name of the function (it stands for set-field). <tt>setf</tt> is used to assign a value to a variable. (There are other similar functions, like <tt>set</tt> and <tt>setq</tt>, but <tt>setf</tt> is the most powerful, so it’s the one we’ll use in our examples.) After <tt>setf</tt> comes <tt>area</tt>, which is the name of the variable we’re going to set. Next comes the value to assign to this variable, which in this case is another S-expression.
+</p><p>Lisp doesn’t have any special operators for Math functions – they’re all functions like everything else, using <i>prefix </i>notation, where the name of the function (or operator) comes before its arguments. So instead of 3*7 for the product of 3 and 7, in Lisp you would write (* 3 7). In Nyquist, the <tt>expt</tt> (exponent) function raises its first argument to the power of the second argument. Therefore <tt>(* 3.14159 (expt radius 2))</tt> means 3.14159 times the square of <tt>radius</tt>, or the formula for the area of a circle.
+</p><p>Rather than typing in this full expression every time, let’s define a function for the area of the circle, that we can call every time we need it:
 </p>
-<pre>(सर्कलिया (त्रिज्या))<font>
-  (* 3.14159 (एक्सपोर्ट त्रिज्या 2%)))</pre>
-<p><tt>Defun</tt> कार्य नवीन कार्य परिभाषित करण्यासाठी वापरले जाते. प्रथम युक्तिवाद कार्येचे नाव आहे, या प्रकरणात <tt>मंडळामध्ये</tt> . दुसरा युक्तिवाद म्हणजे कार्य करण्यासाठी परिभाषित केलेल्या वितर्कांची यादी - हे अशा काही प्रकरणांपैकी एक आहे जेथे आपल्याकडे एस-एक्सप्रेशन आहे ज्याचे कार्ये कॉल म्हणून अर्थ लावले जात नाही. शेवटी अंतिम अभिव्यक्ती कार्येचे मूल्य आहे. जर आपल्याला त्रिज्या <tt>r च्या</tt> वर्तुळाचे क्षेत्रफळ मोजायचे असेल तर आपल्याला फक्त गणना करणे आवश्यक आहेः
+<pre>(defun circlearea (radius)
+  (* 3.14159 (expt radius 2)))</pre>
+<p>The <tt>defun</tt> function is used to define a new function. The first argument is the name of the function, in this case <tt>circlearea</tt>. The second argument is a list of arguments to the function to be defined – this is one of the few cases where you have an S-expression that is not interpreted as a function call. Finally the last expression is the value of the function. Now if we want to compute the area of a circle of radius <tt>r</tt>, we just need to compute:
 </p>
-<pre>  (सेटफ क्षेत्र (वर्तुळ क्षेत्र आर))
+<pre>  (setf area (circlearea r))
 </pre>
-<p>एस-अभिव्यक्ती ही केवळ सूचीचे प्रतिनिधित्व असते. लिस्प सर्वकाही प्रतिनिधित्व करण्यासाठी याद्या वापरतात (एलआयएसपी नाव एलआयएसटी प्रोसेसिंग भाषेमधून आले आहे), म्हणून याद्या कशा हाताळता येतील हे जाणून घेणे उपयुक्त ठरेल. व्हेरिएबलला नंबरची यादी देऊन सुरूवात करू. आपण हे जोरदार करू शकत नाही:
+<p>An S-expression is just a representation of a list. Lisp uses lists to represent just about everything (the name LISP comes from LISt Processing language), so it’s helpful to know how to manipulate lists. Let’s start by assigning a list of numbers to a variable. You can’t quite do this:
 </p>
-<pre>  (सेटफ मायलिस्ट (1 2 3 4 5)) &lt;- त्रुटी!
+<pre>  (setf mylist (1 2 3 4 5))  &lt;--  error!
 </pre>
-<p>हे कार्य करत नाही याचे कारण असे की जेव्हा जेव्हा नेक्विस्ट एस-एक्सप्रेशन पाहतो तेव्हा आपण कार्ये म्हणून त्याचे मूल्यांकन करण्याचा प्रयत्न करतो जोपर्यंत आपण त्यास अन्यथा सांगत नाही. “1” नावाचे कोणतेही कार्य नाही जे वितर्क घेते <tt>(2 3 4 5)</tt> , यामुळे एक त्रुटी निर्माण होईल. लिस्पला सांगण्यासाठी की आपण एस-अभिव्यक्तीस अक्षरशः वागू इच्छित आहात आणि त्याचे कार्य म्हणून मूल्यांकन करू इच्छित नाही, आपण ते <i>उद्धृत</i> करता. Nyquist मध्ये, आपण यापूर्वी एकच कोटेशन चिन्ह ठेवून सूचीचे कोट लावू शकता:
+<p>The reason this doesn’t work is that whenever Nyquist sees an S-expression, it tries to evaluate it as a function unless you tell it otherwise. Since there’s no function named “1” that takes arguments <tt>(2 3 4 5)</tt>, this will generate an error. To tell Lisp that you want to treat an S-expression literally, and not to evaluate it as a function, you <i>quote</i> it. In Nyquist, you can quote a list by putting a single quotation mark before it, like this:
 </p>
-<pre>  (सेटफ मायलिस्ट '(1 2 3 4 5))
+<pre>  (setf mylist '(1 2 3 4 5))
 </pre>
-<p>Nyquist एक <tt>यादी</tt> कार्य देखील प्रदान करते जे आपण याद्या तयार करण्यासाठी वापरू शकता - जर सूचीतील काही घटक कार्ये असतील तर हे उपयुक्त आहे:
+<p>Nyquist also provides a <tt>list</tt> function that you can use to construct lists – this is useful if some of the elements of the list are functions:
 </p>
-<pre>  (सेटफ मायलिस्ट (यादी 1 2 3 4 (स्क्वेअर 25)))
+<pre>  (setf mylist (list 1 2 3 4 (sqrt 25)))
 </pre>
-<p>गोष्टी यादीतून काढून टाकण्यासाठी आपण <tt>प्रथम</tt> आणि <tt>उर्वरित</tt> कार्ये वापरू शकता . (पारंपारिकरित्या, त्यांना अनुक्रमे <tt>कार</tt> आणि <tt>सीडीआर</tt> म्हटले गेले , परंतु <tt>प्रथम</tt> आणि <tt>उर्वरीत</tt> लक्षात ठेवणे खूप सोपे आहे. दोन्ही नावे सेट्स नेक्विस्टमध्ये समर्थित आहेत.) <tt>(प्रथम मायलिस्ट)</tt> आउटपुट 1 आहे आणि <tt>(बाकीची मायलिस्ट)</tt> आउटपुट यादी आहे <tt>(2 3 4 5)</tt> . तर सूचीचा दुसरा घटक म्हणजे <tt>(प्रथम (बाकीची माझी</tt> यादी <tt>))</tt> .
-</p><p><br>
+<p>To get things off of a list, you can use the <tt>first</tt> and <tt>rest</tt> functions. (Traditionally, these were called <tt>car</tt> and <tt>cdr</tt>, respectively, but<tt>first</tt> and <tt>rest</tt> are much easier to remember. Both sets of names are supported in Nyquist.) The output of <tt>(first mylist)</tt> is 1, and the output of <tt>(rest mylist)</tt> is the list <tt>(2 3 4 5)</tt>. So the second element of the list is <tt>(first (rest mylist))</tt>.
+</p><p><br />
 </p>
-<h3><span class="mw-headline" id="Lisp_function_reference">लिस्प कार्ये संदर्भ</span></h3>
-<p>आपल्याला आवश्यक असलेल्या काही मूलभूत लिस्प कार्येची सूची येथे आहे. लिस्प / न्यक्विस्ट कार्येच्या संपूर्ण यादीसाठी, <a rel="nofollow" class="external text" href="http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/manual/home.html">Nyquist आवृत्ती २.37. संदर्भ महितीपुस्तिका पहा</a> .
-</p><p><b>टीपः न्यक्विस्टमधील चिन्हे (व्हेरिएबल नावे आणि कार्ये नावे सारखी) केस-सेन्सेटिव्ह नाहीत. ते अंतर्गत अप्परकेसमध्ये रूपांतरित झाले.</b>
+<h3><span class="mw-headline" id="Lisp_function_reference">Lisp function reference</span></h3>
+<p>Here’s a list of some of the basic lisp functions you might need. For a complete list of Lisp / Nyquist functions, see the <a rel="nofollow" class="external text" href="http://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/manual/home.html">Nyquist version 2.37 Reference Manual</a>.
+</p><p><b>Note: Symbols in Nyquist (like variable names and function names) are not case-sensitive. They are converted to uppercase internally.</b>
 </p>
-<h4><span class="mw-headline" id="Math_functions">गणित कार्ये</span></h4>
+<h4><span class="mw-headline" id="Math_functions">Math functions</span></h4>
 <table border="1" style="border-collapse: collapse; width: 95%;">
 
-<tbody><tr>
-<td align="center"> <b>लिस्प</b>
+<tr>
+<td align="center"> <b>Lisp</b>
 </td>
 <td align="center"> <b>SAL</b>
 </td>
-<td align="center"> <b>वर्णन</b>
+<td align="center"> <b>Description</b>
 </td></tr>
 <tr>
-<td>( <b>+</b> अब)
+<td> (<b>+</b> a b)
 </td>
-<td>ए <b>+</b> बी
+<td> a <b>+</b> b
 </td>
-<td> या व्यतिरिक्त
+<td> addition
 </td></tr>
 <tr>
-<td>( <b>-</b> अब)
+<td> (<b>-</b> a b)
 </td>
-<td>अ <b>-</b> बी
+<td> a <b>-</b> b
 </td>
-<td> वजाबाकी
+<td> subtraction
 </td></tr>
 <tr>
-<td>( <b>*</b> अब)
+<td> (<b>*</b> a b)
 </td>
-<td>अ <b>*</b> बी
+<td> a <b>*</b> b
 </td>
-<td> गुणाकार
+<td> multiplication
 </td></tr>
 <tr>
-<td>( <b>/</b> अब)
+<td> (<b>/</b> a b)
 </td>
-<td>ए <b>/</b> बी
+<td> a <b>/</b> b
 </td>
-<td> विभागणी
+<td> division
 </td></tr>
 <tr>
-<td>( <b>चे टोक शिखर कापून टाकून आखूड करणे </b> <i>expr</i> )
+<td> (<b>truncate</b> <i>expr</i>)
 </td>
-<td> <b>काटछाट</b> ( <i>कालबाह्यता</i> )
+<td> <b>truncate</b> (<i>expr</i>)
 </td>
-<td> पूर्णांक पूर्णांक (मजला)
+<td> round down expr to integer (floor)
 </td></tr>
 <tr>
-<td>( <b>तरंगणे </b> <i>एक्सप्रेस</i> )
+<td> (<b>float</b> <i>expr</i>)
 </td>
-<td> <b>तरंगणे</b> ( <i>एक्सप्रेस</i> )
+<td> <b>float</b> (<i>expr</i>)
 </td>
-<td> तरंगणारा पॉइंट पर्यंत पूर्णांक
+<td> integer expr to floating-point
 </td></tr>
 <tr>
-<td>( <b>रीम</b> अब ...)
+<td> (<b>rem</b> a b ...)
 </td>
-<td> <b>रीम</b> (ए बी ...)
+<td> <b>rem</b> (a b...)
 </td>
-<td> संख्या यादी उर्वरित
+<td> remainder of a list of numbers
 </td></tr>
 <tr>
-<td>( <b>मिनिट</b> अब ...)
+<td> (<b>min</b> a b ...)
 </td>
-<td> <b>मिनिट</b> (अब ...)
+<td> <b>min</b> (a b ...)
 </td>
-<td> किमान
+<td> minimum
 </td></tr>
 <tr>
-<td>( <b>कमाल</b> अब ...)
+<td> (<b>max</b> a b ...)
 </td>
-<td> <b>कमाल</b> (अब ...)
+<td> <b>max</b> (a b ...)
 </td>
-<td> जास्तीत जास्त
+<td> maximum
 </td></tr>
 <tr>
-<td>( <b>एबीएस </b> <i>एक्स्प्रेस</i> )
+<td> (<b>abs</b> <i>expr</i>)
 </td>
-<td> <b>एबीएस</b> ( <i>एक्सप्र</i> )
+<td> <b>abs</b> (<i>expr</i>)
 </td>
-<td> संख्येचे परिपूर्ण मूल्य
+<td> absolute value of a number
 </td></tr>
 <tr>
-<td>( <b>यादृच्छिक</b> एन)
+<td> (<b>random</b> n)
 </td>
-<td> <b>यादृच्छिक</b> (एन)
+<td> <b>random</b> (n)
 </td>
-<td> 1 आणि n-1 दरम्यान यादृच्छिक पूर्णांक
+<td> random integer between 1 and n-1
 </td></tr>
 <tr>
-<td>( <b>रॅन्डम</b> )
+<td> (<b>rrandom</b>)
 </td>
-<td> <b>रॅन्डम</b> ()
+<td> <b>rrandom</b> ()
 </td>
-<td> 0 ते 1 दरम्यान तरंगणारा पॉइंट यादृच्छिक
+<td> Floating-point random between 0 and 1
 </td></tr>
 <tr>
-<td>( <b>पाप </b> <i>कालावधी</i> )
+<td> (<b>sin</b> <i>expr</i>)
 </td>
-<td> <b>पाप</b> ( <i>कालावधी</i> )
+<td> <b>sin</b> (<i>expr</i>)
 </td>
-<td> साइन
+<td> sine
 </td></tr>
 <tr>
-<td>( <b>कारण </b> <i>एक्सप्रेस</i> )
+<td> (<b>cos</b> <i>expr</i>)
 </td>
-<td> <b>cos</b> ( <i>expr</i> )
+<td> <b>cos</b> (<i>expr</i>)
 </td>
-<td> कोसाइन
+<td> cosine
 </td></tr>
 <tr>
-<td>( <b>टॅन </b> <i>एक्सप्रेस</i> )
+<td> (<b>tan</b> <i>expr</i>)
 </td>
-<td> <b>टॅन</b> ( <i>एक्सप्रेस</i> )
+<td> <b>tan</b> (<i>expr</i>)
 </td>
-<td> स्पर्शिका
+<td> tangent
 </td></tr>
 <tr>
-<td>( <b>Expt </b> <i>expr</i> )
+<td> (<b>expt</b> <i>expr</i>)
 </td>
-<td> <b>expt</b> ( <i>expr</i> )
+<td> <b>expt</b> (<i>expr</i>)
 </td>
-<td> घातांक (अ च्या शक्तीसाठी)
+<td> exponent (a to the power of b)
 </td></tr>
 <tr>
-<td>( <b>वर्ग </b> <i>मीटर</i> )
+<td> (<b>sqrt</b> <i>expr</i>)
 </td>
-<td> <b>चौरस</b> ( <i>एक्सप्रेस</i> )
+<td> <b>sqrt</b> (<i>expr</i>)
 </td>
-<td> वर्गमुळ
+<td> square root
 </td></tr>
 <tr>
-<td>( <b>&lt;</b> अब्राहम)
+<td> (<b>&lt;</b> a b)
 </td>
-<td>अ <b>&lt;</b> b
+<td> a <b>&lt;</b> b
 </td>
-<td> b पेक्षा कमी चाचणी घ्या
+<td> test for a less than b
 </td></tr>
 <tr>
-<td>( <b>&lt;=</b> अब्राहम)
+<td> (<b>&lt;=</b> a b)
 </td>
-<td>a <b>&lt;=</b> बी
+<td> a <b>&lt;=</b> b
 </td>
-<td> पेक्षा कमी किंवा त्या साठी चाचणी b
+<td> test for a less than or equal to b
 </td></tr>
 <tr>
-<td>( <b>&gt;</b> अब)
+<td> (<b>&gt;</b> a b)
 </td>
-<td>a <b>&gt;</b> बी
+<td> a <b>&gt;</b> b
 </td>
-<td> ब पेक्षा मोठे साठी चाचणी
+<td> test for a greater than b
 </td></tr>
 <tr>
-<td>( <b>&gt; =</b> अब)
+<td> (<b>&gt;=</b> a b)
 </td>
-<td>a <b>&gt; =</b> बी
+<td> a <b>&gt;=</b> b
 </td>
-<td> या पेक्षा मोठे किंवा समान साठी चाचणी
+<td> test for a greater than or equal to b
 </td></tr>
 <tr>
-<td>( <b>=</b> अब)
+<td> (<b>=</b> a b)
 </td>
-<td>a <b>=</b> बी
+<td> a <b>=</b> b
 </td>
-<td> समानतेची परीक्षा
+<td> test for equality
 </td></tr>
 <tr>
-<td>( <b>/ =</b> अब)
+<td> (<b>/=</b> a b)
 </td>
-<td>a <b>/ =</b> बी
+<td> a <b>/=</b> b
 </td>
-<td> असमानतेची परीक्षा
+<td> test for inequality
 </td></tr>
-</tbody></table>
-<p><br>
+</table>
+<p><br />
 </p>
-<h4><span class="mw-headline" id="Math_Examples">गणिताची उदाहरणे</span></h4>
-<p>x ची एन-व्या शक्ती:
+<h4><span class="mw-headline" id="Math_Examples">Math Examples</span></h4>
+<p>n-th power of x:
 </p>
-<pre>शक्ती (x, n) ;; एसएएल मध्ये<font>
- (पॉवर एक्सएन) ;; एलआयएसपी मध्ये<font>
- <font>
+<pre> power(x, n)&#160;;; in SAL
+ (power x n)&#160;;; in LISP
+ 
 </pre>
-<p>संख्येचे एन-व्या मूळ:
+<p>n-th root of a number:
 </p>
-<pre>उर्जा (x, 1.0 / n) ;; एसएएल मध्ये<font>
- (उर्जा x (/ 1.0 एन)) ;; एलआयएसपी मध्ये<font>
+<pre> power(x, 1.0 / n)&#160;;; in SAL
+ (power x (/ 1.0 n))&#160;;; in LISP 
 </pre>
-<p>ध्वनीचे एन-व्या मूळ:
+<p>n-th root of a sound s:
 </p>
-<pre>रिटर्न एस-एक्सप (एस-लॉग (एस) * (1.0 / एन)) ;; एसएएल मध्ये<font>
- (एस-एक्सप (मल्ट (एस-लॉग एन)) (/ 1.0 एन)) ;; एलआयएसपी मध्ये<font>
+<pre> return s-exp(s-log(s) * (1.0 / n))&#160;;; in SAL
+ (s-exp (mult (s-log s) (/ 1.0 n)))&#160;;; in LISP
 </pre>
-<p>एक्स आणि एन दोन आवाजांसह एन-थ रूट:
+<p>n-th root with two sounds x and n:
 </p>
-<pre>रिटर्न एस-एक्सप (एस-लॉग (एक्स) * एस-रीसिप (एन)) ;; एसएएल मध्ये<font>
- (एस-एक्सप (मल्ट (एस-लॉग एक्स) (एस-रीप एन)))) ;; एलआयएसपी मध्ये<font>
+<pre> return s-exp(s-log(x) * s-recip(n)) &#160;;; in SAL
+ (s-exp (mult (s-log x) (s-recip n)))&#160;;; in LISP
 </pre>
-<h4><span class="mw-headline" id="List_functions">कार्ये यादी करा</span></h4>
+<h4><span class="mw-headline" id="List_functions">List functions</span></h4>
 <table border="1" style="border-collapse: collapse; width: 95%;">
-<tbody><tr>
-<th> लिस्प
+<tr>
+<th> Lisp
 </th>
 <th> SAL
 </th>
-<th> वर्णन
+<th> Description
 </th></tr>
 <tr>
-<td>( <b>प्रथम </b> <i>कालावधी</i> )
+<td> (<b>first</b> <i>expr</i>)
 </td>
-<td> <b>प्रथम</b> ( <i>कालावधी</i> )
+<td> <b>first</b> (<i>expr</i>)
 </td>
-<td> यादीचा पहिला घटक (कार)
+<td> first element of a list (car)
 </td></tr>
 <tr>
-<td>( <b>बाकीची </b> <i>मुदतवाढ</i> )
+<td> (<b>rest</b> <i>expr</i>)
 </td>
-<td> <b>विश्रांती</b> ( <i>संप</i> )
+<td> <b>rest</b> (<i>expr</i>)
 </td>
-<td> उर्वरित यादी (सीडीआर)
+<td> rest of the list (cdr)
 </td></tr>
 <tr>
-<td>( <b>रिव्हर्स </b> <i>एक्सप्रेस</i> )
+<td> (<b>reverse</b> <i>expr</i>)
 </td>
-<td> <b>उलट</b> ( <i>कालावधी</i> )
+<td> <b>reverse</b> (<i>expr</i>)
 </td>
-<td> यादी उलट करा
+<td> reverse a list
 </td></tr>
 <tr>
-<td>( <b>यादी </b> <i>expr</i> ...)
+<td> (<b>list</b> <i>expr</i> ...)
 </td>
-<td> <b>यादी</b> ( <i>Expr</i> ...)
+<td> <b>list</b> (<i>expr</i>...)
 </td>
-<td> अभिव्यक्तींची यादी तयार करा
+<td> construct a list of expressions
 </td></tr>
 <tr>
-<td>( <b>जोडा </b> <i>expr</i> ...)
+<td> (<b>append</b> <i>expr</i> ...)
 </td>
-<td> <b>परिशिष्ट</b> ( <i>Expr</i> ...)
+<td> <b>append</b> (<i>expr</i>...)
 </td>
-<td> दोन किंवा अधिक याद्या जोडा
+<td> append two or more lists
 </td></tr>
 <tr>
-<td>( <b>लांबी </b> <i>वाढवणे</i> )
+<td> (<b>length</b> <i>expr</i>)
 </td>
-<td> <b>लांबी</b> ( <i>expr</i> )
+<td> <b>length</b> (<i>expr</i>)
 </td>
-<td> यादीची लांबी
+<td> length of a list
 </td></tr>
 <tr>
-<td>( <b>Maplist </b> <i>fcn list1 यादी</i> ...)
+<td> (<b>maplist</b> <i>fcn list1 list</i>...)
 </td>
-<td> <b>maplist</b> ( <i>fcn list1 यादी</i> ...)
+<td> <b>maplist</b> (<i>fcn list1 list</i>...)
 </td>
-<td> यादीतील प्रत्येक घटकाला कार्ये लागू करा
-</td></tr></tbody></table>
-<p><br>
+<td> apply a function to every element in a list
+</td></tr></table>
+<p><br />
 </p>
-<h4><span class="mw-headline" id="Conditional_Expressions">सशर्त अभिव्यक्ती</span></h4>
+<h4><span class="mw-headline" id="Conditional_Expressions">Conditional Expressions</span></h4>
 <table border="1" style="border-collapse: collapse; width: 95%;">
-<tbody><tr>
-<th> लिस्प
+<tr>
+<th> Lisp
 </th>
 <th> SAL
 </th>
-<th> वर्णन
+<th> Description
 </th></tr>
 <tr>
-<td>( <b>जर </b> <i>टेस्ट-एक्सपायर ट्रू-एसएमटी</i> [ <i>खोटे-एसएमटी</i> ])
+<td> (<b>if</b> <i>test-expr true-stmt</i> [<i>false-stmt</i>])
 </td>
-<td> <b>जर </b> <i>चाचणी- </i> <i>एक्सप्रेशन केले </i><b>तर </b> <i>सत्य-एसएमटी</i> [ <b>अन्यथा </b> <i>खोटे-एसएमटी</i> ]
+<td> <b>if</b> <i>test-expr</i> <b>then</b> <i>true-stmt</i> [<b>else</b> <i>false-stmt</i>]
 </td>
-<td> जर टेस्ट-एक्सपायर खरे असेल तर ट्रू-एसएमटीचे मूल्यांकन करेल, अन्यथा चुकीचे-एसएमटीचे मूल्यांकन करेल
+<td> If test-expr is true, evaluates true-stmt, otherwise evaluates false-stmt
 </td></tr>
 <tr>
-<td>( <b>जेव्हा </b> <i>टेस्ट-एक्सपायर स्टेटमेंट</i> )
+<td> (<b>when</b> <i>test-expr statement</i>)
 </td>
-<td> <b>जेव्हा </b> <i>टेस्ट-एक्सपायर स्टेटमेंट</i>
+<td> <b>when</b> <i>test-expr statement</i>
 </td>
-<td> जेव्हा टेस्ट-एक्सपायर खरे असेल तर स्टेटमेंटचे मूल्यांकन करा
+<td> When test-expr is true, evaluate statement
 </td></tr>
 <tr>
-<td>( <b>तोपर्यंत </b> <i>चाचणी-expr विधान</i> )
+<td> (<b>unless</b> <i>test-expr statement</i>)
 </td>
-<td> <b>तोपर्यंत </b> <i>चाचणी-expr विधान</i>
+<td> <b>unless</b> <i>test-expr statement</i>
 </td>
-<td> जेव्हा टेस्ट-एक्सपायर चुकीचे असते तेव्हा स्टेटमेंटचे मूल्यांकन करा
+<td> When test-expr is false, evaluate statement
 </td></tr>
 <tr>
-<td>( <b>स्थिती</b> [( <i>pred1 expr1</i> ) [( <i>pred2 expr2</i> ) ...]])
+<td> (<b>cond</b> [(<i>pred1 expr1</i>) [(<i>pred2 expr2</i>) ... ]])
 </td>
 <td>
 </td>
-<td> जेव्हा प्रेड 1 सत्य असेल, तर एक्सप्रेस 1 चे मूल्यांकन करा, अन्यथा जर प्रेड 2 खरे असेल ...
+<td> When pred1is true, evaluate expr1, else if pred2 is true...
 </td></tr>
 <tr>
-<td>( <b>केस </b> <i>टेस्ट-एक्सप्रेस</i> [( <i>मूल्य विधान</i> ) ...])
+<td> (<b>case</b> <i>test-expr</i> [(<i>value statement</i>) ... ])
 </td>
 <td>
 </td>
-<td> चाचणी-एक्सप्रेसशी जुळणार्&zwj;या पहिल्या मूल्यासाठी विधानाचे मूल्यांकन करा
-</td></tr></tbody></table>
-<h2><span class="mw-headline" id="Links">दुवे</span></h2>
-<p><a href="programming_in_nyquist.html" title="Nyquist मध्ये प्रोग्रामिंग"><b>&gt;</b> &nbsp; Nyquist मध्ये प्रोग्रामिंग</a> <br>
-</p><p><a href="nyquist.html" title="Nyquist"><b>| &lt;</b> Nyquist</a>
+<td> Evaluate statement for the first value that matches test-expr
+</td></tr></table>
+<h2><span class="mw-headline" id="Links">Links</span></h2>
+<p><a href="programming_in_nyquist.html" title="Programming in Nyquist"><b>&gt;</b>&#160; Programming in Nyquist</a> <br />
+</p><p><a href="nyquist.html" title="Nyquist"><b>|&lt;</b> Nyquist</a>
 </p>
 <!-- 
 NewPP limit report
@@ -450,7 +451,7 @@ Transclusion expansion time report (%,ms,calls,template)
 <li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
 <li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
 <li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादिबार</span></a></li>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
 <li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
 </span></a></li>
@@ -466,7 +467,7 @@ Transclusion expansion time report (%,ms,calls,template)
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">अंकात्मक ध्वनी</span></a></li>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
 <li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
