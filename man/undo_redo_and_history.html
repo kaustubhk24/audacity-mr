@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Undo, Redo and History - Audacity Manual</title>
+<title>पूर्ववत करा, पुन्हा करा आणि इतिहास - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
 <!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<meta name="generator" content="MediaWiki 1.28.2">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासिटी विकास माहितीपुस्तिका (इं)">
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+ </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Undo_Redo_and_History rootpage-Undo_Redo_and_History skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,94 +25,94 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Undo, Redo and History</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">  पूर्ववत करा, पुन्हा करा आणि इतिहास  </h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">  ओड्यासिटी विकास माहितीपुस्तिका वरुन  </div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Undo,_Redo_and_History#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">  येथे जा:   <a href="#column-one">  सुचालन  </a>   ,   <a href="https://alphamanual.audacityteam.org/man/Undo,_Redo_and_History#searchInput">  शोध  </a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <div id="undo"></div>
-<h2><span class="mw-headline" id="Undo_and_Redo"><a href="https://alphamanual.audacityteam.org/man/File:Undo.png" class="image"><img alt="Undo.png" src="../m/images/8/8b/undo.png" width="26" height="24" /></a><a href="https://alphamanual.audacityteam.org/man/File:Redo.png" class="image"><img alt="Redo.png" src="../m/images/0/09/redo.png" width="26" height="24" /></a> Undo and Redo</span></h2>
-<div class="intro">Audacity is a forgiving application.  If you're afraid of messing up, relax, because Audacity is designed to let you try something and then undo it if you do not like it, or redo it if you like your first idea after all. This is really the only way to work with audio because it's often hard to judge an <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers">effect</a> or other change in context of the entire project until you do it. <p>Undo/Redo is fast, irrespective of how long the original action took. Use it to listen easily to "before" and "after" versions of your work. </p><p> As you apply more actions, the disk space needed to allow Undo/Redo of those actions grows, but the Undo/Redo space usage is discarded on closing the project. Undo/Redo steps for an open project can be managed in the <a href="#history">History window</a>.</p></div>
-<p>There are four ways to Undo or Redo.
-</p>
-<ul><li> The Undo and Redo choices at the top of <a href="edit_menu.html" title="Edit Menu">Edit Menu</a></li>
-<li> Two buttons in the Edit Toolbar: <img alt="The Undo button" src="../m/images/8/8b/undo.png" title="The Undo button" width="26" height="24" /> Undo and <img alt="The Redo button" src="../m/images/0/09/redo.png" title="The Redo button" width="26" height="24" /> Redo</li>
-<li> Select "History..." from the <a href="view_menu.html" title="View Menu">View Menu</a> and click on an action to jump the project state to there</li>
-<li> Use the Keyboard shortcuts:</li></ul>
+<h2><span class="mw-headline" id="Undo_and_Redo"><a href="https://alphamanual.audacityteam.org/man/File:Undo.png" class="image"><img alt="Undo.png" src="../m/images/8/8b/undo.png" width="26" height="24"></a><a href="https://alphamanual.audacityteam.org/man/File:Redo.png" class="image"><img alt="पुन्हा करा. Png" src="../m/images/0/09/redo.png" width="26" height="24"></a>   पूर्ववत करा आणि पुन्हा करा  </span></h2>
+<div class="intro">  ओड्यासिटी एक क्षमा करणारा अनुप्रयोग आहे.   आपण गोंधळ होण्यास घाबरत असल्यास, आराम करा, कारण ओड्यासिटी आपल्याला काहीतरी करुन पहाण्याची आणि नंतर आपल्याला ती आवडत नसल्यास ती पूर्ववत करण्यासाठी आराखडा केलेले आहे किंवा आपल्याला आपली पहिली कल्पना आवडत असल्यास पुन्हा करा.   ध्वनीसह कार्य करण्याचा हा खरोखरच एकमेव मार्ग आहे कारण   जोपर्यंत आपण हे करत नाही तोपर्यंत संपूर्ण प्रकल्पाच्या संदर्भात   <a href="index_of_effects_generators_and_analyzers.html" title="प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका">  परिणाम  </a>   किंवा इतर बदलांचा   न्याय करणे नेहमीच कठीण असते   .  <p>  पूर्ववत / रिडिओ वेगवान आहे, मूळ कारवाईत किती वेळ लागला याची पर्वा न करता.   आपल्या कार्याच्या "आधी" आणि "नंतर" आवृत्त्या सहज ऐकण्यासाठी त्याचा वापर करा.  </p><p>  आपण अधिक क्रिया लागू करताच त्या क्रियांच्या पूर्ववत / पूर्ववत करण्यास अनुमती देण्यासाठी आवश्यक असलेली रिक्त जागा, परंतु प्रकल्प बंद केल्यावर पूर्ववत / पुन्हा करा जागेचा वापर टाकून दिला जातो.   ओपन प्रकल्पसाठी पूर्ववत / पुन्हा करा चरण   <a href="#history">  इतिहास विंडोमध्ये  </a>   व्यवस्थापित केले जाऊ शकतात   .  </p></div>
+<p>  पूर्ववत किंवा पुन्हा कराचे चार मार्ग आहेत.
+  </p>
+<ul><li> <a href="edit_menu.html" title="Edit Menu"> संपादन मेनूच्या </a>  शीर्षस्थानी पूर्ववत करा आणि पुन्हा करा निवडी  <a href="edit_menu.html" title="मेनू संपादित करा">  </a></li>
+<li>  संपादन साधनपट्टीमधील दोन बटणे:   <img alt="पूर्ववत करा बटण" src="../m/images/8/8b/undo.png" title="पूर्ववत करा बटण" width="26" height="24">  पूर्ववत करा आणि   <img alt="पुन्हा करा बटण" src="../m/images/0/09/redo.png" title="पुन्हा करा बटण" width="26" height="24">  पुन्हा करा  </li>
+<li>  <a href="view_menu.html" title="मेनू पहा">  दृश्य मेनूमधून  </a>   "इतिहास ..." निवडा   आणि तेथे प्रकल्पाच्या स्थितीत जाण्यासाठी कृतीवर क्लिक करा  </li>
+<li>   कीबोर्ड आडमार्ग वापरा:  </li></ul>
 <dl><dd><table class="prettytablerows" id="undo_keyboard_shortcuts">
 
-<tr>
+<tbody><tr>
 <th> </th>
-<th> Windows </th>
-<th> Linux </th>
-<th> Mac
-</th></tr>
+<th>   विंडोज   </th>
+<th>   लिनक्स   </th>
+<th>   मॅक
+  </th></tr>
 <tr>
-<td> <b>Undo</b> </td>
-<td> <span class="kbrd" style="background-color: #e0e0f0">Ctrl+Z</span> </td>
-<td> <span class="kbrd" style="background-color: #e0e0f0">Ctrl+Z</span> </td>
-<td> <span class="kbrd" style="background-color: #e0e0f0">&#8984;+Z</span>
+<td> <b>  पूर्ववत करा  </b> </td>
+<td> <span class="kbrd" style="background-color: #e0e0f0">  Ctrl + Z  </span> </td>
+<td> <span class="kbrd" style="background-color: #e0e0f0">  Ctrl + Z  </span> </td>
+<td> <span class="kbrd" style="background-color: #e0e0f0">  ⌘ + झेड  </span>
 </td></tr>
 <tr>
-<td> <b>Redo</b> </td>
-<td> <span class="kbrd" style="background-color: #e0e0f0">Ctrl+Y</span> </td>
-<td> <span class="kbrd" style="background-color: #e0e0f0">Ctrl+Shift+Z</span> </td>
-<td> <span class="kbrd" style="background-color: #e0e0f0">&#8984;+Shift+Z</span>
-</td></tr></table></dd></dl>
-<div class="note">Only changes that modify the project data can be undone. Changes that cannot be undone include:
-<ul><li> Saving or exporting</li>
-<li> Changing the track height or the selection or cursor position (these are saved when you save a change that is recorded by Undo/Redo).</div> </li></ul>
-<p>Undo is unlimited, back to the first action you took in the project. That means you can make a hundred changes, then change your mind and undo them all.  
-</p><p>Undo is <i><b>stepwise</b></i>. This means that if you Undo to several steps back then perform a new action, you cannot then redo the old steps that followed the point you went back to. For example, suppose you made ten edits, numbered 1 through 10.  Now you undo back to step 5, and then perform a new edit, which we'll call 6b because it's different from the original 6.  At this point you can undo back to step 5 or all the way back to 1, but you can no longer get back to the original steps 6 through 10, which will be removed from the project history. 
-</p><p>Undo History is stored for each project, while that project remains open. So saving a project does not erase your Undo History, but closing a project does erase it. When you reopen a saved project, it starts with an empty history. 
-</p>
+<td> <b>  पुन्हा करा  </b> </td>
+<td> <span class="kbrd" style="background-color: #e0e0f0">  Ctrl + Y  </span> </td>
+<td> <span class="kbrd" style="background-color: #e0e0f0">  Ctrl + Shift + Z  </span> </td>
+<td> <span class="kbrd" style="background-color: #e0e0f0">  . + Shift + Z  </span>
+</td></tr></tbody></table></dd></dl>
+<div class="note">  केवळ प्रकल्प माहिती सुधारित करणारे बदल पूर्ववत केले जाऊ शकतात.   पूर्ववत करणे शक्य नसलेल्या बदलांमध्ये हे समाविष्ट आहे:
+  <ul><li>   जतन करणे किंवा निर्यात करणे  </li>
+<li>   गीतपट्टाची उंची बदलणे किंवा निवड किंवा कर्सर स्थिती (हे आपण पूर्ववत / रिडिओद्वारे ध्वनिमुद्रित केलेले बदल जतन करता तेव्हा जतन केले जातात).  </li></ul></div> 
+<p>  पूर्ववत करणे अमर्यादित आहे, आपण प्रकल्पात केलेल्या प्रथम क्रियेवरील.   याचा अर्थ असा की आपण शंभर बदल करू शकता, नंतर आपले मत बदला आणि त्या सर्वांना पूर्ववत करा.  
+  </p><p>  पूर्ववत करणे   <i><b>  चरणबद्ध आहे  </b></i>   .   याचा अर्थ असा की आपण बर्&zwj;याच चरणांपूर्वी पूर्ववत केले तर एक नवीन क्रिया केली तर आपण मागे गेल्यानंतरच्या जुन्या चरण पुन्हा करू शकत नाही.   उदाहरणार्थ, आपण दहा संपादने केली, क्रमांक १ ते १०. आता आपण पुन्हा चरण ५ वर पूर्ववत आहात आणि नंतर एक नवीन संपादन करा, ज्यास आम्ही ६ बी संपर्क करू जेणेकरून ते मूळपेक्षा भिन्न आहे. या टप्प्यावर आपण परत पूर्ववत करू शकता ५ वर जाण्यासाठी किंवा सर्व मार्गाने १ वर जा, परंतु आपण यापुढे ६ ते १० च्या मूळ चरणांवर परत येऊ शकत नाही, जे प्रकल्पाच्या इतिहासामधून काढले जाईल. 
+  </p><p>  पूर्ववत इतिहास प्रत्येक प्रकल्पासाठी संग्रहित केला जातो, तो प्रकल्प खुला राहिला.   म्हणून एखादा प्रकल्प जतन करणे आपला पूर्ववत इतिहास पुसून टाकत नाही, परंतु प्रकल्प बंद केल्यास तो मिटविला जाईल.   आपण एखादा जतन केलेला प्रकल्प पुन्हा उघडता तेव्हा तो रिक्त इतिहासासह प्रारंभ होतो. 
+  </p>
 <div id="history"></div>
-<h2><span class="mw-headline" id="History_window">History window</span></h2>
-<p>The History dialog lets you view and manage all of the actions you've taken since you opened a project.  You can open it by selecting <span class="menu">View &gt; <a href="view_menu.html#history" title="View Menu">History...</a> .</span>
+<h2><span class="mw-headline" id="History_window">  इतिहास विंडो  </span></h2>
+<p>  इतिहास संवाद आपल्याला प्रकल्प उघडल्यापासून आपण घेतलेल्या सर्व क्रिया पाहण्यास आणि व्यवस्थापित करू देतो.   आपण  <span class="menu"> पहा&gt;  </span><span class="menu"><a href="view_menu.html#history" title="View Menu"> इतिहास ... </a></span>  निवडून हे उघडू शकता  <span class="menu"> . </span> <span class="menu">  <a href="view_menu.html#history" title="मेनू पहा">  </a>  </span>
 </p>
 
-<dl><dd><span title="The History dialog"><img alt="Undo History dialog.png" src="../m/images/a/ae/undo_history_dialog.png" width="387" height="381" /></span></dd></dl>
-<ul><li> <b>History list:</b> This has two columns. 
-<ul><li> "Action" shows a list of all project states that you can go back or forwards to, earliest state first. 
-<li> "Reclaimable Space" shows for each action in the list the amount of disk space that will be released if you discard that action's Undo level.  
+<dl><dd><span title="इतिहास संवाद"><img alt="इतिहास पूर्ववत करा संवाद.पीएनजी" src="../m/images/a/ae/undo_history_dialog.png" width="387" height="381"></span></dd></dl>
+<ul><li> <b>  इतिहास सूची:  </b>   यात दोन स्तंभ आहेत. 
+  <ul><li>   ""क्शन" सर्व प्रकल्प राज्यांची यादी दर्शविते की आपण आधीच्या राज्यात परत जाऊ किंवा पुढे जाऊ शकता. 
+  </li><li>   "पुन्हा मिळण्ययोग्य जागा" सूचीतील प्रत्येक क्रियेसाठी आपण त्या क्रियेचे पूर्ववत स्तर टाकल्यास सोडल्या जाणार्&zwj;या डिस्क स्पेसचे प्रमाण दर्शविते.  
 
-<div class="note">To ensure that "Reclaimable Space" displays an accurate calculation of space that could be freed by discarding actions, space usage is always allocated to the <i>latest</i> step that uses that data. So if some steps were only applied to part of the project, then as each new action is applied, the action before will have its reclaimable space reduced. </div>  </ul>
-<p>Select an item in the history list to Undo or Redo immediately to that action. It's the same as choosing <span class="menu">Edit &gt; Undo</span> or <span class="menu">Edit &gt; Redo</span> multiple times, but quicker. </p>
-<li> <b>Total space used:</b> Displays the total disk space currently used by the project, which is the total of all the "Reclaimable Space" values shown in the history list.   
-<li> <b>Undo Levels Available:</b> (Uneditable). Displays how many actions are available to Undo. Select the next item down in the history list to increase the number of available undo levels by one. To choose the maximum possible number of Undo levels, select the bottom item in the list. 
-<li> <b>Levels to Discard:</b> Edit this text box to choose the number of Undo levels that will be discarded when you click the <b>Discard</b> button. Items are discarded <i>starting from the top of the history list</i>.
-<ul><li> <b>Discard button:</b> Removes the number of actions specified in the <b>Levels to Discard</b> box. This action is immediate and cannot be undone. Discarding undo levels will release the disk space taken by the discarded items and the value displayed in the "Total space used" box will accordingly reduce.    </ul>
-<li> <b>Clipboard space used:</b> Indicates the amount of disk space currently used by the Audacity Clipboard.
-<ul><li> <b>Discard button:</b> Empties the data on the Audacity Clipboard, releasing the disk space displayed in <b>Clipboard space used</b> and resetting that value to zero. This action is immediate and cannot be undone. After discard, pasting will do nothing. </ul>
-<li> <b>OK button:</b> Accepts the changes made in the History window, if any, and closes the window. </ul>
-<div class="note">Note the difference between <b>Undo</b> and <b>Discard</b>.
-<ul><li> <b>Undo</b> (by any method) grays out steps starting from the <i><b>bottom</b></i> of the History list.
-<ul><li> When you Undo, you can still Redo to the grayed out list items (as shown in the third image in the example below) <i>until you perform another editing action</i>. After the new action, the grayed out steps will be removed from the list and replaced by the new action.</li></ul></li>
-<li><b>Discard</b> removes steps from the <i><b>top</b></i> of the History list. <i>This action is immediate and cannot be Undone</i>.
-<ul><li> Undo information is removed and the disk space it uses is released when you close an Audacity project. Thus you should only need to discard Undo levels if you are working on a very large project and are running short of disk space. </div></li></ul></li></ul>
+  <div class="note">  "रिक्लेमेबल स्पेस" जागेची अचूक गणना प्रदर्शित करते जे क्रिया सोडून देऊन मोकळे केले जाऊ शकते हे सुनिश्चित करण्यासाठी, स्थानाचा वापर नेहमीच   त्या माहितीचा वापर   करणार्&zwj;या   <i>  नवीनतम  </i>   चरणात केला जातो.   म्हणून जर काही पावले केवळ प्रकल्पाच्या भागावरच लागू केली गेली असतील तर प्रत्येक नवीन कृती लागू झाल्यास आधीची कृती त्याच्या पुनर्प्राप्त करण्यायोग्य जागा कमी करेल.  </div>  </li></ul>
+<p>  पूर्ववत करण्यासाठी किंवा त्या क्रियेवर त्वरित पूर्ववत करण्यासाठी इतिहास यादीतील एखादी वस्तू निवडा.   हे   एकाधिक वेळा   <span class="menu">  संपादन&gt; पूर्ववत  </span>   किंवा   <span class="menu">  संपादन&gt; पुन्हा  </span>   करणे निवडण्यासारखेच आहे   , परंतु द्रुत.  </p>
+</li><li> <b>  वापरलेली एकूण जागा:  </b>   प्रकल्पाद्वारे सध्या वापरली जाणारी एकूण डिस्क स्पेस दर्शविते, जे इतिहास यादीमध्ये दर्शविलेल्या सर्व "पुन्हा मिळण्यायोग्य जागा" मूल्यांपैकी एक आहे.   
+  </li><li> <b>  पूर्ववत करा स्तर उपलब्ध:  </b>   (अवांछनीय)   पूर्ववत करण्यासाठी किती क्रिया उपलब्ध आहेत ते प्रदर्शित करते.   उपलब्ध पूर्ववत पातळीची संख्या एक करून वाढविण्यासाठी इतिहास यादीतील पुढील आयटम निवडा.   पूर्ववत पातळीची जास्तीत जास्त संभाव्य संख्या निवडण्यासाठी, सूचीतील तळाशी आयटम निवडा. 
+  </li><li> <b>  नामंजूर करण्याचे स्तर:  </b>   आपण   <b>  टाकून द्या  </b>   बटणावर   क्लिक करता तेव्हा टाकून दिले जाईल अशा पूर्ववत पातळीची संख्या निवडण्यासाठी हा मजकूर बॉक्स संपादित   करा.   <i>  इतिहासाच्या सूचीच्या शीर्षस्थानापासून  </i>   वस्तू टाकून दिली आहेत   .
+  <ul><li> <b>  </b>  काढून  <b> टाका बटण: </b>  स्तरात   <b>  टाकण्यासाठी  </b>   बॉक्समध्ये   निर्दिष्ट केलेल्या क्रियांची संख्या काढून टाकते   .   ही क्रिया त्वरित आहे आणि ती पूर्ववत केली जाऊ शकत नाही.   पूर्ववत पातळी टाकून दिल्यास टाकून दिलेल्या वस्तूंनी घेतलेली डिस्क जागा सोडली जाईल आणि "वापरलेली एकूण जागा" बॉक्समध्ये दर्शविलेले मूल्य त्यानुसार कमी करेल.      </li></ul>
+</li><li> <b>  वापरलेली फीतबोर्ड स्पेस:  </b>   ओड्यासिटी फीतबोर्डद्वारे सध्या वापरलेल्या डिस्क स्पेसचे प्रमाण दर्शविते.
+  <ul><li> <b>  डिसकार्ड बटण:  </b>   ओड्यासिटी फीतबोर्डवरील माहिती   <b>  रिक्त करते, वापरलेल्या फीतबोर्ड स्पेसमध्ये  </b>   प्रदर्शित केलेली डिस्क स्पेस सोडते   आणि ती मूल्य शून्यावर पुनर्स्थापित करते.   ही क्रिया त्वरित आहे आणि ती पूर्ववत केली जाऊ शकत नाही.   टाकून दिल्यानंतर पेस्ट केल्याने काही होणार नाही.  </li></ul>
+</li><li> <b>  ओके बटण:  </b>   इतिहास विंडोमध्ये केलेले बदल स्वीकारले तर काही असल्यास विंडो बंद करते.  </li></ul>
+<div class="note">  <b>  पूर्ववत  </b>   आणि   <b>  टाकून देणे  </b>   यामधील फरक लक्षात घ्या   .
+  <ul><li> <b>  पूर्ववत करा  </b>   (कोणत्याही पध्दतीने)   इतिहास यादीच्या   <i><b>  तळापासून  </b></i>   प्रारंभ होणारी कृती पुढे आणा   .
+  <ul><li>  आपण पूर्ववत करता तेव्हा आपण   <i>  दुसरी संपादन क्रिया करेपर्यंत  </i>   राखाडी रंगलेल्या यादीतील आयटम (खालील उदाहरणातील तिसर्&zwj;या प्रतिमेमध्ये दर्शविल्याप्रमाणे)  <i> पुन्हा करणे शक्य आहे </i>  .   नवीन कृतीनंतर, राखाडी पायऱ्या या सूचीमधून काढल्या जातील आणि त्याऐवजी नवीन कारवाईद्वारे बदलल्या जातील.  </li></ul></li>
+<li><b>  </b>  काढून  <b> टाका </b>  इतिहासाच्या सूचीच्या   <i><b>  शीर्षावरील  </b></i>   पाय steps  <b> ्या </b>  काढून  <b> टाका </b>  .   <i>  ही क्रिया त्वरित आहे आणि पूर्ववत केली जाऊ शकत नाही  </i>   .
+  <ul><li>  पूर्ववत माहिती काढून टाकली जाते आणि आपण ओड्यासिटी प्रकल्प बंद करता तेव्हा वापरलेली डिस्क स्पेस सोडली जाते.   जर आपण एखाद्या मोठ्या प्रकल्पात काम करत असाल आणि डिस्क स्पेसची कमतरता चालू असेल तर आपल्याला फक्त पूर्ववत पातळी टाकण्याची आवश्यकता आहे.  </li></ul></li></ul></div>
 <div id="historyexample"></div>
-<h2><span class="mw-headline" id="Example">Example</span></h2>
-<div class="example"><b>Example of using History Window</b>
-<p>In the image below we see the History window positioned beside a stereo track that has been imported into a project. The file size was 67.7 MB, and at the moment that amount of space is taken up on the  drive by the ability to undo the import. 
-</p>
-<dl><dd><span title="Project with imported stereo file and History window beside it"><img alt="History01 2-2-0.png" src="../m/images/c/c1/history01_2_2_0.png" width="667" height="409" /></span></dd></dl>
-<p>In the next image the user has repaired two clicks and amplified the entire track. These edits have slightly more than doubled the space used by the project to 139.5 MB.
-</p>
-<dl><dd><span title="Project after several edits with History window showing list of those edits"><img alt="History02 2-2-0.png" src="../m/images/0/0e/history02_2_2_0.png" width="667" height="410" /></span></dd></dl>
-<p>We see here that the user could for example quickly undo the "Amplify" step and the two "Repair" steps, returning to the project to the state it was in immediately after the file was imported. This is equivalent to selecting <span class="menu">Edit &gt; Undo</span> three times. The project still uses 139.5 MB of disk space because it is still possible to Redo those actions.
-</p><p>Having now selected the "Imported" item to undo back to that stage, the project reflects that change - the amplification has been removed and the clicks are back.
-</p>
-<dl><dd><span title="Project and History window after selecting in the History window to undo several levels"><img alt="History03 2-2-0.png" src="../m/images/0/09/history03_2_2_0.png" width="667" height="409" /></span></dd></dl>
-<p>Instead of undoing back to the import of the audio file the user could decide that everything done up to this point is perfect. Therefore in order to save disk space the user could <b>Discard</b> unwanted Undo levels. In the image below the user has selected the "Amplify" item in order to make the maximum four Undo levels available, then set "Levels to Discard" to "4". Note that the effect on disk space would be the same if the user saved and closed the project, which would also discard all the Undo levels.
-</p>
-<dl><dd><span title="Project and History window preparing to discard four undo levels"><img alt="History04 2-2-0.png" src="../m/images/a/a6/history04_2_2_0.png" width="668" height="411" /></span></dd></dl>
-<p>After clicking the <b>Discard</b> button, four Undo levels are discarded <i>starting from the top of the history list</i>, so leaving the final "Amplify" item which was the last action applied. The total disk space used by the project has been reduced by the sum of the discarded items to 67.7 MB.
-</p>
-<dl><dd><span title="Project and History window after discarding four undo levels"><img alt="History05 2-2-0.png" src="../m/images/e/e9/history05_2_2_0.png" width="667" height="412" /></span></div></dd></dl>
+<h2><span class="mw-headline" id="Example">  उदाहरण  </span></h2>
+<div class="example"><b>  इतिहास विंडो वापरण्याचे उदाहरण  </b>
+<p>  खाली दिलेल्या प्रतिमेत आम्ही पाहतो की हिस्ट्री विंडो एका प्रकल्पात आयात केलेल्या स्टिरिओ गीतपट्टाच्या बाजूला स्थित आहे.   धारिकाचा आकार ६७.७ एमबी होता आणि या क्षणी आयात पूर्ववत करण्याच्या क्षमतेने त्या जागेची जागा ड्राइव्हवर घेण्यात आली. 
+  </p>
+<dl><dd><span title="आयात केलेल्या स्टिरीओ धारिका आणि त्याच्या बाजूला इतिहास विंडोसह प्रकल्प"><img alt="इतिहास01 2-2-0.png" src="../m/images/c/c1/history01_2_2_0.png" width="667" height="409"></span></dd></dl>
+<p>  पुढील प्रतिमेमध्ये वापरकर्त्याने दोन क्लिक दुरुस्त केले आणि संपूर्ण गीतपट्टा वाढविला.   या संपादनांद्वारे प्रकल्पात वापरलेल्या जागेच्या दुप्पट जागा १ १३९.५ एमबीपेक्षा थोडीशी वाढली आहे.
+  </p>
+<dl><dd><span title="या संपादनांची यादी दर्शविणार्&zwj;या इतिहास विंडोसह अनेक संपादनांनंतर प्रकल्प"><img alt="इतिहास02 2-2-0.png" src="../m/images/0/0e/history02_2_2_0.png" width="667" height="410"></span></dd></dl>
+<p>  आम्ही येथे पाहतो की वापरकर्त्याने "वर्धित केलेलं" चरण आणि दोन "दुरुस्ती" चरण दोन त्वरेने पूर्ववत केले आणि त्या धारिकाची आयात झाल्यानंतर ताबडतोब राज्यात परत आली.   हे   तीन वेळा   <span class="menu">  संपादित करा&gt; पूर्ववत  </span>   करणे निवडण्यासारखे आहे   .   प्रकल्प अद्याप १३९.५ एमबी डिस्क स्पेस वापरतो कारण अद्याप त्या क्रिया पुन्हा करणे शक्य आहे.
+  </p><p>  त्या टप्प्यावर परत जाण्यासाठी आता "आयात केलेले" आयटम निवडल्यानंतर, प्रकल्प त्या बदलाचे प्रतिबिंबित करतो - प्रवर्धन काढले गेले आहे आणि क्लिक परत आहेत.
+  </p>
+<dl><dd><span title="अनेक स्तर पूर्ववत करण्यासाठी इतिहास विंडोमध्ये निवडल्यानंतर प्रकल्प आणि इतिहास विंडो"><img alt="इतिहास03 2-2-0.png" src="../m/images/0/09/history03_2_2_0.png" width="667" height="409"></span></dd></dl>
+<p>  ध्वनी धारिकाच्या आयातीवर परत जाण्याऐवजी आतापर्यंत जे काही केले आहे ते सर्व परिपूर्ण आहे हे वापरकर्ता ठरवू शकेल.   म्हणूनच डिस्कची जागा वाचविण्यासाठी वापरकर्ता   अवांछित पूर्ववत स्तर   <b>  टाकू  </b>   शकतो   .   खाली दिलेल्या प्रतिमेत वापरकर्त्याने जास्तीत जास्त चार पूर्ववत स्तर उपलब्ध करण्यासाठी "विस्तारित" आयटम निवडला आहे, नंतर "स्तरांवर टाकून द्या" "४" वर स्थापित करा.   लक्षात ठेवा की वापरकर्त्याने प्रकल्प जतन आणि बंद केल्यास डिस्क स्पेसवरील प्रभाव समान असेल, जे सर्व पूर्ववत स्तर देखील टाकून देईल.
+  </p>
+<dl><dd><span title="चार पूर्ववत स्तर टाकण्याची तयारी प्रकल्प आणि इतिहास विंडो"><img alt="इतिहास 04 2-2-0.png" src="../m/images/a/a6/history04_2_2_0.png" width="668" height="411"></span></dd></dl>
+<p>  <b>  डिसकार्ड  </b>   बटणावर   क्लिक केल्यानंतर   <i>  , इतिहास यादीच्या शीर्षापासून प्रारंभ होणारे  </i>   चार पूर्ववत स्तर टाकून दिले गेले आहेत   , जेणेकरून शेवटची कृती केलेली अंतिम "मोठे करण्याची" आयटम सोडून.   प्रकल्पद्वारे वापरलेली एकूण डिस्क स्पेस टाकून दिलेल्या वस्तूंच्या बेरीजद्वारे ६७.७ एमबी पर्यंत कमी केली गेली आहे.
+  </p>
+<dl><dd><span title="चार पूर्ववत स्तर काढून टाकल्यानंतर प्रकल्प आणि इतिहास विंडो"><img alt="इतिहास05 2-2-0.png" src="../m/images/e/e9/history05_2_2_0.png" width="667" height="412"></span></dd></dl></div>
 
 <!-- 
 NewPP limit report

@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Delay - Audacity Manual</title>
+<title>विलंब - ओड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -25,74 +25,94 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Delay</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">विलंब</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">ओड्यासिटी विकासाच्या माहितीपुस्तिकेवरून </div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Delay#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशांक</a>, 
+											<a href="https://alphamanual.audacityteam.org/man/Delay#searchInput">शोधा</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
 </p>
 
 
-<div class="intro">Use <i><b>Delay</b></i> to create a multiple echo effect with options for variable delay times between successive echoes and the number, amplitude and pitch of successive repeats.</div>
-<dl><dd><b>Accessed by:</b> <span class="menu">Effect &gt; Delay...</span></dd>
+<div class="intro">क्रमिक प्रतिध्वनी आणि क्रमिक पुनरावृत्तीची संख्या, मोठेपणा आणि खेळपट्टी दरम्यान चल विलंब वेळाकरिता पर्यायांसह एकाधिक प्रतिध्वनी प्रभाव तयार करण्यासाठी <i><b>विलंब</b></i> वापरा.</div>
+<dl><dd><b>याद्वारे प्रवेश केलेले:</b> <span class="menu">प्रभाव &gt; विलंब...</span></dd>
 <dd><span title="Delay effect dialog"><img alt="Delay.png" src="../m/images/5/53/delay.png" width="570" height="327" /></span></dd></dl>
 <div id="type"></div>
-<h2><span class="mw-headline" id="Delay_type">Delay type</span></h2>
-<ul><li><b>Regular</b>: Each echo is delayed by the same amount.</li>
-<li><b>Bouncing ball</b>: Makes the echoes occur increasingly close together (faster).</li>
-<li><b>Reverse bouncing ball</b>: Makes the echoes occur increasingly far apart (slower).</li></ul>
+<h2><span class="mw-headline" id="Delay_type">विलंब प्रकार</span></h2>
+<ul><li><b>नियमित</b>:प्रत्येक प्रतिध्वनी समान प्रमाणात विलंबित होतो.</li>
+<li><b>उसळणारा चेंडू</b>:प्रतिध्वनी एकत्र (वेगवान) जवळ येऊ लागतात.</li>
+<li><b>उलट उसळणारा चेंडू</b>: प्रतिध्वनी वाढत्या वेगळ्या (हळूवारपणे) होण्यास मदत करते.</li></ul>
 <div id="level"></div>
-<h2><span class="mw-headline" id="Delay_level_per_echo_.28dB.29">Delay level per echo (dB)</span></h2>
-<p>This controls the amount in <i><b><a href="glossary.html#decibel" title="Glossary">dB</a></b></i> by which each successive echo will change loudness. The more negative this value, the more the echoes will die away. Positive values cause successive echoes to be louder. When set to 0.0, all echoes will be the same volume.
-</p>
+<h2><span class="mw-headline" id="Delay_level_per_echo_.28dB.29">प्रतिध्वनी विलंब पातळी (डीबी)</span></h2>
+<p>हे <i><b><a href="glossary.html#decibel" title="Glossary">डीबीमधील</a></b></i>प्रमाणात नियंत्रित करते ज्याद्वारे प्रत्येक अनुक्रमित प्रतिध्वनी मोठ्याने बदलते. हे मूल्य जितके नकारात्मक असेल तितके प्रतिध्वनी नष्ट होतील. सकारात्मक मूल्यांमुळे सलग प्रतिध्वनी जोरात होते. 0.0 वर सेट केल्यावर, सर्व प्रतिध्वनी एकसारखेच असतील.</p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">Because echoes are often <i>added</i> to the original audio, the processed audio will often have a higher peak level than the original. If the output exceeds 0 dB (full track height) and so triggers the red <i><b><a href="glossary.html#clipping" title="Glossary">clipping</a></b></i> warning lights in <a href="meter_toolbar.html#playback" title="Meter Toolbar">Playback Meter Toolbar</a>, you should open <span class="menu">Effect &gt; <a href="effect_menu.html#amplify" title="Effect Menu">Amplify...</a></span>, ensure "Amplification (dB)" shows a <b>negative dB value</b> (not "0.0 dB") then click <span class="button">OK</span>.
-<p>If "Amplification (dB)" in Amplify shows "0.0 dB", the track does not contain 32-bit audio and the clipping cannot be repaired. In that case, <span class="menu">Edit &gt; <a href="edit_menu.html#undo" title="Edit Menu">Undo</a></span> Delay, use Amplify to reduce the track to a lower amplitude then reapply Delay.</p>
+
+
+<td align="left" valign="top">प्रतिध्वनी मूळ ध्वनीमध्ये अनेकदा <i>जोडल्या</i>गेल्यामुळे, प्रक्रिया केलेल्या ध्वनीमध्ये बर्‍याचदा मूळपेक्षा उच्च पातळी असते.जर आउटपुट 0 डीबी (पूर्ण ट्रॅक उंची) पेक्षा जास्त असेल आणि म्हणून <a href="meter_toolbar.html#playback" title="Meter Toolbar">प्लेबॅक मीटर टूलबारमध्ये </a> रेड  
+	<i><b><a href="glossary.html#clipping" title="Glossary">क्लिपिंग</a></b></i> चेतावणी दिवे चालू केले तर आपण <span class="menu">प्रभाव &gt;<a href="effect_menu.html#amplify" title="Effect Menu">एम्प्लिफाय ...</a> 
+	 उघडला पाहिजे</span>, "एम्प्लिफिकेशन (डीबी)" <b>नकारात्मक डीबी मूल्य</b> दर्शविते (0.0 "नाही" डीबी ") नंतर <span class="button">ओके</span>क्लिक करा.	
+
+	 
+<p>जर एम्प्लीफाई मधील "एम्प्लिफिकेशन (डीबी)" "0.0 डीबी" दर्शवित असेल तर ट्रॅकमध्ये 32-बिट ऑडिओ नसतो आणि क्लिपिंग दुरुस्त करता येणार नाही. त्या प्रकरणात, <span class="menu">संपादन &gt; <a href="edit_menu.html#undo" title="Edit Menu">पूर्ववत करा</a></span> विलंब, 
+	ट्रॅकला कमी आकारात कमी करण्यासाठी एम्प्लिफाय वापरा नंतर विलंब पुन्हा लागू करा.
+</p>
 </td></tr></table></div>
 <div id="time"></div>
-<h2><span class="mw-headline" id="Delay_time_.28seconds.29">Delay time (seconds)</span></h2>
-<p>This controls the time between echoes. For the <i>Bouncing Ball</i> types of delay, this sets the delay time for the <i>longest</i> (slowest) echo.
-</p>
+<h2><span class="mw-headline" id="Delay_time_.28seconds.29">विलंब वेळ (सेकंद)</span></h2>
+<p>हे प्रतिध्वनी दरम्यानचा वेळ नियंत्रित करते.<i>उसळणारा चेंडू</i> प्रकारच्या विलंबांसाठी, हे <i>सर्वात लांब</i>(सर्वात धीमे) प्रतिध्वनीसाठी विलंब वेळ निश्चित करते.</p>
 <div id="effect"></div>
-<h2><span class="mw-headline" id="Pitch_change_effect">Pitch change effect</span></h2>
-<ul><li> <b>Pitch/Tempo:</b> Changes the <i><b><a href="glossary.html#pitch" title="Glossary">pitch</a></b></i> in the same way that the <a href="change_speed.html" title="Change Speed">Change Speed</a> effect causes a change in pitch. The sound quality of each echo is very good, but an increase in pitch speeds up the delayed audio and a decrease in pitch slows it down. The echoes will be noticeably desynchronized with any comparable echoes in other tracks where "Pitch/Tempo" was not applied. </li>
-<li> <b>LQ Pitch Shift:</b> Changes the pitch while maintaining the same tempo in a similar way to the <a href="change_pitch.html" title="Change Pitch">Change Pitch</a> effect. The sound quality of each echo is of lower quality than the "Pitch/Tempo" effect (including a short additional echo on percussive sounds) and the delay time will often be a little longer than specified. However, interesting "spiraling" effects can be produced. </li></ul>
+<h2><span class="mw-headline" id="Pitch_change_effect"> उच्चनीचतेचा प्रभाव बदल</span></h2>
+
+
+
+<ul>
+	<li> <b>खेळपट्टी / टेम्पो:</b> <a href="change_speed.html" title="Change Speed">बदलाच्या वेग </a>परिणामामुळे <i><b><a href="glossary.html#pitch" title="Glossary">खेळपट्टीवर</a></b></i>बदल होऊ शकतो त्याच प्रकारे खेळपट्टी बदलते. 
+	प्रत्येक प्रतिध्वनीची ध्वनी गुणवत्ता खूप चांगली आहे, परंतु खेळपट्टीमध्ये वाढ झाल्याने उशीरा ध्वनी वेगवान होईल आणि खेळपट्टीमध्ये घट कमी होते. "खेळपट्टी / टेम्पो" लागू न झालेल्या इतर गीतपट्टामध्ये कोणत्याही प्रतिध्वनींसह प्रतिध्वनी स्पष्टपणे विभक्त केल्या जातील. 
+	</li>
+
+	<li> <b>एलक्यू खेळपट्टीवर शिफ्ट :</b><a href="change_pitch.html" title="Change Pitch">चेंज पिच</a> इफेक्ट प्रमाणेच टेम्पो कायम ठेवत खेळपट्टी बदलते. प्रत्येक प्रतिध्वनीची ध्वनी गुणवत्ता "खेळपट्टी / टेंपो" प्रभावापेक्षा (दर्जेदार ध्वनीवरील 
+		अतिरिक्त अतिरिक्त प्रतिध्वनीसह) कमी गुणवत्तेची असते आणि विलंब वेळ बर्‍याचदा निर्दिष्ट केल्यापेक्षा थोडा जास्त असेल. तथापि, मनोरंजक "आवर्त" प्रभाव तयार केला जाऊ शकतो.
+	</li>
+</ul>
 <div id="pitch"></div>
-<h2><span class="mw-headline" id="Pitch_change_per_echo_.28semitones.29">Pitch change per echo (semitones)</span></h2>
-<p>This controls the amount in semitones by which each successive echo will change pitch. The change can be set to fractions of a semitone which can produce a "glissando" type of delay. When set to zero, the pitch change effect is disabled.
+<h2><span class="mw-headline" id="Pitch_change_per_echo_.28semitones.29">प्रति प्रतिध्वनी खेळपट्टीवर बदल (सेमीटोन)</span></h2>
+<p>हे सेमिनेन्समधील रक्कम नियंत्रित करते ज्याद्वारे प्रत्येक अनुक्रमित प्रतिध्वनी बदलते. बदल सेमिटोनच्या अपूर्णांकांवर सेट केला जाऊ शकतो ज्यामुळे "ग्लिसॅन्डो" प्रकारचा विलंब होऊ शकतो. शून्यावर सेट केल्यास, पिच बदल प्रभाव अक्षम होईल.
 </p>
 <div id="number"></div>
-<h2><span class="mw-headline" id="Number_of_echoes">Number of echoes</span></h2>
-<p>This controls how many echoes are produced.
-</p>
+<h2><span class="mw-headline" id="Number_of_echoes">प्रतिध्वनींची संख्या</span></h2>
+<p>किती प्रतिध्वनी निर्माण होते हे हे नियंत्रित करते.</p>
 <div id="duration"></div>
-<h2><span class="mw-headline" id="Allow_duration_to_change">Allow duration to change</span></h2>
-<ul><li> <b>Yes:</b> (Default). Allows the processed audio to lengthen so as to accommodate all the requested echoes.</li>
-<li> <b>No:</b> The processed audio is trimmed to the same length as the original selection. Any echoes that would have occurred after the end of the original selection will be deleted. Choose this option if you need to keep the delayed track synchronized with other tracks in the project.</li></ul>
+<h2><span class="mw-headline" id="Allow_duration_to_change">कालावधी बदलू द्या</span></h2>
+<ul><li> <b>होय:</b> (डीफॉल्ट). सर्व विनंती केलेल्या प्रतिध्वनींना सामावून घेण्यासाठी प्रक्रियेच्या ऑडिओला वाढण्यास अनुमती देते.</li>
+<li> <b>नाहीः</b> प्रक्रिया केलेला ऑडिओ मूळ निवडीच्या समान लांबीवर सुव्यवस्थित आहे. मूळ निवड संपल्यानंतर उद्भवलेली कोणतीही प्रतिध्वनी हटविली जाईल. आपल्याला प्रकल्पातील इतर ट्रॅकसह विलंबित ट्रॅक संकालित करणे आवश्यक असल्यास हा पर्याय निवडा.
+</li></ul>
 <div id="buttons"></div>
-<h2><span class="mw-headline" id="Buttons">Buttons</span></h2>
-<p>Clicking on the command buttons give the following results:
+<h2><span class="mw-headline" id="Buttons">बटण</span></h2>
+<p>कमांड बटणावर क्लिक केल्याने खालील परिणाम मिळतात:
 </p>
-<ul><li><span class="button">Manage</span> gives a dropdown menu enabling you to manage presets for the tool and to see some detail about the tool. For details see <a href="manage_presets.html" title="Manage presets">Manage presets</a></li>
-<li><span class="button">Preview</span> plays a short preview of what the audio would sound like if the effect is applied with the current settings, without making actual changes to the audio.  The length of preview is determined by your setting in <span class="menu">Edit &gt; Preferences &gt; <a href="playback_preferences.html" title="Playback Preferences">Playback</a></span>, the default setting is 6 seconds.</li>
-<li><span class="button">OK</span> applies the effect to the selected audio with the current effect settings and closes the dialog</li>
-<li><span class="button">Cancel</span> aborts the effect and leaves the audio unchanged, closing the dialog</li>
-<li><a href="help_button.html" title="Help Button"><img alt="Help Button" src="../m/images/d/d6/help_button.png" width="27" height="27" /></a> brings you to the appropriate page in the Manual, this page</li></ul>
+<ul>
+<li><span class="button">व्यवस्थापित करा</span> ड्रॉपडाउन मेनू आपल्याला साधनाचे प्रीसेट सेट करण्यास आणि टूलबद्दल काही तपशील पाहण्यास सक्षम करते. तपशीलांसाठी <a href="manage_presets.html" title="Manage presets">प्रीसेट्स व्यवस्थापित करा</a> पहा</li>
+<li><span class="button">पूर्वावलोकन</span> ध्वनीमध्ये वास्तविक बदल न करता, प्रभाव वर्तमान सेटिंग्जसह लागू केल्यास ध्वनीला काय वाटेल हे एक लहान पूर्वावलोकन प्ले करते.
+	पूर्वावलोकनाची लांबी <span class="menu">संपादन &gt; प्राधान्ये &gt; <a href="playback_preferences.html" title="Playback Preferences"></a> प्लेबॅक</span> मधील आपल्या सेटिंगद्वारे निश्चित केली जाते, डीफॉल्ट सेटिंग 6 सेकंद असते.</li>
+<li><span class="button">ठीक आहे</span> सध्याच्या प्रभाव सेटिंग्जसह निवडलेल्या ध्वनीवर प्रभाव लागू करते आणि संवाद बंद करते</li>
+<li><span class="button">रद्द करा</span> प्रभाव सोडतो आणि संवाद बंद केल्यामुळे ध्वनीमध्ये कोणताही बदल होत नाही</li>
+<li><a href="help_button.html" title="Help Button"><img alt="Help Button" src="../m/images/d/d6/help_button.png" width="27" height="27" /></a> या पृष्ठावरील माहितीपुस्तिकामध्ये आपल्याला योग्य पृष्ठावर आणते</li></ul>
 <p><br />
 </p><p><br />
 </p>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> Index of Effects, Generators and Analyzers</a> <br />
-</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> Effect Menu</a>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> 
+	प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका</a> <br />
+</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> प्रभाव मेनू</a>
 </p>
 <!-- 
 NewPP limit report
@@ -140,44 +160,44 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>Navigation</h3>
+		<h3>निर्देशांक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">Manual Home Page</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">Using Audacity</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">Tour Guide</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">New Features</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">Getting Started</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">Tutorials</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">Tips</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">Audacity GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">Menu Bar</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">Toolbars</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">Tracks</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">Effects</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">Customizing Audacity</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">Preferences</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">Key-bindings</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">Plug-ins</span></a></li></ul></li></ul>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ओड्यासिटी सानुकूलित करत आहे</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
+<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>Reference</h3>
+		<h3>संदर्भ</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">Reference</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">Digital Audio</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">Glossary</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">All Commands</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">Index</span></a></li></ul></li>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
 <li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">FAQ</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>Useful Links</h3>
+		<h3>उपयुक्त दुवे</h3>
 		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
 <li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">WIT</a></span></li></ul>
 		</div>
 		</div>
@@ -193,7 +213,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>This version created on 2018-09-17 - <a href="https://alphamanual.audacityteam.org/man/Delay">Check current version of this page (development Manual)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Delay">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

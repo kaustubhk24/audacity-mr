@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Overdubbing using your computer's on-board sound card - Audacity Manual</title>
+<title>आपल्या संगणकाची ऑन-बोर्ड साउंड कार्ड वापरुन ओव्हरडबिंग -ओड्यासिटी महितीपुस्तिका  </title>
 
 
 
@@ -25,90 +25,110 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Overdubbing using your computer's on-board sound card</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">आपल्या संगणकाची ऑन-बोर्ड साउंड कार्ड वापरुन ओव्हरडबिंग</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">
+ओड्यासिटी  विकास महितीपुस्तिका वरुन</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Overdubbing_using_your_computer%27s_on-board_sound_card#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Overdubbing_using_your_computer%27s_on-board_sound_card#searchInput">शोध</a></div>
 
 					<!-- start content -->
+					
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">This tutorial is designed to help you record multi-track overdubs if your equipment does not have hardware playthrough of the live recording and software playthrough is not an option. Before starting this tutorial you can try the following playthrough possibilities. 
-<ul><li> On Windows or Linux, try unmuting your input in the playback side of the system mixer. This will give you low latency <i>hardware playthrough</i> of what you are recording. </li>
-<li> On all operating systems, try <span class="menu">Transport &gt; Transport Options &gt; <a href="transport_menu_transport_options.html#software_playthrough_onoff" title="Transport Menu: Transport Options">Software Playthrough (on/off)</a></span> in Audacity instead, but this will always mean you hear yourself late and could cause audio breakup. </li>
-<li>To achieve lower latency software playthrough on Windows you can:
-<ul><li> (Only gives somewhat lower latency): On Windows, right-click over the <b>Speaker icon</b> by the clock, choose <b>Recording Devices</b>, right-click over the input, choose <b>Properties</b> then on the "Listen" tab, enable "Listen to this device". </li>
-<li> (Advanced) Compile Audacity with <a href="asio_audio_interface.html" title="ASIO Audio Interface">ASIO®</a> true low latency support. Ask on the <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewforum.php?f=19">Compiling Audacity</a> board of the <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/">Forum</a> if you need help.</div></li></ul></li></ul>
-<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
-<p>This tutorial describes a known working method of creating a multiple sound track overdubbing session from scratch in Audacity; that is, you record one track and then play it back and add a second track against it -- drums, guitar, voice -- repeat as needed. 
-</p><p>This process uses your computer's built-in microphone and a pair of headphones. You must be happy with not hearing yourself -- your live performance -- in real-time in your headphones. You will hear all the previous tracks mixed as you wish, but your live voice or performance will not be in the mix until you finish recording and play the whole thing back.  Including your live voice in the electronic mix on a home computer can be very difficult.
+<div class="intro">आपल्या उपकरणांमध्ये लाइव्ह रेकॉर्डिंगचा हार्डवेअर प्लेथ्रू नसल्यास आणि संगणकाची आज्ञावली प्लेथ्रू हा पर्याय नसल्यास मल्टी-ट्रॅक ओव्हरडब रेकॉर्ड करण्यात मदत करण्यासाठी हे ट्यूटोरियल डिझाइन केलेले आहे. हे ट्यूटोरियल प्रारंभ करण्यापूर्वी आपण खालील प्लेथ्रु शक्यतांचा प्रयत्न करू शकता.
+<ul> <li> विंडोज किंवा लिनक्स वर, सिस्टम मिक्सरच्या प्लेबॅक बाजूला आपले इनपुट सशब्द करण्याचा प्रयत्न करा. हे आपण रेकॉर्ड करीत असलेल्या <i> हार्डवेअर प्लेथ्रू </ i> ला कमी विलंब देईल. </li>
+<li> सर्व ऑपरेटिंग सिस्टमवर प्रयत्न करा <span class="menu">परिवहन &gt; परिवहन पर्याय &gt; <a href="transport_menu_transport_options.html#software_playthrough_onoff" title="Transport Menu: Transport Options">त्याऐवजी ओड्यासिटी मध्ये संगणकाची आज्ञावली प्लेथ्रू (चालू / बंद) </a> </span>, परंतु याचा अर्थ असा की आपण स्वत: ला उशीरा ऐकता आणि ध्वनी  ब्रेकअप होऊ शकते. </li>
+<li> Windows वर कमी विलंब सॉफ्टवेयर प्लेथ्रू मिळविण्यासाठी आपण हे करू शकता:
+<ul> <li> (फक्त काहीसा विलंब कमी देते): विंडोजवर, घड्याळाच्या <b> स्पीकर चिन्हावर </b> वर राइट-क्लिक करा, <b> रेकॉर्डिंग डिव्हाइस </b> निवडा, ओव्हर-राइट-क्लिक करा इनपुट, <b> गुणधर्म </b> निवडा नंतर "ऐका" टॅबवर, "हे डिव्हाइस ऐका" सक्षम करा. </li>
+<li> (प्रगत) सह कंपाईल ऑडिटी <a href="asio_audio_interface.html" title="ASIO Audio Interface">ASIO®</a> खरे कमी विलंब समर्थन. वर विचारा <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewforum.php?f=19">कंपाईलिंग ओड्यासिटी  </a> चा बोर्ड<a rel="nofollow" class="external text" href="https://forum.audacityteam.org/"> फोरम </a>
+आपल्याला मदत हवी असल्यास .</div></li></ul></li></ul>
+<h2><span class="mw-headline" id="Introduction">परिचय</span></h2>
+<p>हे ट्यूटोरियल ओड्यासिटी  मध्ये स्क्रॅच पासून एकाधिक साउंड गितपट्टा ओव्हरडबिंग सत्र तयार करण्याची ज्ञात कार्य पद्धती वर्णन करते; म्हणजेच, आपण एक गितपट्टा ध्वनीमुद्रण केला आणि नंतर तो परत प्ले करा आणि त्याविरूद्ध दुसरा गितपट्टा जोडा - ड्रम्स, गिटार, आवाज - आवश्यकतेनुसार पुन्हा करा.
+</p> <p> ही प्रक्रिया आपल्या संगणकाची अंगभूत मायक्रोफोन आणि एक जोडी हेडफोन्स वापरते. आपण स्वत: ला न ऐकल्यामुळे आनंदी असले पाहिजे - आपले थेट कार्यप्रदर्शन - आपल्या हेडफोन्समध्ये रीअल-टाइममध्ये. आपण इच्छिता त्याप्रमाणे मागील सर्व गितपट्टा मिसळलेले ऐकू शकाल, परंतु आपण रेकॉर्डिंग पूर्ण करेपर्यंत आणि संपूर्ण गोष्ट परत प्ले करेपर्यंत आपला थेट आवाज किंवा कार्यक्षमता या मिश्रणामध्ये नसेल. घरातील संगणकावर इलेक्ट्रॉनिक मिक्समध्ये आपला थेट आवाज समाविष्ट करणे खूप अवघड आहे.
 </p>
-<div class="note">You can leave one earphone off and cup your hand so it forms a tunnel between your lips and your ear. Some professional recording artists feel this is a more natural method.</div>
-<h2><span class="mw-headline" id="Hardware">Hardware</span></h2>
-<p>Almost any Windows®, Mac® or Linux® machine with a built-in microphone can be used.
-</p><p>Our example here uses Mac earbuds for listening, but nearly any good headphones or earbuds are OK. 
+<div class = "नोट"> आपण एक इयरफोन बंद ठेवू शकता आणि आपला हात कप करू शकता जेणेकरून ते आपल्या ओठ आणि कान यांच्या दरम्यान बोगदा बनवेल. काही व्यावसायिक ध्वनीमुद्रण कलाकारांना वाटते की ही एक अधिक नैसर्गिक पद्धत आहे.</div>
+<h2><span class="mw-headline" id="Hardware">हार्डवेअर</span></h2>
+<p>अंगभूत मायक्रोफोनसह जवळजवळ कोणतीही Windows®, Mac® किंवा Linux® मशीन वापरली जाऊ शकते.
+</p> <p> आमचे उदाहरण येथे ऐकण्यासाठी मॅक इअरबड्स वापरते, परंतु जवळजवळ कोणतेही चांगले हेडफोन किंवा इअरबड ठीक आहेत. 
 </p>
 <dl><dd><span title="MAC earBuds"><img alt="MAC earBuds.jpg" src="../m/images/6/6d/mac_earbuds.jpg" width="332" height="174" /></span></dd></dl>
-<h2><span class="mw-headline" id="First_Recording">First Recording</span></h2>
-<p>First we will make a simple recording with no overdubbing or other fancy tricks. The system has to work correctly for simple recording and playback before we go further.
-</p><p>This is not a tutorial on making a recording and playing it back, but you need to be able to do that before you do anything else. There are multiple tutorials on Recording.
+<h2><span class="mw-headline" id="First_Recording">प्रथम रेकॉर्डिंग </span> </h2>
+<p> प्रथम आम्ही ओव्हरडबिंग किंवा इतर फॅन्सी युक्त्यांसह एक साधे रेकॉर्डिंग करू. आम्ही पुढे जाण्यापूर्वी सिस्टमला सोप्या रेकॉर्डिंग आणि प्लेबॅकसाठी योग्यरित्या कार्य करावे लागेल.
+</p> <p> हे रेकॉर्डिंग बनविणे आणि परत प्ले करणे याविषयीचे ट्यूटोरियल नाही, परंतु आपण आणखी काहीही करण्यापूर्वी हे करण्यास सक्षम असणे आवश्यक आहे. रेकॉर्डिंगवर अनेक ट्यूटोरियल आहेत.
 </p>
-<ul><li><a href="tutorials.html" title="Tutorials">Tutorials</a></li>
-<li><a href="tutorial_your_first_recording.html" title="Tutorial - Your First Recording">Your First Recording</a></li>
-<li><a href="tutorials.html#workflow" title="Tutorials">General Workflow Tutorials</a></li></ul>
-<p>Connect the headphones.
-</p><p>Set the computer control panels, Audacity Preferences and Audacity dropdowns to recognize the computer's built-in headphones for playback and to use the built-in microphone for recording.
+<ul><li><a href="tutorials.html" title="Tutorials">शिकवण्या</a></li>
+<li><a href="tutorial_your_first_recording.html" title="Tutorial - Your First Recording">आपले प्रथम ध्वनीमुद्रण</a></li>
+<li><a href="tutorials.html#workflow" title="Tutorials">सामान्य वर्कफ्लो ट्यूटोरियल </a> </li> </ul>
+<p> हेडफोन कनेक्ट करा.
+</p> <p> प्लेबॅकसाठी संगणकाचे अंगभूत हेडफोन्स ओळखण्यासाठी आणि रेकॉर्डिंगसाठी अंगभूत मायक्रोफोन वापरण्यासाठी संगणक नियंत्रण पॅनेल, ओड्यासिटी प्राधान्ये आणि ओड्यासिटी ड्रॉपडाऊन सेट करा.
 </p>
-<h3><span class="mw-headline" id="Set_Audacity_Preferences:">Set Audacity Preferences:</span></h3>
-<p>Click on <span class="menu">Edit &gt; <a href="edit_menu.html#prefs" title="Edit Menu">Preferences</a></span> <i>(on a Mac this is <span class="menu">Audacity &gt; <a href="audacity_menu.html" title="Audacity Menu">Preferences</a></span>)</i>
+<h3><span class="mw-headline" id="Set_Audacity_Preferences:">सेट 
+ओड्यासिटी  प्राधान्ये:</span></h3>
+<p>सुधारणे  <span class="menu">यावर क्लिक करा &gt; <a href="edit_menu.html#prefs" title="Edit Menu">प्राधान्ये</a></span> <i>(
+मॅक वर हे आहे <span class="menu">ओड्यासिटी &gt; <a href="audacity_menu.html" title="Audacity Menu">प्राधान्ये</a></span>)</i>
 </p>
-<ul><li> in the <b>Quality</b> tab:
-<ul><li> set <b>Default Sample Rate</b> to <span class="button">44100 Hz &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span></li>
-<li> set <b>Default Sample Format</b> to <span class="button">32-bit float &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span></li></ul></li>
-<li> in the <b>Devices</b> tab:
-<ul><li> Under <i>Playback</i> set <b>Device</b> to the on-board sound card </li>
-<li> Under <i>Recording</i> set <b>Device</b> to the on-board sound card and set <b>Channels</b> to <span class="button">1 (Mono) &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span> </li></ul></li></ul>
-<ul><li> in the <b>Recording</b> tab:
-<ul><li> check <span class="button"><img alt="checked checkbox" src="../m/images/8/85/checkboxchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;Overdub: Play other tracks while recording new one</span></li>
-<li> uncheck <span class="button"><img alt="unchecked checkbox" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;Software Playthrough: Listen while recording or monitoring new track</span></li></ul></li></ul>
-<div class="note">You may want to make the Audacity project window larger than its default and expand the <b>Meter Toolbar</b>. </div>
-<p>Click once anywhere inside the recording meter (the one with the mic icon) to put the meters into Monitor Mode. They will display the microphone's sound level without starting Audacity recording and wasting drive space. This may fail on certain Linux machines using <a href="tutorial_recording_computer_playback_on_linux.html#jack" title="Tutorial - Recording Computer Playback on Linux">Jack</a>.
-</p><p>Find your microphone; scratch or tap around your computer until the <a href="meter_toolbar.html#recording" title="Meter Toolbar">Recording Meter</a> goes sharply up. Some computers have it in the lid, some in the grill just beside the left <span class="kbrd" style="background-color: #e0e0f0">Shift</span> key.
-</p><p>Play or sing into the microphone. Adjust Audacity's recording control so you do not peak much over -10 to -6 on Audacity's meters. You can fix low levels later, but you cannot fix overloading, smashing, and clipping (meters too far to the right). 
-</p><p>Click "<b>Record</b>"; Audacity will take a second to configure itself and start recording. The blue waves will start to crawl left to right as you perform. Play or sing a simple song that you can use for rhythm and timing tests later.
-</p><p>Click "<b>Stop</b>", then "<b>Home</b>" and then click "<b>Play</b>" to hear the track you have just made. You should hear the track in your headphones. This is all you will hear during the overdub sessions. You will only hear your voice or instrument in your headphones <b>after</b> you record it.
+<ul><li> <b> गुणवत्ता </b> टॅबमध्ये:
+<ul><li> सेट <b>पुर्वनिर्धारित  नमुना दर </b> वर <span class="button">44100 Hz &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span></li>
+<li> सेट <b>
+पुर्वनिर्धारित नमुना स्वरूप</b> करण्यासाठी <span class="button">
+32-बिट फ्लोट &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span></li></ul></li>
+<li> <b> डिव्हाइस </b> टॅबमध्ये:
+<ul><li> अंतर्गत <i>प्लेबॅक</i> सेट <b>डिव्हाइस</b> ऑन-बोर्ड साऊंड कार्डवर </li>
+<li> अंतर्गत <i>ध्वनीमुद्रण</i> सेट <b>डिव्हाइस</b> ऑन-बोर्ड साऊंड कार्डवर and set <b>वाहिन्या</b> करण्यासाठी <span class="button">1 (मोनो) &#160;<img alt="menu dropdown" src="../m/images/e/ed/menudownarrow.png" width="9" height="6" style="vertical-align: middle" /></span> </li></ul></li></ul>
+<ul><li> मध्ये <b>ध्वनीमुद्रण</b> टॅब:
+<ul><li> तपासा <span class="button"><img alt="checked checkbox" src="../m/images/8/85/checkboxchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;ओव्हरडब: नवीन ध्वनीमुद्रण करताना इतर ध्वनीमुद्रण प्रारंभ करा</span></li>
+<li> अनचेक करा <span class="button"><img alt="unchecked checkbox" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;संगणकाची आज्ञावली  प्लेथ्र्यू: नवीन गितपट्टा संगणकाची आज्ञावली  करताना किंवा निरीक्षण करताना ऐका</span></li></ul></li></ul>
+<div class="note">आपणास ओड्यासिटी  प्रकल्प विंडो त्याच्या पुर्वनिर्धारित पेक्षा मोठा बनवायचा आणि <b> मीटर टूलबार </b> विस्तृत करायचा आहे. </div>
+<p> मीटर मॉनिटर मोडमध्ये ठेवण्यासाठी ध्वनीमुद्रण मीटरच्या आत कुठेही क्लिक करा (माइक चिन्हासहित एक). ओड्यासिटी ध्वनीमुद्रण आणि ड्राइव्हची जागा वाया घालविल्याशिवाय ते मायक्रोफोनची ध्वनी पातळी प्रदर्शित करतील. हे वापरत असलेल्या काही लिनक्स मशीनवर अयशस्वी होऊ शकते <a href="tutorial_recording_computer_playback_on_linux.html#jack" title="Tutorial - Recording Computer Playback on Linux">Jack</a>.
+</p><p>आपला मायक्रोफोन शोधा; पर्यंत आपल्या संगणकाभोवती स्क्रॅच करा किंवा टॅप करा <a href="meter_toolbar.html#recording" title="Meter Toolbar">ध्वनीमुद्रण मीटर </a></b> झपाट्याने वाढत आहे. काही संगणकांमध्ये ते झाकणात असते तर काही ग्रिलमध्ये डाव्या बाजूला असतात <span class="kbrd" style="background-color: #e0e0f0">शिफ्ट</span> की.
+</p><p>मायक्रोफोनमध्ये प्ले करा किंवा गा. ओड्यासिटी  ओड्यासिटी  नियंत्रण समायोजित करा जेणेकरून आपण ओड्यासिटी च्या मीटरवर -10 ते -6 जास्त गाठणार नाही. आपण नंतर खालच्या पातळीचे निराकरण करू शकता परंतु आपण ओव्हरलोडिंग, स्मॅशिंग आणि क्लिपिंग (मीटरपासून अगदी उजवीकडे उजवीकडे) निश्चित करू शकत नाही.
+</p> <p> "<b> ओड्यासिटी  </b>" क्लिक करा; ओड्यासिटी  स्वतःस कॉन्फिगर करण्यासाठी आणि ओड्यासिटी प्रारंभ करण्यास सेकंद घेईल. आपण करत असताना निळ्या लाटा डावीकडून उजवीकडे रेंगायला लागतील. आपण नंतर ताल आणि वेळेच्या चाचण्यांसाठी वापरू शकता असे एक साधे गाणे प्ले करा किंवा गा.
+</p> <p> "<b> थांबा </b>" क्लिक करा, नंतर "<< मुख्यपृष्ठ </ b>" क्लिक करा आणि आपल्याकडे नुकताच गितपट्टा ऐकण्यासाठी "<b> प्ले </b>" क्लिक करा. केले. आपण आपल्या हेडफोन्समध्ये गितपट्टा ऐकला पाहिजे. ओव्हरडब सेशन्स दरम्यान हे सर्व ऐकू येईल. आपण आपला ओड्यासिटी <b> नंतर </b> नंतर आपल्या हेडफोन्समध्ये आपला आवाज किंवा इन्स्ट्रुमेंट केवळ ऐकू शकता.
 </p>
-<h2><span class="mw-headline" id="Setting_the_Recording_Latency">Setting the Recording Latency</span></h2>
-<p>Latency refers to the delay between the time the audio enters the computer and the time Audacity is able to record it to a track. For example, if you are recording a keyboard track, latency is the delay between the time you strike a key and the time that note is recorded. 
-</p><p>For instructions on how to adjust the latency please see the <a href="latency_test.html" title="Latency Test">Latency Test</a> page in this manual.
+<h2><span class="mw-headline" id="Setting_the_Recording_Latency">ध्वनीमुद्रण उशीरा सेट करीत आहे </span> </h2>
+<p> लेटेंसी ध्वनी  संगणकात प्रवेश करण्याच्या वेळेतील विलंब आणि ओड्यासिटी गितपट्टावर ध्वनीमुद्रण करण्यात सक्षम वेळ दरम्यान दर्शवते. उदाहरणार्थ, आपण कीबोर्ड गितपट्टा ध्वनीमुद्रण करीत असाल तर, की आपण की दाबण्यापासून वेळ आणि ती नोट ध्वनीमुद्रण केलेल्या वेळातील विलंब होय.
+</p> <p> सुप्त काम कसे समायोजित करावे यावरील सूचनांसाठी कृपया ते पहा<a href="latency_test.html" title="Latency Test">Latency Test</a> page in this manual.
 </p>
-<div class="note">To achieve lower latency software playthrough on Windows you can:
-<ul><li> (Only gives somewhat lower latency): On Windows, right-click over the <b>Speaker icon'<i> by the clock, choose </i>Recording Devices</b>, right-click over the input, choose <b>Properties</b> then on the "Listen" tab, enable "Listen to this device". </li>
-<li> (Advanced) Compile Audacity with <a href="asio_audio_interface.html" title="ASIO Audio Interface">ASIO®</a> true low latency support. Ask on the <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewforum.php?f=19">Compiling Audacity</a> board of the <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/">Forum</a> if you need help.</div></li></ul>
-<h2><span class="mw-headline" id="Performance">Performance</span></h2>
-<p>Click on the <b>[X]</b> in the <b>Track Control Panels</b> to delete all the test tracks. You're ready for the first proper recording session. The first recording can be whatever you're planning to use as a base, backing track, guide or rhythm track. It can be anything including <span class="menu">Generate &gt; <a href="rhythm_track.html" title="Rhythm Track">Rhythm Track</a></span> which can be adjusted with its control panel for rhythm and composition. You could use the music from a rhythm and chord machine playing to the mixer. You could use existing sound files.
-</p><p>You should record a lead-in. That is, a non-musical rhythmical clue before the music starts so as to warn you of the imminent start. In a live band, this would be the drummer or lead guitar count-in. You could use the keyboard rhythm stops or you can perform several rim shots into the microphone to establish the rhythm before the first note; tapping on the table with a pencil also works.  You can sheer it off later in post production so nobody else will hear it. Tick, tick, tick, tick, music; adjust as appropriate for music type and rhythm.
-</p><p>Click "<b>Stop</b>", then "<b>Home</b>" and then "<b>Record</b>" to record track two using your live performance and track playback in your headphone mix as a guide. Repeat for as many tracks as required.
-</p><p>The "<b>Mute</b>" and "<b>Solo</b>" buttons to the left of each track are valuable in overdubbing. Solo causes only that track to play and Mute turns that track off. Solo has options that can be set in <a href="preferences.html" title="Preferences">Preferences</a>. The little volume control to the left of each timeline also controls the playback volume -- it affects the headphone mix.
-</p><p>When you get to a stopping point click the <b>Stop</b> button <img alt="Play button" src="../m/images/f/f9/stop.png" title="Play button" width="16" height="16" /> then choose <span class="menu">File &gt; Save Project &gt; <a href="file_menu_save_project.html#save_project" title="File Menu: Save Project">Save Project</a></span> to save your project. 
-</p><p>As you progress, you should save a new Project periodically with a slightly different file name using <span class="menu">File &gt; Save Project &gt; <a href="file_menu_save_project.html#save_lossless_copy_of_project" title="File Menu: Save Project">Save Lossless Copy of Project...</a></span>. A good recommendation is to use ISO date and time for the file names or the start of the file names; refrain from using slash marks or other punctuation marks in a file name.
-</p><p>201110011500.aup    That's 3PM. 2011 October First, 1500hrs.
-</p><p>Then save a new version of the song about every twenty minutes:<br />
+<div class="note">Windows वर कमी विलंब 
+संगणकाची आज्ञावली प्लेथ्रू मिळविण्यासाठी आपण हे करू शकता:
+<ul> <li> (फक्त काहीसा विलंब कमी देते): विंडोजवर << स्पीकर चिन्हावर <i> घड्याळावर उजवे क्लिक करा, निवडा </ i> ध्वनीमुद्रण डिव्हाइस </b>, राइट-क्लिक करा इनपुटवर, <b> गुणधर्म </b> निवडा नंतर "ऐका" टॅबवर, "हे डिव्हाइस ऐका" सक्षम करा.
+ </li>
+<li> 
+(प्रगत) सह कंपाईल ओड्यासिटी  <a href="asio_audio_interface.html" title="ASIO Audio Interface">ASIO®</a> 
+खरे कमी विलंब समर्थन. वर विचारा <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewforum.php?f=19">
+कंपाईलिंग ओड्यासिटी </a> चा बोर्ड<a rel="nofollow" class="external text" href="https://forum.audacityteam.org/">मंच</a> 
+जर तुम्हाला मदत हवी असेल तर.</div></li></ul>
+<h2><span class="mw-headline" id="Performance">कामगिरी</span></h2>
+<p>सर्व चाचणी गितपट्टा हटविण्यासाठी <b> [एक्स] </b> <b> गितपट्टा नियंत्रण पॅनेल </b> वर क्लिक करा. आपण पहिल्या योग्य ध्वनीमुद्रण सत्रासाठी सज्ज आहात. प्रथम ध्वनीमुद्रण आपण बेस, बॅकिंग गितपट्टा, मार्गदर्शक किंवा ताल गितपट्टा म्हणून वापरण्याची योजना करीत असलेले काहीही असू शकते. हे यासह काहीही असू शकते<span class="menu">Generate &gt; <a href="rhythm_track.html" title="Rhythm Track">Rhythm Track</a></span> जे ताल आणि रचनांसाठी त्याच्या नियंत्रण पॅनेलसह समायोजित केले जाऊ शकते. आपण मिक्सरवर वाजवत लय आणि जीवा मशीनमधून संगीत वापरू शकता. आपण विद्यमान ध्वनी फायली वापरू शकता.
+</p> <p> आपण आघाडी नोंदविली पाहिजे. म्हणजेच संगीत सुरू होण्यापूर्वी एक संगीत नसलेला तालबद्ध ताण म्हणजे आपल्याला नजीकच्या सुरूवातीच्या इशारा देण्यासाठी. लाइव्ह बँडमध्ये, हे ड्रमर किंवा लीड गिटार काउंट-इन असेल. आपण कीबोर्ड ताल स्टॉप वापरू शकता किंवा मायक्रोफोनवर लय स्थापित करण्यासाठी आपण प्रथम टिप ठेवण्यापूर्वी बरेच रिम शॉट्स करु शकता; पेन्सिलने टेबलवर टॅप करणे देखील कार्य करते. आपण पोस्ट प्रोडक्शनमध्ये नंतर हे पूर्ण करू शकता जेणेकरून इतर कोणीही ऐकणार नाही. टिक, टिक, टिक, टिक, संगीत; संगीत प्रकार आणि लयसाठी योग्य म्हणून समायोजित करा.
+</p> <p> आपले लाइव्ह परफॉरमन्स वापरुन गितपट्टा दोन ध्वनीमुद्रण करण्यासाठी "<b> थांबा </b>" क्लिक करा, नंतर "<b> होम </b>" आणि नंतर "<b> ध्वनीमुद्रण </b>" क्लिक करा. मार्गदर्शक म्हणून आपल्या हेडफोन मिक्समध्ये प्लेबॅक गितपट्टा करा. आवश्यक तितक्या गितपट्टासाठी पुनरावृत्ती करा.
+</p><p>
+प्रत्येक गितपट्टाच्या डावीकडे "<b> नि: शब्द </b>" आणि "<b> एकल </b>" बटणे ओव्हरडबिंगसाठी मौल्यवान आहेत. सोलोमुळे फक्त तो गितपट्टा खेळला जातो आणि नि: शब्द तो गितपट्टा बंद करतो. सोलो मध्ये असे पर्याय आहेत जे सेट केले जाऊ शकतात <a href="preferences.html" title="Preferences">प्राधान्ये</a>.प्रत्येक टाइमलाइनच्या डावीकडील थोडे आवाज नियंत्रण प्लेबॅक आवाज देखील नियंत्रित करते - हे हेडफोन मिक्सला प्रभावित करते.
+</p> <p> जेव्हा आपण एका थांबण्याच्या बिंदूवर पोहोचता तेव्हा क्लिक करा <b>थांबा</b> बटण <img alt="Play button" src="../m/images/f/f9/stop.png" title="Play button" width="16" height="16" /> मग निवडा <span class="menu">धारीका &gt; प्रकल्प जतन करा
+ &gt; <a href="file_menu_save_project.html#save_project" title="File Menu: Save Project">Save Project</a></span> आपला प्रकल्प जतन करण्यासाठी.
+</p> <p> जसे आपण प्रगती करता, आपण काही वेगळ्या धारीका नावाचा वापर करून वेळोवेळी नवीन प्रकल्प जतन केला पाहिजे <span class="menu">धारीका &gt; 
+प्रकल्प जतन करा&gt; <a href="file_menu_save_project.html#save_lossless_copy_of_project" title="File Menu: Save Project">प्रकल्पची लॉसलेस प्रत जतन करा ... </a> </span>. आयएसओ तारीख आणि वेळ धारीका नावे किंवा धारीका नावे सुरू करण्यासाठी वापरणे ही चांगली शिफारस आहे; धारीका नावावर स्लॅश मार्क किंवा इतर विरामचिन्हे वापरण्यास टाळा.
+</p> <p> 201110011500.aup ते 3PM आहे. 2011 ऑक्टोबर प्रथम, 1500 ता.
+</p> <p> त्यानंतर प्रत्येक वीस वाजता गाण्याची नवीन आवृत्ती जतन करा मिनिटे:<br/>
 201110011520.aup<br />
 201110011545.aup<br />
 201110011602.aup}}
-</p><p>Do not go weeks with one Project and file name, and never cover up or record over existing work. If anything happened to that one Project, your project would be ruined and could nullify weeks of work. Think of what would happen if the lights went out right now, the computer ground to a halt and you were forced to use the last known good version of the show.
-</p><p>For extra safety it is good practice to periodically back up your project versions to a DVD-R or external hard drive for archive purposes. Remember that it is important to keep the AUP file and the _data folder together. One way to make sure of this is to create a zip archive of the AUP file and _data folder. In the unlikely event that the Audacity project is corrupted or your hard drive crashes you will be able to recover your work. 
-</p><p>Note that Audacity projects cannot be played in computer media players nor burned to audio CDs. Export your project as 16-bit WAV or AIF for burning to a CD, or to MP3 for email or internet delivery. See <a href="mixing.html" title="Mixing">Mixing</a> for advice on doing the final mix of your project.
+</p><p>एका प्रकल्प आणि धारीका नावाने आठवडे जाऊ नका आणि अस्तित्त्वात असलेल्या कामावर कधीही आच्छादित करू नका किंवा ध्वनीमुद्रण करू नका. त्या एका प्रकल्पाचे काही झाले तर आपला प्रकल्प उध्वस्त होईल आणि आठवड्याचे काम निरर्थक होईल. आत्ता दिवे निघाले तर काय होईल याचा विचार करा, संगणक ग्राउंड थांबत आहे आणि आपल्याला शोची अंतिम ज्ञात चांगली आवृत्ती वापरण्यास भाग पाडले गेले आहे.
+</p><p>अतिरिक्त सुरक्षिततेसाठी आपल्या प्रकल्प आवृत्त्यांचा नियमितपणे डीव्हीडी-आर किंवा संग्रहण उद्देशाने बाह्य हार्ड ड्राइव्हवर बॅकअप घेणे चांगले आहे. लक्षात ठेवा की AUP धारीका आणि _डेटा धारीका एकत्र ठेवणे महत्वाचे आहे. याची खात्री करण्याचा एक मार्ग म्हणजे AUP धारीका आणि _डेटा धारीकाचे झिप संग्रहण तयार करणे. ओड्यासिटी  प्रकल्प
+ दूषित झाल्याची किंवा आपली हार्ड ड्राइव्ह क्रॅश होण्याची शक्यता नसल्यास आपण आपले कार्य पुनर्प्राप्त करण्यात सक्षम व्हाल.
+</p> <p> लक्षात घ्या की ओड्यासिटी  प्रकल्प संगणक मीडिया प्लेयरमध्ये प्ले केले जाऊ शकत नाहीत किंवा ध्वनी सीडीमध्ये ज्वलनशील शकत नाहीत. आपला प्रकल्प सीडी जाळण्यासाठी 16-बिट डब्ल्यूएव्ही किंवा एआयएफ म्हणून किंवा ईमेल किंवा इंटरनेट वितरणासाठी एमपी 3 वर निर्यात करा. पहा<a href="mixing.html" title="Mixing">मिश्रण</a> आपल्या प्रकल्पाचे अंतिम मिश्रण करण्याच्या सल्ल्यासाठी.
 </p>
 <h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
-<ul><li>How much hard disk space do you have available? If your only experience with computer files is with spreadsheets, email or Photoshop pictures, live audio (and video) production will stun you with the amount of disk space it consumes. With high quality overdubbing and UNDO, project files and folders get big in a hurry; with periodic saving, a project can get very seriously large.</li>
-<li>Communications features on newer Windows machines can cause unwanted changes in recorded volume or make the recording sound tinkly and/or hollow; see this <a href="faq_recording_troubleshooting.html#enhancements" title="FAQ:Recording - Troubleshooting">FAQ</a></li>
-<li>You can try to listen to yourself in the headphones by changing an Audacity setting: <span class="menu">Edit &gt; Preferences &gt; <a href="recording_preferences.html" title="Recording Preferences">Recording</a></span>&#160;:  and check <b>[X] Software Playthrough</b> <i>(select for <b>ON</b>)</i>. </li>
-<li>Record a track with that setting. Chances are terrific that your headphone voice and your real voice are not going to match. This is computer or sound channel latency and there's no adjustment for it. You should probably leave that setting deselected.</li></ul>
+<ul><li>आपल्याकडे किती हार्ड डिस्क जागा उपलब्ध आहे? संगणक धारीकाचा आपला एकमात्र अनुभव जर स्प्रेडशीट, ईमेल किंवा फोटोशॉप पिक्चर्सचा असेल तर थेट ध्वनी  (आणि व्हिडिओ) उत्पादन आपल्याला वापरत असलेल्या डिस्क स्पेसच्या प्रमाणात आश्चर्यचकित करेल. उच्च प्रतीच्या ओव्हरडबिंग आणि यूएनडीओ सह, प्रकल्प फायली आणि फोल्डर्स घाईत मोठा होतो; नियतकालिक बचत सह, प्रकल्प खूप गंभीरपणे मोठा होऊ शकतो. </li>
+<li> नवीन विंडोज मशीनवरील संप्रेषण वैशिष्ट्यांमुळे ध्वनीमुद्रण केलेल्या आवाजमध्ये अवांछित बदल होऊ शकतात किंवा ध्वनीमुद्रण आवाज किंचित आणि / किंवा पोकळ होऊ शकेल; हे पहा<a href="faq_recording_troubleshooting.html#enhancements" title="FAQ:Recording - Troubleshooting">
+सामान्य प्रश्न</a></li>
+<li>आपण ओड्यासिटी  सेटिंग बदलून हेडफोन्समध्ये स्वत: ला ऐकण्याचा प्रयत्न करू शकता: <span class="menu">सुधारणे &gt; प्राधान्ये &gt; <a href="recording_preferences.html" title="Recording Preferences">ध्वनीमुद्रण</a></span>&#160;: 
+आणि तपासा <b>[एक्स] सॉफ्टवेअर प्लेथ्रू</b> <i>(<b> चालू </b>साठी निवडा)</i>. </li>
+<li>त्या सेटिंगसह गितपट्टा ध्वनीमुद्रण करा. आपला हेडफोन व्हॉईस आणि आपला खरा आवाज जुळणार नाही अशी शक्यता भयानक आहे. हा संगणक किंवा ध्वनी चॅनेल विलंब आहे आणि त्यासाठी कोणतेही समायोजन नाही. आपण कदाचित ही सेटिंग निवड रद्द केली पाहिजे..</li></ul>
 <h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="tutorial_recording_multi_track_overdubs.html" title="Tutorial - Recording Multi-track Overdubs"><b>|&lt;</b> Recording Multi-track Overdubs</a><br />
+<p><a href="tutorial_recording_multi_track_overdubs.html" title="Tutorial - Recording Multi-track Overdubs"><b>|&lt;</b> 
+ध्वनीमुद्रण मल्टी-ट्रॅक ओव्हरडब</a><br />
 </p>
 <!-- 
 NewPP limit report
@@ -156,45 +176,47 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>Navigation</h3>
+		<h3>निर्देशक </h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">Manual Home Page</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">Using Audacity</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">Tour Guide</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">New Features</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">Getting Started</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">Tutorials</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">Tips</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">Audacity GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">Menu Bar</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">Toolbars</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">Tracks</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">Effects</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">Customizing Audacity</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">Preferences</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">Key-bindings</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">Plug-ins</span></a></li></ul></li></ul>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
+</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ओड्यासिटी सानुकूलित करत आहे</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
+</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
+<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>Reference</h3>
+		<h3>संदर्भ</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">Reference</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">Digital Audio</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">Glossary</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">All Commands</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">Index</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">FAQ</span></a></li></ul>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>Useful Links</h3>
+		<h3>उपयुक्त दुवे</h3>
 		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">WIT</a></span></li></ul>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
+<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
 		</div>
 		</div>
 		
@@ -209,7 +231,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>This version created on 2018-09-17 - <a href="https://alphamanual.audacityteam.org/man/Overdubbing_using_your_computer%27s_on-board_sound_card">Check current version of this page (development Manual)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Overdubbing_using_your_computer%27s_on-board_sound_card">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

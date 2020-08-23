@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Importing and Exporting Labels - Audacity Manual</title>
+<title>लेबले आयात आणि निर्यात करीत आहे -ओड्यासिटी महितीपुस्तिका</title>
 
 
 
@@ -25,45 +25,45 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Importing and Exporting Labels</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">लेबले आयात आणि निर्यात करीत आहे</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">ओड्यासिटी विकास महितीपुस्तिका पासून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Importing_and_Exporting_Labels#searchInput">search</a></div>
+										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Importing_and_Exporting_Labels#searchInput">शोध</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro"><a href="label_tracks.html" title="Label Tracks">Label Tracks</a> can be exported to, and imported from plain text files (.txt extension). The structure of the file is a tab-delimited plain text format that can be opened by any text editor or spreadsheet application and edited there.</div>
-<p>The standard structure to display a label denoting its <a href="timeline.html" title="Timeline">Timeline</a> position and any text it contains is as below.
+<div class="intro"><a href="label_tracks.html" title="Label Tracks">लेबल गितपट्टा </a> वर निर्यात केले जाऊ शकते आणि साध्या मजकूर गितपट्टा (.txt विस्तार) मधून आयात केले जाऊ शकते. धारीका ची रचना एक टॅब-मर्यादित साधा मजकूर स्वरूप आहे जी कोणत्याही मजकूर संपादकाद्वारे किंवा स्प्रेडशीट अनुप्रयोगाद्वारे उघडली जाऊ शकते आणि तेथे संपादित केली जाऊ शकते. </div>
+<p> असे दर्शविते की लेबल प्रदर्शित करण्यासाठी प्रमाणित रचना <a href="timeline.html" title="Timeline">टाइमलाइन</a> स्थान आणि त्यामधील कोणताही मजकूर खाली आहे.
 </p>
 <div class="example">
 <p><code>
-2.150000&#160;&#160;&#8594;&#160;&#160;2.150000&#160;&#160;&#8594;&#160;&#160;point label at 2.15 seconds<br />
-3.400000&#160;&#160;&#8594;&#160;&#160;6.100000&#160;&#160;&#8594;&#160;&#160;region label from 3.4 to 6.1 seconds
+2.150000&#160;&#160;&#8594;&#160;&#160;2.150000&#160;&#160;&#8594;&#160;&#160;२.१5 सेकंदांवर बिंदू लेबल<br />
+3.400000&#160;&#160;&#8594;&#160;&#160;6.100000&#160;&#160;&#8594;&#160;&#160;प्रदेश लेबल to.4 ते .1.१ सेकंद
 </p>
 </code></div>
-<p>In the example above, the first column has the start time in seconds, the second column has the end time, and the third column if present shows the text of the label. Start time and end time are identical for a point label. Values are separated by tab characters (which will often appear as an arrow in text editors, as shown above).
-</p><p>If a label is created from a point or region in a <a href="audio_track_dropdown_menu.html#spgram" title="Audio Track Dropdown Menu">Spectrogram</a> track where <a href="spectral_selection.html" title="Spectral Selection">Spectral Selection</a> is enabled (or if a label is otherwise created when a low frequency and high frequency value are already stored in the project), the labels file also contains the frequency range for that label.     
+<p>वरील उदाहरणात, पहिल्या स्तंभात सेकंदात प्रारंभ वेळ आहे, दुसर्‍या स्तंभात शेवटची वेळ आहे आणि तिसरा स्तंभ उपस्थित असल्यास लेबलचा मजकूर दर्शवितो. प्रारंभ वेळ आणि समाप्तीची वेळ बिंदू लेबलसाठी समान असते. मूल्ये टॅब वर्णांद्वारे विभक्त केली जातात (जी वर दर्शविल्याप्रमाणे मजकूर संपादकांमधील बाण म्हणून बहुधा दिसून येतील).
+</p> <p> ए मधील बिंदू किंवा प्रदेशावरून लेबल तयार केले असल्यास <a href="audio_track_dropdown_menu.html#spgram" title="Audio Track Dropdown Menu">स्पेक्ट्रोग्राम</a> गितपट्टा जेथे <a href="spectral_selection.html" title="Spectral Selection">स्पेक्ट्रल सिलेक्शन </a> सक्षम केले आहे (किंवा प्रकल्पात कमी वारंवारता आणि उच्च वारंवारता मूल्य आधीपासून संचयित केलेले असेल तेव्हा लेबल तयार केले असल्यास), लेबल साधनपट्टी मध्ये त्या लेबलसाठी वारंवारता श्रेणी देखील असते.     
 </p>
 <div class="example">
 <p><code>
-1.000000&#160;&#160;&#8594;&#160;&#160;1.000000&#160;&#160;&#8594;&#160;&#160;This point was clicked at 6928.456055 Hz<br />
+1.000000&#160;&#160;&#8594;&#160;&#160;1.000000&#160;&#160;&#8594;&#160;&#160;हा बिंदू क्लिक केला गेला 6928.456055 हर्ट्ज<br />
 \&#160;&#160;&#8594;&#160;&#160;6928.456055&#160;&#160;&#8594;&#160;&#160;6928.456055<br />
-2.000000&#160;&#160;&#8594;&#160;&#160;2.500000&#160;&#160;&#8594;&#160;&#160;Low frequency undefined, High frequency 6334.588867 Hz<br />
+2.000000&#160;&#160;&#8594;&#160;&#160;2.500000&#160;&#160;&#8594;&#160;&#160;कमी वारंवारता अपरिभाषित, उच्च वारंवारता 6334.588867 हर्ट्ज<br />
 \&#160;&#160;&#8594;&#160;&#160;-1.000000&#160;&#160;&#8594;&#160;&#160;6334.588867<br />
-3.000000&#160;&#160;&#8594;&#160;&#160;3.500000&#160;&#160;&#8594;&#160;&#160;Low frequency 8908.015625, High frequency undefined<br />
+3.000000&#160;&#160;&#8594;&#160;&#160;3.500000&#160;&#160;&#8594;&#160;&#160;कमी वारंवारता 8908.015625, उच्च वारंवारता अपरिभाषित<br />
 \&#160;&#160;&#8594;&#160;&#160;8908.015625&#160;&#160;&#8594;&#160;&#160;-1.000000<br />
-4.000000&#160;&#160;&#8594;&#160;&#160;4.500000&#160;&#160;&#8594;&#160;&#160;Low frequency 1484.669312 Hz, High frequency 2969.338523 Hz<br />
+4.000000&#160;&#160;&#8594;&#160;&#160;4.500000&#160;&#160;&#8594;&#160;&#160;कमी वारंवारता 1484.669312 हर्ट्ज, उच्च वारंवारता 2969.338523 हर्ट्ज<br />
 \&#160;&#160;&#8594;&#160;&#160;1484.669312&#160;&#160;&#8594;&#160;&#160;2969.338523 
 </p>
 </code></div>
-<p>In the example above, there is a point label at 1 second, then three region labels each starting one second further along. After the time position and text content information in the first line, a second line for each label records the low frequency followed by the high frequency. 
+<p>वरील उदाहरणात, 1 सेकंदात एक बिंदू लेबल आहे, त्यानंतर प्रत्येक क्षेत्रासह प्रत्येक सेकंदात तीन क्षेत्रे लेबल आहेत. पहिल्या ओळीतील वेळेची स्थिती आणि मजकूर सामग्री माहितीनंतर, प्रत्येक लेबलची दुसरी ओळ कमी वारंवारतेनंतर उच्च वारंवारता नोंदवते.
 </p>
-<div class="note">To view the low and high frequency values for a label, either select the label then look in <a href="spectral_selection_toolbar.html" title="Spectral Selection Toolbar">Spectral Selection Toolbar</a>, or right-click the label and choose "Edit" to open the <a href="labels_editor.html" title="Labels Editor">Edit Labels</a> window.</div>   
-<p>Sometimes it may be useful to use these labels in another application (for example if somebody wanted to know the time where each piece of an interview starts or stops), or to import a labels file that someone has shared with you.   
-</p><p>You can export labels using the Edit Labels window mentioned above, or by choosing <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportlabels" title="File Menu: Export">Export Labels...</a></span>. By default the exported file has the same name as the current name of the label track. If there are multiple label tracks, the labels of all those tracks are combined into a single label track in the exported file, which by default has the same name as the current name of the last label track.  
-</p><p>Labels can be imported using the Edit Labels window, or by choosing <span class="menu">File &gt; Import &gt; <a href="file_menu_import.html#labels" title="File Menu: Import">Labels...</a></span>. Imported label tracks are added to the bottom of all existing track types in the project, just as when you <a href="importing_audio.html" title="Importing Audio">import an audio track</a>. 
+<div class="note">लेबलसाठी कमी आणि उच्च वारंवारता मूल्ये पाहण्यासाठी, एकतर लेबल निवडा नंतर पहा <a href="spectral_selection_toolbar.html" title="Spectral Selection Toolbar">स्पेक्ट्रल सिलेक्शन साधनपट्टी </a> वर क्लिक करा किंवा लेबलवर उजव्या-क्लिक करा आणि ते उघडण्यासाठी "संपादन" निवडा विंडो <a href="labels_editor.html" title="Labels Editor"></a>लेबल संपादित करा.</div>   
+<p>कधीकधी ही लेबले दुसर्‍या अनुप्रयोगात वापरणे उपयुक्त ठरू शकते (उदाहरणार्थ एखाद्या मुलाखतीचा प्रत्येक तुकडा कोठे सुरू होतो किंवा थांबत असावे अशी वेळ एखाद्यास जाणून घ्यायची असेल तर) किंवा एखाद्याने आपल्यासह सामायिक केलेली लेबल्स साधनपट्टी आयात करण्यासाठी.
+</p><p>आपण वर नमूद केलेली लेबले संपादित करा विंडो वापरून किंवा निवडून लेबले निर्यात करू शकता<span class="menu"> धारीका&gt; निर्यात करा&gt; <a href="file_menu_export.html#exportlabels" title="File Menu: Export">लेबले निर्यात करा ... </a> </span>. पुर्वनिर्धारितनुसार निर्यात केलेल्या धारीका चे लेबल गितपट्टाच्या वर्तमान नावासारखेच नाव असते. एकाधिक लेबल गितपट्टा असल्यास, त्या सर्व गितपट्टाची लेबले निर्यात केलेल्या धारीका मध्ये एकाच लेबल गितपट्टामध्ये एकत्र केली जातील, ज्याचे पुर्वनिर्धारितनुसार शेवटच्या लेबल गितपट्टाचे वर्तमान नाव समान आहे.
+</p><p>लेबले संपादित करा विंडो वापरून किंवा निवडून आयात केली जाऊ शकतात <span class="menu">धारीका&gt; आयात करा&gt; <a href="file_menu_import.html#labels" title="File Menu: Import">लेबले...</a></span>. प्रकल्पमधील सर्व विद्यमान गितपट्टा प्रकारांच्या तळाशी आयात केलेले लेबल गितपट्टा जोडले जातात, जसे आपण करता तसे <a href="importing_audio.html" title="Importing Audio">पुर्वनिर्धारित गितपट्टा आयात करा</a>. 
 </p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
@@ -71,12 +71,12 @@
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">If you import labels created by some application other than Audacity, make sure the application supports <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a> or use only <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> (Latin unaccented) characters and numbers. Otherwise, accented or any other non-Latin characters may cause the file to not import.
-<p>If you use a Windows application to create the file, you may have to use "Save As" and look for a specific option that saves with UTF-8 encoding.
+<td align="left" valign="top">आपण धारीका व्यतिरिक्त काही अनुप्रयोगाद्वारे तयार केलेली लेबले आयात केल्यास, अनुप्रयोग समर्थित असल्याचे सुनिश्चित करा <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/UTF-8">यूटीएफ -8 </a> किंवा केवळ वापरा <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/ASCII">एएससीआयआय </a> (लॅटिन अनचेन्टेड) ​​वर्ण आणि संख्या. अन्यथा, उच्चारण किंवा इतर कोणतीही लॅटिन-वर्णांमुळे साधनपट्टीआयात होऊ शकत नाही.
+<p> आपण साधनपट्टीतयार करण्यासाठी Windows अनुप्रयोग वापरत असल्यास, आपल्याला "जतन करा म्हणून" वापरावे लागेल आणि UTF-8 एन्कोडिंगसह जतन करणारा विशिष्ट पर्याय शोधावा लागेल.
 </p>
 </td></tr></table></div>
 <p><br />
-<a href="label_tracks.html#export" title="Label Tracks"><b>|&lt;</b> Label Tracks</a>
+<a href="label_tracks.html#export" title="Label Tracks"><b>|&lt;</b> लेबल गितपट्टा</a>
 </p>
 <!-- 
 NewPP limit report
@@ -124,45 +124,47 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>Navigation</h3>
+		<h3>निर्देशक </h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">Manual Home Page</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">Using Audacity</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">Tour Guide</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">New Features</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">Getting Started</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">Tutorials</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">Tips</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">Audacity GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">Menu Bar</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">Toolbars</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">Tracks</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">Effects</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">Customizing Audacity</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">Preferences</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">Key-bindings</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">Plug-ins</span></a></li></ul></li></ul>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
+</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ओड्यासिटी सानुकूलित करत आहे</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
+</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
+<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>Reference</h3>
+		<h3>संदर्भ</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">Reference</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">Digital Audio</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">Glossary</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">All Commands</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">Index</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">FAQ</span></a></li></ul>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>Useful Links</h3>
+		<h3>उपयुक्त दुवे</h3>
 		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">WIT</a></span></li></ul>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
+<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
 		</div>
 		</div>
 		
@@ -177,7 +179,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>This version created on 2018-09-17 - <a href="https://alphamanual.audacityteam.org/man/Importing_and_Exporting_Labels">Check current version of this page (development Manual)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Importing_and_Exporting_Labels">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

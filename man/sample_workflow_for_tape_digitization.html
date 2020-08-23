@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title> टेप डिजिटायझेशनसाठी नमुना कार्यप्रवाह - ओड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sample_workflow_for_tape_digitization rootpage-Sample_workflow_for_tape_digitization skin-monobook action-view"><div id="globalWrapper">
+    <div id="column-content">
+        <div id="content" class="mw-body" role="main">
+            <a id="top"></a>
+            
+            <div class="mw-indicators">
+</div>
+            <h1 id="firstHeading" class="firstHeading" lang="en">टेप डिजिटायझेशनसाठी नमुना कार्यप्रवाह</h1>
+            
+            <div id="bodyContent" class="mw-body-content">
+                <div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिकेकडून</div>
+                <div id="contentSub"></div>
+                                    <div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Saving#searchInput">शोधा</a></div>
+                <!-- start content -->
+                <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">या प्रशिक्षणामध्ये डिजिटल ज्यूकबॉक्स किंवा पोर्टेबल संगीत प्लेयरमध्ये लोड करून सीडी तयार करण्यासाठी तयार असलेल्या धारिका तयार करण्यासाठी टेप (कॅसेट टेप आणि रील-टू-रील) ओड्यासिटीचा वापर करून उदाहरणे दिली आहेत. कार्य करण्याचा कोणताही निश्चित " <i><b>योग्य</b></i> " मार्ग नाही - तेथे बरेच पर्याय आहेत; कोणत्याही कृतीप्रमाणेच ते आपल्या वैयक्तिक आवश्यकतानुसार अनुकूल केले जाऊ शकते.</div>
+<p>हा वर्कफ्लो कोणत्याही टप्प्यावर <a href="audacity_projects.html" title="ओड्यासिटी प्रकल्प">ओड्यासिटी प्रकल्पाची</a> बचत करण्याची आवश्यकता नाही (जरी आपल्याला आपल्या कामात व्यत्यय आणण्याची आवश्यकता असल्यास आपण ते करू इच्छित असाल). आपले अंतिम लक्ष्य सीडी तयार <a href="export.html" title="निर्यात करा">करण्यासाठी</a> डब्ल्यूएव्ही धारिका किंवा आपल्या आवश्यकतेसाठी अधिक उपयुक्त असू शकतील अशा इतर धारिका स्वरूपनांचे <a href="export.html" title="Export">निर्यात</a> करणे हे आहे.
+</p><p>या प्रशिक्षणामध्ये सर्व प्रक्रिया ओड्यासिटीचा वापर करुन केली जात आहे, परंतु काही वापरकर्ते विशिष्ट उप-कार्यांसाठी <a href="#alternative">पर्यायी अनुप्रयोग</a> वापरण्यास प्राधान्य देऊ शकतात जसे की आवाज काढणे आणि क्लिक्स आणि पॉप्स काढणे (ओड्यासिटीचे क्लिक काढणे कदाचित इतरांसारखे चांगले परिणाम देऊ शकत नाहीत) अनुप्रयोग).
+</p><p>या कार्यप्रवाहात सामील असलेल्या चरणांच्या अधिक तपशीलांसाठी कृपया <a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="प्रशिक्षण - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे">सीडीमध्ये नक्कल, टेप, एलपी किंवा मिनीडिस्कीक</a> प्रशिक्षण संच पहा .
+</p>
+<h2><span class="mw-headline" id="Workflow">कार्यप्रवाह</span></h2>
+<ol><li> <a href="#set">ओड्यासिटी समायोजन</a></li>
+<li> <a href="#azimuth"> समायोजन तपासा / समायोजित करा</a></li>
+<li> <a href="#clean">डोके स्वच्छ करा</a></li>
+<li> <a href="#tension">टेपवर दबाव आणा</a></li>
+<li> <a href="#levels">ध्वनीमुद्रण स्तर</a></li>
+<li> <a href="#capture">हस्तगत करा</a></li>
+<li> <a href="#raw">रॉ मास्टर बॅकअप</a></li>
+<li> <a href="#dc">डीसी ऑफसेट काढा</a></li>
+<li> <a href="#hf">टेप हिस आणि उच्च वारंवारता आवाज कमी करा</a></li>
+<li> <a href="#labels">गाण्याचे नावपट्ट्या ठेवा</a></li>
+<li> <a href="#gaps">इंटर-गीतपट्टा अंतरांवर शांतता घ्या</a></li>
+<li> <a href="#fades"> फेड इन / आउट</a></li>
+<li> <a href="#adjust">नावपट्टी स्थिती समायोजित करा</a></li>
+<li> <a href="#names">नावे मागोवा घ्या</a></li>
+<li> <a href="#advanced">प्रगत लेबलिंग तंत्र</a></li>
+<li> <a href="#amplify">मोठेपणा समायोजन</a></li>
+<li> <a href="#compress">संकुचन</a></li>
+<li> <a href="#wavs">डब्ल्यूएव्हीचा संच निर्यात करा</a></li>
+<li> <a href="#labex">नावपट्ट्या निर्यात करा</a></li>
+<li> <a href="#backup">बॅकअप</a></li>
+<li> <a href="#alternative">वैकल्पिक अनुप्रयोग</a></li></ol>
+<p><br>
+</p>
+<div class="note">डिजिटल हस्तांतरणामध्ये टेप बनविणे एक कौशल्य आहे आणि आपण जितके अधिक तज्ञ व्हाल तितके अधिक. 
+<ul><li>आपल्याला कमी काळजी वाटणार्&zwj;या काही टेपपासून सुरुवात करण्याचा विचार करा, या मार्गाने आपल्याला परत जाण्याची आवश्यकता नाही आणि आपण केलेल्या पूर्वीच्या महत्त्वपूर्ण ट्रान्सक्रिप्शनची पुनरावृत्ती करण्याची आवश्यकता नाही.  </li>
+<li>आपण ज्यास परिचित आहात अशा ध्वनीमुद्रणसह प्रारंभ करा; आपले प्रथम लक्ष्य आपल्याकडे शक्य तितक्या योग्य सामग्रीची डिजिटल प्रत आहे याची खात्री करणे आहे.</li>
+<li>क्लीन-अप चरणे पर्यायी आहेत आणि केवळ आपल्या ध्वनीमुद्रणची आवश्यकता असल्यास ते लागू करणे आवश्यक आहे.</li></ul></div>
+<p><br>
+</p>
+<div id="set"></div>
+<h3><span class="mw-headline" id="Audacity_settings">ओड्यासिटी समायोजन</span></h3>
+<p>प्रकल्पाचा दर ४४१०० हर्ट्ज आणि ३२-बिट नमुना स्वरूपात (हे पूर्वनिर्धारित <a href="quality_preferences.html" title="गुणवत्ता प्राधान्ये">गुणवत्ता समायोजन आहेत</a> ) ओड्यासिटीसह कार्य <a href="quality_preferences.html" title="गुणवत्ता प्राधान्ये">करा</a> . आपण प्राधान्य दिल्यास आपण १६-बिट वापरू शकता; हे कार्यशीलतेचे छोटे आकार देईल परंतु काही प्रक्रियांमध्ये आपण थोडी गुणवत्ता गमावू शकता. 44100 हर्ट्ज 16-बिट पीसीएम स्टीरिओवर डब्ल्यूएव्ही धारिका निर्यात करा, <a href="burning_music_files_to_a_cd.html" title="सीडीवर संगीत धारिका बर्न करत आहे">सीडी जाळण्यासाठी</a> आवश्यक मानक ; हे डब्ल्यूएव्ही देखील तयार करेल जे आयट्यून्स (आणि इतर बरेच संगीत प्लेअर अनुप्रयोग) आयात करण्यासाठी स्वीकारले गेले आहेत.
+</p>
+<div id="azimuth"></div>
+<h3><span class="mw-headline" id="Check.2Fadjust_the_azimuth_settings">अ&zwj;ॅझिमथ समायोजन तपासा / समायोजित करा</span></h3>
+<p>टेपशी संबंधित टेप हेडमधील चुंबकीय अंतराचा कोन अजीमुथ आहे. हे नेहमी degrees ० डिग्री असावे, परंतु सराव मध्ये बहुतेक कॅसेट डेक अचूक डोके ठेवण्यास अपयशी ठरतात, म्हणून कॅसेट ध्वनीमुद्रणचे अझिमथ नियमितपणे बदलते. पूर्व-ध्वनीमुद्रण केलेले टेप बरेच चांगले आहेत, परंतु संपूर्णपणे अझिमुथ भिन्नतेपासून प्रतिरक्षित नाहीत.
+</p><p>मिस्लीन्ड अजीमुथ नियमितपणे उच्च वारंवारतेचे  आणि आवाज प्रमाण यांचे संकेत देते.
+</p><p>आपली अझिमथ समायोजन कशी समायोजित करावी यासाठी सल्ल्यासाठी <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Recording_from_Cassette#Azimuth">हे विकी पृष्ठ</a> पहा .
+</p>
+<div class="note">आपल्याला प्रत्येक वेळी हे करण्याची आवश्यकता नाही परंतु आपण आपले प्रथम टेप स्थानांतरण प्रारंभ करण्यापूर्वी हे करणे फायदेशीर आहे.</div>
+<div id="clean"></div>
+<h3><span class="mw-headline" id="Clean_the_heads_and_pinch_roller">डोके आणि पिंच रोलर स्वच्छ करा</span></h3>
+<p>बहुतेक जमा ऑक्साईड पिंच रोलरवर जाते. या रोलरवर जितके जास्त ऑक्साईड असेल तितके टेपमधून सैल ऑक्साईड काढणे आणि धरून ठेवणे तितकेच कमी आहे आणि अशा प्रकारे अधिक ऑक्साईड डोक्यावर जमा होते.
+</p><p>गलिच्छ पिंच रोलरमध्ये कमी घर्षण असते आणि यामुळे कधीकधी टेप स्लिप, प्लेबॅकची गुणवत्ता खराब होत असते. ८ गीतपट्टा टेपसाठी हे विशेषतः खरे आहे, जेथे टेप स्लिप ही वास्तविक समस्या आहे.
+</p><p>पिंच रोलर वापरणार्या सर्व प्रकारच्या टेप डेकमध्ये कधीकधी रोलर साफ केला पाहिजे. मायक्रोकासेट आणि पिकोकेसेट पिंच रोलर्स वापरत नाहीत.
+</p>
+<div id="tension"></div>
+<h3><span class="mw-headline" id="Retension_the_tape">टेपवर दबाव आणा</span></h3>
+<p>ब ्याच कालावधीसाठी प्ले न करता प्ले टेप केल्यामुळे ध्वनीमुद्रण हस्तगतसाठी प्लेबॅक करण्यापूर्वी तणाव आणखी वाढण्यामुळे त्याचा फायदा होऊ शकतो.  
+</p><p>हे करण्यासाठी टेपला शेवटपर्यंत नेण्यासाठी फक्त द्रुत फॉरवर्डचा वापर करा आणि सुरुवातीस पुन्हा पाहिजे <i>(परंतु आपण खराब, किंवा नाही, ब्रेकिंग सिस्टम असलेल्या निम्न-दर्जाच्या डेकसह काम करत असल्यास याची काळजी घ्या. स्पूलवरुन येण्यासाठी टेप)</i> . आपल्याकडे भरपूर वेळ असल्यास आपण त्याऐवजी सामान्य वेगाने टेप वाजवू शकाल आणि नंतर वास्तविक ध्वनीमुद्रण करण्यापूर्वी दुसरी बाजू प्ले करा.
+</p>
+<div id="levels"></div>
+<h3><span class="mw-headline" id="Recording_levels">ध्वनीमुद्रण स्तर</span></h3>
+<p><a href="tutorial_making_a_test_recording.html" title="प्रशिक्षण - एक चाचणी ध्वनीमुद्रण बनविणे">चाचणी ध्वनीमुद्रण</a> करण्याबद्दल हे पृष्ठ वाचा आणि नंतर टेपच्या भागाची चाचणी ध्वनीमुद्रण (किंवा अगदी संपूर्ण बाजू) बनवा जेणेकरून पातळी तपासून पहा. ध्वनीमुद्रण दरम्यान कोणत्याही <i><b><a href="glossary.html#clipping" title="शब्दकोष">क्लिपिंग</a></b></i> टाळणे महत्वाचे आहे ! जास्तीत जास्त d6 <i><b><a href="glossary.html#decibel" title="शब्दकोष">डीबी</a></b></i> (किंवा आपल्या मीटरने डीबीऐवजी रेखीय वर जतन केले असल्यास 0.5) कमाल शिखरासाठी लक्ष्य करण्याचा प्रयत्न करा .
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+</td>
+<td align="left" valign="top">क्लिक करुन ड्रॅग करून ध्वनीमुद्रण मीटर साधनपट्टी विस्तृत करणे या कार्यास मदत करते; <a href="meter_toolbar.html#resizing" title="मीटर साधनपट्टी">मीटर साधनपट्टीचे आकार बदलण्याबद्दल</a> आपण हा विभाग वाचला पाहिजे .
+</td></tr></tbody></table>
+</div>
+<div id="capture"></div>
+<h3><span class="mw-headline" id="Capture">हस्तगत करा</span></h3>
+<p>प्रक्रिया करण्यापूर्वी दोन्ही बाजूंना प्रकल्पात ध्वनीमुद्रण करा. आपण एकतर बटण वापरुन ध्वनीमुद्रण <b>थांबवू</b> शकता <img alt="थांबा बटण" src="../m/images/f/f9/stop.png" title="थांबा बटण" width="16" height="16">किंवा <span class="menu">परिवहन&gt; <a href="transport_toolbar.html#stop" title="परिवहन साधनपट्टी">थांबा</a></span> आणि नंतर आपण तयार असाल तेव्हा ध्वनीमुद्रण पुन्हा सुरु करण्यासाठी <span class="menu">परिवहन&gt; <a href="transport_toolbar.html#record" title="परिवहन साधनपट्टी">ध्वनीमुद्रण</a></span> (किंवा <span class="kbrd" style="background-color: #d0d0f8">शिफ्ट + आर</span> वापरा ) वापरू शकता. वैकल्पिकरित्या आपण पहिल्या बाजूच्या शेवटी <img alt="विराम द्या बटण" src="../m/images/4/47/pause.png" title="विराम द्या बटण" width="16" height="16">बटण दाबून विराम देऊ शकता (किंवा <span class="menu">परिवहन&gt; <a href="transport_toolbar.html#pause" title="परिवहन साधनपट्टी">विराम द्या</a></span> वापरा ) आणि नंतर <img alt="विराम द्या बटण" src="../m/images/4/47/pause.png" title="विराम द्या बटण" width="16" height="16">आपण दुसरी बाजू ध्वनीमुद्रण करण्यास तयार झाल्यावर पुन्हा बटण दाबा .
+</p><p>ध्वनीमुद्रणनंतर ओड्यासिटी विंडोमध्ये संपूर्ण ध्वनीमुद्रण प्रदर्शित करण्यासाठी <a href="zooming.html" title="झूम करत आहे">झूम कमी</a> करणे उपयुक्त ठरेल .
+</p><p>एक लहान टेप जतन केल्यामुळे आपण एकावेळी टेपच्या एका बाजूने कार्य करण्यास प्राधान्य देऊ शकता.
+</p>
+<div id="raw"></div>
+<h3><span class="mw-headline" id="Raw_master_backup">रॉ मास्टर बॅकअप</span></h3>
+<p><a href="exporting_audio.html" title="ध्वनी निर्यात करीत आहे"></a>या ध्वनीमुद्रणसाठी एकच डब्ल्यूएव्ही <a href="exporting_audio.html" title="ध्वनी निर्यात करीत आहे">निर्यात</a> 32-बिट फ्लोट <i>(१६-बिट नाही) वर करा</i> . 
+</p><p>या डब्ल्यूएव्ही धारिकाला जास्तीत जास्त गुणवत्तेची "कच्ची हस्तगत" धारिका म्हणून पुन्हा ठेवा जी आपण पुन्हा सुरू करण्यासाठी ओड्यासिटीमध्ये परत <a href="file_menu.html#Import" title="धारिका मेनू">आयात</a> करू शकता (आपण त्यावर काम करत असताना प्रकल्पाचे नुकसान केल्यास).
+</p>
+<div id="dc"></div>
+<h3><span class="mw-headline" id="Remove_DC_offset">डीसी ऑफसेट काढा</span></h3>
+<p>डीसी ऑफसेट ध्वनीमुद्रणच्या टप्प्यावर उद्भवू शकते जेणेकरून ध्वनीमुद्रण केलेले <a href="audacity_waveform.html" title="ओड्यासिटी वेव्हफॉर्म">वेव्हफॉर्म</a> 0.0 <i><b><a href="glossary.html#amplitude" title="शब्दकोष">मोठेपणाच्या</a></b></i> क्षैतिज रेषावर केंद्रित होणार नाही . जर आपल्या ध्वनीमुद्रणमध्ये अशी स्थिती असेल तर <a href="glossary.html#dc_offset" title="शब्दकोष">डीसी ऑफसेट</a> काढण्यासाठी नॉर्मलाइझ कसे वापरावे आणि आपले विंडोज आवाज उपकरण स्वयंचलितपणे ही दुरुस्ती करू शकते किंवा नाही हे कसे तपासावे यासाठी <a href="normalize.html" title="सामान्य करणे">सामान्यीकरण</a> पृष्ठ पहा .
+<a href="glossary.html#dc_offset" title="शब्दकोष"></a></p>
+<div id="hf"></div>
+<h3><span class="mw-headline" id="Reduce_tape_hiss_and_high_frequency_noise">टेप हिस आणि उच्च वारंवारता आवाज कमी करा</span></h3>
+<div class="note">आपल्याला <a href="noise_reduction.html" title="गोंगाट कमी करणे">गोंगाट कमी करणे</a> वापरण्याची आवश्यकता आहे की नाही हे आपल्या टेपच्या गुणवत्तेवर, आपल्या <a href="#azimuth">अझिमिथ समायोजनवर</a> , <a href="#clean">टेपच्या डोक्यांची</a> स्वच्छता आणि आपल्या डॉल्बी समायोजनवर अवलंबून असेल.</div>
+<p>संगीत सुरू होण्यापूर्वी ताबडतोब लीड-इन ग्रूव्सकडून किंवा गीतपट्टा दरम्यान लीड-इनमधून आवाजाचा नमुना प्राप्त करण्यासाठी <a href="noise_reduction.html" title="गोंगाट कमी करणे">गोंगाट कमी करणे</a> प्रभावचे <b>गॉझ नॉईस प्रोधारिका</b> वापरा . लांबी महत्त्वपूर्ण नाही परंतु सामान्यत: ते एका सेकंदापेक्षा कमी असेल; सर्वात महत्त्वाचे म्हणजे आपल्याकडे कोणाचाही ध्वनी सिग्नलशिवाय गोंगाटाचा खरा प्रतिनिधी नमुना आहे (जसे की अत्यंत शांत फीड लीड इन). नमुना वाढविण्याचा प्रयत्न करा आणि कोणतेही ध्वनी सिग्नल अस्तित्त्वात नसल्याचे सुनिश्चित करण्यासाठी ऑडिशन करा. जर ते ठीक आहे, तर एम्पलीफाईड पूर्ववत करा, नंतर या शिफारस केलेल्या समायोजनसह गोंगाट रिमूव्हल प्रभाव पुन्हा लागू करा:
+</p>
+<ul><li>आवाज कमी करणे - 12 डीबीपेक्षा जास्त नाही (9 डीबी एक चांगली मार्गदर्शकतत्त्व आहे)</li>
+<li>संवेदनशीलता - 6.00</li>
+<li>वारंवारता स्मूथिंग (बँड) - 6 पेक्षा जास्त (3 किंवा त्यापेक्षा कमी संगीतसाठी चांगली समायोजन नाही)</li></ul>
+<p>गोंगाट कमी करणे ही नेहमीच एक तडजोड असते कारण एकीकडे, आपल्याकडे सर्व संगीत आणि बरेच आवाज असू शकतात आणि दुसरीकडे, गोंगाट होऊ शकत नाही आणि केवळ काही संगीत असू शकते. आपल्याला उत्तम तडजोड होईपर्यंत "गोंगाट रिडक्शन (डीबी)" स्लाइडरवर भिन्न समायोजन वापरून पहा.
+</p>
+<div class="note">जोपर्यंत आपण मूळ एलपी किंवा 45 च्या दशकापासून बनविलेले ध्वनीमुद्रण टेपचे लिप्यंतरण करत नाही तोपर्यंत आपल्याला इतर आवाज कमी करण्याच्या तंत्राची आवश्यकता नसण्याची शक्यता आहे, परंतु तसे असल्यास <a href="sample_workflow_for_lp_digitization.html" title="एलपी डिजिटलायझेशनसाठी नमुना कार्यप्रवाह">एलपी डिजिटलायझेशनवरील</a> वर्कफ्लोवरुन खालील गोष्टींचा विचार करणे आवश्यक आहेः
+<ul><li><a href="sample_workflow_for_lp_digitization.html#lf" title="एलपी डिजिटलायझेशनसाठी नमुना कार्यप्रवाह">सबसॉनिक रम्बल आणि कमी वारंवारतेचा आवाज कमी करा</a></li>
+<li><a href="sample_workflow_for_lp_digitization.html#clicks" title="एलपी डिजिटलायझेशनसाठी नमुना कार्यप्रवाह">क्लिक आणि पॉप काढा</a></li></ul>
+</div>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+</td>
+<td align="left" valign="top"><b>कॅसेट टेपसह</b> गोंगाट कमी करणे: प्लेस किंवा ध्वनीमुद्रण दरम्यान टेपच्या डोक्यावर घाण साचल्यामुळे टेपच्या ओघात आवाज प्रोधारिका बदलणे सामान्य <b>स्वरुपाचे नाही, कॅसेट</b> इतर स्त्रोतांपेक्षा किंचित वेगळी आहे. .
+<p>ओड्यासिटीच्या गोंगाट रिडक्शनच्या कार्यप्रदर्शनास ऑप्टिमाइझ करण्यासाठी शेवटच्या ऐवजी टेपच्या सुरूवातीस ध्वनी नमुना वापरणे चांगले. टेपमध्ये उशीरा नमुना वापरणे कधीकधी आवाज आणि सिग्नल दरम्यान गरीब भेदभाव कारणीभूत ठरेल कारण काही उच्च वारंवारता आवाज गहाळ होईल किंवा मोठेपणामध्ये कमी होईल. 
+</p>
+</td></tr></tbody></table>
+</div>
+<div id="labels"></div>
+<h3><span class="mw-headline" id="Place_the_song_labels">गाण्याचे नावपट्ट्या ठेवा</span></h3>
+<p>अंदाजे <a href="label_tracks.html" title="नावपट्टी गीतपट्टा">नावपट्टी</a> बिंदू चिन्हांकित करा - अल्बमवरील गीतपट्टा दरम्यान अंदाजे बिंदूवर <a href="audacity_waveform.html" title="ओड्यासिटी वेव्हफॉर्म">वेव्हफॉर्मवर</a> क्लिक करा , <span class="kbrd" style="background-color: #d0d0f8">Ctrl + B</span> नंतर <span class="kbrd" style="background-color: #e0e0f0">एंटर</span> दाबा . पहिल्या गीतपट्टासाठी सुरुवातीला नावपट्टी घालायला विसरू नका. वैकल्पिकरित्या आपण <span class="kbrd" style="background-color: #d0d0f8">Ctrl + M </span> <i>( Mac <span class="kbrd" style="background-color: #d0d0f8">+.&nbsp;</span> Mac वर</i> ) ध्वनीमुद्रण करताना (किंवा प्लेबॅक वर) नावपट्टी बिंदू चिन्हांकित करू शकता .
+</p>
+
+<div id="gaps"></div>
+<h3><span class="mw-headline" id="Silence_the_inter-track_gaps">इंटर-गीतपट्टा अंतरांवर शांतता घ्या</span></h3>
+<p>हे क्वचितच खरोखर शांत आहेत म्हणून आपणास ते अंतर निवडून आणि <span class="kbrd" style="background-color: #d0d0f8">Ctrl + L</span> किंवा <a href="generate_menu.html#silence" title="मेनू व्युत्पन्न करा">शांतता जनरेटर प्रभाव</a> वापरून शांततेसह पुनर्स्थित करू इच्छित असाल . जास्तीत जास्त २ सेकंदांच्या इच्छिततेनुसार इंटर-गीतपट्टा अंतर संपादित करा; आपण काही ध्वनीमुद्रणसाठी कमी अंतर किंवा अगदी अंतर देखील वापरू इच्छित असाल.  
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
+</td>
+<td align="left" valign="top">पूर्वनिर्धारितनुसार सीडी बर्न अनुप्रयोग नेहमीच गीतपट्टा दरम्यान 2-सेकंद अंतर जोडते. आपण सक्षम करू शकणार्&zwj;या "गॅपलेस बर्निंग" किंवा "डिस्क-अॉन-वन-बार (डीएओ)" यासाठी हे बंद करण्यासाठी कोणत्याही पर्यायांची तपासणी करा.
+</td></tr></tbody></table></div>
+<div id="fades"></div>
+<h3><span class="mw-headline" id="Fade_Ins.2FOuts">फेड इन / आउट</span></h3>
+<p>आपणास <span class="menu">प्रभाव&gt; <a href="fades.html#linearfade" title="फिकट">फेड इन</a></span> आणि <span class="menu">प्रभाव&gt; <a href="fades.html#linearfade" title="फिकट">फॅड आऊटचा</a></span> वापर करुन गाण्याची सुरुवात आणि समाप्ती अधिक स्वच्छतेने फीड-इन आणि फेड-आउट करण्याची इच्छा असू शकते . सामान्यत: फिकट आऊट जास्त लांब <i>(सामान्यत: काही सेकंद) असावे</i> आणि आवश्यक असल्यास आवश्यक असल्यास थोड्या वेळाने <i>(सामान्यत: सेकंदाचा भाग)</i> . 
+</p><p>रेखीय <b>फॅड </b><span class="menu"><a href="fades.html#studio_fadeout" title="फिकट">आउटऐवजी</a></span><span class="menu"> प्रभाव&gt; <a href="fades.html#studio_fadeout" title="फिकट">स्टुडिओ फेड आउट</a></span> वापरण्याचा विचार करा . हे निवडक ध्वनीवर अधिक संगीतमय फीड लागू करते, अधिक आकर्षक (अधिक "व्यावसायिक स्टुडिओ") दणदणीत निकाल देतात.
+<b></b></p><p>आपणास <span class="menu">प्रभाव&gt; <a href="fades.html#linearfade" title="फिकट">फिकट</a></span> लागू करून निवडक ध्वनीवर एकाधिक वेळा तीन वेळा चांगली मार्गदर्शक <span class="menu"><a href="fades.html#linearfade" title="फिकट">सुचना</a></span> देखील मिळू शकते . हे रेखीयऐवजी आकार, वक्र, फिकट तयार करेल.
+</p>
+<div class="note">ओड्यासिटीमध्ये पूर्वनिर्धारितनुसार प्रभावांसाठी कोणतेही कीबोर्ड आडमार्ग प्रदान केलेले नसले तरीही आपण निवडलेल्या कोणत्याही प्रभावांसाठी आपले स्वतःचे आडमार्ग जतन करणे शक्य आहे. आपल्याला <b>फॅड इन</b> आणि <b>फेड आउट</b> (किंवा <b>स्टुडिओ फेड आउट</b> ) साठी आडमार्ग नियुक्त करणे फायदेशीर वाटेल कारण टेप डिजिटायझेशनसाठी हे वारंवार वापरले जातील.<p>हे कसे करावे यावरील सूचनांसाठी कृपया मॅन्युअलमध्ये <a href="keyboard_preferences.html" title="कीबोर्ड प्राधान्ये">कीबोर्ड प्राधान्ये</a> पृष्ठ पहा .</p></div>
+<div id="adjust"></div>
+<h3><span class="mw-headline" id="Adjust_label_positions">नावपट्टी स्थिती समायोजित करा</span></h3>
+<p>आपण 2-सेकंद अंतर वापरत असल्यास, पुढील गीतपट्टाच्या सुरूवातीच्या 0.5 सेकंद आधी इच्छित नावपट्टीची स्थिती समायोजित करा. नावपट्टी हलविण्यासाठी, त्यास मध्यवर्ती मंडळाने ड्रॅग करा.
+</p>
+<div id="names"></div>
+<h3><span class="mw-headline" id="Track_names">नावे मागोवा घ्या</span></h3>
+<p>गाण्यांच्या नावांसाठी नावपट्ट्या संपादित करा - आम्ही "01 प्रथम गाण्याचे नाव", "02 द्वितीय गाण्याचे नाव" वापरण्याचे सुचवितो आणि यामुळे त्यांना सीडी उत्पादन किंवा आयट्यून्समध्ये लोड करण्यासाठी योग्य क्रमाने ठेवण्यात मदत होते. आपणास असे वाटेल की झूम पातळी बदलल्यास या कार्यात आपल्याला मदत होईल; सध्याच्या नावपट्टीमध्ये लक्ष केंद्रित केले आहे आणि त्यानंतर <span class="kbrd" style="background-color: #e0e0f0">टॅब</span> वापरुन आपण पुढील नावपट्टीकडे जाऊ शकता .
+</p><p>आपली इच्छा असल्यास आपण त्याऐवजी अनुक्रमे दोन-अंकी क्रमांकासह नामांकित गीतपट्टाचा उपसर्ग करू शकता. <br>असे करण्यासाठी, एक्सपोर्ट डायलॉगच्या "धारिका्सचे नाव" विभागात, <span class="button">नावपट्टी / गीतपट्टा नेम</span> रेडिओ <span class="button">बटणापूर्वी क्रमांकांक</span> निवडा .
+</p>
+<div id="advanced"></div>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tbody><tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+</td>
+<td align="left" valign="top">
+<h3><span class="mw-headline" id="Advanced_labeling_techniques">प्रगत लेबलिंग तंत्र</span></h3>
+<ul><li>आपण ध्वनीमुद्रण करत असताना प्रत्येक गीतपट्टाच्या पूर्ण मजकुरासह नावपट्टी करण्याची आपली इच्छा असू शकते. असे करण्यासाठी, प्रत्येक गीतपट्टाचा शेवट ध्वनीमुद्रणच्या प्रगतीवर चिन्हांकित करण्यासाठी <span class="kbrd" style="background-color: #d0d0f8">Ctrl + M</span> ( <i>Mac </i><i><span class="kbrd" style="background-color: #d0d0f8">+&nbsp;</span> मॅक वर</i> ) वापरा . हे प्रक्रियेत वेळ वाचवते <i>(जेव्हा आपल्याकडे भरपूर टेप असतात तेव्हा ते महत्वाचे असू शकते)</i> . आपण नावपट्टीवर लक्ष केंद्रित केले आहे याची खात्री करण्यासाठी आपण <b>खूप सावधगिरी बाळगली</b> पाहिजे अन्यथा जेव्हा आपण "स्पेस-बार" लेखन करता तेव्हा आपल्याला जे नावपट्टी वाटते त्यानुसार ध्वनीमुद्रणमध्ये अनपेक्षित थांब मिळेल. आपण <a href="timeline.html" title="वेळेत">वेळेतमध्ये</a> क्लिक केले नाही हे देखील सुनिश्चित करा जेणेकरून ध्वनीमुद्रण देखील थांबेल आणि त्याऐवजी क्लिक केलेल्या स्थानावरून प्ले होईल.</li>
+<li>जर टेपमध्ये गीतपट्टाची वेळ सूचीबद्ध असेल तर आपण सूचीबद्ध गीतपट्टाच्या सीमेवरील वेळेवर ठेवलेल्या नावपट्टीांसह रिक्त प्रकल्प स्थापित करुन प्रक्रियेच्या या टप्प्यात वर्धित करू शकता - नंतर फिट होण्यासाठी प्रकल्प झूम करा ( <span class="kbrd" style="background-color: #d0d0f8">Ctrl + F</span> वापरा ) आणि नंतर ध्वनीमुद्रण प्रारंभ करा. आपण ध्वनीमुद्रण करत असताना प्रत्येक नावपट्टीचा मजकूर पुन्हा <b>मोठ्या काळजीने</b> लेखन केला जाऊ शकतो .</li></ul>
+</td></tr></tbody></table>
+</div>
+<div id="amplify"></div>
+<h3><span class="mw-headline" id="Amplitude_adjustment">मोठेपणा समायोजन</span></h3>
+<p>ध्वनीमुद्रणचे मोठेपणा सामान्य करा; एकतर प्रत्येक ध्वनीमुद्रणचा गीतपट्टा स्वतंत्रपणे करा (विशेषत: जर गीतपट्टा यादृच्छिकपणे संगीताच्या वेगवेगळ्या शैली असलेल्या ग्रंथालयतून प्ले केले जातील तर) किंवा, संपूर्ण ध्वनीमुद्रण एकाच वेळी करा (जे सर्व गीतपट्टाचे समान सरासरी आवाज असल्यास सर्व चांगले कार्य करेल) . वापर <span class="menu">प्रभाव&gt; <a href="normalize.html" title="सामान्य करणे">नेहमीसारखा</a></span> अंतिम संपादित पाऊल म्हणून, डीबी किंवा तत्सम सुमारे -3 'ते नेहमीसारखा जास्तीत जास्त मोठेपणा "समायोजन कुरूपता पातळी खाली काही मोठ्या वाहनांना पुलाखालून जाण्यासाठी असणारी पुरेशी जागा देणे. नॉर्मलाइझ प्रभाव एकतर जतन केला जाऊ शकतो:
+</p>
+<ul><li>दोन्ही स्टिरिओ वाहिनीचे मोठेपणा समान प्रमाणात समायोजित करा (अशा प्रकारे मूळ स्टिरीओ शिल्लक टिकवून ठेवा), किंवा</li>
+<li>प्रत्येक स्टीरिओ वाहिनी स्वतंत्रपणे समायोजित करा (आपले उपकरण संतुलित नसल्यास हे उपयुक्त ठरू शकते).</li></ul>
+<div id="compress"></div>
+<h3><span class="mw-headline" id="Compression">संकुचन</span></h3>
+<p><a href="compressor.html" title="कंप्रेसर">कॉम्प्रेसर</a> परिणाम ध्वनी डायनॅमिक श्रेणी कमी होतो. डायनॅमिक रेंज कमी करण्याच्या मुख्य उद्देशांपैकी एक म्हणजे ध्वनीला अन्यथा शक्य होण्यापेक्षा पुढे (क्लिपिंगशिवाय) परवानगी दिली जाणे.
+</p><p>कंप्रेशर मोठ्याने भाग शांत करतो आणि (पर्यायी) शांत भाग अधिक जोरात बनवितो. कारमध्ये शास्त्रीय संगीत ऐकण्यासाठी हे खूप उपयुक्त ठरू शकते. अशा संगीताची साधारणत: रुंद डायनॅमिक श्रेणी असते आणि त्यामुळे सतत आवाज री-mentडजेस्ट केल्याशिवाय कारमध्ये ऐकणे कठीण होते.
+</p>
+<div id="wavs"></div>
+<h3><span class="mw-headline" id="Export_a_set_of_WAVs">डब्ल्यूएव्हीचा संच निर्यात करा</span></h3>
+<p>44100 हर्ट्ज 16-बिट पीसीएम स्टीरिओवर एलपीवरील प्रत्येक गीतपट्टासाठी डब्ल्यूएव्हीचा एक संच तयार करण्यासाठी <span class="menu">धारिका&gt; निर्यात&gt; <a href="export_multiple.html" title="एकाधिक निर्यात करा">एकाधिक</a></span><span class="menu"> निर्यात </span><span class="menu"><a href="export_multiple.html" title="एकाधिक निर्यात करा">करा ...</a></span> वापरा . ओड्यासिटी निर्यातीवर 32-बिट ते 16-बिट पर्यंत खाली नमुना होईल. आकार <a href="dither.html" title="एकतर">थरथर कापणे</a> आवाज कोणत्याही दोष (clicky आवाज) 32-bit 16-बिट परिवर्तन पासून होऊ शकते की कव्हर आपोआप लागू केले जाईल. प्रगत वापरकर्ते <a href="quality_preferences.html#conversion" title="गुणवत्ता प्राधान्ये">क्वालिटी प्राधान्यांमधे</a> तिचा प्रकार बदलू किंवा बंद करू शकतात .
+</p><p>नंतर पुनर्प्राप्ती आणि वापरण्यास सुलभतेसाठी त्या अल्बमसाठी विशिष्ट धारिका विशिष्ट अल्बमसाठी ठेवा.
+</p>
+<div id="labex"></div>
+<h3><span class="mw-headline" id="Export_Labels">नावपट्ट्या निर्यात करा</span></h3>
+<p>काही वापरकर्ते नावपट्ट्या असलेली धारिका निर्यात करण्याच्या अंतिम टप्प्याचा सल्ला देतात. <span class="menu">धारिका<a href="file_menu_export.html#exportlabels" title="धारिका मेनू: निर्यात करा"></a></span> वापरा <span class="menu">&gt; निर्यात करा&gt; </span><span class="menu"><a href="file_menu_export.html#exportlabels" title="धारिका मेनू: निर्यात करा">नावपट्ट्या</a></span><span class="menu"> निर्यात </span><span class="menu"><a href="file_menu_export.html#exportlabels" title="धारिका मेनू: निर्यात करा">करा ...</a></span> यामुळे एक मजकूर धारिका तयार होते जी आपण नंतर <span class="menu">धारिका&gt; आयात&gt; <a href="file_menu_import.html#labels" title="धारिका मेनू: आयात करा">नावपट्ट्या</a></span> वापरून पुन्हा आयात करू शकता <span class="menu"><a href="file_menu_import.html#labels" title="धारिका मेनू: आयात करा">...</a></span> आपण यापूर्वी यापूर्वी बॅक अप घेतलेल्या कच्च्या हस्तगत धारिकामधून पुन्हा संपादन करू इच्छित असाल तर कार्यप्रवाह
+</p>
+<div id="backup"></div>
+<h3><span class="mw-headline" id="Backup">बॅकअप</span></h3>
+<p>आपल्या निर्यात केलेल्या डब्ल्यूएव्ही किंवा एमपी 3 धारिकाचा बॅकअप घ्या - आपल्याला ते सर्व मौल्यवान काम गमवायचे नाही आणि पुन्हा हे सर्व करावे लागेल, आपण काय? संगणक हार्ड ड्राइव्ह अयशस्वी होऊ शकतात, सर्व डेटा नष्ट करते. 
+</p><p>योग्यरित्या एक समर्पित ड्राइव्ह वापरा <i>(1+ टीबी बाह्य चुंबकीय ड्राइव्ह सोयीस्कर आणि किफायतशीर आहेत)</i> किंवा डब्ल्यूएव्ही किंवा एमपी 3 संचयित करण्यासाठी ऑनलाइन (क्लाऊड) स्टोरेज सेवेवर अपलोड करा. वेगवेगळ्या बाह्य उपकरणांवर दोन प्रती बनविणे अद्याप चांगले आहे आणि त्याशिवाय स्थानिक प्रती तसेच ऑनलाइन बॅकअप ठेवणे हे अधिक चांगले आहे. 
+</p><p>आपण एक वर्गीकरण धारिका रचना तयार करू शकता - उदाहरणार्थ प्रत्येक अल्बम शोधण्यासाठी आणि पुनर्प्राप्ती सुलभ करण्यासाठी कलाकार (किंवा, शास्त्रीय संगीतासाठी संगीतकार) नावाच्या फोल्डरमध्ये त्याच्या स्वत: च्या फोल्डरमध्ये (अल्बमचे नाव असलेले) संग्रहित केले जाऊ शकते. .
+</p>
+<div id="alternative"></div>
+<h2><span class="mw-headline" id="Alternative_software">वैकल्पिक अनुप्रयोग</span></h2>
+<ul><li><b><a rel="nofollow" class="external text" href="http://www.goldwave.com">गोल्डवेव्ह</a></b> : नाममात्र विनामूल्य नसले तरी ते एक उच्च श्रेणी आहे, विनामूल्य चाचणी क्लिक रीमूव्हर तसेच उत्कृष्ट पर्यायी ध्वनी संपादक आहे. ओड्यासिटी प्रमाणेच त्याचे क्लिक हटविणे देखील प्रभावी आहे आणि व्यापक अवांछित आवाजासाठी "स्मूद" प्रभाव आहे आणि स्थिर आवाजासाठी उत्कृष्ट "गोंगाट रिडक्शन" प्रभाव आहे. चाचणी आवृत्ती आपल्याला प्रति सत्र शंभर किंवा इतकी आज्ञा मर्यादित करते आणि ती कालबाह्य होण्यापूर्वी एकूण हजारो आदेशांची एकूण संख्या, परंतु आपण जर ओड्यासिटीकडून 32-बिट डब्ल्यूएव्ही म्हणून निर्यात केले आणि त्यामध्ये फक्त काढणे क्लिक केले तर आपण सक्षम होऊ शकता कित्येक शंभर ध्वनीमुद्रण विनामूल्य निवड रद्द करा.</li>
+<li><b><a rel="nofollow" class="external text" href="http://gwc.sourceforge.net/">ग्नोम वेव्ह क्लीनर</a></b> : फक्त लिनक्स वापरकर्त्यांसाठी. सीडी-गुणवत्तेच्या ध्वनी धारिकाचे डिजिटल जीर्णोद्धार. जीयूआय वातावरणात डेहिस, डिक्लिक आणि डिक्रॅकल. आवश्यक असल्यास ते स्वयंचलितपणे गाण्याच्या सीमा देखील चिन्हांकित करू शकते.</li></ul>
+<h3><span class="mw-headline" id="Hiss_and_noise_removal">हिस आणि आवाज काढणे</span></h3>
+<ul><li><b><a rel="nofollow" class="external text" href="http://www.clickrepair.net">डीगोंगाटः</a></b> हे एक आहे<i> (त्यासाठी देय दिले गेले आहे, परंतु विनामूल्य-चाचणी कालावधीसह)</i> ध्वनी आणि हिस काढण्यासाठी प्रभावी असे तृतीय-पक्षाचे साधन आहे. काही नवीन वापरकर्त्यांना हे एंट्री लेव्हल साधन म्हणून भीतीदायक वाटू शकते. वापरकर्ते नोंदवतात की ध्वनी काढणे ऑप्टिमाइझ करण्यासाठी प्रत्येक ध्वनीमुद्रणसाठी समायोजन सहसा पूर्वनिर्धारित केल्या पाहिजेत त्यामुळे अर्ध स्वयंचलित मार्गाने वापरणे अवघड होते.</li></ul>
+<div id="chris"></div>
+<h3><span class="mw-headline" id="Compression_2">संकुचन</span></h3>
+<p>कृपया विनामूल्य डाऊनलोड केले जाऊ शकणार्&zwj;या लोकप्रिय वैकल्पिक कंप्रेसरसाठी <a href="chris_s_dynamic_compressor.html" title="ख्रिस चे डायनॅमिक कॉम्प्रेसर">ख्रिसचे डायनॅमिक कॉम्प्रेसर</a> पहा . हे "लुकहेड" वापरुन आवाजमधील अचानक बदल करण्याचा प्रयत्न करण्याद्वारे कार्य करते <i>(हा आवाज उंबरठा स्तरावर जाण्यापूर्वी कंप्रेशन लागू करून आवाज बदलांचा अंदाज घेण्याचा प्रयत्न करतो)</i> . त्यामध्ये सॉफ्ट ध्वनी मऊ करण्यासाठी आणि जोरात उलटण्यासाठी पर्याय आहेत.
+</p>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="प्रशिक्षण - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे"><b>| &lt;</b> प्रशिक्षण - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे</a><br>
+</p><p><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Recording_from_Cassette"><b>&gt;</b> &nbsp; कॅसेट वरून ध्वनीमुद्रण देखील पहा</a> - ओड्यासिटी विकीवरील लेख
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20180917111844
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.153 seconds
+Real time usage: 0.155 seconds
+Preprocessor visited node count: 417/1000000
+Preprocessor generated node count: 1041/1000000
+Post‐expand include size: 8842/2097152 bytes
+Template argument size: 5762/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   32.136      1 - -total
+ 21.10%    6.779      8 - Template:Shortcut
+ 13.90%    4.467      3 - Template:Tip
+ 10.10%    3.247     11 - Template:Menu
+  9.71%    3.120      1 - Template:Intro
+  8.97%    2.882      1 - Template:Hint
+  6.87%    2.209      5 - Template:Note
+  6.48%    2.081      2 - Template:Key
+  5.11%    1.642      1 - Template:Button
+  3.39%    1.089      1 - Template:Advice
+-->
+
+<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5275-0!*!0!!*!5!* and timestamp 20180917111844 and revision id 60125
+ -->
+</div>
+										<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
+<li> <a href="tips.html" title="टिपा"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटीचा GUI</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ओड्यासिटी सानुकूलित करत आहे</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
+<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीन आवृत्ती</a></span></li>
+<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+                            <div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
+                                <a href="https://alphamanual.audacityteam.org/man/Saving">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
+                                </a></li></ul></div>
+		</div>
+		</body></html>
