@@ -1,185 +1,678 @@
-<!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+<html class="client-nojs translated-ltr" lang="mr" dir="ltr">
+
 <head>
-<meta charset="UTF-8"/>
-<title>Crossfade Clips - Audacity Manual</title>
+	<meta charset="UTF-8">
+	<title>क्रॉसफेड &#8203;&#8203;क्लिप - ओड्यासीटी माहिती पुस्तिका</title>
 
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+	<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
+	<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+	<meta name="generator" content="MediaWiki 1.28.2">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="search" type="application/opensearchdescription+xml"
+		href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ओड्यासीटी विकास माहिती पुस्तिका (इं)">
+	<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
+	<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+	<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
+	<link type="text/css" rel="stylesheet" charset="UTF-8"
+		href="https://translate.googleapis.com/translate_static/css/translateelement.css">
 </head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Crossfade_Clips rootpage-Crossfade_Clips skin-monobook action-view"><div id="globalWrapper">
+
+<body
+	class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Crossfade_Clips rootpage-Crossfade_Clips skin-monobook action-view">
+	<div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
 				<a id="top"></a>
-				
+
 				<div class="mw-indicators">
-</div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Crossfade Clips</h1>
-				
+				</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">क्रॉसफेड &#8203;&#8203;क्लिप</font>
+					</font>
+				</h1>
+
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
+					<div id="siteSub">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">ओड्यासीटी विकास माहिती पुस्तिका वरुन</font>
+						</font>
+					</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Crossfade_Clips#searchInput">search</a></div>
+					<div id="jump-to-nav" class="mw-jump">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">येथे जा: </font>
+						</font><a href="#column-one">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">सुचालन</font>
+							</font>
+						</a>
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;"> , </font>
+						</font><a href="https://alphamanual.audacityteam.org/man/Crossfade_Clips#searchInput">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">शोध</font>
+							</font>
+						</a>
+					</div>
 
 					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"></li></ul>
-<div class="intro"><i><b>Crossfade Clips</b></i> applies a simple crossfade to a selected pair of clips in a single audio track.  </div>
-<dl><dd><b>Accessed by:</b> <span class="menu">Effect &gt; Crossfade Clips</span></dd></dl>
-<dl><dd>There are no parameters to set for this effect; the effect operates on the audio that is currently selected.</dd></dl>
-<dl><dd>If the crossfade takes an appreciable time, a progress dialog will appear as below:</dd></dl>
-<dl><dd><span title="Dialog box showing the Crossfade Clips effect in progress"><img alt="Crossfade Clips W10.png" src="../m/images/a/a1/crossfade_clips_w10.png" width="302" height="176" /></span></dd>
-<dd><b>Crossfade Clips progress dialog</b></dd></dl>
-<h2><span class="mw-headline" id="Instructions">Instructions</span></h2>
-<ol><li>Place two <a href="audacity_tracks_and_clips.html" title="Audacity Tracks and Clips">audio clips</a> into the same track.</li>
-<li>Select (approximately) the same amount of audio from the end of one clip and the start of the other.</li>
-<li>Apply the effect.</li>
-<li>The selected regions will be crossfaded.</li></ol>
-<p>Note, the audio clips do not need to be touching. Any white-space between the clips is ignored.
-</p><p>If the selected region is continuous audio with no splits, the first half and last half of the selected audio will be crossfaded.
-</p>
-<div class="note"><b>Advanced Tip:</b> A discontinuity in a waveform, such as a large click, may be smoothed by applying a short crossfade across the glitch. </div>
-<h2><span class="mw-headline" id="Limitations">Limitations</span></h2>
-<p>These should not occur in normal usage:
-</p>
-<ul><li> There may be no more than two clips selected in each channel.</li>
-<li> The selection may not start or end in white-space.</li></ul>
-<div id="examples"></div>
-<h2><span class="mw-headline" id="Examples">Examples</span></h2>
-<div class="example"><b>Example of using the effect for a simple crossfade</b>
-<p>1) Place your audio clips end to end in a track.
-</p>
-<dl><dd><span title="Two audio clips placed end to end in a track"><img alt="Xfade Example-1.png" src="../m/images/a/af/xfade_example_1.png" width="533" height="223" /></span></dd></dl>
-<p>2) Zoom in a bit.
-</p>
-<dl><dd><span title="Zoomed in on the two tracks"><img alt="Xfade Example-2.png" src="../m/images/4/45/xfade_example_2.png" width="560" height="222" /></span></dd></dl>
-<p>3) Select the part that you want to crossfade (does not matter if the tracks are right up against each other or not - just select the parts to crossfade).
-</p>
-<dl><dd><span title="Part of both tracks selected for the simple crossfade"><img alt="Xfade Example-3.png" src="../m/images/9/90/xfade_example_3.png" width="557" height="236" /></span></dd></dl>
-<p>4) Select the <span class="menu">Effect &gt; Crossfade Clips</span>.
-</p><p>5) Simple crossfade completed
-</p>
-<dl><dd><span title="Simple crossfade complete"><img alt="Xfade Example-4.png" src="../m/images/b/b2/xfade_example_4.png" width="561" height="219" /></span></div></dd></dl>
-<p><br />
-</p>
-<div class="example"><b>Example of using the effect to repair a glitch</b>
-<p>You can use <b>Crossfade Clips</b> to fix glitches when there are no convenient zero crossing points for making a clean edit.
-1) Audio surrounding the glitch is selected
-</p>
-<dl><dd><span title="Selecting around the glitch"><img alt="Glitch repair before.png" src="../m/images/2/2f/glitch_repair_before.png" width="626" height="302" /></span></dd></dl>
-<p>2) Using <span class="menu">Effect &gt; Crossfade Clips</span> repairs the glitch.
-</p>
-<dl><dd><span title="The glitch repaired"><img alt="Glitch repair after.png" src="../m/images/4/49/glitch_repair_after.png" width="626" height="302" /></span></div></dd></dl>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> Index of Effects, Generators and Analyzers</a> 
-</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> Effect Menu</a>.
-</p>
-<!-- 
-NewPP limit report
-Cached time: 20180917112333
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.076 seconds
-Real time usage: 0.082 seconds
-Preprocessor visited node count: 79/1000000
-Preprocessor generated node count: 282/1000000
-Post‐expand include size: 2198/2097152 bytes
-Template argument size: 1983/2097152 bytes
-Highest expansion depth: 3/40
-Expensive parser function count: 0/100
--->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+						<div class="intro"><i><b>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">क्रॉसफेड &#8203;&#8203;क्लिप्स</font>
+									</font>
+								</b></i>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;"> एकाच ध्वनी ट्रॅकमधील क्लिपच्या निवडलेल्या जोडीला
+									एक साधा क्रॉसफेड &#8203;&#8203;लागू करते. </font>
+							</font>
+						</div>
+						<dl>
+							<dd><b>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">यावर प्रवेशः </font>
+									</font>
+								</b> <span class="menu">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">प्रभाव&gt; क्रॉसफेड &#8203;&#8203;क्लिप
+										</font>
+									</font>
+								</span></dd>
+						</dl>
+						<dl>
+							<dd>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">या प्रभावासाठी कोणतेही मापदंड निवड केलेले
+										नाहीत; </font>
+									<font style="vertical-align: inherit;">प्रभाव सध्या निवडलेल्या ध्वनीवर चालतो.</font>
+								</font>
+							</dd>
+						</dl>
+						<dl>
+							<dd>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">जर क्रॉसफेडला एक प्रशंसायोग्य वेळ लागला तर
+										प्रगती संवाद खाली दिसेल:</font>
+								</font>
+							</dd>
+						</dl>
+						<dl>
+							<dd><span title="क्रॉसफेड &#8203;&#8203;क्लिप्स प्रगतीपथावर दर्शविणारा संवाद बॉक्स"><img
+										alt="क्रॉसफेड &#8203;&#8203;क्लिप्स W10.png"
+										src="../m/images/a/a1/crossfade_clips_w10.png" width="302" height="176"></span>
+							</dd>
+							<dd><b>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">क्रॉसफेड &#8203;&#8203;क्लिप प्रगती संवाद
+										</font>
+									</font>
+								</b></dd>
+						</dl>
+						<h2><span class="mw-headline" id="Instructions">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">सूचना</font>
+								</font>
+							</span></h2>
+						<ol>
+							<li>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">एकाच ट्रॅकवर </font>
+									<font style="vertical-align: inherit;">दोन </font>
+								</font><a href="audacity_tracks_and_clips.html" title="ओड्यासीटी ट्रॅक आणि क्लिप">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">ध्वनी क्लिप ठेवा</font>
+									</font>
+								</a>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> .</font>
+								</font>
+							</li>
+							<li>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">एका क्लिपच्या शेवटी आणि दुसर्&zwj;याच्या
+										प्रारंभापासून समान अंदाजे ध्वनी (अंदाजे) निवडा.</font>
+								</font>
+							</li>
+							<li>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">प्रभाव लागू करा.</font>
+								</font>
+							</li>
+							<li>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">निवडलेले प्रदेश क्रॉसफेड &#8203;&#8203;केले
+										जातील.</font>
+								</font>
+							</li>
+						</ol>
+						<p>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">टीप, ध्वनी क्लिपला स्पर्श करण्याची आवश्यकता नाही.
+								</font>
+								<font style="vertical-align: inherit;">क्लिप दरम्यानच्या कोणत्याही पांढर्&zwj;या जागेकडे
+									दुर्लक्ष केले जाते.
+								</font>
+							</font>
+						</p>
+						<p>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">जर निवडलेला प्रदेश न विभाजित सतत ध्वनी असेल तर
+									निवडलेल्या ध्वनीचा पहिला भाग आणि शेवटचा अर्धा क्रॉसफेड &#8203;&#8203;होईल.
+								</font>
+							</font>
+						</p>
+						<div class="note"><b>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">प्रगत टिप:</font>
+								</font>
+							</b>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;"> मोठ्या क्लिक सारख्या वेव्हफॉर्ममधील विघटन,
+									ग्लॉईस ओलांडून शॉर्ट क्रॉसफेड &#8203;&#8203;लावून हळू येऊ शकते.</font>
+							</font>
+						</div>
+						<h2><span class="mw-headline" id="Limitations">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">मर्यादा</font>
+								</font>
+							</span></h2>
+						<p>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">हे सामान्य वापरात येऊ नये:
+								</font>
+							</font>
+						</p>
+						<ul>
+							<li>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> प्रत्येक चॅनेलमध्ये दोनपेक्षा जास्त क्लिप्स
+										निवडल्या जाऊ शकत नाहीत.</font>
+								</font>
+							</li>
+							<li>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> निवड पांढ white्या-जागेवर प्रारंभ होऊ किंवा
+										समाप्त होऊ शकत नाही.</font>
+								</font>
+							</li>
+						</ul>
+						<div id="examples"></div>
+						<h2><span class="mw-headline" id="Examples">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">उदाहरणे</font>
+								</font>
+							</span></h2>
+						<div class="example"><b>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">साध्या क्रॉसफेडसाठी प्रभाव वापरण्याचे उदाहरण
+									</font>
+								</font>
+							</b>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">1) आपल्या ध्वनी क्लिप्स शेवटपर्यंत ट्रॅकवर
+										ठेवा.
+									</font>
+								</font>
+							</p>
+							<dl>
+								<dd><span title="दोन ध्वनी क्लिप ट्रॅकवर शेवटपर्यंत ठेवल्या"><img
+											alt="एक्सफेड उदाहरण - 1.png" src="../m/images/a/af/xfade_example_1.png"
+											width="533" height="223"></span></dd>
+							</dl>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">२) थोडा झूम करा.
+									</font>
+								</font>
+							</p>
+							<dl>
+								<dd><span title="दोन ट्रॅकवर झूम वाढवा"><img alt="एक्सफेड उदाहरण -२.पीएनजी"
+											src="../m/images/4/45/xfade_example_2.png" width="560" height="222"></span>
+								</dd>
+							</dl>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">Cross) आपल्याला क्रॉसफेड &#8203;&#8203;करायचा
+										आहे तो भाग निवडा (ट्रॅक एकमेकांविरूद्ध उभे ठाकले आहेत की नाही याचा फरक पडत नाही
+										- फक्त क्रॉसफेडसाठी भाग निवडा).
+									</font>
+								</font>
+							</p>
+							<dl>
+								<dd><span title="साध्या क्रॉसफेडसाठी निवडलेल्या दोन्ही ट्रॅकचा एक भाग"><img
+											alt="एक्सफेड उदाहरण-p.पीएनजी" src="../m/images/9/90/xfade_example_3.png"
+											width="557" height="236"></span></dd>
+							</dl>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">4) </font>
+								</font><span class="menu">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">प्रभाव&gt; क्रॉसफेड &#8203;&#8203;क्लिप
+										</font>
+									</font>
+								</span>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> निवडा </font>
+									<font style="vertical-align: inherit;">.
+									</font>
+								</font>
+							</p>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">5) साधा क्रॉसफेड &#8203;&#8203;पूर्ण
+									</font>
+								</font>
+							</p>
+							<dl>
+								<dd><span title="साधा क्रॉसफेड &#8203;&#8203;पूर्ण"><img alt="एक्सफेड उदाहरण -4png"
+											src="../m/images/b/b2/xfade_example_4.png" width="561" height="219"></span>
+								</dd>
+							</dl>
+						</div>
+						<p><br>
+						</p>
+						<div class="example"><b>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">चुक दुरुस्त करण्यासाठी प्रभाव वापरण्याचे
+										उदाहरण</font>
+								</font>
+							</b>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">जेव्हा स्वच्छ संपादन करण्यासाठी सोयीस्कर
+										शून्य क्रॉसिंग पॉईंट नसतात तेव्हा </font>
+								</font><b>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">अडचण</font>
+									</font>
+								</b>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> दूर करण्यासाठी </font>
+									<font style="vertical-align: inherit;">आपण </font><b>
+										<font style="vertical-align: inherit;">क्रॉसफेड &#8203;&#8203;क्लिप</font>
+									</b>
+									<font style="vertical-align: inherit;"> वापरू शकता </font>
+									<font style="vertical-align: inherit;">. </font>
+									<font style="vertical-align: inherit;">१) गोंधळाच्या भोवतालचा ध्वनी निवडलेला आहे
+									</font>
+								</font>
+							</p>
+							<dl>
+								<dd><span title="गोंधळाभोवती निवडणे"><img alt="पूर्वी दुरुस्ती दुरुस्ती. Png"
+											src="../m/images/2/2f/glitch_repair_before.png" width="626"
+											height="302"></span></dd>
+							</dl>
+							<p>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">२) </font>
+								</font><span class="menu">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">प्रभाव</font>
+									</font>
+								</span>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> वापरणे </font><span class="menu">
+										<font style="vertical-align: inherit;">&gt; क्रॉसफेड &#8203;&#8203;क्लिपमुळे
+											चुकांची</font>
+									</span>
+									<font style="vertical-align: inherit;"> दुरुस्ती होते.
+									</font>
+								</font>
+							</p>
+							<dl>
+								<dd><span title="चुकांची दुरुस्ती केली"><img alt="नंतर दुरूस्ती दुरुस्ती. Png"
+											src="../m/images/4/49/glitch_repair_after.png" width="626"
+											height="302"></span></dd>
+							</dl>
+						</div>
+						<h2><span class="mw-headline" id="Links">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">दुवे</font>
+								</font>
+							</span></h2>
+						<p><a href="index_of_effects_generators_and_analyzers.html"
+								title="प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका"><b>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">| &lt;</font>
+									</font>
+								</b>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> प्रभाव, जनरेटर आणि विश्लेषकांचे अनुक्रमणिका
+									</font>
+								</font>
+							</a>
+						</p>
+						<p><a href="effect_menu.html" title="प्रभाव मेनू"><b>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">| &lt;</font>
+									</font>
+								</b>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;"> प्रभाव मेनू</font>
+								</font>
+							</a>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;"> .
+								</font>
+							</font>
+						</p>
+						<!-- 
+	NewPP limit report
+	Cached time: 20180917112333
+	Cache expiry: 86400
+	Dynamic content: false
+	CPU time usage: 0.076 seconds
+	Real time usage: 0.082 seconds
+	Preprocessor visited node count: 79/1000000
+	Preprocessor generated node count: 282/1000000
+	Post‐expand include size: 2198/2097152 bytes
+	Template argument size: 1983/2097152 bytes
+	Highest expansion depth: 3/40
+	Expensive parser function count: 0/100
+	-->
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   11.463      1 - -total
- 28.24%    3.237      1 - Template:Intro
- 21.79%    2.498      2 - Template:Example
- 16.08%    1.843      3 - Template:Menu
- 13.45%    1.542      1 - Template:Ednote
- 12.83%    1.471      1 - Template:Note
--->
+						<!-- 
+	Transclusion expansion time report (%,ms,calls,template)
+	100.00%   11.463      1 - -total
+	 28.24%    3.237      1 - Template:Intro
+	 21.79%    2.498      2 - Template:Example
+	 16.08%    1.843      3 - Template:Menu
+	 13.45%    1.542      1 - Template:Ednote
+	 12.83%    1.471      1 - Template:Note
+	-->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5222-0!*!0!!*!5!* and timestamp 20180917112333 and revision id 54737
- -->
-</div>
-										<!-- end content -->
-										<div class="visualClear"></div>
+						<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5222-0!*!0!!*!5!* and timestamp 20180917112333 and revision id 54737
+	 -->
+					</div>
+					<!-- end content -->
+					<div class="visualClear"></div>
 				</div>
 			</div>
 		</div>
 		<div id="column-one">
-			
-					
-				
+
+
+
 			<div class="portlet" id="p-logo" role="banner">
-				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+				<a href="../index.html" class="mw-wiki-logo" title="मुख्य पृष्ठास भेट द्या"></a>
 			</div>
-					
-		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">Manual Home Page</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">Using Audacity</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">Tour Guide</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">New Features</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">Getting Started</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">Tutorials</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">Tips</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">Audacity GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">Menu Bar</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">Toolbars</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">Tracks</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">Effects</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">Customizing Audacity</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">Preferences</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">Key-bindings</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">Plug-ins</span></a></li></ul></li></ul>
-		</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>Reference</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">Reference</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">Digital Audio</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">Glossary</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">All Commands</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">Index</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">FAQ</span></a></li></ul>
-		</div>
-		</div>
-		
-		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>Useful Links</h3>
-		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">Forum</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">Wiki</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">Latest Release</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">WIT</a></span></li></ul>
-		</div>
-		</div>
-		
-			
-			</div><!-- end of the left (by default at least) column -->
+
+			<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+				<h3>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">नॅव्हिगेशन</font>
+					</font>
+				</h3>
+				<div class="pBody">
+					<ul>
+						<li> <a href="../index.html" title="मुख्य पान"><span
+									title="मुखपृष्ठ, ओड्यासीटी स्क्रीनच्या क्लिक करण्यायोग्य प्रतिमेसह पूर्ण.">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">माहिती पुस्तिका मुख्यपृष्ठ</font>
+									</font>
+								</span></a></li>
+						<li> <a href="../index.html#using" title="मुख्य पान"><span
+									title="द्रुत मदत, धृष्टता पाया, धडपड सह संपादन, प्रगत विषय मदत">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">ओड्यासीटी वापरणे</font>
+									</font>
+								</span></a>
+							<ul>
+								<li> <a href="audacity_tour_guide.html" title="ओड्यासीटी टूर गाइड"><span
+											title="ओड्यासीटीच्या निवडलेल्या वैशिष्ट्यांचा द्रुत फेरफटका  हे वैशिष्ट्ये कशी वापरायची हे ती सांगणे किती लांब असेल हे सांगत नाही.  त्याऐवजी हे आपल्याला ओड्यासीटीमध्ये अस्तित्त्वात असलेल्या काही वैशिष्ट्यांविषयी सांगते आणि त्याबद्दल आपल्याला थोडेसे शिकण्यास मदत करते.">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">सहल मार्गदर्शक</font>
+											</font>
+										</span></a></li>
+								<li> <a href="new_features_in_this_release.html"
+										title="या प्रकाशनात नवीन वैशिष्ट्ये"><span
+											title="या रीलिझमध्ये सादर केलेल्या मुख्य नवीन कार्यक्षमतेचे विहंगावलोकन">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">नवीन वैशिष्ट्य</font>
+											</font>
+										</span></a></li>
+								<li> <a href="../quick_help.html" title="द्रुत मदत"><span
+											title="ओड्यासीटीसह प्रारंभ करण्यात मदत करण्यासाठी एक संक्षिप्त मार्गदर्शक">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">प्रारंभ करणे</font>
+											</font>
+										</span></a></li>
+								<li> <a href="tutorials.html" title="शिकवण्या"><span
+											title="ऑडॅसिटीमध्ये सामान्य कार्ये करण्यासाठी चरण-दर-चरण सूचना प्रदान करणारे ट्यूटोरियलचे मार्गदर्शक">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">शिकवण्या</font>
+											</font>
+										</span></a></li>
+								<li> <a href="tips.html" title="टिपा"><span
+											title="ओड्यासीटीसह कार्य करण्याच्या विशिष्ट पैलूंचे मार्गदर्शक: नॅव्हिगेशन.  प्लेबॅक, ध्वनी संरेखन">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">टिपा</font>
+											</font>
+										</span></a></li>
+							</ul>
+						</li>
+						<li> <a href="../index.html#reference" title="मुख्य पान"><span
+									title="ओड्यासीटी ग्राफिकल यूजर इंटरफेसचे घटक">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">ओड्यासीटी जीयूआय</font>
+									</font>
+								</span></a>
+							<ul>
+								<li> <a href="menu_reference.html" title="मेनू संदर्भ"><span
+											title="ऑडॅसिटी मधील मेनू आणि सबमेनससाठी मार्गदर्शक">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">मेनू बार</font>
+											</font>
+										</span></a></li>
+								<li> <a href="toolbars_overview.html" title="टूलबार विहंगावलोकन"><span
+											title="ऑडॅसिटीमध्ये वापरल्या जाणार्&zwj;या विविध टूलबारसाठी मार्गदर्शक">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">टूलबार</font>
+											</font>
+										</span></a></li>
+								<li> <a href="tracks_menu_add_new.html" title="ट्रॅक मेनू: नवीन जोडा"><span
+											title="विविध प्रकारच्या ट्रॅकसाठी मार्गदर्शक">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">ट्रॅक</font>
+											</font>
+										</span></a></li>
+								<li> <a href="index_of_effects_generators_and_analyzers.html"
+										title="प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका"><span
+											title="प्रभाव, जनरेटर आणि विश्लेषकांसाठी द्रुत अनुक्रमणिका जो ऑडॅसिटीसह पाठविला जातो">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">परिणाम</font>
+											</font>
+										</span></a></li>
+							</ul>
+						</li>
+						<li> <a href="customization.html" title="सानुकूलन"><span
+									title="सेटिंग्ज समायोजित करा, की-बाइंडिंग बदला, प्लगइन जोडा">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">ऐटॅसीटी सानुकूलित करत आहे</font>
+									</font>
+								</span></a>
+							<ul>
+								<li> <a href="preferences.html" title="प्राधान्ये"><span
+											title="प्राधान्यांकरिता मार्गदर्शक, जे आपल्याला ओड्यासीटीचे बहुतेक डीफॉल्ट आचरण बदलू देते">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">प्राधान्ये</font>
+											</font>
+										</span></a></li>
+								<li> <a href="keyboard_shortcut_reference.html" title="कीबोर्ड शॉर्टकट संदर्भ"><span
+											title="ओड्यासीटी मेनूमधील सर्व आदेशांची सूची आणि सर्व पूर्व परिभाषित कीबोर्ड शॉर्टकट">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">की-बाइंडिंग्ज</font>
+											</font>
+										</span></a></li>
+								<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html"
+										title="प्रभाव, जनरेटर आणि विश्लेषक प्लग-इन स्थापित करत आहे"><span
+											title="ऑडॅसिटीमध्ये अतिरिक्त कार्यक्षमता जोडण्यासाठी आपण प्लगइन डाउनलोड आणि स्थापित करू शकता.  प्लग-इन्स आपल्याला अतिरिक्त प्रभाव किंवा अधिक ध्वनी जनरेशन आणि विश्लेषण क्षमता देऊ शकतात.">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">प्लग-इन्स</font>
+											</font>
+										</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+				<h3>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">संदर्भ</font>
+					</font>
+				</h3>
+				<div class="pBody">
+					<ul>
+						<li> <a href="../index.html#reference" title="मुख्य पान"><span
+									title="ओड्यासीटी प्रोजेक्ट विंडोचा संदर्भ मार्गदर्शक - आपण अधिक फिरण्यासाठी प्रतिमेवरील फिरवा आणि प्रतिमा क्लिक करू शकता">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">संदर्भ</font>
+									</font>
+								</span></a>
+							<ul>
+								<li> <a href="digital_audio.html" title="डिजिटल ध्वनी"><span
+											title="डिजिटल ध्वनीसाठी नवशिक्या मार्गदर्शक">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">डिजिटल ध्वनी</font>
+											</font>
+										</span></a></li>
+								<li> <a href="glossary.html" title="शब्दकोष"><span
+											title="अधिक व्यापक विस्तृत स्पष्टीकरणासाठी विकिपीडियाच्या काही दुव्यांसह डिजिटल ध्वनीशी संबंधित तांत्रिक अटींचे संक्षिप्त स्पष्टीकरण">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">शब्दकोष</font>
+											</font>
+										</span></a></li>
+								<li> <a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ"><span
+											title="मेनूमध्ये असलेल्या ओड्यासीटी कमांड्स, जे मॅक्रो, न्यक्विस्ट आणि पायथन वरून वापरल्या जाऊ शकतात">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">सर्व आज्ञा</font>
+											</font>
+										</span></a></li>
+								<li> <a href="subject_index.html" title="विषय निर्देशांक"><span
+											title="माहिती पुस्तिकाची एक छोटी, मर्यादित, अनुक्रमणिका">
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">अनुक्रमणिका</font>
+											</font>
+										</span></a></li>
+							</ul>
+						</li>
+						<li> <a href="faq.html" title="सामान्य प्रश्न"><span
+									title="नेहमी विचारले जाणारे प्रश्न - सामान्य प्रश्नांची उत्तरे एफएक्यू मध्ये दिली जातात">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">सामान्य प्रश्न</font>
+									</font>
+								</span></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+				<h3>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">उपयुक्त दुवे</font>
+					</font>
+				</h3>
+				<div class="pBody">
+					<ul>
+						<li> <span title="ओड्यासीटी फोरम (समर्थन विनंत्यांसाठी सर्वोत्तम स्थान)"><a rel="nofollow"
+									class="external text" href="https://forum.audacityteam.org/index.php">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">मंच</font>
+									</font>
+								</a></span></li>
+						<li> <span title="ओड्यासीटी विकी मुख्यपृष्ठ"><a rel="nofollow" class="external text"
+									href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">विकी</font>
+									</font>
+								</a></span></li>
+						<li> <span title="धृष्टता नवीनतम प्रकाशन"><a rel="nofollow" class="external text"
+									href="https://www.audacityteam.org/download/">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">नवीनतम प्रकाशन</font>
+									</font>
+								</a></span></li>
+						<li> <span title="व्हिज्युअल 'ते काय आहे?'  ओड्यासीटीसाठी मार्गदर्शक"><a rel="nofollow"
+									class="external text" href="https://wit.audacityteam.org//">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">व्यवहारज्ञान</font>
+									</font>
+								</a></span></li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div><!-- end of the left (by default at least) column -->
 		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									
-							</div>
-					<div id="f-poweredbyico">
-									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					
-		<div align="center"><ul id="f_list"><li>This version created on 2018-09-17 - <a href="https://alphamanual.audacityteam.org/man/Crossfade_Clips">Check current version of this page (development Manual)</a></li></ul></div>
-</div>
+		<div id="footer" role="contentinfo">
+			<div id="f-copyrightico">
+
+			</div>
+			<div id="f-poweredbyico">
+				<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png"
+						alt="मिडियाविकि द्वारा समर्थित"
+						srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x"
+						width="88" height="31"></a>
+			</div>
+
+			<div align="center">
+				<ul id="f_list">
+					<li>
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">ही आवृत्ती 2018-09-17 रोजी तयार केली - </font>
+						</font><a href="https://alphamanual.audacityteam.org/man/Crossfade_Clips">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
+								</font>
+							</font>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		</body></html>
+	</div>
+	<div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+		<div style="padding: 8px;">
+			<div>
+				<div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png"
+						width="20" height="20" alt="Google Translate"></div>
+			</div>
+		</div>
+		<div class="top" style="padding: 8px; float: left; width: 100%;">
+			<h1 class="title gray">Original text</h1>
+		</div>
+		<div class="middle" style="padding: 8px;">
+			<div class="original-text"></div>
+		</div>
+		<div class="bottom" style="padding: 8px;">
+			<div class="activity-links"><span class="activity-link">Contribute a better translation</span><span
+					class="activity-link"></span></div>
+			<div class="started-activity-container">
+				<hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;">
+				<div class="activity-root"></div>
+			</div>
+		</div>
+		<div class="status-message" style="display: none;"></div>
+	</div>
+
+	<div class="goog-te-spinner-pos">
+		<div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner"
+				width="96px" height="96px" viewBox="0 0 66 66">
+				<circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+					r="30"></circle>
+			</svg></div>
+	</div>
+</body>
+
+</html>
