@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: audacity 2.3.0\n"
 "Report-Msgid-Bugs-To: audacity-translation@lists.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-24 14:42-0400\n"
-"PO-Revision-Date: 2020-09-08 13:52+0530\n"
+"PO-Revision-Date: 2020-09-16 10:52+0530\n"
 "Language-Team: Prof. Mukul Kulkarni <mlk.imcc@mespune.in>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2425,7 +2425,7 @@ msgstr "अधिक: </ b> टिपा, युक्त्या, अतिर
 
 #: src/HelpText.cpp
 msgid "Audacity can import unprotected files in many other formats (such as M4A and WMA, compressed WAV files from portable recorders and audio from video files) if you download and install the optional [[https://manual.audacityteam.org/man/faq_opening_and_saving_files.html#foreign| FFmpeg library]] to your computer."
-msgstr "जर आपण आपल्या संगणकावर वैकल्पिक डाउनलोड आणि स्थापित केले असेल तर ओड्यासीटी इतर अनेक स्वरूपात असुरक्षित धारिका आयात करू शकते (जसे की एम४ए( M4a) आणि डब्ल्यूएमए(WMA), पोर्टेबल मुद्रणमधून संकुचित डब्ल्यूएव्ही(WAV) धारिका आणि व्हिडिओ धारिकामधून ध्वनी) [[https://manual.audacityteam.org/man/faq_opening_and_saving_files.html#foreign| FFmpeg library]]."
+msgstr "जर आपण आपल्या संगणकावर वैकल्पिक डाउनलोड आणि स्थापित केले असेल तर ओड्यासिटी इतर अनेक स्वरूपात असुरक्षित धारिका आयात करू शकते (जसे की एम४ए( M4a) आणि डब्ल्यूएमए(WMA), पोर्टेबल मुद्रणमधून संकुचित डब्ल्यूएव्ही(WAV) धारिका आणि व्हिडिओ धारिकामधून ध्वनी) [[https://manual.audacityteam.org/man/faq_opening_and_saving_files.html#foreign| FFmpeg library]]."
 
 #: src/HelpText.cpp
 msgid "You can also read our help on importing [[https://manual.audacityteam.org/man/playing_and_recording.html#midi|MIDI files]] and tracks from [[http://manual.audacityteam.org/man/faq_opening_and_saving_files.html#fromcd| audio CDs]]."
@@ -6187,7 +6187,7 @@ msgstr "सक्रियन पातळी (डीबी):"
 
 #: src/SplashDialog.cpp
 msgid "Welcome to Audacity!"
-msgstr "ओड्यासिटीमध्ये आपले स्वागत आहे!"
+msgstr "ओड्यासिटी मध्ये आपले स्वागत आहे!"
 
 #: src/SplashDialog.cpp
 msgid "Don't show this again at start up"
@@ -6199,7 +6199,7 @@ msgstr "कलाकाराचे नाव"
 
 #: src/Tags.cpp
 msgid "Track Title"
-msgstr "शीर्षक गीतपट्टा"
+msgstr "गीतपट्टा शीर्षक"
 
 #: src/Tags.cpp
 msgid "Album Title"
@@ -6223,7 +6223,7 @@ msgstr "टिप्पण्या"
 
 #: src/Tags.cpp
 msgid "Use arrow keys (or ENTER key after editing) to navigate fields."
-msgstr "प्रदेश नॅव्हिगेट करण्यासाठी एरो की (किंवा संपादनानंतर की ENTER की) वापरा."
+msgstr "प्रदेश निर्देशित करण्यासाठी एरो की (किंवा संपादनानंतर की ENTER की) वापरा."
 
 #: src/Tags.cpp
 msgid "Tag"
@@ -6251,7 +6251,7 @@ msgstr "संपादन...(&d)"
 
 #: src/Tags.cpp
 msgid "Rese&t..."
-msgstr "पुन्हा निवड करा...(&t)"
+msgstr "पूर्वनिर्धारीत करा...(&t)"
 
 #: src/Tags.cpp
 msgid "Template"
@@ -6259,11 +6259,11 @@ msgstr "टेम्पलेट"
 
 #: src/Tags.cpp
 msgid "&Load..."
-msgstr "(&L)लोड करा ..."
+msgstr "लोड करा ...(&L)"
 
 #: src/Tags.cpp
 msgid "Set De&fault"
-msgstr "पूर्वीचे लावा"
+msgstr "पूर्वनिर्धारीत करा"
 
 #: src/Tags.cpp
 msgid "Edit Genres"
@@ -6271,7 +6271,7 @@ msgstr "शैली संपादित करा"
 
 #: src/Tags.cpp
 msgid "Unable to save genre file."
-msgstr "शैली धारिका  जतन करण्यात बंद."
+msgstr "शैली धारिका जतन करण्यास असमर्थ."
 
 #: src/Tags.cpp
 msgid "Reset Genres"
@@ -6279,7 +6279,7 @@ msgstr "शैली पुन्हा निवड करा"
 
 #: src/Tags.cpp
 msgid "Are you sure you want to reset the genre list to defaults?"
-msgstr "आपणास खात्री आहे की आपण शैली यादी पूर्वनिर्धारितवर पूर्वनिर्धारीत करू इच्छिता?"
+msgstr "आपणास खात्री आहे की आपण शैली यादी पूर्वनिर्धारितवर निवड करू इच्छिता?"
 
 #: src/Tags.cpp
 msgid "Unable to open genre file."
@@ -6287,7 +6287,7 @@ msgstr "शैली धारिका उघडण्यात बंद."
 
 #: src/Tags.cpp
 msgid "Load Metadata As:"
-msgstr "मेटा माहिती  म्हणून लोड करा:"
+msgstr "मेटा माहिती म्हणून लोड करा:"
 
 #: src/Tags.cpp
 msgid "Error Loading Metadata"
@@ -6299,7 +6299,7 @@ msgstr "मेटा माहिती  जतन करा:"
 
 #: src/Tags.cpp
 msgid "Error Saving Tags File"
-msgstr "टॅग्जधारिका जतन करताना त्रुटी आली"
+msgstr "टॅग्ज धारिका जतन करताना त्रुटी आली"
 
 #: src/Theme.cpp
 #, c-format
@@ -6373,7 +6373,7 @@ msgid ""
 msgstr ""
 "ओड्यासिटी धारिका  लोड करू शकत नाही:\n"
 "   %s\n"
-"खराब png स्वरूप कदाचित?"
+"खराब पीनजी (png) स्वरूप कदाचित?"
 
 #: src/Theme.cpp
 msgid ""
@@ -6535,7 +6535,7 @@ msgstr "समयबद्ध ध्वनीमुद्रण नंतरच�
 
 #: src/TimerRecordDialog.cpp
 msgid "Audacity Timer Record Progress"
-msgstr "ओड्यासिटी वेळ मोजणेलेली मुद्रण  प्रगती"
+msgstr "ओड्यासिटी समयबद्ध ध्वनीमुद्रणची प्रगती"
 
 #: src/TimerRecordDialog.cpp
 msgid "Timer Recording stopped."
@@ -6667,7 +6667,7 @@ msgstr "स्वयंचलित निर्यात"
 
 #: src/TimerRecordDialog.cpp
 msgid "Enable Automatic &Export?"
-msgstr "स्वयंचलित निर्यात सक्रिय करें?"
+msgstr "स्वयंचलित निर्यात सक्रिय करा?"
 
 #: src/TimerRecordDialog.cpp
 msgid "Export Project As:"
@@ -6728,7 +6728,7 @@ msgstr "ध्वनीमुद्रण निर्यात केले:"
 
 #: src/TimerRecordDialog.cpp
 msgid "Audacity Timer Record - Waiting"
-msgstr "ओड्यासिटी वेळ मोजणेलेली मुद्रण - प्रतीक्षा"
+msgstr "ओड्यासिटी समयबद्ध ध्वनीमुद्रण - प्रतीक्षा"
 
 #. i18n-hint Esc is a key on the keyboard
 #: src/TrackPanel.cpp
@@ -6894,7 +6894,7 @@ msgid ""
 "this is a bug, please tell us exactly where it occurred."
 msgstr ""
 "आपल्या शेवटच्या क्रियेत एक समस्या होती. जर आपण विचार केला तर\n"
-"हा एक त्रुटी आहे, कृपया तो नेमका कोठला आहे ते सांगा."
+"हि एक त्रुटी आहे, कृपया ती नेमके कुठे आहे ते सांगा."
 
 #: src/commands/CommandManager.cpp
 msgid "Disallowed"
@@ -6905,7 +6905,7 @@ msgid ""
 "You can only do this when playing and recording are\n"
 "stopped. (Pausing is not sufficient.)"
 msgstr ""
-"आपण हे केवळ वाजवा आणि ध्वनीमुद्रण असताना करू शकता\n"
+"आपण हे केवळ वाजवत असताना आणि ध्वनीमुद्रण करत असताना करू शकता\n"
 "थांबलो. (विराम देणे पुरेसे नाही.)"
 
 #: src/commands/CommandManager.cpp
@@ -6918,7 +6918,7 @@ msgstr ""
 
 #: src/commands/CommandManager.cpp
 msgid "No Audio Selected"
-msgstr "कोणताही ध्वनी  निवडलेला नाही"
+msgstr "कोणताही ध्वनी निवडलेला नाही"
 
 #. i18n-hint: %s will be replaced by the name of an action, such as Normalize, Cut, Fade.
 #: src/commands/CommandManager.cpp
@@ -7019,7 +7019,7 @@ msgstr "गीतपट्टा 1"
 #. i18n-hint abbreviates "Identity" or "Identifier"
 #: src/commands/DragCommand.cpp
 msgid "Id:"
-msgstr "सांकेतिक आज्ञावली नंबर:"
+msgstr "ओळख नंबर:"
 
 #: src/commands/DragCommand.cpp
 msgid "Window Name:"
@@ -7035,7 +7035,7 @@ msgstr "Y पासून:"
 
 #: src/commands/DragCommand.cpp
 msgid "To X:"
-msgstr "क्ष पर्यंत:"
+msgstr "X पर्यंत:"
 
 #: src/commands/DragCommand.cpp
 msgid "To Y:"
@@ -7226,7 +7226,7 @@ msgstr "प्राधान्य मिळवा"
 
 #: src/commands/PreferenceCommands.h
 msgid "Set Preference"
-msgstr "प्राधान्य ठेवा"
+msgstr "प्राधान्य निवडा"
 
 #: src/commands/PreferenceCommands.h
 msgid "Gets the value of a single preference."
@@ -7234,7 +7234,7 @@ msgstr "केवळ एकाला पसंतीची किंमत म�
 
 #: src/commands/PreferenceCommands.h
 msgid "Sets the value of a single preference."
-msgstr "एकल पसंतीचे मूल्य सेट करते."
+msgstr "एकल पसंतीचे मूल्य निवड करते."
 
 #: src/commands/ScreenshotCommand.cpp
 msgid "Window"
@@ -7250,7 +7250,7 @@ msgstr "विंडो अधिक"
 
 #: src/commands/ScreenshotCommand.cpp
 msgid "Fullscreen"
-msgstr "पूर्ण पडदा"
+msgstr "पूर्ण स्क्रीन"
 
 #: src/commands/ScreenshotCommand.cpp
 msgid "Toolbars"
@@ -7266,7 +7266,7 @@ msgstr "स्क्रिप्टेबल्स"
 
 #: src/commands/ScreenshotCommand.cpp
 msgid "Selectionbar"
-msgstr "निवड पटी"
+msgstr "निवडपट्टी"
 
 #: src/commands/ScreenshotCommand.cpp
 msgid "Trackpanel"
@@ -7328,7 +7328,7 @@ msgstr "पार्श्वभूमी:"
 
 #: src/commands/ScreenshotCommand.cpp
 msgid "Bring To Top:"
-msgstr "वर आणा:"
+msgstr "वरती आणा:"
 
 #: src/commands/ScreenshotCommand.cpp
 #, c-format
@@ -7475,7 +7475,7 @@ msgstr "फीत निवड करा"
 
 #: src/commands/SetClipCommand.h
 msgid "Sets various values for a clip."
-msgstr "फीतसाठी विविध मूल्ये सेट करते."
+msgstr "फीतसाठी विविध मूल्ये निवड करते."
 
 #: src/commands/SetEnvelopeCommand.cpp
 msgid "Time:"
@@ -7495,7 +7495,7 @@ msgstr "एक लिफाफा बिंदू स्थान स्था�
 
 #: src/commands/SetLabelCommand.cpp
 msgid "Label Index"
-msgstr "नावपट्टीअनुक्रमणिका"
+msgstr "नावपट्टी अनुक्रमणिका"
 
 #: src/commands/SetLabelCommand.cpp
 msgid "End:"
@@ -7543,7 +7543,7 @@ msgstr "प्रकल्पसाठी भिन्न मूल्ये स
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Track Index:"
-msgstr "निर्देशांक:"
+msgstr "गीतपट्टा अनुक्रमणिका:"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Channel Index:"
@@ -7585,7 +7585,7 @@ msgstr "रेखीय"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Reset"
-msgstr "पुन्हा रचना करा"
+msgstr "पूर्ववत करा"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Times 2"
@@ -7601,7 +7601,7 @@ msgstr "प्रदर्शन:"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "Scale:"
-msgstr "मोजणे पट्टी:"
+msgstr "मोजपट्टी:"
 
 #: src/commands/SetTrackInfoCommand.cpp
 msgid "VZoom:"
@@ -7664,9 +7664,8 @@ msgid "Amplify"
 msgstr "शक्ती वाढवणे"
 
 #: src/effects/AutoDuck.cpp
-#, fuzzy
 msgid "Reduces (ducks) the volume of one or more tracks whenever the volume of a specified \"control\" track reaches a particular level"
-msgstr "निर्दिष्ट \"नियंत्रण\" ध्वनी विशिष्ट स्तरावर पोहोचल्यावर ध्वनी आवाजचे एक किंवा अधिक गीतपट्टा कमी करते (बदके)"
+msgstr "निर्दिष्ट \"नियंत्रण\" ध्वनी विशिष्ट स्तरावर पोहोचल्यावर ध्वनी आवाजचे एक किंवा अधिक गीतपट्टा कमी करते(डक)"
 
 #: src/effects/AutoDuck.cpp
 msgid "You selected a track which does not contain audio. AutoDuck can only process audio tracks."
@@ -7816,7 +7815,7 @@ msgstr "(Hz) पासून"
 
 #: src/effects/ChangePitch.cpp
 msgid "to (Hz)"
-msgstr "(Hz)च्यापर्यत"
+msgstr "(Hz) च्यापर्यत"
 
 #: src/effects/ChangePitch.cpp src/effects/ChangeSpeed.cpp
 #: src/effects/ChangeTempo.cpp
@@ -7830,7 +7829,7 @@ msgstr "टक्के बदल"
 
 #: src/effects/ChangePitch.cpp src/effects/ChangeTempo.cpp
 msgid "Use high quality stretching (slow)"
-msgstr "उच्च प्रतीचे ताणून (मंद) वापरा"
+msgstr "उच्च प्रतीचे ताणून (हळू) वापरा"
 
 #: src/effects/ChangePitch.h
 msgid "Change Pitch"
@@ -7842,7 +7841,7 @@ msgstr "ध्वनीची उच्चनीचता बदल"
 #: src/effects/ladspa/LadspaEffect.cpp src/effects/lv2/LV2Effect.cpp
 #: src/effects/nyquist/Nyquist.cpp
 msgid "n/a"
-msgstr "n/a"
+msgstr "नाही"
 
 #: src/effects/ChangeSpeed.cpp
 msgid "Changes the speed of a track, also changing its pitch"
@@ -9439,7 +9438,7 @@ msgid ""
 "Select a few seconds of just noise so Audacity knows what to filter out,\n"
 "then click Get Noise Profile:"
 msgstr ""
-"फक्त आवाजाची काही सेकंद निवडा जेणेकरून ओड्यासीटीला काय चाळण करावे हे माहित असेल,\n"
+"फक्त आवाजाची काही सेकंद निवडा जेणेकरून ओड्यासिटीला काय चाळण करावे हे माहित असेल,\n"
 "नंतर गोंगाट प्रोफाइल मिळवा क्लिक करा:"
 
 #: src/effects/NoiseReduction.cpp src/effects/NoiseRemoval.cpp
