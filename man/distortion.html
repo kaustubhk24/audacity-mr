@@ -1,202 +1,2022 @@
 <!DOCTYPE html>
 <html class="client-nojs" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8"/>
-<title>Distortion - Audacity Manual</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>विकृती - ओड्यासीटी माहितीपुस्तिका</title>
 
+    <!--[if IE 6
+      ]><link
+        rel="stylesheet"
+        href="../m/skins/monobook/ie60fixes.css/303.css"
+        media="screen"
+    /><![endif]-->
+    <!--[if IE 7
+      ]><link
+        rel="stylesheet"
+        href="../m/skins/monobook/ie70fixes.css/303.css"
+        media="screen"
+    /><![endif]-->
+    <meta name="ResourceLoaderDynamicStyles" content="" />
 
+    <meta name="generator" content="MediaWiki 1.28.2" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      href="https://alphamanual.audacityteam.org/m/opensearch_desc.php"
+      title="ओड्यासिटी डेव्हलपमेंट मॅन्युअल (इं)"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"
+    />
+    <link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
 
+    <link
+      rel="stylesheet"
+      href="../m/skins/monobook/main.css/303.css"
+      media="screen"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      charset="UTF-8"
+      href="https://translate.googleapis.com/translate_static/css/translateelement.css"
+    />
+  </head>
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+  <body
+    class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Distortion rootpage-Distortion skin-monobook action-view"
+  >
+    <div id="globalWrapper">
+      <div id="column-content">
+        <div id="content" class="mw-body" role="main">
+          <a id="top"></a>
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+          <div class="mw-indicators"></div>
+          <h1 id="firstHeading" class="firstHeading" lang="en">
+            <font style="vertical-align: inherit">
+              <font style="vertical-align: inherit">विकृती</font>
+            </font>
+          </h1>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Distortion rootpage-Distortion skin-monobook action-view"><div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
-</div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Distortion</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Distortion#searchInput">search</a></div>
+          <div id="bodyContent" class="mw-body-content">
+            <div id="siteSub">
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit"
+                  >ओड्यासिटी विकास माहितीपुस्तिकेवरुन</font
+                >
+              </font>
+            </div>
+            <div id="contentSub"></div>
+            <div id="jump-to-nav" class="mw-jump">
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit">येथे जा: </font> </font
+              ><a href="#column-one">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">निर्देशांक</font>
+                </font>
+              </a>
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit"> , </font> </font
+              ><a
+                href="https://alphamanual.audacityteam.org/man/Distortion#searchInput"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">शोधा</font>
+                </font>
+              </a>
+            </div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
-</p>
+            <!-- start content -->
+            <div
+              id="mw-content-text"
+              lang="en"
+              dir="ltr"
+              class="mw-content-ltr"
+            >
+              <p><br /></p>
 
-<p><br />
-</p>
-<div class="intro"><p>Use the <i><b>Distortion</b></i> effect to make the audio sound distorted. By distorting the waveform the frequency content is changed, which will often make the sound 'crunchy' or 'abrasive'.</p>
-<p>Technically this effect is a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Waveshaper">waveshaper</a>. The result of waveshaping is equivalent to applying non-linear amplification to the audio waveform. Preset <i>shaping functions</i> are provided, each of which produces a different type of distortion.  </p>
-<p>Presets are provided in the <span class="button">Manage</span> menu, which suggest typical settings for a wide range of uses.</p></div>
-<dl><dd><b>Accessed by:</b> <span class="menu">Effect &gt; Distortion...</span></dd>
-<dd><span title="Distortion effect dialog"><img alt="Distortion.png" src="../m/images/2/22/distortion.png" width="729" height="366" /></span></dd></dl>
-<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+              <p><br /></p>
+              <div class="intro">
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >ध्वनी विकृत करण्यासाठी
+                    </font> </font
+                  ><i
+                    ><b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">विरूपण</font>
+                      </font>
+                    </b></i
+                  >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> प्रभाव </font>
+                    <font style="vertical-align: inherit">वापरा </font>
+                    <font style="vertical-align: inherit">. </font>
+                    <font style="vertical-align: inherit"
+                      >तरंगरूप विकृत करून वारंवारतेची सामग्री बदलली जाते, जे
+                      &zwj;बऱ्याच आवाज 'क्रंचि' किंवा 'अपघर्षक' करते.</font
+                    >
+                  </font>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >तांत्रिकदृष्ट्या हा प्रभाव
+                    </font> </font
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://en.wikipedia.org/wiki/Waveshaper"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">वेव्हशेपर आहे</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> . </font>
+                    <font style="vertical-align: inherit"
+                      >वेव्हशेपिंगचा परिणाम ध्वनी तरंगरूपवर नॉन-रेखीय प्रवर्धन
+                      लागू करण्याइतकेच आहे.
+                    </font>
+                    <font style="vertical-align: inherit">प्रीसेट </font> </font
+                  ><i>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >शेपिंग फंक्शन्स</font
+                      >
+                    </font>
+                  </i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      प्रदान केल्या आहेत, त्यापैकी प्रत्येकजण भिन्न प्रकारचे
+                      विकृती उत्पन्न करते.
+                    </font>
+                  </font>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रीसेट्स
+                    </font> </font
+                  ><span class="button">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >व्यवस्थापित करा</font
+                      >
+                    </font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> मेनूमध्ये </font>
+                    <font style="vertical-align: inherit"
+                      >प्रदान केले आहेत
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >, जे विस्तृत वापराच्या वैशिष्ट्यांसह सेटिंग्ज
+                      दर्शवितात.</font
+                    >
+                  </font>
+                </p>
+              </div>
+              <dl>
+                <dd>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >याद्वारे प्रवेश केलेले:
+                      </font>
+                    </font>
+                  </b>
+                  <span class="menu">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रभाव&gt; विकृती ...</font
+                      >
+                    </font>
+                  </span>
+                </dd>
+                <dd>
+                  <span title="विकृतीकरण संवाद"
+                    ><img
+                      alt="विकृती.पीएनजी"
+                      src="../m/images/2/22/distortion.png"
+                      width="729"
+                      height="366"
+                  /></span>
+                </dd>
+              </dl>
+              <div
+                style="
+                  margin-top: 12px;
+                  margin-bottom: 12px;
+                  margin-left: 24px;
+                  margin-right: 24px;
+                "
+              >
+                <table
+                  style="
+                    background: #feffd0;
+                    color: black;
+                    border: 1px solid #999999;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                  "
+                  width="100%"
+                  align="center"
+                >
+                  <tbody>
+                    <tr>
+                      <td width="30px" valign="top" align="center">
+                        <a
+                          href="https://alphamanual.audacityteam.org/man/File:Warningicon.png"
+                          class="image"
+                          title="चेतावणी चिन्ह"
+                          ><img
+                            alt="चेतावणी चिन्ह"
+                            src="../m/images/b/ba/warningicon.png"
+                            width="24"
+                            height="24"
+                        /></a>
+                      </td>
+                      <td align="left" valign="top">
+                        <p>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit"
+                              >अधिक "analog" साठी कुरूपता थाळी गीतपट्टा पाहिजे
+                            </font> </font
+                          ><a
+                            href="tracks_menu.html#resample"
+                            title="गीतपट्टा मेनू"
+                          >
+                            <font style="vertical-align: inherit">
+                              <font style="vertical-align: inherit"
+                                >resampled</font
+                              >
+                            </font>
+                          </a>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit">
+                              एक उच्च
+                            </font> </font
+                          ><a href="glossary.html#sample_rate" title="शब्दकोष">
+                            <font style="vertical-align: inherit">
+                              <font style="vertical-align: inherit"
+                                >नमूना दर</font
+                              >
+                            </font>
+                          </a>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit">
+                              aliasing कमी करण्यासाठी म्हणून.</font
+                            >
+                          </font>
+                        </p>
+                        <p>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit">
+                              विकृत ध्वनीची लांबी सुधारित करण्यासाठी विकृतीचा
+                              प्रभाव लागू करण्यापूर्वी किंवा नंतरही समता लागू
+                              केली जाऊ शकते.</font
+                            >
+                          </font>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2>
+                <span class="mw-headline" id="Distortion_type">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">विकृतीचा प्रकार</font>
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">हे </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">आकार</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> देणारी </font
+                  ><i>
+                    <font style="vertical-align: inherit">कार्ये आहेत</font>
+                  </i>
+                  <font style="vertical-align: inherit"> . </font>
+                  <font style="vertical-align: inherit">प्रत्येक </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">प्रकार</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    इनपुट सिग्नलला आउटपुट स्तरावर मॅप्ड कसे करते ते परिभाषित
+                    करते.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >प्रत्येक विकृत प्रकारामध्ये एक किंवा अधिक नियंत्रण मापदंड
+                    असतात जे आकार कार्य कसे लागू केले जातात हे निर्धारित करतात.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >एकूण पाच स्लाइडर नियंत्रणे आहेत.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >विकृती कोणत्या "प्रकार" निवडली यावर अवलंबून नियंत्रणे
+                    स्वयंचलितपणे सक्षम किंवा अक्षम केली जातात.
+                  </font>
+                </font>
+              </p>
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >सर्व विकृत प्रकारांकरिता, निर्दिष्ट केलेल्या 'शेपिंग'
+                    व्यतिरिक्त 0 डीबी वरील इनपुट सिग्नल 0 डीबी वर "हार्ड क्लीप
+                    केलेले" असतात.</font
+                  >
+                </font>
+              </div>
+              <p><br /></p>
+              <div id="clipping"></div>
+              <h3>
+                <span class="mw-headline" id="Clipping_Distortion">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">फिती विकृती</font>
+                  </font>
+                </span>
+              </h3>
+              <div id="hard"></div>
+              <h4>
+                <span class="mw-headline" id="Hard_Clipping">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">हार्ड फिती</font>
+                  </font>
+                </span>
+              </h4>
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
-</td>
-<td align="left" valign="top"><p>For more "analog" sounding distortion, the track should be <a href="tracks_menu.html#resample" title="Tracks Menu">resampled</a> to a high <a href="glossary.html#sample_rate" title="Glossary">sampling rate</a> so as to reduce aliasing.</p><p>
-Equalization may also be applied, before or after applying the distortion effect to modify the timbre of the distorted audio.</p>
-</td></tr></table></div>
-<h2><span class="mw-headline" id="Distortion_type">Distortion type</span></h2>
-<p>These are the <i>shaping functions</i>. Each <i>type</i> defines how the input signal is mapped to the output level.
-</p><p>Each distortion type has one or more control parameters that determine how the shaping function is applied. There is a total of five slider controls. The controls are enabled or disabled automatically depending on which "type" of distortion is selected.
-</p>
-<div class="note">For all distortion types, input signals above 0 dB are "hard clipped" at 0 dB in addition to the specified 'shaping'.</div>
-<p><br />
-</p>
-<div id="clipping"></div>
-<h3><span class="mw-headline" id="Clipping_Distortion">Clipping Distortion</span></h3>
-<div id="hard"></div>
-<h4><span class="mw-headline" id="Hard_Clipping">Hard Clipping</span></h4>
-</li></ul>
-<p>This type of distortion cuts off peaks at the top and bottom of the waveform. Note that hard clipping is very likely to cause <a href="glossary.html#aliasing" title="Glossary">aliasing distortion</a>, which may be undesirable.
-</p>
-<ul><li><b>Clipping level (-100 to 0 dB):</b> Peaks greater than this level are cut off. The slider control has a logarithmic scale to allow settings close to 0 dB to be made more easily and accurately.</li>
-<li><b>Drive (0 to 100):</b> When set to greater than 0, the waveform is amplified this amount (dB) prior to being clipped.</li>
-<li><b>Make-up Gain (0 to 100):</b> When set greater than 0, the output from the effect is amplified. When set to 100, the amplification is such that an input level of 0 dB (full track height) will produce an output level of 0 dB.</li></ul>
-<div id="soft"></div>
-<h4><span class="mw-headline" id="Soft_Clipping">Soft Clipping</span></h4>
-<p>This type of distortion is similar to <a href="#hard">Hard Clipping</a> except that 'corners' where clipping intersects with the waveform are rounded. This is achieved by progressively reducing the gain when the input is above the clipping threshold. The softer the clipping, the more rounded the clipped peaks and the less risk of aliasing distortion.
-</p>
-<ul><li><b>Clipping threshold (-100 to 0 dB):</b> The level at which gain reduction (clipping) starts. The slider control has a logarithmic scale to allow settings close to 0 dB to be made more easily and accurately.</li>
-<li><b>Hardness (0 to 100):</b> The 'hardness' of the clipping (100&#160;% being "hard").</li>
-<li><b>Make-up Gain (0 to 100):</b> When set greater than 0, the output from the effect is amplified. When set to 100, the amplification is such that an input level of 0 dB (full track height) will produce an output level of 0 dB.</li></ul>
-<p>Note that even without "Make-up Gain", the output level may be higher than the clipping threshold because the peaks are in effect 'squashed' flatter rather than being completely cut off.
-</p><p><br />
-</p>
-<div id="overdrive"></div>
-<h3><span class="mw-headline" id="Overdrive_Distortion">Overdrive Distortion</span></h3>
-<div class="note">For all three 'Overdrive' types, the shaping function is a continuous smooth curve.</div>
-<div id="soft_OD"></div>
-<h4><span class="mw-headline" id="Soft_Overdrive">Soft Overdrive</span></h4>
-<p>This is the "softest" of the overdrive types and produces the least amount of high harmonics. It can be useful for reducing the dynamic range (thus increasing the sustain of musical instruments) while adding the least amount of "crunch" to the sound.
-</p>
-<ul><li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion.</li>
-<li><b>Output level (0 to 100):</b> An output level adjustment. When set to 0 the output is silent.</li></ul>
-<div id="medium_OD"></div>
-<h4><span class="mw-headline" id="Medium_Overdrive">Medium Overdrive</span></h4>
-<ul><li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion.</li>
-<li><b>Output level (0 to 100):</b> An output level adjustment. When set to 0 the output is silent.</li></ul>
-<div id="hard_OD"></div>
-<h4><span class="mw-headline" id="Hard_Overdrive">Hard Overdrive</span></h4>
-<p>This is the "hardest" of the overdrive types and produces the greatest amount of high harmonics. This would typically be used for producing a heavily distorted effect.
-</p>
-<ul><li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion.</li>
-<li><b>Output level (0 to 100):</b> An output level adjustment. When set to 0 the output is silent.</li></ul>
-<p><br />
-</p>
-<div id="harmonic"></div>
-<h3><span class="mw-headline" id="Harmonic_Distortion">Harmonic Distortion</span></h3>
-<div class="note">These types of distortion create a series of odd or even harmonics. "Odd" harmonics have frequencies that are an odd number of times higher than the fundamental frequency, whereas even harmonics are an even number of times higher than the fundamental frequency. For example, the second harmonic of a 440 Hz sine wave is a sine wave with a frequency  of 880 Hz. Note that because real world sounds contain many frequencies, these distortion effects are unlikely to create recognizable "harmony" type sounds, but rather will produce distortion with a unique tonal character.</div>
-<div id="cubic"></div>
-<h4><span class="mw-headline" id="Cubic_Curve_.28odd_harmonics.29">Cubic Curve (odd harmonics)</span></h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारच्या विकृतीमुळे तरंगरूपच्या वरच्या आणि खालच्या
+                    भागातील शिखरे बंद होतात.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >लक्षात ठेवा की हार्ड फितीमुळे
+                  </font> </font
+                ><a href="glossary.html#aliasing" title="शब्दकोष">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >अलियासिंग विकृती</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    होण्याची शक्यता असते
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >, जी अनिष्ट असू शकते.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >कतरणे पातळी (-100 ते 0 डीबी):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      या स्तरापेक्षा उंचीवरील शिखर कापले आहेत.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >स्लाइडर नियंत्रणात 0 डीबी जवळील सेटिंग्ज अधिक सुलभ आणि
+                      अचूकपणे करता येण्याकरिता लॉगरिथमिक स्केल आहे.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >ड्राइव्ह (० ते १००):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      0 पेक्षा जास्त वर सेट केलेले असताना, तरंगरूप फीत
+                      होण्यापूर्वी ही रक्कम (डीबी) वाढविली जाते.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >मेक-अप गेन (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      0 पेक्षा जास्त सेट केल्यावर, परिणामाचे आउटपुट वाढविले
+                      जाईल.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >100 वर सेट केल्यावर, एम्प्लिफिकेशन असे आहे की 0 डीबीचे
+                      इनपुट स्तर (पूर्ण गीतपट्टा उंची) 0 डीबीचे आउटपुट स्तर तयार
+                      करेल.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <div id="soft"></div>
+              <h4>
+                <span class="mw-headline" id="Soft_Clipping">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">सॉफ्ट फिती</font>
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारचे विकृति
+                  </font> </font
+                ><a href="#hard">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >हार्ड फितीसारखेच आहे</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    ज्यात 'कोपरे' सोडले जाते जेथे फितीला तरंगरूपसह काटले जाते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >जेव्हा इनपुट फिती थ्रेशोल्डच्या वर असेल तेव्हा क्रमाने
+                    नफ्यावर कमी करुन हे साध्य केले जाते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >फिती जितके मऊ असेल तितके अधिक फीत केलेले शिखर आणि विकृती
+                    कमी होण्याचे कमी धोका.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >फिती थ्रेशोल्ड (-100 ते 0 डीबी):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      ज्या पातळीवर वाढीची कपात (फिती) सुरू होते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >स्लाइडर नियंत्रणात 0 डीबी जवळील सेटिंग्ज अधिक सुलभ आणि
+                      अचूकपणे करता येण्याकरिता लॉगरिथमिक स्केल आहे.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >कडकपणा (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      फितीची 'कठोरता' (100% "कठोर")</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >मेक-अप गेन (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      0 पेक्षा जास्त सेट केल्यावर, परिणामाचे आउटपुट वाढविले
+                      जाईल.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >100 वर सेट केल्यावर, एम्प्लिफिकेशन असे आहे की 0 डीबीचे
+                      इनपुट स्तर (पूर्ण गीतपट्टा उंची) 0 डीबीचे आउटपुट स्तर तयार
+                      करेल.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >लक्षात घ्या की "मेक-अप गेन" शिवाय देखील आउटपुट स्तर फिती
+                    थ्रेशोल्डपेक्षा जास्त असू शकते कारण शिखर पूर्णपणे
+                    कापण्याऐवजी 'स्क्वॅशड' चापटीने प्रभावी होते.
+                  </font>
+                </font>
+              </p>
+              <p><br /></p>
+              <div id="overdrive"></div>
+              <h3>
+                <span class="mw-headline" id="Overdrive_Distortion">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >ओव्हरड्राईव्ह विकृती</font
+                    >
+                  </font>
+                </span>
+              </h3>
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >तिन्ही 'ओव्हरड्राईव्ह' प्रकारांसाठी आकार देणे हे एक सतत
+                    गुळगुळीत वक्र असते.</font
+                  >
+                </font>
+              </div>
+              <div id="soft_OD"></div>
+              <h4>
+                <span class="mw-headline" id="Soft_Overdrive">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >मऊ ओव्हरड्राईव्ह</font
+                    >
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >ओव्हरड्राईव्ह प्रकारांपैकी हा "मऊ" आहे आणि कमीतकमी उच्च
+                    हार्मोनिक्स तयार करतो.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >आवाजात "क्रंच" कमीतकमी प्रमाणात जोडताना डायनॅमिक रेंज कमी
+                    करण्यासाठी (अशा प्रकारे वाद्य वाजविण्याचे कार्य वाढविणे)
+                    उपयुक्त ठरू शकते.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >आउटपुट स्तर (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आउटपुट स्तर mentडजस्टमेंट.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >0 वर सेट केल्यावर आउटपुट मूक होते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <div id="medium_OD"></div>
+              <h4>
+                <span class="mw-headline" id="Medium_Overdrive">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >मध्यम ओव्हरड्राईव्ह</font
+                    >
+                  </font>
+                </span>
+              </h4>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >आउटपुट स्तर (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आउटपुट स्तर mentडजस्टमेंट.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >0 वर सेट केल्यावर आउटपुट मूक होते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <div id="hard_OD"></div>
+              <h4>
+                <span class="mw-headline" id="Hard_Overdrive">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >हार्ड ओव्हरड्राईव्ह</font
+                    >
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >ओव्हरड्राईव्ह प्रकारांपैकी हा "सर्वात कठीण" आहे आणि मोठ्या
+                    प्रमाणात उच्च हार्मोनिक्स तयार करतो.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >हे सामान्यतः मोठ्या प्रमाणात विकृत प्रभाव तयार करण्यासाठी
+                    वापरले जाईल.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >आउटपुट स्तर (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आउटपुट स्तर mentडजस्टमेंट.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >0 वर सेट केल्यावर आउटपुट मूक होते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p><br /></p>
+              <div id="harmonic"></div>
+              <h3>
+                <span class="mw-headline" id="Harmonic_Distortion">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >हार्मोनिक विकृती</font
+                    >
+                  </font>
+                </span>
+              </h3>
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारच्या विकृती विचित्र किंवा समरसतेची मालिका तयार
+                    करतात.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >"ऑड" हार्मोनिक्समध्ये वारंवारता असते जी मूलभूत
+                    वारंवारतेपेक्षा विचित्र संख्येपेक्षा जास्त असते, तर
+                    हार्मोनिक्ससुद्धा मूलभूत वारंवारतेपेक्षा अगदी पटीने जास्त
+                    असतात.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >उदाहरणार्थ, 440 हर्ट्झ साइन वेव्हचा दुसरा हार्मोनिक 860
+                    हर्ट्जच्या वारंवारतेसह साइन वेव्ह आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >लक्षात घ्या की वास्तविक जगाच्या ध्वनीमध्ये बर्&zwj;याच
+                    वारंवारता असतात, म्हणून या विकृतीमुळे ओळखले जाणारे
+                    "सामंजस्य" प्रकारचे आवाज तयार होण्याची शक्यता नसते, परंतु
+                    त्याऐवजी एका अद्वितीय टोनल कॅरेक्टरसह विकृती निर्माण
+                    होते.</font
+                  >
+                </font>
+              </div>
+              <div id="cubic"></div>
+              <h4>
+                <span class="mw-headline" id="Cubic_Curve_.28odd_harmonics.29">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >क्यूबिक वक्र (विषम सुसंवाद)</font
+                    >
+                  </font>
+                </span>
+              </h4>
 
-<p>This shaping function is often used in electric guitar distortion effects as it is possible to avoid <a href="glossary.html#aliasing" title="Glossary">aliasing distortion</a> with only a modest amount of <a href="glossary.html#oversampling" title="Glossary">oversampling</a>. This implementation does not use oversampling, though oversampling can be applied manually by <a href="tracks_menu.html#resample" title="Tracks Menu">resampling the track</a> to a higher rate prior to applying this distortion effect.
-</p><p>One limitation of this type of distortion is that even when applied fully, the effect is still quite mild. Stronger effects can be achieved by applying the algorithm multiple times, which can be achieved by setting the "Repeat processing" control greater than 0.
-</p><p>When applied once only, each frequency component of the sound gains one harmonic overtone that is 3 times the original frequency. When the effect is applied multiple times, additional odd numbered harmonics are created.
-</p>
-<ul><li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion.</li>
-<li><b>Output level (0 to 100):</b> An output level adjustment. When set to 0 the output is silent.</li>
-<li><b>Repeat processing (0 to 5):</b> The number of times to repeat the distortion algorithm. When set to 0 the effect is applied once only.</li></ul>
-<div id="even"></div>
-<h4><span class="mw-headline" id="Even_Harmonics">Even Harmonics</span></h4>
-<p>This type of distortion produces a series of harmonics that are 2, 4, 6... times the frequency of the original waveform (even numbers). Producing even harmonics requires that the waveform is distorted asymmetrically, which if not corrected will produce substantial <a href="dc_offset.html" title="DC offset">DC offset</a>. To counter the DC offset, a DC blocking filter is provided.
-</p>
-<ul><li><b>DC blocking filter</b> (checkbox) When checked, a low frequency filter is applied which will reduce the DC component of the processed audio.</li>
-<li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion.</li>
-<li><b>Harmonic brightness (0 to 100):</b> Higher values produce a greater number of harmonics.</li></ul>
-<p><br />
-</p>
-<div id="hybrid"></div>
-<h3><span class="mw-headline" id="Hybrid_Distortion">Hybrid Distortion</span></h3>
-<div class="note">This type of distortion is distinct from the other presets in that the shaping functions curves in two directions (an "S" shape). Thus low level signals are "expanded" downwards, becoming quieter, while medium level signals are made louder creating dynamic range compression for louder sounds.</div>
-<div id="expand-compress"></div>
-<h4><span class="mw-headline" id="Expand_and_Compress">Expand and Compress</span></h4>
-<p>The transformation shape for this type of distortion is a sinusoidal "S" shape for both positive and negative going signals. The distortion of high peaks is similar to soft clipping or overdrive, while distortion of low level sounds is similar to <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Crossover_distortion">crossover distortion</a>.
-</p>
-<ul><li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion.</li>
-<li><b>Output level (0 to 100):</b> An output level adjustment. When set to 0 the output is silent.</li></ul>
-<p><br />
-</p>
-<div id="modeled"></div>
-<h3><span class="mw-headline" id="Modeled_Distortion">Modeled Distortion</span></h3>
-<div class="note">These distortion types are modeled on other effects. "Leveller" and "Hard Limiter 1413" were included in old versions of Audacity.</div>
-<div id="leveller"></div>
-<h4><span class="mw-headline" id="Leveller">Leveller</span></h4>
-<p>This type of distortion is modeled on the "Leveller" (or "Leveler") effect that was included in older versions of Audacity.
-</p>
-<ul><li><b>Noise floor (-80 to -20):</b> [default = -70] This is equivalent to the "Noise Threshold" setting in the original "Leveller" effect. It sets the noise threshold for the effect. For audio that is not already at maximum volume, higher threshold settings tend to amplify the audio by a lesser amount, and may reduce the chance of background noise becoming obtrusive.</li>
-<li><b>Levelling fine adjustment (0 to 100):</b> [default = 0] This is an additional control that was not available in the original effect. It allows fine adjustment of the amounts of "levelling".</li>
-<li><b>Degree of Levelling (0 to 5):</b> [default = 1] Controls the amount of levelling that is applied to the signal. When the fine adjustment is at zero, the amounts 0 to 5 are equivalent to the original effect choices: 1 = Light, 2 = Moderate, 3 = Heavy, 4 = Heavier, 5 =  Heaviest.</li></ul>
-<div id="rectifier"></div>
-<h4><span class="mw-headline" id="Rectifier_Distortion">Rectifier Distortion</span></h4>
-<p>This type of distortion is modeled on a simple electronic component called a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rectifier">rectifier</a>.
-</p>
-<ul><li><b>DC blocking filter</b> (checkbox) When checked, a low frequency filter is applied which will reduce the DC component of the processed audio.</li>
-<li><b>Distortion amount (0 to 100):</b> The amount / strength of the distortion. From 0 to 50&#160;% the lower half of the waveform is progressively clipped (hard clipping) until at 50&#160;% only the upper half of the waveform remains (equivalent to <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rectifier#Half-wave_rectification">half wave rectification</a>.. From 50 to 100&#160;%, the lower half of the input waveform is progressively reproduced on the positive side (upper half) of the audio channel, until at 100% the waveform comprises of the upper half plus the inverted lower half of the original waveform (equivalent to <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rectifier#Full-wave_rectification">full wave rectification</a>)</li></ul>
-<div id="limiter"></div>
-<h4><span class="mw-headline" id="Hard_Limiter_1413">Hard Limiter 1413</span></h4>
-<p>This type of distortion is modeled on the "<a rel="nofollow" class="external text" href="http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html#tth_sEc2.53">Hard Limiter</a>" LADSPA plug-in that was included in older versions of Audacity. The default settings are different from the original effect (the original defaults would produce no effect).
-</p>
-<ul><li><b>dB limit (-100 to 0dB):</b> [default = -6] This is the amplitude level above which the input signal is processed. If the Wet level is 100% and Residue level 0%, the peak level of the result will be clipped down to this level. </li></ul>
-<ul><li><b>Wet level (-100 to 0dB):</b> [default = 50] This is the percentage of the clipped signal that is fed to the output. It thus acts as a volume control for audio below the dB limit. When set to 100%, all sounds below the dB limit are fed to the output. At lower settings, the volume of the result will be reduced.</li></ul>
-<ul><li><b>Residue level (-100 to 0dB):</b> [default = 50] This allows a proportion of the signal that has been removed by clipping to be added back to the output and so <i>soften</i> the effect. When set to 0%, all of the clipped signal is discarded. At higher settings, some of the clipped signal will be restored, making the limit softer. More peaks and troughs of the original waveform will be retained, and the resultant volume level will be higher than that set in the dB limit. </li></ul>
-<p><br />
-</p>
-<div id="buttons"></div>
-<h2><span class="mw-headline" id="Buttons">Buttons</span></h2>
-<p>Clicking on the command buttons give the following results:
-</p>
-<ul><li> <span class="button">Manage</span> opens a dropdown menu enabling you to select factory presets, save or delete user presets, and see some detail about the tool. For details of these menu items, see <a href="manage_presets.html" title="Manage presets">Manage presets</a>. The included factory presets are:</li></ul>
-<dl><dd><ul><li><b>Defaults</b> The factory default setting.</li>
-<li><b>Hard clip -12dB, 80% make-up gain</b> Distortion that <a href="glossary.html#clipping" title="Glossary">clips</a> peaks at -12 db and then boosts the output level</li>
-<li><b>Soft clip -12dB, 80% make-up gain</b> Similar to the "Hard clip" preset but with slightly rounded clipping for less aliasing.</li>
-<li><b>Fuzz Box</b> A clipping effect commonly used with electric guitars. </li>
-<li><b>Walkie-talkie</b> A heavily distorted effect suggestive of military walkie-talkies. May be used in conjunction with the <a href="equalization.html" title="Equalization">Equalization</a> effect for a more authentic walkie-talkie effect.</li>
-<li><b>Blues drive sustain</b> A soft overdrive effect that raises the volume of quiet sounds.</li>
-<li><b>Light Crunch Overdrive</b> A medium/strong overdrive effect, reminiscent of high input gain on a guitar amplifier.</li>
-<li><b>Heavy Overdrive</b> <i>Severe</i> distortion. A <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Up_to_eleven">"turn it up to 11"</a> type effect.</li>
-<li><b>3rd Harmonic (Perfect Fifth)</b> When applied to a <a href="generate_menu.html#tone" title="Generate Menu">sine tone</a>, adds one harmonic that is three times the frequency of the original tone.</li>
-<li><b>Valve Overdrive</b> A fairly subtle overdrive effect with even harmonics. Even harmonics have frequencies that are even number multiples of the original frequencies.</li>
-<li><b>2nd Harmonic (Octave)</b> When applied to a <a href="generate_menu.html#tone" title="Generate Menu">sine tone</a>, adds one harmonic that is double the frequency of the original tone (one octave above).</li>
-<li><b>Gated Expansion Distortion</b> Heavily distorts both high and low level signals, making peaks "crunchy" and quiet parts much quieter.</li>
-<li><b>Leveller, Light, -70dB noise floor</b> The same as the "Leveller" effect that was shipped in earlier versions of Audacity.</li>
-<li><b>Leveller, Moderate, -70dB noise floor</b></li>
-<li><b>Leveller, Heavy, -70dB noise floor</b></li>
-<li><b>Leveller, Heavier, -70dB noise floor</b></li>
-<li><b>Leveller, Heaviest, -70dB noise floor</b></li>
-<li><b>Half-wave Rectifier</b> Equivalent to <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rectifier#Half-wave_rectification">half-wave rectification</a>.</li>
-<li><b>Full-wave Rectifier</b> Equivalent to <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Rectifier#Full-wave_rectification">full-wave rectification</a>.</li>
-<li><b>Full-wave Rectifier (DC blocked)</b> Equivalent to full-wave rectification with a high pass filter to reduce <a href="glossary.html#dc_offset" title="Glossary">DC offset</a></li>
-<li><b>Percussion Limiter</b> A hard clipping limiter that restores a portion of the clipped peaks to make the distortion less harsh. Can be effective for limiting peaks and adding "bite" to percussive sounds like snare drums and <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Hi-hat">hi-hats</a>.</li></ul></dd></dl>
-<ul><li> <span class="button"> Start Playback</span> starts playback of the effect preview</li>
-<li> <span class="button"> Skip Backward</span> skips backward through the effect preview</li>
-<li> <span class="button"> Skip Forward</span> skips forward through the effect preview</li>
-<li> <span class="button"><img alt="checked checkbox" src="../m/images/8/85/checkboxchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;Enable</span> Uncheck the checkbox to hear the audio without the effect applied, and recheck the box to hear the effect applied at its current settings. </li></ul>
-<p><br />
-</p>
-<ul><li> <span class="button">Close</span> closes the dialog</li>
-<li> <span class="button">Apply</span> applies the effect to the selected audio with the current effect settings</li></ul>
-<h2><span class="mw-headline" id="Links">Links</span></h2>
-<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> Index of Effects, Generators and Analyzers</a> <br />
-</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> Effect Menu</a>
-</p>
-<!-- 
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हे आकार देण्याचे कार्य बर्&zwj;याचदा इलेक्ट्रिक गिटार विकृत
+                    प्रभावांमध्ये वापरले जाते कारण
+                  </font>
+                  <font style="vertical-align: inherit">केवळ </font
+                  ><a href="glossary.html#oversampling" title="शब्दकोष">
+                    <font style="vertical-align: inherit"
+                      >ओव्हरसाम्पलिंगच्या</font
+                    >
+                  </a>
+                  <font style="vertical-align: inherit">
+                    माफक प्रमाणात
+                  </font> </font
+                ><a href="glossary.html#aliasing" title="शब्दकोष">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">अलिएसिंग विकृती</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> टाळणे शक्य आहे </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >हे अंमलबजावणी ओव्हरस्पीलिंगचा वापर करीत नाही, तथापि
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >हा विकृतीकरण प्रभाव लागू करण्यापूर्वी </font
+                  ><a href="tracks_menu.html#resample" title="गीतपट्टा मेनू">
+                    <font style="vertical-align: inherit"
+                      >ओव्हरस्म्पलिंग गीतपट्टाला</font
+                    >
+                  </a>
+                  <font style="vertical-align: inherit">
+                    अधिक दरामध्ये पुन्हा </font
+                  ><a href="tracks_menu.html#resample" title="गीतपट्टा मेनू">
+                    <font style="vertical-align: inherit">स्थापित करून</font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    स्वहस्ते लागू केले जाऊ शकते
+                  </font>
+                  <font style="vertical-align: inherit">. </font> </font
+                ><a href="glossary.html#oversampling" title="शब्दकोष">
+                  <font style="vertical-align: inherit"></font>
+                </a>
+                <font style="vertical-align: inherit"></font
+                ><a href="tracks_menu.html#resample" title="गीतपट्टा मेनू">
+                  <font style="vertical-align: inherit"></font>
+                </a>
+                <font style="vertical-align: inherit"></font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारच्या विकृतीची एक मर्यादा अशी आहे की जरी संपूर्णपणे
+                    लागू केले तरीही प्रभाव अद्याप अगदी सौम्य आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >अल्गोरिदम एकाधिक वेळा लागू करून मजबूत प्रभाव साध्य केले जाऊ
+                    शकतात, जे 0 पेक्षा मोठे "पुनरावृत्ती प्रक्रिया" नियंत्रण सेट
+                    करून प्राप्त केले जाऊ शकतात.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >फक्त एकदाच लागू केल्यावर ध्वनीचा प्रत्येक वारंवारता घटक मूळ
+                    आवृत्त्यांपेक्षा 3 पट अधिक एक हार्मोनिक ओव्हरटोन मिळवितो.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >जेव्हा प्रभाव एकाधिक वेळा लागू केला जातो तेव्हा अतिरिक्त
+                    विषम क्रमांकित हार्मोनिक्स तयार केले जातात.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >आउटपुट स्तर (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आउटपुट स्तर mentडजस्टमेंट.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >0 वर सेट केल्यावर आउटपुट मूक होते.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >पुनरावृत्ती प्रक्रिया (0 ते 5):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृती अल्गोरिदमची पुनरावृत्ती करण्यासाठी किती वेळा.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >0 वर सेट केल्यास केवळ एकदाच प्रभाव लागू केला जातो.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <div id="even"></div>
+              <h4>
+                <span class="mw-headline" id="Even_Harmonics">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">जरी हार्मोनिक्स</font>
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारची विकृती हार्मोनिक्सची मालिका तयार करते जी 2, 4,
+                    6 असते ... मूळ तरंगरूपच्या वारंवारतेपेक्षा (अगदी संख्येने).
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >अगदी हार्मोनिक्स तयार करण्यासाठी तरंगरूप असमानमितपणे विकृत
+                    करणे आवश्यक आहे, जे दुरुस्त न केल्यास ठोस
+                  </font> </font
+                ><a href="dc_offset.html" title="डीसी ऑफसेट">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">डीसी ऑफसेट</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> तयार करेल </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >डीसी ऑफसेटचा प्रतिकार करण्यासाठी, डीसी ब्लॉकिंग फिल्टर
+                    प्रदान केले जाते.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >डीसी ब्लॉकिंग फिल्टर</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      (चेकबॉक्स) चेक केल्यावर, कमी फ्रिक्वेंसी फिल्टर लागू केला
+                      जातो जो प्रक्रिया केलेल्या ध्वनीचा डीसी घटक कमी
+                      करेल.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >हार्मोनिक ब्राइटनेस (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      उच्च मूल्ये मोठ्या संख्येने हार्मोनिक तयार करतात.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p><br /></p>
+              <div id="hybrid"></div>
+              <h3>
+                <span class="mw-headline" id="Hybrid_Distortion">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">संकरित विकृती</font>
+                  </font>
+                </span>
+              </h3>
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारचे विकृति इतर प्रीसेटपेक्षा वेगळे आहे ज्यामध्ये
+                    आकार देणारी कार्ये दोन दिशानिर्देश ("एस" आकार) वक्र करते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >अशा प्रकारे निम्न स्तरीय सिग्नल खालच्या दिशेने "विस्तारीत"
+                    केले जातात, शांत होतात, तर मध्यम पातळीचे सिग्नल जोरात केले
+                    जातात जेणेकरून मोठ्या आवाजात डायनॅमिक रेंज कॉम्प्रेशन तयार
+                    होते.</font
+                  >
+                </font>
+              </div>
+              <div id="expand-compress"></div>
+              <h4>
+                <span class="mw-headline" id="Expand_and_Compress">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >विस्तृत करा आणि संकुचित करा</font
+                    >
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारच्या विकृतीचा रूपांतर हा एक सकारात्मक आणि
+                    नकारात्मक दोन्ही सिग्नलसाठी साइनसॉइडल "एस" आकार आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >उच्च शिखरांचे विकृती सॉफ्ट फिती किंवा ओव्हरड्राइव्हसारखेच
+                    आहे, तर कमी स्तरावरील ध्वनी
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Crossover_distortion"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >विकृती क्रॉसओव्हर विकृतीच्या</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> समान आहे </font>
+                  <font style="vertical-align: inherit">. </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >आउटपुट स्तर (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आउटपुट स्तर mentडजस्टमेंट.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >0 वर सेट केल्यावर आउटपुट मूक होते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p><br /></p>
+              <div id="modeled"></div>
+              <h3>
+                <span class="mw-headline" id="Modeled_Distortion">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मॉडेल विकृती</font>
+                  </font>
+                </span>
+              </h3>
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हे विकृती प्रकार इतर प्रभावांवर आधारित आहेत.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >ओड्यासिटीच्या जुन्या आवृत्त्यांमध्ये "स्तरर" आणि "हार्ड
+                    लिमिटर 1413" समाविष्ट केले गेले.</font
+                  >
+                </font>
+              </div>
+              <div id="leveller"></div>
+              <h4>
+                <span class="mw-headline" id="Leveller">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">स्तरर</font>
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारचे विकृति ओड्यासिटीच्या जुन्या आवृत्त्यांमध्ये
+                    समाविष्ट केलेल्या "स्तरर" (किंवा "स्तरर") प्रभावावर आधारीत
+                    आहे.
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >ध्वनी मजला (-80 ते -20):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      [डीफॉल्ट = -70] हे मूळ "स्तरर" प्रभावामधील "नॉईज
+                      थ्रेशोल्ड" सेटिंग समतुल्य आहे.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >हे प्रभावासाठी ध्वनीचा उंबरठा सेट करते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >आधीपासूनच जास्तीत जास्त आवाज नसलेल्या ध्वनीसाठी, उच्च
+                      उंबरठा सेटिंग्ज ध्वनी कमी प्रमाणात कमी करतात आणि
+                      पार्श्वभूमीवरील आवाज विव्हळ होण्याची शक्यता कमी करते.
+                    </font>
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >ललित समायोजन (0 ते 100) पातळी लावत आहे:</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      [डीफॉल्ट = 0] हे एक अतिरिक्त नियंत्रण आहे जे मूळ परिणामात
+                      उपलब्ध नव्हते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >हे "स्तरिंग" च्या प्रमाणात समायोजित करण्यास अनुमती
+                      देते.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >स्तरिंगची डिग्री (0 ते 5):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      [डीफॉल्ट = 1] सिग्नलवर लागू होणार्&zwj;या स्तरींगचे प्रमाण
+                      नियंत्रित करते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >जेव्हा दंड समायोजन शून्यावर असेल तेव्हा 0 ते 5 रक्कम मूळ
+                      प्रभाव निवडीच्या समतुल्य असते: 1 = प्रकाश, 2 = मध्यम, 3 =
+                      वजनदार, 4 = जड, 5 = वजनदार.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <div id="rectifier"></div>
+              <h4>
+                <span class="mw-headline" id="Rectifier_Distortion">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >दुरुस्त करणारा विकृती</font
+                    >
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारचे विकृति एक
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Rectifier"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >रेक्टिफायर म्हणून</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    ओळखल्या जाणार्&zwj;या साध्या इलेक्ट्रॉनिक घटकावर आधारीत केली
+                    जाते
+                  </font>
+                  <font style="vertical-align: inherit">. </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >डीसी ब्लॉकिंग फिल्टर</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      (चेकबॉक्स) चेक केल्यावर, कमी फ्रिक्वेंसी फिल्टर लागू केला
+                      जातो जो प्रक्रिया केलेल्या ध्वनीचा डीसी घटक कमी
+                      करेल.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >विकृतीची रक्कम (0 ते 100):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      विकृतीचे प्रमाण / सामर्थ्य.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >० ते %०% पर्यंत तरंगरूपच्या खालच्या अर्ध्या भागावर
+                      क्रमाक्रमाने (हार्ड फिती) 50% पर्यंत तरंगरूपचा वरचा अर्धा
+                      भाग शिल्लक असतो (
+                    </font> </font
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://en.wikipedia.org/wiki/Rectifier#Half-wave_rectification"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >अर्ध्या लहरी सुधारण्याच्या</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> समतुल्य </font>
+                    <font style="vertical-align: inherit"
+                      >.. 50 ते 100% पर्यंत, इनपुटच्या खालच्या अर्ध्या ध्वनी
+                      वाहिनीच्या सकारात्मक बाजू (वरच्या अर्ध्या) वर तरंगरूपचे
+                      पुनरुत्पादित केले जाते, जोपर्यंत 100% पर्यंत वरव्ह अर्ध
+                      भाग आणि मूळ तरंगरूपच्या उलटा खालच्या अर्ध्या भागाचा (
+                    </font> </font
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://en.wikipedia.org/wiki/Rectifier#Full-wave_rectification"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >पूर्ण लहरी सुधारण्याच्या</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> समतुल्य </font>
+                    <font style="vertical-align: inherit">) </font>
+                    <font style="vertical-align: inherit">होईपर्यंत</font>
+                  </font>
+                </li>
+              </ul>
+              <div id="limiter"></div>
+              <h4>
+                <span class="mw-headline" id="Hard_Limiter_1413">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >हार्ड लिमिटर 1413</font
+                    >
+                  </font>
+                </span>
+              </h4>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >या प्रकारची विकृती "
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html#tth_sEc2.53"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">हार्ड लिमिटर</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    " एलएडीएसपीए प्लग-इनवर
+                  </font>
+                  <font style="vertical-align: inherit">आधारित आहे जी </font>
+                  <font style="vertical-align: inherit"
+                    >ओड्यासिटीच्या जुन्या आवृत्त्यांमध्ये समाविष्ट केली गेली
+                    होती.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >डीफॉल्ट सेटिंग्ज मूळ प्रभावापेक्षा भिन्न आहेत (मूळ
+                    डीफॉल्टचा परिणाम होणार नाही).
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >डीबी मर्यादा (-100 ते 0 डीबी):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      [डीफॉल्ट = -6] ही मोठेपणा पातळी आहे ज्याच्या वरील इनपुट
+                      सिग्नलवर प्रक्रिया केली जाते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >जर ओले पातळी 100% आणि अवशेष पातळी 0% असेल तर निकालाची
+                      शिखर पातळी या पातळीवर खाली जाईल.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >ओले पातळी (-100 ते 0 डीबी):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      [डीफॉल्ट = 50] हे </font
+                    ><b>
+                      <font style="vertical-align: inherit"
+                        >आउटपुटला दिले जाणा cli्या</font
+                      >
+                    </b>
+                    <font style="vertical-align: inherit">
+                      फीत केलेल्या सिग्नलची टक्केवारी आहे.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >हे डीबी मर्यादेच्या खाली ध्वनीसाठी आवाज नियंत्रण म्हणून
+                      कार्य करते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >100% वर सेट केल्यास, डीबी मर्यादेच्या खाली असलेले सर्व
+                      आवाज आउटपुटला दिले जातात.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >कमी सेटिंग्जमध्ये, निकालाचे प्रमाण कमी केले जाईल.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >अवशेष पातळी (-100 ते 0 डीबी):</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      [डीफॉल्ट = 50] हे फितीद्वारे काढलेल्या सिग्नलचे एक प्रमाण
+                      आउटपुटमध्ये परत जोडले जाऊ शकते आणि
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >परिणामी परिणाम
+                    </font> </font
+                  ><i>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">मऊ</font>
+                    </font>
+                  </i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> करेल. </font>
+                    <font style="vertical-align: inherit"
+                      >0% वर सेट केल्यावर, सर्व फीत केलेले सिग्नल टाकून दिले
+                      जाते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >उच्च सेटिंग्जवर, काही फीत केलेले संकेत पुनर्संचयित केले
+                      जातील, मर्यादा अधिक मऊ बनविते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >मूळ तरंगरूपची अधिक शिखर आणि कुंड कायम ठेवल्या जातील आणि
+                      परिणामी आवाजची पातळी डीबी मर्यादेच्या सेटपेक्षा जास्त
+                      असेल.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p><br /></p>
+              <div id="buttons"></div>
+              <h2>
+                <span class="mw-headline" id="Buttons">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">बटणे</font>
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >कमांड बटणावर क्लिक केल्याने खालील परिणाम मिळतात:
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >व्यवस्थापित करा</font
+                      >
+                    </font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      ड्रॉपडाउन मेनू उघडतो ज्यायोगे फॅक्टरी प्रीसेट सेट करणे,
+                      वापरकर्त्याचे प्रीसेट जतन करणे किंवा हटवणे आणि उपकरणाबद्दल
+                      काही तपशील पहा.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >या मेनू आयटमच्या तपशीलांसाठी,
+                    </font> </font
+                  ><a href="manage_presets.html" title="प्रीसेट सेट करा">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रीसेट सेट करा</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> पहा </font>
+                    <font style="vertical-align: inherit">. </font>
+                    <font style="vertical-align: inherit"
+                      >समाविष्ट कारखाना प्रीसेट:</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <dl>
+                <dd>
+                  <ul>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">मुलभूत</font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          कारखाना डीफॉल्ट सेटिंग.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">हार्ड फीत</font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> -12 डीबी </font
+                        ><b>
+                          <font style="vertical-align: inherit"
+                            >, 80% मेक-अप गेस्ट</font
+                          >
+                        </b>
+                        <font style="vertical-align: inherit"> विकृती जी </font>
+                        <font style="vertical-align: inherit"
+                          >-12 डीबी वर
+                        </font> </font
+                      ><a href="glossary.html#clipping" title="शब्दकोष">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">फीत करते</font>
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          आणि नंतर आउटपुट पातळीला </font
+                        ><b>
+                          <font style="vertical-align: inherit">उत्तेजन</font>
+                        </b>
+                        <font style="vertical-align: inherit"> देते</font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >सॉफ्ट फीत -12 डीबी, 80% मेक-अप गेन</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          "हार्ड फीत" प्रीसेट प्रमाणेच परंतु कमी अलियासिंगसाठी
+                          थोडी गोल फितीसह.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">फझ बॉक्स</font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          एक फिती प्रभाव सामान्यतः इलेक्ट्रिक गिटारसह वापरला
+                          जातो.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">वॉकी-टॉकी</font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          लष्करी वॉकी-टॉकीजचा एक जोरदार विकृत परिणाम
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >अधिक अस्सल वॉकी-टॉकी प्रभावासाठी
+                        </font> </font
+                      ><a href="equalization.html" title="समिकरण">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >इक़ुलायझेशन</font
+                          >
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          प्रभावाच्या
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >संयोगाने वापरले जाऊ शकते
+                        </font>
+                        <font style="vertical-align: inherit">.</font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >ब्लूज ड्राईव्ह टिकाऊ</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          मऊ ओव्हरड्राईव्ह प्रभाव जे शांत आवाजांचा आवाज वाढवते.
+                        </font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >लाइट क्रंच ओव्हरड्राईव्ह</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          मध्यम / मजबूत ओव्हरड्राईव्ह प्रभाव, गिटार
+                          प्रवर्धकावरील उच्च इनपुट गेनची आठवण करून देणारा.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >भारी ओव्हरड्राईव्ह
+                          </font>
+                        </font>
+                      </b>
+                      <i>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">तीव्र</font>
+                        </font>
+                      </i>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> विकृती. </font>
+                        <font style="vertical-align: inherit">एक </font> </font
+                      ><a
+                        rel="nofollow"
+                        class="external text"
+                        href="https://en.wikipedia.org/wiki/Up_to_eleven"
+                      >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >"ते 11 पर्यंत बदला"</font
+                          >
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          प्रकार प्रभाव.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >3 रा हार्मोनिक (परिपूर्ण पाचवा)
+                          </font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit"></font
+                      ><a
+                        href="generate_menu.html#tone"
+                        title="मेनू व्युत्पन्न करा"
+                      >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >साइन टोनवर</font
+                          >
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> लागू </font>
+                        <font style="vertical-align: inherit"
+                          >केल्यावर मूळ स्वरांच्या वारंवारतेपेक्षा तीनपट वाढणारा
+                          हार्मोनिक जोडला.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >वाल्व ओव्हरड्राईव्ह</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          अगदी हार्मोनिक्ससह बर्&zwj;यापैकी सूक्ष्म
+                          ओव्हरड्राईव्ह प्रभाव
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >जरी हार्मोनिक्समध्ये वारंवारता असते ती मूळ
+                          वारंवारतांच्या संख्येइतकी असते.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >2 रा हार्मोनिक (ऑक्टाव्ह)</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          जेव्हा
+                        </font> </font
+                      ><a
+                        href="generate_menu.html#tone"
+                        title="मेनू व्युत्पन्न करा"
+                      >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >साइन टोनवर</font
+                          >
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          लागू केला जातो तेव्हा
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >एक हार्मोनिक जोडला जातो जो मूळ टोनच्या
+                          वारंवारतेपेक्षा दुप्पट असतो (वरील एक आठवा).</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >गेटिड एक्सपेंशन विकृती</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          उच्च आणि निम्न स्तरीय दोन्ही सिग्नल जोरदारपणे विकृत
+                          करते, ज्यामुळे शिखर "क्रंचि" आणि शांत भाग जास्त शांत
+                          होतात.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >स्तरर, लाइट, -70 डीबी ध्वनी मजला</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          "स्तरर" प्रभाव सारखाच आहे जो </font
+                        ><b>
+                          <font style="vertical-align: inherit"
+                            >ओड्यासिटीच्या</font
+                          >
+                        </b>
+                        <font style="vertical-align: inherit">
+                          पूर्वीच्या आवृत्त्यांमध्ये पाठविला गेला होता.</font
+                        >
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >स्तरर, मध्यम, -70 डीबी आवाज मजला</font
+                          >
+                        </font>
+                      </b>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >स्तरर, हेवी, -70 डीबी आवाज मजला</font
+                          >
+                        </font>
+                      </b>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >स्तरर, हेव्हीअर, -70 डीबी आवाज मजला</font
+                          >
+                        </font>
+                      </b>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >स्तरर, सर्वात वजनदार, -70 डीबी आवाज मजला</font
+                          >
+                        </font>
+                      </b>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >अर्धा-लहर दुरुस्त करणारा</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          सममूल्य
+                        </font> </font
+                      ><a
+                        rel="nofollow"
+                        class="external text"
+                        href="https://en.wikipedia.org/wiki/Rectifier#Half-wave_rectification"
+                      >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >अर्धा लाट चुकीची दुरुस्ती करणे</font
+                          >
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> .</font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >पूर्ण-लहर दुरुस्त करणारा</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          सममूल्य
+                        </font> </font
+                      ><a
+                        rel="nofollow"
+                        class="external text"
+                        href="https://en.wikipedia.org/wiki/Rectifier#Full-wave_rectification"
+                      >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >पूर्ण लाट चुकीची दुरुस्ती करणे</font
+                          >
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> .</font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit"></font>
+                      </b>
+                      <font style="vertical-align: inherit"
+                        ><a href="glossary.html#dc_offset" title="शब्दकोष">
+                          <font style="vertical-align: inherit"
+                            >डीसी ऑफसेट</font
+                          >
+                        </a>
+                        <font style="vertical-align: inherit">
+                          कमी करण्यासाठी </font
+                        ><b>
+                          <font style="vertical-align: inherit"
+                            >फुल-वेव्ह रेक्टिफायर (डीसी ब्लॉक केलेले)</font
+                          >
+                        </b>
+                        <font style="vertical-align: inherit">
+                          हाय-पास फिल्टरसह </font
+                        ><b>
+                          <font style="vertical-align: inherit"
+                            >फुल-वेव्ह रेक्टिफिकेशन</font
+                          >
+                        </b>
+                        <font style="vertical-align: inherit">
+                          समतुल्य</font
+                        > </font
+                      ><a href="glossary.html#dc_offset" title="शब्दकोष">
+                        <font style="vertical-align: inherit"></font>
+                      </a>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >पर्क्यूशन लिमिटर</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          एक विकृती कमी कठोर करण्यासाठी फिती शिखराच्या एका भागास
+                          पुनर्संचयित करणारी हार्ड फिती मर्यादा.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >शिखरे मर्यादित ठेवण्यासाठी आणि सापळ्यांची ड्रम आणि
+                        </font> </font
+                      ><a
+                        rel="nofollow"
+                        class="external text"
+                        href="https://en.wikipedia.org/wiki/Hi-hat"
+                      >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">हाय-हॅट्स</font>
+                        </font>
+                      </a>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          सारख्या पर्स्युसिव्ह आवाजांमध्ये "चावणे" जोडण्यासाठी
+                          प्रभावी असू शकते
+                        </font>
+                        <font style="vertical-align: inherit">.</font>
+                      </font>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+              <ul>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रारंभ प्लेबॅक</font
+                      >
+                    </font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      प्रभाव पूर्वावलोकनाचे </font
+                    ><span class="button">
+                      <font style="vertical-align: inherit">प्लेबॅक</font>
+                    </span>
+                    <font style="vertical-align: inherit"> सुरू होते</font>
+                  </font>
+                </li>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit"></font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रभाव पूर्वावलोकनातून मागे </font
+                    ><span class="button">
+                      <font style="vertical-align: inherit">जा वगळा</font>
+                    </span>
+                  </font>
+                </li>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit"></font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रभाव पूर्वावलोकनातून पुढे </font
+                    ><span class="button">
+                      <font style="vertical-align: inherit">जा वगळा</font>
+                    </span>
+                  </font>
+                </li>
+                <li>
+                  <span class="button"
+                    ><img
+                      alt="चेकबॉक्स"
+                      src="../m/images/8/85/checkboxchecked.png"
+                      width="13"
+                      height="13"
+                      style="vertical-align: text-top"
+                    />
+                    <font style="vertical-align: inherit"></font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रभाव लागू केल्याशिवाय ध्वनी ऐकण्यासाठी चेकबॉक्स अनचेक
+                    </font>
+                    <span class="button">
+                      <font style="vertical-align: inherit">&nbsp;सक्षम</font>
+                    </span>
+                    <font style="vertical-align: inherit">
+                      करा आणि सध्याच्या सेटिंग्जमध्ये लागू केलेला प्रभाव
+                      ऐकण्यासाठी बॉक्स पुन्हा तपासा.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p><br /></p>
+              <ul>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit"></font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">संवाद </font
+                    ><span class="button">
+                      <font style="vertical-align: inherit">बंद</font>
+                    </span>
+                    <font style="vertical-align: inherit"> करतो बंद</font>
+                  </font>
+                </li>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit"></font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >वर्तमान प्रभाव सेटिंग्जसह निवडलेल्या ध्वनीवर लागू </font
+                    ><span class="button">
+                      <font style="vertical-align: inherit">करा</font>
+                    </span>
+                    <font style="vertical-align: inherit"> लागू करा</font>
+                  </font>
+                </li>
+              </ul>
+              <h2>
+                <span class="mw-headline" id="Links">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">दुवे</font>
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <a
+                  href="index_of_effects_generators_and_analyzers.html"
+                  title="प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका"
+                  ><b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">| &lt;</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      प्रभाव, जनरेटर आणि विश्लेषकांचे अनुक्रमणिका</font
+                    >
+                  </font>
+                </a>
+                <br />
+              </p>
+              <p>
+                <a href="effect_menu.html" title="प्रभाव मेनू"
+                  ><b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">| &lt;</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> प्रभाव मेनू</font>
+                  </font>
+                </a>
+              </p>
+              <!-- 
 NewPP limit report
 Cached time: 20180917112644
 Cache expiry: 86400
@@ -211,7 +2031,7 @@ Highest expansion depth: 6/40
 Expensive parser function count: 0/100
 -->
 
-<!-- 
+              <!-- 
 Transclusion expansion time report (%,ms,calls,template)
 100.00%   24.053      1 - -total
  30.76%    7.399      1 - Template:No-rename
@@ -225,77 +2045,322 @@ Transclusion expansion time report (%,ms,calls,template)
   5.03%    1.209      1 - Template:Alert
 -->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5456-0!*!0!!*!5!* and timestamp 20180917112644 and revision id 61350
+              <!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5456-0!*!0!!*!5!* and timestamp 20180917112644 and revision id 61350
  -->
-</div>
-										<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			
-					
-				
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-					
-		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिका मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">प्रशिक्षण</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटी जियुआय</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू पट्टी</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टे</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">सानुकुलित ओड्यासिटी </span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">की-बाइंडिंग्ज</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
-		</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>संदर्भ</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
-		</div>
-		</div>
-		
-		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>उपयुक्त दुवे</h3>
-		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">व्यवहारज्ञान</a></span></li></ul>
-		</div>
-		</div>
-		
-			
-			</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									
-							</div>
-					<div id="f-poweredbyico">
-									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Distortion">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
-</div>
-		</div>
-		</body></html>
+            </div>
+            <!-- end content -->
+            <div class="visualClear"></div>
+          </div>
+        </div>
+      </div>
+      <div id="column-one">
+        <div class="portlet" id="p-logo" role="banner">
+          <a
+            href="../index.html"
+            class="mw-wiki-logo"
+            title="Visit the main page"
+          ></a>
+        </div>
+
+        <div
+          class="generated-sidebar portlet"
+          id="p-Navigation"
+          role="navigation"
+        >
+          <h3>निर्देशांक</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <a href="../index.html" title="Main Page"
+                  ><span
+                    title="Front page, complete with clickable image of Audacity screen."
+                    >माहितीपुस्तिका मुखपृष्ठ</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="../index.html#using" title="Main Page"
+                  ><span
+                    title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics"
+                    >ओड्यासिटी वापरणे</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="audacity_tour_guide.html"
+                      title="Audacity Tour Guide"
+                      ><span
+                        title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those."
+                        >सहल मार्गदर्शक</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="new_features_in_this_release.html"
+                      title="New features in this release"
+                      ><span
+                        title="An overview of the key new functionality that has been introduced in this release"
+                        >नवीन वैशिष्ट्ये</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="../quick_help.html" title="Quick Help"
+                      ><span
+                        title="A brief guide to help you get started with Audacity"
+                        >प्रारंभ करणे</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="tutorials.html" title="Tutorials"
+                      ><span
+                        title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity"
+                        >प्रशिक्षण</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="tips.html" title="Tips"
+                      ><span
+                        title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment"
+                        >सल्ले</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../index.html#reference" title="Main Page"
+                  ><span
+                    title="The components of the Audacity Graphical User Interface"
+                    >ओड्यासिटी जियुआय</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a href="menu_reference.html" title="Menu Reference"
+                      ><span
+                        title="A guide to the menus and submenus in Audacity"
+                        >मेनू पट्टी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="toolbars_overview.html" title="Toolbars Overview"
+                      ><span
+                        title="A guide to the various Toolbars used in Audacity"
+                        >साधनपट्टी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tracks_menu_add_new.html"
+                      title="Tracks Menu: Add New"
+                      ><span title="A guide to the various types of track"
+                        >गीतपट्टे</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index_of_effects_generators_and_analyzers.html"
+                      title="Index of Effects, Generators and Analyzers"
+                      ><span
+                        title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity"
+                        >प्रभाव</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="customization.html" title="Customization"
+                  ><span
+                    title="Adjust settings, change key-bindings, add plug-ins"
+                    >सानुकुलित ओड्यासिटी
+                  </span></a
+                >
+                <ul>
+                  <li>
+                    <a href="preferences.html" title="Preferences"
+                      ><span
+                        title="A guide to Preferences, which let you change most of the default behaviors of Audacity"
+                        >प्राधान्ये</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="keyboard_shortcut_reference.html"
+                      title="Keyboard Shortcut Reference"
+                      ><span
+                        title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts"
+                        >की-बाइंडिंग्ज</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="installing_effect_generator_and_analyzer_plug_ins.html"
+                      title="Installing Effect, Generator and Analyzer plug-ins"
+                      ><span
+                        title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability."
+                        >प्लग-इन्स</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="generated-sidebar portlet"
+          id="p-Reference"
+          role="navigation"
+        >
+          <h3>संदर्भ</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <a href="../index.html#reference" title="Main Page"
+                  ><span
+                    title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more"
+                    >संदर्भ</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a href="digital_audio.html" title="Digital Audio"
+                      ><span title="A beginner&#39;s guide to digital audio"
+                        >डिजिटल ध्वनी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="glossary.html" title="Glossary"
+                      ><span
+                        title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations"
+                        >शब्दकोष</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="scripting_reference.html"
+                      title="Scripting Reference"
+                      ><span
+                        title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python"
+                        >सर्व आज्ञा</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="subject_index.html" title="Subject Index"
+                      ><span title="A short, limited, index of the Manual"
+                        >अनुक्रमणिका</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="faq.html" title="FAQ"
+                  ><span
+                    title="Frequently Asked Questions - most common questions are answered in the FAQ"
+                    >सामान्य प्रश्न</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="generated-sidebar portlet"
+          id="p-Useful_Links"
+          role="navigation"
+        >
+          <h3>उपयुक्त दुवे</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <span title="Audacity Forum (best place for support requests)"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://forum.audacityteam.org/index.php"
+                    >मंच</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Audacity Wiki Home Page"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page"
+                    >विकी</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Audacity Latest Release"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://www.audacityteam.org/download/"
+                    >नवीनतम प्रकाशन</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Visual &#39;What Is That?&#39; guide to Audacity"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://wit.audacityteam.org//"
+                    >व्यवहारज्ञान</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer" role="contentinfo">
+        <div id="f-copyrightico"></div>
+        <div id="f-poweredbyico">
+          <a href="https://www.mediawiki.org/"
+            ><img
+              src="../m/resources/assets/poweredby_mediawiki_88x31.png"
+              alt="Powered by MediaWiki"
+              srcset="
+                /m/resources/assets/poweredby_mediawiki_132x47.png 1.5x,
+                /m/resources/assets/poweredby_mediawiki_176x62.png 2x
+              "
+              width="88"
+              height="31"
+          /></a>
+        </div>
+
+        <div align="center">
+          <ul id="f_list">
+            <li>
+              ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
+              <a href="https://alphamanual.audacityteam.org/man/Distortion"
+                >या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

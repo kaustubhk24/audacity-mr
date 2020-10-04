@@ -1,177 +1,1933 @@
 <!DOCTYPE html>
 <html class="client-nojs" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8"/>
-<title>Export Multiple - Audacity Manual</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>एकाधिक निर्यात करा - ओड्यासीटी माहितीपुस्तिका</title>
 
+    <!--[if IE 6
+      ]><link
+        rel="stylesheet"
+        href="../m/skins/monobook/ie60fixes.css/303.css"
+        media="screen"
+    /><![endif]-->
+    <!--[if IE 7
+      ]><link
+        rel="stylesheet"
+        href="../m/skins/monobook/ie70fixes.css/303.css"
+        media="screen"
+    /><![endif]-->
+    <meta name="ResourceLoaderDynamicStyles" content="" />
 
+    <meta name="generator" content="MediaWiki 1.28.2" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      href="https://alphamanual.audacityteam.org/m/opensearch_desc.php"
+      title="ओड्यासीटी डेव्हलपमेंट मॅन्युअल (इं)"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"
+    />
+    <link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
 
+    <link
+      rel="stylesheet"
+      href="../m/skins/monobook/main.css/303.css"
+      media="screen"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      charset="UTF-8"
+      href="https://translate.googleapis.com/translate_static/css/translateelement.css"
+    />
+  </head>
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+  <body
+    class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Export_Multiple rootpage-Export_Multiple skin-monobook action-view"
+  >
+    <div id="globalWrapper">
+      <div id="column-content">
+        <div id="content" class="mw-body" role="main">
+          <a id="top"></a>
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+          <div class="mw-indicators"></div>
+          <h1 id="firstHeading" class="firstHeading" lang="en">
+            <font style="vertical-align: inherit">
+              <font style="vertical-align: inherit">एकाधिक निर्यात करा</font>
+            </font>
+          </h1>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Export_Multiple rootpage-Export_Multiple skin-monobook action-view"><div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
-</div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Export Multiple</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Export_Multiple#searchInput">search</a></div>
+          <div id="bodyContent" class="mw-body-content">
+            <div id="siteSub">
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit"
+                  >ओड्यासिटी विकास माहितीपुस्तिकेवरुन</font
+                >
+              </font>
+            </div>
+            <div id="contentSub"></div>
+            <div id="jump-to-nav" class="mw-jump">
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit">येथे जा: </font> </font
+              ><a href="#column-one">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">निर्देशांक</font>
+                </font>
+              </a>
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit"> , </font> </font
+              ><a
+                href="https://alphamanual.audacityteam.org/man/Export_Multiple#searchInput"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">शोधा</font>
+                </font>
+              </a>
+            </div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">The <b>Export Multiple</b> dialog appears in response to the <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportmultiple" title="File Menu: Export">Export Multiple...</a></span> command. This command exports multiple files at once, either one file for each Audacity <a href="audio_tracks.html" title="Audio Tracks">audio track</a>, or one file for each <a href="label_tracks.html" title="Label Tracks">label</a> placed below audio tracks. Exporting Multiple by labels is a convenient way to <a href="splitting_a_recording_into_separate_tracks.html" title="Splitting a recording into separate tracks">export separate files for each track in a long recording</a>.<p>For Export Multiple, <a href="audacity_selection.html" title="Audacity Selection">selections</a> in the <a href="audacity_waveform.html" title="Audacity Waveform">waveform</a> play no part in determining the audio that is exported.</p><p>See the <a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="Tutorial - Copying tapes, LPs or minidiscs to CD">Tutorial - Copying tapes, LPs or MiniDiscs to CD</a> for an example of how
-this is used.</p></div>
-<dl><dd><span title="Export Multiple dialog"><img alt="Export Multiple by labels with Help button.png" src="../m/images/3/37/export_multiple_by_labels_with_help_button.png" width="712" height="455" /></span></dd></dl>
-<div id="format"></div>
-<h2><span class="mw-headline" id="Export_Location_and_Format">Export Location and Format</span></h2>
-<ul><li><b>Folder:</b> Shows the location to which the audio files will be exported.</li></ul>
-<dl><dd><ul><li><b>Choose:</b> Clicking the <span class="button">Choose</span> button opens a standard File Export Dialog in which you select the location to which the files will be exported.</li>
-<li><b>Create:</b> Type a file path in the "Folder:" box then click the <span class="button">Create</span> button and that directory will be created. If a partial file path is specified that directory will be created in the Audacity data folder in your Documents folder. For example, typing "myLP/myTracks" in the Export Location box and then clicking the <span class="button">Create</span> button will create the folder "myLP" in the Audacity data folder, and the folder "myTracks" inside the "myLP" folder. </li></ul></dd></dl>
-<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+            <!-- start content -->
+            <div
+              id="mw-content-text"
+              lang="en"
+              dir="ltr"
+              class="mw-content-ltr"
+            >
+              <div class="intro">
+                <font style="vertical-align: inherit"></font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">निर्यात अनेक</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    संवाद प्रतिसाद दिसते
+                  </font> </font
+                ><span class="menu">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >धारिका&gt; निर्यात&gt;
+                    </font> </font
+                  ><a
+                    href="file_menu_export.html#exportmultiple"
+                    title="धारिका मेनू: निर्यात करा"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >निर्यात अनेक ...</font
+                      >
+                    </font>
+                  </a>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> आदेश. </font>
+                  <font style="vertical-align: inherit"
+                    >हा आदेश एकाच वेळी एकाधिक धारिका निर्यात करतो, प्रत्येक
+                    ओड्यासिटी
+                  </font> </font
+                ><a href="audio_tracks.html" title="ध्वनी गीतपट्टा">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >ध्वनी गीतपट्टासाठी</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> एक धारिका किंवा </font>
+                  <font style="vertical-align: inherit"
+                    >ध्वनी गीतपट्टाच्या खाली
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >असलेल्या प्रत्येक
+                  </font> </font
+                ><a href="label_tracks.html" title="नावपट्टी गीतपट्टा">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">नावपट्टीसाठी</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> एक धारिका </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit">एकाधिक </font> </font
+                ><a
+                  href="splitting_a_recording_into_separate_tracks.html"
+                  title="ध्वनिमुद्रणला वेगळ्या गीतपट्टामध्ये विभाजित करणे"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >ध्वनिमुद्रणमध्ये प्रत्येक गीतपट्टासाठी स्वतंत्र धारिका
+                      निर्यात</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    करण्याचा सोपा मार्ग म्हणजे नावपट्टीद्वारे एकाधिक </font
+                  ><a
+                    href="splitting_a_recording_into_separate_tracks.html"
+                    title="ध्वनिमुद्रणला वेगळ्या गीतपट्टामध्ये विभाजित करणे"
+                  >
+                    <font style="vertical-align: inherit">निर्यात</font>
+                  </a>
+                  <font style="vertical-align: inherit"> .</font>
+                </font>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">एकाधिक निर्यात </font>
+                    <font style="vertical-align: inherit">करण्यासाठी, </font
+                    ><a href="audacity_waveform.html" title="ओड्यासीटी तरंगरुप">
+                      <font style="vertical-align: inherit">तरंगरुपमधील </font>
+                    </a> </font
+                  ><a href="audacity_selection.html" title="धृष्टता निवड">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">निवडी</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      निर्यात केल्या
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >जाणार्&zwj;या ध्वनी निश्चित करण्यात कोणतीही भूमिका घेत
+                      नाहीत.</font
+                    > </font
+                  ><a href="audacity_waveform.html" title="ओड्यासीटी तरंगरुप">
+                    <font style="vertical-align: inherit"></font>
+                  </a>
+                  <font style="vertical-align: inherit"></font>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit"></font
+                  ><a
+                    href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html"
+                    title="ट्यूटोरियल - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करत आहे"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">ट्यूटोरियल</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> पहा </font
+                    ><a
+                      href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html"
+                      title="Tutorial - Copying tapes, LPs or minidiscs to CD"
+                    >
+                      <font style="vertical-align: inherit"
+                        >- सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करत</font
+                      >
+                    </a>
+                    <font style="vertical-align: inherit">
+                      आहेत याचा कसा उपयोग केला जातो या उदाहरणासाठी.</font
+                    >
+                  </font>
+                </p>
+              </div>
+              <dl>
+                <dd>
+                  <span title="एकाधिक संवाद निर्यात करा"
+                    ><img
+                      alt="मदत बटणासह नावपट्टीद्वारे एकाधिक निर्यात करा. Png"
+                      src="../m/images/3/37/export_multiple_by_labels_with_help_button.png"
+                      width="712"
+                      height="455"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="format"></div>
+              <h2>
+                <span class="mw-headline" id="Export_Location_and_Format">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >स्थान आणि स्वरूप निर्यात करा</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">निर्देशिका:</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      ध्वनी धारिका ज्या ठिकाणी निर्यात केल्या जातील ते स्थान
+                      दर्शविते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <dl>
+                <dd>
+                  <ul>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">निवडा: </font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit"></font
+                      ><span class="button">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">निवडा</font>
+                        </font>
+                      </span>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> बटणावर </font>
+                        <font style="vertical-align: inherit">क्लिक करणे </font>
+                        <font style="vertical-align: inherit"
+                          >एक मानक धारिका निर्यात संवाद उघडेल ज्यामध्ये आपण ज्या
+                          स्थानावरील धारिका निर्यात केल्या जातील तेथे निवडता.
+                        </font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">तयार करा:</font>
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          "निर्देशिका:" बॉक्समध्ये धारिका पथ टाइप </font
+                        ><b>
+                          <font style="vertical-align: inherit">करा</font>
+                        </b>
+                        <font style="vertical-align: inherit">
+                          नंतर
+                        </font> </font
+                      ><span class="button">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">तयार करा</font>
+                        </font>
+                      </span>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> बटणावर </font>
+                        <font style="vertical-align: inherit">क्लिक </font>
+                        <font style="vertical-align: inherit"
+                          >करा आणि ती निर्देशिका तयार केली जाईल.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >जर आंशिक धारिका पथ निर्दिष्ट केला असेल तर तो आपल्या
+                          कागदजत्र निर्देशिकामधील ओड्यासीटी डेटा निर्देशिकामध्ये
+                          निर्देशिका तयार केली जाईल.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >उदाहरणार्थ, निर्यात स्थान बॉक्समध्ये "मायएलपी /
+                          मायगीतपट्टा्स" टाइप करणे आणि नंतर
+                        </font> </font
+                      ><span class="button">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">तयार करा</font>
+                        </font>
+                      </span>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"> बटणावर </font>
+                        <font style="vertical-align: inherit"
+                          >क्लिक केल्याने
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >ओड्यासीटी डेटा निर्देशिकामध्ये "मायएलपी" आणि
+                          "मायएलपी" निर्देशिकामध्ये "मायगीतपट्टा्स" निर्देशिका
+                          तयार होईल.</font
+                        >
+                      </font>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+              <div
+                style="
+                  margin-top: 12px;
+                  margin-bottom: 12px;
+                  margin-left: 24px;
+                  margin-right: 24px;
+                "
+              >
+                <table
+                  style="
+                    background: #feffd0;
+                    color: black;
+                    border: 1px solid #999999;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                  "
+                  width="100%"
+                  align="center"
+                >
+                  <tbody>
+                    <tr>
+                      <td width="30px" valign="top" align="center">
+                        <a
+                          href="https://alphamanual.audacityteam.org/man/File:Warningicon.png"
+                          class="image"
+                          title="चेतावणी चिन्ह"
+                          ><img
+                            alt="चेतावणी चिन्ह"
+                            src="../m/images/b/ba/warningicon.png"
+                            width="24"
+                            height="24"
+                        /></a>
+                      </td>
+                      <td align="left" valign="top">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >सावधगिरीने तयार करा फंक्शन वापरा आणि आपण काय करीत
+                            आहात हे केवळ आपल्याला माहिती असल्यास - आपल्या
+                            ऑपरेटिंग सिस्टमसाठी मानक नसलेल्या ठिकाणी
+                            निर्देशिका्स तयार करणे शक्य आहे.
+                          </font>
+                        </font>
+                        <ul>
+                          <li>
+                            <font style="vertical-align: inherit">
+                              <font style="vertical-align: inherit"
+                                >लक्षात ठेवा आपण विद्यमान धारिका पथ किंवा
+                                निर्देशिका निर्दिष्ट केल्यावर देखील आपल्याला
+                                "यशस्वी" संदेश प्राप्त होईल.</font
+                              >
+                            </font>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">स्वरूप:</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      या मेनूमधून उपलब्ध निर्यात स्वरूपांपैकी एक निवडा.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >कोणत्या स्वरूपात निवडले पाहिजे या सल्ल्यासाठी
+                    </font> </font
+                  ><a
+                    href="export_formats_supported_by_audacity.html"
+                    title="ओड्यासीटी द्वारा समर्थित स्वरूपने निर्यात करा"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >ओड्यासीटी द्वारा समर्थित निर्यात स्वरूप
+                      </font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> पहा </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                </li>
+              </ul>
+              <div id="options"></div>
+              <h2>
+                <span class="mw-headline" id="Options">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">पर्याय</font>
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >आपण निवडलेल्या निर्यात स्वरूपातील पर्याय निवडण्यासाठी
+                    पर्याय उपखंड वापरा.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >हे आपल्याला
+                  </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">गुणवत्तेची</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> किंवा </font>
+                  <font style="vertical-align: inherit"
+                    >पर्यायांसह स्वरूपनांसाठी
+                  </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >एन्कोडिंगसारख्या</font
+                    >
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    सेटिंग्ज बनविण्यास सक्षम करते
+                  </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >उदाहरणार्थ,
+                  </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">एमपी 3</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    स्वरूपसह निवडलेले
+                  </font>
+                  <font style="vertical-align: inherit">एक्सपोर्ट डायलॉग </font>
+                  <font style="vertical-align: inherit"
+                    >त्या स्वरूपला उपलब्ध असलेले पर्याय दर्शवित आहे.
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="एकाधिक एमपी 3 संवाद निर्यात करा"
+                    ><img
+                      alt="मदत बटणासह एकाधिक एमपी 3 निर्यात करा. Png"
+                      src="../m/images/4/4a/export_multiple_mp3_with_help_button.png"
+                      width="709"
+                      height="453"
+                  /></span>
+                </dd>
+              </dl>
+              <h3>
+                <span
+                  class="mw-headline"
+                  id="Custom_FFmpeg_and_.28external_program.29_export_options"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >सानुकूल एफएफम्पेग आणि (बाह्य प्रोग्राम) निर्यात
+                      पर्याय</font
+                    >
+                  </font>
+                </span>
+              </h3>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >आपण निवडा तेव्हा
+                  </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >सानुकूल ffmpeg निर्यात</font
+                    >
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> मध्ये </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">स्वरूप</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    ड्रॉप डाउन, पर्याय उपखंड असतील
+                  </font> </font
+                ><span class="button">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >सानुकूल उघडा ffmpeg स्वरूप पर्याय</font
+                    >
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    बटणावर क्लिक करा.
+                  </font>
+                  <font style="vertical-align: inherit">पहा </font> </font
+                ><a
+                  href="custom_ffmpeg_export_options.html"
+                  title="सानुकूल FFmpeg निर्यात पर्याय"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >सानुकूल ffmpeg निर्यात पर्याय</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    अधिक माहिती साठी.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">जेव्हा आपण </font>
+                  <font style="vertical-align: inherit"
+                    >ड्रॉपडाउनमध्ये
+                  </font> </font
+                ><a
+                  href="exporting_to_an_external_program.html"
+                  title="बाह्य प्रोग्राममध्ये निर्यात करणे"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >(बाह्य प्रोग्राम)</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> निवडता </font>
+                  <font style="vertical-align: inherit"
+                    >, तेव्हा निर्यात आदेश प्रविष्ट करण्यासाठी मजकूर बॉक्स
+                    प्रदान केला जाईल.
+                  </font>
+                </font>
+              </p>
+              <div
+                style="
+                  margin-top: 12px;
+                  margin-bottom: 12px;
+                  margin-left: 24px;
+                  margin-right: 24px;
+                "
+              >
+                <table
+                  style="
+                    background: #feffd0;
+                    color: black;
+                    border: 1px solid #999999;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                  "
+                  width="100%"
+                  align="center"
+                >
+                  <tbody>
+                    <tr>
+                      <td width="30px" valign="top" align="center">
+                        <a
+                          href="https://alphamanual.audacityteam.org/man/File:Warningicon.png"
+                          class="image"
+                          title="चेतावणी चिन्ह"
+                          ><img
+                            alt="चेतावणी चिन्ह"
+                            src="../m/images/b/ba/warningicon.png"
+                            width="24"
+                            height="24"
+                        /></a>
+                      </td>
+                      <td align="left" valign="top">
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >सानुकूल एफएफम्पेग एक्सपोर्ट किंवा (बाह्य प्रोग्राम)
+                            वापरून निर्यात करताना ओड्यासीटी
+                          </font>
+                          <font style="vertical-align: inherit"
+                            >धारिकाच्या नावामध्ये
+                          </font> </font
+                        ><i
+                          ><b
+                            ><a href="glossary.html#extension" title="शब्दकोष">
+                              <font style="vertical-align: inherit">
+                                <font style="vertical-align: inherit"
+                                  >विस्तार</font
+                                >
+                              </font>
+                            </a></b
+                          ></i
+                        >
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit">
+                            जोडणार नाही
+                          </font>
+                          <font style="vertical-align: inherit">.</font>
+                        </font>
+                        <p>
+                          <font style="vertical-align: inherit">
+                            <font style="vertical-align: inherit"
+                              >कार्यसंघ म्हणून:
+                            </font>
+                          </font>
+                        </p>
+                        <ul>
+                          <li>
+                            <font style="vertical-align: inherit">
+                              <font style="vertical-align: inherit"
+                                >नावपट्टी किंवा गीतपट्टा नावे योग्य धारिका
+                                विस्तार जोडा</font
+                              >
+                            </font>
+                          </li>
+                          <li>
+                            <font style="vertical-align: inherit">
+                              <font style="vertical-align: inherit"
+                                >निर्यात झाल्यानंतर धारिकांमध्ये विस्तार
+                                जोडा.</font
+                              >
+                            </font>
+                            <p></p>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="split"></div>
+              <h2>
+                <span class="mw-headline" id="Split_files_based_on:">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >यावर आधारित धारिका विभाजित करा:</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">गीतपट्टा:</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आपल्या प्रकल्पातील प्रत्येक ध्वनी गीतपट्टा स्वतंत्र
+                      धारिकामध्ये निर्यात करा.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >धारिका नावे गीतपट्टाच्या नावांवर आधारित आहेत.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >प्रकल्पातील कोणतीही नावपट्टीकडे दुर्लक्ष केले जाते.
+                    </font>
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">नावपट्टीेः</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      आपल्या प्रकल्पात
+                    </font> </font
+                  ><a href="label_tracks.html" title="नावपट्टी गीतपट्टा">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">नावपट्टी</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      तसेच एक किंवा अधिक ध्वनी गीतपट्टा
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >असल्यास हा पर्याय निवडा
+                    </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                  <p>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >केवळ सर्वात वरच्या नावपट्टी गीतपट्टामधील नावपट्टी
+                        निर्यात करण्यासाठी वापरली जातात.
+                      </font>
+                      <font style="vertical-align: inherit"
+                        >जर एकापेक्षा जास्त ध्वनी गीतपट्टा वरच्या नावपट्टी
+                        गीतपट्टाच्या वर असतील तर, त्या सर्व गीतपट्टाचा ध्वनी
+                      </font>
+                      <font style="vertical-align: inherit"
+                        >निर्यात केलेल्या धारिकांमध्ये
+                      </font> </font
+                    ><a href="mixing.html" title="मिक्सिंग">
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">मिसळला</font>
+                      </font>
+                    </a>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">
+                        जाईल, जोपर्यंत आपण
+                      </font>
+                      <font style="vertical-align: inherit"
+                        >त्यापैकी काही गीतपट्टावर
+                      </font> </font
+                    ><a href="audio_tracks.html#mute" title="ध्वनी गीतपट्टा">
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">निःशब्द</font>
+                      </font>
+                    </a>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">
+                        बटण दाबल्याशिवाय नाही.</font
+                      >
+                    </font>
+                  </p>
+                </li>
+                <li style="list-style-image: none; list-style-type: none">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >नावपट्टी गीतपट्टामध्ये कमीतकमी एक
+                    </font> </font
+                  ><i>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">बिंदू</font>
+                    </font>
+                  </i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> किंवा </font> </font
+                  ><i>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">प्रदेश</font>
+                    </font>
+                  </i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      नावपट्टी असावे:
+                    </font>
+                  </font>
+                  <dl>
+                    <dd>
+                      <dl>
+                        <dd>
+                          <dl>
+                            <dd>
+                              <font style="vertical-align: inherit">
+                                <font style="vertical-align: inherit"
+                                  >• पॉईंट नावपट्टीे आपणास स्वतंत्र धारिका
+                                  बनवायची ध्वनीच्या प्रत्येक विभागाची सुरूवात
+                                  चिन्हांकित करते</font
+                                > </font
+                              ><br />
+                            </dd>
+                            <dd>
+                              <font style="vertical-align: inherit">
+                                <font style="vertical-align: inherit"
+                                  >• प्रदेश नावपट्टीे आपण स्वतंत्र धारिका बनवू
+                                  इच्छित असलेल्या ध्वनीच्या प्रत्येक भागाचे
+                                  विभाजन करतात.</font
+                                >
+                              </font>
+                            </dd>
+                          </dl>
+                        </dd>
+                      </dl>
+                    </dd>
+                  </dl>
+                  <ul>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >प्रथम नावपट्टीच्या आधी ध्वनी समाविष्ट करा:</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          जेव्हा आपल्याकडे प्रथम धारिका सुरू होण्यास चिन्हांकित
+                          करणारा पॉईंट नावपट्टी नसल्यास किंवा प्रथम धारिकामध्ये
+                          असलेले प्रदेश नावपट्टी नसलेले असेल तरच हा पर्याय
+                          तपासा.
+                        </font>
+                      </font>
+                    </li>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >प्रथम धारिका नाव:</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          आपण "प्रथम नावपट्टीच्या आधी ध्वनी समाविष्ट करा" तपासले
+                          असल्यास हा पर्याय सक्षम केला जाईल.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >प्रथम निर्यात केलेल्या ध्वनी धारिकासाठी आपण वापरू
+                          इच्छित असलेल्या नावावर टाइप करा.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >आपण ध्वनी धारिका आयात केल्या असल्यास, या मजकूर
+                          बॉक्समध्ये प्रथम आयात केलेल्या धारिकाचे नाव आहे, परंतु
+                          आपण अद्याप मजकूर बदलू शकता.</font
+                        >
+                      </font>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >गीतपट्टा किंवा नावपट्टीांच्या आधारे दोन्ही विभाजित
+                    धारिकांसाठी,
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >प्रत्येक धारिकासाठी निर्यात केलेला
+                  </font> </font
+                ><a href="glossary.html#metadata" title="शब्दकोष">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मेटाडेटा</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    समान असेल (गीतपट्टा शीर्षक आणि गीतपट्टा नंबर वगळता) जोपर्यंत
+                    आपली
+                  </font> </font
+                ><a
+                  href="import_export_preferences.html"
+                  title="आयात - निर्यात प्राधान्ये"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >आयात / निर्यात प्राधान्ये
+                    </font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit"></font
+                ><a href="metadata_editor.html" title="मेटाडेटा संपादक">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मेटाडेटा संपादक</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    दर्शविण्यासाठी सेट केली जात नाहीत
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >आणि आपण प्रत्येक धारिकासाठी मेटाडेटा व्यक्तिचलितरित्या
+                    प्रविष्ट करत नाही .
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >आपण एकाधिक ध्वनी धारिका आयात आणि निर्यात करू इच्छित असल्यास
+                    आणि प्रत्येक धारिकाचे टॅग मूल्य स्वयंचलितपणे जतन करू इच्छित
+                    असल्यास
+                  </font>
+                  <font style="vertical-align: inherit">त्याऐवजी </font> </font
+                ><a href="macros.html" title="मॅक्रो">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मॅक्रो</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> वापरा.</font>
+                </font>
+              </div>
+              <div id="name"></div>
+              <h2>
+                <span class="mw-headline" id="Name_files:">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">धारिका नावे:</font>
+                  </font>
+                </span>
+              </h2>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >नावपट्टी / गीतपट्टा नाव वापरणे:</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      "नावपट्टीवर आधारित स्प्लिट धारिका्स" निवडल्यास प्रत्येक
+                      धारिकाचे नाव नेमके असेल किंवा "गीतपट्टा्सवर आधारीत धारिका
+                      स्प्लिट" निवडल्यास प्रत्येक गीतपट्टाचे नाव नेमके असेल.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >कोणतीही नावपट्टी रिकामी असल्यास (गीतपट्टा नावे रिक्त असू
+                      शकत नाहीत), ओड्यासीटी प्रत्येक संबंधित धारिकाला "शीर्षक
+                      नसलेले" असे नाव देईल आणि एकाधिक "शीर्षकविहीन" धारिका वेगळे
+                      करण्यासाठी आवश्यक संख्या जोडा.</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">नावपट्टी /</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      गीतपट्टाच्या नावापूर्वी क्रमांकांकन </font
+                    ><b>
+                      <font style="vertical-align: inherit">:</font>
+                    </b>
+                    <font style="vertical-align: inherit">
+                      नावपट्टी किंवा गीतपट्टा नावे वापरली जातात परंतु प्रत्येक
+                      धारिकाच्या नावावर सलग दोन-अंकी क्रमांक आणि हायफन वापरलेले
+                      असतात.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >क्रमांकन "00-" पासून प्रारंभ होते जर आपण "प्रथम
+                      नावपट्टीपूर्वी ध्वनी समाविष्ट करा" किंवा आपण न केल्यास
+                      "01-" पासून निवडले असेल.
+                    </font>
+                    <font style="vertical-align: inherit">आपण </font> </font
+                  ><a
+                    href="burning_music_files_to_a_cd.html"
+                    title="सीडीवर संगीत धारिका बर्न करत आहे"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >ध्वनी सीडीमध्ये</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      गीतपट्टा जळत असल्यास ही एक चांगली निवड आहे
+                    </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                </li>
+              </ul>
+              <div class="note">
+                <b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >आधी क्रमांक लावण्यासाठी उदाहरणे:</font
+                    >
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    आपल्याकडे प्रथम धारिकाच्या सुरूवातीस चिन्हांकित करणारे
+                    "प्रतिबिंब" नावाचे नावपट्टी असेल आणि त्यानंतर "आनंद" असे
+                    चिन्हांकित केलेले नावपट्टी असेल तर निर्यात केलेल्या धारिका "
+                  </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">01-प्रतिबिंब</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> " आणि " </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">02-आनंद</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> " असतील; </font>
+                  <font style="vertical-align: inherit"
+                    >उपरोक्त प्रकरणात नावपट्टीे रिक्त असल्यास, निर्यात केलेल्या
+                    धारिका "
+                  </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">01-अशीर्षकांकित</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> " आणि " </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >02-शीर्षकविहीन" असतील.</font
+                    >
+                  </font>
+                </b>
+              </div>
+              <ul>
+                <li>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >धारिका नाव उपसर्ग नंतर क्रमांकन:</font
+                      >
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      नावपट्टी किंवा गीतपट्टा नावे दुर्लक्षित केली जातात.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >त्याऐवजी, प्रत्येक धारिकाचे नाव खाली दिलेली "धारिका नेम
+                      उपसर्ग" मध्ये निर्दिष्ट मानक उपसर्ग वापरुन केले गेले,
+                      त्यानंतर हायफन आणि सलग दोन-अंकी क्रमांक.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >आपण "प्रथम नावपट्टीच्या आधी ध्वनी समाविष्ट करा" किंवा आपण
+                      न केल्यास "-01" वरून क्रमांकांकन "-00" पासून प्रारंभ
+                      होते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <dl>
+                <dd>
+                  <ul>
+                    <li>
+                      <b>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >धारिका नाव उपसर्ग:</font
+                          >
+                        </font>
+                      </b>
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">
+                          वापरण्यासाठी एक धारिका नाव उपसर्ग निर्दिष्ट करते जे
+                          त्यानंतरच्या क्रमांकाच्या क्रमांकासह असेल.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >हे नाव आपण ओड्यासीटी शीर्षक बारमध्ये पाहत असलेल्या
+                          प्रोजेक्टच्या नावास डीफॉल्ट होईल.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >प्रोजेक्टमधील आपली पहिली क्रिया ध्वनी धारिका आयात
+                          करण्याची असल्यास, या मजकूर बॉक्समध्ये प्रथम आयात
+                          केलेल्या धारिकाचे नाव आहे.
+                        </font>
+                        <font style="vertical-align: inherit"
+                          >आपण मजकूर आपल्या आवडीनुसार बदलू शकता.
+                        </font>
+                      </font>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+              <div class="note">
+                <b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >नंतर क्रमांक देण्याचे उदाहरणः</font
+                    >
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    जर आपल्याकडे दुसरे आणि तिसरे धारिका प्रारंभ होण्यास
+                    चिन्हांकित केलेली नावपट्टी असतील तर "प्रथम नावपट्टीच्या आधी
+                    ध्वनी समाविष्ट करा" निवडले असेल आणि उपसर्ग म्हणून "रीमास्टर"
+                    प्रविष्ट केले असेल, तर निर्यात केलेल्या धारिका "
+                  </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">रीमास्टर -00</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> ", " </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">रीमास्टर -01</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> "आणि" </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">रीमास्टर -02</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> ".</font>
+                </font>
+              </div>
+              <div id="other"></div>
+              <h2>
+                <span class="mw-headline" id="Overwrite_existing_files">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >विद्यमान धारिका अधिलिखित करा</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हा आयटम डीफॉल्टनुसार बंद (अनचेक केलेला) आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >चेक न केल्यास, निर्यात करण्यायोग्य अशा कोणत्याही धारिकाचे
+                    नाव ज्याच्या नावावर पूर्व-विद्यमान आहे त्या नावाचे नाव हायफन
+                    व संख्यात्मक प्रत्यय ने बदलले जाईल.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >पूर्वी अस्तित्वात असलेल्या धारिका्स "जसा आहे तशाच" राहिल्या
+                    आहेत.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >पहिली धारिका जी एकसारख्या नावाने एक्सपोर्ट केली जाते त्यास
+                    '-2' प्रत्यय लावून त्या नावाने एक्सपोर्ट केलेल्या धारिका्सचे
+                    नाव '-3 "," -4 "वगैरे केले गेले.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >चेक केल्यावर, निवडलेल्या निर्यात स्थानामधील कोणत्याही
+                    पूर्व-विद्यमान धारिका ज्याची निर्यात केली जावी त्या
+                    धारिकासारखेच नाव
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >नवीन धारिकाद्वारे
+                  </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">बदलले</font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> जाईल </font>
+                  <font style="vertical-align: inherit">(सूचना न देता). </font>
+                  <font style="vertical-align: inherit"
+                    >तथापि, याला अपवाद आहे;
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >जर निर्यात एकाधिक प्रक्रियेने नावपट्टी मजकूरावर किंवा
+                    गीतपट्टा नावावर एकसारख्या नावाच्या धारिका तयार केल्या असतील
+                    तर या धारिका अधिलिखित केल्या जाणार नाहीत परंतु चढत्या
+                    संख्येच्या प्रत्यय दिले तर त्या त्या ओव्हरराइट केल्या जात
+                    नाहीत.</font
+                  >
+                </font>
+              </p>
+              <h2>
+                <span class="mw-headline" id="Export_and_Cancel">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >निर्यात करा आणि रद्द करा</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit"></font
+                ><span class="button">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">निर्यात</font>
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> बटणावर </font>
+                  <font style="vertical-align: inherit">क्लिक केल्याने </font>
+                  <font style="vertical-align: inherit"
+                    >धारिकाच्या नावाने आणि आपण निवडलेल्या प्रकारासह निर्देशिका
+                    स्थानावर ध्वनी निर्यात होईल.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit"></font
+                ><span class="button">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">रद्द करा</font>
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> बटणावर </font>
+                  <font style="vertical-align: inherit">क्लिक केल्याने </font>
+                  <font style="vertical-align: inherit"
+                    >कोणत्याही धारिका निर्यात न करता निर्यात संवाद निरस्त केला
+                    जाईल.
+                  </font>
+                  <font style="vertical-align: inherit">. {टीप | </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <font style="vertical-align: inherit"></font
+                  ><b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">"निर्यात"</font>
+                    </font>
+                  </b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> दाबल्यानंतर </font>
+                    <font style="vertical-align: inherit">, </font>
+                    <font style="vertical-align: inherit"
+                      >प्रत्येक धारिका निर्यात करण्यासाठी
+                    </font> </font
+                  ><a href="metadata_editor.html" title="मेटाडेटा संपादक">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >मेटाडेटा संपादक</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      (एम्बेड केलेल्या धारिका माहितीसाठी जसे की कलाकार किंवा
+                      शैलीसाठी) दिसून येईल, जोपर्यंत आपण त्यास
+                    </font> </font
+                  ><a
+                    href="import_export_preferences.html"
+                    title="आयात - निर्यात प्राधान्ये"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >आयात / निर्यात प्राधान्यांमधील</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      निर्यात चरणात अक्षम करत नाही
+                    </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                </li>
+                <li>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >विभाजन धारिका गीतपट्टा आधारित असेल, तर मागे 0.0 कोणत्याही
+                      ध्वनी
+                    </font> </font
+                  ><a href="timeline.html" title="टाइमलाइन">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">टाइमलाइन</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      (दोन डाव्या-दिशेला बाण शिल्लक सूचित
+                    </font> </font
+                  ><a href="audacity_waveform.html" title="ओड्यासीटी तरंगरुप">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">व्हेवफॉर्म</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      निर्यात समाविष्ट आहे).
+                    </font>
+                    <font style="vertical-align: inherit">एकल </font> </font
+                  ><a
+                    href="file_export_dialog.html"
+                    title="धारिका निर्यात संवाद"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">निर्यात</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> सह </font>
+                    <font style="vertical-align: inherit"
+                      >, ०.० मधील मागे ध्वनी केवळ स्पष्टपणे निवडल्यास आणि नंतर
+                    </font> </font
+                  ><span class="menu">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >धारिका&gt; निर्यात&gt;
+                      </font> </font
+                    ><a
+                      href="file_menu_export.html#exportselectedaudio"
+                      title="धारिका मेनू: निर्यात करा"
+                    >
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"
+                          >निर्यात निवडलेले ध्वनी ...</font
+                        >
+                      </font>
+                    </a>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> आदेश </font>
+                    <font style="vertical-align: inherit"
+                      >वापरून निर्यात केला जातो
+                    </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                </li>
+              </ul>
+              <h2>
+                <span class="mw-headline" id="Export_progress_dialog">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रगती संवाद निर्यात करा</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">एकदा आपण </font> </font
+                ><span class="button">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">निर्यात</font>
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    बटण किंवा अंतिम मेटाडेटा
+                  </font> </font
+                ><span class="button">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">ओके</font>
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    बटणावर क्लिक केले की ओड्यासीटी एक संवाद प्रदर्शित करेल जी
+                    आपल्याला निर्यातीच्या प्रगतीवर लक्ष ठेवण्यास सक्षम करते:
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="एकाधिक प्रगती संवाद निर्यात करा, 25% पूर्ण"
+                    ><img
+                      alt="एकाधिक प्रगती संवाद निर्यात करा अर्धवट पूर्णता. Png"
+                      src="../m/images/b/bc/export_multiple_progress_dialog_partial_completion.png"
+                      width="241"
+                      height="187"
+                  /></span>
+                </dd>
+              </dl>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >ग्रीन बार एक व्हिज्युअल प्रगती सूचक आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >गेलेला वेळ आणि उर्वरित वेळ धारिका निर्यात करण्यासाठी
+                    लागणार्&zwj;या एकूण वेळेच्या अंदाजावर आधारित आहे (निर्यात
+                    जसजशी प्रगती होताना बदलू शकतो). === थांबा आणि
+                  </font>
+                </font>
+              </p>
+              <h3>
+                <span class="mw-headline" id="Stop_and_Cancel">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >थांबा आणि रद्द करा</font
+                    >
+                  </font>
+                </span>
+              </h3>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">यावर क्लिक करणे: </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit"></font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >अर्धवट निर्यात केलेल्या जागेची जागा सोडून </font
+                    ><span class="button">
+                      <font style="vertical-align: inherit">थांबा</font>
+                    </span>
+                    <font style="vertical-align: inherit">
+                      बटण तत्काळ निर्यात थांबवते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >त्यानंतर ते पुढील नावपट्टी केलेल्या विभागावर प्रक्रिया
+                      सुरू करते,</font
+                    >
+                  </font>
+                </li>
+                <li>
+                  <span class="button">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">रद्द करा</font>
+                    </font>
+                  </span>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      बटण त्वरित विद्यमान निर्यात थांबवते, भाग निर्यात केलेली
+                      धारिका काढून टाकल्यानंतर उर्वरित निर्यातीस निर्यात करते,
+                      निर्यात एकाधिक संवादात परत जाते.</font
+                    >
+                  </font>
+                </li>
+              </ul>
+              <p><br /></p>
+              <div id="results"></div>
+              <h2>
+                <span class="mw-headline" id="Export_results">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">निर्यात परिणाम</font>
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >एकदा एकाधिक निर्यात पूर्ण झाल्यानंतर, परिणामी धारिका
+                    दर्शविणारी स्थिती विंडो दर्शविली जाईल:
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="एकाधिक परिणाम निर्यात करा"
+                    ><img
+                      alt="एकाधिक परिणाम निर्यात करा W10.png"
+                      src="../m/images/2/2f/export_multiple_results_w10.png"
+                      width="436"
+                      height="393"
+                  /></span>
+                </dd>
+              </dl>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हा परिणाम संवाद बंद
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >करण्यासाठी
+                  </font> </font
+                ><span class="button">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">ओके</font>
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> बटणावर </font
+                  ><span class="button">
+                    <font style="vertical-align: inherit">क्लिक</font>
+                  </span>
+                  <font style="vertical-align: inherit"> करा. </font>
+                </font>
+              </p>
+              <div id="examples"></div>
+              <h2>
+                <span
+                  class="mw-headline"
+                  id="Examples_of_use_of_labels_with_Export_Multiple"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >एकाधिक एक्सपोर्टसह नावपट्टीांच्या वापराची उदाहरणे
+                    </font>
+                  </font>
+                </span>
+              </h2>
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
-</td>
-<td align="left" valign="top">Use the Create function with caution and only if you know what you are doing - it is possible to create folders in non-standard locations for your operating system.
-<ul><li>Note that you will receive a "success" message even when you specify an existing file path or directory.</li></ul>
-</td></tr></table></div>
-<ul><li><b>Format:</b> Choose one of the available export formats from this menu. See <a href="export_formats_supported_by_audacity.html" title="Export Formats supported by Audacity">Export Formats supported by Audacity</a> for advice on which format to choose.</li></ul>
-<div id="options"></div>
-<h2><span class="mw-headline" id="Options">Options</span></h2>
-<p>Use the Options pane to choose the options for the export format you have selected. It enables you to make settings like <i>quality</i> or <i>encoding</i> for formats with options. As an example, here is the Export Multiple dialog with the <b>MP3</b> format selected showing the options available for that format:
-</p>
-<dl><dd><span title="Export Multiple MP3 dialog"><img alt="Export Multiple MP3 with Help button.png" src="../m/images/4/4a/export_multiple_mp3_with_help_button.png" width="709" height="453" /></span></dd></dl>
-<h3><span class="mw-headline" id="Custom_FFmpeg_and_.28external_program.29_export_options">Custom FFmpeg and (external program) export options</span></h3>
-<p>When you select <b>Custom FFmpeg Export</b> in the <b>Format</b> dropdown, the Options pane will contain the <span class="button">Open custom FFmpeg format options</span> button. See <a href="custom_ffmpeg_export_options.html" title="Custom FFmpeg Export Options">Custom FFmpeg Export Options</a> for more details. 
-</p><p>When you choose <a href="exporting_to_an_external_program.html" title="Exporting to an External Program">(external program)</a> in the dropdown, a text box will be provided to enter the export command.
-</p>
-<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+              <div class="note">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >पुढील उदाहरणांमध्ये संवादांमधील निवडी अशी असतील: "यावर
+                    आधारित धारिका विभाजित करा: नावपट्टी" आणि "नाव धारिकाः
+                    नावपट्टी / गीतपट्टा नाव वापरणे".
+                  </font>
+                </font>
+              </div>
+              <div class="example">
+                <h3>
+                  <span
+                    class="mw-headline"
+                    id="Case_1:_A_point_label_marking_each_song"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रकरण 1: प्रत्येक गाणे चिन्हांकित करणारे एक बिंदू
+                        नावपट्टी</font
+                      >
+                    </font>
+                  </span>
+                </h3>
+                <dl>
+                  <dd>
+                    <span title="प्रत्येक गाणे चिन्हांकित बिंदू नावपट्टी"
+                      ><img
+                        alt="एक्सपोर्टमुल्टीपेलएक्समल ०१.png"
+                        src="../m/images/b/be/exportmultipleexample01.png"
+                        width="627"
+                        height="209"
+                    /></span>
+                    <ul>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >या प्रकरणात पहिल्या धारिकाचे नाव "प्रथम गाणे" असेल
+                            आणि त्यात "प्रथम गाणे" नावपट्टी आणि "द्वितीय गाणे"
+                            नावपट्टी दरम्यान ध्वनी असेल.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >त्याचप्रमाणे दुसर्&zwj;या धारिकाचे नाव "द्वितीय
+                            गाणे" असेल आणि त्यात "द्वितीय गाणे" नावपट्टी आणि
+                            "तृतीय गाणे" नावपट्टी दरम्यान ध्वनी असेल आणि उर्वरित
+                            नावपट्टीांसाठी.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >शेवटच्या धारिकामध्ये ध्वनी गीतपट्टाच्या शेवटच्या
+                            नावपट्टीपासून शेवटच्या नावपट्टीपर्यंत ध्वनी असेल आणि
+                            नावपट्टी गीतपट्टामधील शेवटच्या नावपट्टीनुसार त्यास
+                            नाव दिले जाईल.</font
+                          >
+                        </font>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <p><br /></p>
+              <div class="example">
+                <h3>
+                  <span
+                    class="mw-headline"
+                    id="Case_2:_A_region_label_marking_each_song"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रकरण 2: प्रत्येक गाणे चिन्हांकित करणारे एक प्रदेश
+                        नावपट्टी</font
+                      >
+                    </font>
+                  </span>
+                </h3>
+                <dl>
+                  <dd>
+                    <span
+                      title="प्रत्येक गाणे चिन्हांकित करणारे प्रदेश नावपट्टी"
+                      ><img
+                        alt="एक्सपोर्टमुल्&zwj;टीपलएक्सपोर्ट02.png"
+                        src="../m/images/e/e1/exportmultipleexample02.png"
+                        width="627"
+                        height="209"
+                    /></span>
+                    <ul>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >या प्रकरणात पहिल्या धारिकाचे नाव "प्रथम गाणे" असेल
+                            आणि त्यात "प्रथम गाणे" नावपट्टीद्वारे स्पॅन केलेले
+                            ध्वनी असेल.</font
+                          >
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >त्याचप्रमाणे दुसर्&zwj;या धारिकाचे नाव "द्वितीय
+                            गाणे" असेल आणि त्यात "द्वितीय गाणे" नावपट्टीद्वारे
+                            स्पॅन केलेले ध्वनी असेल आणि इतर उर्वरित
+                            नावपट्टीांसाठी.</font
+                          >
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >शेवटच्या प्रदेश नावपट्टीच्या पलीकडे कोणताही ध्वनी
+                            निर्यात केला जाणार नाही</font
+                          >
+                        </font>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <p><br /></p>
+              <div class="example">
+                <h3>
+                  <span
+                    class="mw-headline"
+                    id="Case_3:_A_point_label_marking_each_song_except_the_first"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रकरण 3: प्रत्येक गाण्यावर प्रथम वगळता एक बिंदू
+                        नावपट्टी चिन्हांकित करा</font
+                      >
+                    </font>
+                  </span>
+                </h3>
+                <dl>
+                  <dd>
+                    <span
+                      title="प्रथम वगळता प्रत्येक गाणे चिन्हांकित करते बिंदू नावपट्टी"
+                      ><img
+                        alt="एक्सपोर्टमुल्&zwj;टीपलएक्सपल03.png"
+                        src="../m/images/2/27/exportmultipleexample03.png"
+                        width="628"
+                        height="207"
+                    /></span>
+                  </dd>
+                  <dd>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >हे असे एक प्रकरण आहे जेथे आपण "प्रथम नावपट्टीच्या आधी
+                        ध्वनी समाविष्ट करा" आणि "प्रथम धारिका नाव" मजकूर
+                        बॉक्समध्ये धारिका नाव प्रदान करू इच्छित आहात.
+                      </font>
+                    </font>
+                    <ul>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >पहिल्यांदा "धारिका धारिका नेम" मजकूर बॉक्समध्ये
+                            टाइप केलेल्या कोणत्याही नावाचे नाव दिले जाईल आणि
+                            त्यात गीतपट्टाची सुरूवात आणि "द्वितीय गाणे" नावपट्टी
+                            दरम्यानचा ध्वनी असेल.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >त्याचप्रमाणे दुसर्&zwj;या धारिकाचे नाव "द्वितीय
+                            गाणे" असेल आणि त्यात "द्वितीय गाणे" नावपट्टी आणि
+                            "तृतीय गाणे" नावपट्टी दरम्यान ध्वनी असेल आणि उर्वरित
+                            नावपट्टीांसाठी.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >शेवटच्या धारिकामध्ये शेवटच्या नावपट्टीपासून ध्वनी
+                            गीतपट्टाच्या शेवटपर्यंत ध्वनी असेल.</font
+                          >
+                        </font>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <p><br /></p>
+              <div class="example">
+                <h3>
+                  <span
+                    class="mw-headline"
+                    id="Case_4:_Region_labels_marking_two_chosen_songs"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रकरण 4: दोन निवडलेली गाणी चिन्हांकित करणारे प्रदेश
+                        नावपट्टी</font
+                      >
+                    </font>
+                  </span>
+                </h3>
+                <dl>
+                  <dd>
+                    <span title="प्रदेश निवडले दोन गाणी चिन्हांकित नावपट्टी"
+                      ><img
+                        alt="एक्सपोर्टमुल्टीपेलएक्समल ०4.png"
+                        src="../m/images/4/42/exportmultipleexample04.png"
+                        width="627"
+                        height="209"
+                    /></span>
+                  </dd>
+                  <dd>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >या प्रकरणात आम्हाला केवळ दोन गाणी निर्यात करायची आहेत -
+                        कदाचित संकलन अल्बममधील समान कलाकाराची गाणी.
+                      </font>
+                      <font style="vertical-align: inherit"
+                        >प्रत्येक गाणे प्रदेश नावपट्टी सह चिन्हांकित केले आहे.
+                      </font>
+                    </font>
+                    <ul>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >केवळ दोन धारिका निर्यात केल्या जातील - "द्वितीय
+                            गाणे" आणि "चौथे गाणे" - त्या नावपट्टीांनी विस्तृत
+                            केलेल्या ध्वनीशी संबंधित.
+                          </font>
+                          <font style="vertical-align: inherit"
+                            >अन्य कोणताही ध्वनी निर्यात केला जाणार नाही.</font
+                          >
+                        </font>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <p><br /></p>
+              <div class="example">
+                <h3>
+                  <span
+                    class="mw-headline"
+                    id="Case_5:_A_mix_of_point_and_region_labels"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >प्रकरण 5: बिंदू आणि प्रदेश नावपट्टीांचे मिश्रण</font
+                      >
+                    </font>
+                  </span>
+                </h3>
+                <dl>
+                  <dd>
+                    <span title="बिंदू आणि प्रदेश नावपट्टीचे मिश्रण"
+                      ><img
+                        alt="मल्&zwj;टीप्&zwj;लेपल एक्सएक्&zwj;संपल ०5 ए.पीएनपी"
+                        src="../m/images/3/32/exportmultipleexample05a.png"
+                        width="628"
+                        height="213"
+                    /></span>
+                  </dd>
+                </dl>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >वरील प्रकरणात आमच्याकडे प्रश्नांची मालिका (अप्पर
+                      गीतपट्टा) आणि उत्तरे (लोअर गीतपट्टा) आणि मुलाखतदाराचे
+                      निष्कर्ष काढणारे विधान आहे.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >आम्हाला प्रश्न-उत्तर जोड्या आणि मुलाखतकाराचा निष्कर्ष
+                      स्वतंत्र धारिका म्हणून निर्यात करायचा आहे.
+                    </font>
+                  </font>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >बर्&zwj;याच प्रकरणांमध्ये प्रश्न-उत्तर जोड्या एकामागून एक
+                      अनुसरण करतात, म्हणून त्यांना चिन्हांकित करण्याचा एक द्रुत
+                      आणि सोयीस्कर मार्ग म्हणजे नावपट्टी नावपट्टी.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >तथापि, तिसर्&zwj;या उत्तरा नंतर, मुलाखत घेणारा स्टुडिओ
+                      व्यवस्थापकाद्वारे सांगितले जाईल की वेळ संपत आहे, आणि
+                      दोन्ही पक्ष याबद्दल चर्चा करतात.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >आम्हाला हे एक्सचेंज वगळण्याची इच्छा आहे.
+                    </font>
+                  </font>
+                </p>
+                <dl>
+                  <dd>
+                    <ul>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >आम्ही बिंदू नावपट्टीे "QA1" आणि QA2 "सह पहिल्या दोन
+                            प्रश्न-उत्तर जोड्यांची सुरूवात चिन्हांकित करतो.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >आम्हाला वेळ संपण्याविषयीची चर्चा वगळण्याची इच्छा
+                            असल्यामुळे आम्ही "क्यूए 3" प्रांतीय नावपट्टीसह तिसरी
+                            जोडी चिन्हांकित करतो.</font
+                          >
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >आम्ही पॉईंट नावपट्टी "क्यूए 4" सह चौथ्या जोडीची
+                            सुरुवात आणि पॉईंट नावपट्टी "आउट्रो" सह
+                            मुलाखतकाराच्या समाप्तीस प्रारंभ करतो.
+                          </font>
+                        </font>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >म्हणूनच निर्यात केले जाईल:
+                    </font>
+                  </font>
+                </p>
+                <dl>
+                  <dd>
+                    <ul>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >पहिल्या धारिकाला "क्यूए 1" असे नाव दिले जाईल आणि
+                            "क्यूए 1" आणि "क्यूए 2" बिंदू नावपट्टीांमधील ध्वनी
+                            असेल.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >दुसर्&zwj;या धारिकाला "क्यूए 2" असे नाव दिले जाईल
+                            आणि "क्यूए 2" पॉईंट नावपट्टी आणि "क्यूए 3" प्रांतीय
+                            नावपट्टीच्या दरम्यानच्या ध्वनीचा समावेश असेल.</font
+                          >
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >तिसर्&zwj;या धारिकाचे नाव "क्यूए 3" असेल आणि त्यात
+                            "क्यूए 3" प्रदेश नावपट्टीद्वारे स्पॅन केलेले ध्वनी
+                            असेल.
+                          </font>
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >चौथ्या धारिकाचे नाव "QA4" असेल आणि त्यात "QA4" आणि
+                            "QA5" बिंदू नावपट्टीांमधील ध्वनी असेल.
+                          </font>
+                          <font style="vertical-align: inherit"
+                            >लक्षात घ्या की "QA3" प्रदेश नावपट्टीच्या शेवटी आणि
+                            "QA4" बिंदू नावपट्टी दरम्यानचा ध्वनी निर्यात केलेला
+                            नाही.</font
+                          >
+                        </font>
+                      </li>
+                      <li>
+                        <font style="vertical-align: inherit">
+                          <font style="vertical-align: inherit"
+                            >अंतिम धारिकाला "आउट्रो" असे नाव दिले जाईल आणि त्यात
+                            "आउटरो" नावपट्टी आणि शेवटच्या दरम्यानचा ध्वनी असेल.
+                          </font>
+                          <font style="vertical-align: inherit"
+                            >आम्ही हा निष्कर्ष अर्ध्या मार्गावरुन सोडण्याचा
+                            निर्णय घेतला असता, आम्ही आमच्याकडे जे ठेवू इच्छित
+                            आहे ते निवडले असते आणि त्याऐवजी "आउट्रो" असे
+                            नावपट्टी तयार केले असते.
+                          </font>
+                          <font style="vertical-align: inherit"
+                            >मग "आउट्रो" नावपट्टीच्या पलीकडे ध्वनी निर्यात केला
+                            गेला नसता.</font
+                          >
+                        </font>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    लक्षात घ्या की व्यत्यय वगळता जोडी आणि निष्कर्ष निर्यात
+                    करण्यासाठी आम्ही वरील केस 4 प्रमाणेच प्रत्येकासाठी
+                    समानप्रकारे नावपट्टी काढू शकतो.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >आम्हाला निर्यातीपूर्वी या प्रत्येक क्षेत्राचे
+                    वैयक्तिकरित्या संपादन करण्याची आवश्यकता असल्यास, त्यांना
+                    कोणत्याही परिस्थितीत प्रदेश म्हणून नावपट्टी लावण्यात काही
+                    अर्थ नाही.</font
+                  >
+                </font>
+              </div>
 
-<tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
-</td>
-<td align="left" valign="top">When exporting using Custom FFmpeg Export or (external program), Audacity will not add an <i><b><a href="glossary.html#extension" title="Glossary">extension</a></b></i> to the file name. <p>As workarounds:
-<ul><li>add the appropriate file extension to the labels or the track names</li>
-<li>add the extension to the files after export.</p> </li></ul>
-</td></tr></table></div>
-<div id="split"></div>
-<h2><span class="mw-headline" id="Split_files_based_on:">Split files based on:</span></h2>
-<ul>
-<li><b>Tracks:</b> Export each audio track in your project to a separate file. File names are based on the track names. Any labels in the project are ignored.   
-<li><b>Labels:</b> Choose this option if your project contains <a href="label_tracks.html" title="Label Tracks">labels</a> as well as one or more audio tracks. <p> Only labels in the uppermost label track are used for export. If more than one audio track is above the uppermost label track, the audio of all those tracks will be <a href="mixing.html" title="Mixing">mixed</a> into the exported files, unless you press the <a href="audio_tracks.html#mute" title="Audio Tracks">Mute</a> button on some of the tracks to exclude them from the mix. </p>
-<li style="list-style-image: none; list-style-type: none"> The label track must contain at least one <i>point</i> or <i>region</i> label, thus:
-<dl><dd><dl><dd><dl><dd>&#8226;&#160;Point labels mark the start of each section of audio you want to make into a separate file<br /></dd>
-<dd>&#8226;&#160;Region labels span each section of audio you want to make into a separate file.</dd></dl></dd></dl></dd></dl>
-<ul><li><b>Include audio before first label:</b> Check this option only if you do not have a point label marking the start of the first file or do not have a region label spanning the first file.
-<li><b>First file name:</b> If you have checked "Include audio before first label", this option will be enabled. Type in the name you want to be used for the first exported audio file. If you have imported audio files, this text box contains the name of the first imported file, but you can still change the text.</ul></ul>
-<div class="note">For both splitting files based on tracks or labels, the <a href="glossary.html#metadata" title="Glossary">metadata</a> exported for each file will be the same (except for Track Title and Track Number) unless your <a href="import_export_preferences.html" title="Import - Export Preferences">Import / Export Preferences</a> are set to show <a href="metadata_editor.html" title="Metadata Editor">Metadata Editor</a> and you enter the metadata for each file manually. If you want to import and export multiple audio files and preserve each file's tag values automatically, use <a href="macros.html" title="Macros">Macros</a> instead. </div>      
-<div id="name"></div>
-<h2><span class="mw-headline" id="Name_files:">Name files:</span></h2>
-<ul><li><b>Using Label/Track name:</b> Each file will be named exactly as the text of each label if "Split files based on Labels" was selected, or exactly as the name of each track if "Split files based on Tracks" was selected. If any labels are empty (track names cannot be empty), Audacity will name each associated file as "untitled" and add a number as necessary to distinguish multiple "untitled" files.</li>
-<li><b>Numbering before Label/Track Name:</b> Label or track names are used but a consecutive two-digit number and hyphen are prefixed to each file name. The numbering starts from "00-" if you chose "Include audio before first label", or from "01-" if you did not. This is a good choice if you are burning tracks to an <a href="burning_music_files_to_a_cd.html" title="Burning music files to a CD">Audio CD</a>. </li></ul>
-<div class="note"><b>Examples for numbering before:</b> If you had a label named "Reflection" marking the start of the first file, followed by a label marked "Rejoicing", then the exported files would be "<b>01-Reflection</b>" and "<b>02-Rejoicing</b>"; If the labels were empty in the above case, the exported files would be "<b>01-untitled</b>" and "<b>02-untitled".</div></b>
-<ul><li><b>Numbering after File Name Prefix:</b> Label or track names are ignored. Instead, each file is named using a standard prefix specified in "File Name Prefix" below followed by a hyphen and a consecutive two-digit number. The numbering starts from "-00" if you chose "Include audio before first label", or from "-01" if you did not. </li></ul>
-<dl><dd><ul><li><b>File Name Prefix:</b> Specifies a file name prefix to be used which will be followed by consecutive numbering. This name will default to the name of the project that you see in the Audacity title bar. If your first action in a project was to import audio files, this text box contains the name of the first imported file. You may change the text to whatever you like.    </li></ul></dd></dl>
-<div class="note"><b>Example for numbering after:</b> If you had labels that marked the start of the second and third files, chose "Include audio before first label" and entered "Remaster" as the prefix, then the exported files would be "<b>Remaster-00</b>", "<b>Remaster-01</b>" and "<b>Remaster-02</b>". </div>
-<div id="other"></div>
-<h2><span class="mw-headline" id="Overwrite_existing_files">Overwrite existing files</span></h2>
-<p>This item is off (unchecked) by default. If unchecked, any files to be exported which have the same name as pre-existing files in the export location will be renamed with a hyphen and numerical suffix. The pre-existing files are left "as is". The first file which is exported with an identical name is renamed with suffix "-2" and subsequent files exported with that same name are renamed with suffix "-3", "-4" and so on.
-</p>
-<p>When checked, any pre-existing files in the chosen export location which have the same name as the file to be exported will be <b>replaced</b> (without prompt) by the new file. However, there is an exception to this; if the Export Multiple process would create identically named files based on label text or track name these files will not be overwritten but given an ascending numerical suffixes.</p>
-<h2><span class="mw-headline" id="Export_and_Cancel">Export and Cancel</span></h2>
-<p>Clicking the <span class="button">Export</span> button will export the audio to the folder location, with the file name(s) and type you have selected.
-</p><p>Clicking the <span class="button">Cancel</span> button will abort the export dialog without exporting any files.
-{{note|
-</p>
-<ul><li> After pressing <b>"Export"</b>, <a href="metadata_editor.html" title="Metadata Editor">Metadata Editor</a> (for embedded file information such as artist or genre) will appear for each file to be exported, unless you disable it for the export step in the <a href="import_export_preferences.html" title="Import - Export Preferences">Import / Export Preferences</a>.</li>
-<li> If splitting files based on Tracks, any audio behind 0.0 on the <a href="timeline.html" title="Timeline">Timeline</a> (indicated by two left-pointing arrows at left of the <a href="audacity_waveform.html" title="Audacity Waveform">waveform</a>) is included in the export. With single <a href="file_export_dialog.html" title="File Export Dialog">exports</a>, audio behind 0.0 is only exported if explicitly selected and then exported using the <span class="menu">File &gt; Export &gt; <a href="file_menu_export.html#exportselectedaudio" title="File Menu: Export">Export Selected Audio...</a></span> command.</li></ul>
-<h2><span class="mw-headline" id="Export_progress_dialog">Export progress dialog</span></h2>
-<p>Once you have clicked the <span class="button">Export</span> button, or the final metadata <span class="button">OK</span> button, Audacity will display a dialog enabling you to monitor the progress of the export:
-</p>
-<dl><dd><span title="Export Multiple progress dialog, 25% complete"><img alt="Export Multiple progress dialog partial completion.png" src="../m/images/b/bc/export_multiple_progress_dialog_partial_completion.png" width="241" height="187" /></span></dd></dl>
-<p>The green bar is a visual progress indicator.  The Elapsed Time and Remaining Time are based on an estimate of the total time needed to export the file (the estimate may change as the export progresses).===Stop and 
-</p>
-<h3><span class="mw-headline" id="Stop_and_Cancel">Stop and Cancel</span></h3>
-<p>Clicking the:
-</p>
-<ul><li> <span class="button">Stop</span> button immediately stops the current export, leaving the partly exported file in place.  It then it moves on to start processing the next labeled section,</li>
-<li> <span class="button">Cancel</span> button immediately stops the current export, removing the part exported file then aborts the rest of the exports, returning to the Export Multiple dialog.</li></ul>
-<p><br />
-</p>
-<div id="results"></div>
-<h2><span class="mw-headline" id="Export_results">Export results</span></h2>
-<p>Once multiple exporting has completed, a status window is displayed showing the resulting files:
-</p>
-<dl><dd><span title="Export Multiple results"><img alt="Export Multiple results W10.png" src="../m/images/2/2f/export_multiple_results_w10.png" width="436" height="393" /></span></dd></dl>
-<p>Click the <span class="button">OK</span> button to close this results dialog.
-</p>
-<div id="examples"></div>
-<h2><span class="mw-headline" id="Examples_of_use_of_labels_with_Export_Multiple">Examples of use of labels with Export Multiple</span></h2>
-
-<div class="note">In the following examples the choices in the dialog would be: "Split files based on: Labels" and "Name files: Using Label/Track name".</div>
-<div class="example"><h3><span class="mw-headline" id="Case_1:_A_point_label_marking_each_song">Case 1: A point label marking each song</span></h3>
-<dl><dd><span title="point label marking each song"><img alt="ExportMultipleExample01.png" src="../m/images/b/be/exportmultipleexample01.png" width="627" height="209" /></span>
-<ul><li>In this case the first file will be named "First song" and will contain the audio between the "First song" label and the "Second song" label. </li>
-<li>Similarly the second file will be named "Second song" and will contain the audio between the "Second song" label and the "Third song" label, and so on for the rest of the labels. </li>
-<li>The last file will contain the audio from the last label to the end of the audio track and will be named according to the last label in the label track.</div></li></ul></dd></dl>
-<p><br />
-</p>
-<div class="example"><h3><span class="mw-headline" id="Case_2:_A_region_label_marking_each_song">Case 2: A region label marking each song</span></h3>
-<dl><dd><span title="region label marking each song"><img alt="ExportMultipleExample02.png" src="../m/images/e/e1/exportmultipleexample02.png" width="627" height="209" /></span>
-<ul><li>In this case the first file will be named "First song" and will contain the audio spanned by the "First song" label.</li>
-<li>Similarly the second file will be named "Second song" and will contain the audio spanned by the "Second song" label, and so on for the rest of the labels.</li>
-<li>Any audio beyond the last region label will not be exported</div></li></ul></dd></dl>
-<p><br />
-</p>
-<div class="example"><h3><span class="mw-headline" id="Case_3:_A_point_label_marking_each_song_except_the_first">Case 3: A point label marking each song except the first</span></h3>
-<dl><dd><span title="point label marking each song except the first"><img alt="ExportMultipleExample03.png" src="../m/images/2/27/exportmultipleexample03.png" width="628" height="207" /></span></dd>
-<dd>This is a case where you would want to check "Include audio before first label" and supply a file name in the "First file name" text box. 
-<ul><li>The first file will be named whatever is typed into the "First file name" text box and will contain the audio between the start of the track and the "Second song" label. </li>
-<li>Similarly the second file will be named "Second song" and will contain the audio between the "Second song" label and the "Third song" label, and so on for the rest of the labels. </li>
-<li>The last file will contain the audio from the last label to the end of the audio track.</div></li></ul></dd></dl>
-<p><br />
-</p>
-<div class="example"><h3><span class="mw-headline" id="Case_4:_Region_labels_marking_two_chosen_songs">Case 4: Region labels marking two chosen songs</span></h3>
-<dl><dd><span title="Region labels marking two selected songs"><img alt="ExportMultipleExample04.png" src="../m/images/4/42/exportmultipleexample04.png" width="627" height="209" /></span></dd>
-<dd>In this case we want to export only two songs - perhaps songs by the same artist from a compilation album. Each song is marked with a region label. 
-<ul><li>Only two files will be exported - "Second Song" and "Fourth Song" - corresponding to the audio spanned by those labels. No other audio will be exported.</div></li></ul></dd></dl>
-<p><br />
-</p>
-<div class="example"><h3><span class="mw-headline" id="Case_5:_A_mix_of_point_and_region_labels">Case 5: A mix of point and region labels</span></h3>
-<dl><dd><span title="a mix of point and region labels"><img alt="ExportMultipleExample05a.png" src="../m/images/3/32/exportmultipleexample05a.png" width="628" height="213" /></span></dd></dl>
-<p>In the case above we have an interview with a series of questions (upper track) and answers (lower track), and a concluding statement by the interviewer. We want to export the question-answer pairs and the interviewer's conclusion as separate files.  
-</p><p>In most cases the question-answer pairs follow one after another, so point labels are a quick and convenient way to mark them. However after the third answer, the interviewer is told by the studio manager that time is running out, and the two parties discuss this. We want to omit this exchange.  
-</p>
-<dl><dd><ul><li>We mark the start of the first two question-answer pairs with point labels "QA1" and QA2".</li>
-<li>We mark the third pair with a region label "QA3" since we want to omit the discussion about running out of time.</li>
-<li>We mark the start of the fourth pair with point label "QA4" and the start of the interviewer's conclusion with point label "Outro". </li></ul></dd></dl>
-<p>So this is what will be exported:
-</p>
-<dl><dd><ul><li>The first file will be named "QA1" and will include the audio between the "QA1" and "QA2" point labels.</li>
-<li>The second file will be named "QA2" and will include the audio between the "QA2" point label and the start of the "QA3" region label.</li>
-<li>The third file will be named "QA3" and will include the audio spanned by the "QA3" region label.</li>
-<li>The fourth file will be named "QA4" and will include the audio between the "QA4" and "QA5" point labels. Note that the audio between the end of the "QA3" region label and the "QA4" point label is not exported.</li>
-<li>The final file will be named "Outro" and will include the audio between the "Outro" label and the end. Had we decided to cut off the conclusion half way through, we would have selected what we wanted to keep and labeled that, producing a region label "Outro" instead. Then the audio beyond the "Outro" label would not have been exported. </li></ul></dd></dl>
-Note that in order to export the pairs and the conclusion excluding the interruption, we could equally have drawn region labels for each, similarly to Case 4 above. Had we needed to edit each of these regions individually before export, it might have made sense to label them as regions in any case.</div>
-
-<!-- 
+              <!-- 
 NewPP limit report
 Cached time: 20180917111921
 Cache expiry: 86400
@@ -186,7 +1942,7 @@ Highest expansion depth: 12/40
 Expensive parser function count: 11/100
 -->
 
-<!-- 
+              <!-- 
 Transclusion expansion time report (%,ms,calls,template)
 100.00%   46.452      1 - -total
  48.93%   22.728      1 - Template:I18n
@@ -200,77 +1956,322 @@ Transclusion expansion time report (%,ms,calls,template)
   4.23%    1.965      5 - Template:Example
 -->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:2791-0!*!0!!*!5!* and timestamp 20180917111921 and revision id 61883
+              <!-- Saved in parser cache with key helpmediawiki:pcache:idhash:2791-0!*!0!!*!5!* and timestamp 20180917111921 and revision id 61883
  -->
-</div>
-										<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			
-					
-				
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-					
-		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिका मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">प्रशिक्षण</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटी जियुआय</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू पट्टी</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टे</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">सानुकुलित ओड्यासिटी </span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">की-बाइंडिंग्ज</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
-		</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>संदर्भ</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
-		</div>
-		</div>
-		
-		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>उपयुक्त दुवे</h3>
-		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">व्यवहारज्ञान</a></span></li></ul>
-		</div>
-		</div>
-		
-			
-			</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									
-							</div>
-					<div id="f-poweredbyico">
-									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Export_Multiple">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
-</div>
-		</div>
-		</body></html>
+            </div>
+            <!-- end content -->
+            <div class="visualClear"></div>
+          </div>
+        </div>
+      </div>
+      <div id="column-one">
+        <div class="portlet" id="p-logo" role="banner">
+          <a
+            href="../index.html"
+            class="mw-wiki-logo"
+            title="Visit the main page"
+          ></a>
+        </div>
+
+        <div
+          class="generated-sidebar portlet"
+          id="p-Navigation"
+          role="navigation"
+        >
+          <h3>निर्देशांक</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <a href="../index.html" title="Main Page"
+                  ><span
+                    title="Front page, complete with clickable image of Audacity screen."
+                    >माहितीपुस्तिका मुखपृष्ठ</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="../index.html#using" title="Main Page"
+                  ><span
+                    title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics"
+                    >ओड्यासिटी वापरणे</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="audacity_tour_guide.html"
+                      title="Audacity Tour Guide"
+                      ><span
+                        title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those."
+                        >सहल मार्गदर्शक</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="new_features_in_this_release.html"
+                      title="New features in this release"
+                      ><span
+                        title="An overview of the key new functionality that has been introduced in this release"
+                        >नवीन वैशिष्ट्ये</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="../quick_help.html" title="Quick Help"
+                      ><span
+                        title="A brief guide to help you get started with Audacity"
+                        >प्रारंभ करणे</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="tutorials.html" title="Tutorials"
+                      ><span
+                        title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity"
+                        >प्रशिक्षण</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="tips.html" title="Tips"
+                      ><span
+                        title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment"
+                        >सल्ले</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../index.html#reference" title="Main Page"
+                  ><span
+                    title="The components of the Audacity Graphical User Interface"
+                    >ओड्यासिटी जियुआय</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a href="menu_reference.html" title="Menu Reference"
+                      ><span
+                        title="A guide to the menus and submenus in Audacity"
+                        >मेनू पट्टी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="toolbars_overview.html" title="Toolbars Overview"
+                      ><span
+                        title="A guide to the various Toolbars used in Audacity"
+                        >साधनपट्टी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tracks_menu_add_new.html"
+                      title="Tracks Menu: Add New"
+                      ><span title="A guide to the various types of track"
+                        >गीतपट्टे</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index_of_effects_generators_and_analyzers.html"
+                      title="Index of Effects, Generators and Analyzers"
+                      ><span
+                        title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity"
+                        >प्रभाव</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="customization.html" title="Customization"
+                  ><span
+                    title="Adjust settings, change key-bindings, add plug-ins"
+                    >सानुकुलित ओड्यासिटी
+                  </span></a
+                >
+                <ul>
+                  <li>
+                    <a href="preferences.html" title="Preferences"
+                      ><span
+                        title="A guide to Preferences, which let you change most of the default behaviors of Audacity"
+                        >प्राधान्ये</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="keyboard_shortcut_reference.html"
+                      title="Keyboard Shortcut Reference"
+                      ><span
+                        title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts"
+                        >की-बाइंडिंग्ज</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="installing_effect_generator_and_analyzer_plug_ins.html"
+                      title="Installing Effect, Generator and Analyzer plug-ins"
+                      ><span
+                        title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability."
+                        >प्लग-इन्स</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="generated-sidebar portlet"
+          id="p-Reference"
+          role="navigation"
+        >
+          <h3>संदर्भ</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <a href="../index.html#reference" title="Main Page"
+                  ><span
+                    title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more"
+                    >संदर्भ</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a href="digital_audio.html" title="Digital Audio"
+                      ><span title="A beginner&#39;s guide to digital audio"
+                        >डिजिटल ध्वनी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="glossary.html" title="Glossary"
+                      ><span
+                        title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations"
+                        >शब्दकोष</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="scripting_reference.html"
+                      title="Scripting Reference"
+                      ><span
+                        title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python"
+                        >सर्व आज्ञा</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="subject_index.html" title="Subject Index"
+                      ><span title="A short, limited, index of the Manual"
+                        >अनुक्रमणिका</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="faq.html" title="FAQ"
+                  ><span
+                    title="Frequently Asked Questions - most common questions are answered in the FAQ"
+                    >सामान्य प्रश्न</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="generated-sidebar portlet"
+          id="p-Useful_Links"
+          role="navigation"
+        >
+          <h3>उपयुक्त दुवे</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <span title="Audacity Forum (best place for support requests)"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://forum.audacityteam.org/index.php"
+                    >मंच</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Audacity Wiki Home Page"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page"
+                    >विकी</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Audacity Latest Release"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://www.audacityteam.org/download/"
+                    >नवीनतम प्रकाशन</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Visual &#39;What Is That?&#39; guide to Audacity"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://wit.audacityteam.org//"
+                    >व्यवहारज्ञान</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer" role="contentinfo">
+        <div id="f-copyrightico"></div>
+        <div id="f-poweredbyico">
+          <a href="https://www.mediawiki.org/"
+            ><img
+              src="../m/resources/assets/poweredby_mediawiki_88x31.png"
+              alt="Powered by MediaWiki"
+              srcset="
+                /m/resources/assets/poweredby_mediawiki_132x47.png 1.5x,
+                /m/resources/assets/poweredby_mediawiki_176x62.png 2x
+              "
+              width="88"
+              height="31"
+          /></a>
+        </div>
+
+        <div align="center">
+          <ul id="f_list">
+            <li>
+              ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
+              <a href="https://alphamanual.audacityteam.org/man/Export_Multiple"
+                >या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
