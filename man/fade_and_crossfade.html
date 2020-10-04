@@ -1,160 +1,1424 @@
 <!DOCTYPE html>
 <html class="client-nojs" lang="en" dir="ltr">
-<head>
-<meta charset="UTF-8"/>
-<title>Fade and Crossfade - Audacity Manual</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>फिकट आणि क्रॉसफेड &#8203;&#8203;- ओड्यासीटी माहितीपुस्तिका</title>
 
+    <!--[if IE 6
+      ]><link
+        rel="stylesheet"
+        href="../m/skins/monobook/ie60fixes.css/303.css"
+        media="screen"
+    /><![endif]-->
+    <!--[if IE 7
+      ]><link
+        rel="stylesheet"
+        href="../m/skins/monobook/ie70fixes.css/303.css"
+        media="screen"
+    /><![endif]-->
+    <meta name="ResourceLoaderDynamicStyles" content="" />
 
+    <meta name="generator" content="MediaWiki 1.28.2" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      href="https://alphamanual.audacityteam.org/m/opensearch_desc.php"
+      title="ओड्यासिटी डेव्हलपमेंट मॅन्युअल (इं)"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"
+    />
+    <link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
 
+    <link
+      rel="stylesheet"
+      href="../m/skins/monobook/main.css/303.css"
+      media="screen"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      charset="UTF-8"
+      href="https://translate.googleapis.com/translate_static/css/translateelement.css"
+    />
+  </head>
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
+  <body
+    class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Fade_and_Crossfade rootpage-Fade_and_Crossfade skin-monobook action-view"
+  >
+    <div id="globalWrapper">
+      <div id="column-content">
+        <div id="content" class="mw-body" role="main">
+          <a id="top"></a>
 
-<meta name="generator" content="MediaWiki 1.28.2"/>
-<link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+          <div class="mw-indicators"></div>
+          <h1 id="firstHeading" class="firstHeading" lang="en">
+            <font style="vertical-align: inherit">
+              <font style="vertical-align: inherit">फिकट आणि क्रॉसफेड</font>
+            </font>
+          </h1>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
-</head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Fade_and_Crossfade rootpage-Fade_and_Crossfade skin-monobook action-view"><div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
-</div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Fade and Crossfade</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Audacity Development Manual</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="https://alphamanual.audacityteam.org/man/Fade_and_Crossfade#searchInput">search</a></div>
+          <div id="bodyContent" class="mw-body-content">
+            <div id="siteSub">
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit"
+                  >ओड्यासिटी विकास माहितीपुस्तिकेवरुन</font
+                >
+              </font>
+            </div>
+            <div id="contentSub"></div>
+            <div id="jump-to-nav" class="mw-jump">
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit">येथे जा: </font> </font
+              ><a href="#column-one">
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">निर्देशांक</font>
+                </font>
+              </a>
+              <font style="vertical-align: inherit">
+                <font style="vertical-align: inherit"> , </font> </font
+              ><a
+                href="https://alphamanual.audacityteam.org/man/Distortion#searchInput"
+              >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">शोधा</font>
+                </font>
+              </a>
+            </div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro"><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Fade_%28audio_engineering%29">Fade</a> effects are among the most common effects used in audio production. They can be used to create a smooth lead in or a gradual end to a musical recording. Short fades can be useful for avoiding clicks at the beginning of an audio clip. They may be used to create a smooth transition from one piece of audio to another.
-<p>Fade effects frequently produce a transition from silence (fade in) or a transition to silence (fade out) but may equally refer to a transition from one volume level to another quieter or louder level. A crossfade is when one section of audio fades out while another fades in.</p>
-<div class="note">The standard fade types described on this page may be produced quickly and easily using the presets in the <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect.</div>
-</div>
-<h2><span class="mw-headline" id="Contents">Contents</span></h2>
-<ol><li><a href="#linear">Linear Fade</a></li>
-<li><a href="#exponential">Exponential Fade</a></li>
-<li><a href="#logarithmic">Logarithmic Fade</a></li>
-<li><a href="#equal">Equal Power Fade</a></li>
-<li><a href="#sine">Sine Curve Fade</a></li>
-<li><a href="#dj">DJ Crossfade Curve</a></li>
-<li><a href="#adjustable">Adjustable Fade</a></li>
-<li><a href="#envelope">Creating Fades with the Envelope Tool</a></li>
-<li><a href="#create">Creating a Crossfade</a></li>
-<li><a href="#examples">Examples</a></li></ol>
-<div id="linear"></div>
-<h2><span class="mw-headline" id="Linear_Fade">Linear Fade</span></h2>
-<div class="note">The default setting of the <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect produces a linear fade-in.
-<ul><li>Although fades commonly start or end at silence (fade-in and fade-out respectively), a fade is simply a transition from one <a href="glossary.html#amplitude" title="Glossary">amplitude</a> level to another. The <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect allows fading from any arbitrary level to any other level.</div></li></ul>
-<p>This is the most simple type of fade where the level rises or falls at a constant rate. A linear fade in from silence is easily created in Audacity using <span class="menu">Effect &gt; <a href="fades.html#linear_in" title="Fades">Fade In</a></span>. A linear fade out to silence is created using <span class="menu">Effect &gt; <a href="fades.html#linear_out" title="Fades">Fade Out</a></span>.
-</p><p>The "shape" of a fade is commonly described in terms that suggest the appearance of a constant level signal that has had the effect applied to it. For example, if a linear fade in is applied to a generated tone, the fade can be seen to follow a straight line from silence up to the original level.
-</p>
-<dl><dd><span title="Linear fade in of a sine wave"><img alt="Linear-fade-in.png" src="../m/images/1/1d/linear_fade_in.png" width="544" height="152" /></span></dd></dl>
-<div id="exponential"></div>
-<h2><span class="mw-headline" id="Exponential_Fade">Exponential Fade</span></h2>
-<div class="note">
-<p>The <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect has Exponential presets for fading in or out.
-</p>
-</div>
-</li></ul>
-<p>This is another very common fade type. Its popularity stems from the fact that it closely models the way in which sounds naturally decay. For example, comparing the waveform of a gunshot recording with that of a bell, we can clearly see that although the time scales are very different, the <i>shape</i> of the sound as it decays is very similar:
-</p>
-<dl><dd><span title="Gun shot waveform"><img alt="Gunshot.png" src="../m/images/1/10/gunshot.png" width="544" height="152" /></span></dd></dl>
-<dl><dd><span title="Bell ring waveform"><img alt="Bell.png" src="../m/images/6/6e/bell.png" width="544" height="152" /></span></dd></dl>
-<p>In Audacity, the <a href="envelope_tool.html" title="Envelope Tool">Envelope Tool</a> produces exponential fades.
-</p><p>A similar (but not identical) fade shape may be produced by applying a linear fade several times to the same selection. For example, here is a fade created by applying the Fade Out effect, then repeating it three times using the <span class="kbrd" style="background-color: #d0d0f8">Ctrl + R</span> shortcut (Repeat Last Effect).
-</p>
-<dl><dd><span title="Repeated fade-out"><img alt="Repeated-fade-out.png" src="../m/images/b/b2/repeated_fade_out.png" width="544" height="152" /></span></dd></dl>
-<p>Exponential curves may also be used as a fade-in.
-</p>
-<dl><dd><span title="Exponential Fade-in"><img alt="Exponential-fade-in.png" src="../m/images/e/e3/exponential_fade_in.png" width="544" height="152" /></span></dd></dl>
-<div id="logarithmic"></div>
-<h2><span class="mw-headline" id="Logarithmic_Fade">Logarithmic Fade</span></h2>
-<div class="note">
-<p>The <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect has Logarithmic presets for fading in or out.
-</p>
-</div>
-<p>Essentially the same as an <i>exponential</i> fade, but curving <i>the other way</i>.
-</p>
-<dl><dd><span title="Logarithmic fade-in"><img alt="Logarithmic-fade-in.png" src="../m/images/0/0b/logarithmic_fade_in.png" width="544" height="152" /></span></dd>
-<dd><span title="Logarithmic fade-out"><img alt="Logarithmic-fade-out.png" src="../m/images/5/57/logarithmic_fade_out.png" width="544" height="152" /></span></dd></dl>
-<div id="equal"></div>
-<h2><span class="mw-headline" id="Equal_Power_Fade">Equal Power Fade</span></h2>
-<div class="note">The "Cosine" presets in the <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect produce this type of fade.<br /></div>
-<p>If one sound is fading out while another sound is fading in, this is called a <a href="#create">crossfade</a>. A common problem when crossfading two sounds using linear fade effects is that the volume level may drop a little midway through the transition. To mitigate this problem it is common to use a fade shape that, compared to a linear fade, bows up in the middle, so that the volume level stays a little higher in the middle of the transition. One of the most commonly used crossfade shapes is an "Equal Power Fade"; so called because the average power (and hence loudness) remains fairly constant during a crossfade transition for music and other uncorrelated sounds.
-The next image shows two tracks, one with <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/White_noise">white noise</a> and one with <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Pink_noise">pink noise</a> that are crossfading using Equal Power Fades.
-</p>
-<dl><dd><span title="Crossfade white noise with pink noise with equal power fade"><img alt="Equal power cross-fade.png" src="../m/images/8/85/equal_power_cross_fade.png" width="529" height="323" /></span></dd></dl>
-<div id="sine"></div>
-<h2><span class="mw-headline" id="Sine_Curve_Fade">Sine Curve Fade</span></h2>
-<div class="note">
-<p>The "S-Curve" presets in the <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect produce this type of fade.
-</p>
-</div>
-<p>A <i>raised sine curve</i> (or cosine curve) is based on the shape of a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Sine_wave">sine wave</a>. This fade type is often used for fading out music as it produces a smoother, more <i>musical</i> sounding fade out than a linear fade. It is also sometimes used as an alternative to the <a href="#Equal_Power_Fade">Equal Power Fade</a> for crossfading as it avoids the possibility of the peak level increasing during the crossfade (Like linear fades, it produces an "Equal Gain" crossfade).
-</p>
-<dl><dd><span title="Raised cosine fade"><img alt="Raised-cosine-fade.png" src="../m/images/4/40/raised_cosine_fade.png" width="544" height="152" /></span></dd></dl>
-<div id="dj"></div>
-<h2><span class="mw-headline" id="DJ_Crossfade_Curve">DJ Crossfade Curve</span></h2>
-<p>DJ Mixers have a crossfade slide control that is essentially two faders back to back in one unit. Moved in one direction it will fade in source A and fade out source B, and when moved to the other extreme it will fade out source A and fade in source B. Early DJ mixing desks crossfaders produced a (roughly) <a href="#Equal_Power_Fade">equal power</a> crossfade, but in response to demand from DJs, other fade shapes were developed that have a more pronounced curve, thus making the mix more pronounced during the transition. More information about the history of DJ crossfaders can be found on the <a rel="nofollow" class="external text" href="http://www.rane.com/note146.html">Rane website</a>.
-</p><p>Modern DJ mixers provide a <i><b>curve</b></i> control to provide adjustment of the fade taper contour. This works in a similar manner to the <b>Mid-fade adjust</b> control in Audacity's <a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a> effect. The image below compares the shapes of an equal power fade with a high curve fade that is similar to what would be achieved by setting the curve control fairly high on a DJ mixer's crossfader.
-</p>
-<dl><dd><span title="Comparison of an equal power taper with a high curve taper"><img alt="High-curve.png" src="../m/images/f/f9/high_curve.png" width="566" height="297" /></span></dd></dl>
-<div id="adjustable"></div>
-<h2><span class="mw-headline" id="Adjustable_Fade"><a href="adjustable_fade.html" title="Adjustable Fade">Adjustable Fade</a></span></h2>
-<p>This is a more sophisticated and advanced fade that offers you settings to control the shape of the fade.
-</p><p>It enables you to increase or reduce the audio volume by a varying amount. This effect is more versatile than Fade In and Fade Out in that it can fade to or from any amplification level rather than only between silence and the original level.
-</p>
-<dl><dd><span title="Fade Up from 20&#160;% to 100&#160;%, Mid Fade Boost +50. Fade Down from 100&#160;% to 20&#160;%. Mid Fade Cut -50"><img alt="Adjustable-Fades-Simple-Curves.png" src="../m/images/7/7a/adjustable_fades_simple_curves.png" width="502" height="213" /></span></dd></dl>
-<div id="envelope"></div>
-<h2><span class="mw-headline" id="Creating_Fades_with_the_Envelope_Tool"><a href="creating_fades_with_the_envelope_tool.html" title="Creating Fades with the Envelope Tool">Creating Fades with the Envelope Tool</a></span></h2>
-<p>The main advantage of creating fades with the Envelope Tool is that it is <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Non-destructive_editing">non-destructive</a>. The envelope may be changed or removed at any time with no loss to the audio data.
-</p><p>See <a href="creating_fades_with_the_envelope_tool.html" title="Creating Fades with the Envelope Tool">this page</a> for details of how to use the <a href="envelope_tool.html" title="Envelope Tool">Envelope Tool</a> to create a fade.
-</p>
-<div id="create"></div>
-<h2><span class="mw-headline" id="Creating_a_Crossfade"><a href="creating_a_crossfade.html" title="Creating a Crossfade">Creating a Crossfade</a></span></h2>
-<p>The purpose of a crossfade is to produce a smooth transition between two sections of audio. The two sections overlap and as one section fades out the other fades in. This technique is commonly used by DJ's, for "compilation" tracks and <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Mashup_%28music%29">mashups</a>. The use of crossfades is not limited to joining pieces of music, but can be used in many other situations where a smooth transition is required, including editing speech recordings, extending songs, creating loops for audio sequencers, repairing damaged recordings and much more.
-</p><p>There are two crossfade effects available in Audacity
-</p>
-<ul><li> The first is a simple one which crossfades between two adjacent clips in the same track, see <a href="crossfade_clips.html" title="Crossfade Clips">Crossfade Clips</a></li>
-<li> The second is a more precise tool that crossfades between two separate audio tracks. See the <a href="crossfade_tracks.html" title="Crossfade Tracks">Crossfade Tracks</a> effect. For detailed information and advanced techniques, see: <a href="creating_a_crossfade.html" title="Creating a Crossfade">Creating a Crossfade</a>.</li></ul>
-<div id="examples"></div>
-<h2><span class="mw-headline" id="Examples">Examples</span></h2>
-<div class="example"><div id="declick"></div>
-<p><b>Example 1: Using a fade to remove a click from the start of a sound</b>
-</p>
-<div class="note"> When editing sounds, clicks can often be avoided by ensuring that edit points occur at <a href="edit_menu.html#zero" title="Edit Menu">zero crossing points</a> (where the waveform crosses the center zero line).</div>
-<p>If a sound starts suddenly, there will often be a noticeable click at the beginning. This is due to the waveform suddenly jumping from silence to the start of the waveform. This "jump" is often visible by <a href="zooming.html" title="Zooming">zooming</a> in closely on the start of the sound so you can see the original sample dots:
-</p>
-<dl><dd><span title="Audio starts at non-zero"><img alt="Click-at-start.png" src="../m/images/6/6b/click_at_start.png" width="564" height="144" /></span></dd></dl>
-<p>Applying a short, linear fade in can eliminate the click by smoothing the transition from silence to the start of the sound.
-</p>
-<dl><dd><span title="Fade in to eliminate click at start of audio"><img alt="Fade-in-start.png" src="../m/images/6/62/fade_in_start.png" width="564" height="144" /></span></div></dd></dl>
-<p><br />
-</p>
-<div class="example"><div id="backing"></div>
-<p><b>Example 2: Adding an extract of music to a presentation using fades</b>
-</p><p>For presentations, whether you are using PowerPoint, OpenOffice Impress, a slide show for YouTube or any other audio-video presentation, it is often desirable to include audio clips within the presentation. Rather than simply cutting a recording to the required length, applying a fade in and fade out to the audio clip can add a touch of professionalism to the production.
-</p><p>The duration of the fade as well as the shape of the fade are crucial to the overall effect. Typically an audio clip will have a relatively short fade in and a longer fade out, but there are no hard and fast rules. Audacity allows you to experiment with different fade lengths. When preparing audio clips for use in your presentation you can export several versions with differing fade lengths, then when putting together the presentation, try your alternative versions and use whichever you most like.
-</p><p>Fading in music with an <a href="#Exponential_Fade">exponential shape fade</a> is often very effective as you get a hint of the music first, then it rapidly fades to full volume. For fading out music, a <a href="#Sine_Curve_Fade">sine curve fade</a> often works well.
-</p>
-See also: <a href="mixing.html" title="Mixing">Mixing</a></div>
-<div id="other"></div>
-<h2><span class="mw-headline" id="Other_plug-ins_and_tools_for_fades"><a href="other_plug_ins_and_tools_for_fades.html" title="Other plug-ins and tools for fades">Other plug-ins and tools for fades</a></span></h2>
-<p>See <a href="other_plug_ins_and_tools_for_fades.html" title="Other plug-ins and tools for fades">this page</a> for details of other plug-ins and tools for making fades. The page carries information on the following:
-</p>
-<ul><li><a href="other_plug_ins_and_tools_for_fades.html#fade" title="Other plug-ins and tools for fades">Fade In and Out</a></li>
-<li><a href="other_plug_ins_and_tools_for_fades.html#envelope" title="Other plug-ins and tools for fades">Text Envelope</a></li>
-<li><a href="other_plug_ins_and_tools_for_fades.html#make_fade" title="Other plug-ins and tools for fades">Creating Fades from the Nyquist Prompt</a>.</li></ul>
+            <!-- start content -->
+            <div
+              id="mw-content-text"
+              lang="en"
+              dir="ltr"
+              class="mw-content-ltr"
+            >
+              <div class="intro">
+                <a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Fade_%28audio_engineering%29"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">फिकट</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    प्रभाव हे ध्वनि उत्पादनामध्ये वापरल्या जाणार्&zwj;या सर्वात
+                    सामान्य </font
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://en.wikipedia.org/wiki/Fade_%28audio_engineering%29"
+                  >
+                    <font style="vertical-align: inherit">परिणामापैकी एक</font>
+                  </a>
+                  <font style="vertical-align: inherit"> आहेत. </font>
+                  <font style="vertical-align: inherit"
+                    >ते सहजतेने तयार करण्यासाठी किंवा संगीतमय ध्वनिमुद्रणगचा
+                    हळूहळू शेवट तयार करण्यासाठी वापरले जाऊ शकतात.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >ध्वनि फीतच्या सुरूवातीस क्लिक टाळण्यासाठी शॉर्ट फीड्स
+                    उपयुक्त ठरू शकतात.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >त्यांचा वापर ध्वनिच्या तुकड्यातून दुसर्&zwj;या तुकड्यात
+                    गुळगुळीत संक्रमण तयार करण्यासाठी केला जाऊ शकतो.
+                  </font>
+                </font>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >फिकट प्रभाव वारंवार मौन (फेड इन) पासून संक्रमण किंवा
+                      शांततेत संक्रमण (फिकट आलेले) तयार करतात परंतु तितकेच ते
+                      एका खंड पातळीपासून दुसर्&zwj;या शांत किंवा मोठ्या
+                      पातळीपर्यंतच्या संक्रमणाचा देखील संदर्भ घेऊ शकतात.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >क्रॉसफेड &#8203;&#8203;जेव्हा ध्वनिचा एक विभाग संपतो
+                      तेव्हा दुसरा संपला.</font
+                    >
+                  </font>
+                </p>
+                <div class="note">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >या पृष्ठावरील वर्णित मानक फीड प्रकार
+                    </font> </font
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >समायोजित करण्याच्या फेड</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> प्रभावामधील </font>
+                    <font style="vertical-align: inherit"
+                      >प्रीसेट वापरुन द्रुत आणि सहज तयार केले जाऊ शकतात
+                    </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                </div>
+              </div>
+              <h2>
+                <span class="mw-headline" id="Contents">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">सामग्री</font>
+                  </font>
+                </span>
+              </h2>
+              <ol>
+                <li>
+                  <a href="#linear">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">रेषात्मक फिकट</font>
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#exponential">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">घातांक फिकट</font>
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#logarithmic">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >लॉगरिथमिक फिकट</font
+                      >
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#equal">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">समान उर्जा</font>
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#sine">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >साईन कर्व्ह फिकट</font
+                      >
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#dj">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >डीजे क्रॉसफेड &#8203;&#8203;कर्व्ह</font
+                      >
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#adjustable">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">समायोज्य फिकट</font>
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#envelope">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >लिफाफा उपकरणासह फेड तयार करणे</font
+                      >
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#create">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >क्रॉसफेड &#8203;&#8203;तयार करत आहे
+                      </font>
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a href="#examples">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">उदाहरणे</font>
+                    </font>
+                  </a>
+                </li>
+              </ol>
+              <div id="linear"></div>
+              <h2>
+                <span class="mw-headline" id="Linear_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">रेषात्मक फिकट</font>
+                  </font>
+                </span>
+              </h2>
+              <div class="note">
+                <font style="vertical-align: inherit"></font
+                ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">समायोज्य फॅड</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> परिणामाची </font>
+                  <font style="vertical-align: inherit">डीफॉल्ट सेटिंग </font>
+                  <font style="vertical-align: inherit"
+                    >एक रेखीय फॅड-इन तयार करते.
+                  </font>
+                </font>
+                <ul>
+                  <li>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >जरी फेड सामान्यत: शांततेत सुरू होतात किंवा समाप्ती
+                        होतात (अनुक्रमे फेड-इन आणि फीड-आऊट), फेड म्हणजे फक्त एक
+                      </font> </font
+                    ><a href="glossary.html#amplitude" title="शब्दकोष">
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit">मोठेपणाच्या</font>
+                      </font>
+                    </a>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">
+                        पातळीवरून दुसर्&zwj;या ठिकाणी
+                      </font>
+                      <font style="vertical-align: inherit">संक्रमण होते </font>
+                      <font style="vertical-align: inherit">. </font> </font
+                    ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                      <font style="vertical-align: inherit">
+                        <font style="vertical-align: inherit"
+                          >बदलानुकारी फिकट</font
+                        >
+                      </font>
+                    </a>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">
+                        परिणाम इतर कोणत्याही पातळीवर कोणत्याही अनियंत्रित पातळी
+                        fading परवानगी देते.</font
+                      >
+                    </font>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हा फेडण्याचा सर्वात सोपा प्रकार आहे जिथे पातळी वाढते किंवा
+                    स्थिर दराने पडते.
+                  </font> </font
+                ><span class="menu">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रभाव&gt;
+                    </font> </font
+                  ><a href="fades.html#linear_in" title="फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">फेड</font>
+                    </font>
+                  </a>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    इनचा वापर करून ओड्यासिटीमध्ये मौन पासून एक रेखीय फेड इन
+                    सहजपणे तयार केले जाते
+                  </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >शांततेसाठी एक रेषात्मक फीडआउट
+                  </font> </font
+                ><span class="menu">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रभाव&gt;
+                    </font> </font
+                  ><a href="fades.html#linear_out" title="फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">फॅड आउट</font>
+                    </font>
+                  </a>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    वापरुन तयार केला जातो
+                  </font>
+                  <font style="vertical-align: inherit">. </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >फिकटचा "आकार" सामान्यपणे अशा अटींमध्ये वर्णन केला जातो जे
+                    स्थिर स्तरीय सिग्नलचे स्वरूप सूचित करतात ज्यावर त्याचा
+                    प्रभाव लागू झाला आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >उदाहरणार्थ, व्युत्पन्न टोनवर एक रेखीय फॅड इन लागू केले
+                    असल्यास, फिकट शांततेपासून मूळ स्तरापर्यंत सरळ रेषेत अनुसरण
+                    केले जाऊ शकते.
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="साईन वेव्हमध्ये रेखीय फिकट"
+                    ><img
+                      alt="रेषात्मक-फिकट-इन.पीएनजी"
+                      src="../m/images/1/1d/linear_fade_in.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="exponential"></div>
+              <h2>
+                <span class="mw-headline" id="Exponential_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">घातांक फिकट</font>
+                  </font>
+                </span>
+              </h2>
+              <div class="note">
+                <p>
+                  <font style="vertical-align: inherit"></font
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >बदलानुकारी फिकट</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      परिणाम किंवा बाहेर fading साठी घातांकय टीप आहे.
+                    </font>
+                  </font>
+                </p>
+              </div>
 
-<!-- 
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हा आणखी एक सामान्य फॅड प्रकार आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >त्याची लोकप्रियता नैसर्गिकरित्या क्षय होण्याच्या ध्वनीचे
+                    अगदी जवळून मॉडेल करते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >उदाहरणार्थ, घंटाच्या तुलनेत बंदुकीच्या गोळीच्या
+                    ध्वनिमुद्रणगच्या वेव्हफॉर्मची तुलना करणे, आम्ही स्पष्टपणे
+                    पाहू शकतो की वेळेचे स्केल बरेच वेगळे असले तरी क्षणामुळे
+                    त्याचे
+                  </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">आकार</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> खूपच समान आहे: </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="गन शॉट वेव्हफॉर्म"
+                    ><img
+                      alt="गनशॉट.पीएनजी"
+                      src="../m/images/1/10/gunshot.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <dl>
+                <dd>
+                  <span title="बेल रिंग वेव्हफॉर्म"
+                    ><img
+                      alt="बेल.पेंग"
+                      src="../m/images/6/6e/bell.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >ओड्यासिटी मध्ये,
+                  </font> </font
+                ><a href="envelope_tool.html" title="लिफाफा साधन">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">लिफाफा साधन</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    घातांक फिक्का तयार करते.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >एक समान (परंतु सारखा नसलेला) फिकट आकार समान निवडीवर
+                    बर्&zwj;याच वेळा रेखीय फेड लावून तयार केला जाऊ शकतो.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >उदाहरणार्थ, येथे फेड आउट प्रभाव लागू करून तयार केलेले फीड
+                    आहे, त्यानंतर
+                  </font> </font
+                ><span class="kbrd" style="background-color: #d0d0f8">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">Ctrl + R</font>
+                  </font>
+                </span>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    शॉर्टकट (पुनरावृत्ती अंतिम परिणाम)
+                  </font>
+                  <font style="vertical-align: inherit">वापरून तीन वेळा </font>
+                  <font style="vertical-align: inherit">पुनरावृत्ती करा. </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="वारंवार फेड-आउट"
+                    ><img
+                      alt="पुन्हा-फेड-आउट.png"
+                      src="../m/images/b/b2/repeated_fade_out.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >घातांक वक्र फेड-इन म्हणून देखील वापरले जाऊ शकतात.
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="घातांकीय फेड-इन"
+                    ><img
+                      alt="घातांक-फेड-इन.पीएनजी"
+                      src="../m/images/e/e3/exponential_fade_in.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="logarithmic"></div>
+              <h2>
+                <span class="mw-headline" id="Logarithmic_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">लॉगरिथमिक फिकट</font>
+                  </font>
+                </span>
+              </h2>
+              <div class="note">
+                <p>
+                  <font style="vertical-align: inherit"></font
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >बदलानुकारी फिकट</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      परिणाम किंवा बाहेर fading साठी logarithmic टीप आहे.
+                    </font>
+                  </font>
+                </p>
+              </div>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">मूलत: </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">घातांकारी</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    फेडाप्रमाणेच, परंतु
+                  </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >दुसर्&zwj;या मार्गाने</font
+                    >
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> वक्र </font
+                  ><i>
+                    <font style="vertical-align: inherit">करणे</font>
+                  </i>
+                  <font style="vertical-align: inherit"> . </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="लॉगरिथमिक फॅड-इन"
+                    ><img
+                      alt="लोगारिथमिक-फेड-इन.पीएनजी"
+                      src="../m/images/0/0b/logarithmic_fade_in.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+                <dd>
+                  <span title="लॉगरिथमिक फीड-आउट"
+                    ><img
+                      alt="लोगारिथमिक-फिकट-आउट.पीएनजी"
+                      src="../m/images/5/57/logarithmic_fade_out.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="equal"></div>
+              <h2>
+                <span class="mw-headline" id="Equal_Power_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">समान उर्जा</font>
+                  </font>
+                </span>
+              </h2>
+              <div class="note">
+                <font style="vertical-align: inherit"></font
+                ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">समायोज्य फेड</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> प्रभावातील </font>
+                  <font style="vertical-align: inherit">"कोझिन" प्रीसेट </font>
+                  <font style="vertical-align: inherit">या प्रकारच्या </font
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">फिकट</font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    तयार करतात.</font
+                  > </font
+                ><br />
+              </div>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >जर एखादा आवाज संपत आहे आणि दुसरा आवाज खराब होत असेल तर
+                    त्याला
+                  </font> </font
+                ><a href="#create">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">क्रॉसफेड</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> असे म्हणतात </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >रेखीय फिकट प्रभाव वापरुन दोन ध्वनी क्रॉसफॅडिंग करताना एक
+                    सामान्य समस्या ही आहे की संक्रमणादरम्यान व्हॉल्यूमची पातळी
+                    थोडीशी खाली जाऊ शकते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >या समस्येचे निराकरण करण्यासाठी, एक फिकट आकार वापरणे सामान्य
+                    आहे जे रेषीय फिकटच्या तुलनेत मध्यभागी वाकते, जेणेकरून
+                    संक्रमणाच्या मध्यभागी खंड पातळी थोडी जास्त राहील.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >सर्वात सामान्यपणे वापरल्या जाणार्&zwj;या क्रॉसफेड
+                    &#8203;&#8203;आकारांपैकी एक म्हणजे "इक्वल पॉवर फेड";
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >असे म्हणतात कारण संगीत आणि इतर असंघटित ध्वनींसाठी क्रॉसफेड
+                    &#8203;&#8203;संक्रमणादरम्यान सरासरी शक्ती (आणि म्हणूनच
+                    जोरातपणा) बर्&zwj;यापैकी स्थिर राहते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >पुढील प्रतिमा दोन गीतपट्टा दर्शविते, एक
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/White_noise"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">पांढरा आवाजासह</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> आणि एक </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Pink_noise"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">गुलाबी गोंगासह</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    इक्वल पॉवर फेड्स वापरुन क्रॉसफॅडिंग होत आहे.
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span
+                    title="समान पॉवर फीडसह गुलाबी ध्वनीसह क्रॉसफेड &#8203;&#8203;पांढरा आवाज"
+                    ><img
+                      alt="समान शक्ती क्रॉस-फेड.पीएनजी"
+                      src="../m/images/8/85/equal_power_cross_fade.png"
+                      width="529"
+                      height="323"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="sine"></div>
+              <h2>
+                <span class="mw-headline" id="Sine_Curve_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >साईन कर्व्ह फिकट</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <div class="note">
+                <p>
+                  <font style="vertical-align: inherit"></font
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">समायोज्य फेड</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> परिणामामधील </font>
+                    <font style="vertical-align: inherit"
+                      >"एस-कर्व्ह" प्रीसेट
+                    </font>
+                    <font style="vertical-align: inherit">या प्रकारच्या </font
+                    ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                      <font style="vertical-align: inherit">फिकट</font>
+                    </a>
+                    <font style="vertical-align: inherit"> तयार करतात. </font>
+                  </font>
+                </p>
+              </div>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">एक </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">न वक्र असण्याचा</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    (किंवा कोसाइन वक्र) एक आकार आधारित आहे
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Sine_wave"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">न लाट</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> . </font>
+                  <font style="vertical-align: inherit"
+                    >हा फेडचा प्रकार बहुतेक वेळा संगीताच्या लुप्त होण्याकरिता
+                    वापरला जातो कारण यामुळे
+                  </font>
+                  <font style="vertical-align: inherit">रेखीय फिकटपेक्षा </font>
+                  <font style="vertical-align: inherit"
+                    >नितळ, अधिक
+                  </font> </font
+                ><i>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">संगीतमय</font>
+                  </font>
+                </i>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> ध्वनी </font>
+                  <font style="vertical-align: inherit">निघते </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >क्रॉसफेडिंगसाठी
+                  </font> </font
+                ><a href="#Equal_Power_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >इक्वल पॉवर फॅडचा</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    पर्याय म्हणून कधीकधी याचा वापर देखील केला जातो कारण
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >यामुळे क्रॉसफेड &#8203;&#8203;दरम्यान पीक पातळी वाढण्याची
+                    शक्यता टाळली जाते (रेखीय फिकटांप्रमाणेच हे "इक्वल गेन"
+                    क्रॉसफेड &#8203;&#8203;तयार करते).
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="उंचावलेले कोसाइन फिकट"
+                    ><img
+                      alt="उदित-कोसाइन-फेड.पीएनजी"
+                      src="../m/images/4/40/raised_cosine_fade.png"
+                      width="544"
+                      height="152"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="dj"></div>
+              <h2>
+                <span class="mw-headline" id="DJ_Crossfade_Curve">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >डीजे क्रॉसफेड &#8203;&#8203;कर्व्ह</font
+                    >
+                  </font>
+                </span>
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >डीजे मिक्सर्सचे क्रॉसफेड &#8203;&#8203;स्लाइड नियंत्रण असते
+                    जे मूलत: दोन युक्त्या परत एका युनिटमध्ये होते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >एका दिशेने हलविले गेले तर ते स्त्रोत अ मध्ये फिकट होईल आणि
+                    स्त्रोत बी संपुष्टात येईल आणि दुसर्&zwj;या टोकाला हलविल्यास
+                    ते स्रोत अ कोसळेल आणि स्त्रोत बी मध्ये कोमेजेल. आरंभिक डीजे
+                    मिक्सिंग डेस्क क्रॉसफेडर्सने (अंदाजे)
+                  </font> </font
+                ><a href="#Equal_Power_Fade">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">समान पॉवर</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    क्रॉसफेड &#8203;&#8203;तयार केले, परंतु डीजेच्या मागणीस
+                    प्रतिसाद म्हणून, इतर फिकट आकार विकसित केले गेले जे अधिक
+                    स्पष्ट वक्र आहेत, ज्यामुळे संक्रमणादरम्यान हे मिश्रण अधिक
+                    स्पष्ट होते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >डीजे क्रॉसफाडर्सच्या इतिहासाबद्दल अधिक माहिती
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="http://www.rane.com/note146.html"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">राणे वेबसाइटवर</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> आढळू शकते </font>
+                  <font style="vertical-align: inherit">. </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >फेड टेपर कॉन्टूरचे समायोजन
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >करण्यासाठी आधुनिक डीजे मिक्सर एक
+                  </font> </font
+                ><i
+                  ><b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">वक्र</font>
+                    </font>
+                  </b></i
+                >
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    नियंत्रण प्रदान करतात.
+                  </font>
+                  <font style="vertical-align: inherit">हे </font>
+                  <font style="vertical-align: inherit">ओड्यासिटी </font
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">Adडजेस्टेबल फेड</font>
+                  </a>
+                  <font style="vertical-align: inherit"> प्रभाव </font>
+                  <font style="vertical-align: inherit">मधील </font> </font
+                ><b>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मिड-फेड adjust </font>
+                  </font>
+                </b>
+                <font style="vertical-align: inherit"></font
+                ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">डजस्ट</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> कंट्रोल </font>
+                  <font style="vertical-align: inherit"
+                    >प्रमाणेच कार्य करते
+                  </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >खाली दिलेली प्रतिमे उच्च वक्र फेडसह समान पॉवर फेडच्या
+                    आकारांची तुलना करते जी डीजे मिक्सरच्या क्रॉसफेडरवर कर्व्ह
+                    नियंत्रण ब high्यापैकी सेट करुन प्राप्त केली जाऊ शकते.
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span title="उच्च वक्र टेपरसह समान पॉवर टेपरची तुलना"
+                    ><img
+                      alt="उच्च-वक्र.पीएनजी"
+                      src="../m/images/f/f9/high_curve.png"
+                      width="566"
+                      height="297"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="adjustable"></div>
+              <h2>
+                <span class="mw-headline" id="Adjustable_Fade"
+                  ><a href="adjustable_fade.html" title="समायोज्य फिकट">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">समायोज्य फिकट</font>
+                    </font>
+                  </a></span
+                >
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हे अधिक परिष्कृत आणि प्रगत फेड आहे जे आपल्याला फॅडचा आकार
+                    नियंत्रित करण्यासाठी सेटिंग्ज ऑफर करते.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >हे आपल्याला भिन्न प्रमाणात ध्वनि व्हॉल्यूम वाढविण्यास किंवा
+                    कमी करण्यास सक्षम करते.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >हा प्रभाव फॅड इन आणि फॅड आऊटपेक्षा अधिक अष्टपैलू आहे
+                    ज्यामध्ये तो केवळ शांतता आणि मूळ पातळीच्या दरम्यान
+                    नसण्याऐवजी कोणत्याही वर्धित स्तरावर किंवा तो कोमेजतो.
+                  </font>
+                </font>
+              </p>
+              <dl>
+                <dd>
+                  <span
+                    title="फॅड अप 20% ते 100% पर्यंत, मिड फेड बूस्ट +50.  फेड डाउन 100% वरून 20% पर्यंत.  मिड फेड कट -50"
+                    ><img
+                      alt="Justडजेस्टेबल-फेड्स-सिंपल-कर्व्ह.पीएनजी"
+                      src="../m/images/7/7a/adjustable_fades_simple_curves.png"
+                      width="502"
+                      height="213"
+                  /></span>
+                </dd>
+              </dl>
+              <div id="envelope"></div>
+              <h2>
+                <span
+                  class="mw-headline"
+                  id="Creating_Fades_with_the_Envelope_Tool"
+                  ><a
+                    href="creating_fades_with_the_envelope_tool.html"
+                    title="लिफाफा उपकरणासह फेड तयार करणे"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >लिफाफा उपकरणासह फेड तयार करणे</font
+                      >
+                    </font>
+                  </a></span
+                >
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >लिफाफा साधनासह फिकट तयार करण्याचा मुख्य फायदा म्हणजे तो
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Non-destructive_editing"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >विना-विध्वंसक आहे</font
+                    >
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> . </font>
+                  <font style="vertical-align: inherit"
+                    >ध्वनि डेटाचे नुकसान न करता लिफाफा कधीही बदलला किंवा काढला
+                    जाऊ शकतो.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >फेड तयार करण्यासाठी </font
+                  ><a href="envelope_tool.html" title="लिफाफा साधन">
+                    <font style="vertical-align: inherit">लिफाफा साधन</font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    कसे वापरावे या तपशीलांसाठी
+                  </font> </font
+                ><a
+                  href="creating_fades_with_the_envelope_tool.html"
+                  title="लिफाफा उपकरणासह फेड तयार करणे"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">हे पृष्ठ</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> पहा </font>
+                  <font style="vertical-align: inherit">. </font> </font
+                ><a href="envelope_tool.html" title="लिफाफा साधन">
+                  <font style="vertical-align: inherit"></font>
+                </a>
+                <font style="vertical-align: inherit"></font>
+              </p>
+              <div id="create"></div>
+              <h2>
+                <span class="mw-headline" id="Creating_a_Crossfade"
+                  ><a
+                    href="creating_a_crossfade.html"
+                    title="क्रॉसफेड &#8203;&#8203;तयार करत आहे"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >क्रॉसफेड &#8203;&#8203;तयार करत आहे
+                      </font>
+                    </font>
+                  </a></span
+                >
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >क्रॉसफेडचा उद्देश ध्वनिच्या दोन विभागांमध्ये सहज संक्रमण
+                    निर्माण करणे आहे.
+                  </font>
+                  <font style="vertical-align: inherit"
+                    >दोन विभाग ओव्हरलॅप होतात आणि एक विभाग म्हणून इतर फीके आतून
+                    कमी होतात. हे तंत्र सामान्यत: डीजे च्या द्वारे, "संकलन"
+                    गीतपट्टा आणि
+                  </font> </font
+                ><a
+                  rel="nofollow"
+                  class="external text"
+                  href="https://en.wikipedia.org/wiki/Mashup_%28music%29"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मॅशअपसाठी</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> वापरले जाते </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >क्रॉसफेड्सचा वापर केवळ संगीताच्या तुकड्यांमध्ये सामील
+                    होण्यापुरता मर्यादित नाही, परंतु भाषणातील ध्वनिमुद्रणग
+                    संपादित करणे, गाणे वाढविणे, ध्वनि सिक्वेंसरसाठी पळवाट तयार
+                    करणे, खराब झालेले ध्वनिमुद्रणग दुरुस्त करणे आणि बरेच काही
+                    यासह इतर अनेक परिस्थितींमध्ये सहज संक्रमण आवश्यक आहे.
+                  </font>
+                </font>
+              </p>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >ओड्यासिटीमध्ये दोन क्रॉसफेड &#8203;&#8203;प्रभाव उपलब्ध
+                    आहेत
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >प्रथम एक सोपा आहे जो समान गीतपट्टाच्या दोन जवळील फीत
+                      दरम्यान </font
+                    ><a
+                      href="crossfade_clips.html"
+                      title="क्रॉसफेड &#8203;&#8203;फीत"
+                    >
+                      <font style="vertical-align: inherit"
+                        >क्रॉसफेड &#8203;&#8203;करतो</font
+                      >
+                    </a>
+                    <font style="vertical-align: inherit"> , </font
+                    ><a
+                      href="crossfade_clips.html"
+                      title="क्रॉसफेड &#8203;&#8203;फीत"
+                    >
+                      <font style="vertical-align: inherit"
+                        >क्रॉसफेड &#8203;&#8203;फीत</font
+                      >
+                    </a>
+                    <font style="vertical-align: inherit"> पहा</font> </font
+                  ><a
+                    href="crossfade_clips.html"
+                    title="क्रॉसफेड &#8203;&#8203;फीत"
+                  >
+                    <font style="vertical-align: inherit"></font>
+                  </a>
+                </li>
+                <li>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >दुसरे एक अधिक अचूक साधन आहे जे दोन स्वतंत्र ध्वनि
+                      गीतपट्टा दरम्यान क्रॉसफेड &#8203;&#8203;करते.
+                    </font> </font
+                  ><a
+                    href="crossfade_tracks.html"
+                    title="क्रॉसफेड &#8203;&#8203;गीतपट्टा"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >क्रॉसफेड &#8203;&#8203;गीतपट्टा</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> प्रभाव </font>
+                    <font style="vertical-align: inherit">पहा </font>
+                    <font style="vertical-align: inherit">. </font>
+                    <font style="vertical-align: inherit"
+                      >तपशीलवार माहिती आणि प्रगत तंत्रांसाठी पहा:
+                    </font> </font
+                  ><a
+                    href="creating_a_crossfade.html"
+                    title="क्रॉसफेड &#8203;&#8203;तयार करत आहे"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >क्रॉसफेड &#8203;&#8203;तयार करणे</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> .</font>
+                  </font>
+                </li>
+              </ul>
+              <div id="examples"></div>
+              <h2>
+                <span class="mw-headline" id="Examples">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">उदाहरणे</font>
+                  </font>
+                </span>
+              </h2>
+              <div class="example">
+                <div id="declick"></div>
+                <p>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >उदाहरण 1: आवाज सुरू झाल्यापासून क्लिक काढण्यासाठी फिकट
+                        वापरणे</font
+                      >
+                    </font>
+                  </b>
+                </p>
+                <div class="note">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >ध्वनी संपादित करताना,
+                    </font> </font
+                  ><a href="edit_menu.html#zero" title="मेनू संपादित करा">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >शून्य क्रॉसिंग पॉईंट्सवर</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      (जेथे व्ह्यूफॉर्म मध्यभागी शून्य रेषा ओलांडला जातो)
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >संपादन बिंदू आढळतात हे सुनिश्चित करून क्लिक वारंवार टाळता
+                      येऊ शकतात
+                    </font>
+                    <font style="vertical-align: inherit">.</font>
+                  </font>
+                </div>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >आवाज अचानक सुरू झाला तर सुरुवातीस सहज लक्षात येण्याजोगे
+                      क्लिक दिसेल.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >हे वेव्हफॉर्मच्या अचानक शांततेपासून वेव्हफॉर्मच्या
+                      प्रारंभापर्यंत उडी मारल्यामुळे होते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >ध्वनीच्या सुरूवातीस जवळून
+                    </font> </font
+                  ><a href="zooming.html" title="झूम करत आहे">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">झूम</font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      करून हे "जंप" सहसा दृश्यमान असते
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >जेणेकरुन आपण मूळ नमुना ठिपके पाहू शकाल:
+                    </font>
+                  </font>
+                </p>
+                <dl>
+                  <dd>
+                    <span title="ध्वनि शून्य नसल्यास सुरू होते"
+                      ><img
+                        alt="क्लिक-एट-स्टार्ट.पीएनजी"
+                        src="../m/images/6/6b/click_at_start.png"
+                        width="564"
+                        height="144"
+                    /></span>
+                  </dd>
+                </dl>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >एक लहान, रेषात्मक फिकट इन वापरणे शांततेपासून आवाजाच्या
+                      प्रारंभापर्यंत संक्रमण सहजतेने क्लिकला दूर करते.
+                    </font>
+                  </font>
+                </p>
+                <dl>
+                  <dd>
+                    <span
+                      title="ध्वनिच्या सुरूवातीस क्लिक दूर करण्यासाठी फिकट इन"
+                      ><img
+                        alt="फेड-इन-स्टार्ट.पीएनजी"
+                        src="../m/images/6/62/fade_in_start.png"
+                        width="564"
+                        height="144"
+                    /></span>
+                  </dd>
+                </dl>
+              </div>
+              <p><br /></p>
+              <div class="example">
+                <div id="backing"></div>
+                <p>
+                  <b>
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >उदाहरण २: फेडचा वापर करून सादरीकरणात संगीताचे अर्क
+                        जोडणे</font
+                      >
+                    </font>
+                  </b>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >सादरीकरणासाठी, आपण पॉवर पॉईंट, ओपनऑफिस इम्प्रेस, YouTube
+                      चा एक स्लाइड शो किंवा इतर कोणत्याही ध्वनि-व्हिडिओ
+                      सादरीकरणाचा वापर करीत असलात तरी, सादरीकरणात ध्वनि फीत
+                      समाविष्ट करणे नेहमीच योग्य आहे.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >केवळ आवश्यक लांबीचे ध्वनिमुद्रणग कापण्याऐवजी फिड इन आणि
+                      ध्वनि फीतवर फीक आउट केल्यामुळे उत्पादनामध्ये
+                      व्यावसायिकतेचा स्पर्श वाढू शकतो.
+                    </font>
+                  </font>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >फेडचा कालावधी तसेच फीडचा आकार संपूर्ण परिणामासाठी
+                      निर्णायक आहे.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >सामान्यत: ध्वनि फीतमध्ये तुलनेने शॉर्ट फीड आणि जास्त काळ
+                      फॅड आउट होते, परंतु कठोर आणि वेगवान नियम नाहीत.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >ओड्यासिटीपणा आपल्याला विविध फॅड लांबीसह प्रयोग करण्यास
+                      अनुमती देते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >आपल्या सादरीकरणात वापरण्यासाठी ध्वनि फीत्स तयार करताना
+                      आपण भिन्न फॅड लांबीसह बर्&zwj;याच आवृत्त्या निर्यात करू
+                      शकता, नंतर सादरीकरण एकत्रित करताना, आपल्या वैकल्पिक
+                      आवृत्त्या वापरून पहा आणि आपल्याला ज्या आवडीनुसार वापरा.
+                    </font>
+                  </font>
+                </p>
+                <p>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"
+                      >आपणास प्रथम संगीताचा इशारा मिळाला, तेव्हा
+                    </font> </font
+                  ><a href="#Exponential_Fade">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >घातांसारख्या आकाराच्या फॅकेसह</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      संगीतामध्ये विखुरणे
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >बर्&zwj;याच प्रभावी असतात, नंतर ते द्रुतगतीने पूर्ण खंडात
+                      विलीन होते.
+                    </font>
+                    <font style="vertical-align: inherit"
+                      >लुप्त होणार्&zwj;या संगीतासाठी, एक
+                    </font> </font
+                  ><a href="#Sine_Curve_Fade">
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >साइन वक्र फिकट</font
+                      >
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">
+                      सहसा चांगले कार्य करते.
+                    </font>
+                  </font>
+                </p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit">
+                    हे देखील पहा:
+                  </font> </font
+                ><a href="mixing.html" title="मिक्सिंग">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">मिश्रण</font>
+                  </font>
+                </a>
+              </div>
+              <div id="other"></div>
+              <h2>
+                <span
+                  class="mw-headline"
+                  id="Other_plug-ins_and_tools_for_fades"
+                  ><a
+                    href="other_plug_ins_and_tools_for_fades.html"
+                    title="फेडसाठी इतर प्लगइन आणि साधने"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >फेडसाठी इतर प्लगइन आणि साधने</font
+                      >
+                    </font>
+                  </a></span
+                >
+              </h2>
+              <p>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"
+                    >इतर प्लगइन आणि फॅड बनविण्याच्या साधनांच्या तपशीलांसाठी
+                  </font> </font
+                ><a
+                  href="other_plug_ins_and_tools_for_fades.html"
+                  title="फेडसाठी इतर प्लगइन आणि साधने"
+                >
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">हे पृष्ठ</font>
+                  </font>
+                </a>
+                <font style="vertical-align: inherit">
+                  <font style="vertical-align: inherit"> पहा </font>
+                  <font style="vertical-align: inherit">. </font>
+                  <font style="vertical-align: inherit"
+                    >पृष्ठावर खालील माहिती आहेः
+                  </font>
+                </font>
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="other_plug_ins_and_tools_for_fades.html#fade"
+                    title="फेडसाठी इतर प्लगइन आणि साधने"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >फेड इन अँड आऊट</font
+                      >
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="other_plug_ins_and_tools_for_fades.html#envelope"
+                    title="फेडसाठी इतर प्लगइन आणि साधने"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit">मजकूर लिफाफा</font>
+                    </font>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="other_plug_ins_and_tools_for_fades.html#make_fade"
+                    title="फेडसाठी इतर प्लगइन आणि साधने"
+                  >
+                    <font style="vertical-align: inherit">
+                      <font style="vertical-align: inherit"
+                        >नायक्विस्ट प्रॉमप्टपासून फेड तयार करणे
+                      </font>
+                    </font>
+                  </a>
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit"> .</font>
+                  </font>
+                </li>
+              </ul>
+
+              <!-- 
 NewPP limit report
 Cached time: 20180917112329
 Cache expiry: 86400
@@ -169,7 +1433,7 @@ Highest expansion depth: 12/40
 Expensive parser function count: 11/100
 -->
 
-<!-- 
+              <!-- 
 Transclusion expansion time report (%,ms,calls,template)
 100.00%   37.579      1 - -total
  56.86%   21.368      1 - Template:I18n
@@ -183,77 +1447,323 @@ Transclusion expansion time report (%,ms,calls,template)
   5.84%    2.195      2 - Template:Example
 -->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:4933-0!*!0!!*!5!* and timestamp 20180917112329 and revision id 57326
+              <!-- Saved in parser cache with key helpmediawiki:pcache:idhash:4933-0!*!0!!*!5!* and timestamp 20180917112329 and revision id 57326
  -->
-</div>
-										<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			
-					
-				
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-					
-		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिका मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">प्रशिक्षण</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटी जियुआय</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू पट्टी</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टे</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">सानुकुलित ओड्यासिटी </span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">की-बाइंडिंग्ज</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
-		</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-		<h3>संदर्भ</h3>
-		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
-<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
-<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
-		</div>
-		</div>
-		
-		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>उपयुक्त दुवे</h3>
-		<div class='pBody'>
-			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
-<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">व्यवहारज्ञान</a></span></li></ul>
-		</div>
-		</div>
-		
-			
-			</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									
-							</div>
-					<div id="f-poweredbyico">
-									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Fade_and_Crossfade">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
-</div>
-		</div>
-		</body></html>
+            </div>
+            <!-- end content -->
+            <div class="visualClear"></div>
+          </div>
+        </div>
+      </div>
+      <div id="column-one">
+        <div class="portlet" id="p-logo" role="banner">
+          <a
+            href="../index.html"
+            class="mw-wiki-logo"
+            title="Visit the main page"
+          ></a>
+        </div>
+
+        <div
+          class="generated-sidebar portlet"
+          id="p-Navigation"
+          role="navigation"
+        >
+          <h3>निर्देशांक</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <a href="../index.html" title="Main Page"
+                  ><span
+                    title="Front page, complete with clickable image of Audacity screen."
+                    >माहितीपुस्तिका मुखपृष्ठ</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="../index.html#using" title="Main Page"
+                  ><span
+                    title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics"
+                    >ओड्यासिटी वापरणे</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="audacity_tour_guide.html"
+                      title="Audacity Tour Guide"
+                      ><span
+                        title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those."
+                        >सहल मार्गदर्शक</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="new_features_in_this_release.html"
+                      title="New features in this release"
+                      ><span
+                        title="An overview of the key new functionality that has been introduced in this release"
+                        >नवीन वैशिष्ट्ये</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="../quick_help.html" title="Quick Help"
+                      ><span
+                        title="A brief guide to help you get started with Audacity"
+                        >प्रारंभ करणे</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="tutorials.html" title="Tutorials"
+                      ><span
+                        title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity"
+                        >प्रशिक्षण</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="tips.html" title="Tips"
+                      ><span
+                        title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment"
+                        >सल्ले</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../index.html#reference" title="Main Page"
+                  ><span
+                    title="The components of the Audacity Graphical User Interface"
+                    >ओड्यासिटी जियुआय</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a href="menu_reference.html" title="Menu Reference"
+                      ><span
+                        title="A guide to the menus and submenus in Audacity"
+                        >मेनू पट्टी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="toolbars_overview.html" title="Toolbars Overview"
+                      ><span
+                        title="A guide to the various Toolbars used in Audacity"
+                        >साधनपट्टी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tracks_menu_add_new.html"
+                      title="Tracks Menu: Add New"
+                      ><span title="A guide to the various types of track"
+                        >गीतपट्टे</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index_of_effects_generators_and_analyzers.html"
+                      title="Index of Effects, Generators and Analyzers"
+                      ><span
+                        title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity"
+                        >प्रभाव</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="customization.html" title="Customization"
+                  ><span
+                    title="Adjust settings, change key-bindings, add plug-ins"
+                    >सानुकुलित ओड्यासिटी
+                  </span></a
+                >
+                <ul>
+                  <li>
+                    <a href="preferences.html" title="Preferences"
+                      ><span
+                        title="A guide to Preferences, which let you change most of the default behaviors of Audacity"
+                        >प्राधान्ये</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="keyboard_shortcut_reference.html"
+                      title="Keyboard Shortcut Reference"
+                      ><span
+                        title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts"
+                        >की-बाइंडिंग्ज</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="installing_effect_generator_and_analyzer_plug_ins.html"
+                      title="Installing Effect, Generator and Analyzer plug-ins"
+                      ><span
+                        title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability."
+                        >प्लग-इन्स</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="generated-sidebar portlet"
+          id="p-Reference"
+          role="navigation"
+        >
+          <h3>संदर्भ</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <a href="../index.html#reference" title="Main Page"
+                  ><span
+                    title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more"
+                    >संदर्भ</span
+                  ></a
+                >
+                <ul>
+                  <li>
+                    <a href="digital_audio.html" title="Digital Audio"
+                      ><span title="A beginner&#39;s guide to digital audio"
+                        >डिजिटल ध्वनी</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="glossary.html" title="Glossary"
+                      ><span
+                        title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations"
+                        >शब्दकोष</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="scripting_reference.html"
+                      title="Scripting Reference"
+                      ><span
+                        title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python"
+                        >सर्व आज्ञा</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="subject_index.html" title="Subject Index"
+                      ><span title="A short, limited, index of the Manual"
+                        >अनुक्रमणिका</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="faq.html" title="FAQ"
+                  ><span
+                    title="Frequently Asked Questions - most common questions are answered in the FAQ"
+                    >सामान्य प्रश्न</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="generated-sidebar portlet"
+          id="p-Useful_Links"
+          role="navigation"
+        >
+          <h3>उपयुक्त दुवे</h3>
+          <div class="pBody">
+            <ul>
+              <li>
+                <span title="Audacity Forum (best place for support requests)"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://forum.audacityteam.org/index.php"
+                    >मंच</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Audacity Wiki Home Page"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page"
+                    >विकी</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Audacity Latest Release"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://www.audacityteam.org/download/"
+                    >नवीनतम प्रकाशन</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span title="Visual &#39;What Is That?&#39; guide to Audacity"
+                  ><a
+                    rel="nofollow"
+                    class="external text"
+                    href="https://wit.audacityteam.org//"
+                    >व्यवहारज्ञान</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer" role="contentinfo">
+        <div id="f-copyrightico"></div>
+        <div id="f-poweredbyico">
+          <a href="https://www.mediawiki.org/"
+            ><img
+              src="../m/resources/assets/poweredby_mediawiki_88x31.png"
+              alt="Powered by MediaWiki"
+              srcset="
+                /m/resources/assets/poweredby_mediawiki_132x47.png 1.5x,
+                /m/resources/assets/poweredby_mediawiki_176x62.png 2x
+              "
+              width="88"
+              height="31"
+          /></a>
+        </div>
+
+        <div align="center">
+          <ul id="f_list">
+            <li>
+              ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
+              <a
+                href="https://alphamanual.audacityteam.org/man/Fade_and_Crossfade"
+                >या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
