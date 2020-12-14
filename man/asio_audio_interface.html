@@ -2,7 +2,7 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>ASIO ध्वनी इंटरफेस - ओड्यासिटी माहितीपुस्तिका</title>
+<title>ASIO ध्वनी इंटरफेस - ऑड्यासिटी माहितीपुस्तिका</title>
 
 
 
@@ -28,21 +28,21 @@
 				<h1 id="firstHeading" class="firstHeading" lang="en">ASIO ध्वनी इंटरफेस</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ओड्यासिटी विकास माहितीपुस्तिका वरुन</div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिका वरुन</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">येथून जा: <a href="#column-one">सुचालन</a>, <a href="https://alphamanual.audacityteam.org/man/ASIO_Audio_Interface#searchInput">शोध</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/ASIO_Audio_Interface#searchInput">शोध</a></div>
 
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">विंडोजवर कमी <a href="glossary.html#latency" title="Glossary">विलंब</a> मुद्रण आणि प्लेबॅकसाठी मालकीचे <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Audio_Stream_Input/Output">एएसआयओ</a> इंटरफेस मानक आवश्यक आहे. विंडोजवर <a href="multi_channel_recording.html" title="Multi-channel Recording">बहु-वाहिनी</a> मुद्रण बनविण्याचा हा देखील एक चांगला मार्ग आहे. 
-<ul><li>परवाना प्रतिबंध आम्हाला ओड्यासिटीच्या प्रकाशन झालेल्या आवृत्त्यांमध्ये एएसआयओ समर्थनासहित प्रतिबंधित करते, परंतु खाजगी, वितरित न करण्यायोग्य वापरासाठी एएसआयओ समर्थनासह ओड्यासिटी संकलित केली जाऊ शकते. </li>
+<ul><li>परवाना प्रतिबंध आम्हाला ऑड्यासिटीच्या प्रकाशन झालेल्या आवृत्त्यांमध्ये एएसआयओ समर्थनासहित प्रतिबंधित करते, परंतु खाजगी, वितरित न करण्यायोग्य वापरासाठी एएसआयओ समर्थनासह ऑड्यासिटी संकलित केली जाऊ शकते. </li>
 <li>हे पृष्ठ एएसआयओ परवाना देणार्‍या समस्यांचा आणि एएसआयओ समर्थनासह ऑडॅसिटीचे संकलन करण्याच्या चरणांचे सारांश देते. </div></li></ul>
 <p><br />
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Latencies_on_Windows.2C_Linux_and_Mac"><span class="tocnumber">१</span> <span class="toctext">विंडोज, लिनक्स आणि मॅकवरील विलंब</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Audacity_and_ASIO"><span class="tocnumber">२</span> <span class="toctext">ओड्यासिटी आणि एएसआयओ</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Non-distributable_ASIO_support_in_Audacity"><span class="tocnumber">३</span> <span class="toctext">ओड्यासिटीमध्ये न वितरणीय एएसआयओ समर्थन</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Audacity_and_ASIO"><span class="tocnumber">२</span> <span class="toctext">ऑड्यासिटी आणि एएसआयओ</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Non-distributable_ASIO_support_in_Audacity"><span class="tocnumber">३</span> <span class="toctext">ऑड्यासिटीमध्ये न वितरणीय एएसआयओ समर्थन</span></a></li>
 </ul>
 </div>
 
@@ -52,29 +52,29 @@
 <ul><li> एएसआयओ 24-बिट सॅम्पलिंगचे समर्थन करतो जे फक्त अन्यथा <a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd371455(v=vs.85).aspx">विंडोज डब्ल्यूएएसएपीआय</a> किंवा डब्ल्यूडीएम-केएस (विंडोज ड्राइव्हर मॉडेल कर्नल स्ट्रीमिंग) अंतर्गत उपलब्ध आहे. 24-बिट सॅम्पलिंग मोठ्या गतिमान श्रेणी, कमी सैद्धांतिक <a href="glossary.html#noise_floor" title="Glossary">ध्वनी मजला</a> आणि कमी ऐकण्यायोग्य खंडांवर अधिक रिझोल्यूशनची परवानगी देते. </li>
 <li> मूळ नसलेल्या एएसआयओ उत्पादित मूळ स्त्रोतापेक्षा "बिट एकसारखे" आहे. </li>
 <li> हार्डवेअरचे एकाधिक भौतिक माहिती पुरवणे आणि उत्पादित वाहिनी एकाच उपकरणावर प्रवेश केले जातात.</li></ul>
-<div class="note">ओड्यासिटीमध्ये मायक्रोसॉफ्टच्या विंडोज <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/DirectSound">डायरेक्टसाऊंड</a> इंटरफेस शिष्टाचारचे समर्थन समाविष्ट आहे. ते वापरण्यासाठी, <a href="device_toolbar.html" title="Device Toolbar">उपकरणे टूलबार</a>मध्ये यजमान म्हणून "विंडोज डायरेक्टसाऊंड" निवडा. हे काही ध्वनी उपकरणांवर बहु-वाहिनी मुद्रणला समर्थन देईल, परंतु एएसआयओवर शक्य तितक्या कमी विलंब नाही.</div> 
-<p>लिनक्स वर, मानक <a rel="nofollow" class="external text" href="http://www.alsa-project.org/">ALSA</a> ध्वनी <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a> सामान्यत: MME किंवा Windows DirectSound अंतर्गत Windows पेक्षा कमी विलंब प्रदान करते. तथापि, बर्‍याच लिनक्स वितरणे आता ध्वनी रूटिंग आणि मिक्सिंगसाठी डीफॉल्टनुसार पल्स ध्वनी वापरतात. <a rel="nofollow" class="external text" href="http://www.pulseaudio.org/">पल्स ध्वनी</a> आवाज स्रोत आणि लिनक्स कर्नल दरम्यान बसला आहे आणि म्हणूनच ALSA च्या थेट वापरापेक्षा काही प्रमाणात उशीर झाला आहे. सर्वात कमी विलंबसाठी, आपण जॅक एपीआय वापरू शकता जे अनुप्रयोगांदरम्यान कमी विलंबता ध्वनी संप्रेषण आणि ध्वनी रूटिंग दोन्ही प्रदान करते. सध्या ओड्यासिटी <a rel="nofollow" class="external text" href="http://jackaudio.org/">JACK</a> ला बऱ्यापैकी समर्थन देते, परंतु काही <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Linux_Issues#JACK">मर्यादांसह</a>.
-</p><p>मॅक वर, <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Core_Audio">मूळ ध्वनी</a> एक मानक एपीआय आहे आणि ओड्यासिटीद्वारे पूर्णपणे समर्थित आहे. मूळ ध्वनीमध्ये एमएमई आणि विंडोज डायरेक्टसाऊंड अंतर्गत विंडोजपेक्षा कमी विलंब देखील आहेत परंतु सर्वात कमी विलंब होण्यासाठी <a rel="nofollow" class="external text" href="http://www.jackosx.com/">जॅक ओएस एक्स</a>चा वापर केला जाऊ शकतो.
+<div class="note">ऑड्यासिटीमध्ये मायक्रोसॉफ्टच्या विंडोज <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/DirectSound">डायरेक्टसाऊंड</a> इंटरफेस शिष्टाचारचे समर्थन समाविष्ट आहे. ते वापरण्यासाठी, <a href="device_toolbar.html" title="Device Toolbar">उपकरणे टूलबार</a>मध्ये यजमान म्हणून "विंडोज डायरेक्टसाऊंड" निवडा. हे काही ध्वनी उपकरणांवर बहु-वाहिनी मुद्रणला समर्थन देईल, परंतु एएसआयओवर शक्य तितक्या कमी विलंब नाही.</div> 
+<p>लिनक्स वर, मानक <a rel="nofollow" class="external text" href="http://www.alsa-project.org/">ALSA</a> ध्वनी <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a> सामान्यत: MME किंवा Windows DirectSound अंतर्गत Windows पेक्षा कमी विलंब प्रदान करते. तथापि, बर्‍याच लिनक्स वितरणे आता ध्वनी रूटिंग आणि मिक्सिंगसाठी डीफॉल्टनुसार पल्स ध्वनी वापरतात. <a rel="nofollow" class="external text" href="http://www.pulseaudio.org/">पल्स ध्वनी</a> आवाज स्रोत आणि लिनक्स कर्नल दरम्यान बसला आहे आणि म्हणूनच ALSA च्या थेट वापरापेक्षा काही प्रमाणात उशीर झाला आहे. सर्वात कमी विलंबसाठी, आपण जॅक एपीआय वापरू शकता जे अनुप्रयोगांदरम्यान कमी विलंबता ध्वनी संप्रेषण आणि ध्वनी रूटिंग दोन्ही प्रदान करते. सध्या ऑड्यासिटी <a rel="nofollow" class="external text" href="http://jackaudio.org/">JACK</a> ला बऱ्यापैकी समर्थन देते, परंतु काही <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Linux_Issues#JACK">मर्यादांसह</a>.
+</p><p>मॅक वर, <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Core_Audio">मूळ ध्वनी</a> एक मानक एपीआय आहे आणि ऑड्यासिटीद्वारे पूर्णपणे समर्थित आहे. मूळ ध्वनीमध्ये एमएमई आणि विंडोज डायरेक्टसाऊंड अंतर्गत विंडोजपेक्षा कमी विलंब देखील आहेत परंतु सर्वात कमी विलंब होण्यासाठी <a rel="nofollow" class="external text" href="http://www.jackosx.com/">जॅक ओएस एक्स</a>चा वापर केला जाऊ शकतो.
 </p>
-<h2><span class="mw-headline" id="Audacity_and_ASIO">ओड्यासिटी आणि एएसआयओ</span></h2>
+<h2><span class="mw-headline" id="Audacity_and_ASIO">ऑड्यासिटी आणि एएसआयओ</span></h2>
 <p>एएसआयओ तंत्रज्ञान जर्मन कंपनी <a rel="nofollow" class="external text" href="http://www.steinberg.net/de/home.html">स्टेनबर्ग</a>ने विकसित केले आहे आणि परवाना कराराद्वारे संरक्षित आहे जे त्याच्या स्त्रोत कोडचे पुनर्वितरण प्रतिबंधित करते. 
-</p><p>ओडीसिटी, <a rel="nofollow" class="external text" href="https://www.gnu.org/licenses/licenses.html#GPL">जीपीएल</a> अंतर्गत परवानाकृत मुक्त स्रोत प्रोग्राम म्हणून, सध्या एएसआयओ-सक्षम असूनही वापरकर्त्याचे समर्थन करण्यास असमर्थ आहे (वापरकर्त्याचे ध्वनी यंत्र प्रदान करणे देखील तितकेच सक्षम आहे). जर एएसआयओ समर्थन ओड्यासिटी नेतयार केलेले वितरित केला गेला असेल तर हे एकतर कोडचा समावेश केल्यास स्टीनबर्गच्या परवान्याच्या कराराचे उल्लंघन करेल किंवा कोड न ठेवल्यास उलटपक्षी ओड्यासिटीच्या जीपीएल परवान्याचे उल्लंघन करेल. स्टीनबर्ग कायम परवाना उघडण्याच्या अफवा पसरवत आहेत पण कोणतीही उघड हालचाल न करता. ज्या कोणालाही या समस्येची काळजी आहे त्यांना स्टेनबर्गला त्यांचे <a rel="nofollow" class="external text" href="http://www.steinberg.net/en/support/support_contact.html">संपर्क पृष्ठा</a>द्वारे त्यांची मते जाणून घेण्यासाठी आमंत्रित केले आहे.
+</p><p>ओडीसिटी, <a rel="nofollow" class="external text" href="https://www.gnu.org/licenses/licenses.html#GPL">जीपीएल</a> अंतर्गत परवानाकृत मुक्त स्रोत प्रोग्राम म्हणून, सध्या एएसआयओ-सक्षम असूनही वापरकर्त्याचे समर्थन करण्यास असमर्थ आहे (वापरकर्त्याचे ध्वनी यंत्र प्रदान करणे देखील तितकेच सक्षम आहे). जर एएसआयओ समर्थन ऑड्यासिटी नेतयार केलेले वितरित केला गेला असेल तर हे एकतर कोडचा समावेश केल्यास स्टीनबर्गच्या परवान्याच्या कराराचे उल्लंघन करेल किंवा कोड न ठेवल्यास उलटपक्षी ऑड्यासिटीच्या जीपीएल परवान्याचे उल्लंघन करेल. स्टीनबर्ग कायम परवाना उघडण्याच्या अफवा पसरवत आहेत पण कोणतीही उघड हालचाल न करता. ज्या कोणालाही या समस्येची काळजी आहे त्यांना स्टेनबर्गला त्यांचे <a rel="nofollow" class="external text" href="http://www.steinberg.net/en/support/support_contact.html">संपर्क पृष्ठा</a>द्वारे त्यांची मते जाणून घेण्यासाठी आमंत्रित केले आहे.
 </p>
 <div id="asio_support"></div>
-<h2><span class="mw-headline" id="Non-distributable_ASIO_support_in_Audacity">ओड्यासिटीमध्ये न वितरणीय एएसआयओ समर्थन</span></h2>
-<p>ओड्यासिटी विंडोजवर अशा व्यक्तींसाठी एएसआयओ समर्थन प्रदान करते जे पर्यायी स्टीनबर्ग एएसआयओ एसडीके वापरून स्त्रोत कोडमधून ओड्यासिटी संकलित करण्यास तयार आहेत. 
-</p><p>ASIO समर्थन कठोरपणे प्रदान केले जाते की ते <b>विना-वितरित</b> आहे, म्हणजेच, आपण इतर कोणालाही ASIO समर्थनासह तयार केलेल्याची प्रत किंवा वितरण करू शकत <b>नाही</b>. तयार केलेले कठोरपणे आपल्या स्वत: च्या वैयक्तिक (खाजगी किंवा व्यावसायिक) वापरासाठी आहे. त्याच कारणांसाठी, ओड्यासिटी एएसआयओ समर्थनासह ओड्यासीटीचे बिल्ड वितरित करू शकत नाही, म्हणून कृपया विचारू <b>नका</b>!
-</p><p>खाली ASIO समर्थनासह स्त्रोत कोडवरून ओड्यासिटी संकलित करण्याचे विहंगावलोकन आहे.
+<h2><span class="mw-headline" id="Non-distributable_ASIO_support_in_Audacity">ऑड्यासिटीमध्ये न वितरणीय एएसआयओ समर्थन</span></h2>
+<p>ऑड्यासिटी विंडोजवर अशा व्यक्तींसाठी एएसआयओ समर्थन प्रदान करते जे पर्यायी स्टीनबर्ग एएसआयओ एसडीके वापरून स्त्रोत कोडमधून ऑड्यासिटी संकलित करण्यास तयार आहेत. 
+</p><p>ASIO समर्थन कठोरपणे प्रदान केले जाते की ते <b>विना-वितरित</b> आहे, म्हणजेच, आपण इतर कोणालाही ASIO समर्थनासह तयार केलेल्याची प्रत किंवा वितरण करू शकत <b>नाही</b>. तयार केलेले कठोरपणे आपल्या स्वत: च्या वैयक्तिक (खाजगी किंवा व्यावसायिक) वापरासाठी आहे. त्याच कारणांसाठी, ऑड्यासिटी एएसआयओ समर्थनासह ओड्यासीटीचे बिल्ड वितरित करू शकत नाही, म्हणून कृपया विचारू <b>नका</b>!
+</p><p>खाली ASIO समर्थनासह स्त्रोत कोडवरून ऑड्यासिटी संकलित करण्याचे विहंगावलोकन आहे.
 </p>
 <ol><li> विनामूल्य मायक्रोसॉफ्ट व्हिज्युअल स्टुडिओ कम्युनिटी एडिशन <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Integrated_development_environment">एकात्मिक विकास पर्यावरण</a> (आयडीई) स्थापित करा. </li>
 <li> स्टीनबर्ग वरून  <a rel="nofollow" class="external text" href="https://www.steinberg.net/en/company/developers.html">एएसआयओ एसडीके</a> डाउनलोड आणि स्थापित करा.</li>
 <li><a rel="nofollow" class="external free" href="https://github.com/audacity/audacity/releases">https://github.com/audacity/audacity/releases</a> पासून नवीनतम ऑडॅसिटी रीलिझचा स्त्रोत कोड डाउनलोड करा. स्त्रोत कोड मधील  win/compile.txt मधील चरणांचे अनुसरण कराः
 <ol><li> डब्ल्यूएक्सविजेट्स जीयूआय टूलकिट डाउनलोड आणि स्थापित करा आणि नंतर व्हिज्युअल स्टुडिओचा वापर करुन डब्ल्यूएक्सविजेट्स तयार करा.</li>
 <li> आपण ज्या ठिकाणी विजेट्स स्थापित केले त्या डिरेक्टरीमध्ये डब्ल्यूएक्सडब्ल्यूएन <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Environment_variable">एनवायरनमेंट व्हेरिएबल</a> स्थापित करा आणि जिथे आपण एएसआयओ एसडीके स्थापित केले त्या निर्देशिकेमध्ये एएसआयओएसडीके_डिआयर एन्व्हायर्नमेंट व्हेरिएबल स्थापित करा. संगणक रीबूट करा. </li>
-<li> व्हिज्युअल स्टुडिओ वापरुन ओड्यासिटी बिल्ड करा.   </li></ol></li></ol>
-<p><b>संपूर्ण तपशीलांसाठी ओड्यासिटी विकीमध्ये  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Developing_On_Windows">विकसक ऑन विंडोज</a> वरील सूचनांचे अनुसरण करा आणि दुवे डाउनलोड करा.</b> 
+<li> व्हिज्युअल स्टुडिओ वापरुन ऑड्यासिटी बिल्ड करा.   </li></ol></li></ol>
+<p><b>संपूर्ण तपशीलांसाठी ऑड्यासिटी विकीमध्ये  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Developing_On_Windows">विकसक ऑन विंडोज</a> वरील सूचनांचे अनुसरण करा आणि दुवे डाउनलोड करा.</b> 
 </p>
-<div class="note">आपल्याला मदतीची आवश्यकता असल्यास, कृपया <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewforum.php?f=19">ओड्यासिटी कंपाईल </a> <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/">फोरम</a>वरील ओड्यासिटी बोर्डवर विचारा. </div>
+<div class="note">आपल्याला मदतीची आवश्यकता असल्यास, कृपया <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewforum.php?f=19">ऑड्यासिटी कंपाईल </a> <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/">फोरम</a>वरील ऑड्यासिटी बोर्डवर विचारा. </div>
 
 <!-- 
 NewPP limit report
@@ -119,18 +119,18 @@ Transclusion expansion time report (%,ms,calls,template)
 		<h3>निर्देशक</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिका मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ओड्यासिटी वापरणे</span></a>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
 <ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
 <li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
 <li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
 <li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">प्रशिक्षण</span></a></li>
 <li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओड्यासिटी जियुआय</span></a>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जियुआय</span></a>
 <ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
 <li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टे</span></a></li>
 <li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">सानुकुलित ओड्यासिटी </span></a>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">सानुकुलित ऑड्यासिटी </span></a>
 <ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
 <li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">की-बाइंडिंग्ज</span></a></li>
 <li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
