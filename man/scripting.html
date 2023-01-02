@@ -7,14 +7,14 @@
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
+
 <meta name="ResourceLoaderDynamicStyles" content=""/>
 
 <meta name="generator" content="MediaWiki 1.28.2"/>
 <link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="शोधा" type="application/openशोधाdescription+xml" href="https://alphamanual.audacityteam.org/m/openशोधा_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
 
 <link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
 </head>
@@ -28,57 +28,57 @@
 				<h1 id="firstHeading" class="firstHeading" lang="en">स्क्रिप्टिंग</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेकडून</div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Scripting#शोधाInput">शोधा</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Scripting#searchInput">शोधा</a></div>
 
-					<!-- start content -->
+					
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">स्क्रिप्टिंग मॉड्यूल एक आहे <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/GUI_Plugins">प्रगत वापरकर्त्यांसाठी प्लग-इन </a> जे ऑड्यासिटीला बाह्यमधून चालविण्याची परवानगी देतात <a rel="nofollow" class="external text" href="https://www.python.org/">Python</a> किंवा <a rel="nofollow" class="external text" href="https://www.perl.org/">Perl</a> स्क्रिप्ट. आज्ञा ऑड्यासिटीला 'नामित नलिका' वर पाठविल्या जातात.<br /><br />
-नामित नलिका्सला समर्थन देणारी कोणतीही स्क्रिप्टिंग भाषा वापरली जाऊ शकते.</div>
-<div class="note">स्क्रिप्टिंग बहुतेकदापासून वापरली जाते Python.
-<ul><li> स्क्रिप्टिंग आज्ञा पूर्ण सेट येथे सूचीबद्ध आहे <a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग संदर्भ</a>.</li>
-<li> मधील अनेक आज्ञा <a href="extra_menu_scriptables_i.html" title="Extra Menu: Scriptables I">स्क्रिप्टेबल I</a> आणि <a href="extra_menu_scriptables_ii.html" title="Extra Menu: Scriptables II">स्क्रिप्टेबल II</a> मेनू तयार केले गेले कारण ते स्क्रिप्टिंगमध्ये उपयोगी आहेत.</li>
-<li> python स्क्रिप्टिंगसाठी पर्याय जे समान आज्ञाचा वापर करतात:
-<ul><li> <a href="macros.html" title="Macros">मॅक्रो </b> जे चरणांच्या निश्चित संचाचे अनुसरण करतात, उदा. बर्‍याच धारिका एका फाँट मधून दुसर्‍या फॉरमॅटमध्ये रुपांतरित करण्यासाठी.</li>
-<li> <a href="nyquist_prompt.html" title="Nyquist Prompt">Nyquist</a>, '; टाइप साधन' पर्याय वापरणे. ऑड्यासिटी मध्ये NIquist एक LISP आधारित भाषेत अंगभूत आहे.</div></li></ul></li></ul>
+<div class="intro">स्क्रिप्टिंग मॉड्यूल हे प्रगत वापरकर्त्यांसाठी <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/GUI_Plugins">प्लग-इन</a> आहे जे ऑड्यासिटीला बाह्य <a rel="nofollow" class="external text" href="https://www.python.org/">पायथॉन</a> किंवा <a rel="nofollow" class="external text" href="https://www.perl.org/">पर्ल</a> स्क्रिप्टमधून चालविण्यास अनुमती देते.  ऑड्यासिटीला 'नामांकित पाईप'वर कमांड पाठवले जातात.<p>नामांकित पाईप्सना समर्थन करणारी कोणतीही स्क्रिप्टिंग भाषा वापरली जाऊ शकते.</p> </div>
+<div class="note">प्लग-इन <b>मॉड-स्क्रिप्ट-पाईप</b> आता ऑडेसिटी (विंडोज आणि मॅकओएस) सह पाठवले आहे आणि फक्त मॉड्यूल प्राधान्ये वापरून सक्षम करणे आवश्यक आहे.</div>
+<div class="note">स्क्रिप्टिंग बहुतेकदा पायथॉन वरून वापरली जाते.
+<ul><li> स्क्रिप्टिंग कमांड्सचा संपूर्ण संच <a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग संदर्भामध्ये</a> सूचीबद्ध आहे.</li>
+<li> <a href="extra_menu_scriptables_i.html" title="Extra Menu: Scriptables I">स्क्रिप्टेबल्स I</a> आणि <a href="extra_menu_scriptables_ii.html" title="Extra Menu: Scriptables II">स्क्रिप्टेबल्स II</a> यादीमधील अनेक कमांड्स तयार केल्या गेल्या कारण त्या स्क्रिप्टिंगमध्ये उपयुक्त आहेत.</li>
+<li> पायथॉन स्क्रिप्टिंगचे पर्याय जे समान कमांड्स वापरतात:
+<ul><li> <a href="macros.html" title="Macros">मॅक्रो</a> जे चरणांच्या निश्चित संचाचे अनुसरण करतात, उदा. अनेक धारिका एका फॉरमॅटमधून दुसऱ्या फॉरमॅटमध्ये रूपांतरित करण्यासाठी.</li>
+<li> <a href="nyquist_prompt.html" title="Nyquist Prompt">एन.वाय.क्विस्ट</a>, ';टाईपटूल' पर्याय वापरून. एन.वाय.क्विस्ट ही ऑड्यासिटी मधील लिस्प आधारित भाषा आहे.</div></li></ul></li></ul>
 <p><b>स्क्रिप्टिंग काय करू शकते</b>
-</p><p>स्क्रिप्टिंग वापरलेल्या आज्ञा प्रमाणेच आहेत <a href="macros.html" title="Macros">ऑड्यासिटी मॅक्रो </a> वैशिष्ट्य. आपण उदाहरणार्थ:
+</p><p>स्क्रिप्टिंग वापरत असलेल्या कमांड <a href="macros.html" title="Macros">ऑड्यासिटी मॅक्रो</a> वैशिष्ट्याप्रमाणेच असतात. आपण उदाहरणार्थ:
 </p>
 <ul><li> ध्वनी निवडा</li>
 <li> प्रभाव लागू करा</li>
 <li> फीत पुन्हा व्यवस्थित करा</li>
 <li> निकाल निर्यात करा.</li></ul>
-<p>स्क्रिप्टिंग मॅक्रोच्या सोप्या कार्ये आणि पूर्वनिर्धारितच्या पलीकडे जाते. Python स्क्रिप्टिंगचा उपयोग उदाहरणार्थ निवडण्यासाठी प्रदेशांविषयी गणना करू शकतो किंवा प्रकल्पातील गीतपट्टाच्या संख्येच्या आधारे निर्णय घेऊ शकतो. पायथनमध्ये(Python) अतिरिक्त वापरकर्ता इंटरफेस बनविणे देखील शक्य आहे, उदाहरणार्थ अतिरिक्त साधनपट्टी, आणि नलिकावरून ऑड्यासिटीला आज्ञा पाठवा.
+<p>स्क्रिप्टिंग ही साधी कार्ये आणि मॅक्रोच्या प्रीसेटच्या पलीकडे जाते. पायथॉन स्क्रिप्टिंग वापरणे उदाहरणार्थ निवडण्यासाठी प्रदेशांची गणना करू शकते किंवा प्रकल्पामधील गीतपट्ट्याच्या क्रमांक आणि प्रकारांच्या आधारे निर्णय घेऊ शकते. पायथॉनमध्ये अतिरिक्त वापरकर्ता इंटरफेस तयार करणे देखील शक्य आहे, उदाहरणार्थ अतिरिक्त साधनपट्टी, आणि त्यास पाईपवर ऑड्यासिटीला कमांड पाठवणे शक्य आहे.
 </p><p><br />
 </p>
 <div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Caveats_and_Warnings"><span class="tocnumber">1</span> <span class="toctext">गुहेत आणि चेतावणी</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Caveats_and_Warnings"><span class="tocnumber">1</span> <span class="toctext">चेतावणी आणि इशारे</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Getting_Started"><span class="tocnumber">2</span> <span class="toctext">प्रारंभ करणे</span></a>
 <ul>
-<li class="toclevel-2 tocsection-3"><a href="#Enable_mod-script-pipe"><span class="tocnumber">2.1</span> <span class="toctext">मोड-स्क्रिप्ट-नलिका सक्षम करा</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Check_mod-script-pipe_works"><span class="tocnumber">2.2</span> <span class="toctext">मॉड-स्क्रिप्ट-नलिकाची कामे तपासा</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Enable_mod-script-pipe"><span class="tocnumber">2.1</span> <span class="toctext">mod-script-pipe सक्षम करा</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Check_mod-script-pipe_works"><span class="tocnumber">2.2</span> <span class="toctext">मॉड-स्क्रिप्ट-पाईपची कामे तपासा</span></a></li>
 <li class="toclevel-2 tocsection-5"><a href="#Using_Scripting"><span class="tocnumber">2.3</span> <span class="toctext">स्क्रिप्टिंग वापरणे</span></a></li>
 <li class="toclevel-2 tocsection-6"><a href="#Examples"><span class="tocnumber">2.4</span> <span class="toctext">उदाहरणे</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-7"><a href="#Commands"><span class="tocnumber">3</span> <span class="toctext">आज्ञा</span></a></li>
 <li class="toclevel-1"><a href="#Automatic_Naming"><span class="tocnumber">4</span> <span class="toctext">स्वयंचलित नामकरण</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="#Known_Issues_.26_Missing_Features"><span class="tocnumber">5</span> <span class="toctext">माहित असलेल्या गोष्टी &amp; गहाळ वैशिष्ट्ये</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Known_Issues_.26_Missing_Features"><span class="tocnumber">5</span> <span class="toctext">ज्ञात समस्या &amp; गहाळ वैशिष्ट्ये</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Caveats_and_Warnings">गुहेत आणि चेतावणी</span></h2>
+<h2><span class="mw-headline" id="Caveats_and_Warnings">चेतावणी आणि इशारे</span></h2>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">ऑड्यासिटी वापरकर्ता इंटरफेसच्या बाहेरून स्क्रिप्टिंग ड्राइव्हस् ऑड्यासिटी.
-<ul><li> आपण स्क्रिप्टिंग सक्षम करण्यासाठी <i> मोड-स्क्रिप्ट-नलिका </i> वापरत असल्यास, यामुळे संगणकाची सुरक्षा दुर्बल होते, कारण आपल्या संगणकावर आधीपासून पाय ठेवलेले दुर्भावनायुक्त अनुप्रयोग अधिक नियंत्रण मिळविण्यासाठी संभाव्यत: हे वैशिष्ट्य वापरू शकते. </ li> </ul>
-<p> वेब सर्व्हरवर स्क्रिप्टिंग वापरुन <i> नाही </i> बद्दल खाली दिलेला सल्ला पहा.
+<td align="left" valign="top">स्क्रिप्टिंग ऑड्यासिटी यूजर इंटरफेसच्या बाहेरून ऑड्यासिटी चालवते.
+<ul><li> जर तुम्ही स्क्रिप्टिंग सक्षम करण्यासाठी <i>mod-script-pipe</i> वापरत असाल, तर हे संगणक सुरक्षा कमकुवत करते, कारण तुमच्या संगणकावर आधीपासूनच पाय ठेवणारे दुर्भावनापूर्ण सॉफ्टवेअर अधिक नियंत्रण मिळविण्यासाठी संभाव्यतः या वैशिष्ट्याचा वापर करू शकतात.</li></ul>
+<p>वेब सर्व्हरवर स्क्रिप्टिंग <i>न</i> वापरण्याबद्दल खालील सल्ला पहा.
 </p>
 </td></tr></table></div>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
@@ -87,10 +87,10 @@
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">स्क्रिप्टिंग समर्थन मुख्यतः विकसकांच्या वापरासाठी आहे.
-<ul><li> जेव्हा गोष्टी "कार्य करत नाहीत" तेव्हा ऑड्यासिटीकडून क्वचितच असा संदेश येईल की असे का.</li>
-<li> उपलब्ध स्क्रिप्टिंग आज्ञाचा तपशील ऑड्यासिटीच्या आवृत्त्यांमधील फरक बदलू शकतो.  </li></ul>
-<p>या पृष्ठाच्या पायथ्याशी असलेल्या मर्यादांची पूर्ण यादी आहे.
+<td align="left" valign="top">स्क्रिप्टिंग समर्थन हे मुख्यतः विकसकद्वारे वापरण्यासाठी आहे.
+<ul><li> जेव्हा गोष्टी "काम करत नाहीत" तेव्हा तुम्हाला क्वचितच ऑड्यासिटी कडून असे का संदेश मिळेल.</li>
+<li>उपलब्ध स्क्रिप्टिंग कमांडचे तपशील ऑड्यासिटीच्या आवृत्त्यांमध्ये चांगले बदलू शकतात. </li></ul>
+<p>या पृष्ठाच्या तळाशी मर्यादांची संपूर्ण यादी आहे.
 </p>
 </td></tr></table></div>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
@@ -99,10 +99,10 @@
 <tr>
 <td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Stopicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/6/6c/stopicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top"><b>वेब सर्व्हरवर सेवा प्रदान करण्यासाठी स्क्रिप्टिंग उपयुक्त नाही</b>.
-<ul><li> कारण असे आहे की ऑड्यासिटी नलिकावर येणार्‍या सूचना पोलिस करीत नाही किंवा स्वच्छता करीत नाही. तो फक्त सूचनांचे पालन करण्याचा प्रयत्न करतो.</li>
-<li> जर कोणी नलिकावर लिहू शकत असेल तर त्या धारिका वाचण्यास आणि लिहिण्यासाठी आणि ऑड्यासिटी चालविणार्‍या यंत्रावर कोड कार्यान्वित करण्यासाठी ऑड्यासिटी मिळवू शकतात.</li></ul>
-<p>मोड-स्क्रिप्ट-नलिका सक्षम करणे ऑड्यासिटी वापरकर्ता इंटरफेसच्या बाहेरून नियंत्रित करण्यास अनुमती देते. वेब सर्व्हरसारख्या काही वातावरणात, हे खूपच सुरक्षिततेचे धोका असते.
+<td align="left" valign="top"><b>वेब सर्व्हरवर सेवा प्रदान करण्यासाठी स्क्रिप्टिंग योग्य नाही.</b>.
+<ul><li> याचे कारण म्हणजे ऑडॅसिटी पाईपवर येणाऱ्या सूचनांचे पोलीस किंवा स्वच्छता करत नाही. तो फक्त सूचनांचे पालन करण्याचा प्रयत्न करतो.</li>
+<li> जर कोणी पाईपवर लिहू शकत असेल तर त्यांना धारिका वाचण्यासाठी आणि लिहिण्यासाठी आणि ऑड्यासिटी चालवणाऱ्या मशीनवर कोड कार्यान्वित करण्यासाठी ऑड्यासिटी मिळू शकेल.</li></ul>
+<p>मॉड-स्क्रिप्ट-पाईप सक्षम केल्याने ऑड्यासिटीला ऑड्यासिटी यूजर इंटरफेसच्या बाहेरून नियंत्रित केले जाऊ शकते. काही वातावरणात, जसे की वेब सर्व्हर, तो खूप मोठा सुरक्षिततेचा धोका आहे.
 </p>
 </td></tr></table>
 </div>
@@ -111,43 +111,46 @@
 <div id="scripting"></div>
 <div id="test"></div>
 <h2><span class="mw-headline" id="Getting_Started">प्रारंभ करणे</span></h2>
-<h3><span class="mw-headline" id="Enable_mod-script-pipe">मोड-स्क्रिप्ट-नलिका सक्षम करा</span></h3>
-<p>ऑड्यासिटी आता प्लग-इन मॉड्यूलसह ​​येते ज्याला "मॉड-स्क्रिप्ट-नलिका" म्हणतात. आपण हे वापरून सक्षम करा <a href="modules_preferences.html" title="Modules Preferences">ऑड्यासिटी प्राधान्ये</a>.  
+<h3><span class="mw-headline" id="Enable_mod-script-pipe">मोड-स्क्रिप्ट-नळी सक्षम करा</span></h3>
+<p>ऑड्यासिटी आता प्लग-इन मॉड्यूलसह ​​येते ज्याला "<b>मॉड-स्क्रिप्ट-नळी</b>" म्हणतात. तुम्ही <a href="modules_preferences.html" title="Modules Preferences">ऑड्यासिटी प्राधान्ये</a> वापरून ते सक्षम करा.
 </p><p>प्रथमच सक्षम केल्यानंतर, आपल्याला ऑड्यासिटी पुन्हा सुरू करण्याची आवश्यकता असेल. त्यानंतर आपण ते सक्षम केले असल्याचे तपासू शकता आणि प्राधान्ये पृष्ठावर पुन्हा जाऊन प्रारंभ केला होता.
 </p>
-<ul><li>ऑड्यासिटी चालवा</li>
-<li> संपादनात जा-&gt;प्राधान्ये-&gt;विभाग
-<ul><li> मोड-स्क्रिप्ट-नलिका निवडा (ज्याने 'नवीन' दर्शविले पाहिजे) आणि ते 'सक्षम' मध्ये बदला.  </li></ul></li>
-<li> पुन्हा सुरू करा Audacity </li>
-<li> ते आता 'सक्षम' दर्शविते हे तपासा.</li></ul>
-<p>हे स्थापित करते की ऑड्यासिटी मॉड-स्क्रिप्ट नलिका शोधत आहे, आणि आवृत्ती सुसंगत आहे (त्याच दिवशी संकलित केलेली).
+<ul><li> ऑड्यासिटी चालवा</li>
+<li> <span class="menu">संपादन &gt; प्राधान्ये &gt; <a href="modules_preferences.html" title="Modules Preferences">विभाग</a></span> येथे जा. 
+<ul><li> <b>मॉड-स्क्रिप्ट-पाइप</b> निवडा (ज्याने <b>'नवीन'</b> दाखवले पाहिजे) आणि ते <b>'सक्षम'</b> मध्ये बदला.  </li></ul></li>
+<li> ऑड्यासिटी पुन्हा सुरू करा </li>
+<li> ते आता <b>'सक्षम'</b> दाखवत असल्याचे तपासा.</li></ul>
+<p>हे स्थापित करते की ऑडेसिटी मॉड-स्क्रिप्ट पाईप शोधत आहे आणि आवृत्ती सुसंगत आहे.
 </p>
-<h3><span class="mw-headline" id="Check_mod-script-pipe_works">मॉड-स्क्रिप्ट-नलिकाची कामे तपासा</span></h3>
-<p>उदाहरणे पहाण्यासाठी आपल्याला पायथन (आवृत्ती  ६. नंतर किंवा नंतरची शिफारस केलेली) स्क्रिप्टिंग भाषा देखील आवश्यक आहे.
-</p><p>This python script is then the best way of checking that the pipe is working:
+<h3><span class="mw-headline" id="Check_mod-script-pipe_works">मॉड-स्क्रिप्ट-पाइप कामे तपासा</span></h3>
+<p>उदाहरणे वापरून पाहण्यासाठी तुम्हाला स्क्रिप्टिंग भाषा Python (आवृत्ती 3.6 किंवा नंतरची शिफारस केलेली) देखील आवश्यक असेल.
+</p><p>पाईप कार्यरत आहे हे तपासण्यासाठी एक साधी पायथन चाचणी स्क्रिप्ट प्रदान केली आहे:
 </p>
-<ul><li> <a rel="nofollow" class="external free" href="https://github.com/audacity/audacity/blob/master/scripts/piped-work/pipe-test.py">https://github.com/audacity/audacity/blob/master/scripts/piped-work/pipe-test.py</a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/audacity/audacity/blob/master/scripts/piped-work/pipe_test.py">GitHub वर pipe_test.py</a>.</li></ul>
 <h3><span class="mw-headline" id="Using_Scripting">स्क्रिप्टिंग वापरणे</span></h3>
-<p>नलिका- चाचणी.पी चालविल्यानंतर आपण कमांड प्रयत्न करण्यासाठी पायथन आज्ञा रेषेवर डू ("") वापरू शकता. प्रत्येक आज्ञाचे नाव कोलनसह समाप्त होते आणि त्याचे नंतर पॅरामीटर्स देखील असू शकतात. उदाहरणार्थ:
+<p>pipe-test.py चालवल्यानंतर, तुम्ही आज्ञा वापरून पाहण्यासाठी python कमांड लाइनवर do("") वापरू शकता. प्रत्येक कमांडचे नाव कोलनने समाप्त होते आणि मापदंडचे अनुसरण केले जाऊ शकते. उदाहरणार्थ:
 </p>
-<pre>करा("Help:")
-
+<pre>do_command("Help:")
 </pre>
+<p>व्यावहारिक स्क्रिप्टिंगसाठी, स्क्रिप्ट "pipeclient.py" एक उपयुक्त प्रारंभिक बिंदू प्रदान करते:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/audacity/audacity/blob/master/scripts/piped-work/pipeclient.py">pipeclient.py on GitHub</a>.</li></ul>
 <h3><span class="mw-headline" id="Examples">उदाहरणे</span></h3>
 <p>अधिक नमुने स्क्रिप्ट येथे उपलब्ध आहेत:
 </p>
-<ul><li> <a rel="nofollow" class="external text" href="https://github.com/audacity/audacity/tree/master/scripts/piped-work">'नलिकाचे काम'</a> - नलिका व्यायामासाठी नमुने स्क्रिप्ट.</li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/audacity/audacity/tree/master/scripts/piped-work">GitHub मध्ये 'नळीचे काम'</a> - नळी व्यायामासाठी नमुने स्क्रिप्ट.</li>
+<li> चाचणी स्क्रिप्टचा समान संग्रह <a rel="nofollow" class="external text" href="https://www.fosshub.com/Audacity-devel.html">फॉसहब ऑडेसिटी-डेव्हल (स्क्रिप्टिंग टेस्ट)</a> वरून डाउनलोड म्हणून देखील उपलब्ध आहे.  यामध्ये चाचण्यांमध्ये वापरल्या जाणार्‍या नमुना ऑडिओचा समावेश आहे.</li></ul>
 <p><br />
 </p>
 <div id="commands"></div>
 <h2><span class="mw-headline" id="Commands">आज्ञा</span></h2>
-<p>सर्व उपलब्ध स्क्रिप्टिंग आज्ञा दर्शविणारा एक टेबल येथे आहे <a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग संदर्भ</a>.  
-</p><p>ऑड्यासिटी मधील बर्‍याच आज्ञा ऑड्यासिटी मेनूमध्ये स्क्रिप्टिंगद्वारे प्रवेश करता येतात. त्या सारणीचे एक उदाहरण येथे आहेः
+<p>सर्व उपलब्ध स्क्रिप्टिंग आदेश दर्शविणारी टेबल <a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग संदर्भावर</a> आहे.
+</p><p>ऑड्यासिटी मधील बहुतेक कमांड्स जे ऑड्यासिटी यादीमध्ये आहेत ते स्क्रिप्टिंगद्वारे ऍक्सेस केले जाऊ शकतात. त्या सारणीतील एक उदाहरण येथे आहे:
 </p><p><br />
 </p>
 <table class="prettytablerows" rules="rows" border="2" width="100%">
 <tr>
-<th width="15%">ऑटोमेशन आयडी
+<th width="15%">स्क्रिप्टिंग आयडी
 </th>
 <th width="15%">कृती
 </th>
@@ -156,30 +159,35 @@
 <th width="55%">वर्णन
 </th></tr>
 <tr>
-<td><b>सेट नावपट्टी:</b>
+<td><b>नावपट्टीची रचना करा:</b>
 </td>
-<td><a href="extra_menu_scriptables_i.html#set_label" title="Extra Menu: Scriptables I">नावपट्टी जतन...</a>
+<td><a href="extra_menu_scriptables_i.html#set_label" title="Extra Menu: Scriptables I">नावपट्टीची रचना करा...</a>
 </td>
-<td><i>int</i> <b>Label</b>, (default:0)<br />
-<p><i>string</i> <b>Text</b>, (default:unchanged)<br />
-<i>double</i> <b>Start</b>, (default:unchanged)<br />
-<i>double</i> <b>End</b>, (default:unchanged)<br />
-<i>bool</i> <b>Selected</b>, (default:unchanged)<br />
+<td><i>आयएनटी</i> <b>नावपट्टी</b>, (पूर्वनियोजित:0)<br />
+<p><i>स्ट्रिंग</i> <b>मजकूर</b>, (पूर्वनियोजित: अपरिवर्तित)<br />
+<i>दुहेरी</i> <b>प्रारंभ</b>, (पूर्वनियोजित: अपरिवर्तित)<br />
+<i>डबल</i> <b>एंड</b>, (पूर्वनियोजित: अपरिवर्तित)<br />
+<i>बुल</i> <b>निवडले</b>, (पूर्वनियोजित:अपरिवर्तित)<br />
 </p>
 </td>
 <td>विद्यमान नावपट्टी सुधारित करते.
 </td></tr></table>
-<p> पायथनमधील आज्ञाच्या खाली 'फू' या शब्दावर प्रकल्पामधील पहिले नावपट्टी जतन करेल.
+<p><br />
+Python वरून पाठवलेला <b>"नावपट्टीची रचना करा: मजकूर = 'फू'"</b> स्ट्रिंग प्रोजेक्टमधील पहिले लेबल 'Foo' शब्दावर सेट करेल.
+</p><p>"pipe_test.py" वापरून, यासह कमांड पाठवली जाऊ शकते:
 </p>
-<pre>do("SetLabel: Text='Foo'")
-
+<pre>do_command("नावपट्टीची रचना करा: मजकूर = 'फू'")
+</pre>
+<p>कमांड-लाइन स्क्रिप्ट म्हणून "pipeclient.py" वापरून, फक्त प्रॉम्प्टवर कमांड टाइप करा:
+</p>
+<pre>सोडण्यासाठी कमांड किंवा 'क्यू' प्रविष्ट करा: नावपट्टीची रचना करा: मजकूर = 'फू'
 </pre>
 <p><br />
 </p>
 <hr />
 
 <div id="issues"></div>
-<h2><span class="mw-headline" id="Known_Issues_.26_Missing_Features">माहित असलेल्या गोष्टी &amp; गहाळ वैशिष्ट्ये</span></h2>
+<h2><span class="mw-headline" id="Known_Issues_.26_Missing_Features">माहीत असलेल्या गोष्टी &amp; गहाळ वैशिष्ट्ये</span></h2>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
@@ -188,47 +196,21 @@
 </td>
 <td align="left" valign="top">काही वर्तमान समस्या:
 <ul><li> स्क्रिप्टिंग एका वेळी केवळ एका प्रकल्पासह कार्य करते. </li>
-<li> काही मेनू आदेशांकरिता, आज्ञा यशस्वी होण्यासाठी प्रकल्प विंडोमध्ये केंद्रित असणे आवश्यक आहे.</li>
-<li> गेटइन्फो सारख्या आदेशावरून 'आउटपुट' प्रतिसाद मिळविणे सोपे नाही. आपल्याला पायथनमधील निकालांचे विश्लेषण करणे आवश्यक आहे.</li>
-<li> आज्ञा मध्ये कठोर पॅरामीटर प्रमाणीकरण असू शकते आणि कार्य करत नसताना चांगले त्रुटी संदेश देऊ शकतात.</li>
-<li> कमतरता रद्द करण्याचा किंवा व्यत्यय आणण्याचा कोणताही सुसंगत मार्ग नाही.</li>
-<li> ऑड्यासिटी सोडल्यास स्क्रिप्टिंग मॉड्यूल अनलोड केले जात नाही. याचा अर्थ स्क्रिप्ट नलिका योग्यरित्या हटविलेले नाहीत.</li>
-<li> नलिकाच्या वापराशी संबंधित सुरक्षा समस्या असू शकतात. आपल्याला एकाचवेळी एकाधिक वापरकर्त्यांसह सिस्टमवर मॉड-स्क्रिप्ट-नलिका न वापरण्याचा सल्ला देण्यात आला आहे.</li></ul>
+<li> काही यादी आदेशांसाठी, कमांड यशस्वी होण्यासाठी प्रकल्प विंडोमध्ये फोकस असणे आवश्यक आहे.</li>
+<li> माहिती मिळवा यासारख्या कमांडमधून 'आउटपुट' प्रतिसाद मिळणे सोपे नाही. तुम्हाला Python मध्ये परिणामांचे विश्लेषण करावे लागेल.</li>
+<li> कमांड्समध्ये कठोर पॅरामीटर प्रमाणीकरण असू शकते आणि जेव्हा ते कार्य करत नाहीत तेव्हा ते चांगले त्रुटी संदेश देऊ शकतात.</li>
+<li> आदेश रद्द करण्याचा किंवा व्यत्यय आणण्याचा कोणताही सुसंगत मार्ग नाही.</li>
+<li> ऑड्यासिटी बंद झाल्यावर स्क्रिप्टिंग मॉड्यूल अनलोड होत नाही. याचा अर्थ स्क्रिप्ट पाईप्स योग्यरित्या हटवलेले नाहीत.</li>
+<li> पाईप्सच्या वापराशी संबंधित सुरक्षा समस्या असू शकतात. एकाच वेळी अनेक वापरकर्ते असलेल्या सिस्टमवर मॉड-स्क्रिप्ट-पाइप न वापरण्याचा सल्ला तुम्हाला दिला जातो.</li></ul>
 </td></tr></table></div>
 
-<!-- 
-NewPP limit report
-Cached time: 20180917111832
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.101 seconds
-Real time usage: 0.105 seconds
-Preprocessor visited node count: 257/1000000
-Preprocessor generated node count: 1120/1000000
-Post‐expand include size: 7301/2097152 bytes
-Template argument size: 4092/2097152 bytes
-Highest expansion depth: 12/40
-Expensive parser function count: 11/100
--->
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   31.612      1 - -total
- 73.85%   23.347      1 - Template:I18n
- 65.91%   20.834      1 - Template:I18n_box
- 53.67%   16.967      1 - Template:I18n_list
- 23.96%    7.573      3 - Template:I18n_link
- 14.03%    4.436      3 - Template:Autoglossonym
-  8.47%    2.678      1 - Template:Hint
-  5.07%    1.604      3 - Template:Advice
-  4.09%    1.294      1 - Template:Note
-  3.54%    1.120      1 - Template:Alert
--->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:2703-0!*!0!!en!5!* and timestamp 20180917111832 and revision id 61771
- -->
+
+
+
 </div>
-										<!-- end content -->
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -244,48 +226,51 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
 		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity सहल मार्गदर्शक"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
 <ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
 <li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>उपयुक्त दुवे</h3>
+		<h3>उपयुक्त लिंक्स</h3>
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">माहितीपुस्तकाचे मुखपृष्ठ</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -295,9 +280,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
-<a href="https://alphamanual.audacityteam.org/man/Scripting">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
-</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

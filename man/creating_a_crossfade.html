@@ -1,180 +1,163 @@
-<html class="client-nojs translated-ltr" lang="mr" dir="ltr"><head>
-	<meta charset="UTF-8">
-	<title>क्रॉसफेड &#8203;&#8203;तयार करणे - ऑड्यासिटी माहिती-पुस्तिका</title>
-	
-	
-	
-	
-	<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-	<meta name="ResourceLoaderDynamicStyles" content="">
-	
-	<meta name="generator" content="MediaWiki 1.28.2">
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ऑड्यासिटी विकास माहिती-पुस्तिका (इं)">
-	<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-	<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
-	
-	<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-	<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
-	<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Creating_a_Crossfade rootpage-Creating_a_Crossfade skin-monobook action-view"><div id="globalWrapper">
-			<div id="column-content">
-				<div id="content" class="mw-body" role="main">
-					<a id="top"></a>
-					
-					<div class="mw-indicators">
-	</div>
-					<h1 id="firstHeading" class="firstHeading" lang="en">क्रॉसफेड &#8203;&#8203;तयार करत आहे</h1>
-					
-					<div id="bodyContent" class="mw-body-content">
-						<div id="siteSub">ऑड्यासिटी विकास माहिती-पुस्तिकेवरून</div>
-						<div id="contentSub"></div>
-											<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a> , <a href="https://alphamanual.audacityteam.org/man/Creating_a_Crossfade#searchInput">शोध</a></div>
-	
-						<!-- start content -->
-						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">क्रॉसफेडचा उद्देश ध्वनीच्या दोन विभागांमधील सहज संक्रमण निर्माण करणे आहे. दोन विभाग आच्छादित होतात आणि एक विभाग म्हणून इतर फीके आतून कमी होतात. हे तंत्र सामान्यत: डीजे च्या द्वारे "संकलन" गीतपट्टा आणि <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Mashup_%28music%29">मॅशअपसाठी</a> वापरले जाते . क्रॉसफेडचा वापर केवळ संगीताच्या तुकड्यांमध्ये सामील होण्यापुरता मर्यादित नाही, तर भाषण मुद्रण संपादित करणे, गाणे वाढवणे, ध्वनी सिक्वेंसरसाठी चक्राकार फिरणे तयार करणे, खराब झालेले मुद्रण दुरुस्त करणे आणि बरेच काही यासह इतर अनेक परिस्थितींमध्ये सहज संक्रमण आवश्यक आहे.</div>
-	<h2><span class="mw-headline" id="How_to_crossfade_two_tracks">दोन गीतपट्टा क्रॉसफेड &#8203;&#8203;कसे करावे</span></h2>
-	<p>प्रथम गीतपट्टा <a href="importing_audio.html" title="ध्वनी आयात करीत आहे">आयात</a> किंवा <a href="record.html" title="विक्रम">मुद्रण केले</a> जावेत . पूर्वनिर्धारीतनुसार, दोन ध्वनी धारिका आयात केल्याने एकापेक्षा एक वर दोन ध्वनी गीतपट्टा तयार होतील. त्याचप्रमाणे, नवीन गीतपट्टा मुद्रण करणे पूर्वनिर्धारीतनुसार प्रकल्पातील इतर गीतपट्टाच्या खाली नवीन गीतपट्टा तयार करेल. आम्हाला प्रारंभिक बिंदू म्हणून हवी असलेली ही व्यवस्था आहे (स्पष्टतेसाठी चित्रे मोनो गीतपट्टा दर्शवितात, परंतु प्रक्रिया स्टिरिओ गीतपट्टासाठी अगदी तशीच आहे).
-	</p>
-	<div class="note">आपण सध्या एकच इतर नंतर ते एक आहेत अनेक गाणी क्रॉसफेड करू इच्छित असल्यास <a href="audio_tracks.html" title="ध्वनी गीतपट्टा">ध्वनी गीतपट्टा</a> नंतर हा लेख आपण करणे आवश्यक आहे वर्णन पद्धतींचा वापर करून क्रॉसफेड करण्यापूर्वी <a href="audacity_selection.html" title="ऑड्यासिटी निवड">निवडा</a> पहिले गाणे वापर <span class="menu">संपादित करा&gt; फीत सीमा&gt; <a href="edit_menu_clip_boundaries.html#split_new" title="मेनू संपादित करा: फीत सीमा">विभाजित नवीन</a></span> गाणे हलविण्यासाठी त्याच्या स्वत: च्या स्वतंत्र गीतपट्टावर, नंतर निवडा आणि नवीन गाणी विभाजित करा.</div>
-	<h2><span class="mw-headline" id="Roughly_position_the_tracks">गीतपट्टा जवळजवळ स्थितीत ठेवा</span></h2>
-	<p><a href="tools_toolbar.html#timeshift" title="साधने साधनपट्टी">वेळ शिफ्ट</a> साधनचा वापर करून जवळजवळ योग्य ठिकाणी दुसरा गीतपट्टा ओढा <img src="https://manual.audacityteam.org/m/images/3/3c/TimeShiftTool.png" alt="वेळशिफ्टसाधन.पीएनजी">. या स्थितीत स्थान अगदी तंतोतंत मिळण्याची चिंता करू नका कारण आम्ही नंतरचे स्थान समायोजित करू. दोन संगीत गीतपट्टा क्रॉसफॅडिंगसाठी, साधारणत: 5 सेकंदांचा आच्छादन योग्य असतो, कधीकधी खूपच लहान किंवा जास्त क्रॉसफेड &#8203;&#8203;अधिक चांगले वाटेल. क्रॉसफेड &#8203;&#8203;संक्रमण किती काळ टिकेल हे मुख्यतः वैयक्तिक चवचा विषय आहे.
-	</p>
-	<dl><dd><span title="गीतपट्टा आच्छादित"><img alt="क्रॉसफेड-आच्छादित-गीतपट्टा. Png" src="../m/images/d/d0/crossfade_overlap_tracks.png" width="564" height="323"></span></dd></dl>
-	<div class="note">गीतपट्टा आणि फीत हाताळण्याविषयी तपशीलवार माहितीसाठी <a href="audacity_tracks_and_clips.html" title="ऑड्यासिटी गीतपट्टा आणि फीत">ध्वनी गीतपट्टा आणि फीत पहा</a> .</div>
-	<h2><span class="mw-headline" id="Align_tracks_more_precisely">गीतपट्टा अधिक तंतोतंत संरेखित करा</span></h2>
-	<p>गीतपट्टा बर्&zwj;याचदा शांत असतात आणि थोड्या काळासाठी शांत असतात. अग्रगण्य / अनुगामी शांतता निवडून आणि हटवून काढली जाऊ शकते. हटवण्याची निवड योग्य आहे हे तपासण्यासाठी ऑड्यासिटीचे <a href="playing_and_recording.html#play_cut" title="वाजवा करणे आणि मुद्रण">कट पूर्वावलोकन</a> उपयुक्त ठरू शकते.
-	</p><p>पहिल्या गीतपट्टाचा शेवट हा बिंदू असेल ज्यावर शेवटी पहिला गीतपट्टा थांबेल (शांत होण्याकरिता फिकट झाला आहे). दुसर्&zwj;या गीतपट्टाची सुरूवात हा बिंदू होईल ज्यावर दुसरा गीतपट्टा कोमेजणे सुरू होईल. 
-	</p>
-	<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-	<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
-	
-	<tbody><tr>
-	<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
-	</td>
-	<td align="left" valign="top">द्वितीय गीतपट्टा काळजीपूर्वक स्थितीत असल्यास लयबद्ध संगीतासाठी हे बर्&zwj;याचदा सर्वोत्कृष्ट ठरेल जेणेकरून दुसर्&zwj;या गीतपट्टामधील ठोके पहिल्या गीतपट्टामध्ये मारहाण करतात. गीतपट्टाचा संगीत लय वेगळा असल्यास सर्व बीट्सला रेषा अप करणे शक्य होणार नाही. या प्रकरणात, आच्छादन ओलांडून अर्ध्या मार्गाच्या डावीकडे फक्त एका बिंदूवर बीट संरेखित करण्याचा प्रयत्न करा.  योग्य स्तर तपशीलांसाठी आवश्यक म्हणून <a href="zooming.html" title="दृश्य आकार वाढवा करत आहे">दृश्य आकार वाढवा</a> इन / आउट.
-	</td></tr></tbody></table>
-	</div>
-	<dl><dd><span title="बीट्स जुळले"><img alt="क्रॉसफेड-बीट-सामना.पीएनजी" src="../m/images/f/f2/crossfade_beat_match.png" width="564" height="356"></span></dd></dl>
-	<p>Crossfaded करणे प्रदेश निवडल्यावर, एक तयार <a href="edit_menu_clip_boundaries.html#split" title="मेनू संपादित करा: फीत सीमा">विभाजित</a> वापरून निवड दोन्ही संपतो येथे <span class="kbrd" style="background-color: #d0d0f8">Ctrl + मी</span> . विभाजित मार्क्स प्रत्येक गीतपट्टामधील योग्य क्षेत्रे निवडण्यास मोठ्या प्रमाणात सोय करतात.
-	</p>
-	<dl><dd><span title="क्रॉसफेडच्या सुरूवातीस आणि शेवटी विभाजित्स जोडले"><img alt="क्रॉसफेड-विभाजित-गीतपट्टा.पीएनजी" src="../m/images/e/ea/crossfade_split_tracks.png" width="564" height="304"></span></dd></dl>
-	<h2><span class="mw-headline" id="Trim_the_tracks">गीतपट्टा ट्रिम करा</span></h2>
-	<p>वरील प्रतिमांप्रमाणेच पुढील गीतपट्टा ट्रिम करणे देखील आवश्यक असल्यास, त्यावरील डबल-क्लिक करून फिकट कमी (या प्रकरणात वरील गीतपट्टामध्ये) नंतर अवांछित प्रदेश निवडा. 
-	</p>
-	<div class="note">ध्वनी हटवण्यापूर्वी (या प्रकरणात खालच्या गीतपट्टामध्ये) <span class="menu">संपादन&gt; विशेष काढा&gt; <a href="edit_menu_remove_special.html#split_delete" title="मेनू संपादित करा: विशेष काढा">विभाजित हटवा</a></span> किंवा कळफलक आडमार्ग <span class="kbrd" style="background-color: #d0d0f8">Ctrl + Alt + K वापरा</span> जेणेकरून गीतपट्टाचा उर्वरित भाग हलू नये.</div>
-	<dl><dd><span title="टोकावरून अधिक ध्वनी ट्रिम केला"><img alt="क्रॉसफेड-ट्रिम्ड.पीएनजी" src="../m/images/6/6b/crossfade_trimmed.png" width="564" height="304"></span></dd></dl>
-	<h2><span class="mw-headline" id="Apply_fades">फिकट लागू करा</span></h2>
-	<p>फिकट लागू करण्याचा त्वरीत मार्ग म्हणजे <a href="crossfade_tracks.html" title="क्रॉसफेड &#8203;&#8203;गीतपट्टा">क्रॉसफेड &#8203;&#8203;गीतपट्टा</a> परिणाम. हा प्रभाव वरच्या निवडलेल्या गीतपट्टावर एक फिकट कमी आणि दोन गीतपट्टाच्या खालच्या भागात एक फिकटवाढ लागू करतो. अधिक जटिल लुप्त होण्याकरिता, पहिल्या गीतपट्टामधील आच्छादित विभागात एक फिकट कमी लागू करून आणि दुसर्&zwj;या गीतपट्टाच्या आच्छादित विभागात एक फिकटवाढ लागू करून <a href="adjustable_fade.html" title="समायोज्य फिकट">समायोजित करण्यायोग्य फिकट</a> प्रभाव लागू केले जाऊ शकते.
-	</p>
-	<dl><dd><span title="पूर्ण क्रॉसफेड"><img alt="क्रॉसफेड-पूर्ण.पीएनजी" src="../m/images/d/de/crossfade_complete.png" width="564" height="303"></span></dd></dl>
-	<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
-	<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
-	
-	<tbody><tr>
-	<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
-	</td>
-	<td align="left" valign="top">रेखीय फिकट्सचा वापर केल्याने फिकटच्या मध्यभागी आवाजची पातळी खाली येऊ शकते.
-	<ul><li>लक्षपूर्वक जुळणार्&zwj;या संगीत लयसह लयबद्ध संगीतासाठी हे बर्&zwj;याच वेळा अवांछनीय असेल आणि रेखीय फॅडपेक्षा उंच <a href="fade_and_crossfade.html#equal" title="फिकट आणि क्रॉसफेड">वाकलेले</a> फॅड शेप (जसे की <a href="fade_and_crossfade.html#equal" title="फिकट आणि क्रॉसफेड">समान पॉवर</a> फीड आकार) वापरुन प्रतिबंधित केले जाऊ शकते .</li>
-	<li>संगीत लयमध्ये भरीव फरक असणार्&zwj;या क्रॉसफॅडिंग संगीतासाठी, रेषात्मक फिकटपेक्षा कमी बुडणा .्या फॅड शेपच्या वापराने आवाज कमी होऊ देऊन नितळ आवाज करणार्&zwj;या क्रॉसफेडची प्राप्ती होऊ शकते.</li></ul>
-	</td></tr></tbody></table>
-	</div>
-	
-	<!-- 
-	NewPP limit report
-	Cached time: 20180917111823
-	Cache expiry: 86400
-	Dynamic content: false
-	CPU time usage: 0.086 seconds
-	Real time usage: 0.091 seconds
-	Preprocessor visited node count: 117/1000000
-	Preprocessor generated node count: 378/1000000
-	Post‐expand include size: 4689/2097152 bytes
-	Template argument size: 3530/2097152 bytes
-	Highest expansion depth: 7/40
-	Expensive parser function count: 0/100
-	-->
-	
-	<!-- 
-	Transclusion expansion time report (%,ms,calls,template)
-	100.00%   15.385      1 - -total
-	 48.37%    7.442      3 - Template:Hint
-	 33.60%    5.169      3 - Template:Note
-	 20.20%    3.108      1 - Template:Intro
-	 17.13%    2.635      2 - Template:Shortcut
-	  9.89%    1.521      2 - Template:Menu
-	  9.28%    1.428      2 - Template:Tip
-	-->
-	
-	<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:4962-0!*!0!!*!5!* and timestamp 20180917111823 and revision id 55672
-	 -->
-	</div>
-											<!-- end content -->
-											<div class="visualClear"></div>
-					</div>
-				</div>
-			</div>
-			<div id="column-one">
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>क्रॉसफेड ​​तयार करणे - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Creating_a_Crossfade rootpage-Creating_a_Crossfade skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
 				
-						
-					
-				<div class="portlet" id="p-logo" role="banner">
-					<a href="../index.html" class="mw-wiki-logo" title="मुख्य पृष्ठास भेट द्या"></a>
-				</div>
-						
-			<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-			<h3>निर्देशक</h3>
-			<div class="pBody">
-				<ul><li> <a href="../index.html" title="मुख्य पृष्ठ"><span title="मुखपृष्ठ, ऑड्यासिटी स्क्रीनच्या क्लिक करण्यायोग्य प्रतिमेसह पूर्ण.">माहिती-पुस्तिका मुख्यपृष्ठ</span></a></li>
-	<li> <a href="../index.html#using" title="मुख्य पृष्ठ"><span title="त्वरीत मदत, ऑड्यासिटी पाया, ऑड्यासिटी सह संपादन, प्रगत विषय मदत">ऑड्यासिटी वापरणे</span></a>
-	<ul><li> <a href="audacity_tour_guide.html" title="ऑड्यासिटी मार्गदर्शन सहल"><span title="ऑड्यासिटीच्या निवडलेल्या वैशिष्ट्यांचा त्वरीत मार्गदर्शन सहल.  हे वैशिष्ट्ये कशी वापरायची हे ती सांगणे किती लांब असेल हे सांगत नाही.  त्याऐवजी हे आपल्याला ऑड्यासिटीमध्ये अस्तित्त्वात असलेल्या काही वैशिष्ट्यांविषयी सांगते आणि त्याबद्दल आपल्याला थोडेसे शिकण्यास मदत करते.">मार्गदर्शन सहल</span></a></li>
-	<li> <a href="new_features_in_this_release.html" title="या प्रकाशनात नवीन वैशिष्ट्ये"><span title="या प्रकाशनमध्ये सादर केलेल्या की नवीन कार्यक्षमतेचे विहंगावलोकन">नवीन वैशिष्ट्य</span></a></li>
-	<li> <a href="../quick_help.html" title="त्वरीत मदत"><span title="ऑड्यासिटीसह प्रारंभ करण्यात मदत करण्यासाठी एक संक्षिप्त मार्गदर्शक">प्रारंभ करणे</span></a></li>
-	<li> <a href="tutorials.html" title="प्रशिक्षण"><span title="ऑड्यासिटीमध्ये सामान्य क्रिया करण्यासाठी चरण-दर-चरण सूचना प्रदान करणारे प्रशिक्षणचे मार्गदर्शक">प्रशिक्षण</span></a></li>
-	<li> <a href="tips.html" title="टिपा"><span title="ऑड्यासिटीसह क्रिया करण्याच्या विशिष्ट पैलूंचे मार्गदर्शक: निर्देशक.  पुनर्मुद्रण, ध्वनी संरेखन">टिपा</span></a></li></ul></li>
-	<li> <a href="../index.html#reference" title="मुख्य पृष्ठ"><span title="ऑड्यासिटी ग्राफिकल वापरकर्ता संवादपटलचे घटक">ऑड्यासिटी जीयूआय (GUI)</span></a>
-	<ul><li> <a href="menu_reference.html" title="मेनू संदर्भ"><span title="ऑड्यासिटी मधील मेनू आणि सबमेनससाठी मार्गदर्शक">मेनू पट्टी</span></a></li>
-	<li> <a href="toolbars_overview.html" title="साधनपट्टी विहंगावलोकन"><span title="ऑड्यासिटीमध्ये वापरल्या जाणार्&zwj;या विविध साधनपट्टीसाठी मार्गदर्शक">साधनपट्टी</span></a></li>
-	<li> <a href="tracks_menu_add_new.html" title="गीतपट्टा मेनू: नवीन जोडा"><span title="विविध प्रकारच्या गीतपट्टासाठी मार्गदर्शक">गीतपट्टा</span></a></li>
-	<li> <a href="index_of_effects_generators_and_analyzers.html" title="प्रभाव, निर्माणकर्ता आणि विश्लेषकांचे अनुक्रमणिका"><span title="प्रभाव, निर्माणकर्ता आणि विश्लेषकांसाठी त्वरीत अनुक्रमणिका जो ऑड्यासिटीसह पाठविला जातो">परिणाम</span></a></li></ul></li>
-	<li> <a href="customization.html" title="सानुकूलन"><span title="समायोजन करा, कळफलक आडमार्ग बदला, प्लगइन जोडा">सानुकूलित ऑड्यासिटी</span></a>
-	<ul><li> <a href="preferences.html" title="प्राधान्ये"><span title="प्राधान्यांकरिता मार्गदर्शक, जे आपल्याला ऑड्यासिटीचे बहुतेक पूर्वनिर्धारीत आचरण बदलू देते">प्राधान्ये</span></a></li>
-	<li> <a href="keyboard_shortcut_reference.html" title="कळफलक आडमार्ग संदर्भ"><span title="ऑड्यासिटी मेनूमधील सर्व आदेशांची सूची आणि सर्व पूर्व परिभाषित कळफलक आडमार्ग">कळ बंधन</span></a></li>
-	<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="प्रभाव, निर्माणकर्ता आणि विश्लेषक प्लग-इन स्थापित करत आहे"><span title="ऑड्यासिटीमध्ये अतिरिक्त कार्यक्षमता जोडण्यासाठी आपण प्लगइन डाउनलोड आणि स्थापित करू शकता.  प्लग-इन्स आपल्याला अतिरिक्त प्रभाव किंवा अधिक ध्वनी निर्मिती आणि विश्लेषण क्षमता देऊ शकतात.">प्लग-इन्स</span></a></li></ul></li></ul>
-			</div>
-			</div>
-			<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-			<h3>संदर्भ</h3>
-			<div class="pBody">
-				<ul><li> <a href="../index.html#reference" title="मुख्य पृष्ठ"><span title="ऑड्यासिटी प्रकल्प विंडोचा संदर्भ मार्गदर्शक - आपण अधिक फिरण्यासाठी प्रतिमेवरील फिरवा आणि प्रतिमा क्लिक करू शकता">संदर्भ</span></a>
-	<ul><li> <a href="digital_audio.html" title="डिजिटल ध्वनी"><span title="डिजिटल ध्वनीसाठी नवशिक्या मार्गदर्शक">डिजिटल ध्वनी</span></a></li>
-	<li> <a href="glossary.html" title="शब्दकोष"><span title="अधिक व्यापक विस्तृत स्पष्टीकरणासाठी विकिपीडियाच्या काही दुव्यांसह डिजिटल ध्वनीशी संबंधित तांत्रिक अटींचे संक्षिप्त स्पष्टीकरण">शब्दकोष</span></a></li>
-	<li> <a href="scripting_reference.html" title="शैली संदर्भ"><span title="मेनूमध्ये असलेल्या ऑड्यासिटी आज्ञा्स, जे मॅक्रो, न्यक्विस्ट(Nyquist) आणि पायथन वरून वापरल्या जाऊ शकतात">सर्व आज्ञा</span></a></li>
-	<li> <a href="subject_index.html" title="विषय निर्देशांक"><span title="माहिती-पुस्तिकाची एक छोटी, मर्यादित, अनुक्रमणिका">अनुक्रमणिका</span></a></li></ul></li>
-	<li> <a href="faq.html" title="सामान्य प्रश्न"><span title="नेहमी विचारले जाणारे प्रश्न - बहुतेक सामान्य प्रश्नांची उत्तरे एफएक्यू(FAQ) मध्ये दिली जातात">सामान्य प्रश्न</span></a></li></ul>
-			</div>
-			</div>
-			
-			<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-			<h3>उपयुक्त दुवे</h3>
-			<div class="pBody">
-				<ul><li> <span title="ऑड्यासिटी मंच (समर्थन विनंत्यांसाठी सर्वोत्तम स्थान)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
-	<li> <span title="ऑड्यासिटी विकी मुख्यपृष्ठ"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-	<li> <span title="ऑड्यासिटी नवीनतम प्रकाशन"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-	<li> <span title="दृश्यमान 'ते काय आहे?'  ऑड्यासिटी मार्गदर्शन"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्ल्यूआयटी(WIT)</a></span></li></ul>
-			</div>
-			</div>
-			
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">क्रॉसफेड ​​तयार करणे</h1>
 				
-				</div><!-- end of the left (by default at least) column -->
-			<div class="visualClear"></div>
-						<div id="footer" role="contentinfo">
-							<div id="f-copyrightico">
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरुन</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा : <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Creating_a_Crossfade#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">क्रॉसफेडचा उद्देश ऑडिओच्या दोन विभागांमध्ये गुळगुळीत संक्रमण निर्माण करणे हा आहे. दोन विभाग ओव्हरलॅप होतात आणि जसजसा एक विभाग फिका पडतो तसतसा दुसरा फेड होतो. हे तंत्र सामान्यतः डीजेद्वारे "संकलन" गीतपट्टा आणि <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Mashup_%28music%29"> मॅशअपसाठी </a> वापरले जाते. क्रॉसफेड्सचा वापर संगीताच्या तुकड्यांमध्ये सामील होण्यापुरता मर्यादित नाही, परंतु इतर अनेक परिस्थितींमध्ये वापरला जाऊ शकतो जिथे उच्चारांचे ध्वनीमुद्रण संपादित करणे, गाणी वाढवणे, ऑडिओ सिक्वेन्सरसाठी लूप तयार करणे, खराब झालेले ध्वनीमुद्रण दुरुस्त करणे आणि बरेच काही समाविष्ट आहे. </div>
+<h2><span class="mw-headline" id="How_to_crossfade_two_tracks">दोन गीतपट्टे क्रॉसफेड कसे करावे</span></h2>
+<p>प्रथम, गीतपट्टा  <a href="importing_audio.html" title="Importing Audio"> आयात </a> किंवा <a href="record.html" title="Record"> रेकॉर्ड </a> केले जावेत. मुलभूतरित्या, दोन ध्वनी धारिका आयात केल्याने एकापेक्षा दोन ध्वनी गीतपट्टे तयार होतील. त्याचप्रमाणे, नवीन गीतपट्टा मुद्रित केल्याने पूर्वनियोजितनुसार प्रकल्पातील इतर गीतपट्ट्याच्या खाली एक नवीन गीतपट्टा तयार होईल. ही अशी व्यवस्था आहे जी आम्हाला प्रारंभ बिंदू म्हणून हवी आहे (स्पष्टतेसाठी चित्रे मोनो गीतपट्टा दर्शवतात, परंतु स्टिरिओ गीतपट्ट्यासाठी प्रक्रिया अगदी सारखीच आहे).
+</p>
+<div class="note">तुम्हाला एकाच <a href="audio_tracks.html" title="Audio Tracks"> ध्वनी गीतपट्ट्यामध्ये </a> सध्या एकामागून एक असलेली अनेक गाणी क्रॉसफेड करायची असतील तर या लेखात वर्णन केलेल्या पद्धती वापरून क्रॉसफेड करण्यापूर्वी तुम्ही पहिले गाणे <a href="audacity_selection.html" title="Audacity Selection"> निवडले </a>  पाहिजे. ते गाणे त्याच्या स्वतःच्या वेगळ्या ट्रॅकवर हलवण्यासाठी <span class="menu">संपादित करा &gt; सीमा क्लिप करा &gt; <a href="edit_menu_clip_boundaries.html#split_new" title="Edit Menu: Clip Boundaries"> नवीन विभागणी करा </a></span> , नंतर नवीन गाणी निवडा आणि विभाजित करा.</div>
+<h2><span class="mw-headline" id="Roughly_position_the_tracks">गीतपट्ट्यांची अंदाजे स्थिती ठरवा</span></h2>
+<p> <a href="tools_toolbar.html#timeshift" title="Tools Toolbar"> वेळ स्थलांतर </a> साधन <img alt="Time Shift Tool" src="../m/images/3/3c/timeshifttool.png" title="Time Shift Tool" width="20" height="20" />  वापरून दुसरा गीतपट्टा अंदाजे योग्य ठिकाणी ड्रॅग करा. या टप्प्यावर स्थिती खूप तंतोतंत मिळण्याची काळजी करू नका कारण आम्ही नंतर स्थिती समायोजित करू. दोन संगीत गीतपट्टे क्रॉसफेड करण्यासाठी, जरी काहीवेळा खूपच लहान किंवा जास्त लांबीचा क्रॉसफेड चांगला वाटू शकतो, साधारणतः ५ सेकंदांचा ओव्हरलॅप योग्य असतो. क्रॉसफेड संक्रमण किती काळ टिकते ही मुख्यतः वैयक्तिक बाब आहे.
+</p>
+<dl><dd><span title="Tracks overlapped"><img alt="Crossfade-overlap-tracks.png" src="../m/images/d/d0/crossfade_overlap_tracks.png" width="564" height="323" /></span></dd></dl>
+<div class="note">गीतपट्टा आणि क्लिप हाताळण्याबद्दल तपशीलवार माहितीसाठी, <a href="audacity_tracks_and_clips.html" title="Audacity Tracks and Clips">ध्वनी गीतपट्टा आणि क्लिप</a> बघा.</div>
+<h2><span class="mw-headline" id="Align_tracks_more_precisely">ट्रॅक अधिक अचूकपणे संरेखित करा</span></h2>
+<p>गीतपट्टा बर्‍याचदा शांततेच्या अल्प कालावधीसह सुरू आणि समाप्त होतील. अग्रगण्य/मागोमाग शांतता निवडून आणि हटवून काढली जाऊ शकते. ऑड्यासिटीच्या <a href="playing_and_recording.html#play_cut" title="Playing and Recording">कट पूर्वावलोकन</a>  हटवायची निवड योग्य आहे हे तपासण्यासाठी उपयुक्त ठरू शकते.
+</p><p>पहिल्या गीतपट्ट्याचा शेवट हा बिंदू असेल ज्यावर पहिला गीतपट्टा शेवटी थांबेल (शांततेसाठी फिकट झाला आहे). दुस-या गीतपट्ट्याची सुरूवात हा बिंदू असेल ज्या ठिकाणी दुसरा गीतपट्टा कमी होऊ लागतो. 
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">लयबद्ध संगीतासाठी, दुसरा गीतपट्टा काळजीपूर्वक ठेवल्यास ते बरेचदा चांगले वाटेल जेणेकरुन दुसऱ्या गीतपट्ट्यामधील ठोके पहिल्या गीतपट्ट्यामधील ठोक्यांप्रमाणे असतील. जर गीतपट्ट्याची गती वेगळी असेल तर सर्व ठोके नीट मांडणे शक्य होणार नाही. या प्रकरणात, ओव्हरलॅपच्या अर्ध्या रस्त्याच्या डावीकडे एका बिंदूवर बीट्स संरेखित करण्याचा प्रयत्न करा. तपशीलाची योग्य पातळी पाहण्यासाठी आवश्यकतेनुसार <a href="zooming.html" title="Zooming">झूम</a> इन/आउट करा.
+</td></tr></table>
+</div>
+<dl><dd><span title="Beats matched"><img alt="Crossfade-beat-match.png" src="../m/images/f/f2/crossfade_beat_match.png" width="564" height="356" /></span></dd></dl>
+<p>क्रॉसफेड करण्याचा प्रदेश निवडल्यानंतर, <span class="kbrd" style="background-color: #d0d0f8">Ctrl + I</span> वापरून निवडीच्या दोन्ही टोकांना <a href="edit_menu_clip_boundaries.html#split" title="Edit Menu: Clip Boundaries"> स्प्लिट </a> तयार करा. विभाजित गुण प्रत्येक गीतपट्ट्यामध्ये योग्य क्षेत्रे निवडण्यास मोठ्या प्रमाणात सोय करतात.
+</p>
+<dl><dd><span title="Splits added at start and end of crossfade"><img alt="Crossfade-split-tracks.png" src="../m/images/e/ea/crossfade_split_tracks.png" width="564" height="304" /></span></dd></dl>
+<h2><span class="mw-headline" id="Trim_the_tracks">गीतपट्टा ट्रिम करा</span></h2>
+<p>जर, वरील प्रतिमांप्रमाणे, गीतपट्टा आणखी ट्रिम करणे आवश्यक असल्यास, फेड आऊट झाल्यानंतर (या प्रकरणात वरच्या गीतपट्ट्यामध्ये) त्यावर दोनदा-क्लिक करून अवांछित प्रदेश निवडा, नंतर तो हटवा. 
+</p>
+<div class="note">फेड इन होण्यापूर्वी ऑडिओ हटवताना (या प्रकरणात खालच्या ट्रॅकमध्ये)  <span class="menu">संपादन &gt; विशेष काढा &gt; <a href="edit_menu_remove_special.html#split_delete" title="Edit Menu: Remove Special"> स्प्लिट हटवा </a></span>, किंवा किबोर्डचा सोपा मार्ग <span class="kbrd" style="background-color: #d0d0f8">Ctrl + Alt + K</span> वापरा जेणेकरून गीतपट्ट्याचा उर्वरित भाग हलवायला लागू नये.</div>
+<dl><dd><span title="Excess audio trimmed from ends"><img alt="Crossfade-trimmed.png" src="../m/images/6/6b/crossfade_trimmed.png" width="564" height="304" /></span></dd></dl>
+<h2><span class="mw-headline" id="Apply_fades">फेड्स लावा</span></h2>
+<p> <a href="crossfade_tracks.html" title="Crossfade Tracks">गीतपट्टे क्रॉसफेड </a> प्रभाव हा फेड्स लागू करण्याचा सर्वात जलद मार्ग आहे. हा प्रभाव वरच्या निवडलेल्या गीतपट्ट्यावर फेड-आउट आणि दोन गीतपट्ट्याच्या खालच्या बाजूस फेड-इन लागू करतो. अधिक जटिल फेडिंगसाठी, पहिल्या गीतपट्ट्यामधील ओव्हरलॅपिंग विभागात फेड-आउट आणि दुसऱ्या गीतपट्ट्याच्या ओव्हरलॅपिंग विभागात फेड-इन लागू करून प्रत्येक गीतपट्ट्यावर <a href="adjustable_fade.html" title="Adjustable Fade"> बदलानुकारी फेड </a> प्रभाव लागू केला जाऊ शकतो. 
+</p>
+<dl><dd><span title="Completed crossfade"><img alt="Crossfade-complete.png" src="../m/images/d/de/crossfade_complete.png" width="564" height="303" /></span></dd></dl>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">रेखीय फेड्स वापरल्याने आवाजाची पातळी फेडच्या मध्यभागी खाली येऊ शकते.
+<ul><li>जवळून जुळणार्‍या लयीसह तालबद्ध संगीतासाठी हे अनेकदा अवांछनीय असते आणि रेखीय फेडपेक्षा वरती झुकणारे फेडचे आकार वापरून प्रतिबंधित केले जाऊ शकते (जसे की <a href="fade_and_crossfade.html#equal" title="Fade and Crossfade" >समान शक्ती</a> फिकट आकार). </li>
+<li>क्रॉसफेडिंग संगीतासाठी जेथे लयीमध्ये लक्षणीय फरक आहे, एक नितळ आवाज करणारा क्रॉसफेड रेषीय फेड पेक्षा कमी असलेल्या फेड आकारांचा वापर करून आवाज कमी करण्यास अनुमती देऊन प्राप्त केले जाऊ शकते.</li></ul>
+</td></tr></table>
+</div>
+
+
+
+
+
+
+</div>
 										
-								</div>
-						<div id="f-poweredbyico">
-										<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="मिडियाविकि द्वारा समर्थित" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>
-								</div>
-						
-			<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली - <a href="https://alphamanual.audacityteam.org/man/Creating_a_Crossfade">या पृष्ठाची प्रस्तुत आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
-	</div>
-			</div></body></html>
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त लिंक्स</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

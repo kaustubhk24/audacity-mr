@@ -1,149 +1,157 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="mr" dir="ltr"><head>
-	<meta charset="UTF-8">
-	<title>आयट्यून्सवर निर्यात करण्यासाठी नमुना कार्यप्रवाह - ऑड्यासिटी माहितीपुस्तिका</title>
-	
-	
-	
-	
-	<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-	<meta name="ResourceLoaderDynamicStyles" content="">
-	
-	<meta name="generator" content="MediaWiki 1.28.2">
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="शोधा" type="application/openशोधाdescription+xml" href="https://alphamanual.audacityteam.org/m/openशोधा_desc.php" title="ऑडसिटी डेव्हलपमेंट मॅन्युअल (इं)">
-	<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-	<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
-	
-	<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-	</head>
-	<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sample_workflow_for_exporting_to_iTunes rootpage-Sample_workflow_for_exporting_to_iTunes skin-monobook action-view"><div id="globalWrapper">
-			<div id="column-content">
-				<div id="content" class="mw-body" role="main">
-					<a id="top"></a>
-					
-					<div class="mw-indicators">
-	</div>
-					<h1 id="firstHeading" class="firstHeading" lang="en"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयट्यून्सवर निर्यात करण्यासाठी नमुना कार्यप्रवाह</font></font></h1>
-					
-					<div id="bodyContent" class="mw-body-content">
-						<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेकडून</div>
-						<div id="contentSub"></div>
-											<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_exporting_to_iTunes#शोधाInput">शोधा</a></div>
-	
-						<!-- start content -->
-						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-	<div class="intro"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हे प्रशिक्षण उदाहरणार्थ चरणांच्या संचाचा एक आराखडा आहे ज्याचा उपयोग ऑड्यासिटी प्रकल्प (उदाहरणार्थ एलपी आणि टेप ट्रान्सक्रिप्शन) ITunes मध्ये मिळविण्यासाठी केला जाऊ शकतो. </font><font style="vertical-align: inherit;">वर्कफ्लो एएसी संगीत धारिकावर केंद्रित आहे कारण अॅपल,  पूर्वनिर्धारित, स्वरूप आहे. </font><font style="vertical-align: inherit;">काही वापरकर्ते आयट्यून्समध्ये त्यांच्या संगीत धारीकांसाठी संकलित न केलेले डब्ल्यूएव्ही किंवा एआयएफएफ किंवा संकुचित अॅपल लॉसलेस स्वरूप वापरण्यास प्राधान्य देऊ शकतात.
-	</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काम करण्याचा हा एकमेव मार्ग नाही - असे बरेच पर्याय आहेत. </font><font style="vertical-align: inherit;">कोणत्याही कृतीप्रमाणेच ते आपल्या वैयक्तिक आवश्यकतानुसार अनुकूल केले जाऊ शकते. </font><font style="vertical-align: inherit;">आवश्यक असल्यास आपण डब्ल्यूएव्हीऐवजी एआयएफएफमध्ये काम करू शकता. </font><font style="vertical-align: inherit;">बरेच अॅपल मॅक वापरकर्ते कदाचित एआयएफएफमध्ये काम करण्यास प्राधान्य देतील.
-	</font></font></p><font style="vertical-align: inherit;"></font><a href="tutorial_exporting_to_itunes.html" title="प्रशिक्षण - ITunes निर्यात"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रशिक्षण</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
-	देखील पहा </font><a href="tutorial_exporting_to_itunes.html" title="Tutorial - Exporting to iTunes"><font style="vertical-align: inherit;">-</font></a><font style="vertical-align: inherit;"> या विषयावर पुढील उपयुक्त माहिती असलेल्या </font><a href="tutorial_exporting_to_itunes.html" title="Tutorial - Exporting to iTunes"><font style="vertical-align: inherit;">आयट्यून्सवर निर्यात करणे</font></a><font style="vertical-align: inherit;"> .</font></font></div>
-	<h2><span class="mw-headline" id="Workflow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कार्यप्रवाह</font></font></span></h2>
-	<ol><li> <a href="#export"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्ही धारिका निर्यात करा</font></font></a></li>
-	<li> <a href="#add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयट्यून्समध्ये डब्ल्यूएव्ही धारिका जोडा</font></font></a></li>
-	<li> <a href="#metadata"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अल्बमचे नाव आणि कलाकारांसाठी मेटाडेटा संपादित करण्यासाठी आयट्यून्स वापरा</font></font></a></li>
-	<li> <a href="#aac"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्ही धारिकांमधून ग्रंथालयात एएसी प्रती करण्यासाठी आयट्यून्स वापरा</font></font></a></li>
-	<li> <a href="#delete"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ग्रंथालयतून डब्ल्यूएव्ही धारिका हटवा</font></font></a></li>
-	<li> <a href="#edit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गीतपट्टा / अल्बमचे मेटाडेटा टॅग संपादित करा</font></font></a></li>
-	<li> <a href="#artwork"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अल्बमची कलाकृती आणा</font></font></a></li>
-	<li> <a href="#cd"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिकरित्या एक सीडी तयार करा - आणि कव्हर आणि प्लेलिस्ट तयार करा</font></font></a></li>
-	<li> <a href="#backup"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्या अद्यतनित आयट्यून्स ग्रंथालयचा बॅकअप घ्या</font></font></a></li>
-	<li> <a href="#cleanup"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ऑड्यासिटी प्रकल्प हटवा आणि हार्ड डिस्क जागा सोडण्यासाठी डब्ल्यूएव्ही धारिका निर्यात केल्या</font></font></a></li>
-	<li> <a href="#direxp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ऑड्यासिटीमधून पर्यायी डायरेक्ट एएसी निर्यात</font></font></a></li></ol>
-	<p><br>
-	</p>
-	 
-	<div id="export"></div>
-	<h3><span class="mw-headline" id="Export_the_WAV_files"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्ही धारिका निर्यात करा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कोणत्याही सोयीस्कर ठिकाणी डब्ल्यूएव्ही धारिका किंवा डब्ल्यूएव्हीचा संच तयार करण्यासाठी </font></font><a href="file_export_dialog.html" title="धारिका निर्यात संवाद"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनी निर्यात</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा </font></font><a href="export_multiple.html" title="एकाधिक निर्यात करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एकाधिक </font></font></a><font style="vertical-align: inherit;"><a href="file_export_dialog.html" title="File Export Dialog"><font style="vertical-align: inherit;">निर्यात करा</font></a><font style="vertical-align: inherit;"> वापरा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">ऑड्यासिटीने ४४१०० हर्ट्झ आणि ३२-बिट नमुना स्वरूपातील प्रकल्प दर (हे पूर्वनिर्धारित </font></font><a href="quality_preferences.html" title="गुणवत्ता प्राधान्ये"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गुणवत्ता समायोजन आहेत</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) सह निर्यात केले असल्यास पूर्वनिर्धारितनुसार ४४.१kHz १६-बिट पीसीएम डब्ल्यूएव्ही धारिका्स (किंवा मॅकवरील एआयएफएफ धारिका) तयार होतील. </font><font style="vertical-align: inherit;">ऑड्यासिटी त्याच्या ३२-बिट अंतर्गत स्वरुपावरून १६-बिट पर्यंत खाली नमुना घेईल, ज्यायोगे </font><font style="vertical-align: inherit;">रूपांतरणापासून १६- </font></font><a href="dither.html" title="एकतर"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बिटवर</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> परिणाम होऊ शकतात अशा कोणत्याही </font><a href="dither.html" title="Dither"><font style="vertical-align: inherit;">क्लिक</font></a><font style="vertical-align: inherit;"> आवाजासाठी आवाजाचा </font><font style="vertical-align: inherit;">आकार लावला जाईल </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">प्रगत वापरकर्ते </font></font><a href="quality_preferences.html#conversion" title="गुणवत्ता प्राधान्ये"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गुणवत्ता प्राधान्यांनुसार</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> तिचा प्रकार बदलू किंवा बंद करू शकतात </font><font style="vertical-align: inherit;">. 
-	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">१६-बिट निर्यात केल्याने हे सुनिश्चित होईल की धारिका्स आयट्यून्सच्या सर्व आवृत्त्यांशी सुसंगत आहेत, ते आयएट्यून्स मधील एएसी किंवा इतर स्वरूपांमध्ये (किंवा सीडी बर्न करण्यासाठी) सुसंगत असतील. </font><font style="vertical-align: inherit;">एकतर निर्यात संवादामध्ये "अन्य संकलित धारिका" निवडून, नंतर </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पर्यायांवर</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्लिक करुन ३२-बीट पीसीएम धारिका निर्यात करणे देखील शक्य आहे </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">या धारिका सैद्धांतिकदृष्ट्या अत्यल्प गुणवत्तेच्या असतील परंतु १६-बिट धारिकाच्या दुप्पट असतील. </font><font style="vertical-align: inherit;">ITunes च्या नवीनतम आवृत्त्या त्या प्ले केल्या जातील, परंतु अन्य प्लेअर कदाचित प्ले करू शकणार नाहीत.
-	</font></font></p>
-	<div id="add"></div>
-	<h3><span class="mw-headline" id="Add_the_WAV_files_into_iTunes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयट्यून्समध्ये डब्ल्यूएव्ही धारिका जोडा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयट्यून्स ग्रंथालयमध्ये डब्ल्यूएव्ही धारिका्स जोडा (आयट्यून्स आज्ञा </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">धारिका</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरुन </font><span class="menu"><font style="vertical-align: inherit;">&gt; ग्रंथालयमध्ये </font></span></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">धारिका जोडा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा </font><span class="menu"><font style="vertical-align: inherit;">धारिका ग्रंथालयमध्ये फोल्डर जोडा</font></span><font style="vertical-align: inherit;"> . आयटीयन्स आयात प्राधान्ये एएसी समायोजन ( </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपादन&gt; प्राधान्ये&gt; सामान्य&gt; आयात समायोजन आयात</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करुन आयात केली असल्यास सेट </font><span class="menu"><font style="vertical-align: inherit;">करा.</font></span><font style="vertical-align: inherit;"> ), कोणतेही रूपांतरण होत नाही कारण हे प्राधान्य फक्त सीडीवरून आयात करण्यासाठीच लागू होते.
-	</font></font></p>
-	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हे लक्षात घ्या की पूर्वनिर्धारितनुसार आयट्यून्स </font><font style="vertical-align: inherit;">ध्वनी धारिका त्याच्या स्वत: च्या धारिका जागेमध्ये नक्कल </font><font style="vertical-align: inherit;">करत </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नाही</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , त्याऐवजी आपल्याकडे सध्या ध्वनी धारिका कोठे संग्रहित आहे याचा दुवा बनविते.</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयट्यून्समध्ये हे बदलण्यासाठी </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपादन&gt; प्राधान्ये&gt; प्रगत</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वर जा </font><font style="vertical-align: inherit;">आणि </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"ग्रंथालयत जोडताना आयट्यून्स मीडिया फोल्डरमध्ये धारिका नक्क्ल करा" असे म्हणणारे</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> चेकबॉक्स चिन्हांकित </font><b><font style="vertical-align: inherit;">करा</font></b><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">आपण ही समायोजन बनविली पाहिजे अशी जोरदार शिफारस केली जाते.</font></font></p></div>
-	<div id="metadata"></div>
-	<h3><span class="mw-headline" id="Use_iTunes_to_edit_the_metadata_for_the_album_name_and_artist"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अल्बमचे नाव आणि कलाकारांसाठी मेटाडेटा संपादित करण्यासाठी आयट्यून्स वापरा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्तंभ आपण आपल्या iTunes ग्रंथालय मध्ये दर्शवित आहे एक आहे याची खात्री करा </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रकारची</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">आयात केलेल्या धारिका डब्ल्यूएव्हीच्या रुपात दर्शविल्या जातील आणि "प्रकारची" स्तंभ शीर्षलेख क्लिक करून एकत्र सूचीबद्ध केली जाऊ शकतात. 
-	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सर्व डब्ल्यूएव्ही धारिका निवडा आणि अल्बमचे नाव आणि कलाकाराचे नाव प्रविष्ट करण्यासाठी आयट्यून्सचे मेटाडेटा संपादक वापरा जेणेकरून इतर मेटाडेटा टॅग संपादित करताना आपल्याला नंतर सहज सापडेल. </font><font style="vertical-align: inherit;">ऑड्यासिटीच्या मेटाडेटा संपादकाचा वापर करून ऑड्यासिटी निर्यात करण्यापूर्वी आपण हा मेटाडेटा वैकल्पिकरित्या जतन करू शकता - काही वापरकर्ते अहवाल करतात की मेटाडेटा व्यवस्थापित करण्यासाठी ऑड्यासिटीऐवजी आयट्यून्स वापरणे सोपे आहे.
-	</font></font></p>
-	<div id="aac"></div>
-	<h3><span class="mw-headline" id="Use_iTunes_to_make_AAC_copies_in_the_library_from_the_WAV_files"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्ही धारिकांमधून ग्रंथालयात एएसी प्रती करण्यासाठी आयट्यून्स वापरा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्याकडे आधीपासूनच आपल्या आयट्यून्स ग्रंथालयमध्ये इतर डब्ल्यूएव्ही धारिका नसतील तर आपल्याला आवश्यक असलेल्या डब्ल्यूएव्ही धारिका अद्याप या टप्प्यात केवळ निवडलेल्या ट्यून असल्या पाहिजेत, यापुढे आपण यापुढे क्लिक न करता. </font><font style="vertical-align: inherit;">आपण आपल्या आवश्यक बिटरेटवर आपल्या आयट्यून्स आयात समायोजन एएसी वर जतन केल्या असल्याचे सुनिश्चित करा. </font><font style="vertical-align: inherit;">आयट्यून्स आज्ञा </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">धारिका&gt; रूपांतरण</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरुन त्यांना एएसी मध्ये </font><span class="menu"><font style="vertical-align: inherit;">रूपांतरित करा</font></span><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">काळजीपूर्वक लक्षात घ्या की यामुळे एक “नक्क्कल” सरळ रूपांतरण बनत नाही - म्हणून या टप्प्यावर आपल्या ग्रंथालयत एएसी आणि गाण्यांच्या डब्ल्यूएव्ही दोन्ही प्रती असतील.
-	</font></font></p>
-	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्याकडे भरपूर जागा असल्यास आपण आपल्या आयट्यून्स ग्रंथालयत डब्ल्यूएव्ही धारिका त्यांच्या लॉसलेस गुणवत्तेसाठी ठेवू शकता आणि त्यांना एएसीमध्ये रूपांतरित करू इच्छित नाही. </font><font style="vertical-align: inherit;">अशा परिस्थितीत आपण हे रूपांतरण चरण आणि पुढील चरण आपल्या आयट्यून्स ग्रंथालयतून डब्ल्यूएव्ही धारिका हटवू शकता. </font><font style="vertical-align: inherit;">अजून एक पर्याय म्हणजे अॅपल लॉसलेसमध्ये रूपांतरित करण्यासाठी आयट्यून्स जतन करणे ज्यामध्ये डब्ल्यूएव्हीचे अर्धे धारिका आकार आहे.  
-	</font></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">किंवा आपण एसीऐवजी आपल्या आयट्यून्स ग्रंथालयमध्ये एमपी ३ धारिका्स वापरू इच्छित असाल. </font><font style="vertical-align: inherit;">अशावेळी एकतर आयट्यून्समध्ये आयात करण्यासाठी ऑड्यासिटी पासुन कोणत्याही सोयीस्कर ठिकाणी एमपी ३ म्हणून निर्यात करा किंवा डब्ल्यूएव्ही आयात करा आणि आयट्यून्सला पूर्वनिर्धारित एएसी ऐवजी एमपी ३ मध्ये रूपांतरित करा. </font><font style="vertical-align: inherit;">लक्षात घ्या की समतुल्य धारिका आकारासाठी, एएसी सहसा एमपी ३ पेक्षा अधिक दर्जेदार ध्वनी देणे मानले जाते, परंतु आपण धारिका दुसर्&zwj;यास पाठवायची असल्यास एमपी ३ एक अधिक सुरक्षित निवड आहे.
-	</font></font></p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-	आयपॉडवर संकलित प्रकार वापरण्याचे बरेच फायदे आहेत. </font><font style="vertical-align: inherit;">दोन मुख्य म्हणजे आपण उपकरणामध्ये बरीच गाणी </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बसवू शकता (256 केबीपीएस धारिका्ससाठी तुम्ही अनेक गाण्यांपेक्षा ८-९ पट फिट करू शकता)</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि कॉम्प्रेस केलेल्या धारिका्समुळे बॅटरीचे आयुष्य सुधारते (कारण डिस्क रीड्स बॅटरी उर्जेवर तुलनेने भारी असतात ).</font></font></div>
-	<div id="delete"></div>
-	<h3><span class="mw-headline" id="Delete_the_WAV_files_from_the_library"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ग्रंथालयतून डब्ल्यूएव्ही धारिका हटवा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डब्ल्यूएव्ही धारिका्स अजूनही निवडलेल्या ट्यून म्हणूनच राहिल्या पाहिजेत - या टप्प्यावर अत्यधिक काळजी घ्या (एएसी तयार केल्या जातात परंतु आयट्यून्सद्वारे निवड करणे भाग पाडले जात नाही) तर मग हटवली की वापरुन निवडलेल्या डब्ल्यूएव्ही धारिका हटवा - आणि त्या धारिका पाठवा कचरा
-	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काळजीपूर्वक लक्षात घ्या की या वर्कफ्लोने असे गृहीत धरले आहे की आपल्याकडे आयट्यून्स आहेत धारिका नक्कल करण्यासाठी जतन केल्या आहेत बाह्य धारिकांचा संदर्भ घेण्यासाठी नाही - म्हणून हटविलेले डब्ल्यूएव्ही आयट्यून्सच्या मूळ स्त्रोत डब्ल्यूएव्हीच्या प्रती आहेत. </font><font style="vertical-align: inherit;">या मध्ये सेट आहे </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपादित करा&gt; पसंती&gt; प्रगत</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> सह </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">न्क्क्कल iTunes मध्ये ग्रंथालयमध्ये जोडताना तेव्हा फोल्डर ट्यून</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> चेकबॉक्स निवडा.
-	</font></font></p>
-	<div id="edit"></div>
-	<h3><span class="mw-headline" id="Edit_the_metadata_tags_of_the_tracks.2Falbum"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गीतपट्टा / अल्बमचे मेटाडेटा टॅग संपादित करा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">गाण्याचे नाव, गीतपट्टा क्रमांक आणि तत्समतेसाठी मेटाडेटा टॅग संपादित करा iTunes मध्ये अल्बम शोधणे सोपे आहे कारण आपण आधीच्या मागील वर्कफ्लो चरणात अल्बम टॅग संपादित केला आहे. </font><font style="vertical-align: inherit;">आपणास गाण्यांची क्रमवारी सुलभ करण्यासाठी यापूर्वी लागू झालेल्या ०१, ०२ क्रमांकाची मालिका काढून टाकण्यासाठी गाण्याचे शीर्षक संपादित करण्याची इच्छा असू शकते.
-	</font></font></p>
-	<div id="artwork"></div>
-	<h3><span class="mw-headline" id="Fetch_the_album_artwork"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अल्बमची कलाकृती आणा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अ&zwj;ॅल्बम ग्रॅझोनेट डेटाबेस सीडीडीबीने ओळखला असेल तर थेट आयट्यून्सद्वारे अल्बमच्या आर्टवर्कची एक प्रत शोधा (परंतु लक्षात घ्या की ग्रॅझोनेट नेहमीच कलाकृती ठेवत नाही), किंवा अल्बम आच्छादनाची डिजिटल प्रतिमा बनवून, आणि कलाकृती जोडा अल्बममध्ये  </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्याला अमेझॉन, विकिपीडिया किंवा कलाकारांच्या स्वत: च्या संकेतस्थळावर अल्बमच्या आर्टवर्कची एक प्रत सापडेल.</font></font></i>
-	</p>
-	<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण आपल्या आयट्यून्स ग्रंथालयमध्ये डब्ल्यूएव्ही धारिका वापरत असल्यास आपण या धारिकांसह अल्बम कलाकृती संबद्ध करू शकत नाही.</font></font></div>
-	<div id="cd"></div>
-	<h3><span class="mw-headline" id="Optionally_make_a_CD_.E2.80.93_and_create_cover_.26_playlist"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिकरित्या एक सीडी तयार करा - आणि कव्हर आणि प्लेलिस्ट तयार करा</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण डब्ल्यूएव्ही धारिकांमधून सीडी बर्न करू शकता. </font><font style="vertical-align: inherit;">गीतपट्टा-यादी आणि अल्बम आच्छादनासह सीडी आच्छादन मुद्रित करण्यासाठी आपण आयट्यून्स वापरू शकता; </font><font style="vertical-align: inherit;">हे करण्यासाठी आपल्याला अल्बमसाठी तात्पुरती आयट्यून्स प्लेलिस्ट तयार करण्याची आवश्यकता असेल.
-	</font></font></p>
-	<div id="backup"></div>
-	<h3><span class="mw-headline" id="Backup_your_updated_iTunes_library"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्या अद्यतनित आयट्यून्स ग्रंथालयचा बॅकअप घ्या</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ही एक गंभीर पायरी आहे - आपण आपल्या श्रमांचे मौल्यवान फळ गमावू इच्छित नाही, आपण?
-	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आम्ही बाह्य डिस्कवर आपल्या ग्रंथालयच्या दोन स्वतंत्र बॅकअप प्रती राखण्याची शिफारस करतो.
-	</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण ऑड्यासिटी वरून निर्यात केलेल्या डब्ल्यूएव्ही धारिका ठेवा आणि त्या (दोन प्रती) बाह्य डिस्कवर परत करा.
-	</font></font></p>
-	<div id="cleanup"></div>
-	<h3><span class="mw-headline" id="Delete_the_Audacity_project_and_exported_WAV_files_to_release_hard_disk_space"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ऑड्यासिटी  प्रकल्प हटवा आणि हार्ड डिस्क जागा सोडण्यासाठी डब्ल्यूएव्ही धारिका निर्यात केल्या</font></font></span></h3>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बॅकअप तयार झाल्यानंतर आपण तयार केलेला कोणताही ऑड्यासिटी प्रकल्प हटवून (त्याच नावाने .aup धारिका आणि _डेटा फोल्डर दोन्ही हटवा) आणि मूळ निर्यात केलेली डब्ल्यूएव्ही धारिका हटवून आपण आपल्या हार्ड ड्राइव्हवर सुरक्षितपणे रिक्त सोडू शकता.
-	</font></font></p>
-	<div id="direxp"></div>
-	<h2><span class="mw-headline" id="Direct_AAC_export_from_Audacity"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ऑड्यासिटी वरून डायरेक्ट एएसी निर्यात</font></font></span></h2>
-	<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण आयट्यून्समध्ये थेट आयात करण्यासाठी ऑड्यासिटी कडून कोणत्याही सोयीस्कर ठिकाणी एएसी संकलित प्रकार (एम ४ ए धारिका्स) निर्यात करू इच्छित असाल तर. </font><font style="vertical-align: inherit;">निर्यात मेनूमध्ये एएसी निर्यात हा एक पर्याय उपलब्ध आहे. </font><font style="vertical-align: inherit;">एएसीवर निर्यात करण्यासाठी, पर्यायी </font></font><a href="faq_installation_and_plug_ins.html#ffdown" title="FAQ: स्थापना आणि प्लग-इन"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एफएफएमपीईजी</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ग्रंथालय </font><font style="vertical-align: inherit;">डाउनलोड आणि स्थापित करा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">एम ४ ए साठी निर्यात गुणवत्ता </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पर्याय ...</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटण </font><font style="vertical-align: inherit;">वापरून सुधारित केली जाऊ शकते </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">उच्चतम गुणवत्ता ऑड्यासिटी समायोजन उच्च बिट दर पूर्वनिर्धारितवर व्हीबीआर एन्कोडिंग वापरुन आयट्यून्समध्ये एएसीशी एन्कोडिंग करणे अंदाजे तुलना आहे.
-	</font></font></p>
-	<h2><span class="mw-headline" id="Links"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">दुवे</font></font></span></h2>
-	<p><a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="प्रशिक्षण - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| &lt;</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रशिक्षण - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क नक्कल करीत आहे</font></font></a><br>
-	</p><p><a href="sample_workflow_for_lp_digitization.html" title="एलपी डिजिटलायझेशनसाठी नमुना कार्यप्रवाह"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp; एल.पी. डिजिटलायझेशनसाठी नमुना वर्कफ्लो यावर देखील प्रशिक्षण पहा</font></font></a> <br>
-	</p>
-<!-- 
-NewPP limit report
-Cached time: 20180917111851
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.069 seconds
-Real time usage: 0.074 seconds
-Preprocessor visited node count: 283/1000000
-Preprocessor generated node count: 1271/1000000
-Post‐expand include size: 5939/2097152 bytes
-Template argument size: 4224/2097152 bytes
-Highest expansion depth: 12/40
-Expensive parser function count: 11/100
--->
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ऍपल संगीत/आयट्यून्सवर निर्यात करण्यासाठी नमुना कार्यप्रवाह - ऑड्यासिटी माहितीपुस्तिका</title>
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   37.387      1 - -total
- 67.48%   25.230      1 - Template:I18n
- 61.86%   23.126      1 - Template:I18n_box
- 50.64%   18.931      1 - Template:I18n_list
- 18.75%    7.009      2 - Template:I18n_link
- 10.95%    4.094      2 - Template:Autoglossonym
-  6.06%    2.267      3 - Template:Note
-  5.52%    2.064      2 - Template:Button
-  5.40%    2.020      5 - Template:Menu
-  5.22%    1.952      1 - Template:Intro
--->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:3135-0!*!0!!*!*!* and timestamp 20180917111851 and revision id 59744
- -->
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Sample_workflow_for_exporting_to_iTunes rootpage-Sample_workflow_for_exporting_to_iTunes skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
 </div>
-										<!-- end content -->
+				<h1 id="firstHeading" class="firstHeading" lang="en">ऍपल संगीत/आयट्यून्सवर निर्यात करण्यासाठी नमुना कार्यप्रवाह</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_exporting_to_iTunes#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+<div class="intro">ही शिकवणी उदाहरणार्थ चरणांच्या संचाचा एक आराखडा आहे ज्याचा उपयोग ऑड्यासिटी प्रकल्प (उदाहरणार्थ एलपी आणि टेप ट्रान्सक्रिप्शन) ऍपल संगीत/आयट्युन्स मध्ये मिळविण्यासाठी केला जाऊ शकतो. वर्कफ्लो एएसी संगीत धारिकावर केंद्रित आहे कारण अॅपल, पूर्वनिर्धारित, स्वरूप आहे. काही वापरकर्ते ऍपल संगीत/आयट्यून्समध्ये त्यांच्या संगीत धारीकांसाठी संकलित न केलेले डब्ल्यूएव्ही किंवा एआयएफएफ किंवा संकुचित अॅपल लॉसलेस स्वरूप वापरण्यास प्राधान्य देऊ शकतात.
+<p>काम करण्याचा हा एकमेव मार्ग नाही - असे बरेच पर्याय आहेत. कोणत्याही कृतीप्रमाणेच ते आपल्या वैयक्तिक आवश्यकतानुसार अनुकूल केले जाऊ शकते. आवश्यक असल्यास आपण डब्ल्यूएव्हीऐवजी एआयएफएफमध्ये काम करू शकता. बरेच अॅपल मॅक वापरकर्ते कदाचित एआयएफएफमध्ये काम करण्यास प्राधान्य देतील.
+</p>
+हे देखील पहा <a href="tutorial_exporting_to_itunes.html" title="Tutorial - Exporting to iTunes">शिकवणी - ऍपल संगीत/आयट्यून्स वर निर्यात करणे</a> ज्यामध्ये या विषयावर पुढील उपयुक्त माहिती आहे.</div>
+<h2><span class="mw-headline" id="Workflow">कार्यप्रवाह</span></h2>
+<ol><li> <a href="#export">डब्ल्यूएव्ही धारिका निर्यात करा</a></li>
+<li> <a href="#add">ऍपल संगीत/आयट्यून्समध्ये डब्ल्यूएव्ही धारिका जोडा</a></li>
+<li> <a href="#metadata">अल्बमचे नाव आणि कलाकारांसाठी मेटाडेटा संपादित करण्यासाठी ऍपल संगीत/आयट्यून्स वापरा</a></li>
+<li> <a href="#aac">डब्ल्यूएव्ही धारिकांमधून ग्रंथालयात एएसी प्रती करण्यासाठी ऍपल संगीत/आयट्यून्स वापरा</a></li>
+<li> <a href="#delete">ग्रंथालयतून डब्ल्यूएव्ही धारिका हटवा</a></li>
+<li> <a href="#edit">गीतपट्टा / अल्बमचे मेटाडेटा टॅग संपादित करा</a></li>
+<li> <a href="#artwork">अल्बमची कलाकृती आणा</a></li>
+<li> <a href="#cd">वैकल्पिकरित्या एक सीडी तयार करा - आणि कव्हर &amp; प्लेलिस्ट तयार करा</a></li>
+<li> <a href="#backup">आपल्या अद्यतनित ऍपल संगीत/आयट्यून्स ग्रंथालयचा बॅकअप घ्या</a></li>
+<li> <a href="#cleanup">ऑड्यासिटी प्रकल्प हटवा आणि हार्ड डिस्क जागा सोडण्यासाठी डब्ल्यूएव्ही धारिका निर्यात केल्या</a></li>
+<li> <a href="#direxp">ऑड्यासिटीमधून पर्यायी डायरेक्ट एएसी निर्यात</a></li></ol>
+<p><br />
+</p>
+<div id="export"></div>
+<h3><span class="mw-headline" id="Step_1:_Export_the_WAV_files">पायरी 1: डब्ल्यूएव्ही धारिका निर्यात करा</span></h3>
+<p>कोणत्याही सोयीस्कर ठिकाणी डब्ल्यूएव्ही धारिका किंवा डब्ल्यूएव्हीचा चा संच तयार करण्यासाठी <a href="file_export_dialog.html" title="File Export Dialog">निर्यात ध्वनि</a> किंवा <a href="export_multiple.html" title="Export Multiple">अनेक निर्यात करा</a> वापरा. ऑड्यासिटीने ४४१०० हर्ट्झ आणि ३२-बिट नमुना स्वरूपातील प्रकल्प दर (हे पूर्वनिर्धारित <a href="quality_preferences.html" title="Quality Preferences">गुणवत्ता समायोजन</a> आहेत ) सह निर्यात केले असल्यास पूर्वनिर्धारितनुसार ४४.१ किलोहर्ट्झ १६-बिट पीसीएम डब्ल्यूएव्ही धारिका (किंवा मॅकवरील एआयएफएफ धारिका) तयार होतील. ऑड्यासिटी त्याच्या ३२-बिट अंतर्गत स्वरुपावरून १६-बिट पर्यंत खाली नमुना घेईल, ज्यायोगे रूपांतरणापासून १६- बिटवर परिणाम होऊ शकतात अशा कोणत्याही क्लिक आवाजासाठी आकाराचा <a href="dither.html" title="Dither">डिथर</a> नॉइज लागू केला जाईल. प्रगत वापरकर्ते <a href="quality_preferences.html#conversion" title="Quality Preferences">गुणवत्ता प्राधान्यांनुसार</a> तिचा प्रकार बदलू किंवा बंद करू शकतात .
+</p><p>१६-बिट निर्यात केल्याने हे सुनिश्चित होईल की धारिका ऍपल संगीत/आयट्यून्सच्या सर्व आवृत्त्यांशी सुसंगत आहेत, ते ऍपल संगीत/आयएट्यून्स मधील एएसी किंवा इतर स्वरूपांमध्ये (किंवा सीडी बर्न करण्यासाठी) सुसंगत असतील. एकतर निर्यात संवादामध्ये "अन्य संकलित धारिका" निवडून, नंतर <span class="button">पर्यायांवर...</span> क्लिक करुन ३२-बीट पीसीएम धारिका निर्यात करणे देखील शक्य आहे . या धारिका सैद्धांतिकदृष्ट्या अत्यल्प गुणवत्तेच्या असतील परंतु १६-बिट धारिकाच्या दुप्पट असतील. ऍपल संगीत/आयट्यून्सच्या नवीनतम आवृत्त्या त्या प्ले केल्या जातील, परंतु अन्य प्लेअर कदाचित प्ले करू शकणार नाहीत.
+</p>
+<div id="add"></div>
+<h3><span class="mw-headline" id="Step_2:_Add_the_WAV_files_into_Apple_Music.2FiTunes">पायरी 2: ऍपल संगीत/आयट्यून्समध्ये डब्ल्यूएव्ही धारिका जोडा</span></h3>
+<p>ऍपल संगीत/आयट्यून्स ग्रंथालयमध्ये डब्ल्यूएव्ही धारिका जोडा
+</p>
+<ul><li> आयट्यून्स मध्ये <span class="menu">धारिका &gt; ग्रंथालयमध्ये धारिका जोडा...</span> (किंवा <span class="menu">धारिका &gt; ग्रंथालयमध्ये फोल्डर जोडा...</span>) कमांड वापरा</li>
+<li> ऍपल संगीत मध्ये <span class="menu">धारिका &gt; आयात...</span> कमांड वापरा</li></ul>
+<p>लक्षात ठेवा की जरी ऍपल संगीत/आयट्यून्स आयात प्राधान्ये (<a href="tutorial_exporting_to_itunes.html#conversion" title="Tutorial - Exporting to iTunes">येथे</a> पहा) AAC सेटिंग्ज वापरून आयात करण्यासाठी सेट केले असले तरीही कोणतेही रूपांतरण होत नाही कारण हे प्राधान्य फक्त CD वरून आयात करण्यासाठी लागू होते किंवा  त्या अॅप्लिकेशन्समध्ये<span class="menu">फाइल &gt; रूपांतरित करा</span>, फायली ऍपल संगीत/आयट्यून्स मध्ये <b>आयात</b> करून आपोआप रूपांतरित होत <i><b>नाहीत</b></i>.
+</p>
+<div class="note">हे लक्षात घ्या की पूर्वनिर्धारितनुसार ऍपल संगीत/आयट्यून्स ध्वनी धारिका त्याच्या स्वत: च्या धारिका जागेमध्ये प्रत करत <b>नाही</b>, त्याऐवजी आपल्याकडे सध्या ध्वनी धारिका कोठे संग्रहित आहे याचा दुवा बनविते
+<p>हे बदलण्‍यासाठी जेणेकरुन ऍपल संगीत/आयट्यून्स ऑडिओ फाईलची स्वतःची प्रत तयार करेल:
+</p>
+<ul><li>आयट्यून्समध्ये हे बदलण्यासाठी <span class="menu">संपादन &gt; प्राधान्ये &gt; प्रगत</span> वर जा, </li>
+<li>ऍपल संगीतमध्ये हे बदलण्यासाठी  <span class="menu">प्राधान्ये &gt; धारिका</span> वर जा,</li>
+<li>आणि <b>"ग्रंथालयत जोडताना आयट्यून्स मीडिया फोल्डरमध्ये धारिका नक्क्ल करा"</b> असे म्हणणारे चेकबॉक्स चिन्हांकित करा. </li></ul>
+आपण हे समायोजन केले पाहिजे अशी <i><b>जोरदार</b></i> शिफारस केली जाते.</div>
+<p><br />
+</p>
+<div id="metadata"></div>
+<h3><span class="mw-headline" id="Step_3:_Use_Apple_Music.2FiTunes_to_edit_the_metadata_for_the_album_name_and_artist">पायरी 3: अल्बमचे नाव आणि कलाकारांसाठी मेटाडेटा संपादित करण्यासाठी ऍपल संगीत/आयट्यून्स वापरा</span></h3>
+<p>तुम्ही तुमच्या ऍपल संगीत/आयट्यून्स ग्रंथालयमध्ये दाखवत असलेल्या स्तंभांपैकी एक "<b>Kind</b>" आहे याची खात्री करा. आयात केलेल्या फायली डब्ल्यूएव्ही म्हणून दाखवल्या जातील आणि "<b>प्रकार</b>" स्तंभ शीर्षलेखावर क्लिक करून एकत्र सूचीबद्ध केल्या जाऊ शकतात.
+</p><p>सर्व डब्ल्यूएव्ही फायली निवडा आणि अल्बमचे नाव आणि कलाकाराचे नाव प्रविष्ट करण्यासाठी ऍपल संगीत/आयट्यून्स मेटाडेटा संपादक वापरा जेणेकरून इतर मेटाडेटा टॅग संपादित करताना तुम्हाला ते नंतर सहज सापडेल. तुम्ही ऑड्यासिटीच्या मेटाडेटा संपादनरचा \xe2\x80\x93 वापर करून ऑड्यासिटी निर्यातच्या आधी हा मेटाडेटा वैकल्पिकरित्या सेट करू शकता - काही वापरकर्ते नोंदवतात की मेटाडेटा व्यवस्थापित करण्यासाठी ऑड्यासिटी ऐवजी ऍपल संगीत/आयट्यून्स वापरणे सोपे आहे.
+</p>
+<div id="aac"></div>
+<h3><span class="mw-headline" id="Step_4:_Use_Apple_Music.2FiTunes_to_make_AAC_copies_in_the_library_from_the_WAV_files">पायरी 4: डब्ल्यूएव्ही धारिकांमधून ग्रंथालयात एएसी प्रती करण्यासाठी ऍपल संगीत/आयट्यून्स वापरा</span></h3>
+<p>तुमच्‍या ऍपल संगीत/आयट्यून्स ग्रंथालयमध्‍ये तुमच्‍याकडे आधीच इतर डब्ल्यूएव्ही फायली नसल्‍यावर, तुम्‍हाला आवश्‍यक असलेल्‍या डब्ल्यूएव्ही फायली अजूनही या स्‍टेजवर निवडल्‍या ट्यून असल्‍या पाहिजेत, तुम्‍ही पुढे कोणतेही क्‍लिक केले नाही. तुमच्या आवश्यक बिटरेटवर तुमची ऍपल संगीत/आयट्यून्स आयात रचना एएसी वर सेट केली असल्याची खात्री करा. ऍपल संगीत/आयट्यून्स कमांड <span class="menu">फाइल &gt; रूपांतरित करा</span> वापरून त्यांना एएसी मध्ये रूपांतरित करा. काळजीपूर्वक लक्षात घ्या की हे सरळ रूपांतर न करता \xe2\x80\x9ccopy\xe2\x80\x9d “प्रत” बनवते \xe2\x80\x93 त्यामुळे या टप्प्यावर तुमच्या ग्रंथालयमध्ये गाण्याच्या एएसी आणि डब्ल्यूएव्ही प्रती असतील.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">जर तुमच्याकडे भरपूर जागा असेल तर तुम्ही डब्ल्यूएव्ही धारिका तुमच्या ऍपल संगीत/आयट्युन्स ग्रंथालयमध्ये त्यांच्या लॉसलेस गुणवत्तेसाठी ठेवू शकता आणि त्यांना एएसी मध्ये बदलू नका. अशावेळी तुम्ही ही रूपांतरण पायरी आणि पुढील पायरी वगळली पाहिजे जी तुमच्या ऍपल संगीत/आयट्युन्स ग्रंथालयतून डब्ल्यूएव्ही धारिका हटवते. आणखी एक पर्याय म्हणजे ऍपल संगीत/आयट्यून्स सेट करणे म्हणजे Apple लॉसलेसमध्ये रूपांतरित करणे ज्याचा फाईल डब्ल्यूएव्ही च्या जवळपास अर्धा आहे.
+<p>किंवा तुम्ही एएसी ऐवजी तुमच्या ऍपल संगीत/आयट्युन्स ग्रंथालयमध्ये एमपी३ फाइल वापरू शकता. अशा परिस्थितीत, ऍपल संगीत/आयट्युन्स मध्ये आयात करण्यासाठी किंवा डब्ल्यूएव्ही आयात करण्यासाठी ऑड्यासिटी वरून एमपी३ म्हणून, कोणत्याही सोयीस्कर ठिकाणी निर्यात करा आणि ऍपल संगीत/आयट्युन्स त्याच्या पूर्वनियोजित एएसी ऐवजी एमपी३ मध्ये रूपांतरित करण्यासाठी सेट करा. लक्षात घ्या की समतुल्य फाइल आकारासाठी, एएसी ला सामान्यतः एमपी३ पेक्षा चांगल्या दर्जाचा ध्वनी दिला जातो, परंतु जर तुम्हाला फाइल दुसऱ्याला पाठवायची असेल तर एमपी३ हा एक अधिक सुरक्षित पर्याय आहे.
+</p><p>आयपॉडवर संकलित प्रकार वापरण्याचे बरेच फायदे आहेत. दोन मुख्य म्हणजे आपण उपकरणामध्ये बरीच गाणी बसवू शकता <i>(256 केबीपीएस धारिकासाठी तुम्ही अनेक गाण्यांपेक्षा ८-९ पट फिट करू शकता)</i> आणि कॉम्प्रेस केलेल्या धारिकांमुळे बॅटरीचे आयुष्य सुधारते (कारण डिस्क रीड्स बॅटरी उर्जेवर तुलनेने भारी असतात ).
+</p>
+</td></tr></table>
+</div>
+<div id="delete"></div>
+<h3><span class="mw-headline" id="Step_5:_Delete_the_WAV_files_from_the_library">पायरी 5: ग्रंथालयतून डब्ल्यूएव्ही धारिका हटवा</span></h3>
+<p>डब्ल्यूएव्ही धारिका अजूनही निवडलेल्या ट्यून म्हणूनच राहिल्या पाहिजेत - या टप्प्यावर अत्यधिक काळजी घ्या (एएसी तयार केल्या जातात परंतु आयट्यून्सद्वारे निवड करणे भाग पाडले जात नाही) तर मग हटवली की वापरुन निवडलेल्या डब्ल्यूएव्ही धारिका हटवा - आणि फाईल्स कचऱ्याच्या टोपलीत पाठवा.
+</p>
+<div class="note">काळजीपूर्वक लक्षात घ्या की हा वर्कफ्लो गृहीत धरतो की तुमच्याकडे ऍपल संगीत/आयट्युन्स धारिका प्रत करण्यासाठी सेट केले आहे, बाह्य धारिकाचा संदर्भ देण्यासाठी नाही - म्हणून हटवलेल्या डब्ल्यूएव्ही मूळ स्रोत डब्ल्यूएव्ही च्या ऍपल संगीत/आयट्युन्स च्या प्रती आहेत.  <p>This can be set in <b>Edit &gt; Preferences &gt; Advanced</b> in iTunes and <span class="menu">Preferences &gt; Files</span> in Apple Music with the <b>Copy files to iTunes Media folder when adding to library</b> checkbox.</p></div>
+<div id="edit"></div>
+<h3><span class="mw-headline" id="Step_6:_Edit_the_metadata_tags_of_the_tracks.2Falbum">पायरी 6: गीतपट्टा/अल्बमचे मेटाडेटा टॅग संपादित करा</span></h3>
+<p>गाण्याचे नाव, गीतपट्टा नंबर आणि तत्समसाठी मेटाडेटा टॅग संपादित करा आयट्युन्स मध्ये अल्बम शोधणे सोपे असावे कारण तुम्ही वरील मागील वर्कफ्लो चरणात अल्बम टॅग आधीच संपादित केला आहे. तुम्ही गाण्यांचा योग्य क्रम लावण्यासाठी आधी लागू केलेली अग्रगण्य 01, 02 क्रमांकाची मालिका काढून टाकण्यासाठी गाण्याची शीर्षके संपादित करू शकता.
+</p>
+<div id="artwork"></div>
+<h3><span class="mw-headline" id="Step_7:_Fetch_the_album_artwork">पायरी 7: अल्बमची कलाकृती आणा</span></h3>
+<p>अ‍ॅल्बम ग्रॅझोनेट डेटाबेस सीडीडीबीने ओळखला असेल तर थेट आयट्यून्सद्वारे अल्बमच्या आर्टवर्कची एक प्रत शोधा (परंतु लक्षात घ्या की ग्रॅझोनेट नेहमीच कलाकृती ठेवत नाही), किंवा अल्बम आच्छादनाची डिजिटल प्रतिमा बनवून, आणि कलाकृती जोडा  <i>अल्बममध्ये आपल्याला अमेझॉन, विकिपीडिया किंवा कलाकारांच्या स्वत: च्या संकेतस्थळावर अल्बमच्या आर्टवर्कची एक प्रत सापडेल.</i>
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+</td>
+<td align="left" valign="top">आपण आपल्या आयट्यून्स ग्रंथालयमध्ये डब्ल्यूएव्ही धारिका वापरत असल्यास आपण या धारिकांसह अल्बम कलाकृती संबद्ध करू शकत नाही.
+</td></tr></table></div>
+<div id="cd"></div>
+<h3><span class="mw-headline" id="Step_8:_Optionally_make_a_CD_.E2.80.93_and_create_cover_.26_playlist">पायरी 8: वैकल्पिकरित्या एक सीडी तयार करा \xe2\x80\x93 आणि कव्हर &amp; प्लेलिस्ट तयार करा</span></h3>
+<p>आपण डब्ल्यूएव्ही धारिकांमधून सीडी बर्न करू शकता. गीतपट्टा-यादी आणि अल्बम आच्छादनासह सीडी आच्छादन मुद्रित करण्यासाठी आपण आयट्यून्स वापरू शकता; हे करण्यासाठी आपल्याला अल्बमसाठी तात्पुरती ऍपल संगीत/आयट्यून्स प्लेलिस्ट तयार करण्याची आवश्यकता असेल.
+</p>
+<div id="backup"></div>
+<h3><span class="mw-headline" id="Step_9:_Backup_your_updated_Apple_Music.2FiTunes_library">पायरी 9: आपल्या अद्यतनित ऍपल संगीत/आयट्यून्स ग्रंथालयचा बॅकअप घ्या</span></h3>
+<p>ही एक गंभीर पायरी आहे \xe2\x80\x93 तुम्हाला तुमच्या श्रमाचे मौल्यवान फळ गमावायचे नाही, नाही का?
+</p><p>आम्ही बाह्य डिस्कवर आपल्या ग्रंथालयच्या दोन स्वतंत्र बॅकअप प्रती राखण्याची शिफारस करतो.
+</p><p>तुम्ही ऑडेसिटी वरून एक्सपोर्ट केलेल्या WAV फाईल्स ठेवा आणि त्यांचा बॅकअप (दोन प्रती) बाह्य डिस्कवर घ्या.
+</p>
+<div id="cleanup"></div>
+<h3><span class="mw-headline" id="Step_10:_Delete_the_Audacity_project_and_exported_WAV_files_to_release_hard_disk_space">पायरी 10: हार्ड डिस्क स्पेस सोडण्यासाठी ऑडेसिटी प्रोजेक्ट आणि निर्यात केलेल्या WAV फाइल्स हटवा</span></h3>
+<p>बॅकअप घेतल्यानंतर तुम्ही तयार केलेला कोणताही ऑडेसिटी प्रकल्प हटवून आणि मूळ निर्यात केलेल्या WAV फाइल्स हटवून तुम्ही तुमच्या हार्ड ड्राइव्हवरील जागा सुरक्षितपणे सोडू शकता.
+</p>
+<div id="direxp"></div>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">तुम्‍हाला ऑड्यासिटी वरून एएसी कंप्रेस्‍ड फॉरमॅट (एम४ए फायली) वर निर्यात करण्‍याची इच्छा असल्‍यास, ऍपल संगीत/आयट्युन्स मध्‍ये थेट आयात करण्‍यासाठी तुम्ही कोणत्याही सोयीस्कर ठिकाणी निर्यात करू शकता. एएसी निर्यात हा निर्यात यादीमध्ये उपलब्ध पर्यायांपैकी एक आहे. एएसी वर निर्यात करण्यासाठी, पर्यायी <a href="faq_installation_and_plug_ins.html#ffdown" title="FAQ:Installation and Plug-Ins">FFmpeg</a> ग्रंथालय डाउनलोड आणि स्थापित करा. एम४ए साठी निर्यात गुणवत्ता <span class="button">पर्याय...</span> बटण वापरून सुधारित केली जाऊ शकते. उच्च दर्जाची ऑड्यासिटी सेटिंग हे ऍपल संगीत/आयट्यून्समधील एएसीशी एन्कोडिंगशी तुलना करता येते आणि उच्च बिट रेट प्रीसेटवर VBR एन्कोडिंग वापरते.
+</td></tr></table>
+</div>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="tutorial_copying_tapes_lps_or_minidiscs_to_cd.html" title="Tutorial - Copying tapes, LPs or minidiscs to CD"><b>|&lt;</b> शिकवणी - सीडीमध्ये टेप, एलपी किंवा मिनीडिस्क प्रत करीत आहे</a><br />
+</p><p><a href="sample_workflow_for_lp_digitization.html" title="Sample workflow for LP digitization"><b>&gt;</b>&#160; यावर देखील शिकवणी पहा: एल.पी. डिजिटलायझेशनसाठी नमुना वर्कफ्लो</a> <br />
+</p>
+
+
+
+
+
+</div>
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -159,48 +167,51 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
 		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity सहल मार्गदर्शक"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
 <ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
 <li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>उपयुक्त दुवे</h3>
+		<h3>उपयुक्त लिंक्स</h3>
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">माहितीपुस्तकाचे मुखपृष्ठ</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -210,9 +221,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
-<a href="https://alphamanual.audacityteam.org/man/Sample_workflow_for_exporting_to_iTunes">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
-</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>
