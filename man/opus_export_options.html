@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ओपस निर्यात पर्याय - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Opus_Export_Options rootpage-Opus_Export_Options skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">ओपस निर्यात पर्याय</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Opus_Export_Options#searchInput">शोध</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<div class="intro"><b><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Opus_(audio_format)">ओपस</a></b> धारिका फॉरमॅट (ज्याला "ओग ओपस" देखील म्हणतात)इंटरनेट स्ट्रीमिंगसाठी विकसित केलेला ओपन सोर्स <i><b><a href="glossary.html#compressed_format" title="Glossary">आकार-संकुचित </a></b></i> आणि <i><b><a href="glossary.html#lossy" title="Glossary">नुकसानकारक</a></b></i> ध्वनि फॉरमॅट आहे. हे SILK (Skype द्वारे वापरलेले) आणि CELT (Xiph.Org वरून) दोन्ही कोडेक्स वापरते आणि ऑड्यासिटीमध्ये 6 kb/s ते 256 kb/s पर्यंत व्हेरिएबल बिट दरांना समर्थन देते.<p>OPUS वर अधिक माहितीसाठी <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Opus_(audio_format)">हे विकिपीडिया पृष्ठ</a> पहा. </p> </div> 
+<dl><dd>द्वारे प्रवेश केला जातो: <span class="menu">धारिका &gt; निर्यात &gt; <a href="file_menu_export.html#exportaudio" title="File Menu: Export">'ध्वनि निर्यात करा'...</a></span> नंतर <b>जतन अॅज टाइप</b> ड्रॉपडाउन यादीमधून <b>Opus (OggOpus) धारिका (FFmpeg)</b> निवडणे.</dd></dl>
+<dl><dd><span title="FLAC Options at the bottom of the Export Audio dialog"><img alt="Export opus dialog 3-0-0.png" src="../m/images/7/70/export_opus_dialog_3_0_0.png" width="715" height="623" /></span></dd></dl>
+<dl><dd>याद्वारे देखील प्रवेश केला जातो: <span class="menu">धारिका &gt; निर्यात &gt; <a href="file_menu_export.html#exportmultiple" title="File Menu: Export">एकाधिक निर्यात करा...</a></span> नंतर <b>जतन अॅज टाइप</b> ड्रॉपडाउन यादीमधून <b>Opus (OggOpus) धारिका (FFmpeg)</b> निवडणे.  या प्रकरणात, Export Multiple संवादच्या मध्यभागी पर्याय संवाद दिसेल.</dd></dl>
+<p><br />
+</p>
+<div id="setup"></div>
+<h2><span class="mw-headline" id="Opus_Export_Setup">ओपस निर्यात सेटअप</span></h2>
+<p><b>फॉरमॅट पर्याय</b> निर्यात केलेल्या फायलींच्या आकार आणि गुणवत्तेमध्ये व्यापार-बंद नियंत्रित करण्याचे वेगवेगळे मार्ग देतात.
+</p>
+<h3><span class="mw-headline" id="Bit_Rate">बिट दर</span></h3>
+<p>ऑड्यासिटीमधील ओपस निर्यात 6 kbps ते 256 kbps पर्यंतच्या निर्यातीसाठी विविध बिट दर पर्याय ऑफर करते. पूर्वनियोजित 128 kbps आहे, ओपस 128 kbps (VBR) खूपच <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Transparency_(data_compression)">पारदर्शक</a> आहे.  
+</p><p>64-96 kbps वरील Opus AAC च्या तुलनेत किंचित उच्च गुणवत्ता आणि त्याच बिटरेटवर Vorbis आणि MP3 च्या तुलनेत लक्षणीय गुणवत्ता दर्शवते.
+</p>
+<h3><span class="mw-headline" id="Compression">संक्षेप</span></h3>
+<p>हे 1 ते 10 <i>(पूर्वनियोजित)</i> पर्यंत वापरलेल्या कॉम्प्रेशनची डिग्री नियंत्रित करते .
+</p>
+
+<h3><span class="mw-headline" id="Frame_Duration">फ्रेम कालावधी</span></h3>
+<p>फ्रेम कालावधी 2.5 ms ते 60 ms पर्यंत आहे. पूर्वनियोजित 20 ms आहे.
+</p><p>ओपस पूर्वनियोजितनुसार 20 ms फ्रेम आकाराचा वापर करते, कारण ते कमी विलंबता आणि चांगल्या गुणवत्तेचे सभ्य मिश्रण देते, बहुतेक अनुप्रयोगांसाठी पूर्वनियोजित 20 ms फ्रेम चांगली निवड आहे.
+</p>
+<h3><span class="mw-headline" id="VBR_Mode">VBR मोड</span></h3>
+<p>व्हेरिएबल बिट रेटसाठी हा मोड वापरला जातो. हे असू शकते:
+</p>
+<ul><li> <b>चालू:</b> <i>(पूर्वनियोजित)</i>  तुम्हाला निर्यात केलेला ध्वनि ऑप्टिमाइझ करण्यासाठी व्हेरिएबल बिटरेट देईल</li>
+<li> <b>बंद:</b> स्थिर बिटदर, तुम्ही सेट केलेला दर, असलेली धारिका निर्यात करेल.</li>
+<li> <b>प्रतिबंधित:</b> व्हेरिएबल बिट रेटची वरची मर्यादा सेट करते. <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/windows/win32/medfound/peak-constrained-variable-bit-rate--vbr--encoding"><b>प्रतिबंधित</b></a> वरची मर्यादा सेट करून खूप उच्च बिट दर शिखर होण्यापासून प्रतिबंधित करते. </li></ul>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">128 kbps VBR <i>(पूर्वनियोजित सेटिंग्ज)</i> वर ओपस खूपच <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Transparency_(data_compression)">पारदर्शक</a> आहे.
+</td></tr></table>
+</div>
+<h3><span class="mw-headline" id="Application">अॅप्लिकेशन</span></h3>
+<p>निर्यात केलेल्या फाईलचा तुम्ही काय उपयोग कराल हे हे परिभाषित करते
+</p>
+<ul><li><b>VOIP:</b>  <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Voice_over_IP">व्हॉइस ओव्हर आयपी</a> ध्वनीसाठी ऑप्टिमाइझ केलेले.</li>
+<li><b>ध्वनि:</b> <i>(पूर्वनियोजित)</i>: ध्वनीसाठी ऑप्टिमाइझ केलेले</li>
+<li><b>कमी विलंब:</b> संप्रेषण हेतूंसाठी उपयुक्त (जसे की व्हॉईस कॉल, व्हिडिओ कॉन्फरन्सिंग किंवा इंटरनेटद्वारे संगीत बनवणे), ज्यासाठी केवळ उच्च संक्षेप गुणोत्तर आवश्यक नाही, परंतु कमी विलंब देखील गंभीर आहे.</li></ul>
+<h3><span class="mw-headline" id="Cutoff">कटऑफ</span></h3>
+<p>हे <b>अक्षम</b> <i>(पूर्वनियोजित)</i> पासून <b>फुलबँड</b> पर्यंत असू शकते.
+</p><p>कटऑफ पर्याय एन्कोडर \xe2\x80\x93 बँडविड्थची बँडविड्थ सेट करतो म्हणजे एन्कोड केलेली सर्वोच्च वारंवारता.
+</p><p>होम थिएटर, संगीत ऐकणे इ.साठी ध्वनि एन्कोडिंग करताना तुम्ही बँडविड्थ मर्यादित करत नसताना, टेलिफोनी किंवा व्हिडीओ कॉन्फरन्सिंग सारखी इतर प्रकरणे आहेत, जिथे संपूर्ण वारंवारता स्पेक्ट्रम प्रसारित करणे आवश्यक नाही.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">या पॅरामीटर्ससाठी xiph.org वरून <a rel="nofollow" class="external text" href="https://wiki.xiph.org/index.php?title=Opus_Recommended_Settings"><b>ओपस शिफारस केलेल्या सेटिंग्जवर</b></a> हे पृष्ठ पहा.
+</td></tr></table>
+</div>
+<p><br />
+</p>
+<div id="rates"></div>
+<h2><span class="mw-headline" id="Opus_Export_rates">ओपस निर्यात दर</span></h2>
+<p>ओपस निर्यात केवळ 48,000 Hz ते 8,000 Hz पर्यंतच्या <a href="selection_toolbar.html#rate" title="Selection Toolbar">प्रकल्प दरांच्या</a> मर्यादित श्रेणीसह कार्य करेल.
+जर तुम्ही नमुना दर: 8000, 12000. 16000, 24000 किंवा 48000 यापैकी एकावर सेट केला नसेल तर तुम्हाला खालील त्रुटी संदेश दिसेल
+</p>
+<dl><dd><span title="Opus invalid sample rate dialog"><img alt="OPUS Invalid Sample Rate.png" src="../m/images/c/c6/opus_invalid_sample_rate.png" width="521" height="211" /></span></dd></dl>
+<p>हे तुम्हाला निर्यात सुरू ठेवण्यासाठी प्रकल्प रिसॅम्पलिंगसाठी तात्पुरता दर निवडण्याची परवानगी देते.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+</td>
+<td align="left" valign="top">ऑड्यासिटी मधील पूर्वनियोजित प्रकल्प नमुना दर <b>44,100 Hz</b> आहे जो ओपस निर्यात कार्य करेल अशा नमुना दरांपैकी एक <i><b>नाही</b></i>.
+</td></tr></table></div>
+
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

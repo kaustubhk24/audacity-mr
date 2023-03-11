@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>फिल्टर वक्र ईक्यू - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Filter_Curve_EQ rootpage-Filter_Curve_EQ skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">फिल्टर वक्र ईक्यू</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा : <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Filter_Curve_EQ#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
+</p>
+
+
+<div class="intro"><b>फिल्टर वक्र ईक्यू</b> हे एक समानीकरण साधन आहे, ते <a href="glossary.html#fft" title="Glossary">FFT</a> (फास्ट फूरियर ट्रान्सफॉर्म) फिल्टर आहे. समीकरण, <i><b><a href="glossary.html#frequency" title="Glossary">वारंवारता</a></b></i> द्वारे आवाज हाताळण्याचा एक मार्ग आहे . हे आपल्याला काही फ्रिक्वेन्सीची मात्रा वाढविण्यास आणि इतर कमी करण्यास अनुमती देते. बर्‍याच ध्वनि सिस्टम्सवरील  <i>EQ</i> आणि <i>टोन</i> नियंत्रणाचा हा अधिक प्रगत प्रकार आहे. 
+<p>समानीकरणाचे उदाहरण म्हणून, खाली दर्शविलेले वक्र ध्वनिमधील उच्च आणि निम्न फ्रिक्वेन्सीचे संतुलन बदलून ते AM रेडिओ प्रसारणासारखे ध्वनि बनवते. उच्च फ्रिक्वेन्सी (6000 Hz पेक्षा जास्त) आणि कमी फ्रिक्वेन्सी (100 Hz पेक्षा कमी) 20 <i><b><a href="glossary.html#decibel" title="Glossary">dB</a></b></i> ने आवाज कमी करतात.
+</p>
+<div class="note">समानीकरण  "<b>स्लायडर </b>" मोडमध्ये देखील उपलब्ध आहे, <span class="menu">प्रभाव &gt; <a href="graphic_eq.html" title="Graphic EQ"> ग्राफिक EQ...</a></span> द्वारे प्रवेश केला जातो. </div> </div> 
+<dl><dd><b>द्वारे प्रवेश :</b> <span class="menu">प्रभाव &gt; फिल्टर वक्र ईक्यू...</span></dd>
+<dd><span title="Filter Curve EQ effect dialog"><img alt="Filter Curve EQ.png" src="../m/images/a/a0/filter_curve_eq.png" width="776" height="496" /></span></dd></dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Contents">सामग्री</span></h2>
+<ol><li><a href="#draw">EQ फिल्टर वक्र काढा</a></li>
+<li><a href="#settings">समीकरण सेटिंग्ज</a></li>
+<li><a href="#limitations">मर्यादा</a></li>
+<li><a href="#buttons">बटणे</a></li></ol>
+<p><br />
+</p>
+<div id="draw"></div>
+<h2><span class="mw-headline" id="Draw_EQ_Filter_Curves">EQ फिल्टर वक्र काढा</span></h2>
+<ul><li><b>समीकरण वक्र आणि नियंत्रण बिंदू:</b> तुम्ही वरील प्रतिमेतील वक्र पट्टीकाईने पाहिल्यास, तुम्हाला दिसेल की तो निळा वक्र अनेक पांढऱ्या वर्तुळांना एकत्र जोडून बनलेला आहे आणि एक हिरवा वक्र जो निळ्या वक्रच्या सामान्य आकाराला अनुसरतो. पांढऱ्या वर्तुळांना "नियंत्रण बिंदू" म्हणतात. निळा वक्र एकतर आलेखामध्ये कोणत्याही स्थानावर क्लिक करून किंवा निळ्या वक्रवर क्लिक करून आणि त्यास एका स्थानावर ड्रॅग करून काढला जातो. एकतर केल्याने त्या स्थानावर एक नियंत्रण बिंदू तयार होतो, त्यानंतर पुढील नियंत्रण बिंदू तयार केल्याने वक्र तयार होते. नियंत्रण बिंदू काढण्यासाठी, तो आलेखाच्या बाहेर ड्रॅग करा.<br />हिरवा वक्र हा एक आहे जो ऑड्यासिटी प्रभाव करण्यासाठी वापरतो, समानीकरण <i><b><a href="glossary.html#algorithm" title="Glossary">अल्गोरिदमच्या</a></b></i> मर्यादा लक्षात घेऊन. हिरवा वक्र सामान्यत: निळ्या वक्रला जवळून अनुसरतो, परंतु लहान वारंवारता श्रेणीमध्ये <i><b><a href="glossary.html#amplitude" title="Glossary">मोठेपणामध्ये</a></b></i> अचानक बदल झाल्यास ते एका नितळ मार्गावर जाण्यास भाग पाडले जाईल. </li>
+<li> <img alt="CheckboxNotChecked.png" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" /> <b>रेखीय वारंवारता पट्टी :</b> जेव्हा हा बॉक्स अनचेक केलेला असतो, तेव्हा क्षैतिज वारंवारता पट्टी <i><b><a href="glossary.html#log" title="Glossary">लॉगरिदमिक</a></b></i> असते , कमी फ्रिक्वेन्सीवर अधिक तपशील देते. हे साधारणपणे कमी फ्रिक्वेन्सीच्या आमच्या जास्त संवेदनशीलतेशी संबंधित आहे. तपासल्यावर, वारंवारता पट्टी  <i><b><a href="glossary.html#linear" title="Glossary">रेषीय</a></b></i> आहे , पट्टीच्या प्रत्येक युनिटसाठी समान वारंवारता श्रेणी प्रदर्शित करते. हे उच्च फ्रिक्वेन्सीवर अचूक समायोजनासाठी उपयुक्त ठरू शकते.</li></ul>
+<div class="example"><b>उदाहरण :</b>  तुम्हाला 100 Hz पेक्षा कमी वारंवारता 10 dB ने कमी करून आणि 5000 Hz पेक्षा जास्त 10 dB ने वाढवून ध्वनि निवड आवाज "उजळ" बनवायचा आहे: 
+<ol><li>0 dB स्थानावर आलेखातील रेषा आधीच क्षैतिज नसल्यास, "फ्लॅट" क्लिक करा (खाली पहा). </li>
+<li>उभ्या पट्टीवर -10 dB आणि क्षैतिज पट्टीवर 100 Hz या दोन्हीच्या विरुद्ध असलेल्या बिंदूवर क्लिक करा..</li>
+<li>उभ्या पट्टीवर +10 dB आणि क्षैतिज पट्टीवर 5000 Hz या दोन्हीच्या विरुद्ध असलेल्या बिंदूवर क्लिक करा..</li>
+<li>100 Hz आणि 5000 Hz दरम्यान हवे असल्यास अतिरिक्त नियंत्रण बिंदू तयार करा जेणेकरुन त्या दोन स्तरांमधील विशिष्ट फ्रिक्वेन्सी कमी कराव्यात किंवा वाढवाव्यात. </div></li></ol>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+</td>
+<td align="left" valign="top">तुमच्या समानीकरण वक्रमुळे निवड <i><b><a href="glossary.html#clipping" title="Glossary">क्लिपिंग</a></b></i> (विरूपण) पातळीच्या पलीकडे वाढवली जाईल की नाही याचा कोणताही विचार केला जात नाही.<p> जर तुमचा वक्र कोणत्याही फ्रिक्वेन्सी वाढवत असेल, विशेषत: खालच्या फ्रिक्वेन्सी ज्या सामान्यत: सर्वात मोठ्या असतात, <span class="menu">प्रभाव&#160;&gt;&#160; ट्रॅक(चे) प्रथम ते -3 dB ला <a href="effect_menu.html#Normalize..." title="Effect Menu">सामान्य करा</a></span> किंवा त्यापेक्षा कमी करा. </p><p> आवश्यक असल्यास तुम्ही नेहमी <span class="menu">संपादित करा &gt; <a href="edit_menu.html#undo" title="Edit Menu">पूर्ववत करा</a></span> समीकरण पूर्ववत करू शकता , पुन्हा खालच्या स्तरावर सामान्यीकरण करू शकता, नंतर समीकरण पुन्हा लागू करू शकता.</p>
+</td></tr></table></div>
+<p><br />
+</p>
+<div id="scale"></div>
+<h2><span class="mw-headline" id="Graph_Scale_and_Sliders">आलेख पट्टी आणि स्लाइडर</span></h2>
+<ul><li><b>अनुलंब पट्टी :</b> ही पट्टी  <i><b><a href="glossary.html#decibel" title="Glossary">dB</a></b></i> मध्ये आहे आणि कोणत्याही दिलेल्या <i><b><a href="glossary.html#frequency" title="Glossary">वारंवारतेवर</a></b></i> ध्वनिवर लागू होणारे <i><b><a href="glossary.html#gain" title="Glossary">लाभ</a></b></i> (0 dB वरील प्रवर्धन किंवा 0 dB पेक्षा कमी क्षीणन) दर्शवते .  </li>
+<li><b>क्षैतिज पट्टी :</b> हे <i><b><a href="glossary.html#hz" title="Glossary">Hz</a></b></i> मधील वारंवारता दर्शवते ज्यामध्ये आवाज समायोजन लागू केले जातील. समीकरण विंडो रुंद ड्रॅग केल्याने पट्टीवर काही अतिरिक्त बिंदू दिसून येतात आणि आलेख अचूकपणे प्लॉट करणे सोपे होते. </li>
+<li> <b>अनुलंब पट्टी स्लाइडर :</b> पूर्वनियोजितनुसार अनुलंब पट्टी + 30 dB ते - 30 dB पर्यंत वाचते, परंतु पट्टीच्या डावीकडे हे दोन स्लाइडर तुम्हाला वरच्या आणि खालच्या dB मूल्ये समायोजित करू देतात जेणेकरून आलेखावरील दृश्यमान श्रेणी बदलता येईल. लक्षात घ्या की एकतर स्लाइडर हलवल्याने 0 dB रेषेची क्षैतिज स्थिती बदलते. दृश्यमान श्रेणी कमी केल्याने तुम्हाला फ्रिक्वेन्सी किती मोठ्या आवाजात वाजतील याचे पट्टीीक समायोजन करू देते, परंतु बदल अधिक सूक्ष्म असतील कारण व्हॉल्यूम समायोजन कमी असेल. </li></ul>
+<p><br />
+</p>
+<div id="settings"></div>
+<h2><span class="mw-headline" id="Equalization_settings">समीकरण सेटिंग्ज</span></h2>
+<ul><li> <span class="button">सपाट</span>: "स्तर प्रतिसाद वक्र" सेट करण्याचा एक द्रुत मार्ग. याचा अर्थ आलेखावरील वक्र उभ्या पट्टीवर 0 dB वर डावीकडून उजवीकडे काढला आहे, जेणेकरून कोणत्याही फ्रिक्वेन्सीची व्हॉल्यूम पातळी सुधारित होणार नाही.</li>
+<li> <span class="button">उलट करा</span>:  विंडोमधील वर्तमान वक्र उलथापालथ करते, विशिष्ट वारंवारतेवर सकारात्मक लाभ नकारात्मकमध्ये बदलते आणि उलटरित्याही. </li>
+<li> <a href="https://alphamanual.audacityteam.org/man/File:CheckboxChecked.png" class="image"><img alt="CheckboxChecked.png" src="../m/images/8/85/checkboxchecked.png" width="13" height="13" /></a> <b>ग्रिडलाइन्स दाखवा :</b> नियंत्रण बिंदूंच्या अचूक स्थितीत मदत करून खिडकीवर ग्रिडलाइन काढते. पूर्वनियोजित सेटिंग "चालू" आहे. </li></ul>
+<p><br />
+</p>
+<div id="buttons"></div>
+<h2><span class="mw-headline" id="Other_buttons">इतर बटणे</span></h2>
+<p>आज्ञा बटणावर क्लिक केल्याने खालील परिणाम मिळतात :
+</p>
+<ul><li> <span class="button">'व्यवस्थापित करा'</span> या ड्रॉपडाउन यादी आपल्याला साधनाचे प्रीसेट स्थापित करण्यास आणि साधनेबद्दल काही तपशील पाहण्यास आपणाला सक्षम करते. तपशीलांसाठी <a href="manage_presets.html" title="Manage presets">'प्रीसेट्स व्यवस्थापित करा'</a> पहा. </li>
+<li><span class="button">'पूर्वावलोकन' </span> ध्वनिमध्ये वास्तविक बदल न करता, आत्ताच्या रचनेतील सेटिंगनुसार ध्वनि कसा ऐकू येईल याचे एक लहान पूर्वावलोकन चालू करते.  पूर्वावलोकनाची लांबी <span class="menu">संपादन &gt; प्राधान्ये &gt; <a href="playback_preferences.html" title="Playback Preferences">प्लेबॅक</a></span> मधील आपल्या सेटिंगद्वारे निश्चित केली जाते, पूर्वनियोजित सेटिंग ६ सेकंद असते.</li>
+<li><span class="button">'ठीक आहे' </span> हे निवड केलेल्या ध्वनिला आत्ताच्या सेटिंगचे प्रभाव लागू करून संवाद बंद करते. </li>
+<li><span class="button">'रद्द करा' </span> हे दिलेले प्रभाव रद्द करून ध्वनि काहीही बदल न करता सोडून देते आणि संवाद बंद करते. </li>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top"><b>फिल्टर वक्र EQ</b> आता प्रभावामध्ये वापरण्यासाठी, <span class="button">व्यवस्थापित करा</span> बटण वापरून, पूर्व-अस्तित्वातील समानीकरण वक्र आयात करण्याची सुविधा देते.
+<ul><li>अनेक प्रकाशित वक्र जसे की <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/78rpm_playback_curves#curves"><b>ऑड्यासिटी विकीवर</b></a>  , आणि तुम्ही ऑड्यासिटीच्या पूर्वीच्या आवृत्त्यांमध्ये जुन्या समीकरण प्रभावासह निर्यात केलेले वक्र .XML स्वरूपामध्ये आहेत. </li>
+<li>फिल्टर वक्र EQ, इतर ऑड्यासिटी प्रभाव्सप्रमाणे, आयात .TXT स्वरूपामधील मजकूर धारिका असण्याची अपेक्षा करते. हे सुलभ करण्यासाठी आम्ही एक साधन <b><a href="eq_xml_to_txt_converter.html" title="EQ XML to TXT Converter"> EQ XML ते TXT अनुवादक</a></b>  प्रदान केले आहे , हे पूर्वनियोजितनुसार सक्षम केलेले नाही परंतु तुम्ही <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers"><b>प्लग-इन व्यवस्थापकासह</b></a> ते सक्षम करू शकता ज्यानंतर ते <a href="tools_menu.html" title="Tools Menu">साधन पट्टी मध्ये </a> उपस्थित असेल . </li></ul>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+<div id="limitations"></div>
+<h2><span class="mw-headline" id="Limitations">मर्यादा</span></h2>
+<ul><li> समीकरण प्रक्रिया करण्यासाठी, प्रकल्पातील सर्व ट्रॅकचा नमुना दर समान असणे आवश्यक आहे. वेग किंवा खेळपट्टीवर परिणाम न करता ट्रॅकचा नमुना दर बदलण्यासाठी,  <span class="menu">गीतपट्टा &gt; <a href="tracks_menu.html#resample" title="Tracks Menu">पुनर्नमुना घ्या...</a></span> वापरा.</li>
+<li> फिल्टर कर्व EQ जास्तीत जास्त 200 नियंत्रण बिंदूंना सपोर्ट करते.</li></ul>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="graphic_eq.html" title="Graphic EQ"><b>&gt;</b>&#160; ग्राफीक EQ...</a> <br />
+</p><p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका</a> <br />
+</p><p><a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> प्रभाव यादी</a>
+</p>
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

@@ -49,12 +49,12 @@
 <h2><span class="mw-headline" id="Latencies_on_Windows.2C_Linux_and_Mac">विंडोज, लिनक्स आणि मॅकवरील विलंब</span></h2>
 <p>एएसआयओ हे विंडोजवरील वापरात असलेले मालकीचे साधारण ध्वनि आंतरपृष्ठ आहे जे कार्यप्रणालीच्या मिश्र कर्नलला मागे टाकत आहे, म्हणून संगणक ध्वनि सॉफ्टवेअर आणि हार्डवेअर दरम्यान सर्वात कमी विलंब थेट संवाद प्रदान करते. 
 </p>
-<ul><li> एएसआयओ २४-बिट सॅम्पलिंगचे समर्थन करतो जे फक्त अन्यथा <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/windows/win32/coreaudio/wasapi?redirectedfrom=MSDN">विंडोज डब्ल्यूएएसएपीआय</a> किंवा डब्ल्यूडीएम-केएस (विंडोज ड्राइव्हर मॉडेल कर्नल स्ट्रीमिंग) अंतर्गत उपलब्ध आहे.  24-बिट सॅम्पलिंग मोठ्या गतिमान श्रेणी, कमी सैद्धांतिक <a href="glossary.html#noise_floor" title="Glossary">ध्वनि मजला</a> आणि कमी ऐकण्यायोग्य खंडांवर अधिक रेझोल्युशनची परवानगी देते. </li>
+<ul><li> एएसआयओ २४-बिट सॅम्पलिंगचे समर्थन करतो जे फक्त अन्यथा <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/windows/win32/coreaudio/wasapi?redirectedfrom=MSDN">विंडोज डब्ल्यूएएसएपीआय</a> किंवा डब्ल्यूडीएम-केएस (विंडोज ड्राइव्हर मॉडेल कर्नल स्ट्रीमिंग) अंतर्गत उपलब्ध आहे.  २४-बिट सॅम्पलिंग मोठ्या गतिमान श्रेणी, कमी सैद्धांतिक <a href="glossary.html#noise_floor" title="Glossary">ध्वनि मजला</a> आणि कमी ऐकण्यायोग्य खंडांवर अधिक रेझोल्युशनची परवानगी देते. </li>
 <li> मूळ नसलेल्या एएसआयओ उत्पादित मूळ स्त्रोतापेक्षा "एकसारखे बिट " आहे. </li>
 <li> हार्डवेअरचे अनेक भौतिक इनपुट आणि आउटपुट वाहिन्या एकाच उपकरणावर खुल्या केल्या जातात.</li></ul>
-<div class="note">ऑड्यासिटीमध्ये मायक्रोसॉफ्ट विंडोजच्या <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/DirectSound">थेट-आवाजाच्या</a> आंतरपृष्ठ शिष्टाचाराचे समर्थन समाविष्ट आहे. ते वापरण्यासाठी, <a href="device_toolbar.html" title="Device Toolbar">उपकरणे साधनपट्टी</a>मध्ये यजमान म्हणून "विंडोज डायरेक्टसाऊंड" निवडा. हे काही ध्वनि उपकरणांवर बहु-वाहिनी मुद्रणाला समर्थन देईल, परंतु एएसआयओवर खूप कमी विलंब शक्य नसतो.</div> 
+<div class="note">ऑड्यासिटीमध्ये मायक्रोसॉफ्ट विंडोजच्या <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/DirectSound">थेट-आवाजाच्या</a> आंतरपृष्ठ शिष्टाचाराचे समर्थन समाविष्ट आहे. ते वापरण्यासाठी, <a href="device_toolbar.html" title="Device Toolbar">उपकरणे साधनपट्टी</a>मध्ये यजमान म्हणून "विंडोज थेट ध्वनि" निवडा. हे काही ध्वनि उपकरणांवर बहु-वाहिनी मुद्रणाला समर्थन देईल, परंतु एएसआयओवर खूप कमी विलंब शक्य नसतो.</div> 
 <p>लिनक्स वर, साधारण <a rel="nofollow" class="external text" href="http://www.alsa-project.org/">ए.एल.एस.ए. </a> ध्वनि <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Application_programming_interface">ए.पी.आय.</a> सामान्यत: एम.एम.इ. किंवा विंडोज थेट-आवाज अंतर्गत विंडोजपेक्षा कमी विलंब प्रदान करते. तथापि, बर्‍याच लिनक्स वितरणे आता ध्वनि रूटिंग आणि मिक्सिंगसाठी पूर्वनियोजनानुसारनुसार <a rel="nofollow" class="external text" href="http://www.pulseaudio.org/">पल्स ध्वनि</a> वापरतात. पल्स ध्वनि आवाज स्रोत आणि लिनक्स कर्नल दरम्यान बसला आहे आणि म्हणूनच ए.एल.एस.ए. च्या थेट वापरापेक्षा काही प्रमाणात उशीर झाला आहे. सर्वात कमी विलंबसाठी, आपण <a rel="nofollow" class="external text" href="http://jackaudio.org/">जॅक</a> एपीआय वापरू शकता जे अनुप्रयोगांदरम्यान कमी विलंबता ध्वनि संप्रेषण आणि ध्वनि रूटिंग दोन्ही प्रदान करते.    सध्या ऑड्यासिटी जॅक ला बऱ्यापैकी समर्थन देते, परंतु काही  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Linux_Issues#JACK">मर्यादांसह</a>.
-</p><p>मॅक वर, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Core_Audio">मूळ ध्वनि</a> एक साधारण एपीआय आहे आणि ऑड्यासिटीद्वारे पूर्णपणे समर्थित आहे.  मूळ ध्वनिमध्ये एमएमई आणि विंडोज डायरेक्टसाऊंड अंतर्गत विंडोजपेक्षा कमी विलंब देखील आहेत परंतु सर्वात कमी विलंब होण्यासाठी <a rel="nofollow" class="external text" href="http://www.jackosx.com/">जॅक ओएस एक्स</a>चा वापर केला जाऊ शकतो.  
+</p><p>मॅक वर, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Core_Audio">मूळ ध्वनि</a> एक साधारण एपीआय आहे आणि ऑड्यासिटीद्वारे पूर्णपणे समर्थित आहे.  मूळ ध्वनिमध्ये एमएमई आणि विंडोज थेट ध्वनि अंतर्गत विंडोजपेक्षा कमी विलंब देखील आहेत परंतु सर्वात कमी विलंब होण्यासाठी <a rel="nofollow" class="external text" href="http://www.jackosx.com/">जॅक ओएस एक्स</a>चा वापर केला जाऊ शकतो.  
 </p>
 <h2><span class="mw-headline" id="Audacity_and_ASIO">ऑड्यासिटी आणि एएसआयओ</span></h2>
 <p>एएसआयओ तंत्रज्ञान जर्मन कंपनी <a rel="nofollow" class="external text" href="http://www.steinberg.net/de/home.html">स्टेनबर्ग</a>ने विकसित केले आहे आणि परवाना कराराद्वारे संरक्षित आहे जे त्याच्या स्त्रोत कोडचे पुनर्वितरण प्रतिबंधित करते. 
@@ -63,13 +63,13 @@
 <div id="asio_support"></div>
 <h2><span class="mw-headline" id="Non-distributable_ASIO_support_in_Audacity">ऑड्यासिटीमध्ये न वितरणीय एएसआयओ समर्थन</span></h2>
 <p>ऑड्यासिटी विंडोजवर अशा व्यक्तींसाठी एएसआयओ समर्थन प्रदान करते जे पर्यायी स्टीनबर्ग एएसआयओ एसडीके वापरून स्त्रोत कोडमधून ऑड्यासिटी संकलित करण्यास तयार आहेत. 
-</p><p>एएसआयओ समर्थन कठोरपणे प्रदान केले जाते की ते <b>विना-वितरित</b> आहे, म्हणजेच, आपण इतर कोणालाही एएसआयओ समर्थनासह तयार केलेल्याची प्रत किंवा वितरण करू शकत <b>नाही</b>. तयार केलेले कठोरपणे आपल्या स्वत: च्या वैयक्तिक (खाजगी किंवा व्यावसायिक) वापरासाठी आहे. त्याच कारणांसाठी, ऑड्यासिटी एएसआयओ समर्थनासह ओड्यासिटीचे बिल्ड वितरित करू शकत <b>नाही</b>, म्हणून कृपया विचारू <i><b>नका!</b></i>   
+</p><p>एएसआयओ समर्थन कठोरपणे प्रदान केले जाते की ते <b>विना-वितरित</b> आहे, म्हणजेच, आपण इतर कोणालाही एएसआयओ समर्थनासह तयार केलेल्याची प्रत किंवा वितरण करू शकत <b>नाही</b>. तयार केलेले कठोरपणे आपल्या स्वत: च्या वैयक्तिक (खाजगी किंवा व्यावसायिक) वापरासाठी आहे. त्याच कारणांसाठी, ऑड्यासिटी एएसआयओ समर्थनासह ऑड्यासिटीचे बिल्ड वितरित करू शकत <b>नाही</b>, म्हणून कृपया विचारू <i><b>नका!</b></i>   
 </p><p>खाली ASIO समर्थनासह स्त्रोत कोडवरून ऑड्यासिटी संकलित करण्याचे विहंगावलोकन आहे.
 </p>
 <ol><li> विनामूल्य मायक्रोसॉफ्ट व्हिज्युअल स्टुडिओ समुदाय आवृत्ती <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Integrated_development_environment">एकात्मिक विकास पर्यावरण (आयडीई)</a> स्थापित करा .</li>
 <li> स्टीनबर्ग वरून  <a rel="nofollow" class="external text" href="https://www.steinberg.net/en/company/developers.html">एएसआयओ एसडीके </a> डाउनलोड आणि स्थापित करा.</li>
 <li><a rel="nofollow" class="external free" href="https://github.com/audacity/audacity/releases">https://github.com/audacity/audacity/releases</a> पासून नवीनतम ऑड्यासिटी रीलिझचा स्त्रोत कोड डाउनलोड करा.स ्त्रोत कोड मधील win/compile.txt मधील चरणांचे अनुसरण करा :  
-<ol><li> डब्ल्यूएक्सविजेट्स जीयूआय टूलकिट डाउनलोड आणि स्थापित करा आणि नंतर दृश्य कलागृहाचा वापर करुन डब्ल्यूएक्सविजेट्स तयार करा.</li>
+<ol><li> डब्ल्यूएक्सविजेट्स जीयूआय साधनकिट डाउनलोड आणि स्थापित करा आणि नंतर दृश्य कलागृहाचा वापर करुन डब्ल्यूएक्सविजेट्स तयार करा.</li>
 <li> आपण ज्या ठिकाणी विजेट्स स्थापित केले त्या डिरेक्टरीमध्ये डब्ल्यूएक्सडब्ल्यूएन <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Environment_variable">एनवायरनमेंट व्हेरिएबल</a> स्थापित करा आणि जिथे आपण एएसआयओ एसडीके स्थापित केले त्या निर्देशिकेमध्ये एएसआयओएसडीके_डिआयर एन्व्हायर्नमेंट व्हेरिएबल स्थापित करा. संगणक रीबूट करा.  </li>
 <li> दृश्य कलागृह वापरुन ऑड्यासिटीची रचना करा.   </li></ol></li></ol>
 <p><b>संपूर्ण तपशीलांसाठी ऑड्यासिटी विकीमध्ये  <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Developing_On_Windows">'विंडोजवरील विकसक' </a> वरील सूचनांचे अनुसरण करा आणि दुवे डाउनलोड करा.</b> 
@@ -133,7 +133,7 @@
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-		<h3>उपयुक्त लिंक्स</h3>
+		<h3>उपयुक्त दुवे</h3>
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>

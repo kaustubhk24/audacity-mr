@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>मॅक साठी FFmpeg स्थापित करत आहे - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Installing_FFmpeg_for_Mac rootpage-Installing_FFmpeg_for_Mac skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">मॅक साठी FFmpeg स्थापित करत आहे</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा : <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Installing_FFmpeg_for_Mac#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">पर्यायी  <a href="faq_opening_and_saving_files.html#foreign" title="FAQ:Opening and Saving Files">FFmpeg लायब्ररी </a> ऑड्यासिटीला <i><b><a href="glossary.html#aac" title="Glossary">M4A (AAC)</a></b></i>, AC3, AMR (अरुंद बॅन्ड) आणि <i><b><a href="glossary.html#wma" title="Glossary">WMA</a></b></i> यासह ध्वनि स्वरूपाची खूप मोठी श्रेणी आयात आणि निर्यात करण्याची आणि बहुतेक चित्रफीत धारिकेमधून ध्वनि आयात करण्याची परवानगी देते. 
+<ul><li> सॉफ्टवेअर पेटंट्समुळे, ऑड्यासिटी FFmpeg सॉफ्टवेअर समाविष्ट करू शकत नाही किंवा ते त्याच्या स्वतःच्या वेबसाइटवरून वितरित करू शकत नाही. त्याऐवजी, विनामूल्य आणि शिफारस केलेली FFmpeg तृतीय-पक्ष लायब्ररी डाउनलोड आणि स्थापित करण्यासाठी खालील सूचना वापरा.</li>
+<li><b>प्रगत वापर :</b> तुमच्याकडे आधीपासून PATH प्रणालीमध्ये 64-बिट ऑड्यासिटी-सुसंगत FFmpeg 2.2.x किंवा 2.3.x सामायिक लायब्ररी असल्यास, जोपर्यंत तुम्ही खालील दुवेवरून FFmpeg स्थापित करत नाही आणि जोपर्यंत तुम्ही करत नाही तोपर्यंत ऑड्यासिटी त्या वापरेल. तुम्हाला ऑड्यासिटी <a href="libraries_preferences.html" title="Libraries Preferences"> लायब्ररी प्राधान्यांमध्ये</a> वापरायचे आहे ते FFmpeg निर्दिष्ट करू नका . </div></li></ul>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+</td>
+<td align="left" valign="top">मॅक वरील ऑड्यासिटी 2.3.1 आता 64-बिट ऍप्लिकेशन आहे. <p>याचा अर्थ असा की जर तुम्ही Mac वर मागील ऑड्यासिटी आवृत्त्यांचे वापरकर्ते असाल आणि पर्यायी FFmpeg लायब्ररी स्थापित केली असेल तर तुम्ही आता FFmpeg लायब्ररीच्या 64-बिट आवृत्त्या स्थापित केल्या <i><b>पाहिजेत</b></i> अन्यथा FFmpeg वर अवलंबून असलेली तुमची आयात आणि निर्यात यापुढे कार्य करणार नाही.</p><p>64-बिट FFmpeg लायब्ररी स्थापित केल्याने तुमची 32-बिट FFmpeg लायब्ररी स्थापित केली असल्यास ती ओव्हरराइट होणार नाही किंवा हटवली जाणार नाही. </p>
+</td></tr></table></div>
+<div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Recommended_package_installer"><span class="tocnumber">१</span> <span class="toctext">शिफारस केलेले पॅकेज इंस्टॉलर</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Locating_the_FFmpeg_library_manually"><span class="tocnumber">२</span> <span class="toctext">FFmpeg लायब्ररी व्यक्तिचलितपणे शोधणे</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Alternative_zip_download_for_expert_users_who_want_to_choose_their_own_library_location"><span class="tocnumber">३</span> <span class="toctext">तज्ञ वापरकर्त्यांसाठी पर्यायी झिप डाउनलोड ज्यांना त्यांचे स्वतःचे लायब्ररी स्थान निवडायचे आहे</span></a></li>
+</ul>
+</div>
+
+<div id="macff_pkg"></div>
+<h2><span class="mw-headline" id="Recommended_package_installer">शिफारस केलेले पॅकेज इंस्टॉलर</span></h2>
+<ol><li> बाह्य <a rel="nofollow" class="external text" href="https://lame.buanzo.org#lameosx64bitdl"><b>डाउनलोड पृष्ठावर</b></a> <br />&#160;<i><b>या दुव्यावर लेफ्ट-क्लिक करा, उजवे-क्लिक करू नका </b></i>.</li>
+<li> <b>64-बिट FFmpeg</b> विभागात <b>"ffmpeg_64bit_osx.pkg"</b> या दुव्यावर लेफ्ट-क्लिक करा आणि धारिका तुमच्या संगणकावर कुठेही जतन करा. </li>
+<li> तुम्ही डाउनलोड करणे पूर्ण केल्यावर, तुमच्या <b>डाउनलोड फोल्डरमधील</b> <b>"ffmpeg_64bit_osx.pkg"</b> वर डबल-क्लिक करा. </li>
+<li> आपल्याला स्थापनेद्वारे मार्गदर्शन केले जाईल.</li>
+<li> इंस्टॉलरमधील चरणांवर क्लिक करा. हे <b>ffmpeg.55.64bit.dylib</b> धारिका सिस्टम लायब्ररीमध्ये <b>/Library/Application Support/audacity/libs/</b> येथे स्थापित करेल.
+<ul><li> <i>काही मॅक वर प्रक्रिया "व्हॅलिडेटिंग पॅकेजेस" वर थांबल्यासारखी वाटू शकते - फक्त धीर धरा आणि ती पूर्ण होण्याची प्रतीक्षा करा..</i></li></ul></li>
+<li> तुम्ही FFmpeg स्थापित केल्यावर ऑड्यासिटी चालू असेल तर रीस्टार्ट करा, तर ऑड्यासिटीने आपोआप FFmpeg शोधले पाहिजे.   </li></ol>
+<dl><dd>तुम्हाला ऑड्यासिटी FFmpeg शोधण्यात समस्या असल्यास, FFmpeg <a href="#locate"><b> व्यक्तिचलितपणे शोधण्यासाठी</b></a>  खालील चरणांचे अनुसरण करा.</dd></dl>
+<p><br />
+</p>
+<div id="locate"></div>
+<h2><span class="mw-headline" id="Locating_the_FFmpeg_library_manually">FFmpeg लायब्ररी व्यक्तिचलितपणे शोधत आहे</span></h2>
+<p>ऑड्यासिटी चालू असताना तुम्ही FFmpeg इंस्टॉल केले असल्यास, किंवा तुम्ही FFmpeg पूर्वनियोजित नसलेल्या स्थानावर स्थापित केले असल्यास, ऑड्यासिटी तुम्हाला FFmpeg लायब्ररी शोधण्यासाठी प्राधान्ये कॉन्फिगर करण्यास सांगेल. 
+</p><p>हे करण्यासाठी, <a href="preferences.html" title="Preferences">प्राधान्यांमध्ये </a>  प्रवेश करा नंतर डावीकडील  "<b>लायब्ररी</b>" टॅब : 
+</p>
+<dl><dd><span title="Libraries Preferences showing the FFmpeg Locate... and Download... buttons, showing FFmpeg library not found"><img alt="Preferences Libraries FFmpeg NOT Found Mac LAME built-in.png" src="../m/images/4/40/preferences_libraries_ffmpeg_not_found_mac_lame_built_in.png" width="780" height="483" /></span></dd></dl>
+<p>वरील प्रतिमेप्रमाणे, "FFmpeg लायब्ररी आवृत्ती" "<b>FFmpeg लायब्ररी सापडली नाही</b>"असे म्हणेल. हे दुरुस्त करण्यासाठी :
+</p>
+<ol><li> <b>FFmpeg लायब्ररीच्या </b> उजवीकडे <span class="button">शोधा...</span> बटणावर क्लिक करा : </b></li>
+<li> जर "<b>यशस्वी</b>" संदेश असे सुचवत असेल की ऑड्यासिटीने आता वैध FFmpeg लायब्ररी आपोआप शोधल्या आहेत आणि तुम्हाला त्या व्यक्तिचलितपणे शोधायच्या आहेत का असे विचारत असल्यास, <span class="button">नाही</span> वर क्लिक करा , नंतर प्राधान्ये बंद करण्यासाठी <span class="button">ठीक आहे</span> क्लिक करा.  </li>
+<li> जर  "<b> FFmpeg शोधा</b>" संवाद दिसत असेल तर,  <span class="button">ब्राउझ करा...</span> क्लिक करा.</li>
+<li> FFmpeg असलेल्या फोल्डरवर नेव्हिगेट करा आणि "<b>ffmpeg.55.64bit.dylib</b>" धारिका निवडा.</li>
+<li>  <span class="button">उघडा</span> नंतर  <span class="button">ठीक आहे</span> क्लिक करा</li>
+<li> लक्षात घ्या की FFmpeg लायब्ररी स्थित आहे</li>
+<li> नंतर प्राधान्ये बंद करण्यासाठी <span class="button">ठीक आहे</span> क्लिक करा.</li></ol>
+<dl><dd><b>FFmpeg लायब्ररी आवृत्तीने</b> आता FFmpeg च्या उप-लायब्ररींसाठी तीन आवृत्ती क्रमांकांचा संच दर्शविला पाहिजे (libavformat आवृत्तीसाठी "F", libavcodec आवृत्तीसाठी "C" आणि libavutil आवृत्तीसाठी "U"). <p>तुम्हाला अजूनही "न सापडले" दिसत असल्यास, तुम्ही चुकीच्या लायब्ररी स्थापित केल्या असतील. तुमच्या ऑपरेटिंग सिस्टमसाठी योग्य लायब्ररी मिळविण्यासाठी  <span class="button">डाउनलोड...</span> बटणावर क्लिक करा . FFmpeg शोध बद्दल निदान माहिती पाहण्यासाठी तुम्ही <span class="menu">मदत &gt; निदान &gt; <a href="help_menu_diagnostics.html#show_log" title="Help Menu: Diagnostics"> लॉग दाखवा...</a></span> देखील निवडू शकता .</p></dd></dl>
+<p><br />
+</p>
+<div id="macff_zip"></div>
+<h2><span class="mw-headline" id="Alternative_zip_download_for_expert_users_who_want_to_choose_their_own_library_location">तज्ञ वापरकर्त्यांसाठी पर्यायी झिप डाउनलोड ज्यांना त्यांचे स्वतःचे लायब्ररी स्थान निवडायचे आहे</span></h2>
+<div class="note">धारिका /usr/local/lib वर काढण्याची शिफारस केलेली नाही कारण तेथून FFmpeg लायब्ररी वाचण्यासाठी प्रशासकीय किंवा रूट परवानग्या आवश्यक असू शकतात.</div>
+<ol><li>बाह्य <a rel="nofollow" class="external text" href="https://lame.buanzo.org#lameosx64bitdl"><b>डाउनलोड पृष्ठावर </b></a> जा <br />&#160;<i><b> या दुव्यावर लेफ्ट-क्लिक करा, उजवे-क्लिक करू नका</b></i></li>
+<li> <b>64-बिट FFmpeg</b> विभागात  <b>"FFmpeg64bit_MAC_OSX_for_Audacity_2.3.1_and_above.zip"</b>  लिंकवर लेफ्ट-क्लिक करा.</li>
+<li>काही मॅक कॉम्प्युटर झिपमधून धारिका आपोआप काढू शकतात <b>डाउनलोड</b> निर्देशिकेमधील नवीन फोल्डरमध्ये :  <b>FFmpeg64bit MAC OSX for Audacity</b> 
+<ul><li>अन्यथा, तुमच्याकडे पूर्ण परवानगी असलेल्या कोठेही फोल्डर मिळविण्यासाठी डाउनलोड केलेल्या ZIP धारिकामधील सामग्री काढा</li></ul></li>
+<li>या फोल्डरमध्ये तीन धारिका असतील :  <b>ffmpeg_codecs.55.64bit.dyli</b>, <b>ffmpeg_utils.52.64bit.dylib</b> आणि <b>ffmpeg.55.64bit.dylib</b></li>
+<li> तिन्ही धारिका कॉपी करा आणि तुमच्याकडे पूर्ण परवानग्या असतील तिथे त्या पेस्ट करा 
+<ul><li> पसंतीचे पूर्वनियोजित ऑड्यासिटी स्थान आहे <b>/Library/Application Support/audacity/libs</b></li></ul></li></ol>
+<dl><dd>नंतर लायब्ररी प्राधान्ये वापरून  <b>ffmpeg.55.64bit.dylib</b> शोधण्यासाठी  <a href="#locate"><b> वरील सूचनांचे </b></a> अनुसरण करा.</dd></dl>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top"><b>	FFmpeg च्या दुसर्‍या बिल्ड विरुद्ध ऑड्यासिटी संकलित करणे::</b>
+<ul style="list-style-image: none; list-style-type: none">तुम्ही <a rel="nofollow" class="external text" href="https://www.ffmpeg.org/">FFmpeg प्रकल्पातील</a> स्त्रोत कोड वापरून तुमची FFmpeg ची स्वतःची प्रत तयार आणि स्थापित करू शकता . नंतर <a rel="nofollow" class="external text" href="https://forum.audacityteam.org/viewtopic.php?f=17&amp;t=7245&amp;p=29157#p29157">या तत्त्वांनुसार</a> FFmpeg च्या तुमच्या स्वत: स्थापित केलेल्या प्रतीशी लिंक करून  <a rel="nofollow" class="external text" href="https://github.com/audacity/audacity">Git स्त्रोतांकडून</a> ऑड्यासिटी तयार करा . </ul>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+<div id="purge"></div>
+
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

@@ -7,17 +7,17 @@
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="शोधा" type="application/openशोधाdescription+xml" href="https://alphamanual.audacityteam.org/m/openशोधा_desc.php" title="ऑड्यासिटी विकास मार्गदर्शक-पुस्तिका (इं)">
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+<meta name="ResourceLoaderDynamicStyles" content=""/>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Real-time_preview_of_effects rootpage-Real-time_preview_of_effects skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -28,164 +28,153 @@
 				<h1 id="firstHeading" class="firstHeading" lang="en">प्रभावांचे वास्तविक-वेळ पूर्वावलोकन</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेक</div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a> , <a href="https://alphamanual.audacityteam.org/man/Real-time_preview_of_effects#शोधाInput">शोधा</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Real-time_preview_of_effects#searchInput">शोधा</a></div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro"><b>वास्तविक-वेळ पूर्वावलोकन</b> आपल्याला वाजवा करताना आणि वास्तविक-टाइममधील निकाल ऐकताना परिणाम समयोजन बदलण्यास सक्षम करते, पूर्वावलोकन करण्याऐवजी, चिमटा समयोजन नंतर पुन्हा पूर्वावलोकन करा. वास्तविक-वेळ पूर्वावलोकन परिणामी पूर्वावलोकन बटणाऐवजी वाजवा / स्टॉप, बॅकवर्ड वगळा आणि अग्रेषित बटणे समाविष्ट करा.<p>सध्या ऑड्यासिटी वास्तविक-वेळ पूर्वावलोकनासह पाठविलेले सर्व प्रभाव नाहीत, परंतु आपण अतिरिक्त <a href="effect_menu.html#LADSPA_Effects" title="प्रभाव मेनू">एलएडीएसपीए</a> , <a href="effect_menu.html#LV2_effects" title="प्रभाव मेनू">एलव्ही 2</a> , <a href="effect_menu.html#vst" title="प्रभाव मेनू">व्हीएसटी</a> आणि <a href="effect_menu.html#Audio_Unit_Effects" title="प्रभाव मेनू">ध्वनी एकक </a> <i>(मॅकसाठी)</i> प्रभाव डाउनलोड करू शकता , जे जवळजवळ सर्वच वास्तविक-वेळ पूर्वावलोकनाचे समर्थन करतील.</p> </div> 
-<h2><span class="mw-headline" id="Real-time_preview_differences">वास्तविक-वेळ पूर्वावलोकन फरक</span></h2>
-<p>वास्तविक-वेळ पूर्वावलोकनास समर्थन देणारा प्रभाव खालील मार्गांनी नियमित प्रभावापेक्षा भिन्न आहे.
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro"><b>वास्तविक वेळ पूर्वावलोकन</b> तुम्हाला वास्तविक वेळे मध्ये परिणाम प्ले करताना आणि ऐकताना प्रभाव सेटिंग्ज बदलण्यास सक्षम करते, पूर्वावलोकन करण्याऐवजी, सेटिंग्जमध्ये बदल करा आणि पुन्हा पूर्वावलोकन करा. वास्तविक वेळ पूर्वावलोकन प्रभावामध्ये पूर्वावलोकन बटणाऐवजी प्ले/स्टॉप, स्किप बॅकवर्ड आणि स्किप फॉरवर्ड बटणे समाविष्ट आहेत. <p>सध्या ऑड्यासिटी सपोर्ट वास्तविक वेळ पूर्वावलोकनासह पाठवलेले सर्व प्रभाव नाहीत, परंतु तुम्ही अतिरिक्त <a href="effect_menu_ladspa.html" title="Effect Menu: LADSPA">एलएडीएसपीए</a>, <a href="effect_menu_lv2.html" title="Effect Menu: LV2">एलव्ही 2</a>, <a href="effect_menu_vst.html" title="Effect Menu: VST">व्हीएसटी</a> आणि <a href="effect_menu_audiounit.html" title="Effect Menu: AudioUnit">ध्वनी एकक</a> <i>(मॅकसाठी)</i> प्रभाव डाउनलोड करू शकता, जे जवळजवळ सर्व वास्तविक वेळ पूर्वावलोकनाला समर्थन देतील.</p>
+<ul><li> ऑड्यासिटी सध्या एका वेळी उघडण्यासाठी फक्त एका वास्तविक वेळ पूर्वावलोकन प्रभावास समर्थन देते. </div> </li></ul>
+<h2><span class="mw-headline" id="Real-time_preview_differences">वास्तविक वेळ पूर्वावलोकन फरक</span></h2>
+<p>वास्तविक वेळ पूर्वावलोकनास समर्थन देणारा प्रभाव खालील मार्गांनी नियमित प्रभावापेक्षा भिन्न आहे.
 </p>
-<ul><li> जेव्हा ध्वनी चालू असतो किंवा विराम दिला जातो तेव्हा हे उघडता येऊ शकते.</li>
-<li>कोणताही ध्वनी <a href="audacity_selection.html" title="धृष्टता निवड">निवडलेला</a> नसतानाही तो उघडला जाऊ शकतो , जोपर्यंत गीतपट्टा निवडला जात नाही.</li>
-<li> वास्तविक-वेळ पूर्वावलोकन प्रभाव उघडलेला परंतु वाजवा होत नसताना एक नियमित प्रभाव उघडला आणि लागू केला जाऊ शकतो. </li>
-<li> ध्वनी चालू असताना वास्तविक-वेळ पूर्वावलोकने समयोजन बदलली जाऊ शकतात.</li>
-<li> ग्राफिकल मोडमध्ये असताना, ध्वनी वाजवा होत असताना थेट मीटर किंवा आलेखांनी प्रतिसाद द्यावा.</li>
-<li>आपण सुरू करू शकता आणि ध्वनी प्लेबॅक थांबवू, निवड बदलण्यासाठी लागू <a href="audio_tracks.html#gain" title="ध्वनी गीतपट्टा ">वाढणे</a> किंवा <a href="audio_tracks.html#pan" title="ध्वनी गीतपट्टा ">पॅन</a> गीतपट्टा किंवा <a href="audio_tracks.html#mute" title="ध्वनी गीतपट्टा ">नि: शब्द</a> किंवा <a href="audio_tracks.html#solo" title="ध्वनी गीतपट्टा ">सोलो</a> त्यांना असताना परिणाम संवाद खुले आहे. आडमार्ग वापरू शकता <span class="kbrd" style="background-color: #eaeafa">Alt + F6 </span> &nbsp; <i><sup><a href="only_in_full_set.html" title="केवळ पूर्ण सेटमध्ये">अतिरिक्त</a></sup></i> किंवा <span class="kbrd" style="background-color: #eaeafa">Alt + Shift + F6 </span> &nbsp; <i><sup><a href="only_in_full_set.html" title="केवळ पूर्ण सेटमध्ये">अतिरिक्त</a></sup></i> (वापरण्यासाठी <span class="kbrd" style="background-color: #e0e0f0">पर्याय</span> अनुक्रमे परिणाम आणि मुख्य प्रकल्प विंडो दरम्यान पुढे किंवा मागे हलविण्यासाठी मॅक वर त्याऐवजी Alt की).</li>
-<li>प्रभाव लागू करण्यासाठी निवड <b>असणे आवश्यक आहे</b> .  </li>
-<li>आपण निवडलेल्या गीतपट्टा वर प्रभाव लागू करण्याचे पूर्वावलोकन ऐकू येईल. निवडलेल्या गीतपट्टा वर त्यांच्यावर प्रभाव लागू होणार नाही परंतु नियमित प्रभावाच्या विपरीत, निवड न केलेले गीतपट्टा अद्याप आपण शांत किंवा मौन / निःशब्द स्थितीचा वापर न करता ऐकल्या जातील.  </li>
-<li> प्रभाव बंद केल्याशिवाय लागू होऊ शकतो.</li>
-<li>वापरकर्ता पूर्व-निर्धारित जतन आणि लोड केले जाऊ शकतात. जोपर्यंत आपण प्रभाव लागू करेपर्यंत आपण प्रभावाच्या समयोजनमध्ये केलेले बदल आपण पुढच्या वेळी ऑड्यासिटी प्रारंभ करण्यासाठी वापरासाठी पुनर्संचयित केले जातील.</li></ul>
-<h2><span class="mw-headline" id="Real-Time_preview_with_graphical_interface">ग्राफिकल मुखपृष्ठ सह वास्तविक-वेळ पूर्वावलोकन</span></h2>
- 
-<p>जेव्हा आपण ग्राफिकल मुखपृष्ठ सह वास्तविक-वेळ पूर्वावलोकनास समर्थन देणारा प्रभाव उघडता तेव्हा प्रभाव संवादच्या तळाशी ही नियंत्रण चिन्हे असतील.
+<ul><li> जेव्हा ध्वनि चालू असतो किंवा विराम दिला जातो तेव्हा हे उघडता येऊ शकते.</li>
+<li> जोपर्यंत गीतपट्टा निवडलेला आहे तोपर्यंत कोणताही ध्वनि <a href="audacity_selection.html" title="Audacity Selection">निवडलेला</a> नसतानाही तो उघडला जाऊ शकतो. </li>
+<li> वास्तविक वेळ पूर्वावलोकन प्रभाव उघडलेला परंतु वाजवा होत नसताना एक नियमित प्रभाव उघडला आणि लागू केला जाऊ शकतो. </li>
+<li> ध्वनि चालू असताना वास्तविक वेळ पूर्वावलोकने समयोजन बदलली जाऊ शकतात.</li>
+<li> ग्राफिकल मोडमध्ये असताना, ध्वनि वाजवा होत असताना थेट मीटर किंवा आलेखांनी प्रतिसाद द्यावा.</li>
+<li> तुम्ही ध्वनि प्लेबॅक सुरू आणि थांबवू शकता, निवड बदलू शकता, गीतपट्ट्यावर <a href="audio_tracks.html#gain" title="Audio Tracks">गेन</a> किंवा <a href="audio_tracks.html#pan" title="Audio Tracks">पॅन</a> लागू करू शकता किंवा प्रभाव संवाद खुला असताना त्यांना <a href="audio_tracks.html#mute" title="Audio Tracks">म्यूट</a> किंवा <a href="audio_tracks.html#solo" title="Audio Tracks">सोलो</a> करू शकता. प्रभाव आणि मुख्य प्रकल्प विंडोमध्ये अनुक्रमे पुढे किंवा मागे जाण्यासाठी तुम्ही <span class="kbrd" style="background-color: #eaeafa">Alt + F6 </span> &#160; <i><sup><a href="only_in_full_set.html" title="Only in full set">Extra</a></sup></i> किंवा <span class="kbrd" style="background-color: #eaeafa">Alt + Shift + F6 </span> &#160; <i><sup><a href="only_in_full_set.html" title="Only in full set">Extra</a></sup></i> (Mac वर Alt ऐवजी <span class="kbrd" style="background-color: #e0e0f0">Option</span> की वापरा) सोपा मार्ग वापरू शकता . </li>
+<li> प्रभाव लागू करण्यासाठी निवड उपस्थित असणे <b>आवश्यक</b> आहे. </li>
+<li> तुम्हाला निवडलेल्या गीतपट्ट्यावर प्रभाव लागू करण्याचे पूर्वावलोकन ऐकू येईल. न निवडलेले गीतपट्टे त्यांच्यावर लागू होणार नाहीत परंतु नियमित प्रभावांप्रमाणे, न निवडलेले गीतपट्टे अजूनही ऐकले जातील जोपर्यंत तुम्ही त्यांना शांत करण्यासाठी म्यूट/सोलो स्थिती वापरत नाही.</li>
+<li> प्रभाव बंद न करता प्रभाव लागू केला जाऊ शकतो.</li>
+<li> वापरकर्ता प्रीसेट जतन आणि लोड केले जाऊ शकतात. जोपर्यंत तुम्ही प्रभाव लागू कराल, तोपर्यंत तुम्ही प्रभावच्या रचनामध्ये केलेले बदल तुम्ही पुढच्या वेळी ऑड्यासिटी लाँच कराल तेव्हा वापरण्यासाठी पुनर्संचयित केले जातील.</li></ul>
+<div id="graphical"></div>
+<h2><span class="mw-headline" id="Real-Time_preview_with_graphical_interface">ग्राफिकल इंटरफेससह वास्तविक वेळ पूर्वावलोकन</span></h2>
+<p>जेव्हा तुम्ही ग्राफिकल इंटरफेससह वास्तविक वेळ पूर्वावलोकनाला समर्थन करणारा प्रभाव उघडता तेव्हा त्यात प्रभाव संवादाच्या तळाशी हे नियंत्रण चिन्ह असतील.
 </p>
-<dl><dd><span title="ग्राफिकल चिन्ह-आधारित वास्तविक-वेळ पूर्वावलोकन नियंत्रणे"><img alt="वास्तविक-वेळ नियंत्रणे एनोटेटेड.पीएनजी" src="../m/images/a/af/real_time_controls_annotated.png" width="499" height="132"></span></dd></dl>
-<ul><li>&nbsp;<span title="प्रभाव बटण व्यवस्थापित करा"><img alt="बटण चिन्ह व्यवस्थापित करा W10.png" src="../m/images/3/38/manage_button_icon_w10.png" width="28" height="28"></span>&nbsp;<b>प्रभाव मेनू व्यवस्थापित करा:</b> 
-<ul><li><b>वापरकर्त्याचे</b> पूर्व-निर्धारित <b>:</b> या परिणामासाठी कोणतेही वापरकर्ता पूर्व-निर्धारित अस्तित्वात असल्यास हे मेनू त्यांना सूचीबद्ध करेल. तो प्रभाव मध्ये लोड करण्यासाठी वापरकर्त्याच्या पूर्व-निर्धारितपैकी एक निवडा.
-</li><li> <b>प्रणाली </b> पूर्व-निर्धारित <b>:</b> या कारणासाठी कोणतेही प्रणाली  पूर्व-निर्धारित अस्तित्वात असल्यास हे मेनू त्यांना सूचीबद्ध करेल. कारखाना पूर्व-निर्धारितमध्ये एक तो प्रभावात लोड करण्यासाठी निवडा.
-</li><li> <b>पूर्व-निर्धारित हटवा:</b> पूर्वी जतन केलेला वापरकर्ता पूर्व-निर्धारित हटविण्यासाठी हा पर्याय निवडा.
-</li><li> <b>म्हणून जतन करा ...</b> वापरकर्त्याच्या पूर्व-निर्धारितच्या रुपात सद्य समयोजन जतन करण्यासाठी हा पर्याय निवडा.
-</li><li> <b>आयात करा ...</b> पूर्व-निर्धारित धारिका (किंवा मॅकवरील ध्वनी एकक प्रभावांसाठी एकाधिक धारीका्स) आयात करण्यासाठी हा पर्याय निवडा.   
-</li><li> <b>निर्यात करा ...</b> पूर्व-निर्धारित धारिका (किंवा मॅकवरील ध्वनी एकक प्रभावांसाठी एकाधिक धारीका्स) निर्यात करण्यासाठी हा पर्याय निवडा. निर्यात आपल्याला आपल्या संगणकावरील इतर वापरकर्त्यांसह या प्रभावासाठी पूर्व-निर्धारित सामायिक करू देते किंवा त्या दुसर्&zwj;या संगणकावर हलवू देते.
+<dl><dd><span title="Graphical icon-based real-time preview controls"><img alt="Real-time controls annotated.png" src="../m/images/a/af/real_time_controls_annotated.png" width="499" height="132" /></span></dd></dl>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top"><span style="font-weight: bold; font-size:118%">फक्त विंडोज वर:</span> जेव्हा फोकस ग्राफिकल किंवा <a href="#text">मजकूर-आधारित इंटरफेसमध्ये</a> असेल तेव्हा प्रभाव ऑपरेट करण्यासाठी तुम्ही खालील एकल की दाबा वापरू शकता :
+<ul><li> मॅनेज यादी उघडण्यासाठी <b>M</b> , प्लेबॅक सुरू करण्यासाठी किंवा थांबवण्यासाठी <b>P</b> , मागे वगळण्यासाठी <b>B</b> , पुढे जाण्यासाठी <b>F</b> , प्रभाव सक्षम/अक्षम करण्यासाठी <b>E</b>.</li></ul>
+</td></tr></table>
+</div>
+<ul><li>&#160;<span title="Manage Effect button"><img alt="Manage button icon W10.png" src="../m/images/3/38/manage_button_icon_w10.png" width="28" height="28" /></span>&#160;<b>प्रभाव यादी व्यवस्थापित करा:</b> 
+<ul><li><b>वापरकर्ता प्रीसेट:</b> या प्रभावासाठी कोणतेही वापरकर्ता प्रीसेट अस्तित्वात असल्यास हा यादी त्यांची यादी करेल. प्रभावामध्ये लोड करण्यासाठी वापरकर्ता प्रीसेटपैकी एक निवडा.
+<li> <b>फॅक्टरी प्रीसेट:</b> या प्रभावासाठी कोणतेही फॅक्टरी प्रीसेट अस्तित्वात असल्यास हा यादी त्यांची यादी करेल. प्रभावामध्ये लोड करण्यासाठी फॅक्टरी प्रीसेटपैकी एक निवडा.
+<li> <b>प्रीसेट हटवा:</b> पूर्वी जतन केलेला वापरकर्ता प्रीसेट हटवण्यासाठी हा पर्याय निवडा.
+<li> <b>म्हणून जतन करा...</b> वापरकर्ता प्रीसेट म्हणून वर्तमान रचना जतन करण्यासाठी हा पर्याय निवडा.
+<li> <b>आयात करा...</b> प्रीसेट धारिका (किंवा मॅकवरील ध्वनि युनिट प्रभावसाठी अनेक धारिका) आयात करण्यासाठी हा पर्याय निवडा.
+<li> <b>निर्यात करा...</b> प्रीसेट धारिका (किंवा मॅकवरील ध्वनि युनिट प्रभावांसाठी अनेक धारिका) निर्यात करण्यासाठी हा पर्याय निवडा. निर्यात तुम्हाला तुमच्या संगणकावरील इतर वापरकर्त्यांसह या प्रभावासाठी प्रीसेट सामायिक करू देते किंवा त्यांना दुसर्‍या संगणकावर हलवू देते.
 <dl><dd></dd></dl>
-<div class="note">बरेच व्हीएसटी प्रभाव एकाच एफएक्सबी धारीकामध्ये नामित प्रणाली  पूर्व-निर्धारितच्या आयात आणि निर्यातीला समर्थन देतात, परंतु एलएडीएसपीए आणि एलव्ही 2 प्रभाव पूर्व-निर्धारितच्या आयात आणि निर्यातीला समर्थन देत नाहीत. प्रत्येक प्रकारच्या वास्तविक-वेळ पूर्वावलोकन प्रभावासाठी पूर्व-निर्धारितच्या वैशिष्ट्यांचे संपूर्ण स्पष्टीकरण पाहण्यासाठी कृपया खालील <i>पर्याय ...</i> मधील दुव्यांवर क्लिक करा .</div> 
-</li><li><b>पर्याय ...</b> या प्रकारच्या प्रभावासाठी पर्याय संवाद प्रदर्शित करते. उपलब्ध पर्यायांच्या वर्णनासाठी प्रत्येक प्रकारच्या प्रभावाचे विभाग पहा.
-<ul><li> <a href="effect_menu.html#ladspa_options" title="प्रभाव मेनू">लाडस्पा पर्याय</a>
-</li><li><a href="effect_menu.html#lv2_options" title="प्रभाव मेनू">एलव्ही 2 पर्याय</a>
-</li><li> <a href="effect_menu.html#vst_options" title="प्रभाव मेनू">व्हीएसटी पर्याय</a>
-</li><li> <a href="effect_menu.html#au_options" title="प्रभाव मेनू">ध्वनी एकक पर्याय</a></li></ul>
-</li><li> <b>बद्दल:</b> प्रदर्शित परिणाम प्रकार, परिणाम नाव, आवृत्ती, विक्रेता, आणि वर्णन.</li></ul>
-</li><li><span title="वास्तविक-वेळ पूर्वावलोकन प्रभावामध्ये वाजवा बटण">
-<img alt="RealTimePlayButton.png" src="../m/images/3/3a/realtimeplaybutton.png" width="16" height="16"></span>&nbsp;<b>वाजवा / थांबा:</b> प्लेबॅक सुरू करण्यासाठी या बटणावर क्लिक करा. हे स्टॉप बटणावर बदलते&nbsp; &nbsp;. प्लेबॅक थांबविण्यासाठी पुन्हा त्यावर क्लिक करा. गीतपट्टा (ली) मध्ये कोणतीही निवड नसल्यास, या बटणासह प्लेबॅक पुन्हा सुरू  करणे मूळ साधन कर्सर बिंदूपासून पुन्हा सुरू  होईल, जसे <a href="transport_toolbar.html" title="परिवहन साधनपट्टी">परिवहन साधनपट्टीमध्ये</a> दाबण्यासारखे . तथापि तेथे निवड असल्यास आपण वास्तविक-वेळ पूर्वावलोकन वाजवा / स्टॉप बटण एक पॉज बटण म्हणून वापरू शकता, प्लेबॅक थांबविण्यासाठी थांबवा दाबा नंतर आपण जिथे निवडीमध्ये प्लेबॅक थांबविला तेथून पुन्हा सुरु करण्यासाठी वाजवा करा. 
+<div class="note">अनेक व्हीएसटी प्रभाव्स एकाच FXB धारिकामध्ये नामांकित फॅक्टरी प्रीसेटच्या आयात आणि निर्यातीला समर्थन देतात, परंतु LADSPA आणि LV2 प्रभाव प्रीसेटच्या आयात आणि निर्यातीला अजिबात समर्थन देत नाहीत. कृपया प्रत्येक प्रकारच्या वास्तविक वेळ पूर्वावलोकन प्रभावासाठी प्रीसेट वैशिष्ट्यांचे संपूर्ण स्पष्टीकरण पाहण्यासाठी खालील <i>पर्याय...</i> विभागातील लिंकवर क्लिक करा.</div> 
+<li><b>पर्याय...</b> या प्रकारच्या प्रभावासाठी पर्याय संवाद प्रदर्शित करते. उपलब्ध पर्यायांच्या वर्णनासाठी प्रत्येक प्रकारच्या प्रभावासाठी विभाग पहा.
+<ul><li> <a href="effect_menu.html#ladspa_options" title="Effect Menu">एल.ए.डी.एस.पी.ए पर्याय</a>
+<li><a href="effect_menu.html#lv2_options" title="Effect Menu">LV2 पर्याय</a>
+<li> <a href="effect_menu.html#vst_options" title="Effect Menu">व्हीएसटी पर्याय</a>
+<li> <a href="effect_menu.html#au_options" title="Effect Menu">ध्वनी युनिट पर्याय</a></ul>
+<li> <b>बद्दल:</b> प्रभाव प्रकार, प्रभावाचे नाव, आवृत्ती, विक्रेता आणि वर्णन प्रदर्शित करते.</ul>
+<li><span title="Play button in real-time preview effect">
+<img alt="RealTimePlayButton.png" src="../m/images/3/3a/realtimeplaybutton.png" width="16" height="16" /></span>&#160;<b>प्ले/स्टॉप:</b> प्लेबॅक सुरू करण्यासाठी या बटणावर क्लिक करा. ते स्टॉप बटणावर बदलते&#160;<span title="Stop button in real-time preview effect">
+<img alt="RealTimeStopButton.png" src="../m/images/c/c8/realtimestopbutton.png" width="16" height="16" /></span>&#160;. प्लेबॅक थांबवण्यासाठी त्यावर पुन्हा क्लिक करा. गीतपट्टा(एस) मध्ये कोणतीही निवड नसल्यास, या बटणासह प्लेबॅक पुन्हा सुरू करणे मूळ कर्सर पॉइंटवरून पुन्हा सुरू होईल, जसे की <a href="transport_toolbar.html" title="Transport Toolbar">परिवहन साधनपट्टीमध्ये</a> प्ले दाबा. तथापि, जर निवड असेल तर तुम्ही रीअल-टाइम पूर्वावलोकन प्ले/स्टॉप बटण विराम बटण म्हणून वापरू शकता, प्लेबॅक थांबवण्यासाठी थांबा दाबा आणि निवडीमध्ये तुम्ही प्लेबॅक थांबवले तेथून पुन्हा सुरू करण्यासाठी प्ले करा.
 
-<span title="वास्तविक-वेळ पूर्वावलोकन प्रभावामधील बटण थांबवा">
-<img alt="RealTimeStopButton.png" src="../m/images/c/c8/realtimestopbutton.png" width="16" height="16"></span><a href="transport_toolbar.html" title="परिवहन साधनपट्टी"></a><div class="note">आपण या बटणासह निवडीमध्ये प्लेबॅक थांबविल्यास निवड सुरू झाल्यापासून प्लेबॅक पुन्हा सुरू  करू इच्छित असल्यास, एकतर वास्तविक-वेळ पूर्वावलोकन वाजवा बटणानंतर "मागे जा" बटण (खाली पहा) क्लिक करा किंवा वाजवा बटण वापरा मुख्य प्रकल्प विंडोमध्ये परिवहन साधनपट्टीमध्ये.</div>
-</li><li>&nbsp;<span title="वास्तविक-वेळ पूर्वावलोकन प्रभावामध्ये परत बटण वगळा"><img alt="वास्तविकटाइमस्कीपबॅकबटन.पेंग" src="../m/images/2/2d/realtimeskipbackbutton.png" width="16" height="16"></span>&nbsp;<b>पाठीमागे जा:</b> प्लेबॅक थांबविल्यावर, या बटणावर क्लिक केल्याने प्रभावातील पुढील प्लेबॅक निवड सुरू होण्यापासून <b>सुरू होईल</b> . प्लेबॅक दरम्यान, या बटणाचे प्रत्येक क्लिक एक <a href="playing_and_recording.html#play_special" title="वाजवा करणे आणि ध्वनीमुद्रण">लहान शोध मागे</a> घेईल . आपण संपादन कर्सरच्या मागे किंवा निवडीच्या प्रारंभाच्या मागे शोधू शकत नाही. 
-</li><li>&nbsp;<span title="वास्तविक-वेळ पूर्वावलोकन प्रभावामध्ये अग्रेषित करा बटण वगळा"><img alt="RealTimeSkipFwdButton.png" src="../m/images/f/f7/realtimeskipfwdbutton.png" width="15" height="16"></span>&nbsp;<b>पुढे जा:</b> प्लेबॅक थांबविल्यावर, या बटणावर क्लिक केल्याने परिणामामधील पुढील प्लेबॅक निवडीच्या <b>शेवटीपासून</b> सुरू होईल . आपण याचा वापर त्यानंतरच्या ध्वनीशी तुलना करण्यासाठी करू शकता ज्यावर आपण प्रभाव लागू करू इच्छित नाही. प्लेबॅक दरम्यान, या बटणाचे प्रत्येक क्लिक एक <a href="playing_and_recording.html#play_special" title="वाजवा करणे आणि ध्वनीमुद्रण">लहान शोध पुढे करेल</a> .
-</li><li> <b>सक्षम करा:</b> या चेकबॉक्समध्ये पूर्वनिर्धारीत <span class="button"><img alt="चेकबॉक्स" src="../m/images/8/85/checkboxchecked.png" width="13" height="13" style="vertical-align: text-top">&nbsp;सक्षम</span> करून चेकमार्क आहे <span class="button">सक्षम करा</span> , जो प्रभाव सक्षम करतो. 
+<div class="note">तुम्ही या बटणासह निवडीमध्ये प्लेबॅक थांबविल्यास, निवडीच्या सुरुवातीपासूनच प्लेबॅक पुन्हा सुरू करू इच्छिता, एकतर "मागे जा" बटणावर क्लिक करा (खाली पहा) त्यानंतर वास्तविक वेळ पूर्वावलोकन प्ले बटण किंवा प्ले बटण वापरा. मुख्य प्रकल्प विंडोमध्ये परिवहन साधनपट्टीमध्ये.</div>
+<li>&#160;<span title="Skip back button in real-time preview effect"><img alt="RealTimeSkipBackButton.png" src="../m/images/2/2d/realtimeskipbackbutton.png" width="16" height="16" /></span>&#160;<b>मागे वगळा:</b> जेव्हा प्लेबॅक थांबवला जातो, तेव्हा या बटणावर क्लिक केल्याने प्रभावातील पुढील प्लेबॅक निवडीच्या <b>प्रारंभापासून</b> सुरू होईल. प्लेबॅक दरम्यान, या बटणाचा प्रत्येक क्लिक एक <a href="playing_and_recording.html#play_special" title="Playing and Recording">लहान शोध मागे</a> परत करेल. तुम्ही संपादन कर्सरच्या मागे किंवा निवडीच्या प्रारंभाच्या मागे मागे जाऊ शकत नाही.
+<li>&#160;<span title="Skip Forward button in real-time preview effect"><img alt="RealTimeSkipFwdButton.png" src="../m/images/f/f7/realtimeskipfwdbutton.png" width="15" height="16" /></span>&#160;<b>पुढे वगळा:</b> जेव्हा प्लेबॅक थांबवला जातो, तेव्हा या बटणावर क्लिक केल्याने परिणामातील पुढील प्लेबॅक निवडीच्या <b>शेवटी</b> सुरू होईल. तुम्ही याचा वापर त्यानंतरच्या ध्वनीची तुलना करण्यासाठी करू शकता ज्यावर तुम्ही प्रभाव लागू करू इच्छित नसाल. प्लेबॅक दरम्यान, या बटणाचा प्रत्येक क्लिक एक <a href="playing_and_recording.html#play_special" title="Playing and Recording">लहान शोध पुढे</a> करेल.
+<li> <b>सक्षम करा:</b> या चेकबॉक्समध्ये पूर्वनियोजित <span class="button"><img alt="checked checkbox" src="../m/images/8/85/checkboxchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;सक्षम करा</span> चेकमार्क आहे , जो प्रभावाचे पूर्वावलोकन सक्षम करतो.
 
-<div class="note">प्रभाव अक्षम करण्यासाठी चेकमार्क <span class="button"><img alt="चेक न केलेला चेकबॉक्स" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" style="vertical-align: text-top">&nbsp;सक्षम करा</span> ( प्रभाव <i><b>स्थलांतरित</b></i> म्हणून देखील ओळखले जाते ). अक्षम केल्यामुळे ध्वनी वाजवा जणू प्रभाव बंद झाला आहे आणि परिणामाची नियंत्रणे यापुढे ध्वनी बदलणार नाहीत. वास्तविक-वेळमध्ये वाजवा होत असताना "कोरडे" (प्रभावित नसलेले) ध्वनी "ओले" (प्रभावित) ध्वनीशी तुलना करण्याचा अक्षम करणे आणि सक्षम करणे हा एक सोपा मार्ग आहे.</div> 
-</li><li> <span class="button">बंद</span> करा प्रभाव संवाद बंद करण्यासाठी या बटणावर क्लिक करा. "लागू करा" (खाली) दाबल्याशिवाय प्रभाव बंद केल्याने आपण पुढच्या वेळी ऑड्यासिटी प्रारंभ कराल तेव्हा परिणामाची वर्तमान समयोजन जतन होणार नाही.
-</li><li> <span class="button">लागू</span> करा निवडलेल्या ध्वनीवर प्रभाव लागू करण्यासाठी या बटणावर क्लिक करा आणि पुढच्या वेळी आपण ऑड्यासिटी प्रारंभ केल्यास परिणामाच्या वर्तमान समयोजन जतन करा. प्रभाव लागू झाल्यानंतर प्रभाव संवाद खुले राहील.</li></ul>
+<div class="note">प्रभाव अक्षम करण्यासाठी <span class="button"><img alt="unchecked checkbox" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;सक्षम करा</span> चेकमार्क काढा (याला प्रभाव <i><b>बायपास करणे</b></i> देखील म्हणतात). अक्षम केल्याने पूर्वावलोकन प्ले होते जसे की प्रभाव बंद झाला होता आणि प्रभावाची नियंत्रणे यापुढे पूर्वावलोकन बदलणार नाहीत. "कोरडा" (प्रभावित नसलेला) ध्वनीची तुलना "ओले" (प्रभावित) ध्वनि रीअल-टाइममध्ये चालू असताना अक्षम करणे आणि सक्षम करणे हा एक सोयीस्कर मार्ग आहे.</div> 
+<li> <span class="button">बंद करा</span> प्रभाव संवाद बंद करण्यासाठी या बटणावर क्लिक करा. <span class="button">लागू करा</span> (खाली) दाबल्याशिवाय प्रभाव बंद केल्याने तुम्ही पुढील वेळी ऑड्यासिटी लाँच कराल तेव्हा प्रभावाची वर्तमान रचना वापरण्यासाठी जतन केली जात नाहीत.
+<li> <span class="button">लागू करा</span> निवडलेल्या ध्वनीवर प्रभाव लागू करण्यासाठी या बटणावर क्लिक करा आणि पुढच्या वेळी आपण ऑड्यासिटी प्रारंभ केल्यास परिणामाच्या वर्तमान समयोजन जतन करा.
+
+<div class="note">लागू करा हे <b>सक्षम</b> चेकबॉक्ससाठी तुमच्याकडे असलेल्या कोणत्याही सेटिंगकडे दुर्लक्ष करेल. प्रभाव लागू केल्यानंतर प्रभाव संवाद खुला राहील.</div> </ul>
+<p><br />
+</p>
+<div id="text"></div>
 <h2><span class="mw-headline" id="Real-Time_preview_with_text-based_controls">मजकूर-आधारित नियंत्रणासह वास्तविक-वेळ पूर्वावलोकन</span></h2>
-<p>आपण वापरत असल्यास <i>व्यवस्थापित करा</i> बटण <img alt="बटण चिन्ह व्यवस्थापित करा W10.png" src="../m/images/3/38/manage_button_icon_w10.png" width="28" height="28">नंतर <i>पर्याय ...</i> अक्षम करा ग्राफिकल मुखपृष्ठ , बटण आणि वास्तविक-वेळ पूर्वावलोकन प्लेबॅक नियंत्रणे व्यवस्थापित करा प्रतिमा खाली म्हणून, त्याऐवजी मजकूर-आधारित बटणे प्रदर्शित:
+<p>तुम्ही <i>व्यवस्थापित करा</i> बटण <img alt="Manage button icon W10.png" src="../m/images/3/38/manage_button_icon_w10.png" width="28" height="28" /> वापरत असल्यास, ग्राफिकल इंटरफेस अक्षम करण्यासाठी <i>पर्याय...</i>, व्यवस्थापित करा बटण आणि वास्तविक वेळ पूर्वावलोकन प्लेबॅक नियंत्रणे त्याऐवजी मजकूर-आधारित बटणे म्हणून प्रदर्शित होतील, खालील प्रतिमेप्रमाणे:
 </p>
-<dl><dd><span title="मजकूर-आधारित वास्तविक-वेळ पूर्वावलोकन नियंत्रणे"><img alt="वास्तविक-वेळ मजकूर-आधारित.पीएनजी नियंत्रित करते" src="../m/images/f/f2/real_time_controls_text_based.png" width="706" height="54"></span></dd></dl>
-<p>ग्राफिकल मुखपृष्ठ  प्रमाणेच, एक बटण प्लेबॅक सुरू होते आणि थांबवते, <span class="button">प्लेबॅक</span> नसताना <span class="button">प्रारंभ प्लेबॅक</span> वाचणे आणि <span class="button">प्लेबॅक</span> नसताना प्लेबॅक <span class="button">थांबवा</span> .
-</p><p>प्रभाव स्वतःचे ग्राफिकल मुखपृष्ठ  प्रदान करत नसल्यासही ग्राफिकल मुखपृष्ठ  निवडल्यास मजकूर-आधारित नियंत्रणे आणि मजकूर मुखपृष्ठ  स्वयंचलितपणे प्रदर्शित होतील.
+<dl><dd><span title="Text-based real-time preview controls"><img alt="Real-time controls text-based.png" src="../m/images/f/f2/real_time_controls_text_based.png" width="706" height="54" /></span></dd></dl>
+<p>ग्राफिकल इंटरफेसप्रमाणे, एकच बटण प्लेबॅक सुरू होते आणि थांबवते, प्लेबॅक नसताना <span class="button">प्लेबॅक सुरू करा</span> आणि प्लेबॅक असताना <span class="button">प्लेबॅक थांबवा</span>.
+</p><p>मजकूर-आधारित नियंत्रणे आणि मजकूर इंटरफेस आपोआप प्रदर्शित होईल जरी ग्राफिकल इंटरफेस निवडला असला तरीही प्रभाव स्वतःचा ग्राफिकल इंटरफेस प्रदान करत नाही.
+</p><p><br />
 </p>
-<div class="note">केवळ विंडोजवर, जेव्हा जेव्हा फोकस ग्राफिकल किंवा मजकूर-आधारित मुखपृष्ठ वर असतो तेव्हा प्रभाव चालविण्यासाठी आपण खालील सिंगल की दाबू शकता: 
-<ul><li> <b>एम</b> मेनू, व्यवस्थापित करा उघडण्यासाठी <b>पी</b> प्रारंभ करणे किंवा थांबविणे प्लेबॅक, ते <b>ब</b> मागे वगळण्यासाठी, <b>फॅ</b> पुढे वगळण्यासाठी, <b>ई</b> सक्षम करण्यासाठी / अक्षम करा परिणाम.</li></ul></div>
 <div id="limitations"></div>
 <h2><span class="mw-headline" id="Notes_and_Limitations">नोट्स आणि मर्यादा</span></h2>
-<ul><li>सध्या, वास्तविक-वेळ पूर्वावलोकन ध्वनीची सहज प्रक्रिया करण्यासाठी अनेक प्लगइन सुरू केलेल्या विलंबपणाची भरपाई करीत नाहीत. वास्तविक-वेळ पूर्वावलोकन म्हणून ध्वनीमध्ये लहान अंतर असू शकतात किंवा एकाधिक गीतपट्टा चे पूर्वावलोकन करताना वेळेच्या कलाकृती ऐकण्यायोग्य असू शकतात. तथापि प्रभाव <i>लागू करताना</i> पूर्वनिर्धारीत ऑड्यासिटी विलंबपणाची भरपाई करते (जोपर्यंत आपण प्रभावाच्या पर्यायांमध्ये नुकसान भरपाई अक्षम करत नाही).<p>म्हणूनच आपण वास्तविक-वेळ पूर्वावलोकनात उशीरा अडचणी ऐकल्यास प्रभाव लागू करा आणि बंद करा, नंतर निकाल ऐका. आपल्याला निकाल आवडत नसल्यास आपण केवळ <span class="menu">संपादन&gt; पूर्ववत करा</span> आदेश किंवा त्याचा आडमार्ग <span class="kbrd" style="background-color: #d0d0f8">Ctrl + Z </span> <i>(मॅक <span class="kbrd" style="background-color: #d0d0f8">Z + झेड वर</span> )</i> वापरू शकता , प्रभाव उघडा आणि एक भिन्न समयोजनवापरून पहा.</p></li></ul>
+<ul><li> सध्या, वास्तविक वेळ पूर्वावलोकन ध्वनीची सहज प्रक्रिया प्रदान करण्यासाठी अनेक प्लग-इन सादर केलेल्या विलंबतेची भरपाई करत नाही. त्यामुळे वास्तविक वेळ पूर्वावलोकनामध्ये ध्वनीमध्ये लहान अंतर असू शकते किंवा अनेक गीतपट्ट्याचे पूर्वावलोकन करताना वेळेच्या कलाकृती ऐकू येऊ शकतात. तथापि, पूर्वनियोजितनुसार ऑड्यासिटी प्रभाव <i>लागू करताना</i> विलंबतेची भरपाई करते (जोपर्यंत तुम्ही प्रभावासाठी पर्यायांमध्ये भरपाई अक्षम करत नाही). <p>त्यामुळे तुम्हाला वास्तविक वेळ पूर्वावलोकनामध्ये विलंब समस्या ऐकू आल्यास, प्रभाव लागू करा आणि तो बंद करा, नंतर निकाल ऐका. तुम्हाला निकाल आवडत नसल्यास तुम्ही फक्त <span class="menu">संपादित करा &gt; पूर्ववत करा</span> आज्ञा किंवा त्याचा सोपा मार्ग <span class="kbrd" style="background-color: #d0d0f8">Ctrl + Z</span> <i>(Mac वर <span class="kbrd" style="background-color: #d0d0f8">&#8984; + Z</span>)</i> वापरू शकता, प्रभाव उघडा आणि भिन्न सेटिंग वापरून पहा.</p></li>
+<li> जेणेकरून वास्तविक वेळ पूर्वावलोकन प्रभाव लागू केल्यानंतर लगेच ध्वनि कसा ध्वनि येईल हे प्ले करते, प्रिव्ह्यू ऐकण्यापूर्वी कोणतेही विद्यमान <a href="envelope_tool.html" title="Envelope Tool">व्हॉल्यूम लिफाफे</a> किंवा <a href="time_tracks.html" title="Time Tracks">टाइम गीतपट्टा</a> आणि गेन किंवा पॅन स्लाइडरची स्थिती लागू केली जाते.</li></ul>
 
-<ul><li>म्हणूनच वास्तविक-वेळ पूर्वावलोकन प्रभाव लागू झाल्यानंतर ध्वनी कसा आवाज येईल हे वाजवा करते, कोणतेही विद्यमान <a href="envelope_tool.html" title="लिफाफा साधन">आवाज लिफाफे</a> किंवा <a href="time_tracks.html" title="वेळ मागोवा">वेळ गीतपट्टा </a> आणि गेन किंवा पॅन घसरपट्टीची स्थिती पूर्वावलोकन ऐकण्यापूर्वी लागू केली जाते.</li></ul>
 
-<!-- 
-NewPP limit report
-Cached time: 20180917112233
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.102 seconds
-Real time usage: 0.109 seconds
-Preprocessor visited node count: 196/1000000
-Preprocessor generated node count: 687/1000000
-Post‐expand include size: 5660/2097152 bytes
-Template argument size: 4223/2097152 bytes
-Highest expansion depth: 4/40
-Expensive parser function count: 0/100
--->
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   23.802      1 - -total
- 14.44%    3.436      4 - Template:Note
- 12.84%    3.056      4 - Template:Button
- 12.06%    2.871      1 - Template:Intro
- 11.36%    2.705      2 - Template:Fullshortcut
- 10.85%    2.582      2 - Template:Shortcut
-  6.50%    1.548      1 - Template:Key
-  5.90%    1.404      2 - Template:Ednote
-  5.20%    1.238      1 - Template:Menu
-  5.10%    1.215      1 - Template:CheckboxNotChecked
--->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5117-0!*!0!!*!5!* and timestamp 20180917112233 and revision id 61905
- -->
+
+
 </div>
-										<!-- end content -->
+										
 										<div class="visualClear"></div>
-</div>
-</div>
-</div>
-<div id="column-one">
-
-
-
-<div class="portlet" id="p-logo" role="banner">
-<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
-</div>
-
-<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-<h3>निर्देशक </h3>
-<div class='pBody'>
-<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादिबार</span></a></li>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
-</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
-</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
-</div>
-</div>
-<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
-<h3>संदर्भ</h3>
-<div class='pBody'>
-<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">अंकात्मक ध्वनी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, नायक्विस्ट and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="सामान्य प्रश्न .html" title="सामान्य प्रश्न "><span title="Frequently Asked Questions - most common questions are answered in the सामान्य प्रश्न ">सामान्य प्रश्न</span></a></li></ul>
-</div>
-</div>
-
-<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
-<h3>उपयुक्त दुवे</h3>
-<div class='pBody'>
-<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
-</div>
-</div>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -195,9 +184,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
-<a href="https://alphamanual.audacityteam.org/man/Real-time_preview_of_effects">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
-</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

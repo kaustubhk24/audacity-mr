@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>नॉइज गेट - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Noise_Gate rootpage-Noise_Gate skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">नॉइज गेट</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Noise_Gate#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><br />
+</p>
+
+
+<p><br />
+</p>
+<div class="intro"><p>निर्दिष्ट थ्रेशोल्ड पातळीच्या खाली आवाजाची पातळी कमी करण्यासाठी <i><b>नॉईज गेट</b></i> वापरा.</p>
+<p>नॉईज गेट हा एक प्रकारचा "डायनॅमिक्स प्रोसेसर" आहे जो निर्दिष्ट थ्रेशोल्ड पातळीच्या वरच्या ध्वनिला अप्रभावित (गेट <i>"ओपन"</i>), मधून जाऊ देतो आणि थ्रेशोल्ड पातळीच्या खाली आवाज थांबवतो किंवा कमी करतो (गेट <i>"बंद"</i>).</p>
+<p>ध्वनीमुद्रितिंगच्या विभागांमधील अवशिष्ट आवाजाची पातळी कमी करण्यासाठी नॉईज गेट्सचा वापर केला जाऊ शकतो. हा मूलत: एक अतिशय सोपा प्रभाव असला तरी, या नॉईज गेटमध्ये अनेक वैशिष्ट्ये आणि सेटिंग्ज आहेत ज्यामुळे ते प्रभावी आणि बिनधास्त आणि बहुतेक प्रकारच्या ध्वनिसाठी योग्य आहे.</p>
+</div>
+<dl><dd><b>द्वारे प्रवेश केला:</b> <span class="menu">प्रभाव &gt; नॉईज गेट...</span></dd>
+<dd><span title="Noise Gate dialog"><img alt="Noise Gate.png" src="../m/images/9/9e/noise_gate.png" width="465" height="360" /></span></dd></dl>
+<p><br />
+</p>
+<div id="function"></div>
+<h2><span class="mw-headline" id="Select_Function">फंक्शन निवडा</span></h2>
+<p>तुम्हाला नॉइज गेट लागू करायचे आहे की नाही ते निवडा किंवा आवाज पातळीचे विश्लेषण करा:
+</p>
+<ul><li><b>गेट:</b> नॉईज गेट लावा.</li>
+<li><b>आवाज पातळीचे विश्लेषण करा:</b> निवडलेल्या ध्वनिच्या पातळीचे विश्लेषण करा. हा पर्याय निवडल्यावर इतर सर्व नियंत्रणांकडे दुर्लक्ष केले जाते.</li></ul>
+<p>ध्वनी पातळीचे विश्लेषण करताना, निवडीची सुरुवात केवळ आवाजाच्या क्षेत्रामध्ये असल्याची खात्री करा. मोजमाप निवडीच्या पहिल्या अर्ध्या सेकंदापासून घेतले जाते. विश्लेषण मोजलेली पातळी दाखवते आणि <a href="#threshold">गेट थ्रेशोल्ड</a> सेटिंगसाठी सेटिंग सुचवते.
+</p><p><br />
+</p>
+<div id="linking"></div>
+<h2><span class="mw-headline" id="Stereo_Linking">स्टिरिओ लिंकिंग</span></h2>
+<p>जेव्हा <b>लिंक स्टिरीओ ट्रॅक</b> निवडला जातो (पूर्वनियोजित), तेव्हा गेट स्टिरिओ गीतपट्ट्याच्या चॅनेलवर जोडी म्हणून कार्य करेल आणि दोन्ही चॅनेलची पातळी थ्रेशोल्डच्या खाली आल्यावर दोन्ही चॅनेलची पातळी समान प्रमाणात बदलेल. या पर्यायाची शिफारस केली जाते, परंतु इतर चॅनेलमध्ये थ्रेशोल्डच्या वर आवाज असल्यास कमी पातळीचा आवाज गेट केलेला नसतो.
+</p><p>जेव्हा <b>डोन्ट लिंक स्टीरिओ</b> निवडला जातो, तेव्हा गेट स्टिरिओ गीतपट्ट्याच्या डाव्या आणि उजव्या चॅनेलसाठी स्वतंत्रपणे मोठेपणा समायोजित करेल. जेव्हा डाव्या आणि उजव्या चॅनेलमध्ये असंबंधित आवाज असतात, जसे की संभाषणाच्या दोन बाजू असतात तेव्हा हे प्राधान्य दिले जाऊ शकते. पारंपारिक स्टिरिओ ट्रॅकसाठी ते स्टिरिओ फील्डमध्ये आवाज हलविण्याची एक विलक्षण संवेदना होऊ शकते.
+</p><p><br />
+</p>
+<div id="threshold">
+<h2><span class="mw-headline" id="Gate_threshold">गेट थ्रेशोल्ड</span></h2>
+<p>जेव्हा ध्वनि पातळी या थ्रेशोल्डच्या खाली येते तेव्हा गेट 'बंद' होईल आणि आउटपुट पातळी कमी होईल. जेव्हा ध्वनि पातळी या थ्रेशोल्डच्या वर वाढते तेव्हा गेट 'उघडेल' आणि आउटपुट इनपुट सारख्याच स्तरावर परत येईल.
+</p><p><br />
+</p>
+<div id="gate"></div>
+<h2><span class="mw-headline" id="Gate_frequencies_above">वरील गेट फ्रिक्वेन्सी</span></h2>
+<p>या स्लाइडर नियंत्रणाची श्रेणी 10 kHz पर्यंत आहे (पूर्वनियोजित = 0). 
+</p>
+<ul><li>शून्यावर सेट केल्यावर, गेट सर्व ध्वनिवर कार्य करते.</li>
+<li>शून्याच्या वर सेट केल्यावर, गेट सेट kHz पातळीच्या वरच्या ध्वनि फ्रिक्वेन्सीवर कार्य करते आणि कमी फ्रिक्वेन्सी गेटमधून अप्रभावित होतात.</li></ul>
+<p>हा पर्याय अशा प्रकरणांमध्ये उपयुक्त ठरू शकतो जेथे मोठ्या प्रमाणात उच्च वारंवारता हिस असते, परंतु कमी फ्रिक्वेन्सीवर तुलनेने कमी आवाज असतो.
+</p><p><br />
+</p>
+<div id="level"></div>
+<h2><span class="mw-headline" id="Level_reduction">पातळी कमी करणे</span></h2>
+<p>काही ध्वनि गेट्स या नियंत्रणास "श्रेणी" किंवा "गुणोत्तर" म्हणून संबोधतात.
+</p><p>हे स्लाइडर नियंत्रण गेट "बंद" (थ्रेशोल्ड पातळीच्या खाली) असताना लागू होणारे क्षीणन (नकारात्मक प्रवर्धन) प्रमाण निर्धारित करते. <b>-100 dB</b> वर, " वरील गेट फ्रिक्वेन्सी" शून्यापेक्षा जास्त सेट केल्याशिवाय गेट बंद असताना आवाज पूर्णपणे थांबवतो. जर "वरील गेट फ्रिक्वेन्सी" शून्य पेक्षा जास्त असेल, तर विपुलता पातळी थ्रेशोल्डच्या खाली असताना निर्दिष्ट kHz पातळीच्या वरच्या फ्रिक्वेन्सी पूर्णपणे बंद केल्या जातात.
+</p><p>लोअर (अधिक नकारात्मक) सेटिंग सिग्नल अधिक कमी करते, परिणामी बंद गेटमधून आवाज कमी होतो, परंतु गेट उघडल्यावर आणि बंद होताना ध्वनिचे लक्षणीय <i>पंपिंग</i> देखील होऊ शकते. खाली <a href="#workflow">सुचविलेल्या वर्कफ्लोवरील</a> विभाग पहा. 
+</p><p><br />
+</p>
+<div id="attack"></div>
+<h2><span class="mw-headline" id="Attack">हल्ला</span></h2>
+<p>सिग्नल पातळी <a href="#threshold"><b>गेट थ्रेशोल्ड</b></a> पातळी ओलांडली की गेट किती लवकर उघडेल हे हे सेटिंग नियंत्रित करते . 
+</p><p>बर्‍याच हार्डवेअर नॉइज गेट्सच्या विपरीत, हा प्रभाव पुढे पाहण्यास आणि गेट उघडण्यास प्रारंभ करण्यास सक्षम आहे जेणेकरून थ्रेशोल्ड ओलांडल्यापर्यंत गेट उघडले जाईल. हे वैशिष्ट्य तुलनेने लांब <b>अटॅक</b> सेटिंग्जसह देखील आवाजाची सुरूवात टाळण्यास मदत करते.
+</p>
+<ul><li>कमीतकमी (1 ms) ध्वनि पातळी उंबरठा ओलांडल्यावर गेट जवळजवळ त्वरित पूर्णपणे उघडेल.</li>
+<li>कमाल (1000 ms) वर, ध्वनि पातळी थ्रेशोल्ड ओलांडण्यापूर्वी 1 सेकंद आधी गेट हळू हळू उघडणे (फेड-इन) सुरू होईल.</li></ul>
+<p><br />
+</p>
+<div id="hold"></div>
+<h2><span class="mw-headline" id="Hold">धरा</span></h2>
+<p>सिग्नल <b>गेट थ्रेशोल्डच्या</b> खाली गेल्यानंतर, गेट बंद होण्याआधी गेट उघडे राहण्याचा हा कालावधी आहे.
+</p>
+<ul><li> कमी वारंवारतेचा आवाज गेट करताना , वेव्हफॉर्मच्या शिखरांमध्‍ये गेट बंद होण्‍यापासून रोखण्‍यासाठी <b>होल्ड</b> साधारणपणे पुरेसा लांब सेट केला पाहिजे.</li>
+<li> स्नेयर ड्रम सारखे पर्क्युसिव्ह आवाज काढताना, गेट बंद होण्यापूर्वी आवाजाचा नैसर्गिक क्षय होण्यासाठी <b>होल्ड</b> पुरेसे लांब सेट केले जाऊ शकते.</li></ul>
+<p><br />
+</p>
+<div id="decay"></div>
+<h2><span class="mw-headline" id="Decay">क्षय</span></h2>
+<p>काही नॉइज गेट्स याला "रिलीज टाईम" म्हणून संबोधतात.
+</p><p>हे  <a href="#attack"><b>अटॅकचे</b></a> पूरक आहे. <b>अटॅक</b> गेट उघडण्यासाठी लागणारा वेळ सेट करतो, तर <b>डिके</b> गेट बंद होण्यासाठी लागणारा वेळ सेट करतो. सिग्नल <a href="#threshold"><b>गेट थ्रेशोल्डच्या</b></a> खाली गेल्यानंतर आणि <a href="#hold"><b>होल्ड</b></a> टाइम (असल्यास) वापरल्यानंतर गेट बंद होण्यास सुरुवात होईल. लांब <b>क्षय</b> वेळा गेट अधिक हळूहळू बंद.
+</p>
+<div id="levels">
+<dl><dd><span title="The Attack, Hold and Decay times of the noise gate"><img alt="Noise Gate levels.png" src="../m/images/1/13/noise_gate_levels.png" width="523" height="307" /></span></dd></dl>
+<p><br />
+</p>
+<div id="workflow">
+<h2><span class="mw-headline" id="Suggested_Workflow">सूचित कार्यप्रवाह</span></h2>
+<div class="note">नियंत्रणे सेट करताना "पूर्वावलोकन" बटण वारंवार वापरण्याची शिफारस केली जाते.</div>
+<ol><li> आवाज पातळीचे विश्लेषण करा</li>
+<li> लेव्हल रिडक्शन -100 dB वर सेट करून लहान निवडीवर गेटची चाचणी करा</li>
+<li> आवश्यक असल्यास <b>गेट थ्रेशोल्ड</b> समायोजित करा आणि पुन्हा चाचणी करा.</li>
+<li> <b>लेव्हल रिडक्शन</b> स्लाइडर समायोजित करा आणि चाचणी करा. सर्वात 'पारदर्शक' परिणामांसाठी पातळी कमी करणे आवश्यकतेपेक्षा कमी करणे टाळा.</li>
+<li> सेटिंग्ज योग्य असताना, संपूर्ण गाण्यावर प्रभाव लागू करा.</li></ol>
+<p><br />
+</p>
+<div id="limitations">
+<h2><span class="mw-headline" id="Limitations">मर्यादा</span></h2>
+<p>Nyquist निर्बंधांमुळे नॉइज गेटसह जास्तीत जास्त 2,137,483,647 नमुने केले जाऊ शकतात, जे 44,100 Hz पूर्वनियोजित दराने सुमारे 13.5 तास स्टिरिओ आहे.
+</p><p>तुम्ही त्यापेक्षा जास्त काळ निवड करून पाहिल्यास तुम्हाला खालील त्रुटी संदेश मिळेल:
+</p>
+<dl><dd><span title="Error message: Selection too long , limit is about 13.5 hours stereo"><img alt="Noise Gate Nyquist Error Selection too long.png" src="../m/images/2/24/noise_gate_nyquist_error_selection_too_long.png" width="352" height="148" /></span></dd></dl>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">दीर्घ ध्वनिसाठी उपाय म्हणजे नॉईज गेटवर कार्य करण्यासाठी ते लहान निवडींमध्ये विभाजित करणे.
+</td></tr></table>
+</div>
+<p><br />
+</p>
+<div id="buttons"></div>
+<h2><span class="mw-headline" id="Buttons">बटणे</span></h2>
+<p>आज्ञा बटणावर क्लिक केल्याने खालील परिणाम मिळतात:
+</p>
+<ul><li><span class="button">व्यवस्थापित करा</span> एक ड्रॉपडाउन यादी देते जे तुम्हाला साधनसाठी प्रीसेट व्यवस्थापित करण्यास आणि साधनबद्दल काही तपशील पाहण्यास सक्षम करते. तपशीलांसाठी <a href="manage_presets.html" title="Manage presets">प्रीसेट व्यवस्थापित</a> करा पहा</li>
+<li><span class="button">पूर्वावलोकन</span> ध्वनिमध्ये वास्तविक बदल न करता, वर्तमान सेटिंग्जसह प्रभाव लागू केल्यास ध्वनि कसा वाटेल याचे लहान पूर्वावलोकन प्ले करते.  पूर्वावलोकनाची लांबी <span class="menu">संपादन &gt; प्राधान्ये &gt; <a href="playback_preferences.html" title="Playback Preferences">प्लेबॅक</a></span> मधील आपल्या सेटिंगद्वारे निर्धारित केली जाते , पूर्वनियोजित सेटिंग 6 सेकंद असते.</li>
+<li><span class="button">ठीक आहे</span> वर्तमान प्रभाव सेटिंग्जसह निवडलेल्या ध्वनिवर प्रभाव लागू करते आणि संवाद बंद करते</li>
+<li><span class="button">रद्द करा</span> प्रभाव रद्द करते आणि ध्वनि अपरिवर्तित ठेवते, संवाद बंद करते</li>
+<li><a href="help_button.html" title="Help Button"><img alt="Help Button" src="../m/images/d/d6/help_button.png" width="27" height="27" /></a> तुम्हाला माहितीपुस्तिकेमधील योग्य पानावर, या पृष्ठावर आणते</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका</a> <br />
+</p>
+<a href="effect_menu.html" title="Effect Menu"><b>|&lt;</b> प्रभाव यादी</a></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

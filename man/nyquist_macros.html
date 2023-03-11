@@ -2,234 +2,270 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Nyquist Macros -ऑड्यासिटी महितीपुस्तिका</title>
+<title>एन.वाय.क्विस्ट मॅक्रोज - ऑड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ऑड्यासिटी डेव्हलपमेंट महितीपुस्तिका (इं)">
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+<meta name="ResourceLoaderDynamicStyles" content=""/>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Nyquist_Macros rootpage-Nyquist_Macros skin-monobook action-view"><div id="globalWrapper">
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Nyquist-Macros rootpage-Nyquist-Macros skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
 				<a id="top"></a>
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Nyquist मॅक्रोस</font></font></h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">एन.वाय.क्विस्ट मॅक्रोज</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ऑड्यासिटी विकास महितीपुस्तिका</font></font></div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">वर जा: </font></font><a href="#column-one">निर्देशक</font></font></a> , </font></font><a href="https://alphamanual.audacityteam.org/man/Nyquist_Macros#searchInput">शोध</font></font></a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Nyquist-Macros#searchInput">शोध</a></div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<div class="intro">Nyquist ऑड्यासिटीमध्ये समाकलित भाषेसारखी LISP आहे. </font>हे मूळतः आवाजवर प्रक्रिया करण्यासाठी लिहिले गेले होते.  
-</font></font><ul><li>नायक्विस्टमध्ये आता </font></font><a href="macros.html" title="मॅक्रो">मॅक्रोज</font></font></a> कसे </font>कार्य करतात </font>यासारखेच ऑड्यासिटी नियंत्रित करण्याची क्षमता देखील आहे </font>, परंतु मोठ्या लवचिकतेसह.</font></font></li></ul></div>
-<div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</font></font></h2></div>
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro"> एन.वाय.क्विस्ट ही लिस्प सारखी भाषा आहे जी ऑड्यासिटीमध्ये एकत्रित केली आहे. हे मूलतः ध्वनीवर प्रक्रिया करण्यासाठी लिहिले होते. 
+<ul><li> एन.वाय.क्विस्टमध्ये आता ऑड्यासिटी नियंत्रित करण्याची क्षमता देखील आहे, जसे <a href="macros.html" title="Macros">मॅक्रोज</a> कसे कार्य करते, परंतु अधिक लवचिकतेसह.</div></li></ul>
+<div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Comparison_of_Ordinary_Macros_to_Nyquist_Macros"><span class="tocnumber">1 </font></font></span> <span class="toctext">नेयक्विस्ट मॅक्रोजशी सामान्य मॅक्रोची तुलना</font></font></span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#AUD-DO"><span class="tocnumber">2 </font></font></span> <span class="toctext">एडी-डू</font></font></span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Using_AUD-DO"><span class="tocnumber">3 </font></font></span> <span class="toctext">AUD-DO वापरणे</font></font></span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Comparison_of_Macros_to_Nyquist-Macros"><span class="tocnumber">१</span> <span class="toctext">एन.वाय.क्विस्ट मॅक्रोजशी सामान्य मॅक्रोची तुलना</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#AUD-DO"><span class="tocnumber">२</span> <span class="toctext">एयूडी-डीओ</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Using_AUD-DO"><span class="tocnumber">३</span> <span class="toctext">एयूडी-डीओ वापरणे</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Differences_to_normal_Nyquist_Scripting"><span class="tocnumber">3.1 </font></font></span> <span class="toctext">सामान्य Nyquist स्क्रिप्टिंग करण्यासाठी फरक</font></font></span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Differences_to_Scripting_in_Nyquist"><span class="tocnumber">३.१</span> <span class="toctext">एन.वाय.क्विस्ट मध्ये स्क्रिप्टिंग करण्यासाठीचे फरक</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">4 </font></font></span> <span class="toctext">उदाहरणे</font></font></span></a>
+<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">४</span> <span class="toctext">उदाहरणे</span></a>
 <ul>
-<li class="toclevel-2 tocsection-6"><a href="#Example_Using_Parameters"><span class="tocnumber">1.१ </font></font></span> <span class="toctext">मापदंड वापरण्याचे उदाहरण</font></font></span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Click_Removal_Example"><span class="tocnumber">4.2 </font></font></span> <span class="toctext">काढण्याचे उदाहरण क्लिक करा</font></font></span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#GetInfo_Example"><span class="tocnumber">4.3 </font></font></span> <span class="toctext">GetInfo उदाहरण</font></font></span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Example_Using_Parameters"><span class="tocnumber">४.१</span> <span class="toctext">मापदंड वापरण्याचे उदाहरण</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Click_Removal_Example"><span class="tocnumber">४.२</span> <span class="toctext">क्लिक रिमूव्हल उदाहरण</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#GetInfo_Example"><span class="tocnumber">४.३</span> <span class="toctext">माहिती मिळवा उदाहरण</span></a></li>
 </ul>
 </li>
+<li class="toclevel-1 tocsection-9"><a href="#AUD-GET-INFO"><span class="tocnumber">५</span> <span class="toctext">एयूडी-माहीती-मिळवा</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Comparison_of_Ordinary_Macros_to_Nyquist_Macros">ऑर्डिनरी मॅक्रोची तुलना Nyquist मॅक्रोशी आहे</font></font></span></h2>
-<p>सामान्य </font></font><a href="macros.html" title="मॅक्रो">मॅक्रो</font></font></a> एक निश्चित क्रमाने आदेशांचा निश्चित क्रम </font><a href="macros.html" title="Macros">चालवतात</font></a> .  
-</font></font></p><p>याउलट, Nyquist भाषा ही LISP कुटुंबातील संपूर्ण भाषा आहे. </font>हे अधिक सामर्थ्यवान आणि वापरण्यास अधिक जटिल बनवते. 
-</font></font></p>
-<ul><li> Nyquist कडे लॉजिक, लूप्स आणि सशर्त कोड कार्यान्वित करण्याच्या आज्ञा आहेत.</font></font></li>
-<li> Nyquist प्रवाह आणि स्ट्रिंग स्वरूपन कार्ये समर्थित करते.</font></font></li>
-<li> Nyquist डेटा स्ट्रक्चर्सना समर्थन देते, आणि खासकरुन याद्या हाताळणीत मजबूत आहे.</font></font></li>
-<li> ऑड्यासिटी मध्ये Nyquist मापदंडसाठी प्रॉमप्ट करू शकते आणि नंतर त्या कोडमध्ये त्या मापदंडचा वापर करू शकतो.  </font></font></li></ul>
-<p>ऑयडिसिटी स्वतंत्रपणे ऑड्यासिटी वापरली जाऊ शकते. </font>जेव्हा ऑड्यासिटी मधून वापरले जाते तेव्हा ते एयूडी-डीओ अतिरिक्त आदेश प्राप्त करते.
-</font></font></p>
-<h2><span class="mw-headline" id="AUD-DO">AUD-do</font></font></span></h2>
-<p>एयूडी-डीओ एक फंक्शन आहे जे नेक्विस्टच्या क्षमता वाढवते.
-</font></font></p><p>एयूडी-डीओ नेकीक्झीट मधून सर्व ऑडेसिटी मॅक्रो स्क्रिप्टिंग आज्ञा वापरणे शक्य करते. </font>स्क्रिप्टिंग आज्ञा्स आणि त्यांचे मापदंडची पूर्ण यादी पृष्ठ </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ">स्क्रिप्टिंग संदर्भ</font></font></a> पृष्ठावर प्रदान केली आहे </font>. </font>स्क्रिप्टिंग आज्ञा एआरडी-डीओला स्ट्रिंग म्हणून दिले जातात.
-</font></font></p><p>ऑड्यासिटी </font></font><a href="scripting.html" title="स्क्रिप्टिंग">पायथन स्क्रिप्टिंगसाठी</font></font></a> अगदी समान दृष्टीकोन वापरला जातो </font>. </font>आज्ञा्स स्ट्रिंग म्हणून तयार केल्या पाहिजेत आणि प्रक्रियेसाठी फंक्शनला पुरविल्या पाहिजेत. </font>पायथन स्क्रिप्टिंगपेक्षा नेयक्विस्ट मॅक्रोसचा एक फायदा असा आहे की नायक्विस्ट आधीपासून ऑड्यासिटीमध्ये अंगभूत आहे.
-</font></font></p><p><br>
+<h2><span class="mw-headline" id="Comparison_of_Macros_to_Nyquist-Macros"><a href="macros.html" title="Macros">मॅक्रोची</a> तुलना एन.वाय.क्विस्ट मॅक्रोशी आहे</span></h2>
+<p>सामान्य <a href="macros.html" title="Macros">मॅक्रो</a> एक निश्चित क्रमाने आदेशांचा निश्चित क्रम चालवतात .
+</p><p>याउलट, <a href="nyquist.html" title="Nyquist">एन.वाय.क्विस्ट भाषा</a> ही एलआयएसपी कुटुंबातील पूर्ण भाषा आहे. ते वापरण्यास अधिक शक्तिशाली आणि अधिक जटिल बनवते.
 </p>
-<h2><span class="mw-headline" id="Using_AUD-DO">AUD-DO वापरणे</font></font></span></h2>
-<p>आपल्या Nyquist स्क्रिप्टमध्ये "टाइप साधन" असणे आवश्यक आहे. </font>इतर प्रकारच्या एडीडी-डीओ उपलब्ध नाहीत. 
-</font></font></p>
-
-<pre>टाइप टूल
-</font></font></pre>
-<p>Nyquist स्क्रिप्ट मध्ये खालील आज्ञा प्रोजेक्ट मधील पहिले लेबल 'foo' वर सेट करते.
-</font></font></p>
-<pre>(AUD-DO "सेट लेबल: मजकूर = \" फु \ "")
-</font></font></pre>
-<p>एयूडी-डीओ नंतर मजकूर स्ट्रिंग प्रक्रियेसाठी स्क्रिप्टिंग इंजिनला दिली जाते.
-</font></font></p><p>आपण टूल्स नायक्विस्ट प्रॉम्प्ट वर प्रविष्ट करू शकता असे एयूडी-डीओ वापरुन Nyquist स्क्रिप्टचे संपूर्ण उदाहरण खाली दिले आहे:
-</font></font></p>
-<pre>y nyquist प्लग-इन</font></font><font></font>
-$ आवृत्ती 4</font></font><font></font>
-$ प्रकार साधन</font></font><font></font>
-$ नाव (_ "माझी चाचणी घ्या")</font></font><font></font>
-ug डीबग बटण खोटे</font></font><font></font>
-$ क्रिया (_ "टेस्टमी लागू करीत आहे ...")</font></font><font></font>
-$ लेखक (_ "निमो नेमेसिस")</font></font><font></font>
-$ प्रकाशन 2.3.0</font></font><font></font>
-$ ग्रंथावरचा हक्क (_ "सार्वजनिक डोमेन")</font></font><font></font>
-<font></font>
-;; </font>नेमो नेमेसिस, ऑगस्ट 2018 द्वारे चाचणी-मी.ny</font></font><font></font>
-<font></font>
-;; </font>Nyquist प्लगइन लिहिणे आणि सुधारित करण्याबद्दल माहितीसाठी:</font></font><font></font>
-;; </font>https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_References</font></font><font></font>
-<font></font>
-(AUD-DO "सिलेक्ट टाइम: प्रारंभ = 60 समाप्त = 170")</font></font><font></font>
-(एयूडी-डीओ "सिलेक्ट गितपट्टा: गितपट्टा = 1 गितपट्टाकॉन्ट = 2") </font></font><font></font>
-<font></font>
+<ul><li> एन.वाय.क्विस्ट ला लॉजिक, लूप आणि कंडिशनली एक्झिक्यूटिंग कोडसाठी आज्ञा आहेत.</li>
+<li> एन.वाय.क्विस्ट स्ट्रीम आणि स्ट्रिंग फॉरमॅटिंग कार्येचे समर्थन करते.</li>
+<li> एन.वाय.क्विस्ट माहिती स्ट्रक्चर्सचे समर्थन करते आणि सूची हाताळण्यात विशेषतः मजबूत आहे.</li>
+<li> एन.वाय.क्विस्ट, ऑड्यासिटीमध्ये, मापदंडसाठी प्रॉम्प्ट करू शकते आणि नंतर ते मापदंड त्याच्या कोडमध्ये वापरू शकतात.</li></ul>
+<p><b>साधक आणि बाधक:</b>
+</p><p>एन.वाय.क्विस्ट-मॅक्रो चे सामान्य मॅक्रोपेक्षा बरेच फायदे आहेत, तर सामान्य मॅक्रोचे देखील काही फायदे आहेत:
+</p>
+<ul><li><a href="manage_macros.html" title="Manage Macros">मॅक्रो तयार करण्यासाठी एक ग्राफिकल इंटरफेस</a> आहे , तर एन.वाय.क्विस्ट-मॅक्रो <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_Reference">एन.वाय.क्विस्ट प्लग-इन</a> म्हणून लिहिलेले आहेत . </li>
+<li> मॅक्रोमध्ये कोणतेही अंगभूत किंवा प्लग-इन प्रभाव समाविष्ट असू शकतात, परंतु एन.वाय.क्विस्ट-मॅक्रो एन.वाय.क्विस्ट प्रभाव वापरू शकत नाहीत.</li>
+<li> मॅक्रोमध्ये इतर मॅक्रो आणि एन.वाय.क्विस्ट-मॅक्रो समाविष्ट असू शकतात, परंतु एन.वाय.क्विस्ट-मॅक्रो इतर एन.वाय.क्विस्ट-मॅक्रो कॉल करू शकत नाहीत.</li></ul>
+<p>एन.वाय.क्विस्ट स्वतंत्रपणे ऑड्यासिटी वापरला जाऊ शकतो. ऑड्यासिटी मधून वापरल्यास, त्याला एक अतिरिक्त आज्ञा मिळते, एयूडी-डीओ.
+</p>
+<h2><span class="mw-headline" id="AUD-DO">एयूडी-डीओ</span></h2>
+<p>एयूडी-डीओ हे एक फंक्शन आहे जे एन.वाय.क्विस्ट च्या क्षमता वाढवते.
+</p><p>एयूडी-डीओ एन.वाय.क्विस्ट मधून सर्व ऑड्यासिटी मॅक्रो स्क्रिप्टिंग आज्ञा वापरणे शक्य करते. स्क्रिप्टिंग आज्ञा्स आणि त्यांच्या पॅरामीटर्सची संपूर्ण यादी <a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग संदर्भ</a> पृष्ठावर प्रदान केली आहे. स्क्रिप्टिंग आदेश एयूडी-डीओ ला स्ट्रिंग्स म्हणून पाठवले जातात.
+</p><p>ऑड्यासिटी <a href="scripting.html" title="Scripting">पायथन स्क्रिप्टिंगसाठी</a> एक समान दृष्टीकोन वापरला जातो . आज्ञा स्ट्रिंग्सच्या रूपात तयार केल्या पाहिजेत आणि प्रक्रियेसाठी फंक्शनमध्ये पास केल्या पाहिजेत. पायथन स्क्रिप्टिंगवर एन.वाय.क्विस्ट-मॅक्रो चा एक फायदा असा आहे की एन.वाय.क्विस्ट आधीच ऑड्यासिटीमध्ये अंतर्भूत आहे.
+</p>
+<h2><span class="mw-headline" id="Using_AUD-DO">एयूडी-डीओ वापरणे</span></h2>
+<p>एन.वाय.क्विस्ट-मॅक्रो हे सहसा "टाइप साधन" असेल.
+</p>
+<pre>;टाइप साधन
 </pre>
-<p>संभाव्यतया योग्य तार्यांचा शोधण्याचा सर्वात सोपा मार्ग म्हणजे </font></font><a href="manage_macros.html#insert" title="मॅक्रो व्यवस्थापित करा">मॅक्रोवर</font></font></a> आज्ञा जोडण्यासाठी </font><a href="manage_macros.html#insert" title="मॅक्रो व्यवस्थापित करा">मॅक्रो</font></a> आज्ञा </font>वापरणे </font>आणि जोडलेल्या तारांची तपासणी करणे.
-</font></font></p>
+<p>एन.वाय.क्विस्ट स्क्रिप्टमधील खालील आज्ञा प्रकल्पामधील पहिले लेबल 'foo' वर सेट करेल
+</p>
+<pre>(AUD-DO "SetLabel: Text=\\"Foo\\"")
+</pre>
+<p>एयूडी-डीओ नंतरची मजकूर स्ट्रिंग स्क्रिप्टिंग इंजिनला प्रक्रिया करण्यासाठी पास केली जाते.
+</p><p>एयूडी-डीओ वापरून एन.वाय.क्विस्ट स्क्रिप्टचे संपूर्ण उदाहरण जे तुम्ही साधन्स एन.वाय.क्विस्ट प्रॉम्प्टवर प्रविष्ट करू शकता ते खाली दिले आहे:
+</p>
+<pre>;nyquist प्लग-इन
+;आवृत्ती ४
+;टाइप साधन
+;नाव "Test Me"
+;डीबगबटण खोटे
+;क्रिया "TestMe लागू करत आहे..."
+;लेखक "निमो नेमसिस"
+;रिलीज 2.3.0
+;कॉपीराइट "सार्वजनिक डोमेन"
+
+;; निमो नेमेसिस, ऑगस्ट 2018 द्वारे test-me.ny
+
+;; Nyquist प्लग-इन लिहिण्याबद्दल आणि सुधारित करण्याबद्दल माहितीसाठी:
+;; https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_Reference
+
+(AUD-DO "SelectTime: Start=60 End=170")
+(AUD-DO "SelectTracks: Track=1 TrackCount=2") 
+
+</pre>
+<p>वापरण्यासाठी योग्य स्ट्रिंग्स शोधण्याचा सर्वात सोपा मार्ग म्हणजे मॅक्रोमध्ये आज्ञा जोडण्यासाठी <a href="manage_macros.html#insert" title="Manage Macros">मॅक्रो</a> आज्ञा वापरणे आणि जोडलेल्या स्ट्रिंग्सचे परीक्षण करणे.
+</p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
 </td>
-<td align="left" valign="top">एयूडी-डीओ मार्फत उपलब्ध असलेल्या आज्ञाची पूर्ण यादी </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ">स्क्रिप्टिंग संदर्भात दिली आहे</font></font></a>
-</td></tr></tbody></table>
+<td align="left" valign="top">	एयूडी-डीओ द्वारे उपलब्ध असलेल्या आदेशांची संपूर्ण यादी <a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग संदर्भामध्ये</a> दिली आहे
+</td></tr></table>
 </div>
-<h3><span class="mw-headline" id="Differences_to_normal_Nyquist_Scripting">सामान्य Nyquist स्क्रिप्टिंग मध्ये फरक</font></font></span></h3>
-<p>Nyquist मधील '$ प्रकार' समयोजन Nyquist </font>मध्ये त्या Nyquist स्क्रिप्टसाठी </font>कोणती </font></font><i>क्षमता आहे हे</font></font></i> सेट करते </font>. </font>उदाहरणार्थ, </font></font><span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">$ टाइप प्रक्रिया</font></font></span> आणि </font></font><span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">$ टाइप विश्लेषण</font></font></span> स्क्रिप्ट्सला * गितपट्टा * व्हेरिएबल दिले जाते. </font>प्रक्रिया स्क्रिप्ट, लागू केल्यावर, प्रत्येक चॅनेलवर प्रक्रिया करण्यासाठी एकदा, पुन्हा कॉल केल्या जातील.
-</font></font></p><p>'$ प्रकार' समयोजनचा आणखी एक उपयोग </font>ऑड्यासिटीमध्ये स्क्रिप्ट </font>कोणत्या </font></font><i>मेनूमध्ये</font></font></i> ठेवला जाईल </font>हे सेट करणे होय </font>. काहीवेळा </font>टूल्स मेनूमध्ये </font></font><b>प्रक्रिया ठेवणे</font></font></b> , </font></font><b>जनरेटर</font></font></b> किंवा </font>Nyquist स्क्रिप्टचे </font></font><b>विश्लेषण</font></font></b> करणे उपयुक्त ठरू शकते </font>, तरीही त्याची कार्यक्षमता एक आहे. इतर प्रकार. </font>असे करण्यासाठी आपण 'प्रकार' समयोजनमध्ये दोन वितर्क वापरू शकता.
-</font></font></p><p>आपण खालीलपैकी कोणतेही एक वापरुन टूल्स मेनूसाठी nyquist प्लगइन तयार करू शकता:
-</font></font></p>
-<pre>$ प्रकार साधन</font></font><font></font>
-tool प्रकारची साधन प्रक्रिया</font></font><font></font>
-tool साधन जनरेटर टाइप करा</font></font><font></font>
-tool टाइप साधन विश्लेषण</font></font><font></font>
-<font></font>
-</pre>
-<p>'प्रकार' चा प्रथम युक्तिवाद कोणत्या ऑड्यासिटी मेनूमध्ये प्लग-इन समाप्त होतो हे निर्धारित करते. सर्व चार उदाहरणे साधने मेनूसाठी आहेत. </font>पात्रता प्रक्रिया / जनरेटर / विश्लेषण हे प्लग-इन प्रत्यक्ष कसे वर्तन करते हे निर्धारित करते. </font>AUD-DO सह केवळ '$ प्रकार साधन' वापरले जावे.
-</font></font></p><p><br>
+<h3><span class="mw-headline" id="Differences_to_Scripting_in_Nyquist">एन.वाय.क्विस्ट मध्ये स्क्रिप्टिंग करण्यासाठीचे फरक</span></h3>
+<p>एन.वाय.क्विस्ट मधील ';type' सेटिंग एन.वाय.क्विस्ट कडे त्या एन.वाय.क्विस्ट स्क्रिप्टसाठी कोणत्या <i>क्षमता</i> असतील ते सेट करते. उदाहरणार्थ, <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">;type process</span> आणि <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">;type analyze</span> स्क्रिप्टना *TRACK* व्हेरिएबल दिले आहे. प्रक्रिया स्क्रिप्ट, लागू केल्यावर, प्रत्येक चॅनेलवर प्रक्रिया करण्यासाठी एकदा, वारंवार कॉल केले जातील.
+</p><p>';type' सेटिंगचा आणखी एक वापर म्हणजे ऑड्यासिटी मधील कोणत्या <i>यादीमध्ये</i> स्क्रिप्ट ठेवली जाईल हे सेट करणे. ते कधीकधी साधन्स यादीमध्ये <b>प्रक्रिया</b>, <b>जनरेटर</b> किंवा Nyquist स्क्रिप्टचे <b>विश्लेषण</b> करण्यासाठी उपयुक्त ठरू शकते , जरी त्याची कार्यक्षमता यापैकी एक असली तरीही इतर प्रकार. ते करण्यासाठी तुम्ही ';type' सेटिंगमध्ये दोन वितर्क वापरू शकता.
+</p><p>तुम्ही खालीलपैकी कोणतेही वापरून साधन्स यादीसाठी Nyquist प्लग-इन तयार करू शकता:
 </p>
-<h2><span class="mw-headline" id="Examples">उदाहरणे</font></font></span></h2>
-<h3><span class="mw-headline" id="Example_Using_Parameters">मापदंड वापरण्याचे उदाहरण</font></font></span></h3>
-<p>एयूडी-डीओ वापरणारी स्क्रिप्ट मापदंड वापरू शकतात. </font>कदाचित त्यांना एयूडी-डीओकडे जाण्याचा सर्वात सोपा मार्ग म्हणजे एक्सएलआयएसपी फॉर्मेट आज्ञा वापरणे.
-</font></font></p>
-<pre>y nyquist प्लग-इन</font></font><font></font>
-$ आवृत्ती 4</font></font><font></font>
-$ प्रकार साधन</font></font><font></font>
-$ नाव (_ "कसोटी मी 2")</font></font><font></font>
-ug डीबग बटण खोटे</font></font><font></font>
-$ क्रिया (_ "TestMe2 लागू करीत आहे ...")</font></font><font></font>
-$ लेखक (_ "निमो नेमेसिस")</font></font><font></font>
-$ प्रकाशन 2.3.0</font></font><font></font>
-$ ग्रंथावरचा हक्क (_ "सार्वजनिक डोमेन")</font></font><font></font>
-<font></font>
-$ नियंत्रण प्रारंभ (_ "प्रारंभ वेळ") फ्लोट-मजकूर "" 5 शून्य</font></font><font></font>
-$ नियंत्रण समाप्ती (_ "समाप्ती वेळ") फ्लोट-मजकूर "" 15 शून्य</font></font><font></font>
-<font></font>
-;; </font>नेमो नेमेसिस, ऑगस्ट 2018 द्वारे चाचणी-मी.ny</font></font><font></font>
-<font></font>
-;; </font>Nyquist प्लगइन लिहिणे आणि सुधारित करण्याबद्दल माहितीसाठी:</font></font><font></font>
-;; </font>https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_References</font></font><font></font>
-<font></font>
-<font></font>
-<font></font>
-(एडीडी-डीओ (फॉर्मेट नील "सिलेक्टटाइमः स्टार्ट = ~ एस एंड = ~ एस" प्रारंभ समाप्त))</font></font><font></font>
-(एयूडी-डीओ "सिलेक्ट गितपट्टा: गितपट्टा = 0 गितपट्टाकॉन्ट = 10")</font></font><font></font>
-(AUD-DO (format nil "संदेश: मजकूर = \" प्रारंभ ~ S समाप्ती ~ S \ "" प्रारंभ समाप्त वर सेट केला गेला))</font></font><font></font>
-<font></font>
-<font></font>
+<pre>;प्रकार साधन
+;प्रकार साधन प्रक्रिया
+;टाइप साधन जनरेटर
+;प्रकार साधन विश्लेषण
 </pre>
-<h3><span class="mw-headline" id="Click_Removal_Example">काढण्याचे उदाहरण क्लिक करा</font></font></span></h3>
-<p>रोजी </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ">स्क्रिप्टिंग पृष्ठ</font></font></a> , उदाहरणार्थ, क्लिक करा काढण्याची आदेश मापदंड दस्तऐवजीकरण आहेत:
-</font></font></p><p><i>इंट </font></font><b>थ्रेशोल्ड</font></font></b> , (पुर्वनिर्धारित: 200) </font></font></i><br>
-<i>इंट </font></font><b>रुंदी</font></font></b> , (पुर्वनिर्धारित: 20)</font></font></i><br>
-</p><p>Nyquist मध्ये समान आज्ञासाठी, आपल्याला AUD-DO कडे एक स्ट्रिंग पास करणे आवश्यक आहे. </font>उदाहरणार्थ:
-</font></font></p>
-<pre>(एडीडी-डीओ "क्लिक रिमूव्हलः थ्रेशोल्ड = 200 रुंदी = 25")
-</font></font></pre>
+<p>'टाइप' करण्यासाठीचा पहिला युक्तिवाद प्लग-इन कोणत्या ऑड्यासिटी यादीमध्ये संपेल हे निर्धारित करतो. सर्व चार उदाहरणे साधन्स यादीसाठी आहेत. पात्रता प्रक्रिया / जनरेटर / विश्लेषण हे प्लग-इन प्रत्यक्षात कसे वागते हे निर्धारित करते. ';type साधन' हे सहसा AUD-DO सह वापरले जावे.
+</p>
+<h2><span class="mw-headline" id="Examples">उदाहरणे</span></h2>
+<h3><span class="mw-headline" id="Example_Using_Parameters">पॅरामीटर्स वापरण्याचे उदाहरण</span></h3>
+<p>AUD-DO वापरणाऱ्या स्क्रिप्ट्स पॅरामीटर्स वापरू शकतात. कदाचित त्यांना AUD-DO मध्ये पास करण्याचा सर्वात सोपा मार्ग म्हणजे XLISP फॉरमॅट आज्ञा वापरणे.
+</p>
+<pre>;nyquist प्लग-इन
+;आवृत्ती ४
+;प्रकार साधन
+;नाव "Test Me2"
+;लेखक "एक व्यक्ती"
+;रिलीज 2.3.3
+;कॉपीराइट "सार्वजनिक डोमेन"
+
+;प्रारंभ नियंत्रण करा "प्रारंभ वेळ" फ्लोट-टेक्स्ट "" 5 0 शून्य
+;नियंत्रण एंड "एंड टाइम" फ्लोट-टेक्स्ट "" 15 0 शून्य
+
+(AUD-DO (फॉरमॅट शून्य "SelectTime: Start=~S End=~S" start end))
+(setf प्रत्युत्तर (AUD-DO (फॉरमॅट शून्य "संदेश: मजकूर =\\"प्रारंभ ~S समाप्ती ~S\\"" प्रारंभ समाप्ती वर सेट केला होता)))
+
+;; "उत्तर" ही फॉर्ममधील यादी आहे ("उद्धृत संदेश" . टी)
+(प्रथम उत्तर) ;संदेश परत करतो
+
+
+</pre>
+<h3><span class="mw-headline" id="Click_Removal_Example">क्लिक रिमूव्हल उदाहरण</span></h3>
+<p><a href="scripting_reference.html" title="Scripting Reference">स्क्रिप्टिंग पृष्ठावर</a>, उदाहरणार्थ, क्लिक रिमूव्हल आज्ञाचे मापदंड दस्तऐवजीकरण केलेले आहेत:
+</p><p><i>आयएनटी <b>थ्रेशोल्ड</b>, (पूर्वनियोजित:200)</i><br />
+<i>आयएनटी <b>रुंदी</b>, (पूर्वनियोजित:20)</i><br />
+</p><p>एन.वाय.क्विस्ट मध्‍ये तीच आज्ञा वापरण्‍यासाठी, तुम्‍हाला एयूडी-डीओ ला स्ट्रिंग पास करण्‍याची आवश्‍यकता आहे. उदाहरणार्थ:
+</p>
+<pre>(एयूडी-डीओ "क्लिक रिमूव्हलः थ्रेशोल्ड=200 रुंदी=25")
+</pre>
 <p>पुर्वनिर्धारित मूल्य निर्दिष्ट करण्याची आवश्यकता नाही, म्हणून समान आदेशाची छोटी आवृत्ती अशी असेल:
-</font></font></p>
-<pre>(एडीडी-डीओ "क्लिक रिमूव्हल: रुंदी = 25")
-</font></font></pre>
-<h3><span class="mw-headline" id="GetInfo_Example">गेटइन्फो उदाहरण</font></font></span></h3>
-<p>एयूडी-डीओ "गेटइंफो" स्क्रिप्टिंग आज्ञा्स स्ट्रिंग म्हणून परिणाम प्रदान करतात आणि तीन भिन्न परिणाम स्वरूप ऑफर करतात.
-</font></font></p>
+</p>
+<pre>(एयूडी-डीओ "क्लिकरिमुव्हल : रुंदी =25")
+</pre>
+<h3><span class="mw-headline" id="GetInfo_Example">माहिती मिळवा उदाहरण</span></h3>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top"> एलआयएसपी स्वरूपात स्ट्रिंग म्हणून गेटइन्फो आज्ञाचा निकाल विचारणे, नेयक्विस्टमध्ये सहसा सोपे असते.
-</font></font></td></tr></tbody></table>
-</div>
-<p>गेटइन्फोचे मापदंड आहेतः
-</font></font></p><p><i>एनम </font></font><b>प्रकार</font></font></b> , (पुर्वनिर्धारित: 0)</font></font><br></i>
+<td align="left" valign="top"><a href="#AUD-GET-INFO">एयूडी-माहीती-मिळवा</a> देखील पहा.
+</td></tr></table></div>
+<p>एयूडी-डीओ "गेटइंफो" स्क्रिप्टिंग आज्ञा स्ट्रिंग म्हणून परिणाम प्रदान करतात आणि तीन भिन्न परिणाम स्वरूप ऑफर करतात.
 </p>
-<ul><li> आज्ञा</font></font></li>
-<li> मेनू</font></font></li>
-<li> प्राधान्ये</font></font></li>
-<li> गितपट्टा</font></font></li>
-<li> क्लिप्स</font></font></li>
-<li> लिफाफे</font></font></li>
-<li> लेबले</font></font></li>
-<li> बॉक्स</font></font></li></ul>
-<p><i>एनम </font></font><b>स्वरूप</font></font></b> , (पुर्वनिर्धारित: 0)</font></font><br></i>
-</p>
-<ul><li> JSON</font></font></li>
-<li> एलआयएसपी</font></font></li>
-<li> संक्षिप्त</font></font></li></ul>
-<p>लेबलांची सूची मिळविण्यासाठी आपण खालील प्रमाणे आज्ञा वापरू शकता (स्ट्रिंग म्हणून).
-</font></font></p>
-<pre>(एडीडी-डीओ "गेटइन्फोः प्रकार = लेबले स्वरूप = एलआयएसपी")
-</font></font></pre>
-<!-- 
-NewPP limit report
-Cached time: 20180917112400
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.057 seconds
-Real time usage: 0.059 seconds
-Preprocessor visited node count: 108/1000000
-Preprocessor generated node count: 304/1000000
-Post‐expand include size: 2454/2097152 bytes
-Template argument size: 1375/2097152 bytes
-Highest expansion depth: 3/40
-Expensive parser function count: 0/100
--->
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%    9.622      1 - -total
- 29.66%    2.854      2 - Template:InlineCode
- 24.55%    2.362      1 - Template:Intro
- 14.47%    1.392      2 - Template:Ednote
- 13.39%    1.288      2 - Template:Tip
--->
-
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:6474-0!*!0!!en!5!* and timestamp 20180917112400 and revision id 62196
- -->
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top"> एलआयएसपी स्वरूपात स्ट्रिंग म्हणून माहिती मिळवा आज्ञेचा निकाल विचारणे, एन.वाय.क्विस्टमध्ये सहसा सोपे असते.
+</td></tr></table>
 </div>
-										<!-- end content -->
+<p>'माहिती मिळवा'चे मापदंड आहेतः
+</p><p><i>एनम <b>प्रकार</b>, (पुर्वनिर्धारित:0)<br /></i>
+</p>
+<ul><li> आज्ञा</li>
+<li> यादी</li>
+<li> प्राधान्ये</li>
+<li> गीतपट्टा</li>
+<li> क्लिप्स</li>
+<li> लिफाफे</li>
+<li> नावपट्ट्या</li>
+<li> चौकटी</li></ul>
+<p><i>एनम <b>स्वरूप</b>, (पुर्वनिर्धारित:0)<br /></i>
+</p>
+<ul><li> JSON</li>
+<li> LISP</li>
+<li> संक्षिप्त</li></ul>
+<p>लेबल्सची सूची (स्ट्रिंग म्हणून) मिळवण्यासाठी तुम्ही खालीलप्रमाणे आज्ञा वापराल.
+</p>
+<pre>(AUD-DO "GetInfo: Type=Labels Format=LISP")
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="AUD-GET-INFO">एयूडी-माहीती-मिळवा</span></h2>
+<p>हे फंक्शन, "एयूडी-" उपसर्ग असलेल्या इतर फंक्शन्सप्रमाणेच, ऑड्यासिटीमधील Nyquist साठी अद्वितीय आहे. हे AUD-DO "GetInfo" आज्ञा सारखेच आहे, परंतु ते स्ट्रिंग ऐवजी लीस्प <b>सूची</b> देते त्यामध्ये वेगळे आहे.
+</p><p><b>मांडणी:</b>
+</p>
+<pre>  (एयूडी-माहीती-मिळवा <i>स्ट्रिंग</i>)
+</pre>
+<p>वैध स्ट्रिंग मापदंड आहेत (केस असंवेदनशील):
+</p>
+<ul><li> "आज्ञा"</li>
+<li> "यादी"</li>
+<li> "प्राधान्ये"</li>
+<li> "गीतपट्टा"</li>
+<li> "क्लिप्स"</li>
+<li> "लिफाफे"</li>
+<li> "नावपट्ट्या"</li>
+<li> "चौकटी"</li></ul>
+<p><b>उदाहरण:</b>
+</p>
+<pre>  (एयूडी-माहीती-मिळवा "गीतपट्टा")
+</pre>
+<p>प्रकल्पामध्ये दोन मोनो ध्वनि गीतपट्टाअसल्यास, परतावा मूल्य यासारखे असेल:
+</p>
+<pre>  (((नाव "ध्वनि ट्रॅक") (फोकस केलेले 1) (निवडलेले 1) (प्रकार "वेव्ह") (स्टार्ट 0) (एंड 30) (पॅन 0) (गेन 1) (चॅनेल 1) (सोलो 0) (म्यूट 0) (VZOOMMIN -1) (VZOOMMAX 1))
+   ((नाव "ध्वनि ट्रॅक") (फोकस केलेले 0) (निवडलेले 0) (प्रकार "वेव्ह") (स्टार्ट 0) (एंड 30) (पॅन 0) (गेन 1) (चॅनेल 1) (सोलो 0) (म्यूट 0) (VZOOMMIN -1) (VZOOMMAX 1)))
+</pre>
+<p>'nth' यादी आयटम पाहून विशिष्ट ट्रॅकबद्दल माहिती काढता येते. उदाहरणार्थ, पहिल्या ट्रॅकबद्दल माहिती:
+</p>
+<pre>  (nth 0 (एयूडी-माहीती-मिळवा "गीतपट्टा"))
+</pre>
+<p>किंवा
+</p>
+<pre>  (प्रथम (एयूडी-माहीती-मिळवा "गीतपट्टा"))
+</pre>
+<p>परत केलेला माहिती वैध यादी असल्यामुळे, आम्ही मानक Lisp फंक्शन्ससह माहिती सहजपणे हाताळू शकतो. उदाहरणार्थ, सर्व गीतपट्ट्याची नावे मुद्रित करण्यासाठी:
+</p>
+<pre>  (चालू करूया ((ट्रॅक्स (एयूडी-माहीती-मिळवा "गीतपट्टा")))
+    (डोटाईम (j (लांबीचे गीतपट्टे))
+      (setf गीतपट्टा (nth j गीतपट्टा))
+      (प्रिंट (दुसरा  (assoc 'नाव गीतपट्टा)))))
+</pre>
+<p><br />
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">	एन.वाय.क्विस्ट आणि एन.वाय.क्विस्ट-मॅक्रो आदेशांबद्दल अधिक माहितीसाठी, कृपया <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist_Plug-ins_Reference">ऑड्यासिटी विकीवरील</a> दस्तऐवजीकरण पहा.
+</td></tr></table>
+</div>
+
+
+
+
+
+
+</div>
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -243,37 +279,39 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक </h3>
+		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
-</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
-</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
 <li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
@@ -282,13 +320,12 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -298,7 +335,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Nyquist_Macros">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

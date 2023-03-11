@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>लिनक्स- ऑड्यासिटी महितीपुस्तिकावर प्रभाव, निर्माता आणि विश्लेषक प्लग-इन स्थापित करीत आहे</title>
+<title>लिनक्सवर प्रभाव, निर्माता आणि विश्लेषक प्लग-इन स्थापित करीत आहे - ऑड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.ऑड्यासिटीteam.org/m/opensearch_desc.php" title="ऑड्यासिटी विकास महितीपुस्तिका (इं)">
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.ऑड्यासिटीteam.org/m/api.php?action=rsd">
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+<meta name="ResourceLoaderDynamicStyles" content=""/>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Installing_Effect_Generator_and_Analyzer_plug-ins_on_Linux rootpage-Installing_Effect_Generator_and_Analyzer_plug-ins_on_Linux skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,211 +25,218 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">लिनक्स वर प्रभाव, निर्माता आणि विश्लेषक प्लग-इन स्थापित करीत आहे</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">लिनक्सवर प्रभाव, निर्माता आणि विश्लेषक प्लग-इन स्थापित करीत आहे</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ऑड्यासिटी विकास महितीपुस्तिका</div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">वर जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.ऑड्यासिटीteam.org/man/Installing_Effect,_Generator_and_Analyzer_plug-ins_on_Linux#searchInput">शोध</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा : <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Installing_Effect,_Generator_and_Analyzer_plug-ins_on_Linux#searchInput">शोधा</a></div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">ऑड्यासिटीमध्ये अतिरिक्त कार्यक्षमता जोडण्यासाठी आपण प्लगइन डाउनलोड आणि स्थापित करू शकता. प्लग-इन आपल्याला अतिरिक्त प्रभाव किंवा अधिक ध्वनी निर्मिती आणि विश्लेषण क्षमता देऊ शकतात. 
-<p>जीएनयू / लिनक्सवरील ऑड्यासिटी मोठ्या संख्येने <a href="effect_menu.html#नायक्विस्ट_effects" title="प्रभाव मेनू">एनक्यूइस्ट</a>, <a href="effect_menu.html#LADSPA_effects" title="प्रभाव मेनू">एलएडीएसपीए</a>, <a href="effect_menu.html#LV2_effects" title="प्रभाव मेनू">एलव्ही 2</a>आणि <a href="analyze_menu.html#vamp" title="मेनूचे विश्लेषण करा">व्हँप </a>प्रभाव स समर्थन देते . लिनक्सवरील ऑड्यासिटीमध्ये आता <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Virtual_Studio_Technology">व्हीएसटी </a>प्रभाव समर्थित आहेत आणि <a href="effect_menu.html#vst" title="प्रभाव मेनू">व्हीएसटी प्रभाव </a>वर्णन केल्यानुसार स्थापित केले जाऊ शकतात . तथापि नेटिव्ह लिनक्स व्हीएसटी प्रभाव अत्यंत दुर्मिळ आहेत. यामुळे, लिनक्स वर एक विशिष्ट व्हीएसटी परिणाम आवश्यक आहे तर, तो आवश्यक खात असू शकते <a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/Linux_Issues#vst">एकत्रित कार्य </a>एक विंडोज साठी ऑड्यासिटी सामान्य नाव कार्यरत अशा <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Virtual_machine">आभासी मशीन</a>.
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">ऑड्यासिटीमध्ये अतिरिक्त कार्यक्षमता जोडण्यासाठी आपण प्लगइन डाउनलोड आणि स्थापित करू शकता. प्लग-इन आपल्याला अतिरिक्त प्रभाव किंवा अधिक ध्वनि निर्मिती आणि विश्लेषण क्षमता देऊ शकतात. 
+<p>जीएनयू / लिनक्सवरील ऑड्यासिटी मोठ्या संख्येने <a href="effect_menu.html#nyquist_effects" title="Effect Menu">एनवायक्वीस्ट</a>, <a href="effect_menu.html#LADSPA_effects" title="Effect Menu">एलएडीएसपीए,</a>, <a href="effect_menu.html#LV2_effects" title="Effect Menu">एलव्ही२</a> आणि <a href="analyze_menu.html#vamp" title="Analyze Menu">व्हँप</a> प्रभावांस समर्थन देते . लिनक्सवरील ऑड्यासिटीमध्ये आता <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Virtual_Studio_Technology">व्हीएसटी</a> प्रभाव समर्थित आहेत आणि <a href="effect_menu.html#vst" title="Effect Menu"> व्हीएसटी प्रभाव</a> वर्णन केल्यानुसार स्थापित केले जाऊ शकतात . तथापि नेटिव्ह लिनक्स व्हीएसटी प्रभाव अत्यंत दुर्मिळ आहेत. परिणामी, लिनक्सवर विशिष्ट व्हीएसटी प्रभाव आवश्यक असल्यास, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Virtual_machine">वर्च्युअल मशीनमध्ये</a> विंडोजसाठी ऑड्यासिटी चालवण्यासारखे <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Linux_Issues#vst">उपाय</a> वापरणे आवश्यक असू शकते.
 </p>
-ऑड्यासिटी 64-बिट लिनक्स सिस्टमवर व्हीएसटी, एलएडीएसपीए आणि व्हँप स्वरूपमध्ये 64-बिट प्रभाव चे समर्थन देते (उलट, त्या स्वरूपात 32-बिट प्लग-इन 64-बिट लिनक्सवर ऑड्यासिटीमध्ये लोड होणार नाहीत).  </div>
+ऑड्यासिटी 64-बिट लिनक्स प्रणालीतीलवर व्हीएसटी, एलएडीएसपीए आणि व्हँप स्वरूपमध्ये 64-बिट प्रभाव चे समर्थन देते (उलट, त्या स्वरूपात 32-बिट प्लग-इन 64-बिट लिनक्सवर ऑड्यासिटीमध्ये लोड होणार नाहीत).  </div>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">तृतीय-पक्ष प्लग-इन स्थापित करताना, लाइव्ह प्रकल्पावर उत्पादन वापरात वापरण्यापूर्वी प्लग-इन नॉन-क्रिटिकल प्रकल्प माहितीवर पूर्णपणे तपासण्याची <i><b>जोरदार</b></i> शिफारस केली जाते. <p>असे अनेक प्लग-इन अयशस्वी किंवा क्रॅश ऑड्यासिटी म्हणून ओळखले जातात, <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Plug-ins_that_crash_Audacity_or_fail_to_work_properly_in_Audacity">हे विकी पृष्ठ</a> पहा.</p>
+</td></tr></table>
+</div>
 <h2><span class="mw-headline" id="Contents">सामग्री</span></h2>
-<ol><li><a href="#नायक्विस्ट_install">नायक्विस्ट प्लगइन स्थापित करीत आहे</a></li>
+<ol><li><a href="#nyquist_install">एन.वाय.क्विस्ट प्लगइन स्थापित करीत आहे</a></li>
 <li><a href="#vst_install">व्हीएसटी प्लगइन स्थापित करीत आहे</a></li>
-<li><a href="#ladspa_install">लाडस्पा प्लगइन स्थापित करीत आहे</a></li>
+<li><a href="#ladspa_install">एल.ए.डी.एस.पी.ए. प्लगइन स्थापित करीत आहे</a></li>
 <li><a href="#lv2_install">एलव्ही 2 प्लग-इन स्थापित करीत आहे</a></li>
 <li><a href="#vamp_install">व्हँप प्लग-इन स्थापित करीत आहे</a></li>
 <li><a href="#launch">मी प्लग-इन जोडल्यानंतर ऑड्यासिटी क्रॅशिंगचे निराकरण कसे करावे?</a></li></ol>
-<div id="नायक्विस्ट_install"></div>
-<h2><span class="mw-headline" id="Installing_नायक्विस्ट_plug-ins">नायक्विस्ट प्लगइन स्थापित करीत आहे</span></h2>
-<p><a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/नायक्विस्ट">नायक्विस्ट </a>प्लगइन <a href="effect_menu.html" title="प्रभाव मेनू">प्रभाव मेनूमधील </a>विभाजक खाली बरेच पर्यायी प्रभाव प्रदान करतात . ते ऑड्यासिटीचे अंगभूत काही ध्वनी <a href="generate_menu.html" title="मेनू व्युत्पन्न करा">निर्माता </a>आणि <a href="analyze_menu.html" title="मेनूचे विश्लेषण करा">विश्लेषण साधने </a>प्रदान करण्यासाठी देखील वापरले जातात . आमच्या विकीवरील <a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/Download_नायक्विस्ट_Plug-ins">डाईक न्युक्विस्ट प्लग-इन्समधून </a>विस्तृत अतिरिक्त न्यक्युइस्ट प्रभाव , निर्माता आणि विश्लेषण प्लगइन मिळू शकतात .
+<div id="nyquist_install"></div>
+<h2><span class="mw-headline" id="Installing_Nyquist_plug-ins">एन.वाय.क्विस्ट प्लगइन स्थापित करीत आहे</span></h2>
+<p><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist">एन.वाय.क्विस्ट</a> प्लग-इन <a href="effect_menu.html" title="Effect Menu">प्रभाव यादी</a> मधील विभाजक खाली बरेच पर्यायी प्रभाव प्रदान करतात . ते ऑड्यासिटीचे अंगभूत काही ध्वनि <a href="generate_menu.html" title="Generate Menu">निर्माता</a> आणि <a href="analyze_menu.html" title="Analyze Menu"> विश्लेषण साधने</a> प्रदान करण्यासाठी देखील वापरले जातात . आमच्या विकीवरील <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Download_Nyquist_Plug-ins"> एन.वाय.क्विस्ट प्लग-इन्स डाउनलोड करा</a> या दुव्यामधून विस्तृत अतिरिक्त न्यक्युइस्ट प्रभाव , निर्माता आणि विश्लेषण प्लगइन मिळू शकतात .
 </p>
 <div class="note">जर प्लग-इन एक झिप संग्रहण म्हणून डाउनलोड केला असेल तर पॅकेजमधील सामग्री काढणे आवश्यक आहे. हे सहसा आदेशाने साध्य करता येते:
 <table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
-<tbody><tr>
-<td>अनझिप धारीका.झिप -डी डेस्टिनेशन_ निर्देशिका
-</td></tr></tbody></table>
+<tr>
+<td>अनझिप धारीका.झिप -डी गंतव्यस्थान_निर्देशिका
+</td></tr></table>
 वैकल्पिकरित्या, बहुतेक लिनक्स वितरणामध्ये झिप संग्रहण काढण्यासाठी जीयूआय अनुप्रयोग समाविष्ट असतो.</div>
-<h3><span class="mw-headline" id="Per_user_installation">प्रति वापरकर्ता स्थापना</span></h3>
-<p>सामान्यपणे नायक्विस्ट प्लग-इन स्थापित करण्याचा हा प्राधान्यक्रम आहे कारण तो मानक वापरकर्त्याच्या परवानग्यासह केला जाऊ शकतो.
+<p><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Nyquist">एन.वाय.क्विस्ट</a> प्लग-इन  <a href="effect_menu.html" title="Effect Menu">प्रभाव यादीतील</a> डिव्हायडरच्या खाली बहुतेक पर्यायी प्रभाव प्रदान करतात. ते ऑड्यासिटीचे काही अंगभूत ध्वनि  <a href="generate_menu.html" title="Generate Menu">निर्माते</a> आणि <a href="analyze_menu.html" title="Analyze Menu">विश्लेषण साधने</a> प्रदान करण्यासाठी देखील वापरले जातात. आमच्या Wiki वरील <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Download_Nyquist_Plug-ins"> एन.वाय.क्विस्ट प्लग-इन डाउनलोड करा</a> या दुव्यावरून अतिरिक्त एन.वाय.क्विस्ट प्रभाव, निर्मिती आणि विश्लेषण प्लग-इन्सची विस्तृत श्रेणी मिळवता येते.
+</p><p>नवीन एन.वाय.क्विस्ट प्लग-इन स्थापित करण्याचा सर्वात सोपा मार्ग म्हणजे <b><a href="nyquist_plug_in_installer.html" title="Nyquist Plug-in Installer">एन.वाय.क्विस्ट प्लग-इन इंस्टॉलर</a></b> साधन वापरणे.  ते स्वतः एक एन.वाय.क्विस्ट प्लग-इन आहे जे इतर एन.वाय.क्विस्ट प्लग-इनची स्थापना सुलभ करते.
+</p><p>सर्व एन.वाय.क्विस्ट प्लग-इन या साध्या मजकूर फायली आहेत ज्यात '.एनवाय' <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Filename_extension">धारिका नाव विस्तार</a> आहे. हा प्लग-इन इंस्टॉलर प्लग-इन '.एनवाय' धारिका निवडण्यासाठी धारिका ब्राउझर प्रदान करतो आणि नंतर धारिका योग्य ठिकाणी कॉपी करतो. एकदा प्लग-इन स्थापित झाल्यानंतर, ते <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers"><b>प्लग-इन व्यवस्थापकामध्ये</b></a> सक्षम केले जाऊ शकते.
 </p>
-<ol><li>जर ते आधीपासून अस्तित्वात नसेल तर आपल्या मुख्य निर्देशिकेत <b>.ऑड्यासिटी-धारीका </b>नावाचे निर्देशिका तयार करा. लक्षात घ्या की प्रथम वर्ण म्हणून बिंदू दर्शवितो की हे एक लपविलेले निर्देशिका असेल, म्हणूनच ग्राफिकल धारीका ब्राउझर वापरत असल्यास, लपविलेल्या धारीका पाहणे सक्षम करा (बहुतेक ग्राफिकल धारीका ब्राउझरसाठी, "मेनूमधील हा पर्याय आहे).</li>
-<li><b>.ऑड्यासिटी- धारीकामध्ये </b>उप निर्देशिका जोडा आणि त्यास <b>प्लग-इन्स </b>नाव द्या . या निर्देशिकाच्या स्थानाचे वर्णन <b>~ / .ऑड्यासिटी-धारीका / प्लगइन </b>म्हणून केले जाऊ शकते , जेथे "~ /" म्हणजे आपले मुख्य निर्देशिका.</li>
-<li>नायक्विस्ट प्लग-इन धारीका कॉपी करा किंवा त्यास हलवा (ny किंवा NY <a href="glossary.html#extension" title="शब्दकोष">धारीका नेम विस्तारासह</a>) <b>~ / .ऑड्यासिटी-धारीका / प्लग-इन </b>निर्देशिकामध्ये.
-<ul><li>जर प्लग-इन मध्ये एखादी मदत धारीका किंवा मदत निर्देशिका असेल तर ती धारीका सामान्यतः एनवाय धारीका प्रमाणेच कॉपी केली पाहिजे किंवा त्याच ठिकाणी हलविली जावी. तपशीलांसाठी प्लग-इन दस्तऐवजीकरण तपासा.</li></ul></li>
-<li>नवीन प्रभाव सक्षम करण्यासाठी जेणेकरून ते ऑड्यासिटी मेनूमध्ये उपलब्ध असतील, <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक </a>संवाद वापरा .</li></ol>
-<h3><span class="mw-headline" id="System-wide_installation">सिस्टम-व्यापी स्थापना</span></h3>
+<dl><dd><b>याद्वारे प्रवेश :</b> <span class="menu">साधने &gt; <a href="nyquist_plug_in_installer.html" title="Nyquist Plug-in Installer">एनवायक्वीस्ट प्लग-इन इंस्टॉलर...</a></span></dd>
+<dd><span title="Nyquist Plug-in Installer dialog, Widows 10 version"><img alt="Nyquist Plug-in Installer.png" src="../m/images/1/13/nyquist_plug_in_installer.png" width="458" height="178" /></span></dd></dl>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Per_user_installation">प्रति वापरकर्ता स्थापना</span></h3>
+<p>ऑड्यासिटी अपेक्षित असलेल्या योग्य ठिकाणी जोडून नवीन एन.वाय.क्विस्ट प्लग-इन व्यक्तिचलितपणे जोडणे देखील शक्य आहे, ते मानक वापरकर्त्याच्या परवानग्यांसह केले जाऊ शकते.
+</p>
+<ol><li> जर ते आधीपासून अस्तित्वात नसेल तर आपल्या मुख्य निर्देशिकेत <b> .ऑड्यासिटी-धारीका </b> नावाचे निर्देशिका तयार करा. लक्षात घ्या की प्रथम वर्ण म्हणून बिंदू दर्शवितो की हे एक लपविलेले निर्देशिका असेल, म्हणूनच ग्राफिकल धारीका ब्राउझर वापरत असल्यास, लपविलेल्या धारीका पाहणे सक्षम करा (बहुतेक ग्राफिकल धारीका ब्राउझरसाठी, "यादीमधील हा पर्याय आहे).</li>
+<li>  <b>.ऑड्यासिटी-धारीका</b>  मध्ये उप-निर्देशिका जोडा आणि त्याला <b>प्लग-इन</b> नाव द्या.  या फोल्डरचे स्थान <b>~/.audacity-file/plug-ins</b>, असे वर्णन केले जाऊ शकते, जेथे "~/" म्हणजे तुमचे मुख्य फोल्डर असेल.</li>
+<li>  <b>~/.audacity-files/plug-ins</b> फोल्डरमध्ये Nyquist प्लग-इन धारिका (ny किंवा NY <a href="glossary.html#extension" title="Glossary">धारिका नाव विस्तारासह</a>) प्रत तयार करा किंवा हलवा.
+<ul><li> जर प्लग-इन मध्ये एखादी मदत धारीका किंवा मदत निर्देशिका असेल तर ती धारीका सामान्यतः एनवाय धारीका प्रमाणेच प्रत केली पाहिजे किंवा त्याच ठिकाणी हलविली जावी. तपशीलांसाठी प्लग-इन दस्तऐवजीकरण तपासा.</li></ul></li>
+<li> नवीन प्रभाव सक्षम करण्यासाठी जेणेकरून ते ऑड्यासिटी यादीमध्ये उपलब्ध असतील,  <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक</a> संवाद वापरा.</li></ol>
+<h3><span class="mw-headline" id="System-wide_installation">प्रणालीतील-व्यापी स्थापना</span></h3>
 <p>हे सर्व वापरकर्त्यांसाठी प्लग-इन स्थापित करेल आणि मूळ परवानग्यांची आवश्यकता आहे.
 </p>
-<ol><li>मध्ये नायक्विस्ट प्लग-इन धारीका कॉपी करा किंवा हलवा (ny किंवा NY <a href="glossary.html#extension" title="शब्दकोष">धारीका नाव विस्तारासह</a>):
-<ul><li> <b>/ यूएसआर / शेअर / ऑड्यासिटी / प्लग-इन </b>जर रेपॉजिटरी पॅकेजमधून ऑड्यासिटी स्थापित केली असेल तर</li>
-<li> <b>/ युएसआर / लोकल / शेअर / ऑड्यासिटी / प्लग-इन </b>जर आपण स्त्रोत कोडमधून ऑड्यासिटी संकलित केले असेल तर.</li>
-<li>जर प्लग-इन मध्ये एखादी मदत धारीका किंवा मदत निर्देशिका असेल तर ती धारीका सामान्यतः एनवाय धारीका प्रमाणेच कॉपी केली पाहिजे किंवा त्याच ठिकाणी हलविली जावी. तपशीलांसाठी प्लग-इन दस्तऐवजीकरण तपासा.</li></ul></li>
-<li>नवीन प्रभाव सक्षम करण्यासाठी जे ते <i>सध्याच्या वापरकर्त्यासाठी</i>ऑड्यासिटी मेनूमध्ये उपलब्ध आहेत , <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक </a>संवाद वापरा .</li></ol>
-<p>लक्षात ठेवा की प्रभाव <i>प्रति वापरकर्त्याने </i>लोड केला आहे , परंतु सर्व वापरकर्त्यांसाठी लोड करण्यासाठी उपलब्ध असेल.
-</p><p>धडधडणे सध्या इतर ठिकाणांवरून नायक्विस्ट प्लगइन लोड करू शकते, परंतु वरील सूचीबद्ध स्थाने वापरण्याची शिफारस केली जाते. विशेषतः, y / .ऑड्यासिटी माहिती / प्लग-इन आता नायक्विस्ट प्लग-इनसाठी एक स्थान म्हणून नापसंत केले गेले आहे, परंतु याक्षणी ते अद्याप समर्थित आहे.  
+<ol><li> यामध्ये एन.वाय.क्विस्ट प्लग-इन धारीका प्रत करा किंवा हलवा (ny किंवा NY <a href="glossary.html#extension" title="Glossary"> धारीका नाव विस्तारासह</a>) :
+<ul><li> <b>/usr/share/audacity/plug-ins</b> जर रेपॉजिटरी पॅकेजमधून ऑड्यासिटी स्थापित केली असेल तर</li>
+<li> <b>/usr/local/share/audacity/plug-ins</b> जर आपण स्त्रोत कोडमधून ऑड्यासिटी संकलित केले असेल तर.</li>
+<li> प्लग-इनमध्ये मदत धारिका किंवा मदत फोल्डर समाविष्ट असल्यास, ती धारिका सामान्यतः प्रत केली जावी किंवा NY धारिका सारख्याच ठिकाणी हलवली जावी. तपशीलांसाठी प्लग-इन दस्तऐवजीकरण तपासा.</li></ul></li>
+<li> नवीन प्रभाव सक्षम करण्यासाठी जे ते <i>सध्याच्या वापरकर्त्यासाठी</i> ऑड्यासिटी यादीमध्ये उपलब्ध आहेत ,  <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक</a> संवाद वापरा.</li></ol>
+<p>लक्षात ठेवा की प्रभाव <i>प्रति वापरकर्त्याने</i> लोड केला आहे , परंतु सर्व वापरकर्त्यांसाठी लोड करण्यासाठी उपलब्ध असेल.
+</p><p>ऑड्यासिटी सध्या इतर ठिकाणांवरून एन.वाय.क्विस्ट प्लगइन लोड करू शकते, परंतु वरील सूचीबद्ध स्थाने वापरण्याची शिफारस केली जाते. विशेषतः,  ~/ .ऑड्यासिटी माहिती / प्लग-इन आता एन.वाय.क्विस्ट प्लग-इनसाठी एक स्थान म्हणून नापसंत केले गेले आहे, परंतु याक्षणी ते अद्याप समर्थित आहे.   
 </p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.ऑड्यासिटीteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">बर्&zwj;याच लांब ध्वनी निवडी (सामान्यत: एक तास किंवा त्याहून अधिक) प्रक्रिया करताना काही नायक्विस्ट प्लगइन क्रॅश होऊ शकतात. हे मोठ्या प्रमाणात मेमरी वापरुन प्लग-इन केल्यामुळे आहे आणि ऑड्यासिटीच्या सध्याच्या नायक्विस्ट अंमलबजावणीची ज्ञात समस्या आहे. त्याऐवजी लहान निवडींवरील प्लग-इन वापरुन पहा.
-</td></tr></tbody></table></div>
-<p><br>
+<td align="left" valign="top">बर्‍याच लांब ध्वनि निवडी (सामान्यत: एक तास किंवा त्याहून अधिक) प्रक्रिया करताना काही एन.वाय.क्विस्ट प्लगइन क्रॅश होऊ शकतात. हे मोठ्या प्रमाणात मेमरी वापरुन प्लग-इन केल्यामुळे आहे आणि ऑड्यासिटीच्या सध्याच्या एन.वाय.क्विस्ट अंमलबजावणीची ज्ञात समस्या आहे. त्याऐवजी लहान निवडींवरील प्लग-इन वापरुन पहा.
+</td></tr></table></div>
+<p><br />
 </p>
 <div id="vst_install"></div>
 <h2><span class="mw-headline" id="Installing_VST_plug-ins">व्हीएसटी प्लगइन स्थापित करीत आहे</span></h2>
-<p>ऑड्यासिटी बहुविध व्हीएसटी प्रभाव ध्वनी सूत्रसंचालक करणार्&zwj;या "शेल" व्हीएसटींसह लिनक्सवरील जवळजवळ सर्व व्हीएसटी प्रभाव प्लगइनना समर्थन देते. सर्व वापरकर्त्यांकरिता व्हीएसटी प्लगइन्स " <b>प्लग-इन्स</b>" निर्देशिकामध्ये आपण <b>/ </b><b>यूएसआर ऑड्यासिटी</b><b>/ बिन /ऑड्यासिटी</b> जोडणे आवश्यक आहे ( आपण ऑड्यासिटी <b>ऑड्यासिटीची ऑड्यासिटी</b> पॅकेज केलेली आवृत्ती स्थापित केली असल्यास) किंवा <b>/ यूएसआर / स्थानिक / बिनमध्ये</b>(आपण स्वतः स्थापित केल्यास) ठेवू शकता ऑड्यासिटीची कंपाईल केलेली आवृत्ती). या ऑपरेशन्ससाठी रूट परवानग्या आवश्यक असतील. 
+<p>ऑड्यासिटी बहुविध व्हीएसटी प्रभाव ध्वनि सूत्रसंचालक करणार्‍या "शेल" व्हीएसटींसह लिनक्सवरील जवळजवळ सर्व व्हीएसटी प्रभाव प्लगइनना समर्थन देते. सर्व वापरकर्त्यांकरिता व्हीएसटी प्लगइन्स "<b> प्लग-इन्स</b>"  निर्देशिकामध्ये आपण <b>/usr/bin/</b> जोडणे आवश्यक आहे ( आपण ऑड्यासिटी ऑड्यासिटीची ऑड्यासिटी पॅकेज केलेली आवृत्ती स्थापित केली असल्यास) किंवा <b>/usr/local/bin</b> मध्ये(आपण स्वतः स्थापित केल्यास) ठेवू शकता ऑड्यासिटीची कंपाईल केलेली आवृत्ती). या ऑपरेशन्ससाठी रूट परवानग्या आवश्यक असतील. 
 </p>
-<div class="note">धृष्टता यासह अन्य संगणक व वापरकर्त्याच्या स्थानांवरून व्हीएसटी प्लगइन लोड करू शकते: 
-<ul><li><b>"VST_PATH"</b>पर्यावरण चल मध्ये सूचीबद्ध सर्व पथ</li>
-<li> <b>. / .vst</b>(मानक वापरकर्त्याच्या परवानग्यासह येथे प्लग-इन जोडले जाऊ शकतात)</li>
-<li> <b>एलआयबीडीआयआर / व्हीएसटी</b>(जिथे बिल्डिंगच्या वेळी एलआयबीडीआयआर परिभाषित केला जातो)</li>
-<li> <b>/ usr / lib / vst</b></li>
-<li> <b>/ usr / स्थानिक / lib / vst</b></li>
-<li>. / .ऑड्यासिटी-माहिती / प्लग-इन (नापसंत) </li></ul></div>
-<p>आपण व्हीएसटी प्लग-इन ठेवू शकता अशा सर्व डिरेक्टरीज पुनरावृत्ती शोधल्या जातात, ज्याचा अर्थ असा की त्या निर्देशिकेत त्यांच्या स्वत: च्या निर्देशिकामध्ये असलेले प्लग-इन अद्याप ऑड्यासिटीने शोधले पाहिजेत.
-</p><p>आपण <span class="menu">प्रभाव&gt; <a href="effect_menu.html#add_remove_plugins" title="प्रभाव मेनू">जोडा / काढा प्लगइन ...</a></span>मेनू आयटमचा वापर करून ऑड्यासिटीमध्ये नवीन व्हीएसटी प्रभाव स्थापित करू शकता . हे <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापक </a>उघडते ऑड्यासिटी<a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">: प्रभाव, निर्माता आणि विश्लेषक ऑड्यासिटी</a> संवाद जेथे आपण नवीन प्रभाव निवडू आणि सक्षम करू शकता नंतर त्यांना लोड करण्यासाठी <span class="button">ओके </span>क्लिक करा . पुढच्या वेळी आपण ऑड्यासिटी प्रारंभ करा सक्षम प्रभाव कॅश केला जाईल आणि आपल्याला त्यांना पुन्हा सक्षम करण्याची आवश्यकता नाही.      
+<div class="note">ओडयासिटीयासह अन्य संगणक व वापरकर्त्याच्या स्थानांवरून व्हीएसटी प्लगइन लोड करू शकते : 
+<ul><li> <b>"VST_PATH"</b> पर्यावरणा चल मध्ये सूचीबद्ध सर्व पथ</li>
+<li> <b>~/.vst</b> (साधारण वापरकर्त्याच्या परवानग्यासह येथे प्लग-इन जोडले जाऊ शकतात)</li>
+<li> <b>एलआयबीडीआयआर/व्हीएसटी</b> (जिथे बिल्डिंगच्या वेळी एलआयबीडीआयआर परिभाषित केला जातो)</li>
+<li> <b>/usr/lib/vst</b></li>
+<li> <b>/usr/local/lib/vst</b></li>
+<li> ~/.ऑड्यासिटी-माहिती / प्लग-इन (नापसंत) </div></li></ul>
+<p>आपण व्हीएसटी प्लग-इन ठेवू शकता अशा सर्व डिरेक्टरीज पुनरावृत्ती शोधल्या जातात, ज्याचा अर्थ असा की त्या निर्देशिकेत त्यांच्या स्वत: च्या निर्देशिकामध्ये असलेले प्लग-इन अद्याप ऑड्यासिटीने शोधायला हवे.
+</p><p>आपण <span class="menu">प्रभाव &gt; <a href="effect_menu.html#add_remove_plugins" title="Effect Menu">प्लगइन जोडा / काढा ...</a></span> .यादी आयटमचा वापर करून ऑड्यासिटीमध्ये नवीन व्हीएसटी प्रभाव स्थापित करू शकता . हे  <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers"> प्लग-इन व्यवस्थापक : प्रभाव, निर्माता आणि विश्लेषक</a> संवाद उघडते जेथे आपण नवीन प्रभाव निवडू आणि सक्षम करू शकता नंतर त्यांना लोड करण्यासाठी <span class="button">ठीक</span> क्लिक करा . पुढच्या वेळी आपण ऑड्यासिटी सुरुवात करा सक्षम प्रभाव कॅश केला जाईल आणि आपल्याला त्यांना पुन्हा सक्षम करण्याची आवश्यकता नाही.      
 </p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.ऑड्यासिटीteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">संवादातील प्रभावांच्या सूचीमध्ये कोणतेही आढळलेले व्हीएसटी उपकरणे (व्हीएसटीआय) प्लग-इन (जसे सिंथ्स) आणि डिस्कवर लिहिताना ध्वनी माहिती बदलण्यात सक्षम असलेले कोणतेही प्रत्यक्ष वेळ व्हीएसटी प्रभाव समाविष्ट असतील. यापैकी अद्याप समर्थित नाहीत आणि आपण संवादात त्यांना सक्षम किंवा पुन्हा-सक्षम केले तरीही ते <b>लोड होणार नाहीत</b>.
-</td></tr></tbody></table></div>
-<p><br>
+<td align="left" valign="top">संवादातील प्रभावांच्या सूचीमध्ये कोणतेही आढळलेले व्हीएसटी उपकरणे (व्हीएसटीआय) प्लग-इन (जसे सिंथ्स) आणि डिस्कवर लिहिताना ध्वनि माहिती बदलण्यात सक्षम असलेले कोणतेही प्रत्यक्ष वेळ व्हीएसटी प्रभाव समाविष्ट असतील. यापैकी अद्याप समर्थित नाहीत आणि आपण संवादात त्यांना सक्षम किंवा पुन्हा-सक्षम केले तरीही ते <b>लोड होणार नाहीत</b>.
+</td></tr></table></div>
+<p><br />
 </p>
 <div id="vst_faulty"></div>
-<h3><span class="mw-headline" id="Why_do_some_VST_plug-ins_not_work_or_display_incorrectly.3F">काही व्हीएसटी प्लगइन चुकीचे कार्य किंवा प्रदर्शन का करीत नाहीत?</span></h3>
+<h3><span class="mw-headline" id="Why_do_some_VST_plug-ins_not_work_or_display_incorrectly.3F">काही व्हीएसटी प्लगइन चुकीचे कार्य का करतात किंवा प्रदर्शन का करीत नाहीत?</span></h3>
 <p>ऑड्यासिटी पुर्वनिर्धारित नुसार पूर्ण ग्राफिकल मुखपृष्ठसह व्हीएसटी प्रभाव प्लगइन प्रदर्शित करेल जिथे प्लग-इन हे पुरविते. 
-</p><p>व्हीएसटी उपकरणे (व्हीएसटीआय) (जसे सिंथ्स) आणि प्रत्यक्ष वेळ व्हीएसटी प्रभाव (जे लिहिलेले असताना ध्वनी माहिती बदलतात) अद्याप समर्थित नाहीत. आपण ऑड्यासिटी <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक ऑड्यासिटी</a> संवादात त्यांना सक्षम किंवा पुन्हा-सक्षम केले तरीही हे <b>लोड होणार नाही</b>. ऑड्यासिटी<a rel="nofollow" class="external text" href="http://www.steinberg.net/en/company/technologies/vst3.html">व्हीएसटी 3 ऑड्यासिटी</a> प्लग-इन समर्थित नाहीत. 
-<a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा"></a><a rel="nofollow" class="external text" href="http://www.steinberg.net/en/company/technologies/vst3.html"></a></p><p>जर कोणतेही प्लग-इन चुकीचे प्रदर्शित झाले तर आपण प्रभाव संवादात <i>व्यवस्थापन </i>बटण वापरू शकता <img alt="बटण चिन्ह व्यवस्थापित करा W10.png" src="../m/images/3/38/manage_button_icon_w10.png" width="28" height="28">नंतर त्या परिणामी ऑड्यासिटी <a href="effect_menu.html#vst_options" title="प्रभाव मेनू">व्हीएसटी प्रभाव पर्याय ऑड्यासिटी</a> उघडण्यासाठी 
- <i>पर्याय ...</i>निवडा . नंतर "ग्राफिकल मुखपृष्ठ ऑड्यासिटी <span class="button">&nbsp;सक्षम करा ऑड्यासिटी</span> " चेकबॉक्समधून चेकमार्क काढा ग्राफिकल मुखपृष्ठ ऑड्यासिटी<span class="button">सक्षम करा ऑड्यासिटी</span> आणि ऑड्यासिटी<span class="button">ओके ऑड्यासिटी</span> क्लिक करा . जेव्हा आपण प्रभाव पुन्हा उघडता तेव्हा तो एक सोपा सारणीपूर्ण मुखपृष्ठ प्रदर्शित करेल. 
-<a href="effect_menu.html#vst_options" title="प्रभाव मेनू"></a><span class="button"><img alt="चेक न केलेला चेकबॉक्स" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" style="vertical-align: text-top"></span><span class="button"></span></p>
+</p><p>व्हीएसटी उपकरणे (व्हीएसटीआय) (जसे सिंथ्स) आणि प्रत्यक्ष वेळ व्हीएसटी प्रभाव (जे लिहिलेले असताना ध्वनि माहिती बदलतात) अद्याप समर्थित नाहीत. आपण ऑड्यासिटी <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक</a> ऑड्यासिटी संवादात त्यांना सक्षम किंवा पुन्हा-सक्षम केले तरीही हे <b>लोड होणार नाहीत</b>. <a rel="nofollow" class="external text" href="http://www.steinberg.net/en/company/technologies/vst3.html">व्हीएसटी ३ </a> प्लग-इन ऑड्यासिटी समर्थित नाहीत. 
+</p><p>जर कोणतेही प्लग-इन चुकीचे प्रदर्शित झाले तर आपण प्रभाव संवादात <i>व्यवस्थापन</i> बटण <img alt="Manage button icon W10.png" src="../m/images/3/38/manage_button_icon_w10.png" width="28" height="28" /> वापरू शकता. नंतर  त्या परिणामासाठी <i>पर्याय...</i> म्हणून 
+<a href="effect_menu.html#vst_options" title="Effect Menu">व्हीएसटी&#160;प्रभाव&#160;पर्याय</a> निवडा.  नंतर "ग्राफिकल इंटरफेस सक्षम करा" चेकबॉक्स मधून चेकमार्क काढा <span class="button"><img alt="unchecked checkbox" src="../m/images/a/a8/checkboxnotchecked.png" width="13" height="13" style="vertical-align: text-top" />&#160;ग्राफिकल इंटरफेस सक्षम करा</span> आणि <span class="button">ठीक आहे</span> क्लिक करा. जेव्हा तुम्ही प्रभाव पुन्हा उघडता तेव्हा तो एक सोपा सारणी इंटरफेस प्रदर्शित करेल. 
+</p>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.ऑड्यासिटीteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top">रोजी <b>जीएनयु / लिनक्स</b>, 32-बिट प्रणाली जे 64-बिट VST प्लग-इन दिसणार नाही ऑड्यासिटी सामान्य नाव च्या 32-बिट आवृत्त्या लागेल. 64-बिट सिस्टममध्ये ऑड्यासिटीची 64-बिट आवृत्त्या असतील ज्यात 64-बिट व्हीएसटी प्लगइन दिसतील परंतु 32-बिट प्लगइन दिसणार नाहीत.
-</td></tr></tbody></table></div>
-<p>आपल्याला ऑड्यासिटीमध्ये एखाद्या विशिष्ट व्हीएसटी प्रभाव प्लग-इनमध्ये समस्या येत असल्यास कृपया आमच्याशी <a rel="nofollow" class="external text" href="https://web.ऑड्यासिटीteam.org/contact#feedback">संपर्क साधा</a>.
+<td align="left" valign="top"> <b>जीएनयू/लिनक्स</b> वर , ३२-बिट प्रणालीतीलमध्ये ऑड्यासिटीच्या ३२-बिट आवृत्त्या असतील ज्यात ६४-बिट VST प्लग-इन दिसणार नाहीत. ६४-बिट प्रणालीतीलमध्ये ऑड्यासिटीच्या ६४-बिट आवृत्त्या असतील ज्यात ६४-बिट व्हीएसटी प्लग-इन दिसतील परंतु ३२-बिट प्लग-इन दिसणार नाहीत.
+</td></tr></table></div>
+<p>आपल्याला ऑड्यासिटीमध्ये एखाद्या विशिष्ट व्हीएसटी प्रभाव प्लग-इनमध्ये समस्या येत असल्यास कृपया <a rel="nofollow" class="external text" href="https://web.audacityteam.org/contact#feedback">आमच्याशी संपर्क साधा</a>.
 </p>
 <div id="ladspa_install"></div>
-<h2><span class="mw-headline" id="Installing_LADSPA_plug-ins">लाडस्पा प्लगइन स्थापित करीत आहे</span></h2>
-<div class="note"><a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/Ladspa_Plugins">लाडस्पा </a>प्लग-इन आर्किटेक्चर मूलतः लिनक्स वर विकसित करण्यात आली आहे. ऑड्यासिटी जीएनयू / लिनक्स वरील दोन्ही एलव्ही 2 आणि एलएडीएसपीए प्रभावांना समर्थन देते. आपण सर्व ऑपरेटिंग सिस्टमसाठी <a rel="nofollow" class="external text" href="http://www.ऑड्यासिटीteam.org/download/plug-ins/#ladspa">90 पेक्षा जास्त एलएडीएसपीए प्लग-इनचा </a>एक ऑड्यासिटी<a rel="nofollow" class="external text" href="http://www.ऑड्यासिटीteam.org/download/plug-ins/#ladspa">संच ऑड्यासिटी</a> डाउनलोड आणि स्थापित करू शकता . त्यानंतर आपण प्लग-इन <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">व्यवस्थापकामध्ये </a>कोणते एलएडीएसपीए प्लग-इन सक्षम करायचे ते निवडू शकता ऑड्यासिटी<a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">: प्रभाव, निर्माता आणि विश्लेषक ऑड्यासिटी</a> संवाद.</div>
-<p>ऑड्यासिटी "प्लग-इन" निर्देशिकामध्ये प्लग-इन टाकून सर्व वापरकर्त्यांसाठी एलएडीएसपीए प्लग-इन स्थापित केले जाऊ शकतात:
+<h2><span class="mw-headline" id="Installing_LADSPA_plug-ins">एल.ए.डी.एस.पी.ए. प्लगइन स्थापित करीत आहे</span></h2>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+</td>
+<td align="left" valign="top">एल.ए.डी.एस.पी.ए. ला एलव्ही२ द्वारे बदलले गेले आहे आणि बहुतेक सर्व एल.ए.डी.एस.पी.ए. प्लग-इन्स प्राचीन नसतील आणि यापुढे ठेवल्या जाणार नाहीत.
+</td></tr></table></div>
+<div class="note"> <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Ladspa_Plugins">एल.ए.डी.एस.पी.ए.</a> प्लग-इन आर्किटेक्चर जे मूळतः लिनक्स वर विकसित केले गेले होते. ऑड्यासिटी जीएनयू/लिनक्स वर एलव्ही२ आणि एल.ए.डी.एस.पी.ए. दोन्ही प्रभावांना समर्थन देते. तुम्ही सर्व ऑपरेटिंग सिस्टीमसाठी <a rel="nofollow" class="external text" href="http://www.audacityteam.org/download/plug-ins/#ladspa">९० पेक्षा जास्त एल.ए.डी.एस.पी.ए. प्लग-इन्सचा संच</a>  डाउनलोड आणि स्थापित करू शकता. त्यानंतर तुम्ही <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers">प्लग-इन व्यवस्थापक: प्रभाव, जनरेटर आणि विश्लेषक</a> संवादामध्ये कोणते एल.ए.डी.एस.पी.ए. प्लग-इन सक्षम करायचे ते निवडू शकता. </div>
+<p>ऑड्यासिटी "प्लग-इन" निर्देशिकामध्ये प्लग-इन टाकून सर्व वापरकर्त्यांसाठी एलएडीएसपीए प्लग-इन स्थापित केले जाऊ शकतात :
 </p>
-<ul><li> <b>/ यूएसआर / शेअर / ऑड्यासिटी / प्लग-इन </b>जर रेपॉजिटरी पॅकेजमधून ऑड्यासिटी स्थापित केली असेल तर</li>
-<li> <b>/ युएसआर / लोकल / शेअर / ऑड्यासिटी / प्लग-इन </b>जर आपण स्त्रोत कोडमधून ऑड्यासिटी संकलित केले असेल तर.</li></ul>
-<p>ही स्थाने सहसा वाचनीय म्हणून सेट केली जातात, म्हणून प्लगइनना मूळ म्हणून कॉपी करणे आवश्यक असते (उदाहरणार्थ, टर्मिनलमध्ये योग्य रूट आदेश जारी करुन किंवा टर्मिनलचा वापर करून रूट परवानगीसह धारीका व्यवस्थापक अनुप्रयोग उघडणे. ).
-</p><p>नवीन प्रभाव सक्षम करण्यासाठी जेणेकरून ते ऑड्यासिटी मेनूमध्ये उपलब्ध असतील, <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक </a>संवाद वापरा .
+<ul><li> <b>/usr/share/audacity/plug-ins</b> जर रेपॉजिटरी पॅकेजमधून ऑड्यासिटी स्थापित केली असेल तर</li>
+<li> <b>/usr/local/share/audacity/plug-ins</b> जर आपण स्त्रोत कोडमधून ऑड्यासिटी संकलित केले असेल तर. </li></ul>
+<p>ही स्थाने सहसा वाचनीय म्हणून सेट केली जातात, म्हणून प्लगइनना मूळ म्हणून प्रत करणे आवश्यक असते (उदाहरणार्थ, टर्मिनलमध्ये योग्य रूट आदेश जारी करुन किंवा टर्मिनलचा वापर करून रूट परवानगीसह धारीका व्यवस्थापक अनुप्रयोग उघडणे).
+</p><p>नवीन प्रभाव सक्षम करण्यासाठी ते ऑड्यासिटी यादीमध्ये उपलब्ध असतील, <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers"> प्लग-इन व्यवस्थापक : प्रभाव, जनरेटर आणि विश्लेषक</a> संवाद वापरा.
 </p>
-<div class="note">धडधडपणा यासह अन्य संगणक व वापरकर्ता स्थानांकडील एलएडीएसपीए प्लगइन लोड करू शकते: 
-<ul><li><b>लाडस्पा_पथ पर्यावरण परिवर्तनशील ऑड्यासिटी</b> द्वारे निर्दिष्ट केलेले सर्व पथ<b></b></li>
-<li> <b>~ / .ladspa</b>(येथे मानक वापरकर्त्याच्या परवानग्यांसह प्लग-इन जोडले जाऊ शकतात)</li>
-<li> <b>/ यूएसआर / स्थानिक / लिब / लाडस्पा</b></li>
-<li> <b>/ usr / lib / ladspa</b></li>
-<li> <b>I एलआयबीडीआर / लाडस्पा</b> </li>
-<li>. / .ऑड्यासिटी-माहिती / प्लग-इन (नापसंत) </li></ul></div>
-<div class="note">रिपॉझिटरी पॅकेजमधून स्थापित केलेले ऑड्यासिटी किंवा <a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/Compilingऑड्यासिटीForBeginners">स्त्रोतांकडून संकलित केलेले </a>आपोआप / usr / lib / ladspa मध्ये लाडस्पा प्लग-इन स्थापित केलेले आढळले पाहिजे. आपण जुने स्त्रोत कोड कंपाईल करीत असल्यास हे असू शकत नाही. आवश्यक असल्यास आपण लाडस्पा प्लग-इन स्थापित केलेल्या ऑड्यासिटीला सूचित करण्यासाठी एक वातावरणीय चल सेट करू शकता. डेबियन-आधारित वितरणासाठी आदेश प्रॉमप्टवर खालील कोड प्रविष्ट करुन हे केले जाऊ शकते (&lt;&lt; वापरकर्त्यास आपल्या खात्याच्या वापरकर्त्याच्या नावावर बदला):
+<div class="note">ऑड्यासिटी यासह अन्य संगणक व वापरकर्ता स्थानांकडील एलएडीएसपीए प्लगइन लोड करू शकते : 
+<ul><li> <b>एल.ए.डी.एस.पी.ए._पथ पर्यावरण परिवर्तनशील</b> द्वारे निर्दिष्ट केलेले सर्व पथ</li>
+<li> <b>~/.ladspa</b> (येथे साधारण वापरकर्त्याच्या परवानग्यांसह प्लग-इन जोडले जाऊ शकतात)</li>
+<li> <b>/usr/local/lib/ladspa</b></li>
+<li> <b>/usr/lib/ladspa</b></li>
+<li> <b>$LIBDIR/ladspa</b> </li>
+<li> ~/.audacity-data/Plug-Ins (deprecated). </div></li></ul>
+<div class="note">रिपॉझिटरी पॅकेजमधून स्थापित केलेले ऑड्यासिटी किंवा <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/CompilingAudacityForBeginners">स्त्रोतांकडून संकलित केलेले </a> आपोआप / usr / lib / ladspa मध्ये एल.ए.डी.एस.पी.ए. प्लग-इन स्थापित केलेले आढळले पाहिजे. आपण जुने स्त्रोत कोड कंपाईल करीत असल्यास हे असू शकत नाही. आवश्यक असल्यास आपण एल.ए.डी.एस.पी.ए. प्लग-इन स्थापित केलेल्या ऑड्यासिटीला सूचित करण्यासाठी एक वातावरणीय चल सेट करू शकता. डेबियन-आधारित वितरणासाठी आदेश प्रॉमप्टवर खालील कोड प्रविष्ट करुन हे केले जाऊ शकते ( &lt;वापरकर्त्यास&gt; आपल्या खात्याच्या वापरकर्त्याच्या नावावर बदला):
 <table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
-<tbody><tr>
-<td>LADSPA_PATH = $ LADSPA_PATH: / home / &lt;user&gt; /.ladspa:/usr/local/lib/ladspa:/usr/lib/ladspa निर्यात करा
-</td></tr></tbody></table>
-<p>आपण प्रत्येकवेळी बूट करता तेव्हा हा मार्ग सेट करावा अशी आपली इच्छा असल्यास, लाडस्पा_पथ पर्यावरण परिवर्तनशील <b>~ / .Proile मध्ये </b>जोडले जाऊ शकते किंवा अस्तित्वात नसल्यास ही धारीका तयार केली जाऊ शकते. लाडस्पा_पथ पर्यावरण चल कसे जोडावे याचे उदाहरणः
-</p>
-<table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
-<tbody><tr>
-<td>लाडस्पा_पथ = $ लाडस्पा_पथ: / मुख्यपृष्ठ / &lt;user&gt; /.ladspa :/usr/local/lib/ladspa :/usr/lib/ladspa <br>निर्यात लाडस्पा_पथ
-</td></tr></tbody></table>
-<p>ओपनस्यूज 64 साठी, एलएडीएसपीए प्लगइन <b>/ यूएसआर / लिब 64 / लाडस्पात</b>आढळू शकतात . आपल्या <b>/ etc / पर्यावरण </b>धारीकामध्ये पुढील ओळ जोडून हा मार्ग सेट केला जाऊ शकतो :
-</p>
-<table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
-<tbody><tr>
-<td>लाडस्पा_पथ = / usr / lib64 / ladspa
-</td></tr></tbody></table>
-<p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/LV2">ऑड्यासिटी</a>"प्लग-इन" निर्देशिकामध्ये किंवा आपल्या .ऑड्यासिटी-धारीका निर्देशिकामध्ये ऑड्यासिटी<a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/LV2">LV2 ऑड्यासिटी</a> आणि <a rel="nofollow" class="external text" href="http://www.vamp-plugins.org/">व्हँप </a>प्लग-इन ठेवता येणार नाहीत. V / .lv2, / usr / स्थानिक / lib / lv2, / usr / स्थानिक / lib64 / lv2, / usr / स्थानिक / lib64 / lv2 च्या मुळामध्ये पूर्ण .lv2 निर्देशिका (त्या निर्देशिकामधील वैयक्तिक धारीका नाही) ठेवून <b>एलव्ही 2</b>प्लगइन स्थापित केले जावे. / usr / lib / lv2 किंवा / usr / lib64 / lv2. वैकल्पिकरित्या पर्यावरणीय चल या उदाहरणात सेट केले जाऊ शकतात:  
+<tr>
+<td>निर्यात एल.ए.डी.एस.पी.ए._पथ=$LADSPA_PATH:/home/&lt;user&gt;/.ladspa:/usr/local/lib/ladspa:/usr/lib/ladspa
+</td></tr></table>
+<p>आपण प्रत्येकवेळी बूट करता तेव्हा हा मार्ग सेट करावा अशी आपली इच्छा असल्यास, एल.ए.डी.एस.पी.ए._पथ पर्यावरण परिवर्तनशील <b>~/.profile</b> मध्ये जोडले जाऊ शकते किंवा अस्तित्वात नसल्यास ही धारीका तयार केली जाऊ शकते. एल.ए.डी.एस.पी.ए._पथ पर्यावरण चल कसे जोडावे याचे उदाहरण :
 </p>
 <table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
-<tbody><tr>
-<td>LV2_PATH = निर्यात मुख्यपृष्ठ / .lv2: / usr / स्थानिक / lib / lv2: / usr / lib / lv2 निर्यात करा
-</td></tr></tbody></table>
+<tr>
+<td>LADSPA_PATH=$LADSPA_PATH:/home/&lt;user&gt;/.ladspa:/usr/local/lib/ladspa:/usr/lib/ladspa<br />निर्यात एल.ए.डी.एस.पी.ए._पथ
+</td></tr></table>
+<p>ओपनस्यूज ६४ साठी, एलएडीएसपीए प्लगइन <b>/usr/lib64/ladspa</b> मध्ये आढळू शकतात . आपल्या  <b>/etc/environment</b> धारीकामध्ये पुढील ओळ जोडून हा मार्ग सेट केला जाऊ शकतो :
+</p>
+<table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
+<tr>
+<td>एल.ए.डी.एस.पी.ए._पथ=/usr/lib64/ladspa
+</td></tr></table>
+<p> ऑड्यासिटी"प्लग-इन" निर्देशिकामध्ये किंवा आपल्या .ऑड्यासिटी-धारीका निर्देशिकामध्ये ऑड्यासिटी <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/LV2">एलव्ही२</a> आणि <a rel="nofollow" class="external text" href="http://www.vamp-plugins.org/">व्हँप</a> ठेवता येणार नाहीत. ~/.lv2, /usr/local/lib/lv2, /usr/local/lib64/lv2, /usr/lib/lv2 किंवा /usr/lib64/lv2 च्या मुळामध्ये पूर्ण .lv2 निर्देशिका (त्या निर्देशिकामधील वैयक्तिक धारीका नाही) ठेवून<b>एलव्ही२</b> स्थापित केले जावे. / usr / lib / lv2 किंवा / usr / lib64 / lv2. वैकल्पिकरित्या पर्यावरणीय चल या उदाहरणात सेट केले जाऊ शकतात :    
+</p>
+<table style="margin-left:10px;line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;font-family:monospace;font-size:1.1em;border:1px dashed black" cellpadding="5px">
+<tr>
+<td>निर्यात एलव्ही२_पथ=$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2
+</td></tr></table>
 </div>
-<p><br>
-</p><p><br>
+<p><br />
+</p><p><br />
 </p>
 <div id="lv2_install"></div>
-<h2><span class="mw-headline" id="Installing_LV2_plug-ins">एलव्ही 2 प्लग-इन स्थापित करीत आहे</span></h2>
-<p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/LV2">LV2</a>हे <a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/Ladspa_Plugins">लडस्पा </a>प्लग-इन आर्किटेक्चरचे अधिक प्रगत विकास आहे जे मूलत: लिनक्सवर विकसित केले गेले होते. 
-</p><p>नवीन LV2 प्रभाव जोडण्यासाठी, त्याच्या ठेवा <b>संपूर्ण ".lv2" निर्देशिका</b>( <i>नाही</i>स्थाने शोध खालील कोणत्याही वरच्या पातळीवर एकटा धारीका):
+<h2><span class="mw-headline" id="Installing_LV2_plug-ins">एलव्ही २ प्लग-इन स्थापित करीत आहे</span></h2>
+<p><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/LV2">एलव्ही २</a> हे <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Ladspa_Plugins">एल.ए.डी.एस.पी.ए.</a> प्लग-इन आर्किटेक्चरचे अधिक प्रगत विकास आहे जे मूलत: लिनक्सवर विकसित केले गेले होते. 
+</p><p>नवीन एलव्ही२ प्रभाव जोडण्यासाठी, त्याचे <b> संपूर्ण ".lv2" फोल्डर</b> (एकट्या धारिका <i>नाही</i>) खालीलपैकी कोणत्याही स्थानासाठी शोधलेल्या शीर्ष स्तरावर ठेवा : 
 </p>
-<ul><li> <b>. / .lv2</b></li>
-<li> <b>/ usr / स्थानिक / lib / lv2</b>किंवा <b>/ usr / स्थानिक / lib64 / lv2</b></li>
-<li> <b>/ usr / lib / lv2</b>किंवा <b>/ usr / lib64 / lv2</b></li></ul>
-<div class="note">LV2 प्लग-इन <b>शोधण्यासाठी ऑड्यासिटी शोधणारे मार्ग LV2_PATH</b>पर्यावरण परिवर्तनशील सेट करुन देखील निर्दिष्ट केले जाऊ शकतात . खाली सूचीबद्ध केलेला मार्ग कायदेशीर आहे.
-<ul><li> <b>/ मुख्यपृष्ठ / .lv2: / usr / स्थानिक / lib / lv2: / usr / lib / lv2</b>(गृहीत ऑड्यासिटी <b>धरुन पुर्वनिर्धारित प्रीफिक्स ऑड्यासिटी</b> हे ऑड्यासिटी<b>/ डीएसटी / डीएसएल ऑड्यासिटी</b> असणे आवश्यक आहे म्हणून ते स्थानिक आहे)  </li></ul></div>
-<p>नंतर LV2 प्रभाव सक्षम करण्यासाठी <span class="menu">प्रभाव&gt; <a href="effect_menu.html#add_remove_plugins" title="प्रभाव मेनू">प्लग-इन जोडा / काढा ...</a></span>वापरा आणि त्यांना ऑड्यासिटीमध्ये लोड करा, तपशीलांसाठी <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक पहा</a>.
-</p><p><br>
+<ul><li> <b>~/.lv2</b></li>
+<li> <b>/usr/local/lib/lv2</b> or <b>/usr/local/lib64/lv2</b></li>
+<li> <b>/usr/lib/lv2</b> or <b>/usr/lib64/lv2</b></li></ul>
+<div class="note">एलव्ही२ प्लग-इन शोधण्यासाठी ऑड्यासिटी शोधणारे मार्ग <b>एलव्ही२_पथ</b> पर्यावरण परिवर्तनशील सेट करुन देखील निर्दिष्ट केले जाऊ शकतात . खाली सूचीबद्ध केलेला मार्ग कायदेशीर आहे.
+<ul><li> <b>$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2</b> ($PREFIX हे /usr/local आहे असे गृहीत धरून ते पूर्वनियोजित असावे)  </div></li></ul>
+<p>नंतर एलव्ही२ प्रभाव सक्षम करण्यासाठी <span class="menu">प्रभाव &gt; <a href="effect_menu.html#add_remove_plugins" title="Effect Menu">प्लग-इन जोडा / काढा...</a></span> वापरा आणि त्यांना ऑड्यासिटीमध्ये लोड करा, तपशीलांसाठी <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers">प्लग-इन व्यवस्थापक: प्रभाव, निर्माता आणि विश्लेषक</a> पहा.
+</p><p><br />
 </p>
 <div id="vamp_install"></div>
 <h2><span class="mw-headline" id="Installing_Vamp_plug-ins">व्हँप प्लग-इन स्थापित करीत आहे</span></h2>
-<p><a rel="nofollow" class="external text" href="http://www.vamp-plugins.org/">व्हँप </a>प्लग-इन सामान्यत: ध्वनी विश्लेषणासाठी असतात जेणेकरून ऑड्यासिटीच्या <a href="analyze_menu.html" title="मेनूचे विश्लेषण करा">विश्लेषण मेनू </a>अंतर्गत दिसतील . आपण बीट्सचा मागोवा घेण्याचा प्रयत्न करणे, पिच नोट्स, जीवा किंवा वारंवारितांचा मागोवा घेणे यासारख्या मनोरंजक गोष्टी करू शकता. कोणतेही व्हँप प्लगइन ज्यांचे आउटपुट लेबल ट्रॅकसाठी योग्य असेल त्यांनी जीएनयू / लिनक्सवरील ऑड्यासिटीमध्ये कार्य केले पाहिजे. नवीन व्हँप विश्लेषण साधन जोडण्यासाठी, प्लग-इनची डीएलएल, डीवायआयएलबी किंवा एसओ धारीका आणि कोणत्याही पुरविलेल्या श्रेणी किंवा आरडीएफ धारीका <a href="analyze_menu.html#vamp" title="मेनूचे विश्लेषण करा">व्हॅम्प शोध स्थानांवर </a><a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">जोडा </a>त्यानंतर ऑड्यासिटी <a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">प्लग-इन व्यवस्थापकामधील ऑड्यासिटी</a> साधन सक्षम करा ऑड्यासिटी<a href="manage_effects_generators_and_analyzers.html" title="प्रभाव, निर्माता आणि विश्लेषक व्यवस्थापित करा">: प्रभाव, निर्माता आणि विश्लेषक ऑड्यासिटी</a> संवाद .
-</p><p><b>व्हँप</b>प्लग-इन स्थापित केले जाऊ शकतात 
+<p><a rel="nofollow" class="external text" href="http://www.vamp-plugins.org/">व्हँप</a> प्लग-इन सामान्यत: ध्वनि विश्लेषणासाठी असतात जेणेकरून ऑड्यासिटीच्या <a href="analyze_menu.html" title="Analyze Menu">विश्लेषण यादी</a> अंतर्गत दिसतील . आपण बीट्सचा मागोवा घेण्याचा प्रयत्न करणे, पिच नोट्स, जीवा किंवा वारंवारितांचा मागोवा घेणे यासारख्या मनोरंजक गोष्टी करू शकता. कोणतेही व्हँप प्लगइन ज्यांचे आउटपुट नावपट्टी गीतपट्ट्यासाठी योग्य असेल त्यांनी जीएनयू / लिनक्सवरील ऑड्यासिटीमध्ये कार्य केले पाहिजे. नवीन व्हँप विश्लेषण साधन जोडण्यासाठी, प्लग-इनची डीएलएल, डीवायआयएलबी किंवा एसओ धारीका आणि कोणत्याही पुरविलेल्या श्रेणी किंवा आरडीएफ धारीका <a href="analyze_menu.html#vamp" title="Analyze Menu"> व्हॅम्प शोध स्थानांवर</a> जोडा त्यानंतर <a href="manage_effects_generators_and_analyzers.html" title="Manage Effects, Generators and Analyzers">प्लग-इन व्यवस्थापक : प्रभाव, निर्माता आणि विश्लेषक</a> संवादामधील साधन सक्षम करा.
+</p><p><b>व्हँप</b> प्लग-इन येथे स्थापित केले जाऊ शकतात 
 </p>
-<ul><li> <b>/ मुख्यपृष्ठ / व्हँप</b></li>
-<li> <b>ओएमई मुख्यपृष्ठ / .व्हँप</b></li>
-<li> <b>/ usr / स्थानिक / lib / व्हँप</b></li>
-<li> <b>/ यूएसआर / लिब / व्हँप</b>.</li></ul>
-<p>वैकल्पिकरित्या व्हॅमप_पथ पर्यावरण परिवर्तनशील त्या निर्दिष्ट केलेल्या व्हॅमप स्थापना निर्देशिकांपैकी कोणत्याहीवर सेट केले जाऊ शकते. व्हँप प्लग-इन सामान्यत: ऑड्यासिटीच्या विश्लेषण मेनूमध्ये ठेवले जातील.
-</p><p><br>
+<ul><li> <b>$HOME/vamp</b></li>
+<li> <b>$HOME/.vamp</b></li>
+<li> <b>/usr/local/lib/vamp</b></li>
+<li> <b>/usr/lib/vamp</b>. </li></ul>
+<p>वैकल्पिकरित्या व्हॅमप_पथ पर्यावरण परिवर्तनशील त्या निर्दिष्ट केलेल्या व्हॅमप स्थापना निर्देशिकांपैकी कोणत्याहीवर सेट केले जाऊ शकते. व्हँप प्लग-इन सामान्यत: ऑड्यासिटीच्या विश्लेषण यादीमध्ये ठेवले जातील.
+</p><p><br />
 </p>
 <div id="launch"></div>
-<h2><span class="mw-headline" id="How_can_I_solve_ऑड्यासिटी_crashing_after_I_add_a_plug-in.3F">मी प्लग-इन जोडल्यानंतर ऑड्यासिटी क्रॅशिंगचे निराकरण कसे करावे?</span></h2>
-<p>कृपया ऑड्यासिटी<a href="सामान्य प्रश्न _installation_and_plug_ins.html#launch" title="सामान्य प्रश्न : स्थापना आणि प्लग-इन">हे नेहमी विचारले जाणारे प्रश्न ऑड्यासिटी</a> पहा<a href="सामान्य प्रश्न _installation_and_plug_ins.html#launch" title="सामान्य प्रश्न : स्थापना आणि प्लग-इन"></a>    
+<h2><span class="mw-headline" id="How_can_I_solve_Audacity_crashing_after_I_add_a_plug-in.3F">मी प्लग-इन जोडल्यानंतर ऑड्यासिटी क्रॅशिंगचे निराकरण कसे करावे?</span></h2>
+<p>कृपया हे <a href="faq_installation_and_plug_ins.html#launch" title="FAQ:Installation and Plug-Ins"> नेहमी विचारले जाणारे प्रश्न</a> पहा.    
 </p>
-<div class="note">आपल्याला ऑड्यासिटीमध्ये गैरवर्तन करणारे एखादे विशिष्ट प्लगइन आढळल्यास कृपया आमचा <a rel="nofollow" class="external text" href="https://web.ऑड्यासिटीteam.org/contact/#feedback">अभिप्राय पत्ता </a>ईमेल ऑड्यासिटी <a rel="nofollow" class="external text" href="https://web.ऑड्यासिटीteam.org/contact/#feedback">करा ऑड्यासिटी</a> . कृपया ऑड्यासिटी व्युत्पन्न केलेला कोणताही उपलब्ध <a href="help_menu.html#data" title="मेनू मदत करा">डीबग अहवाल </a>समाविष्ट करा .</div>
+<div class="note">आपल्याला ऑड्यासिटीमध्ये गैरवर्तन करणारे एखादे विशिष्ट प्लगइन आढळल्यास कृपया आमचा <a rel="nofollow" class="external text" href="https://web.audacityteam.org/contact/#feedback">अभिप्राय पत्ता</a>  ईमेल करा. कृपया व्युत्पन्न केलेला कोणताही उपलब्ध <a href="help_menu.html#data" title="Help Menu">डीबग अहवाल</a> समाविष्ट करा.</div>
+<p>कृपया <a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Plug-ins_that_crash_Audacity_or_fail_to_work_properly_in_Audacity"><b>ऑड्यासिटी क्रॅश करणार्‍या किंवा ऑड्यासिटीमध्ये योग्यरित्या काम न करणार्‍या प्लग-इनसाठी</b></a>  हे विकी पृष्ठ पहा.
+</p><p><br />
+</p>
+<div id="links"></div>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="installing_and_updating_audacity_on_linux.html" title="Installing and updating Audacity on Linux"><b>&gt;</b>&#160; लिनक्सवर ऑड्यासिटी स्थापित करणे आणि अद्यतनित करणे</a> <br />
+</p>
 
-<!-- 
-NewPP limit report
-Cached time: 20180917111801
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.105 seconds
-Real time usage: 0.109 seconds
-Preprocessor visited node count: 191/1000000
-Preprocessor generated node count: 602/1000000
-Post‐expand include size: 9307/2097152 bytes
-Template argument size: 6934/2097152 bytes
-Highest expansion depth: 3/40
-Expensive parser function count: 0/100
--->
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   19.211      1 - -total
- 30.24%    5.810      7 - Template:Note
- 15.89%    3.053      3 - Template:Advice
- 13.78%    2.647      1 - Template:Intro
- 12.25%    2.354      5 - Template:Code
-  9.70%    1.864      2 - Template:Button
-  6.40%    1.229      2 - Template:Menu
-  5.37%    1.032      1 - Template:CheckboxNotChecked
--->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:5429-0!*!0!!*!5!* and timestamp 20180917111801 and revision id 58841
- -->
+
+
 </div>
-										<!-- end content -->
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -243,52 +250,53 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक </h3>
+		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of ऑड्यासिटी screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, ऑड्यासिटी Foundations, Editing with ऑड्यासिटी, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="ऑड्यासिटी_tour_guide.html" title="ऑड्यासिटी Tour Guide"><span title="A quick tour of selected features of ऑड्यासिटी. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in ऑड्यासिटी and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with ऑड्यासिटी">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in ऑड्यासिटी">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with ऑड्यासिटी: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the ऑड्यासिटी Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in ऑड्यासिटी">मेनू बार</span></a></li>
-<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in ऑड्यासिटी">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
-</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with ऑड्यासिटी">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of ऑड्यासिटी">प्राधान्ये
-</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the ऑड्यासिटी menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to ऑड्यासिटी. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the ऑड्यासिटी project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="ऑड्यासिटी Commands that are in menus, that can be used from Macros, नायक्विस्ट and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="सामान्य प्रश्न .html" title="सामान्य प्रश्न "><span title="Frequently Asked Questions - most common questions are answered in the सामान्य प्रश्न ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
 		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
 		<h3>उपयुक्त दुवे</h3>
 		<div class='pBody'>
-			<ul><li> <span title="ऑड्यासिटी Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.ऑड्यासिटीteam.org/index.php">मंच</a></span></li>
-<li> <span title="ऑड्यासिटी Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.ऑड्यासिटीteam.org/wiki/ऑड्यासिटी_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="ऑड्यासिटी Latest Release"><a rel="nofollow" class="external text" href="https://www.ऑड्यासिटीteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to ऑड्यासिटी"><a rel="nofollow" class="external text" href="https://wit.ऑड्यासिटीteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -298,7 +306,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.ऑड्यासिटीteam.org/man/Installing_Effect,_Generator_and_Analyzer_plug-ins_on_Linux">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

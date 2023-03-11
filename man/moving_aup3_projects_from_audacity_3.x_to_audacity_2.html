@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>AUP3 प्रकल्प ऑड्यासिटी 3.x वरून ऑड्यासिटी 2.x वर हलवणे- ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Moving_AUP3_projects_from_Audacity_3_x_to_Audacity_2_x rootpage-Moving_AUP3_projects_from_Audacity_3_x_to_Audacity_2_x skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">AUP3 प्रकल्प ऑड्यासिटी 3.x वरून ऑड्यासिटी 2.x वर हलवणे</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Moving_AUP3_projects_from_Audacity_3.x_to_Audacity_2.x#searchInput">शोध</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro">ऑड्यासिटी 2.xx किंवा 1.3.x सह तयार केलेले आणि जतन केलेले प्रकल्प ऑड्यासिटी 3.xx मध्ये उघडले जाऊ शकतात, परंतु इतर बाबतीत हे खरे नाही.<p>एकदा प्रकल्प एकात्मक AUP3 प्रकल्प धारिकामध्ये जतन केला गेला की तो यापुढे ऑड्यासिटीच्या पूर्वीच्या आवृत्त्यांमध्ये उघडता येणार नाही.</p></div>
+<p>ऑड्यासिटीची फक्त जुनी 2.xx आवृत्ती असलेल्या अन्य वापरकर्त्यांसोबत प्रकल्पावर सहयोग करण्याची तुमची इच्छा असू शकते.
+</p><p>दोन उपाय आहेत:
+</p>
+<div id="consolidated"></div>
+<h2><span class="mw-headline" id="Consolidated_Project">एकत्रित प्रकल्प</span></h2>
+<p>जर प्रकल्प सिंगल रेंडरेड कन्सोलिडेटेड ध्वनि धारिका म्हणून पाठवता येत असेल तर संपूर्ण प्रकल्प <span class="menu"> फाईल &gt;निर्यात &gt;<a href="wav_export_options.html" title="WAV Export Options">WAV म्हणून निर्यात</a></span> करून सिंगल WAV फाईल म्हणून निर्यात करा आणि ती WAV फाईल ऑड्यासिटी 2.xx मध्ये इंपोर्ट करा.
+</p><p>WAV निर्यात करताना हस्तांतरणासाठी पूर्ण ध्वनि गुणवत्ता राखण्यासाठी <b>एन्कोडिंग</b> <b>32-बिट फ्लोट</b> करण्यासाठी निवडा <i>(लक्षात ठेवा की हे WAV निर्यातसाठी पूर्वनियोजित सेटिंग नाही)</i>.
+</p><p><br />
+</p>
+<div id="tracks"></div>
+<h2><span class="mw-headline" id="Track_structure_retained">गीतपट्टारचना राखून ठेवली</span></h2>
+<p>जर त्याऐवजी प्रकल्पाचे काम प्रगतीपथावर असेल जेथे गीतपट्ट्याची रचना कायम ठेवण्याची गरज असेल तर प्रत्येक गीतपट्टास्वतंत्रपणे निर्यात करणे आवश्यक आहे
+</p>
+<div id="audio"></div>
+<h3><span class="mw-headline" id="Audio_Tracks">ध्वनि ट्रॅक</span></h3>
+<ol><li><a href="import_export_preferences.html" title="Import - Export Preferences"><b>आयात/निर्यात</b></a> प्राधान्ये वर जा आणि <b>सुरवातीच्या रिक्त जागा दुर्लक्षित करा</b> "चालू" <i><b>नाही </b></i> याची खात्री करा<i>(पूर्वनियोजित सेटिंग बंद आहे)</i>.  हे सुनिश्चित करण्यासाठी आहे की अग्रगण्य रिकाम्या जागेसह ट्रॅकमध्ये ती जागा निर्यातवर मौन करण्यासाठी रेंडर केली जाते ज्यामुळे ध्वनिची योग्य वेळ स्थिती राखली जाते.</li>
+<li><span class="menu"> धारिका &gt; <a href="export_multiple.html" title="Export Multiple">निर्यात मल्टिपल</a></span> वापरून प्रत्येक वैयक्तिक ध्वनि गीतपट्टाWAV धारिका म्हणून निर्यात करा.  
+<ul><li> जर तुमच्याकडे प्रकल्पामध्ये लेबल गीतपट्टाअसतील तर <b>गीतपट्ट्यावर आधारित स्प्लिट धारिका</b> निवडण्याची खात्री करा.</li>
+<li> क्सपोर्ट मल्टिपल संवादमध्ये हे सुनिश्चित करा की WAV धारिकासाठी <b>एन्कोडिंग</b> <b>32-बिट फ्लोटवर</b> सेट केले आहे जेणेकरून हस्तांतरणासाठी संपूर्ण ध्वनि गुणवत्ता टिकवून ठेवता येईल <i>(लक्षात ठेवा की हे WAV निर्यातसाठी पूर्वनियोजित सेटिंग नाही)</i>.</li></ul></li>
+<li>मग तुम्ही त्या WAV धारिका जुन्या ऑड्यासिटी आवृत्त्यांमध्ये आयात करू शकता.</li></ol>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
+</td>
+<td align="left" valign="top">काळजीपूर्वक लक्षात ठेवा की प्रत्येक गीतपट्टाWAV फाईलवर निर्यात केला जातो आणि अशा प्रकारे कोणतेही लिफाफा किंवा पॅन अँड गेन सेटिंग्ज आउटपुट WAV धारिकामध्ये मिसळल्या जातील.
+</td></tr></table></div>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">आयात केलेल्या फायली अल्फा-संख्येनुसार क्रमवारी लावल्या जातील, म्हणून जर तुम्हाला गीतपट्टाक्रम कायम ठेवायचा असेल तर तुम्ही गीतपट्टानावांचा उपसर्ग क्रमांक 01, 02, 03 इ
+</td></tr></table>
+</div>
+<div id="labels"></div>
+<h3><span class="mw-headline" id="Label_Tracks">लेबल ट्रॅक</span></h3>
+<p>तुमच्याकडे असलेले कोणतेही लेबल गीतपट्टाध्वनिच्या निर्यात मल्टिपलसह निर्यात केले जाणार नाहीत.
+</p><p>तुम्ही हे <span class="menu">धारिका &gt; निर्यात &gt; <a href="file_menu_export.html#export_labels" title="File Menu: Export">लेबल्ससह</a></span> स्वतंत्रपणे निर्यात करू शकता.
+</p><p>हे नंतर ऑड्यासिटी 2.xx प्रकल्पामध्ये इंपोर्ट केले जाऊ शकतात आणि आवश्यकतेनुसार तुम्ही त्यांची पुनर्स्थित करू शकता.
+</p>
+<div id="time"></div>
+<h3><span class="mw-headline" id="Time_Tracks">वेळ ट्रॅक</span></h3>
+<p>हे 3.xx प्रकल्पातून 2.xx प्रकल्पात हस्तांतरित केले जाऊ शकत नाही.
+</p>
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

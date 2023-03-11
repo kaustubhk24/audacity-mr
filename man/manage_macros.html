@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>मॅक्रो व्यवस्थापित -ऑड्यासिटी महितीपुस्तिका</title>
+<title>मॅक्रो व्यवस्थापित करा- ऑड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ऑड्यासिटी डेव्हलपमेंट मॅन्युअल (इं)">
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+<meta name="ResourceLoaderDynamicStyles" content=""/>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Manage_Macros rootpage-Manage_Macros skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,192 +25,241 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो व्यवस्थापित करा</font></font></h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">मॅक्रो व्यवस्थापित करा</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ऑड्यासिटी विकास महितीपुस्तिका</font></font></div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वर जा: </font></font><a href="#column-one"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">निर्देशक</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><a href="https://alphamanual.audacityteam.org/man/Manage_Macros#searchInput"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">शोध</font></font></a></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा : <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Manage_Macros#searchInput">शोधा</a></div>
 
-					<!-- start content -->
+					
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<div class="intro"><i><b>मॅक्रो व्यवस्थापित करा</b></i> तुम्हाला विद्यमान मॅक्रो संपादित करण्यास, काढण्याची किंवा पुनर्नामित करण्याची किंवा नवीन मॅक्रो जोडण्याची आणि तुमच्या प्रकल्पावर किंवा धारिकाच्या संचामध्ये मॅक्रो लागू करण्याची परवानगी देते.  <a href="effect_menu.html" title="Effect Menu">प्रभाव यादीमध्ये</a> दर्शविलेले कोणतेही <a href="effect_menu.html#built-in" title="Effect Menu">अंगभूत</a>, <a href="effect_menu_ladspa.html" title="Effect Menu: LADSPA">LADSPA</a>, <a href="effect_menu_lv2.html" title="Effect Menu: LV2">LV2</a>, <a href="effect_menu_nyquist.html" title="Effect Menu: Nyquist">Nyquist</a>, <a href="effect_menu_vst.html" title="Effect Menu: VST">VST</a> किंवा <a href="effect_menu_audiounit.html" title="Effect Menu: AudioUnit">ध्वनि युनिट</a>  (Mac) प्रभावमॅक्रोमध्ये जोडले जाऊ शकतात. तुम्ही  <a href="generate_menu.html" title="Generate Menu">व्युत्पन्न करा</a> किंवा <a href="analyze_menu.html" title="Analyze Menu">विश्लेषण करा</a> याद्या ( <a href="analyze_menu.html#vamp" title="Analyze Menu">Vamp</a> विश्लेषण प्रभावांसह), अंगभूत <a href="find_clipping.html" title="Find Clipping"> क्लिपिंग शोधा </a> विश्लेषक आणि अनेक निर्यात आदेशांमध्येदर्शविल्या जाणार्‍या कोणत्याही फॉरमॅटमध्ये प्लग-इन देखील जोडू शकता. <p>मॅक्रो एकतर सध्याच्या प्रकल्पाच्या संपूर्णतेवर किंवा <span class="menu">साधने &gt; <a href="macros.html" title="Macros">मॅक्रो...</a></span> आज्ञा वापरून धारिकेच्या निवडीवर लागू केले जाऊ शकतात..</p><p>मॅक्रोमध्ये <a href="noise_reduction.html" title="Noise Reduction">गोंगाट कमी करणे</a> वापरणे शक्य आहे परंतु नॉइज प्रोफाईल कसे कॅप्चर केले जाते यासाठी <a href="noise_reduction.html#macros" title="Noise Reduction">गोंगाट कमी करण्याचे सल्ले</a> पहा.</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<div class="intro"><i><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो व्यवस्थापित करा</font></font></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आपल्याला विद्यमान मॅक्रोचे संपादन, काढण्याची किंवा पुनर्नामित करण्याची किंवा नवीन मॅक्रो जोडण्याची आणि आपल्याकडे प्रकल्प किंवा धारीकांच्या संचावर मॅक्रो लागू करण्याची परवानगी देते. </font><a href="effect_menu.html" title="Effect Menu"><font style="vertical-align: inherit;">प्रभाव मेनूमध्ये</font></a><font style="vertical-align: inherit;"> दर्शविलेला</font><font style="vertical-align: inherit;">कोणताही</font></font><a href="effect_menu.html#built-in" title="प्रभाव मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> अंगभूत</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ,</font></font><a href="effect_menu.html#LADSPA_effects" title="प्रभाव मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> एलएडीएसपीए</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ,</font></font><a href="effect_menu.html#LV2_effects" title="प्रभाव मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> एलव्ही 2</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ,</font></font><a href="effect_menu.html#nyquist_effects" title="प्रभाव मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> न्यक्विस्ट</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ,</font></font><a href="effect_menu.html#vst" title="प्रभाव मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> व्हीएसटी</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा</font></font><a href="effect_menu.html#Audio_Unit_effects" title="प्रभाव मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ध्वनी युनिट</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> (मॅक) प्रभाव</font><font style="vertical-align: inherit;">मॅक्रोमध्ये जोडला जाऊ शकतो. </font><font style="vertical-align: inherit;">आपण</font><a href="generate_menu.html" title="Generate Menu"><font style="vertical-align: inherit;"> व्युत्पन्न</font></a><font style="vertical-align: inherit;"> किंवा</font><a href="analyze_menu.html" title="Analyze Menu"><font style="vertical-align: inherit;"> विश्लेषण</font></a><font style="vertical-align: inherit;"> मेनूमध्ये</font><font style="vertical-align: inherit;">दर्शविलेले कोणत्याही स्वरूपात प्लग-इन जोडू शकता</font><font style="vertical-align: inherit;">(</font><a href="analyze_menu.html#vamp" title="Analyze Menu"><font style="vertical-align: inherit;"> व्हँप</font></a><font style="vertical-align: inherit;"> विश्लेषण प्रभाव समावेश), अंगभूत</font><a href="find_clipping.html" title="Find Clipping"><font style="vertical-align: inherit;"> फाइंड क्लीपिंग</font></a><font style="vertical-align: inherit;"> विश्लेषक आणि असंख्य निर्यात आदेश.</font></font><a href="effect_menu.html" title="प्रभाव मेनू"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="generate_menu.html" title="मेनू व्युत्पन्न करा"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="analyze_menu.html" title="मेनूचे विश्लेषण करा"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="analyze_menu.html#vamp" title="मेनूचे विश्लेषण करा"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="find_clipping.html" title="क्लिपिंग शोधा"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोस सध्याच्या प्रोजेक्टच्या संपूर्णतेवर किंवा </font></font><span class="menu"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">साधन&gt; </font></font><a href="macros.html" title="मॅक्रो"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोज ...</font></font></a></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> कमांडचा </font><font style="vertical-align: inherit;">वापर करून फाइल्सच्या निवडीसाठी लागू होऊ शकते </font><font style="vertical-align: inherit;">.</font></font></p><p><font style="vertical-align: inherit;"></font><a href="noise_reduction.html" title="गोंगाट कमी करणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोमध्ये ध्वनी कपात</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करणे शक्य आहे </font><font style="vertical-align: inherit;">परंतु </font><font style="vertical-align: inherit;">नॉइस प्रोफाइल कसे मिळविले जाते याबद्दल </font></font><a href="noise_reduction.html#macros" title="गोंगाट कमी करणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नॉइस रिडक्शन टिप्स</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पहा </font><font style="vertical-align: inherit;">.</font></font></p> </div>
-<dl><dd><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">याद्वारे प्रवेश केलेले:</font></font></b> </dd></dl>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मेनू </font></font><span class="menu"><a href="tools_menu.html" title="साधने मेनू"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">साधने</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &gt; मॅक्रो ...</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , किंवा</font></font></li>
-<li><font style="vertical-align: inherit;"><a href="apply_macro.html" title="Apply Macro"><font style="vertical-align: inherit;">मॅक्रो पॅलेट</font></a><font style="vertical-align: inherit;"> संवादात </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">विस्तार</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटण </font><font style="vertical-align: inherit;">वापरणे </font><font style="vertical-align: inherit;">.</font></font><a href="apply_macro.html" title="मॅक्रो लागू करा"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></li></ul>
-<dl><dd><span title="निवडलेल्या मॅक्रो (उजवीकडे) साठी मॅक्रो यादी (डावीकडे) आणि आदेश यादी दर्शविणारे मॅक्रो संवाद व्यवस्थापित करा"><img alt="मॅनेजमेक्रोस.पीएनजी" src="../m/images/5/54/managemacros.png" width="786" height="393"></span></dd></dl>
-<p><br>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">सर्व मॅक्रो आज्ञा्सची संपूर्ण यादी, वर्णनांसह, <a href="scripting_reference.html" title="Scripting Reference"><b> स्क्रिप्टिंग संदर्भ</b></a> येथे उपलब्ध आहे.
+</td></tr></table>
+</div> </div>
+<h2><span class="mw-headline" id="Contents">सामग्री</span></h2>
+<ol><li><a href="#access">मॅक्रोमध्ये प्रवेश करत आहे</a></li>
+<li><a href="#select">मॅक्रो निवडा</a></li>
+<li><a href="#editsteps">मॅक्रोमधील चरण संपादित करा</a>
+<ul><li><a href="#command">आज्ञा</a></li>
+<li><a href="#edit">विद्यमान आज्ञा संपादित करणे</a></li>
+<li><a href="#parameters">मॅक्रो आज्ञा पॅरामीटर्स</a></li>
+<li><a href="#selection">मॅक्रोमध्ये निवड</a></li>
+<li><a href="#export">ध्वनि धारिका निर्यात करण्यासाठी आदेश</a></li>
+<li><a href="#deprecated">बहिष्कृत निर्यात आदेश</a></li>
+<li><a href="#comments">मॅक्रोमध्ये टिप्पण्या</a></li></ul></li>
+<li><a href="#buttons">बटणे</a>
+<ul><li><a href="#shrink">संकुचित करा - कमी केलेला मॅक्रो पॅलेट संवाद</a></li>
+<li><a href="#apply">मॅक्रो लागू करा</a></li>
+<li><a href="#cancel">रद्द करा</a></li></ul></li>
+<li><a href="#examples">मॅक्रो उदाहरणे</a></li>
+<li><a href="#error">त्रुटी: बॅच आज्ञा ओळखले नाही</a></li></ol>
+<p><br />
 </p>
-<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो प्रभाव काय करतात आणि त्यांचे पॅरामीटर्स कसे सेट करतात या मदतीसाठी, </font><a href="effect_menu.html" title="Effect Menu"><font style="vertical-align: inherit;">प्रभाव मेनू</font></a><font style="vertical-align: inherit;"> पहा</font></font><a href="effect_menu.html" title="प्रभाव मेनू"><font style="vertical-align: inherit;"></font></a> </div>
-<p><br>
+<div id="access"></div>
+<h2><span class="mw-headline" id="Accessing_Macros">मॅक्रोमध्ये प्रवेश करत आहे</span></h2>
+<dl><dd><b>याद्वारे प्रवेश :</b> </dd></dl>
+<ul><li> यादी <span class="menu"><a href="tools_menu.html" title="Tools Menu">साधने</a> &gt; मॅक्रो...</span>, किंवा</li>
+<li> <a href="apply_macro.html" title="Apply Macro">मॅक्रो पॅलेट </a> संवादातील <span class="button">विस्तृत </span> बटण वापरणे.</li></ul>
+<dl><dd><span title="Manage Macros dialog showing Macro list (left) and command list for selected Macro (right)"><img alt="Manage Macros 3-0-0.png" src="../m/images/a/a0/manage_macros_3_0_0.png" width="831" height="331" /></span></dd></dl>
+<p><br />
+</p>
+<div class="note">मॅक्रो प्रभाव काय करतात आणि त्यांचे पॅरामीटर्स कसे सेट करायचे याच्या मदतीसाठी, <a href="effect_menu.html" title="Effect Menu">प्रभाव यादी</a> पहा.  </div>
+<p><br />
 </p>
 <div id="chains"></div>
 <div id="macros"></div>
-<h2><span class="mw-headline" id="Select_Macro"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो निवडा</font></font></span></h2>
-<p><i><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो निवडा</font></font></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आधीपासूनच परिभाषित मॅक्रोची यादी आहे. </font><font style="vertical-align: inherit;">आपण नवीन मॅक्रोचे नाव परिभाषित करू शकता आणि कोणता मॅक्रो सक्रिय आहे ते निवडू शकता. 
-</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डायलॉग मधील डाव्या बाजूच्या बॉक्समध्ये ( </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो निवडा सिलेक्ट करा</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) आधीपासूनच परिभाषित मॅक्रोची यादी आहे. </font><font style="vertical-align: inherit;">जोपर्यंत आपण नवीन मॅक्रो जोडत नाही, तोपर्यंत फक्त अंगभूत "एमपी 3 रूपांतरण" मॅक्रो आहे. </font><font style="vertical-align: inherit;">आपण हे करू शकता:
-</font></font></p>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वापरा </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नवीन</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> नवीन मॅक्रो तयार करण्यासाठी बटण</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण कार्य करू इच्छित मॅक्रो निवडण्यासाठी </font><font style="vertical-align: inherit;">डावे क्लिक </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(किंवा वर किंवा खाली कीबोर्ड बाण</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरा) वापरा</font></font></li>
-<li><font style="vertical-align: inherit;"></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काढा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटणासह </font><font style="vertical-align: inherit;">कोणताही वापरकर्ता-जोडलेला मॅक्रो हटवा</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पुनर्नामित </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">करा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटणासह </font><font style="vertical-align: inherit;">कोणत्याही वापरकर्त्याने जोडलेल्या मॅक्रोचे </font><span class="button"><font style="vertical-align: inherit;">नाव बदला</font></span></font></li></ul>
-<div class="note"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">जेव्हा ऑड्यासिटीसह शिपिंग केलेले मॅक्रो निवडले जातात तेव्हा काढा आणि पुनर्नामित करा बटणे राखाडी केली जातात.</font></font></div>
-<p><br>
+<div id="select"></div>
+<h2><span class="mw-headline" id="Select_Macro">मॅक्रो निवडा</span></h2>
+<p><i><b>मॅक्रो निवडा</b></i> मध्ये आधीच परिभाषित मॅक्रोची सूची आहे. तुम्ही नवीन मॅक्रोचे नाव परिभाषित करू शकता आणि कोणता मॅक्रो सक्रिय आहे ते निवडू शकता. 
+</p><p>संवादामधील डाव्या हाताच्या बॉक्समध्ये ( लेबल केलेले <b>मॅक्रो निवडा</b>) आधीच परिभाषित मॅक्रोची सूची आहे. तुम्ही नवीन मॅक्रो जोडेपर्यंत, त्यात फक्त अंगभूत "<b>MP3 रूपांतरण</b>" आणि "<b>फेड समाप्त</b>" मॅक्रो असतात.
+</p><p>तुम्हाला ज्या मॅक्रोवर काम करायचे आहे ते निवडण्यासाठी डावे-क्लिक वापरा  <i>(	किंवा वर किंवा खाली कीबोर्ड बाण वापरा)</i>.  
 </p>
-<ul><li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नवीन</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : यादीमध्ये नवीन मॅक्रो जोडा.</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काढा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सूचीतून निवडलेला मॅक्रो काढा.</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पुनर्नामित करा ...</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : निवडलेल्या मॅक्रोचे नाव बदला.</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आयात करा ...</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सध्या सक्रिय नाही</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">निर्यात</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सध्या सक्रिय नाही</font></font></li></ul>
-<p><br>
+<ul><li><span class="button">नवीन</span>: सूचीमध्ये नवीन मॅक्रो तयार करा आणि जोडा.</li>
+<li><span class="button">काढून टाका</span>: <i>ऑड्यासिटीचा भाग म्हणून पाठवलेले मॅक्रो</i> निवडले जातात तेव्हा सूचीमधून निवडलेला मॅक्रो काढा - ग्रे आउट करा.</li>
+<li><span class="button">पुनर्नामित करा...</span>: <i>ऑड्यासिटीचा भाग म्हणून पाठवलेले मॅक्रो</i> निवडले जातात तेव्हा निवडलेल्या मॅक्रोचे नाव बदला - ग्रे आउट करा.</li>
+<li><span class="button">पुनर्संचयित करा</span>: मॅक्रो प्रदान केलेल्या कोणत्याही ऑड्यासिटीला त्याच्या पूर्वनियोजित सेटिंग्जमध्ये रीसेट करा - <i>वापरकर्त्याने प्रदान केलेले मॅक्रो निवडल्यावर धूसर होईल .</i>.</li>
+<li><span class="button">आयात करा...</span>: तुम्हाला मॅक्रो TXT धारिका आयात करण्यास सक्षम करते.</li>
+<li><span class="button">निर्यात करा</span>: निवडलेल्या मॅक्रोला TXT धारिकेमध्ये निर्यात करते.</li></ul>
+<p><br />
 </p>
+<div id="editsteps"></div>
 <div id="chain"></div>
 <div id="macro"></div>
-<h2><span class="mw-headline" id="Macro"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो</font></font></span></h2>
-<p><i><b><font style="vertical-align: inherit;"></font></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"मॅक्रो निवडा" बॉक्समध्ये डावीकडील निवडलेल्या मॅक्रोसाठी प्रथम ते शेवटचे (शेवट) क्रमवारीत</font><i><b><font style="vertical-align: inherit;"> मॅक्रो</font></b></i><font style="vertical-align: inherit;"> आदेशांच्या क्रमवारीची यादी करते. 
-</font></font></p>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो मध्ये आपण निर्दिष्ट केलेल्या कोणत्याही क्रमाने कार्यान्वित होणारी अनेक सामान्य ऑड्यासिटी फंक्शन्स आणि प्रभाव समाविष्ट होऊ शकतात.</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो प्रक्रियेचा एक भाग म्हणून एक ध्वनी धारीका तयार करण्यासाठी आपण "निर्यात" आदेश समाविष्ट करणे आवश्यक आहे (जसे </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">की डब्ल्यूएव्ही</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> म्हणून </font><b><font style="vertical-align: inherit;">निर्यात</font></b><font style="vertical-align: inherit;"> ).  </font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बर्&zwj;याच बाबतीत मॅक्रो </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">व्यवस्थापित करा</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> संवादात </font><font style="vertical-align: inherit;">मॅक्रोमधील प्रत्येक कमांडचे मापदंड निर्दिष्ट केले जाऊ शकतात </font><font style="vertical-align: inherit;">.</font></font></li></ul>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण हे करू शकता: 
-</font></font></p>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">निवडलेल्या मॅक्रोसाठी कमांड जोडा किंवा काढून टाका</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आज्ञा मॅक्रो मध्ये ज्या क्रमाने कार्यान्वित होतात त्या क्रमाने बदला </font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोमधील काही प्रभावांसाठी पॅरामीटर्स संपादित करा  </font></font></li></ul>
-<p><br>
+<h2><span class="mw-headline" id="Edit_Steps_in_the_Macro">मॅक्रोमधील टप्पे संपादित करा</span></h2>
+<p><i><b>टप्पे संपादित करा</b></i>  डावीकडील "सिलेक्ट मॅक्रो" बॉक्समध्ये निवडलेल्या मॅक्रोसाठी प्रथम ते शेवटच्या (एंड) क्रमाने आदेशांचा क्रम सूचीबद्ध करते. 
 </p>
-<h3><span class="mw-headline" id="Command"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आज्ञा</font></font></span></h3>
-<ul><li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">घाला</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सूचीमध्ये एक नवीन कमांड घाला</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपादित करा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सध्या निवडलेल्या कमांडचे पॅरामीटर्स संपादित करा</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">हटवा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सूचीमध्ये सध्या निवडलेली कमांड हटवा</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वर जा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सूचीत सध्या निवडलेली कमांड हलवा</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">खाली हलवा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : सध्या निवडलेली कमांड खाली यादीमध्ये हलवा</font></font></li>
-<li><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पुर्वनिर्धारितः</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ऑड्यासिटीने पुरवलेले मॅक्रो जेव्हा डावीकडील "मॅक्रो निवडा निवडा" यादीमध्ये निवडले जाईल आणि मॅक्रो त्याच्या पुर्वनिर्धारित मूल्यांवर रीसेट करेल तेव्हाच हे बटण सक्रिय होते.</font></font></li></ul>
-<p><br>
+<ul><li>मॅक्रोमध्ये तुम्ही निर्दिष्ट केलेल्या कोणत्याही क्रमाने कार्यान्वित करण्यासाठी अनेक सामान्य ऑड्यासिटी कार्ये आणि प्रभाव समाविष्ट करू शकतात.</li>
+<li>मॅक्रो प्रक्रियेचा भाग म्हणून ध्वनि धारिका तयार करण्यासाठी तुम्ही "निर्यात" आज्ञा समाविष्ट करणे आवश्यक आहे (जसे की <a href="#export"><b>WAV म्हणून निर्यात करा</b></a>).  
+<ul><li>निर्यात आज्ञा तुम्ही <span class="menu">धारिका &gt; निर्यात करा &gt; निर्यात ...</span> यादी आज्ञा किंवा पूर्वनियोजित सेटींग्ज मधील तीच आज्ञा तुम्ही शेवटच्या वेळी वापरलेल्या सेटिंग्जचा वापर करेल जर तुम्ही ती आज्ञा यादीमधून कधीही वापरली नसेल.</li></ul></li>
+<li>बर्‍याच प्रकरणांमध्ये मॅक्रोमधील प्रत्येक आज्ञेसाठी पॅरामीटर्स <b>मॅक्रो व्यवस्थापित करा</b> dialog. </li></ul>
+<p>तुम्ही हे करू शकता : 
 </p>
+<ul><li>निवडलेल्या मॅक्रोसाठी आज्ञा जोडा किंवा काढा</li>
+<li>मॅक्रोमध्ये ज्या क्रमाने आज्ञा्स कार्यान्वित होतात तो क्रम बदला </li>
+<li>मॅक्रोमधील काही प्रभावांसाठी पॅरामीटर्स संपादित करा  </li></ul>
+<div id="command"></div>
+<h3><span class="mw-headline" id="Command">आज्ञा</span></h3>
+<ul><li><span class="button">घाला </span>: सूचीमध्ये नवीन आज्ञा घाला</li>
+<li><span class="button">संपादित करा</span>: सध्या निवडलेल्या आज्ञाचे पॅरामीटर्स संपादित करा</li>
+<li><span class="button">हटवा</span>: सूचीतील सध्या निवडलेली आज्ञा हटवा</li>
+<li><span class="button">वर हलवा</span>: सूचीमध्ये सध्या निवडलेली आज्ञा वर हलवा</li>
+<li><span class="button">खाली हलवा</span>: सूचीमध्ये सध्या निवडलेली आज्ञा खाली हलवा</li>
+<li><span class="button">पूर्वनियोजित</span>: हे बटण फक्त तेव्हाच सक्रिय असते जेव्हा ऑड्यासिटी पुरवलेले मॅक्रो डावीकडील "सिलेक्ट मॅक्रो" सूचीमध्ये निवडले जातात आणि मॅक्रोला त्याच्या पूर्वनियोजित मूल्यांवर रीसेट करेल.</li></ul>
 <div id="edit"></div>
-<h3><span class="mw-headline" id="Editing_an_existing_command"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">विद्यमान आदेश संपादन</font></font></span></h3>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अस्तित्वात असलेली कमांड संपादित करण्यासाठी त्यावर डबल-क्लिक करा, किंवा </font><font style="vertical-align: inherit;">निवडण्यासाठी </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वर</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">खाली</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> कीबोर्ड बाण </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">नंतर </font></font><span class="kbrd" style="background-color: #e0e0f0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्पेस</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> दाबा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">त्या आदेशासाठी पॅरामीटर समयोजन्ज संवाद प्रदर्शित केला जाईल.
-</font></font></p>
+<h3><span class="mw-headline" id="Editing_an_existing_command">विद्यमान आज्ञा संपादित करणे</span></h3>
+<p>विद्यमान आज्ञा संपादित करण्यासाठी त्यावर डबल-क्लिक करा, किंवा तो निवडण्यासाठी <b>वर </b> किंवा <b>खाली</b> कीबोर्ड बाण वापरा नंतर <span class="kbrd" style="background-color: #e0e0f0">Space</span> दाबा . त्या आदेशासाठी पॅरामीटर सेटिंग्ज संवाद प्रदर्शित केला जाईल.
+</p>
 <div id="insert"></div>
-<h3><span class="mw-headline" id="Inserting_a_new_command"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">नवीन कमांड समाविष्ट करत आहे</font></font></span></h3>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोमध्ये नवीन कमांड समाविष्ट करण्यासाठी डावी क्लिक क्लिक करा किंवा </font><font style="vertical-align: inherit;">अस्तित्वातील कमांड निवडण्यासाठी </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अप</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डाउन</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> कीबोर्ड एरो </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">; </font><font style="vertical-align: inherit;">समाविष्ट केलेली नवीन कमांड या निवडलेल्या कमांडच्या वर ठेवली जाईल. </font><font style="vertical-align: inherit;">नंतर </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">घाला</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> दाबा </font><font style="vertical-align: inherit;">. 
-</font></font></p>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"कमांड सेलेक्ट करा" डायलॉग दिसेल, ज्या सर्व कमांडस उपलब्ध आहेत. </font><font style="vertical-align: inherit;">"नॉर्मलाइज" समाविष्ट केल्यावर खालील प्रतिमेमध्ये दाखवल्याप्रमाणे यादीतील आदेश "आदेश" बॉक्समध्ये समाविष्ट करण्यासाठी सूचीमधून डबल-क्लिक करा.</font></font></li></ul>
-<dl><dd><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वैकल्पिकरित्या, </font><font style="vertical-align: inherit;">कमांड निवडण्यासाठी </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अप</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> किंवा </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">डाउन</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> कीबोर्ड एरो </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">, नंतर </font></font><span class="kbrd" style="background-color: #e0e0f0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्पेस</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> दाबा </font><font style="vertical-align: inherit;">.</font></font></dd>
-<dd><span title="'नॉर्मलाइज' निवडलेले आणि अंतर्भूत करून पुर्वनिर्धारित आदेश दर्शविणारे मॅक्रोस 'सेलेक्ट कमांड' संवाद संपादित करा"><img alt="सिलेक्ट कॉमांड.पीएनजी" src="../m/images/2/2d/selectcommand.png" width="766" height="553"></span></dd></dl>
-<p><br>
+<h3><span class="mw-headline" id="Inserting_a_new_command">नवीन आज्ञा टाकत आहे</span></h3>
+
+<p>मॅक्रोमध्‍ये नवीन आज्ञा घालण्‍यासाठी, विद्यमान आज्ञा निवडण्‍यासाठी डावे-क्लिक करा किंवा <b>वर</b> किंवा <b>खाली</b> कीबोर्ड बाण वापरा. घातली जाणारी नवीन आज्ञा या निवडलेल्या आज्ञाच्या वर ठेवली जाईल. नंतर <span class="button">Insert</span> दाबा. 
 </p>
-<div class="note"> &nbsp;
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वर्णनांसह सर्व आदेशांची पूर्ण यादी </font></font><a href="scripting_reference.html" title="स्क्रिप्टिंग संदर्भ"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">स्क्रिप्टिंग संदर्भ</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> उपलब्ध आहे </font><font style="vertical-align: inherit;">.</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">काही 'स्क्रिप्टेबल' कमांड विशेषत: मॅक्रोसाठी उपयुक्त आहेत. </font><font style="vertical-align: inherit;">तपशीलांसाठी ही पृष्ठे पहा:
-</font></font><ul><li> <a href="extra_menu_scriptables_i.html" title="अतिरिक्त मेनू: स्क्रिप्टेबल I"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अतिरिक्त मेनू:</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> स्क्रिप्टेबल </font><a href="extra_menu_scriptables_i.html" title="अतिरिक्त मेनू: स्क्रिप्टेबल I"><font style="vertical-align: inherit;">I</font></a><font style="vertical-align: inherit;"> - सर्वात सामान्यपणे उपयुक्त स्क्रिप्टेबल.</font></font></li>
-<li> <a href="extra_menu_scriptables_ii.html" title="अतिरिक्त मेनू: स्क्रिप्टेबल II"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अतिरिक्त मेनू: स्क्रिप्टेबल II</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - कमी सामान्यतः उपयुक्त स्क्रिप्टेटेबल्स, परंतु यामध्ये </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सिलेक्ट</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सेट गितपट्टा</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> देखील समाविष्ट आहे </font><font style="vertical-align: inherit;">, जे अनेक स्क्रिप्टेल्सची कार्यक्षमता एकत्रित करते.</font></font></li></ul></li></ul>
-<p>&nbsp;
-</p>
+<ul><li>"आज्ञा निवडा" संवाद दिसतो, सर्व उपलब्ध आज्ञा सूचीबद्ध करतो. "सामान्यीकरण" टाकल्यानंतर खालील चित्रात दाखवल्याप्रमाणे, "आज्ञा" बॉक्समध्ये समाविष्ट करण्यासाठी सूचीमधून आज्ञेवर डबल-क्लिक करा. </li></ul>
+<dl><dd>वैकल्पिकरित्या, आज्ञा निवडण्यासाठी  <b>वर</b> किंवा <b>खाली</b> कीबोर्ड बाण वापरा, त्यानंतर <span class="kbrd" style="background-color: #e0e0f0">Space</span> दाबा.</dd>
+<dd><span title="Edit Macros &#39;Select Command&#39; dialog"><img alt="Macros Select Command 3-0-0.png" src="../m/images/e/ed/macros_select_command_3_0_0.png" width="766" height="553" /></span></dd></dl>
+<div class="note">सर्व आदेशांची संपूर्ण यादी, वर्णनांसह, <b><a href="scripting_reference.html" title="Scripting Reference"> स्क्रिप्टिंग संदर्भ</a></b> येथे उपलब्ध आहे.
+<ul><li> काही 'स्क्रिप्टेबल' आज्ञा विशेषतः मॅक्रोसाठी उपयुक्त आहेत. तपशीलांसाठी ही पृष्ठे पहा:
+<ul><li> <a href="extra_menu_scriptables_i.html" title="Extra Menu: Scriptables I">अतिरिक्त यादी : स्क्रिप्टेबल्स I </a> - सर्वात सामान्यपणे उपयुक्त स्क्रिप्टेबल्स. </li>
+<li> <a href="extra_menu_scriptables_ii.html" title="Extra Menu: Scriptables II">अतिरिक्त यादी : स्क्रिप्टेबल्स II</a> - कमी सामान्यपणे उपयुक्त स्क्रिप्टेबल्स, परंतु <b>निवडा</b> आणि <b>गीतपट्टा सेट करा</b> देखील समावेश आहे , जे अनेक स्क्रिप्टेबल्सची कार्यक्षमता एकत्र करते.</li></ul></li></ul>
 </div>
-<p><br>
+<ul><li>आज्ञामध्ये संपादन करण्यायोग्य पॅरामीटर्स असल्यास, <span class="button">पॅरामीटर्स संपादित करा</span> बटण सक्रिय होईल. या बटणावर क्लिक केल्याने प्रभावासाठी संवाद बॉक्स समोर येईल जिथे तुम्ही स्टँडअलोन प्रभाव लागू करत असल्याप्रमाणे पॅरामीटर्स सेट करू शकता.</li>
+<li>जर तुम्ही पूर्वी एखाद्या प्रभावासाठी  <a href="manage_presets.html" title="Manage presets">वापरकर्ता प्रीसेट</a> तयार केले असतील तर तुम्ही मॅक्रोमध्ये त्या प्रभावासह वापरण्यासाठी एक निवडण्यासाठी <span class="button">प्रीसेट वापरा</span> वापरू शकता.</li>
+<li>तुम्ही प्रविष्ट केलेले पॅरामीटर्स स्वीकारण्यासाठी प्रभाव संवादामध्ये <span class="button">ठीक आहे</span> निवडा किंवा पूर्वनियोजित पॅरामीटर्सवर परत जाण्यासाठी <span class="button">रद्द करा</span> निवडा.</li>
+<li>मॅक्रोमध्ये आज्ञा जोडण्यासाठी "सिलेक्ट आज्ञा" संवादामध्ये <span class="button">ठीक आहे</span> निवडा.</li></ul>
+<p><br />
 </p>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">जर कमांडमध्ये संपादनयोग्य पॅरामीटर्स असतील तर पॅरामीटर्स </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संपादित करा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटण सक्रिय होईल. </font><font style="vertical-align: inherit;">या बटणावर क्लिक केल्याने प्रभावासाठी संवाद बॉक्स आणला जाईल जिथे आपण स्टँडअलोन प्रभाव वापरत आहात त्याप्रमाणे आपण पॅरामीटर्स सेट करू शकता.</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण यापूर्वी </font><font style="vertical-align: inherit;">एखाद्या प्रभावासाठी </font></font><a href="manage_presets.html" title="प्रीसेट सेट करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">वापरकर्ता प्रीसेट</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> तयार केले असल्यास आपण </font><font style="vertical-align: inherit;">मॅक्रोमध्ये त्या प्रभावासह वापरण्यासाठी एक </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">प्रीसेट यूज प्रीसेट</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरू शकता </font><font style="vertical-align: inherit;">.</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण प्रविष्ट केलेले पॅरामीटर्स स्वीकारण्यासाठी प्रभाव संवादात </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ठीक</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> निवडा </font><font style="vertical-align: inherit;">किंवा </font><font style="vertical-align: inherit;">पुर्वनिर्धारित पॅरामीटर्सवर परत जाण्यासाठी </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">रद्द करा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">निवडा </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओके</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> मॅक्रो आदेश जोडण्यासाठी "आदेश निवडा" संवाद मध्ये.</font></font></li></ul>
+<div id="parameters"></div>
+<h3><span class="mw-headline" id="Macro_Command_Parameters">मॅक्रो आज्ञा पॅरामीटर्स</span></h3>
+<p>प्रभाव, जनरेटर, विश्लेषक किंवा साधने कॉल करणार्‍या आज्ञा्स, सामान्य टॉप लेव्हल यादीमधून वापरल्या जातात तेव्हा तेच परिचित ग्राफिकल इंटरफेस (GUI) वापरतात.
+</p><p>इतर अनेक आज्ञा चेकबॉक्सेस आणि टेक्स्ट एंट्री बॉक्सेसचा समावेश असलेला साधा GUI प्रदान करतात. ठराविक उदाहरणे  <a href="extra_menu_scriptables_i.html" title="Extra Menu: Scriptables I"> स्क्रिप्टेबल्स I </a> आणि <a href="extra_menu_scriptables_ii.html" title="Extra Menu: Scriptables II"> स्क्रिप्टेबल्स II </a>  यादीमध्ये पाहिली जाऊ शकतात.
+</p><p>हे उदाहरण "गीतपट्टा स्थिती सेट करा" आज्ञा दाखवते.
+</p>
+<dl><dd>डावीकडील टिक बॉक्स वैशिष्ट्य वापरायचे की नाही हे ठरवतात. निवडलेले नसताना, ते वैशिष्ट्य काहीही करत नाही..</dd>
+<dd>दुसरा टिक बॉक्स वैशिष्ट्य "चालू" किंवा "बंद" वर सेट आहे की नाही हे निर्धारित करतो.</dd></dl>
+<p>हे दर्शविते :
+</p>
+<ol><li> गीतपट्ट्याचे नाव बदलले जाणार नाही</li>
+<li> गीतपट्टा निवडणे "निवडलेले नाही" वर सेट केले जाईल</li>
+<li> गीतपट्टा फोकस "केंद्रित" वर सेट केला जाईल</li></ol>
+<dl><dd><img alt="Set Track Status 2.png" src="../m/images/e/ef/set_track_status_2.png" width="252" height="161" /></dd></dl>
+<div id="selection"></div>
+<h3><span class="mw-headline" id="Selections_in_Macros_applied_to_Project">मॅक्रोमधील निवडी प्रकल्पावर लागू केल्या</span></h3>
+<p>मॅक्रो चालवण्यापूर्वी तुम्ही तुमच्या प्रकल्पामध्ये केलेल्या आधीपासून अस्तित्वात असलेल्या निवडींवर मॅक्रो कार्य करेल. परंतु ध्वनिमधील निवडींवर परिणाम करण्यासाठी मॅक्रो आज्ञा्स उपलब्ध असल्यामुळे तुमच्या मॅक्रोद्वारे निवड ओव्हर-राइड केली जाऊ शकते.  
+</p>
+<ul><li> विशेषतः <b>सर्व (सर्व निवडा)</b>  संपूर्ण प्रकल्प निवडतील  </li>
+<li> जे पॅरामीटराइज करण्यायोग्य आहे ते <b>निवडा </b> <i>(उदाहरणार्थ प्रदान केलेले <b>फेड समाप्त</b> मॅक्रो पहा जेथे ध्वनिचा पहिला आणि शेवटचा एक सेकंद फेडसाठी निवडला आहे)</i>.</li></ul>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
 </td>
-<td align="left" valign="top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो चालविण्यापूर्वी आपण आपल्या प्रकल्पात घेतलेल्या पूर्व-विद्यमान निवडींवर कार्य करेल. </font><font style="vertical-align: inherit;">परंतु ध्वनीमधील निवडीवर परिणाम करण्यासाठी मॅक्रो आदेश उपलब्ध असल्याने आपल्या मॅक्रोद्वारे ही निवड ओव्हरड्राईड होऊ शकते. </font><font style="vertical-align: inherit;">विशेषतः </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सर्व (सर्व निवडा)</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> संपूर्ण प्रोजेक्ट निवडेल आणि </font><font style="vertical-align: inherit;">पॅरामीटरायझबल </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">सिलेक्ट</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> करेल </font></font><i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font><font style="vertical-align: inherit;">उदाहरणार्थ </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फेड एन्ड्स</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> मॅक्रो पहा उदाहरणार्थ ध्वनीचा पहिला आणि शेवटचा एक सेकंद फेडसाठी निवडलेला आहे)</font></font></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .
-</font></font><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपण सर्व गितपट्टा निवडू इच्छित असल्यास आणि आपली वर्तमान वेळची निवड राखत असल्यास, " </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">निवडा: प्रथम = 0 शेवटचे = 100</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> " </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">ते नसलेल्या गितपट्टावर त्याच्या लघुप्रतिमांना बडबड करण्यात वेळ घालवणार नाही.</font></font></li></ul>
-</td></tr></tbody></table>
+<td align="left" valign="top">तुमची वर्तमान वेळ निवड कायम ठेवून तुम्हाला सर्व गीतपट्टा निवडायचा असल्यास, "<b>Select: First=0 Last=100</b>" वापरा.   तिथे नसलेल्या गीतपट्ट्यावर अंगठे फिरवण्यात वेळ वाया जाणार नाही.
+</td></tr></table>
 </div>
-<h3><span class="mw-headline" id="Export_commands"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कमांड निर्यात करा</font></font></span></h3>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: उपलब्ध चार मूलभूत निर्यात आदेश आहेत </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WAV म्हणून निर्यात</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">निर्यात MP3 म्हणून</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FLAC म्हणून निर्यात</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ogg म्हणून निर्यात</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .
-</font></font><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> चार निर्यात आदेशांपैकी कोणत्याही एकने तयार केलेल्या धारीकाचे नाव तारीख आणि वेळ असते.</font></font></li></ul></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">यापूर्वी </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एमपी 56 56 के म्हणून निर्यात करा</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> आणि </font><font style="vertical-align: inherit;">आदेशानुसार </font></font><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एमपी 56 56 के म्हणून निर्यात</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्रमशः "आधी" आणि "नंतर" </font></font><i><b><a href="glossary.html#mp3" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">एमपी 3</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> फाइल्स </font><font style="vertical-align: inherit;">  मॅक्रो प्रक्रियेच्या कोणत्याही क्षणी </font><font style="vertical-align: inherit;">kbps kbps केबीपीएस </font></font><i><b><a href="glossary.html#bit_rate" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बिट दरावर</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> निर्यात करण्यासाठी वापरली जाऊ शकते </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">हे आपल्याला एक किंवा अधिक प्रभावांच्या परिणामाची तुलना करण्यास किंवा विशिष्ट प्रभावासह आणि त्याविना भिन्न कारणांसाठी धारीका प्रदान करण्यास अनुमती देते. 
-</font></font><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"एमपी 3 56 के रूपात एक्सपोर्ट करण्यापूर्वी" कमांडद्वारे एक्सपोर्ट केलेले एमपी 3 चे नाव "मास्टरबॉवर_" नंतर उपसर्ग आणि दिनांक आणि वेळ आहे. </font><font style="vertical-align: inherit;">"एमपी 3 56 नंतर निर्यात करा" कमांडद्वारे निर्यात केलेल्या एमपी 3 चे नाव "मास्टरएफ्टर_" नंतर उपसर्ग आणि तारीख आणि वेळ आहे.      </font></font></li></ul></li></ul>
+<h3><span class="mw-headline" id="Selections_in_Macros_applied_to_Files">मॅक्रोमधील निवडी धारिकांवर लागू केल्या</span></h3>
+<p>फायलींवर मॅक्रो लागू करताना कोणतीही पूर्व-अस्तित्वात असलेली निवड नसते त्यामुळे तुमच्या मॅक्रोवर कार्य करण्यासाठी ध्वनि निवडणे आवश्यक असल्यास तुम्हाला मॅक्रोमध्ये निवड तयार करावी लागेल (आणि बहुतेक मॅक्रो करतात).
+</p><p><br />
+</p>
+<div id="export"></div>
+<h3><span class="mw-headline" id="Commands_for_Exporting_audio_files">ध्वनि धारिका निर्यात करण्यासाठी आदेश</span></h3>
+<ul><li> चार मूलभूत निर्यात आदेश उपलब्ध आहेत : <b>WAV म्हणून निर्यात करा</b>, <b>MP3 म्हणून निर्यात करा</b>, <b>FLAC म्हणून निर्यात करा</b> आणि <b>Ogg म्हणून निर्यात करा</b>.
+<ul><li>निर्यात केलेल्या धारिकांचे नाव आणि स्थान याच्या तपशीलांसाठी <a href="apply_macro.html#apply" title="Apply Macro">मॅक्रो लागू करा</a> पहा.</li></ul></li></ul>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="चेतावणी चिन्ह"><img alt="चेतावणी चिन्ह" src="../m/images/b/ba/warningicon.png" width="24" height="24"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Warningicon.png" class="image" title="Warning icon"><img alt="Warning icon" src="../m/images/b/ba/warningicon.png" width="24" height="24" /></a>
 </td>
-<td align="left" valign="top"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"मॅक्रो व्यवस्थापित करा" मध्ये निर्यात स्वरूपनासाठी मापदंड सेट केले जाऊ शकत नाहीत. </font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोसाठी निर्यात पॅरामीटर्स कॉन्फिगर करण्यासाठी, </font></font><span class="menuadvice"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">फाइल&gt; निर्यात&gt; </font></font><a href="file_menu_export.html#exportaudio" title="फाइल मेनू: निर्यात करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनी</font></font></a></span><font style="vertical-align: inherit;"><span class="menuadvice"><font style="vertical-align: inherit;"> निर्यात </font></span><span class="menuadvice"><a href="file_menu_export.html#exportaudio" title="फाइल मेनू: निर्यात करा"><font style="vertical-align: inherit;">करा ...</font></a></span><font style="vertical-align: inherit;"> क्लिक </font></font><a href="file_export_dialog.html" title="फाइल निर्यात संवाद"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">करा ध्वनी संवाद निर्यात करा</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रवेश करण्यासाठी </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">पर्याय</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> क्लिक करा </font><font style="vertical-align: inherit;">, मापदंड सेट </font><font style="vertical-align: inherit;">करा </font><font style="vertical-align: inherit;">, </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ओके</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> दाबा </font><font style="vertical-align: inherit;">नंतर </font><font style="vertical-align: inherit;">निर्यात </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">रद्द करा</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">एक </font></font><a href="audio_tracks.html" title="ध्वनी गितपट्टा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ध्वनी गितपट्टा</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> निर्यात ध्वनी संवाद उघडा करण्यासाठी स्क्रीन वर असणे आवश्यक आहे.
-</font></font></td></tr></tbody></table></div>
-<div id="error"></div>
-<div class="note"><span style="font-weight: bold; font-size:118%"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">बॅच आदेश त्रुटी ओळखली नाही:</font></font></span>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मागील ऑड्यासिटी आवृत्तीमधून अद्ययावत करताना ही त्रुटी कधीकधी मॅक्रोमधील एक किंवा अधिक आदेशांसाठी येऊ शकते. </font><font style="vertical-align: inherit;">जर मॅक्रो सामायिक करणार्&zwj;या वापरकर्त्यांकडे भिन्न ऑड्यासिटी आवृत्त्या किंवा मॅक्रोमध्ये प्लगइनची भिन्न आवृत्ती वापरली असेल तर देखील त्रुटी येऊ शकते. </font><font style="vertical-align: inherit;">त्रुटी उद्भवल्यास:
-</font></font></p>
-<ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> मॅक्रो मधील कोणतीही कमांड वापरात असलेल्या ऑड्यासिटीच्या आवृत्तीद्वारे ओळखल्या गेलेल्यापेक्षा भिन्न मजकूर स्वरूप वापरते </font></font></li>
-<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> मॅक्रोमध्ये सूचीबद्ध केलेले कोणतेही प्लगइन चुकीच्या ठिकाणी गहाळ आहेत किंवा ऑड्यासिटीच्या आवृत्तीसह विसंगत आहेत. </font></font></li></ul><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-या त्रुटींचे निराकरण करण्यासाठी, आपल्याकडे सर्व आवश्यक प्लगइनची सुसंगत आवृत्त्या आहेत आणि ते प्लग-इन </font></font><a href="faq_installation_and_plug_ins.html#plug-ins" title="FAQ: स्थापना आणि प्लग-इन"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">योग्यरित्या स्थापित केले असल्याचे सुनिश्चित करा</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">आवश्यक असल्यास, अपयशी ठरलेली कमांड हटविण्यासाठी "मॅक्रो व्यवस्थापित करा" संवाद वापरा नंतर "सिलेक्ट कमांड" संवादातून समान प्रभावासाठी एक रिप्लेसमेंट कमांड घाला.</font></font></div>
-<p><br>
+<td align="left" valign="top"><b>"मॅक्रो व्यवस्थापित करा" मध्ये निर्यात स्वरूपासाठी मापदंड सेट केले जाऊ शकत नाहीत.</b> मॅक्रोसाठी निर्यात पॅरामीटर्स कॉन्फिगर करण्यासाठी, <a href="file_export_dialog.html" title="File Export Dialog">ध्वनि निर्यात संवादात</a> प्रवेश मिळवण्यासाठी <span class="menuadvice">धारिका &gt; निर्यात करा &gt; <a href="file_menu_export.html#exportaudio" title="File Menu: Export">ध्वनि निर्यात करा...</a></span> क्लिक करा,  <span class="button">पर्याय</span> क्लिक करा , पॅरामीटर्स सेट करा, <span class="button">ठीक आहे</span> दाबा नंतर निर्यात <span class="button">रद्द करा</span>. ध्वनि निर्यात संवाद उघडण्यासाठी <a href="audio_tracks.html" title="Audio Tracks">ध्वनि गीतपट्टा</a> स्क्रीनवर असणे आवश्यक आहे.
+</td></tr></table></div>
+<h3><span class="mw-headline" id="Special_Export_command">विशेष निर्यात आदेश</span></h3>
+<ul><li><a href="extra_menu_scriptables_ii.html#export2" title="Extra Menu: Scriptables II"><b>निर्यात२</b></a>:  एक विशेष निर्यात आज्ञा <a href="extra_menu_scriptables_ii.html#export2" title="Extra Menu: Scriptables II"><b>निर्यात२</b></a> देखील आहेजी तुम्हाला विशिष्ट लक्ष्य धारिका  आणि स्वरूपामध्ये निर्यात करण्यास सक्षम करते. <b>निर्यात२</b> वापरताना तुम्हाला  <i><b>संपूर्ण</b></i> धारिकेचे नाव द्यावे लागेल(पथ आणि धारिकानाव विस्तारासह).<p>निर्यात2 पॅरामीटर्समध्ये एकदा सेट केल्यावर मॅक्रो चालवताना फाईलचे नाव डायनॅमिकली बदलता येणार नाही याची काळजीपूर्वक नोंद घ्या, त्यामुळे तुम्ही निर्यात२ मध्ये अनेक मॅक्रो तयार करू शकता ज्यात प्रत्येक धारिकेची विविध स्थाने, नावे आणि धारिका प्रकार लक्ष्यित करा.</p></li></ul>
+<div class="example">
+<p><span style="font-weight: bold; font-size:118%">उदाहरण :</span>  
+</p><p><b>"C:\\Users\\&lt;username&gt;\\Desktop\\my file.flac"</b> <i>(हे कार्य करते)</i>
+</p><p>Not: C:\\Users\\&lt;username&gt;\\Desktop\\my file.flac <i>(धारिकेचे नाव उद्धृत केलेले नाही)</i>
+</p><p>Not: "my file.flac" <i>(कोणताही मार्ग दिलेला नाही)</i>
+</p><p>Not: "C:\\Users\\&lt;username&gt;\\Desktop\\myfile" <i>(कोणताही धारिका विस्तार नाही)</i>
+</p><p>एकदा मॅक्रो सेट अप किंवा एडिट करताना निर्यात२ आज्ञा संपादित केल्यावर धारिका पाथिंगच्या आसपासचे कोट मार्क्स ऑड्यासिटीद्वारे पुरवले जातात.
+</p><p>आज्ञासाठी संपादन पॅरामीटर्स संवादामध्ये पाथिंग माहिती भरताना तुम्ही कोट मार्क्स ठेवू नका उदाहरणार्थ :  
+<b>C:\\Users\\&lt;username&gt;\\Desktop\\my file.flac</b>
 </p>
+</div>
+<div id="deprecated"></div>
+<h3><span class="mw-headline" id="Deprecated_Export_commands">बहिष्कृत निर्यात आदेश</span></h3>
+<p>खालील दोन आज्ञा्स आता नापसंत केल्या आहेत आणि ऑड्यासिटीच्या भविष्यातील आवृत्त्यांमध्ये चांगल्या प्रकारे काढल्या जाऊ शकतात. ते "<b>क्लीनस्पीच</b>" चा भाग होते <i>(ज्याला ऑड्यासिटी मधून फार पूर्वीपासून काढून टाकण्यात आले आहे)</i>.
+</p>
+<ul><li>  <b>MP3 56k म्हणून आधी निर्यात करा</b> आणि <b>MP3 56k म्हणून नंतर निर्यात करा</b> मॅक्रो प्रक्रियेच्या कोणत्याही टप्प्यावर <i><b><a href="glossary.html#mp3" title="Glossary">MP3</a></b></i> धारिका 56 kbps  <i><b><a href="glossary.html#bit_rate" title="Glossary">बिट दराने</a></b></i>  "आधी" आणि "नंतर" निर्यात करण्यासाठी अनुक्रमे वापरले जाऊ शकतात . हे आपल्याला एक किंवा अधिक प्रभावांच्या परिणामाची तुलना करण्यास किंवा विशिष्ट प्रभावासह आणि त्याशिवाय भिन्न हेतूंसाठी फायली प्रदान करण्यास अनुमती देते. 
+<ul><li> "MP3 56k म्हणून आधी निर्यात करा" आज्ञाद्वारे निर्यात केलेल्या MP3 चे नाव "MasterBefore_" नंतर तारीख आणि वेळ लावले जाते. "MP3 56k म्हणून नंतर निर्यात करा" आज्ञाद्वारे निर्यात केलेल्या MP3 चे नाव "MasterAfter_" नंतर तारीख आणि वेळ लावले जाते. </li></ul></li></ul>
+<div id="comments"></div>
+<h3><span class="mw-headline" id="Comments_in_Macros">मॅक्रोमध्ये टिप्पण्या</span></h3>
+<p>मॅक्रोमध्ये काय घडत आहे ते दस्तऐवजीकरण करण्यास सक्षम करण्यासाठी मॅक्रोमध्ये टिप्पण्या जोडल्या जातील.
+</p><p>तुमच्या टिप्पणीचा मजकूर टाइप करण्यासाठी त्याचे पॅरामीटर्स सेट आणि संपादित करण्यासाठी मॅक्रो आज्ञामधील "<b>टिप्पणी</b>" आज्ञा वापरा.
+</p>
+<dl><dd><span title="Adding a comment to a Macro"><img alt="Macros comments.png" src="../m/images/c/ce/macros_comments.png" width="679" height="387" /></span></dd></dl>
+<p><br />
+</p>
+<div id="buttons"></div>
+<h2><span class="mw-headline" id="The_buttons">बटणे</span></h2>
 <div id="shrink"></div>
-<h2><span class="mw-headline" id="Shrink_-_reduced_Macros_Palette_dialog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकुचित करा - कमी केलेले मॅक्रो पॅलेट संवाद</font></font></span></h2>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">विद्यमान मॅक्रोसच्या सोप्या सूचीसह </font><font style="vertical-align: inherit;">कमी केलेले </font><a href="apply_macro.html" title="मॅक्रो लागू करा"><font style="vertical-align: inherit;">मॅक्रोज पॅलेट</font></a><font style="vertical-align: inherit;"> संवाद </font><font style="vertical-align: inherit;">दर्शविण्यासाठी </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संकोलित</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटण </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">, जे आपल्याला मॅक्रो लागू करण्यास सक्षम करते परंतु ते संपादित करू शकत नाहीत. 
-</font></font><a href="apply_macro.html" title="मॅक्रो लागू करा"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ही छोटी आवृत्ती प्रीसेटसाठी उपयुक्त आहे. </font><font style="vertical-align: inherit;">मॅक्रो लावल्यानंतर ते खुले राहते, जेणेकरून हे सानुकूल फंक्शन्सचे एक पॅलेट आहे आणि आपण दुसरे निवडू शकता आणि ते लागू करू शकता. 
-</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">या कमी झालेल्या संवादावर </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">विस्तार</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> बटण </font><font style="vertical-align: inherit;">वापरणे </font><font style="vertical-align: inherit;">आपल्याला पूर्ण </font></font><a href="#manage"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो व्यवस्थापित करा संवादाकडे</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> परत करेल </font><font style="vertical-align: inherit;">.
-</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">अधिक तपशीलांसाठी </font></font><a href="apply_macro.html" title="मॅक्रो लागू करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो पॅलेट</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पृष्ठ पहा.
-</font></font></p><p><br>
+<h3><span class="mw-headline" id="Shrink_-_reduced_Macros_Palette_dialog">संकुचित करा - कमी केलेला मॅक्रो पॅलेट संवाद</span></h3>
+<p>विद्यमान मॅक्रोच्या साध्या सूचीसह कमी केलेले <a href="apply_macro.html" title="Apply Macro">मॅक्रो पॅलेट</a> संवाद दाखवण्यासाठी <span class="button">संकुचित करा</span>   बटण वापरा , तुम्हाला मॅक्रो लागू करण्यास सक्षम करते परंतु ते संपादित करू शकत नाही. 
+</p><p>ही छोटी आवृत्ती प्रीसेटसाठी उपयुक्त आहे. मॅक्रो लागू केल्यानंतर ते उघडे राहते, म्हणून ते सानुकूल फंक्शन्सचे पॅलेट आहे आणि तुम्ही दुसरे निवडू शकता आणि ते लागू करू शकता. 
+</p><p>या कमी केलेल्या संवादावरील <span class="button">विस्तृत</span> बटण वापरल्याने तुम्हाला संपूर्ण <a href="#manage">मॅक्रो व्यवस्थापित करा</a> संवादावर परत येईल.
+</p><p>अधिक तपशीलांसाठी <a href="apply_macro.html" title="Apply Macro"> मॅक्रो पॅलेट </a> पृष्ठ पहा.
 </p>
 <div id="apply"></div>
-<h2><span class="mw-headline" id="Apply_Macro_to"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">यावर मॅक्रो लागू करा</font></font></span></h2>
-<p><b><font style="vertical-align: inherit;"></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">आपल्या सध्याच्या ओपन प्रोजेक्टवर किंवा निवडलेल्या बाह्य धारीकांच्या संचावर मॅक्रो ऑपरेट करण्यासाठी आपल्याला सक्षम करण्यासाठी </font><b><font style="vertical-align: inherit;">मॅक्रो लागू करा</font></b><font style="vertical-align: inherit;"> .
-</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ही दोन बटणे कशी चालतात यावरील तपशीलांसाठी </font></font><b><a href="apply_macro.html#apply" title="मॅक्रो लागू करा"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो पॅलेट</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> पहा </font><font style="vertical-align: inherit;">.
-</font></font></p><p><br>
+<h3><span class="mw-headline" id="Apply_Macro_to">यावर मॅक्रो लागू करा</span></h3>
+<p><b>यावर मॅक्रो लागू करा</b> जे तुम्हाला तुमच्या सध्याच्या उघडलेल्या <span class="button">प्रकल्पावर</span> किंवा निवडलेल्या बाह्य <span class="button">धारिकांच्या</span> सेटवर मॅक्रो ऑपरेट करण्यास सक्षम करते.
 </p>
-<h2><span class="mw-headline" id="Cancel_to_exit_the_dialog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संवादातून बाहेर पडण्यासाठी रद्द करा</font></font></span></h2>
-<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संवाद स्क्रीनवर खुले राहील, परंतु आपल्याला इतर ऑडेसिटी फंक्शन्स करण्याची परवानगी दिली जाईल.
-</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">संवाद डिसमिस करण्यासाठी फक्त </font></font><span class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">कॅन्सल</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वर क्लिक </font><font style="vertical-align: inherit;">करा
-</font></font></p><p><br>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">एका वेळी <b>५००</b> पेक्षा जास्त धारिकांवर प्रक्रिया न करण्याची शिफारस केली जाते.
+</td></tr></table>
+</div>
+<p>ही दोन बटणे कशी कार्य करतात याच्या तपशीलासाठी <b><a href="apply_macro.html#apply" title="Apply Macro"> मॅक्रो पॅलेट </a></b> पहा .
 </p>
-<div id="share"></div>
-<h2><span class="mw-headline" id="Sharing_a_Macro"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो सामायिकरण</font></font></span></h2>
-<p><font style="vertical-align: inherit;"><a href="preferences.html#stored" title="प्राधान्ये"><font style="vertical-align: inherit;">अनुप्रयोग डेटासाठी</font></a><font style="vertical-align: inherit;"> ऑड्यासिटीच्या फोल्डरमध्ये "मॅक्रो" फोल्डरमध्ये </font><font style="vertical-align: inherit;">टीएक्सटी </font></font><i><b><a href="glossary.html#extension" title="शब्दकोष"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">विस्तारासह</font></font></a></b></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> प्रत्येक मॅक्रो स्वतंत्रपणे मजकूर फाइल म्हणून जतन केला जातो </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">हे आपल्याला मॅक्रो कॉपी करण्याची आणि दुसर्&zwj;या वापरकर्त्यास पाठविण्याची किंवा दुसर्&zwj;या वापरकर्त्याची मॅक्रो या फोल्डरमध्ये कॉपी करण्याची अनुमती देते जेणेकरून आपल्या स्वतःच्या मॅक्रोच्या सूचीमध्ये जोडा. </font><font style="vertical-align: inherit;">पुढच्या वेळी आपण ऑड्यासिटीमध्ये "मॅक्रो व्यवस्थापित करा" उघडल्यावर मॅक्रोची एक अद्यतनित सूची उपलब्ध होईल.
-</font></font><a href="preferences.html#stored" title="प्राधान्ये"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p><p><br>
+<div id="cancel"></div>
+<h3><span class="mw-headline" id="Cancel_to_exit_the_dialog">संवादातून बाहेर पडण्यासाठी रद्द करा</span></h3>
+<p>संवाद स्क्रीनवर खुला राहील, परंतु तुम्हाला इतर ऑड्यासिटी कार्ये करण्यास अनुमती देईल.
+</p><p>संवाद रद्द करण्यासाठी फक्त <span class="button">रद्द करा</span> बटणावर क्लिक करा
+</p><p><br />
 </p>
 <div id="examples"></div>
-<h2><span class="mw-headline" id="Macros_Examples"><a href="macros_examples.html" title="मॅक्रोस उदाहरणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रोस उदाहरणे</font></font></a></span></h2>
-<p><font style="vertical-align: inherit;"></font><a href="macros_examples.html" title="मॅक्रोस उदाहरणे"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">मॅक्रो</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> वापरण्याच्या उदाहरणांसाठी </font><a href="macros_examples.html" title="मॅक्रोस उदाहरणे"><font style="vertical-align: inherit;">मॅक्रोची उदाहरणे</font></a><font style="vertical-align: inherit;"> पृष्ठ </font><font style="vertical-align: inherit;">पहा </font><font style="vertical-align: inherit;">.
-</font></font></p><p><br>
-<a href="macros.html" title="मॅक्रो"><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp; परत: मॅक्रो</font></font></a>
+<h2><span class="mw-headline" id="Macros_Examples"><a href="macros_examples.html" title="Macros Examples">मॅक्रो उदाहरणे</a></span></h2>
+<p>मॅक्रो वापरण्याच्या उदाहरणांसाठी <a href="macros_examples.html" title="Macros Examples">मॅक्रो उदाहरण </a> पृष्ठ पहा.
+</p><p><br />
 </p>
-<!-- 
-NewPP limit report
-Cached time: 20180917112319
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.140 seconds
-Real time usage: 0.146 seconds
-Preprocessor visited node count: 552/1000000
-Preprocessor generated node count: 1953/1000000
-Post‐expand include size: 10049/2097152 bytes
-Template argument size: 5879/2097152 bytes
-Highest expansion depth: 12/40
-Expensive parser function count: 11/100
--->
+<div id="error"></div>
+<h2><span class="mw-headline" id="Error:_Batch_command_not_recognized">त्रुटी: बॅच आज्ञा ओळखली नाही</span></h2>
+<div class="note">मागील ऑड्यासिटी आवृत्तीवरून अद्यतनित करताना मॅक्रोमधील एक किंवा अधिक आज्ञासाठी ही त्रुटी कधीकधी उद्भवू शकते. मॅक्रो शेअर करणार्‍या वापरकर्त्यांकडे वेगळ्या ऑड्यासिटी आवृत्त्या किंवा मॅक्रोमध्ये वापरलेल्या प्लग-इनच्या भिन्न आवृत्त्या असल्यास देखील त्रुटी येऊ शकते. त्रुटी उद्भवेल जर:
+<ul><li> मॅक्रोमधील कोणतीही आज्ञा ऑड्यासिटीच्या वापरात असलेल्या आवृत्तीद्वारे ओळखल्या गेलेल्या मजकूर स्वरूपापेक्षा भिन्न मजकूर वापरते </li>
+<li> मॅक्रोमध्ये सूचीबद्ध केलेले कोणतेही प्लग-इन गहाळ आहेत, चुकीच्या ठिकाणी आहेत किंवा वापरात असलेल्या ऑड्यासिटीच्या आवृत्तीशी विसंगत आहेत. </li></ul>
+या त्रुटींचे निराकरण करण्यासाठी, तुमच्याकडे सर्व आवश्यक प्लग-इन्सच्या सुसंगत आवृत्त्या आहेत आणि प्लग-इन <a href="faq_installation_and_plug_ins.html#plug-ins" title="FAQ:Installation and Plug-Ins"> योग्यरित्या स्थापित केले आहेत</a> याची खात्री करा . आवश्यक असल्यास, अयशस्वी झालेली आज्ञा हटविण्यासाठी "मॅक्रो व्यवस्थापित करा" संवाद वापरा आणि "निवडा आज्ञा" संवादातून समान प्रभावासाठी बदली आज्ञा घाला.</div>
+<p><br />
+</p><p><a href="apply_macro.html" title="Apply Macro"><b>&lt;</b> मॅक्रो लागू करा</a>
+</p><p><a href="macros.html" title="Macros"><b>|&lt;</b> कडे परत: मॅक्रो</a>
+</p>
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   50.646      1 - -total
- 34.68%   17.565      1 - Template:I18n
- 31.77%   16.090      1 - Template:I18n_box
- 25.26%   12.794      1 - Template:I18n_list
- 23.15%   11.723     27 - Template:Button
-  8.42%    4.266      2 - Template:Advice
-  7.40%    3.748      1 - Template:I18n_link
-  6.10%    3.088      4 - Template:Note
-  5.48%    2.774      1 - Template:Intro
-  5.19%    2.628      1 - Template:Ednote
--->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:2557-0!*!0!!*!5!* and timestamp 20180917112319 and revision id 62073
- -->
+
+
+
 </div>
-										<!-- end content -->
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -224,37 +273,39 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक </h3>
+		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
-</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
-</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
 <li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
@@ -263,13 +314,12 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -279,7 +329,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Manage_Macros">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

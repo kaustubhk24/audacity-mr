@@ -2,22 +2,22 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>प्ले करणे आणि ध्वनीमुद्रण -ऑड्यासिटी महितीपुस्तिका</title>
+<title>प्ले करणे आणि ध्वनीमुद्रण - ऑड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content="">
 
-<meta name="generator" content="MediaWiki 1.28.2">
-<link rel="shortcut icon" href="../favicon.ico">
-<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="ऑड्यासिटी डेव्हलपमेंट मॅन्युअल (इं)">
-<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd">
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/">
+<meta name="ResourceLoaderDynamicStyles" content=""/>
 
-<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Playing_and_Recording rootpage-Playing_and_Recording skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
@@ -25,233 +25,262 @@
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">प्ले करणे आणि ध्वनीमुद्रण</font></font></h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">प्ले करणे आणि ध्वनीमुद्रण</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ऑड्यासिटी विकास महितीपुस्तिका</font></font></div>
-					<div id="contentSub"></div> 
-										<div id="jump-to-nav" class="mw-jump">वर जा: </font></font><a href="#column-one">निर्देशक</font></font></a> , </font></font><a href="https://alphamanual.audacityteam.org/man/Playing_and_Recording#searchInput">शोध</font></font></a></div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Playing_and_Recording#searchInput">शोधा</a></div>
 
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"></li></ul>
 
-<div class="intro">ऑड्यासिटी बरीच साधने ऑफर करते जी वापरकर्त्यास सर्व किंवा ध्वनीचा भाग प्ले करण्यास अनुमती देते. </font><font style="vertical-align: inherit;">ध्वनीमुद्रणचे बरेच पर्याय देखील आहेत.</font></font></div>
-<h2><span class="mw-headline" id="Contents">सामग्री</font></font></span></h2>
-<ol><li> <a href="#control">प्लेबॅक आणि ध्वनीमुद्रणनियंत्रित करत आहे</font></font></a>
-<ul><li> <a href="#transport">परिवहन साधनपट्टी</font></font></a></li>
-<li> <a href="#shortcuts">कीबोर्ड आड़मार्ग वापरणे</font></font></a></li>
-<li> <a href="#adjust">प्लेबॅक आवाज समायोजित करीत आहे</font></font></a></li>
-<li> <a href="#warp">सामान्यपेक्षा हळू किंवा वेगवान वेगाने खेळत आहे</font></font></a></li>
-<li> <a href="#pinned">पिन केलेले डोके प्ले करणे आणि ध्वनीमुद्रण</font></font></a></li></ul></li>
-<li> <a href="#play">प्लेबॅक</font></font></a>
-<ul><li> <a href="#tqp">वेळे वापरून क्विक-प्ले करा</font></font></a></li>
-<li> <a href="#scrub">स्क्रबिंग आणि सीकिंग</font></font></a></li>
-<li> <a href="#midi">मिडी (आणि अॅलेग्रो&zwj;) प्लेबॅक</font></font></a></li></ul></li>
-<li> <a href="#record">मुद्रित करणे</font></font></a>
-<ul><li> <a href="#overdub">ओव्हरडबिंग</font></font></a></li>
-<li> <a href="#timer">टाइमर ध्वनीमुद्रण</font></font></a></li>
-<li> <a href="#sar">ध्वनी सक्रिय ध्वनीमुद्रण</font></font></a></li></ul></li></ol>
-<p><br>
+<div class="intro">ऑड्यासिटी अनेक साधने ऑफर करते जी वापरकर्त्याला आवाजाचा संपूर्ण किंवा काही भाग प्ले करण्यास अनुमती देते. अनेक ध्वनीमुद्रण पर्याय देखील आहेत. </div>
+<h2><span class="mw-headline" id="Contents">सामग्री</span></h2>
+<ol><li> <a href="#control">प्लेबॅक आणि ध्वनीमुद्रण नियंत्रित करत आहे</a>
+<ul><li> <a href="#transport">परिवहन साधनपट्टी</a></li>
+<li> <a href="#shortcuts">कीबोर्ड सोपे मार्ग वापरणे</a></li>
+<li> <a href="#adjust">प्लेबॅक आवाज समायोजित करीत आहे</a></li>
+<li> <a href="#warp">सामान्यपेक्षा हळू किंवा वेगाने प्ले करत आहे</a></li>
+<li> <a href="#pinned">पिन केलेले हेड प्ले करणे आणि ध्वनीमुद्रण</a></li></ul></li>
+<li> <a href="#play">प्लेबॅक</a>
+<ul><li> <a href="#tqp">टाइमलाइन वापरून क्विक प्ले करा</a></li>
+<li> <a href="#scrub">स्क्रबिंग आणि सीकिंग</a></li>
+<li> <a href="#midi">मिडी (आणि अॅलेग्रो) प्लेबॅक</a></li></ul></li>
+<li> <a href="#record">मुद्रित करणे</a>
+<ul><li> <a href="#overdub">ओव्हरडबिंग</a></li>
+<li> <a href="#timer">टाइमर ध्वनीमुद्रण</a></li>
+<li> <a href="#sar">ध्वनी सक्रिय ध्वनीमुद्रण</a></li></ul></li></ol>
+<p><br />
 </p>
 <div id="control"></div>
-<h2><span class="mw-headline" id="Controlling_Playback_and_Recording">प्लेबॅक आणि ध्वनीमुद्रणनियंत्रित करत आहे</font></font></span></h2>
+<h2><span class="mw-headline" id="Controlling_Playback_and_Recording">प्लेबॅक आणि ध्वनीमुद्रण नियंत्रित करत आहे</span></h2>
 <div id="transport"></div>
-<h3><span class="mw-headline" id="Transport_Toolbar">परिवहन साधनपट्टी</font></font></span></h3>
-<p>ऑड्यासिटी GenericName प्लेबॅक आणि ध्वनीमुद्रणनियंत्रित करण्यासाठी सर्वात सोपा मार्ग आहे </font></font><a href="transport_toolbar.html" title="परिवहन साधनपट्टी">वाहतूक साधनपट्टी</font></font></a> : 
-</font></font></p>
-<dl><dd><a href="toolbars_overview.html#upper_tooldock" title="ट्रान्सपोर्ट साधनपट्टी बटणे, भाष्यित - डीफॉल्ट अप्पर टॉल्डॉक लेआउटच्या संदर्भात दर्शविलेले हे साधनपट्टी पाहण्यासाठी प्रतिमेवर क्लिक करा."><img alt="ट्रान्सपोर्ट साधनपट्टी बटणे, भाष्यित - डीफॉल्ट अप्पर टॉल्डॉक लेआउटच्या संदर्भात दर्शविलेले हे साधनपट्टी पाहण्यासाठी प्रतिमेवर क्लिक करा." src="../m/images/2/2c/annotated_transport_toolbar.png" width="329" height="85"></a></dd></dl>
-<dl><dd><img alt="प्ले बटण" src="../m/images/9/90/play.png" title="प्ले बटण" width="16" height="16"><font style="vertical-align: inherit;"></font><b>प्लेवर</font></font></b> क्लिक </font><font style="vertical-align: inherit;">करणे कर्सर बिंदूपासून प्रकल्पाच्या शेवटी किंवा </font></font><a href="audacity_selection.html" title="धृष्टता निवड">निवड प्रदेशाच्या</font></font></a> प्रारंभापासून </font><font style="vertical-align: inherit;">त्या प्रदेशाच्या टोकापर्यंत </font><b><font style="vertical-align: inherit;">प्ले करते</font></b><font style="vertical-align: inherit;"> .</font></font></dd></dl>
-<dl><dd><dl><dd><img alt="लूप प्ले बटण" src="../m/images/7/7e/loop_play.png" title="लूप प्ले बटण" width="16" height="16">प्ले बटणावर </font><font style="vertical-align: inherit;">वैकल्पिक </font></font><b>लूप प्ले</font></font></b> क्रिया प्ले वर क्लिक </font><font style="vertical-align: inherit;">करताना </font></font><span class="kbrd" style="background-color: #e0e0f0">शिफ्ट दाबून</font></font></span> सक्रिय केली जाते </font><font style="vertical-align: inherit;">. </font></font><b>लूप प्ले</font></font></b> दर्शविण्यासाठी दोन परिपत्रक हिरवे बाण प्रदर्शित करण्यासाठी बटण बदलते </font><font style="vertical-align: inherit;">.</font></font></dd></dl></dd></dl>
-<dl><dd><dl><dd><img alt="प्ले कट पूर्वावलोकन बटण" src="../m/images/5/55/play_cut_preview.png" title="प्ले कट पूर्वावलोकन बटण" width="15" height="15"> <b>प्ले कट पूर्वावलोकन</font></font></b> निवड हटविण्यामुळे काय दिसेल त्याचे पूर्वावलोकन करण्यासाठी एका निवडीच्या दोन्ही बाजूंनी ध्वनी प्ले होईल. </font><font style="vertical-align: inherit;">किल्ल्यात </font></font><span class="kbrd" style="background-color: #e0e0f0">Ctrl </font></font></span> <i>( </font></font><span class="kbrd" style="background-color: #e0e0f0">⌘</font></font></span> Mac वर)</font></font></i> क्लिक करताना </font></font><b>प्ले</font></font></b> . 
-</font></font><dl><dd>वैकल्पिकरित्या आपण </font><font style="vertical-align: inherit;">कटचे पूर्वावलोकन करण्यासाठी </font></font><span class="kbrd" style="background-color: #e0e0f0">सी</font></font></span> आड़मार्ग </font><font style="vertical-align: inherit;">वापरू शकता </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">यामुळे प्ले बटण प्रतिमा प्ले कट पूर्वावलोकनात बदलते.</font></font></dd></dl></dd></dl></dd></dl>
-<div class="note">क्लिक </font></font><b>प्ले</font></font></b> गितपट्टा आधीपासून खेळत किंवा विराम दिला जातो दाबून प्रथम न रीस्टार्ट प्लेबॅक करण्यासाठी जलद मार्ग आहे </font></font><b>थांबवा</font></font></b> .</font></font></div> 
-<dl><dd><img alt="ध्वनीमुद्रणबटण" src="../m/images/e/e8/record.png" title="ध्वनीमुद्रणबटण" width="15" height="15"><font style="vertical-align: inherit;"></font><b>ध्वनीमुद्रण</font></font></b> क्लिक करणे </font><font style="vertical-align: inherit;">किंवा </font></font><span class="kbrd" style="background-color: #d0d0f8">आर</font></font></span> आड़मार्ग </font><font style="vertical-align: inherit;">वापरणे </font><font style="vertical-align: inherit;">सध्या निवडलेल्या गितपट्टा च्या शेवटी ध्वनीमुद्रणसुरू करते.</font></font></dd></dl>
-<dl><dd><dl><dd><img alt="ध्वनीमुद्रणनवीन गितपट्टा बटण" src="../m/images/7/72/record_new_track.png" title="ध्वनीमुद्रणनवीन गितपट्टा बटण" width="16" height="16">ध्वनीमुद्रणबटणावर </font><font style="vertical-align: inherit;">वैकल्पिक </font></font><b>ध्वनीमुद्रणन्यू गितपट्टा </font></font></b> क्रिया ध्वनीमुद्रणवर क्लिक </font><font style="vertical-align: inherit;">करताना </font></font><span class="kbrd" style="background-color: #e0e0f0">शिफ्ट दाबून</font></font></span> सक्रिय केली जाते </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">नवीन गितपट्टा ध्वनीमुद्रणचिन्ह प्रदर्शित करण्यासाठी बटण बदलले. </font><font style="vertical-align: inherit;">हे सध्याच्या कर्सर स्थानावर किंवा वर्तमान निवडीच्या सुरूवातीस नवीन गितपट्टा मध्ये ध्वनीमुद्रणसुरू करेल.</font></font></dd></dl></dd></dl>
-<dl><dd><img alt="विराम द्या बटण" src="../m/images/4/47/pause.png" title="विराम द्या बटण" width="16" height="16">आपले स्थान गमावल्याशिवाय प्ले करणे किंवा ध्वनीमुद्रणतात्पुरते विराम देण्यासाठी </font></font><b>विराम द्या</font></font></b> किंवा त्याचे आड़मार्ग </font></font><span class="kbrd" style="background-color: #d0d0f8">पी</font></font></span> क्लिक करा </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">पुन्हा सुरू करण्यासाठी दुसर्&zwj;या वेळी </font></font><b>विराम द्या</font></font></b> क्लिक करा </font><font style="vertical-align: inherit;">.</font></font></dd></dl> 
-<dl><dd><img alt="थांबा बटण" src="../m/images/f/f9/stop.png" title="थांबा बटण" width="16" height="16"><font style="vertical-align: inherit;"></font><b>थांबा वर</font></font></b>   क्लिक करणे </font><font style="vertical-align: inherit;">त्वरित प्ले होणे किंवा ध्वनीमुद्रणकरणे थांबवते आणि </font><font style="vertical-align: inherit;">उदासीनतेस </font></font><b>विराम देते</font></font></b> .</font></font></dd></dl>
-<p><br>
+<h3><span class="mw-headline" id="Transport_Toolbar">परिवहन साधनपट्टी</span></h3>
+<p>ऑड्यासिटी प्लेबॅक आणि ध्वनीमुद्रण नियंत्रित करण्यासाठी सर्वात सोपा मार्ग आहे <a href="transport_toolbar.html" title="Transport Toolbar">परिवहन साधनपट्टी</a>: 
+</p>
+<dl><dd><a href="toolbars_overview.html#upper_tooldock" title="Transport Toolbar buttons, annotated - click on the image to see this toolbar displayed in context of the default upper tooldock layout"><img alt="Transport Toolbar buttons, annotated - click on the image to see this toolbar displayed in context of the default upper tooldock layout" src="../m/images/2/2c/annotated_transport_toolbar.png" width="329" height="85" /></a></dd></dl>
+<dl><dd><img alt="The Play button" src="../m/images/9/90/play.png" title="The Play button" width="16" height="16" /> <b>प्ले</b> वर क्लिक केल्याने कर्सर पॉईंटपासून प्रकल्पच्या शेवटापर्यंत किंवा <a href="audacity_selection.html" title="Audacity Selection">सिलेक्शन क्षेत्राच्या</a> सुरूवातीपासून त्या प्रदेशाच्या शेवटपर्यंत प्ले होतो. </dd></dl>
+<dl><dd><dl><dd><img alt="The Loop Play button" src="../m/images/7/7e/loop_play.png" title="The Loop Play button" width="16" height="16" /> प्ले बटणासाठी पर्यायी <b> लूप प्ले</b> क्रिया प्ले वर क्लिक करताना <span class="kbrd" style="background-color: #e0e0f0">शिफ्ट</span> धरून सक्रिय केली जाते. <b>लूप प्ले</b> सूचित करण्यासाठी दोन गोलाकार हिरवे बाण प्रदर्शित करण्यासाठी बटण बदलते. </dd></dl></dd></dl>
+<dl><dd><dl><dd><img alt="The Play Cut Preview button" src="../m/images/5/55/play_cut_preview.png" title="The Play Cut Preview button" width="15" height="15" /> निवड हटवल्याने कसा आवाज येईल याचे पूर्वावलोकन करण्यासाठी <b>प्ले कट प्रीव्ह्यू</b> निवडीच्या दोन्ही बाजूला ध्वनि प्ले करेल. <b>प्ले</b> वर क्लिक करताना <span class="kbrd" style="background-color: #e0e0f0">Ctrl</span> <i>(<span class="kbrd" style="background-color: #e0e0f0">&#8984;</span> Mac वर)</i> दाबून ठेवा. 
+<dl><dd>वैकल्पिकरित्या तुम्ही कटचे पूर्वावलोकन करण्यासाठी <span class="kbrd" style="background-color: #e0e0f0">C</span> सोपा मार्ग वापरू शकता. यामुळे प्ले बटण इमेज प्ले कट प्रिव्ह्यूमध्ये बदलते.</dd></dl></dd></dl></dd></dl>
+<div class="note">जेव्हा गीतपट्टा आधीच प्ले होत असेल किंवा विराम दिला असेल तेव्हा <b>प्ले</b> वर क्लिक करणे हा प्रथम <b>स्टॉप</b> दाबल्याशिवाय प्लेबॅक पुन्हा सुरू करण्याचा एक द्रुत मार्ग आहे.</div> 
+<dl><dd><img alt="Record button" src="../m/images/e/e8/record.png" title="Record button" width="15" height="15" /> <b>ध्वनीमुद्रित</b> वर क्लिक करणे किंवा <span class="kbrd" style="background-color: #d0d0f8">R</span> सोपा मार्ग वापरणे नेहमी सध्या निवडलेल्या गीतपट्ट्याच्या शेवटी ध्वनीमुद्रण सुरू करते. </dd></dl>
+<dl><dd><dl><dd><img alt="The Record New Track button" src="../m/images/7/72/record_new_track.png" title="The Record New Track button" width="16" height="16" /> ध्वनीमुद्रित बटणासाठी पर्यायी <b>ध्वनीमुद्रित नवीन गीतपट्टा</b> क्रिया ध्वनीमुद्रित क्लिक करताना <span class="kbrd" style="background-color: #e0e0f0">शिफ्ट</span> धरून सक्रिय केली जाते. ध्वनीमुद्रित नवीन गीतपट्टा चिन्ह प्रदर्शित करण्यासाठी बटण बदलते. हे एकतर वर्तमान कर्सर स्थानावर किंवा वर्तमान निवडीच्या सुरूवातीस नवीन गीतपट्ट्यामध्ये ध्वनीमुद्रण सुरू करेल. </dd></dl></dd></dl>
+<dl><dd><img alt="The Pause button" src="../m/images/4/47/pause.png" title="The Pause button" width="16" height="16" /> तुमची जागा न गमावता प्ले किंवा ध्वनीमुद्रण तात्पुरते थांबवण्यासाठी <b>पॉज</b> किंवा त्याचा सोपा मार्ग <span class="kbrd" style="background-color: #d0d0f8">P</span> वर क्लिक करा. पुन्हा सुरू करण्यासाठी दुसऱ्यांदा <b>पॉज</b> क्लिक करा.</dd></dl>
+<dl><dd><img alt="The Stop button" src="../m/images/f/f9/stop.png" title="The Stop button" width="16" height="16" /> <b>स्टॉप</b> वर क्लिक केल्याने प्ले किंवा ध्वनीमुद्रण तात्काळ थांबते आणि उदासीन असल्यास <b>विराम</b> सोडते. </dd></dl>
+<p><br />
 </p>
 <div id="shortcuts"></div>
-<h3><span class="mw-headline" id="Using_keyboard_shortcuts">कीबोर्ड आड़मार्ग वापरणे</font></font></span></h3>
-<p>जेव्हा आपल्याला ऑड्यासिटीची अधिक सवय होते, तेव्हा खेळणे, विराम देणे आणि ध्वनीमुद्रणकरणे यासारख्या पुनरावृत्ती क्रियांसाठी कीबोर्ड आड़मार्ग वापरणे अधिक सोपे असते. </font><font style="vertical-align: inherit;">खाली ट्रान्सपोर्ट साधनपट्टी बटणांकरिता प्रत्येक कीबोर्ड आड़मार्गची एक सूची आहे ज्यात प्रत्येक बटण आणि त्याचे आड़मार्ग काय करते त्याचे वर्णन आहे.
-</font></font></p>
+<h3><span class="mw-headline" id="Using_keyboard_shortcuts">कीबोर्ड सोपा मार्ग वापरणे</span></h3>
+<p>जेव्हा आपल्याला ऑड्यासिटीची अधिक सवय होते, तेव्हा प्ले करणे, विराम देणे आणि ध्वनीमुद्रण करणे यासारख्या पुनरावृत्ती क्रियांसाठी कीबोर्ड सोपा मार्ग वापरणे अधिक सोपे असते. खाली परिवहन साधनपट्टी बटणांकरिता प्रत्येक कीबोर्ड सोपा मार्गची एक सूची आहे ज्यात प्रत्येक बटण आणि त्याचे सोपा मार्ग काय करते त्याचे वर्णन आहे.
+</p>
 <dl><dd><table class="prettytablerows" id="Transport_shortcuts">
 
-<tbody><tr>
-<th> बटण</font></font></th>
-<th> आड़मार्ग</font></font></th>
+<tr>
+<th> बटण</th>
+<th> सोपे मार्ग</th>
 <th> ते काय करते
-</font></font></th></tr>
+</th></tr>
 <tr>
-<td width="15%">विराम द्या</font></font></td>
-<td> <span class="kbrd" style="background-color: #d0d0f8">पी</font></font></span> </td>
-<td> प्लेबॅक किंवा ध्वनीमुद्रणला विराम देण्यासाठी एकदा दाबा नंतर पुन्हा सुरु करण्यासाठी एकदा.
-</font></font></td></tr>
+<td width="15%">विराम द्या</td>
+<td> <span class="kbrd" style="background-color: #d0d0f8">पी</span> </td>
+<td> प्लेबॅक किंवा ध्वनीमुद्रण थांबवण्यासाठी एकदा दाबा आणि पुन्हा सुरू करण्यासाठी एकदा दाबा.
+</td></tr>
 <tr>
-<td> प्ले करा किंवा थांबवा </font></font></td>
-<td>  <span class="kbrd" style="background-color: #d0d0f8">जागा</font></font></span> </td>
-<td>प्लेबॅक सुरू करण्यासाठी एकदा दाबा नंतर एकदा थांबण्यासाठी. </font><font style="vertical-align: inherit;">पुन्हा प्लेबॅक प्रारंभ करणे कर्सरपासून त्याच्या मूळ सुरूवातीपासून सुरू होते.
-</font></font></td></tr>
+<td> प्ले करा किंवा थांबवा </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">स्पेस</span> </td>
+<td> प्लेबॅक सुरू करण्यासाठी एकदा दाबा नंतर थांबण्यासाठी पुन्हा एकदा दाबा. पुन्हा प्लेबॅक सुरु करणे कर्सरपासून त्याच्या मूळ सुरूवातीपासून सुरू होते.
+</td></tr>
 <tr>
-<td> लूप-प्ले </font></font></td>
-<td>  <span class="kbrd" style="background-color: #d0d0f8">शिफ्ट + स्पेस</font></font></span> </td>
-<td> थांबल्याशिवाय संपूर्ण निवड वारंवार (किंवा निवड नसल्यास संपूर्ण गितपट्टा ) प्ले करा.
-</font></font></td></tr>
+<td> प्ले/स्टॉप आणि कर्सर सेट करा </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">एक्स</span> </td>
+<td> प्लेबॅक सुरू करताना हे अगदी <span class="kbrd" style="background-color: #d0d0f8">स्पेस</span> प्रमाणेच कार्य करते , परंतु जेव्हा थांबण्यासाठी वापरले जाते, तेव्हा कर्सर किंवा निवडीचा प्रारंभ प्लेबॅक थांबलेल्या स्थितीवर सेट केला जातो.
+</td></tr>
 <tr>
-<td> पुढील लेबल वर जा </font></font></td>
-<td>  <span class="kbrd" style="background-color: #d0d0f8">Alt + बरोबर</font></font></span> </td>
-<td>पुढील लेबलशी संगत करण्यासाठी संपादन कर्सर किंवा निवड ठेवते आणि संपादनासाठी लेबल न उघडता तेथून प्लेबॅक रीस्टार्ट करतो. </font><font style="vertical-align: inherit;">अंतिम लेबल गाठल्यानंतर, आड़मार्ग वापरून पुन्हा पहिल्या लेबलवर प्लेबॅक उडी मारली जाते. </font><font style="vertical-align: inherit;">ध्वनीमुद्रणकरताना उपलब्ध नाही.
-</font></font></td></tr>
+<td> निवडण्यासाठी प्ले करा </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">बी</span> </td>
+<td> पॉइंटर स्थानावर अवलंबून, सध्याच्या माऊस पॉइंटर स्थानावर किंवा निवडीच्या सुरूवातीस किंवा शेवटपर्यंत प्ले करते.
+</td></tr>
 <tr>
-<td> मागील लेबल वर जा </font></font></td>
-<td>  <span class="kbrd" style="background-color: #d0d0f8">Alt + Left</font></font></span> </td>
-<td>मागील लेबलशी जुळण्यासाठी संपादन कर्सर किंवा निवड ठेवते आणि संपादनासाठी लेबल न उघडता तेथून प्लेबॅक रीस्टार्ट करतो. </font><font style="vertical-align: inherit;">प्रथम लेबल गाठल्यानंतर, आड़मार्ग वापरून पुन्हा अंतिम लेबलवर प्लेबॅक उडी मारली जाते. </font><font style="vertical-align: inherit;">ध्वनीमुद्रणकरताना उपलब्ध नाही.
-</font></font></td></tr>
+<td> प्ले कट पूर्वावलोकन </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">सी</span> </td>
+<td> निवडीपूर्वी दोन सेकंदांचा ध्वनि आणि निवडीनंतर एक सेकंदाचा ध्वनि प्ले करतो - अशा प्रकारे निवड हटविल्यास प्लेबॅक कसा वाटेल याचे अनुकरण करते.<br /> <a href="playback_preferences.html" title="Playback Preferences"> प्लेबॅक प्राधान्यांमध्ये</a> वेळा सानुकूल करण्यायोग्य आहेत.
+</td></tr>
 <tr>
-<td> प्रारंभ करण्यासाठी वगळा </font></font></td>
-<td> <span class="kbrd" style="background-color: #d0d0f8">मुख्यपृष्ठ</font></font></span> </td>
-<td> प्रोजेक्ट सुरू करण्यासाठी कर्सर हलवा.
-</font></font></td></tr>
+<td> लूप-प्ले </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">शिफ्ट + स्पेस</span> </td>
+<td> थांबल्याशिवाय संपूर्ण निवड वारंवार (किंवा निवड नसल्यास संपूर्ण गीतपट्टा ) प्ले करा.
+</td></tr>
 <tr>
-<td> समाप्त होण्यास जा </font></font></td>
-<td>  <span class="kbrd" style="background-color: #d0d0f8">समाप्त</font></font></span> </td>
-<td> प्रोजेक्टच्या शेवटी कर्सर हलवा.
-</font></font></td></tr>
+<td> पुढील नावपट्टी वर जा </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">Alt + Right</span> </td>
+<td>पुढील नावपट्टीशी जुळण्यासाठी संपादन कर्सर किंवा निवड ठेवते आणि संपादनासाठी नावपट्टी न उघडता तेथून प्लेबॅक पुन्हा सुरू करते. अंतिम नावपट्टी गाठल्यानंतर, सोपा मार्ग वापरून पुन्हा प्लेबॅक पहिल्या नावपट्टीवर जातो. ध्वनीमुद्रण करताना उपलब्ध नाही.
+</td></tr>
 <tr>
-<td> विक्रम </font></font></td>
-<td> <span class="kbrd" style="background-color: #d0d0f8">आर</font></font></span> </td>
-<td> निवडलेल्या गितपट्टा च्या शेवटीपासून ध्वनीमुद्रणसुरू होते.
-</font></font></td></tr>
+<td> मागील नावपट्टी वर जा </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">Alt + Left</span> </td>
+<td> संपादन कर्सर किंवा निवड मागील नावपट्टीशी सुसंगत ठेवते आणि संपादनासाठी नावपट्टी न उघडता तेथून प्लेबॅक पुन्हा सुरू करते. प्रथम नावपट्टी गाठल्यानंतर, सोपा मार्ग वापरून पुन्हा प्लेबॅक अंतिम नावपट्टीवर जातो. ध्वनीमुद्रण करताना उपलब्ध नाही.
+</td></tr>
 <tr>
-<td> नवीन गितपट्टा ध्वनीमुद्रणकरा </font></font></td>
-<td> <span class="kbrd" style="background-color: #d0d0f8">शिफ्ट + आर</font></font></span> </td>
-<td> कर्सर स्थानापासून किंवा निवडीस प्रारंभ होणार्&zwj;या नवीन गितपट्टा मध्ये ध्वनीमुद्रणकरा.
-</font></font></td></tr></tbody></table></dd></dl>
-<p>एक अतिरिक्त आज्ञा आहे </font></font><span class="menu">ट्रान्सपोर्ट&gt; प्लेइंग&gt; </font></font><a href="transport_menu_playing.html#playstop_and_set_cursor" title="परिवहन मेनू: खेळत आहे">प्ले / थांबा आणि सेट कर्सर</font></font></a></span> ज्यात आड़मार्ग </font></font><span class="kbrd" style="background-color: #e0e0f0">एक्स आहे</font></font></span> . </font><font style="vertical-align: inherit;">हे नक्की काम करते </font></font><span class="kbrd" style="background-color: #d0d0f8">जागा</font></font></span> प्लेबॅक सुरू असताना, पण थांबा करण्यासाठी वापरले तेव्हा कर्सर किंवा निवड जेथे प्लेबॅक थांबला स्थान सेट आहे सुरू. </font></font><span class="kbrd" style="background-color: #e0e0f0">स्पेस</font></font></span> किंवा </font></font><span class="kbrd" style="background-color: #e0e0f0">एक्स</font></font></span> एकतर वापरणे </font><font style="vertical-align: inherit;">त्या थांबा स्थानावरून प्लेबॅक सुरू करेल. 
-</font></font></p><p><font style="vertical-align: inherit;"></font><a href="keyboard_preferences.html" title="कीबोर्ड प्राधान्ये">कीबोर्ड प्राधान्यांमध्ये</font></font></a> इच्छित असल्यास वरील सर्व आड़मार्ग बदलले जाऊ शकतात </font><font style="vertical-align: inherit;">.
-</font></font></p> 
-<div id="adjust"></div> 
-<h3><span class="mw-headline" id="Adjusting_the_Playback_volume">प्लेबॅक आवाज समायोजित करीत आहे</font></font></span></h3>
-<p>आपण </font></font><a href="mixer_toolbar.html" title="मिक्सर साधनपट्टी">मिक्सर साधनपट्टीमध्ये</font></font></a> आउटपुट पातळी घसरपट्टी वापरुन प्लेबॅक आवाज समायोजित करू शकता </font><font style="vertical-align: inherit;">.
-</font></font></p><p><font style="vertical-align: inherit;"></font><a href="meter_toolbar.html#playback" title="मीटर साधनपट्टी">प्लेबॅक मीटर</font></font></a> आपण एकत्र मिसळून, तेव्हा आपल्या गितपट्टा चे सर्व एकूण खंड दर्शवेल.
-</font></font></p>
-<div id="warp"></div> 
-<h3><span class="mw-headline" id="Playing_at_slower_or_faster_speeds_than_normal">सामान्यपेक्षा हळू किंवा वेगवान वेगाने खेळत आहे</font></font></span></h3>
-<p><font style="vertical-align: inherit;"></font><a href="play_at_speed_toolbar.html" title="प्ले-अॅट-वेग साधनपट्टी">प्ले-एट-वेग साधनपट्टीमध्ये</font></font></a> प्ले बटण वापरणे </font><font style="vertical-align: inherit;">स्थिर वेगाने प्ले होते परंतु सामान्यपेक्षा हळु किंवा वेगवान आहे. 
-</font></font></p>
-<dl><dd><span title="प्ले-अॅट-वेग साधनपट्टी"><img alt="प्ले - अ&zwj;ॅट-वेग साधनपट्टी.पीएनजी" src="../m/images/d/d1/play_at_speed_toolbar.png" width="140" height="27"></span></dd></dl>
-<p><a href="envelope_tool.html" title="लिफाफा साधन">लिफाफा साधन</font></font></a> वर </font></font><a href="tools_toolbar.html" title="साधने साधनपट्टी">साधने साधनपट्टी</font></font></a> , एक संयुक्तपणे वापरले तेव्हा </font></font><a href="time_tracks.html" title="वेळ मागोवा">वेळ गितपट्टा </font></font></a> , एक गती लिफाफा जे ध्वनी लांबी वाढ किंवा घट प्लेबॅक गती करू शकता काढलेल्या करण्यास अनुमती देते.
-</font></font></p>
-<div id="pinned"></div>
-<h3><span class="mw-headline" id="Pinned_head_playing_and_recording">पिन केलेले डोके प्ले करणे आणि ध्वनीमुद्रणकरणे</font></font></span></h3>
-<p>आपण प्ले करण्यासाठी ऑड्यासिटी बदलू शकता किंवा </font></font><a href="timeline.html" title="वेळे">वेळेवर</font></font></a> पिन केलेल्या निश्चित डोक्याने ध्वनीमुद्रणकरू शकता </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">या मोडमध्ये डोके स्थिर राहते आणि ध्वनी प्ले किंवा ध्वनीमुद्रणकेल्यामुळे वेव्हफॉर्म सतत स्क्रोल होते. </font><font style="vertical-align: inherit;">डीफॉल्ट पिन केलेली स्थिती वेळेचे मध्यभागी असते, परंतु आपण हे पिन केलेल्या डोक्यावर क्लिक करून आणि वेळेवर ड्रॅग करून आपण हे खेळत असताना किंवा ध्वनीमुद्रणकरत असताना बदलू शकता. </font><font style="vertical-align: inherit;">डोक्यावर डबल-क्लिक केल्याने ते वेळेच्या मध्यभागी त्याच्या डीफॉल्ट स्थानावर पुनर्संचयित होईल. </font><font style="vertical-align: inherit;">प्लेबॅक वापरताना मध्यभागी सर्वात उपयुक्त आहे असे आपल्याला आढळेल परंतु ध्वनीमुद्रणसाठी, डोके उजवीकडे ठेवणे उपयुक्त ठरेल.
-</font></font></p><p>टायमलाइनच्या डावीकडील बटण वापरुन ही वर्तन नियंत्रित केली जाते. </font><font style="vertical-align: inherit;">डीफॉल्टनुसार हे हिरवे डाउन-पॉइंटिंग त्रिकोण (प्लेहेड प्रमाणे) म्हणून दर्शविते. </font><font style="vertical-align: inherit;">या मोडमध्ये, प्लेहेड किंवा recordhead आडव्या करेल आणि, व्हेवफॉर्म आवश्यक तेव्हा स्क्रोल होईल तर वगळता </font></font><i><b>ध्वनीमुद्रण/ प्लेबॅक डोके पीन आहे तेव्हा अद्यतन प्रदर्शन</font></font></b></i> चेक न आहे </font></font><a href="tracks_preferences.html" title="गितपट्टा प्राधान्ये">गितपट्टा प्राधान्ये</font></font></a> नंतर स्क्रोलिंग होणार नाही. 
-</font></font></p>
-<dl><dd><span title="अनपिन केलेला ध्वनीमुद्रण/ प्लेहेड"><img alt="अनपिन केलेले हेड बटण.पीएनजी" src="../m/images/5/56/unpinned_head_button.png" width="257" height="31"></span></dd></dl>
-<p>ग्रीन त्रिकोण क्लिक केल्यामुळे बटणाचे चिन्ह ड्रॉइंग-पिनवर बदलते. </font><font style="vertical-align: inherit;">हे दर्शवते की नाटक किंवा ध्वनीमुद्रणहेड आता वेळेवर पिन केले आहे आणि प्ले करताना किंवा ध्वनीमुद्रणकरताना, वेव्हफॉर्म सतत स्क्रोल होईल.
-</font></font></p>
-<dl><dd><span title="पिन केलेला ध्वनीमुद्रण/ प्लेहेड"><img alt="पिन केलेले डोके बटण.पीएनजी" src="../m/images/f/f4/pinned_head_button.png" width="259" height="32"></span></dd></dl>
-<p>पिन केलेला प्लेबॅक किंवा ध्वनीमुद्रणनिवडल्यास, प्लेहेड हिरवा ड्रॉईंग-पिन म्हणून दर्शविला जातो (खाली दिलेल्या प्रतिमेमध्ये दाखवल्याप्रमाणे) आणि ध्वनीमुद्रणहेड लाल रेखांकन-पिन म्हणून प्रदर्शित होतो.   
-</font></font></p>
-<dl><dd><span title="पिन केलेला डोके प्लेबॅक"><img alt="पिन केलेला हेड प्लेबॅक एनोटेटेड गितपट्टा नाव.पीएनजी" src="../m/images/5/50/pinned_head_playback_annotated_trackname.png" width="768" height="199"></span></dd></dl>
-<p>वेळेच्या डावीकडील ड्रॉइंग-पिन क्लिक करणे डिफॉल्ट अनपिन प्लेबॅक आणि ध्वनीमुद्रणकडे परत जाते आणि बटण हिरव्या त्रिकोणाकडे परत जाईल.
-</font></font></p><p>पिन नसलेले किंवा पिन केलेले डोके देखील </font></font><a href="tracks_preferences.html" title="गितपट्टा प्राधान्ये">गितपट्टा प्राधान्यांमध्ये</font></font></a> निवडले जाऊ शकते </font><font style="vertical-align: inherit;">.
-</font></font></p>
-<div id="play"></div>
-<h2><span class="mw-headline" id="Playback"><a href="playback.html" title="प्लेबॅक">प्लेबॅक</font></font></a></span></h2>
-<div class="note">कीबोर्ड आड़मार्ग आज्ञा्स आणि लहान विभागांचे पूर्वावलोकन कसे करावे यासह प्लेबॅक कसे वापरावे याच्या सविस्तर माहितीसाठी कृपया </font></font><b><a href="playback.html" title="प्लेबॅक">प्लेबॅक</font></font></a></b> पृष्ठ पहा.
-</font></font></div>  
-<div id="tqp"></div>
-<h3><span class="mw-headline" id="Quick-Play_using_the_Timeline"><a href="timeline.html#tqp" title="वेळे">वेळे वापरून क्विक-प्ले करा</font></font></a></span></h3>
-<p><a href="timeline.html" title="वेळे">वेळे</font></font></a> क्विक-प्ले एकतर सध्याच्या प्रकल्पातील कोणत्याही बिंदूपासून प्लेबॅक प्रारंभ करण्यासाठी किंवा ध्वनीच्या प्रदेशात प्लेबॅक करण्यासाठी एक जलद आणि सोयीस्कर साधन प्रदान करते. 
-</font></font></p><p>तपशीलांसाठी </font><font style="vertical-align: inherit;">वेळे पृष्ठावरील </font></font><a href="timeline.html#tqp" title="वेळे">क्विक-प्ले</font></font></a> विभाग पहा.
-</font></font></p>
-<div id="scrub"></div>
-<h3><span class="mw-headline" id="Scrubbing_and_Seeking"><a href="scrubbing_and_seeking.html" title="स्क्रबिंग आणि सीकिंग">स्क्रबिंग आणि सीकिंग</font></font></a></span></h3>
-<p>स्क्रबिंग किंवा सीकिंग हे माउस पॉईंटरला उजवीकडे किंवा डावीकडे हलविण्यासारखे क्रिया आहे जेणेकरून प्लेबॅकची स्थिती, वेग किंवा दिशा समायोजित करण्यासाठी - एखाद्या विशिष्ट आवडीची आवड शोधण्यासाठी वेव्हफॉर्मवर द्रुत नेव्हिगेट करण्याचा एक सोयीचा मार्ग.
-</font></font></p><p>स्क्रबिंग किंवा ऑड्यासिटी GenericName मध्ये शोधण्याचा प्रयत्न खुजा बटण वापरून केली आहे </font></font><img alt="स्क्रब बटण 60% .png" src="../m/images/9/96/scrub_button_60.png" width="18" height="18">किंवा बटण शोधा </font></font><img alt="बटण शोधा 60% .png" src="../m/images/a/a1/seek_button_60.png" width="18" height="18">मध्ये </font></font><a href="scrub_toolbar.html" title="स्क्रब साधनपट्टी">खुजा साधनपट्टी</font></font></a> <img alt="स्क्रब साधनपट्टी 60% .png" src="../m/images/c/c3/scrub_toolbar_60.png" width="58" height="20"> . </font><font style="vertical-align: inherit;">वैकल्पिकरित्या आपण </font></font><span class="menu">परिवहन&gt; </font></font><a href="transport_menu_scrubbing.html" title="वाहतूक मेनू: स्क्रबिंग">स्क्रबिंग</font></font></a></span> मेनू आयटम </font><font style="vertical-align: inherit;">वापरू शकता </font><font style="vertical-align: inherit;">आणि </font><span class="menu"><a href="transport_menu_scrubbing.html" title="वाहतूक मेनू: स्क्रबिंग"><font style="vertical-align: inherit;">कॅसकेडिंग</font></a></span><font style="vertical-align: inherit;"> मेनूमधून </font></font><span class="menu">स्क्रब</font></font></span> किंवा </font></font><span class="menu">शोधा</font></font></span> निवडा </font><font style="vertical-align: inherit;">.
-</font></font></p><p>जोपर्यंत आपण त्यास सामान्य प्ले मोडमध्ये परत करत नाही तोपर्यंत धडपड स्क्रबिंग / शोधण्याच्या मोडमध्ये राहील. </font><font style="vertical-align: inherit;">थांबा बटण </font></font><img alt="थांबा बटण" src="../m/images/f/f9/stop.png" title="थांबा बटण" width="16" height="16">(किंवा त्याच्या आड़मार्ग </font></font><span class="kbrd" style="background-color: #d0d0f8">स्पेस</font></font></span> ) वर </font><font style="vertical-align: inherit;">क्लिक करणे </font><font style="vertical-align: inherit;">कोणत्याही वेळी स्क्रब / प्ले शोधणे थांबवेल आणि कर्सरला सध्याच्या स्क्रबवर हलवून / प्ले स्थानाकडे वळवून सामान्य प्ले मोडमध्ये परत करेल. </font><font style="vertical-align: inherit;">आपण संपादन कर्सर किंवा निवडीची स्थिती गमावल्याशिवाय स्क्रबिंग किंवा शोधणे थांबवू इच्छित असल्यास एस्केप </font></font><span class="kbrd" style="background-color: #e0e0f0">एस्क</font></font></span> की </font><font style="vertical-align: inherit;">वापरा </font><font style="vertical-align: inherit;">.  
-</font></font></p><p>कृपया तपशीलांसाठी </font></font><a href="scrubbing_and_seeking.html" title="स्क्रबिंग आणि सीकिंग">स्क्रबिंग आणि शोधणे</font></font></a> पहा
-</font></font></p>
-<div id="midi"></div>
-<h3><span class="mw-headline" id="MIDI_.28and_Allegro.29_Playback"><a href="note_tracks.html" title="नोट्स गितपट्टा ">मिडी (आणि अ&zwj;ॅलेग्रो) प्लेबॅक</font></font></a></span></h3>
-<p>एमआयडीआय (आणि अ&zwj;ॅलेग्रो. ग्रॉ) फायली </font><font style="vertical-align: inherit;">एका </font><a href="note_tracks.html" title="नोट्स गितपट्टा "><font style="vertical-align: inherit;">टीप गितपट्टा वर </font></a></font><span class="menu">फाइल&gt; </font></font><a href="file_menu_import.html#midi" title="फाइल मेनू: आयात करा">एमआयडीआय आयात करा ...</font></font></a></span> सह ऑड्यासिटीमध्ये आयात केल्या जाऊ शकतात </font><font style="vertical-align: inherit;">. 
-</font></font><a href="note_tracks.html" title="नोट्स गितपट्टा "><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p><p>ऑड्यासिटी आता या एमआयडीआय (आणि अ&zwj;ॅलेग्रो) फायली प्ले करू शकते, परंतु लक्षात ठेवा </font><font style="vertical-align: inherit;">नोट नोट गितपट्टा प्ले होत असताना </font></font><a href="meter_toolbar.html#playback" title="मीटर साधनपट्टी">प्लेबॅक मीटरचा</font></font></a> उपयोग होणार नाही </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">जरी नोट गितपट्टा प्लेबॅक विंडोजवर कार्य केले असले तरी, मॅक आणि लिनक्सवर अतिरिक्त संगणकाची आज्ञावलीची आवश्यकता असू शकते. 
-</font></font></p><p>या टीप गितपट्टा चे संपादन करणे शक्य आहे, परंतु अत्यंत मर्यादित आहे.
-</font></font></p><p>अधिक माहितीसाठी कृपया पहा: </font></font><a href="note_tracks.html" title="नोट्स गितपट्टा ">नोट्स गितपट्टा </font></font></a> .
-</font></font></p>
-<div class="note">मॅक आणि लिनक्स वर नोट गितपट्टा प्लेबॅक साध्य करण्यासाठी आपल्याला अतिरिक्त संगणकाची आज्ञावली, एक </font><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Software_synthesizer"><font style="vertical-align: inherit;">संगणकाची आज्ञावली सिंथेसाइजर</font></a><font style="vertical-align: inherit;"> स्थापित करणे आणि चालविणे आवश्यक आहे.</font></font><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Software_synthesizer"><font style="vertical-align: inherit;"></font></a>
-<p>कृपया ही पृष्ठे ऑड्यासिटी विकीमध्ये पहा:
-</font></font></p>
-<ul><li><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Enabling_Note_Track_playback_on_Mac">मॅक वर टीप गितपट्टा प्लेबॅक सक्षम करणे</font></font></a></li>
-<li><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Enabling_Note_Track_playback_on_Linux">लिनक्स वर टीप गितपट्टा प्लेबॅक सक्षम करणे</font></font></a> </li></ul></div>
-<div id="record"></div>
-<h2><span class="mw-headline" id="Recording"><a href="recording.html" title="मुद्रित करणे">मुद्रित करणे</font></font></a></span></h2>
-<div class="note">ध्वनीमुद्रणकसे वापरावे याच्या सविस्तर तपशीलांसाठी, आपण कोठे आणि कोणत्या गितपट्टा मध्ये ध्वनीमुद्रणआहात हे कसे नियंत्रित करावे आणि कीबोर्ड आड़मार्ग आज्ञासह, कृपया </font></font><b><a href="recording.html" title="मुद्रित करणे">ध्वनीमुद्रण</font></font></a></b> पृष्ठ पहा.
-</font></font></div> 
-<p>आपण ध्वनीमुद्रणबटण क्लिक करता तेव्हा </font></font><img alt="ध्वनीमुद्रणबटण" src="../m/images/e/e8/record.png" title="ध्वनीमुद्रणबटण" width="16" height="16">वर </font></font><a href="transport_toolbar.html" title="परिवहन साधनपट्टी">वाहतूक साधनपट्टी</font></font></a> , किंवा वापरा </font></font><span class="kbrd" style="background-color: #d0d0f8">आर</font></font></span> , ऑड्यासिटी GenericName सध्या निवडलेले (किंवा फक्त) गितपट्टा शेवटी ध्वनीमुद्रण, किंवा आपण रिक्त प्रकल्प असेल तर एक नवीन गितपट्टा तयार होईल.
-</font></font></p><p>अशा ध्वनीमुद्रणच्या वेळी, अस्तित्त्वात असलेल्या ध्वनीमुद्रणच्या शेवटी, ऑड्यासिटी </font><font style="vertical-align: inherit;">जंक्शनवर दोन ध्वनीमुद्रणच्या दरम्यान </font></font><b><a href="audacity_tracks_and_clips.html" title="ऑड्यासिटी गितपट्टा आणि क्लिप">क्लिप</font></font></a></b> लाइन </font><font style="vertical-align: inherit;">ठेवेल </font><font style="vertical-align: inherit;">जेणेकरून आवश्यक असल्यास नंतर ते वेगळे करण्यात मदत करेल. </font><font style="vertical-align: inherit;">तपशीलांसाठी </font></font><a href="recording.html#append" title="मुद्रित करणे">ध्वनीमुद्रण</font></font></a> पृष्ठ पहा.
-</font></font></p>
+<td> प्रारंभ करण्यासाठी वगळा </td>
+<td> <span class="kbrd" style="background-color: #d0d0f8">मुख्यपृष्ठ</span> </td>
+<td> प्रकल्प सुरू करण्यासाठी कर्सर हलवा.
+</td></tr>
+<tr>
+<td> समाप्त होण्यास जा </td>
+<td>  <span class="kbrd" style="background-color: #d0d0f8">समाप्त</span> </td>
+<td> प्रकल्पच्या शेवटी कर्सर हलवा.
+</td></tr>
+<tr>
+<td> ध्वनिमुद्रण </td>
+<td> <span class="kbrd" style="background-color: #d0d0f8">आर</span> </td>
+<td> निवडलेल्या गीतपट्ट्याच्या शेवटापासून सुरू होणारी ध्वनीमुद्रित.
+</td></tr>
+<tr>
+<td> नवीन गीतपट्टा ध्वनीमुद्रित करा </td>
+<td> <span class="kbrd" style="background-color: #d0d0f8">शिफ्ट + आर</span> </td>
+<td> कर्सर स्थितीपासून किंवा निवडीच्या प्रारंभापासून नवीन गीतपट्ट्यामध्ये ध्वनीमुद्रित करा.
+</td></tr></table></dd></dl>
 <div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
 <table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<tbody><tr>
-<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="बल्ब चिन्ह"><img alt="बल्ब चिन्ह" src="../m/images/d/d7/bulbicon.png" width="32" height="32"></a>
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
 </td>
-<td align="left" valign="top">ध्वनीमुद्रण्ज तयार करताना, विशिष्ट गंभीर ध्वनीमुद्रण्ज, आपण संगणकाचा ऑड्यासिटी एकमेव वापर देत इतर सर्व अनुप्रयोग बंद करण्याचा विचार केला पाहिजे. </font><font style="vertical-align: inherit;">हे आपल्या ध्वनीमुद्रणमधील स्किप्स, लहान ड्रॉपआउट्स आणि टिक टिक टाळण्यास मदत करते.
-</font></font><div class="note">आणि मॅकवर याचा अर्थ असा की त्यांना सोडून देणे केवळ त्यांना बंद करणेच नाही, कारण अन्यथा मॅक त्यांना संगणक वापरणारी संसाधने उघडे ठेवेल.</font></font></div> 
-</td></tr></tbody></table>
+<td align="left" valign="top">इच्छित असल्यास <a href="keyboard_preferences.html" title="Keyboard Preferences">कीबोर्ड प्राधान्यांमध्ये</a> वरील सर्व सोपा मार्ग बदलले जाऊ शकतात.
+</td></tr></table>
+</div>
+<div id="adjust"></div>
+<h3><span class="mw-headline" id="Adjusting_the_Playback_volume">प्लेबॅक व्हॉल्यूम समायोजित करत आहे</span></h3>
+<p>तुम्ही <a href="mixer_toolbar.html" title="Mixer Toolbar">मिक्सर साधनपट्टीमधील</a> आउटपुट लेव्हल स्लाइडर वापरून प्लेबॅक व्हॉल्यूम समायोजित करू शकता.
+</p><p>एकत्र मिसळल्यावर <a href="meter_toolbar.html#playback" title="Meter Toolbar">प्लेबॅक मीटर</a> तुम्हाला तुमच्या सर्व गीतपट्टेचा एकूण आवाज दर्शवेल.
+</p>
+<div id="warp"></div>
+<h3><span class="mw-headline" id="Playing_at_slower_or_faster_speeds_than_normal">सामान्यपेक्षा कमी किंवा वेगवान वेगाने प्ले करणे</span></h3>
+<p><a href="play_at_speed_toolbar.html" title="Play-at-Speed Toolbar">प्ले-एट-स्पीड साधनपट्टीमधील</a> प्ले बटण वापरल्याने स्थिर गतीने परंतु सामान्यपेक्षा कमी किंवा वेगवान प्ले होते.
+</p>
+<dl><dd><span title="Play-at-Speed Toolbar"><img alt="Play--at-Speed Toolbar.png" src="../m/images/d/d1/play_at_speed_toolbar.png" width="140" height="27" /></span></dd></dl>
+<p><a href="tools_toolbar.html" title="Tools Toolbar">साधन्स साधनपट्टीवरील</a> <a href="envelope_tool.html" title="Envelope Tool">लिफाफा साधन</a>, <a href="time_tracks.html" title="Time Tracks">टाइम गीतपट्ट्याच्या</a> संयोगाने वापरल्यास , स्पीड लिफाफा काढण्याची परवानगी देते जे ध्वनीच्या लांबीवर प्लेबॅक गती वाढवू किंवा कमी करू शकते.
+</p>
+<div id="pinned"></div>
+<h3><span class="mw-headline" id="Pinned_head_playing_and_recording">पिन केलेले हेड प्ले करणे आणि ध्वनीमुद्रण करणे</span></h3>
+<p>तुम्ही टाइमलाइनमधील एका स्थानावर स्थिर हेड पिन करून प्ले किंवा ध्वनीमुद्रित करण्यासाठी ऑड्यासिटी बदलू शकता. या मोडमध्ये हेड स्थिर राहते आणि ध्वनि प्ले किंवा ध्वनीमुद्रित केल्यावर तरंगसतत स्क्रोल होते. 
+</p><p>हे वर्तन टाइमलाइनच्या डावीकडील बटण वापरून नियंत्रित केले जाते. पूर्वनियोजितनुसार हे हिरव्या खालच्या दिशेने निर्देशित करणारा त्रिकोण (प्ले हेड सारखे) म्हणून दाखवते.  या मोडमध्ये, प्ले हेड किंवा ध्वनीमुद्रित हेड क्षैतिजरित्या हलतील आणि आवश्यकतेनुसार तरंगस्क्रोल करेल, त्याशिवाय जर <i><b>ऑटो-स्क्रोल हेड अनपिन केलेले</b></i> <a href="tracks_preferences.html" title="Tracks Preferences">गीतपट्टा प्राधान्यांमध्ये</a> अनचेक केले असेल तर स्क्रोलिंग होणार नाही.
+</p><p>हिरव्या त्रिकोणावर क्लिक केल्याने संदर्भ यादी पॉप अप होईल. त्या संदर्भ यादीमधून तुम्ही <b>पिन केलेले प्ले हेड</b> तपासू शकता.  यामुळे बटण आयकॉन ड्रॉईंग-पिनमध्ये बदलेल जे सूचित करते की प्ले हेड किंवा ध्वनीमुद्रित हेड आता टाइमलाइनच्या मध्यभागी पिन केले गेले आहे आणि जेव्हा प्ले किंवा ध्वनीमुद्रितिंग होते तेव्हा तरंगस्थिर डोक्याच्या खाली सतत हलते.
+</p><p>अनपिन केलेले किंवा पिन केलेले हेड देखील <span class="menu">परिवहन &gt; <a href="transport_menu_transport_options.html" title="Transport Menu: Transport Options">परिवहन पर्याय</a></span> यांमध्ये निवडले जाऊ शकते.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">पूर्वनियोजित पिन केलेले स्थान हे टाइमलाइनचे केंद्र आहे, परंतु तुम्ही प्ले किंवा ध्वनीमुद्रितिंग करत असताना पिन केलेल्या हेडवर क्लिक करून आणि टाइमलाइनवर ड्रॅग करून हे बदलू शकता. हेडवर डबल-क्लिक केल्याने ते टाइमलाइनच्या मध्यभागी त्याच्या पूर्वनियोजित स्थितीत पुनर्संचयित होईल. प्लेबॅक वापरताना मध्यभागी सर्वात उपयुक्त आहे असे तुम्हाला आढळेल परंतु ध्वनीमुद्रितिंगसाठी, हेड उजवीकडे पुनर्स्थित करणे उपयुक्त ठरू शकते.
+</td></tr></table>
+</div>
+<p>पिन केलेले प्ले आणि ध्वनीमुद्रित हेड सेट करणे आणि अन-सेट करण्याच्या तपशीलांसाठी कृपया <a href="timeline.html" title="Timeline">टाइमलाइन</a> पृष्ठावरील <a href="timeline.html#pinned" title="Timeline">पिन केलेले प्ले/ध्वनीमुद्रित हेड</a> पहा.
+</p><p><br />
+</p>
+<div id="play"></div>
+<h2><span class="mw-headline" id="Playback"><a href="playback.html" title="Playback">प्लेबॅक</a></span></h2>
+<div class="note">कीबोर्ड सोपा मार्ग आज्ञा्ससह प्लेबॅक कसा वापरायचा आणि लहान विभागांचे पूर्वावलोकन कसे करायचे याच्या संपूर्ण तपशीलांसाठी, कृपया <b><a href="playback.html" title="Playback">प्लेबॅक</a></b> पृष्ठ पहा.
+</div>  
+<div id="tqp"></div>
+<h3><span class="mw-headline" id="Quick-Play_using_the_Timeline"><a href="timeline.html#tqp" title="Timeline">टाइमलाइन वापरून क्विक-प्ले</a></span></h3>
+<p><a href="timeline.html" title="Timeline">टाइमलाइन</a> क्विक-प्ले एकतर सध्याच्या प्रकल्पातील कोणत्याही बिंदूपासून प्लेबॅक प्रारंभ करण्यासाठी किंवा ध्वनीच्या प्रदेशात प्लेबॅक करण्यासाठी एक जलद आणि सोयीस्कर साधन प्रदान करते.
+</p><p>तपशीलांसाठी टाइमलाइन पृष्ठावरील <a href="timeline.html#tqp" title="Timeline">क्विक-प्ले</a> विभाग पहा.
+</p>
+<div id="scrub"></div>
+<h3><span class="mw-headline" id="Scrubbing_and_Seeking"><a href="scrubbing_and_seeking.html" title="Scrubbing and Seeking">स्क्रबिंग आणि सीकिंग</a></span></h3>
+<p>स्क्रबिंग किंवा सीकिंग ही माऊस पॉइंटर उजवीकडे किंवा डावीकडे हलवण्याची क्रिया आहे ज्यामुळे प्लेबॅकची स्थिती, गती किंवा दिशा समायोजित केली जाते - आवडीची विशिष्ट घटना शोधण्यासाठी वेव्हफॉर्मवर द्रुतपणे नेव्हिगेट करण्याचा एक सोयीस्कर मार्ग.
+</p><p>ऑड्यासिटीमध्ये स्क्रबिंग किंवा सिकिंग ची सुरुवात  <a href="scrub_toolbar.html" title="Scrub Toolbar">स्क्रब साधनपट्टीमधील</a> <img alt="Scrub Toolbar 60%.png" src="../m/images/c/c3/scrub_toolbar_60.png" width="58" height="20" /> स्क्रब बटण <img alt="Scrub button 60%.png" src="../m/images/9/96/scrub_button_60.png" width="18" height="18" /> किंवा सीक बटण <img alt="Seek Button 60%.png" src="../m/images/a/a1/seek_button_60.png" width="18" height="18" /> वापरून केली जाते.  वैकल्पिकरित्या तुम्ही <span class="menu">परिवहन &gt; <a href="transport_menu_scrubbing.html" title="Transport Menu: Scrubbing">स्क्रबिंग</a></span> यादी आयटम वापरू शकता आणि कॅस्केडिंग यादीमधून <span class="menu">स्क्रब</span> किंवा <span class="menu">सीक</span> निवडू शकता.
+</p><p>तुम्ही सामान्य प्ले मोडवर परत येईपर्यंत ऑड्यासिटी स्क्रबिंग/सीकिंग मोडमध्ये राहील. कोणत्याही वेळी स्टॉप बटणावर <img alt="The Stop button" src="../m/images/f/f9/stop.png" title="The Stop button" width="16" height="16" /> (किंवा त्याचा सोपा मार्ग <span class="kbrd" style="background-color: #d0d0f8">स्पेस</span>) क्लिक केल्याने स्क्रब/सीक प्ले थांबेल आणि कर्सर सध्याच्या स्क्रब/सीक प्ले स्थानावर हलवून तुम्हाला सामान्य प्ले मोडमध्ये परत येईल. संपादन कर्सर किंवा निवडीची स्थिती न गमावता स्क्रब करणे किंवा शोधणे थांबवायचे असल्यास, Escape <span class="kbrd" style="background-color: #e0e0f0">Esc</span> की वापरा.
+</p><p>कृपया तपशीलांसाठी <a href="scrubbing_and_seeking.html" title="Scrubbing and Seeking">स्क्रबिंग आणि सीकिंग</a> पहा. 
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top"><a href="scrubbing_and_seeking.html" title="Scrubbing and Seeking">स्क्रबिंग आणि सीकिंगसाठी</a>, जोपर्यंत तुम्ही <a href="playback_preferences.html" title="Playback Preferences">प्लेबॅक</a> प्राधान्यांमध्‍ये "<b>नेहमी स्क्रब अनपिन केलेले</b>" पर्याय "<b>बंद</b>" करत नाही तोपर्यंत ऑड्यासिटी तुम्ही <a href="timeline.html#pinned" title="Timeline">निश्चित हेड प्लेबॅकसाठी</a> करत असलेल्या सेटिंगकडे दुर्लक्ष करेल.
+</td></tr></table>
+</div>
+<div id="midi"></div>
+<h3><span class="mw-headline" id="MIDI_.28and_Allegro.29_Playback"><a href="note_tracks.html" title="Note Tracks">एमआयडीआय (आणि अल्लेग्रो) प्लेबॅक</a></span></h3>
+<p>एमआयडीआय (आणि अल्लेग्रो.gro) फायली ऑड्यासिटीमध्ये <span class="menu"> फाईल &gt; <a href="file_menu_import.html#midi" title="File Menu: Import">एमआयडीआय आयात...</a></span> सह <a href="note_tracks.html" title="Note Tracks">नोट गीतपट्ट्यावर</a> आयात केल्या जाऊ शकतात.
+</p><p>ऑड्यासिटी आता या एमआयडीआय(आणि अल्लेग्रो) फायली प्ले करू शकते, परंतु लक्षात ठेवा की नोट गीतपट्टा प्ले होत असताना <a href="meter_toolbar.html#playback" title="Meter Toolbar">प्लेबॅक मीटरचा</a> वापर होणार नाही. जरी नोट गीतपट्टा प्लेबॅक फक्त Windows वर कार्य करत असले तरी, मॅक आणि लिनक्सवर अतिरिक्त सॉफ्टवेअरची आवश्यकता असू शकते.
+</p><p>हे नोट गीतपट्टा संपादित करणे शक्य आहे, परंतु खूप मर्यादित आहे.
+</p><p>अधिक तपशीलांसाठी कृपया पहा: <a href="note_tracks.html" title="Note Tracks">नोंद गीतपट्टा</a>.
+</p>
+<div class="note">मॅक आणि लिनक्सवर नोट गीतपट्टा प्लेबॅक मिळविण्यासाठी तुम्हाला अतिरिक्त सॉफ्टवेअर, <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Software_synthesizer">सॉफ्टवेअर सिंथेसायझर</a> स्थापित करणे आणि चालवणे आवश्यक आहे.
+<p>कृपया ही पृष्ठे ऑड्यासिटी विकीमध्ये पहा:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Enabling_Note_Track_playback_on_Mac">मॅक वर टीप गीतपट्टा प्लेबॅक सक्षम करणे</a></li>
+<li><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Enabling_Note_Track_playback_on_Linux">लिनक्स वर टीप गीतपट्टा प्लेबॅक सक्षम करणे</a> </div></li></ul>
+<p><br />
+</p>
+<div id="record"></div>
+<h2><span class="mw-headline" id="Recording"><a href="recording.html" title="Recording">मुद्रित करणे</a></span></h2>
+<div class="note">ध्वनीमुद्रण कसे वापरावे याच्या संपूर्ण तपशीलासाठी, आपण कुठे आणि कोणता गीतपट्टा ध्वनीमुद्रित करतो आणि कीबोर्ड सोपा मार्ग आज्ञा कसे नियंत्रित करावे यासह, कृपया <b><a href="recording.html" title="Recording">ध्वनीमुद्रण</a></b> पृष्ठ पहा. </div> 
+<p>जेव्हा तुम्ही <a href="transport_toolbar.html" title="Transport Toolbar">परिवहन साधनपट्टीवरील</a> ध्वनीमुद्रित बटणावर <img alt="The Record button" src="../m/images/e/e8/record.png" title="The Record button" width="16" height="16" /> क्लिक करता किंवा <span class="kbrd" style="background-color: #d0d0f8">R</span> वापरता तेव्हा ऑड्यासिटी सध्या निवडलेल्या (किंवा फक्त) गीतपट्ट्याच्या शेवटी ध्वनीमुद्रित करेल किंवा तुमच्याकडे रिकामा प्रकल्प असल्यास नवीन गीतपट्टा तयार करेल.
+</p><p>अशाप्रकारे ध्वनीमुद्रण करताना, सध्याच्या ध्वनीमुद्रणाच्या शेवटी, ऑड्यासिटी दोन ध्वनीमुद्रणाच्या जंक्शनवर एक <b><a href="audacity_tracks_and_clips.html" title="Audacity Tracks and Clips">क्लिप</a></b> लाइन ठेवेल जेणेकरुन आवश्यक असल्यास ते वेगळे करण्यात तुम्हाला मदत होईल. तपशीलांसाठी <a href="recording.html#append" title="Recording">ध्वनीमुद्रण</a> पृष्ठ पहा.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">ध्वनीमुद्रण करताना, विशिष्ट गंभीर ध्वनीमुद्रण करताना, तुम्ही ऑड्यासिटीला संगणकाचा एकमेव वापर करून इतर सर्व अॅप्लिकेशन्स बंद करण्याचा विचार केला पाहिजे. हे तुमच्या ध्वनीमुद्रणामधील स्किप, लहान ड्रॉपआउट आणि टिक टाळण्यात मदत करू शकते.
+<div class="note">आणि मॅकवर याचा अर्थ त्यांना पूर्णपणे सोडून देणे म्हणजे केवळ त्यांना बंद न करणे, अन्यथा मॅक त्यांना संगणक संसाधने वापरण्यासाठी मुक्त ठेवेल.</div> 
+</td></tr></table>
 </div> 
 <div id="overdub"></div>
-<h3><span class="mw-headline" id="Overdubbing"><a href="tutorial_recording_multi_track_overdubs.html" title="प्रशिक्षण - मल्टी-गितपट्टा ओव्हरडब ध्वनीमुद्रण">ओव्हरडबिंग</font></font></a></span></h3>
-<p>पूर्वी ध्वनीमुद्रणकेलेले गितपट्टा ऐकताना आपण एक नवीन गितपट्टा ध्वनीमुद्रणकरू शकता. </font><font style="vertical-align: inherit;">याला </font></font><a href="faq_recording_how_to_s.html#overdub" title="FAQ: ध्वनीमुद्रण- कसे करावे">ओव्हरडबिंग</font></font></a> म्हणतात </font><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">ओव्हरडबिंगसाठी सेट अप करण्यासाठी, </font></font><span class="menu">ट्रान्सपोर्ट&gt; ट्रान्सपोर्ट ऑप्शन्स&gt; </font></font><a href="transport_menu_transport_options.html#overdub_onoff" title="परिवहन मेनू: परिवहन पर्याय">ओव्हरडब (चालू / बंद)</font></font></a></span> सक्षम असल्याचे (डीफॉल्ट सेटिंग) </font><font style="vertical-align: inherit;">असल्याचे सुनिश्चित करा </font><font style="vertical-align: inherit;">. </font></font><a href="tutorial_recording_multi_track_overdubs.html" title="प्रशिक्षण - मल्टी-गितपट्टा ओव्हरडब ध्वनीमुद्रण">ओव्हरडबिंगसह</font></font></a> अधिक मदतीसाठी </font><font style="vertical-align: inherit;">शिकवण्या सेट </font><a href="tutorial_recording_multi_track_overdubs.html" title="प्रशिक्षण - मल्टी-गितपट्टा ओव्हरडब ध्वनीमुद्रण"><font style="vertical-align: inherit;">ध्वनीमुद्रणमल्टी-गितपट्टा </font></a><font style="vertical-align: inherit;"> ओव्हरडब
-</font></font></p><p>आपण </font><a href="transport_toolbar.html" title="परिवहन साधनपट्टी"><font style="vertical-align: inherit;">परिवहन साधनपट्टीमधील</font></a><font style="vertical-align: inherit;"> ध्वनीमुद्रणबटण खाली </font></font><span class="button">शिफ्ट</font></font></span> बटण </font></font><a href="transport_toolbar.html" title="परिवहन साधनपट्टी">धरल्यास</font></font></a> तात्पुरते बदलले जाईल </font></font><img alt="ध्वनीमुद्रणनवीन गितपट्टा बटण" src="../m/images/7/72/record_new_track.png" title="ध्वनीमुद्रणनवीन गितपट्टा बटण" width="16" height="16">. </font><font style="vertical-align: inherit;">मग या सुधारित ध्वनीमुद्रणबटणावर क्लिक करून किंवा </font></font><span class="kbrd" style="background-color: #d0d0f8">शिफ्ट + आर</font></font></span> आड़मार्ग वापरल्यामुळे </font><font style="vertical-align: inherit;">ऑड्यासिटी नवीन गितपट्टा तयार करेल आणि त्या गितपट्टा वर वर्तमान कर्सर स्थानावरून (किंवा </font></font><a href="timeline.html" title="वेळे">वेळेवरील</font></font></a> प्रदेशाच्या डाव्या काठावरुन </font><font style="vertical-align: inherit;">) </font><font style="vertical-align: inherit;">ध्वनीमुद्रणकरण्यास सुरवात करेल </font><font style="vertical-align: inherit;">. 
-</font></font></p><p>वेळेमध्ये एखादा प्रदेश असल्यास तो प्रदेश एका नवीन गितपट्टा मध्ये नोंदविला जाईल. </font><font style="vertical-align: inherit;">ध्वनीमुद्रणथांबविल्यानंतर, ऑड्यासिटी ध्वनीमुद्रणगितपट्टा मागील गितपट्टा (रे) सह संरेखित करण्याचा प्रयत्न करण्यासाठी डीफॉल्टनुसार १ mill० मिलिसेकंदांनी मागे ध्वनीमुद्रणकरेल. </font><font style="vertical-align: inherit;">डावीकडील-बाण दर्शविणारे बाण शून्य वेळी दिसून येईल जेव्हा ध्वनीमुद्रणकेलेला कोणताही गितपट्टा शून्याच्या मागे ढकलला जातो (प्रमाणित </font></font><a href="file_menu.html#export" title="फाइल मेनू">निर्यात</font></font></a> शून्यापूर्वी </font><a href="file_menu.html#export" title="फाइल मेनू"><font style="vertical-align: inherit;">ध्वनीकडे</font></a><font style="vertical-align: inherit;"> दुर्लक्ष करते परंतु </font><font style="vertical-align: inherit;">एकाधिक ध्वनी गितपट्टा वर आधारित एकाधिक </font></font><a href="export_multiple.html" title="एकाधिक निर्यात करा">निर्यात</font></font></a> यात समाविष्ट असतो). </font><font style="vertical-align: inherit;">तो एक करण्यासाठी शिफारस केली आहे </font></font><a href="latency_test.html" title="लेटेंसी टेस्ट">प्रलंबित चाचणी</font></font></a> इष्टतम पाठीमागे सुधारणा सेट ठरवण्यासाठी मूल्य </font></font><a href="recording_preferences.html#latency" title="ध्वनीमुद्रणप्राधान्ये">प्रलंबित सुधारणा</font></font></a> मध्ये </font></font><a href="recording_preferences.html" title="ध्वनीमुद्रणप्राधान्ये">ध्वनीमुद्रणप्राधान्ये</font></font></a> .
-</font></font></p>
-<div id="timer"></div>
-<h3><span class="mw-headline" id="Timer_Recording"><a href="timer_record.html" title="टाइमर ध्वनीमुद्रण">टाइमर ध्वनीमुद्रण</font></font></a></span></h3>
-<p>ध्वनीमुद्रणकरण्याचा अजून एक मार्ग म्हणजे </font><a href="transport_menu.html" title="परिवहन मेनू"><font style="vertical-align: inherit;">ट्रान्सपोर्ट मेनूमध्ये</font></a><font style="vertical-align: inherit;"> सापडलेल्या </font></font><a href="timer_record.html" title="टाइमर ध्वनीमुद्रण">टाइमर ध्वनीमुद्रण</font></font></a> उपयुक्तता </font><font style="vertical-align: inherit;">वापरणे </font><font style="vertical-align: inherit;">.
-</font></font><a href="transport_menu.html" title="परिवहन मेनू"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
-<dl><dd><a href="timer_record.html" title="टाइमर ध्वनीमुद्रणसंवाद, वापराच्या तपशीलांसाठी क्लिक करा."><img alt="टाइमर ध्वनीमुद्रणसंवाद, वापराच्या तपशीलांसाठी क्लिक करा." src="../m/images/1/10/timer_record_w10.png" width="530" height="370"></a></dd></dl>
-<p>नंतर ध्वनीमुद्रणप्रारंभ करण्यासाठी किंवा थांबण्यापूर्वी विशिष्ट कालावधीसाठी ध्वनीमुद्रणकरण्यासाठी याचा वापर करा.
-</font></font></p>
-<div id="sar"></div>
-<h3><span class="mw-headline" id="Sound_Activated_Recording"><a href="transport_menu.html#sar" title="परिवहन मेनू">ध्वनी सक्रिय ध्वनीमुद्रण</font></font></a></span></h3>
-<p>आपण </font></font><span class="menu">परिवहन&gt; वाहतूक पर्याय&gt; </font></font><a href="transport_menu_transport_options.html#sound_activated_recording_onoff" title="परिवहन मेनू: परिवहन पर्याय">आवाज सक्रिय ध्वनीमुद्रणचालू (बंद / बंद)</font></font></a></span> चालू केल्यास आपण </font></font><span class="menu">परिवहन&gt; परिवहन पर्याय&gt; </font></font><a href="transport_menu_transport_options.html#sound_activation_level" title="परिवहन मेनू: परिवहन पर्याय">ध्वनी सक्रियकरण स्तरावरील</font></font></a></span> इनपुट पातळी निर्दिष्ट उंबरठा स्तरापेक्षा अधिक होईपर्यंत ध्वनीमुद्रणथांबवू शकता </font><font style="vertical-align: inherit;">.
-</font></font></p>
-<!-- 
-NewPP limit report
-Cached time: 20180917085416
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.230 seconds
-Real time usage: 0.247 seconds
-Preprocessor visited node count: 691/1000000
-Preprocessor generated node count: 1990/1000000
-Post‐expand include size: 9693/2097152 bytes
-Template argument size: 4373/2097152 bytes
-Highest expansion depth: 12/40
-Expensive parser function count: 11/100
--->
+<h3><span class="mw-headline" id="Overdubbing"><a href="tutorial_recording_multi_track_overdubs.html" title="Tutorial - Recording Multi-track Overdubs">ओव्हरडबिंग</a></span></h3>
+<p>पूर्वी ध्वनीमुद्रित केलेले गीतपट्टा ऐकताना तुम्ही नवीन गीतपट्टा ध्वनीमुद्रित करू शकता. याला <a href="faq_recording_how_to_s.html#overdub" title="FAQ:Recording - How To's">ओव्हरडबिंग</a> म्हणतात. ओव्हरडबिंगसाठी सेट अप करण्यासाठी, <span class="menu">परिवहन &gt; परिवहन पर्याय &gt; <a href="transport_menu_transport_options.html#overdub_onoff" title="Transport Menu: Transport Options">ओव्हरडब (चालू/बंद)</a></span> सक्षम (चालू) आहे याची खात्री करा जी त्याची पूर्वनियोजित सेटिंग आहे.  ओव्हरडबिंगसाठी अधिक मदतीसाठी <a href="tutorial_recording_multi_track_overdubs.html" title="Tutorial - Recording Multi-track Overdubs">ध्वनीमुद्रितिंग मल्टी-गीतपट्टाओव्हरडब्स</a> हा ट्यूटोरियल सेट पहा.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%   70.931      1 - -total
- 42.19%   29.927      1 - Template:I18n
- 39.44%   27.976      1 - Template:I18n_box
- 34.04%   24.146      1 - Template:I18n_list
- 17.05%   12.094     15 - Template:Shortcut
- 15.12%   10.728      4 - Template:I18n_link
-  8.58%    6.085      9 - Template:Key
-  8.54%    6.058      4 - Template:Autoglossonym
-  4.65%    3.299      1 - Template:Hint
-  4.36%    3.091      8 - Template:Menu
--->
-
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:2052-0!*!0!!*!5!* and timestamp 20180917085416 and revision id 61806
- -->
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">ओव्हरडबिंग करण्यापूर्वी इष्टतम <a href="glossary.html#latency" title="Glossary">विलंब</a> सुधारणा निश्चित करण्यासाठी <a href="latency_test.html" title="Latency Test">विलंब चाचणी</a> करण्याची शिफारस केली जाते, नंतर <a href="devices_preferences.html" title="Devices Preferences">उपकरण प्राधान्यांमध्ये</a> <a href="devices_preferences.html#latency" title="Devices Preferences">विलंब सुधारणाचे</a> मूल्य सेट करा.
+<dl><dd><i>नवीन गीतपट्ट्यावर ध्वनीमुद्रितिंग सुरू झाल्यावर, नवीन गीतपट्ट्याला मागील गीतपट्ट्यासह संरेखित करण्यासाठी विलंब सुधारणा लागू केली जाते.</i></dd></dl>
+</td></tr></table>
 </div>
-										<!-- end content -->
+<p>तुम्ही <span class="button">शिफ्ट</span> बटण दाबून ठेवल्यास <a href="transport_toolbar.html" title="Transport Toolbar">परिवहन साधनपट्टीमधील</a> ध्वनीमुद्रित बटण तात्पुरते <img alt="The Record New Track button" src="../m/images/7/72/record_new_track.png" title="The Record New Track button" width="16" height="16" /> मध्ये बदलेल. त्यानंतर या सुधारित ध्वनीमुद्रित बटणावर क्लिक केल्याने किंवा <span class="kbrd" style="background-color: #d0d0f8">Shift + R</span> सोपा मार्ग वापरल्याने ऑड्यासिटी एक नवीन गीतपट्टा तयार करेल आणि त्या गीतपट्ट्यावर सध्याच्या कर्सर स्थितीपासून (किंवा <a href="timeline.html" title="Timeline">टाइमलाइनवरील</a> प्रदेशाच्या डाव्या बाजूला) ध्वनीमुद्रण सुरू करेल.
+</p><p>वेळपट्टीमध्ये एखादा प्रदेश असल्यास, तो प्रदेश नवीन गीतपट्ट्यामध्ये ध्वनीमुद्रित केला जाईल. 
+</p><p><br />
+</p>
+<div id="timer"></div>
+<h3><span class="mw-headline" id="Timer_Recording"><a href="timer_record.html" title="Timer Record">टाइमर ध्वनीमुद्रण</a></span></h3>
+<p>ध्वनीमुद्रित करण्याचा आणखी एक मार्ग म्हणजे <a href="transport_menu.html" title="Transport Menu">परिवहन यादीमध्ये</a> आढळणारी <a href="timer_record.html" title="Timer Record">टाइमर ध्वनिमुद्रण</a> युटिलिटी वापरणे.
+</p>
+<dl><dd><a href="timer_record.html" title="The Timer Record dialog, click for details of usage."><img alt="The Timer Record dialog, click for details of usage." src="../m/images/1/10/timer_record_w10.png" width="530" height="370" /></a></dd></dl>
+<p>नंतर ध्वनीमुद्रण सुरू करण्यासाठी किंवा थांबण्यापूर्वी ठराविक कालावधीसाठी ध्वनीमुद्रित करण्यासाठी याचा वापर करा.
+</p>
+<div id="sar"></div>
+<h3><span class="mw-headline" id="Sound_Activated_Recording"><a href="transport_menu.html#sar" title="Transport Menu">ध्वनी सक्रिय ध्वनीमुद्रण</a></span></h3>
+<p>तुम्ही <span class="menu">परिवहन &gt; परिवहन पर्याय &gt; <a href="transport_menu_transport_options.html#sound_activated_recording_onoff" title="Transport Menu: Transport Options">ध्वनी सक्रिय केलेले ध्वनीमुद्रण (चालू/बंद)</a></span> चालू केल्यास, जोपर्यंत इनपुट पातळी <span class="menu">परिवहन &gt; परिवहन पर्याय &gt; <a href="transport_menu_transport_options.html#sound_activation_level" title="Transport Menu: Transport Options">ध्वनी सक्रियकरण पातळी</a></span> येथे निर्दिष्ट थ्रेशोल्ड पातळी ओलांडत नाही तोपर्यंत ध्वनीमुद्रणला विराम देऊ शकता.
+</p><p><br />
+</p>
+<div id="links"></div>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="timeline.html#tqp" title="Timeline"><b>&gt;</b>&#160; क्विक-प्ले</a> <br />
+</p><p><a href="scrubbing_and_seeking.html" title="Scrubbing and Seeking"><b>&gt;</b>&#160; स्क्रबिंग आणि सीकिंग</a> <br />
+</p><p><a href="timer_record.html" title="Timer Record"><b>&gt;</b>&#160; टाइमर ध्वनिमुद्रण</a> <br />
+</p><p><a href="punch_and_roll_record.html" title="Punch and Roll Record"><b>&gt;</b>&#160; पंच आणि रोल ध्वनीमुद्रितिंग</a> <br />
+</p>
+
+
+
+
+
+</div>
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -265,37 +294,39 @@ Transclusion expansion time report (%,ms,calls,template)
 			</div>
 					
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
-		<h3>निर्देशक </h3>
+		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटीचा GUI</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">मेनू बार</span></a></li>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा
-</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
-<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये
-</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
 <li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
@@ -304,13 +335,12 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -320,7 +350,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Playing_and_Recording">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

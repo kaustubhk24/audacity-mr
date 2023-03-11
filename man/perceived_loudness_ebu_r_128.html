@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>पर्सिव्ह्ड  लाउडनेस (EBU R 128) - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Perceived_Loudness_EBU_R_128 rootpage-Perceived_Loudness_EBU_R_128 skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">पर्सिव्ह्ड लाउडनेस (EBU R 128)</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Perceived_Loudness_(EBU_R_128)#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<div class="intro">
+<p>स्पेसिफिकेशन EBU R 128 / ITU-R Bs.1770-4 वास्तविक जगाच्या ध्वनि सिग्नलच्या समजलेल्या लाउडनेसची गणना करण्यासाठी अल्गोरिदमचे वर्णन करते, उदाहरणार्थ कोणतेही शुद्ध साइन टोन नाहीत.
+</p>
+<div class="note">शिफारशींच्या तपशिलांसाठी कृपया <a rel="nofollow" class="external text" href="https://tech.ebu.ch/docs/r/r128.pdf">EBU R128 लाउडनेस सामान्यीकरण आणि ध्वनि सिग्नलची परवानगी असलेली कमाल पातळी</a>पहा.</div></div>
+<h2><span class="mw-headline" id="LUFS">LUFS</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://alphamanual.audacityteam.org/man/File:K-weighting.svg.png" class="image"><img alt="" src="../m/images/4/4d/k_weighting.svg.png" width="300" height="250" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://alphamanual.audacityteam.org/man/File:K-weighting.svg.png" class="internal" title="Enlarge"></a></div>k वारंवारता वेटिंग फंक्शन</div></div></div>
+<p>EBU R 128 लाउडनेस LUFS (लाउडनेस युनिट्स फुल पट्टी, किंवा समतुल्य LKFS, लाउडनेस k-वेटेड फुल पट्टी) निरपेक्ष मूल्यांसाठी किंवा LU (लाउडनेस युनिट्स) मध्ये सापेक्ष मूल्यांसाठी मोजले जाते जेथे 0 LUFS पूर्ण पट्टीच्या समतुल्य असतात. मोठ्या आवाजाची व्याख्या के-वेटेड ( <b><a href="filter_curve_eq.html" title="Filter Curve EQ">फिल्टर वक्र EQ</a></b> किंवा <b><a href="graphic_eq.html" title="Graphic EQ">ग्राफिक EQ</a></b> पहा) सर्व चॅनेलच्या वर्ग मूल्यांची बेरीज म्हणून केली जाते ज्यामध्ये k-वजन मानवी कानाच्या वैशिष्ट्यांचा अंदाज घेते. अशाप्रकारे, LU काहीसे मूळ नसलेल्या मध्य वर्गाशी संबंधित आहेत. सहसा, समजलेला मोठा आवाज प्रत्येक 100 मिलीसेकंदात 400 मिलीसेकंदांच्या ब्लॉकमध्ये मोजला जातो (म्हणजे क्षणिक लाउडनेस).
+</p>
+<div id="multichannel"></div>
+<h2><span class="mw-headline" id="Multichannel_audio">मल्टीचॅनल ध्वनि</span></h2>
+<p>मल्टीचॅनल ध्वनिमध्ये, वैयक्तिक चॅनेल एकूण लाऊडनेसमध्ये जोडण्यापूर्वी त्यांचे वजन केले जाते. ऑड्यासिटीच्या बाबतीत जे लेखनाच्या वेळी फक्त मोनो आणि स्टिरिओ गीतपट्ट्याला सपोर्ट करते, सर्व चॅनेलचे समान योगदान आहे
+LU ची व्याख्या भौतिक दृष्टिकोनातून केली जाते की अनेक ध्वनि स्रोत हवेत जोडले जातात आणि अशा प्रकारे दुसरा ध्वनि स्रोत जोडून मोठा आवाज वाढतो. LU व्याख्येचा परिणाम असा आहे की लाऊडनेस स्थिर ठेवताना इतर चॅनेल जोडल्यास मल्टीचॅनेल ध्वनिचे मोठेपणा कमी होते.
+हा दृष्टिकोन पूर्णपणे वैध असताना सर्व ज्ञात पीसी ध्वनि ड्रायव्हर्ससह समस्या निर्माण करतात. ते ड्रायव्हर्स त्यांचे मूल्य कमी न करता स्टिरिओ स्पीकरवर प्ले केले जाणारे मोनो सिग्नल दुप्पट करतात ज्यामुळे दुहेरी प्लेबॅक लाउडनेस होतो. याची भरपाई करण्यासाठी, ऑड्यासिटीच्या <b><a href="loudness_normalization.html" title="Loudness Normalization">लाउडनेस नॉर्मलायझेशन</a></b> प्रभावमध्ये हा लाऊडनेस दुप्पट होण्याचा पर्याय आहे.
+</p>
+<div id="intLoudness"></div>
+<h2><span class="mw-headline" id="Integrative_loudness_and_loudness_gating">इंटिग्रेटिव्ह लाउडनेस आणि लाउडनेस गेटिंग</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="https://alphamanual.audacityteam.org/man/File:Loudness-gating.svg.png" class="image"><img alt="" src="../m/images/2/29/loudness_gating.svg.png" width="300" height="246" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://alphamanual.audacityteam.org/man/File:Loudness-gating.svg.png" class="internal" title="Enlarge"></a></div>लाउडनेस गेटिंगचे उदाहरण</div></div></div>
+<p>समजलेला लाऊडनेस मुख्यतः गीतपट्ट्याच्या मोठ्या भागांद्वारे निर्धारित केला जात असल्याने, अचूक लाउडनेस मापनासाठी शांत किंवा अगदी शांत भागांकडे दुर्लक्ष करावे लागते. हे लाऊडनेस गेटिंगद्वारे लक्षात येते.
+प्रथम, EBU R 128 द्वारे परिभाषित केल्यानुसार लाऊडनेस गेटिंग -70 LUFS च्या परिपूर्ण उंबरठ्यापेक्षा खाली असलेले सर्व मापन ब्लॉक्स टाकून देतात (उदाहरणार्थ हिस्टोग्राममध्ये राखाडी, सर्वात कमी डब्यात मोठे शिखर गीतपट्ट्याच्या सुरूवातीस आणि शेवटी शांततेमुळे होते. ). पुढील चरणात, सापेक्ष थ्रेशोल्डची गणना -70 LUFS (उदाहरणार्थ हिस्टोग्राममध्ये लाल) ब्लॉकच्या सरासरीपेक्षा 10 LU खाली केली जाते. त्या सापेक्ष थ्रेशोल्डच्या खाली असलेले सर्व ब्लॉक देखील टाकून दिले आहेत. शेवटी, समजलेल्या जोराची गणना उर्वरित ब्लॉक्सची सरासरी म्हणून केली जाते (उदाहरणार्थ हिस्टोग्राममध्ये निळा).
+</p>
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>

@@ -2,43 +2,43 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>नाइक्विस्ट मध्ये संगणकाची आज्ञावली - ऑड्यासिटी माहितीपुस्तिका</title>
+<title>एन.वाय.क्विस्ट मध्ये संगणकाची आज्ञावली - ऑड्यासिटी माहितीपुस्तिका</title>
 
 
 
 
-<!--[if IE 6]><link rel="stylesheet" href="../m/skins/monobook/ie60fixes.css/303.css" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="../m/skins/monobook/ie70fixes.css/303.css" media="screen"/><![endif]-->
+
 <meta name="ResourceLoaderDynamicStyles" content=""/>
 
 <meta name="generator" content="MediaWiki 1.28.2"/>
 <link rel="shortcut icon" href="../favicon.ico"/>
-<link rel="शोधा" type="application/openशोधाdescription+xml" href="https://alphamanual.audacityteam.org/m/openशोधा_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
-<link rel="copyright" href="https://creativecommons.org/licenses/by/3.0/" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
 
 <link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
 </head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Programming_in_नाइक्विस्ट rootpage-Programming_in_नाइक्विस्ट skin-monobook action-view"><div id="globalWrapper">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Programming_in_Nyquist rootpage-Programming_in_Nyquist skin-monobook action-view"><div id="globalWrapper">
 		<div id="column-content">
 			<div id="content" class="mw-body" role="main">
 				<a id="top"></a>
 				
 				<div class="mw-indicators">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">नाइक्विस्ट मध्ये संगणकाची आज्ञावली</h1>
+				<h1 id="firstHeading" class="firstHeading" lang="en">एन.वाय.क्विस्ट मध्ये संगणकाची आज्ञावली</h1>
 				
 				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेकडून</div>
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
 					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Programming_in_नाइक्विस्ट#शोधाInput">शोधा</a></div>
+										<div id="jump-to-nav" class="mw-jump">येथे जा: <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Programming_in_Nyquist#searchInput">शोधा</a></div>
 
-					<!-- start content -->
+					
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>सामग्री</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Programming_in_नाइक्विस्ट"><span class="tocnumber">1</span> <span class="toctext">नाइक्विस्ट मध्ये संगणकाची आज्ञावली</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Programming_in_Nyquist"><span class="tocnumber">1</span> <span class="toctext">एन.वाय.क्विस्ट मध्ये संगणकाची आज्ञावली</span></a>
 <ul>
 <li class="toclevel-2 tocsection-2"><a href="#Synthesizing"><span class="tocnumber">1.1</span> <span class="toctext">संश्लेषण</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Combining_sounds"><span class="tocnumber">1.2 </span> <span class="toctext">एकत्रित आवाज</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Combining_sounds"><span class="tocnumber">1.2</span> <span class="toctext">एकत्रित आवाज</span></a></li>
 <li class="toclevel-2 tocsection-4"><a href="#Filters"><span class="tocnumber">1.3</span> <span class="toctext">गाळणे</span></a></li>
 <li class="toclevel-2 tocsection-5"><a href="#Transforming_and_combining_sounds"><span class="tocnumber">1.4</span> <span class="toctext">स्वर बदलणे आणि एकत्रित करणे</span></a></li>
 </ul>
@@ -47,13 +47,13 @@
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Programming_in_नाइक्विस्ट">नाइक्विस्ट मध्ये संगणकाची आज्ञावली</span></h2>
-<p> नाइक्विस्ट लिस्पपासून वेगळे करणे हे ध्वनीसह कार्य करण्यासाठी रचना केलेले आहे, आणि त्यात बरेच अंगभूत आदिम आणि कार्ये आहेत जे ध्वनींचे संश्लेषण, विश्लेषण आणि हाताळणी करतात. ऑड्यासिटी मध्ये, हे अंगभूत कार्यच्या नाइक्विस्ट पॅलेटच्या बाहेर जटिल प्रभाव तयार करणे तुलनेने सोपे करते.
-</p> <p> नाइक्विस्ट मध्ये, अनित्य संख्या एखादा संख्या किंवा स्ट्रिंग ठेवू शकतो इतका सहजपणे आवाज धरु शकतो. प्रदान केलेली बरीच कार्य आहेत ज्यामुळे आपल्याला ध्वनी ताणून, विकृत करण्याची आणि कार्यक्षमतेने एकत्रित करण्याची अनुमती मिळते. आवाज "फाडून टाकणे" आणि त्याच्या वैयक्तिक नमुन्यांमध्ये प्रवेश करणे देखील शक्य आहे, परंतु हे या शिकवण्याच्या व्याप्तीच्या पलीकडे आहे.
-</p> <p> ऑड्यासिटीमध्ये एक नाइक्विस्ट अभिव्यक्ती वापरुन पाहण्यासाठी आपण प्रभाव यादीमध्ये <a href="नाइक्विस्ट_prompt.html" title="नाइक्विस्ट Prompt"> नाइक्विस्ट संकेत </a> वापरू शकता. आपण निवडलेला कोणताही ध्वनी अनित्य संख्याव्मध्ये असेल आणि आपण प्रविष्ट केलेल्या नाइक्विस्ट अभिव्यक्तीच्या परिणामासह निवड पुनर्स्थित केली जाईल. भाग 3 मध्ये: तयार करीत आहे  <a href="creating_नाइक्विस्ट_plug_ins.html" title="Creating नाइक्विस्ट Plug-ins"> नाइक्विस्ट प्लग-इन्स</a>, आपण नाइक्विस्ट चा वापर करून प्लग-इन प्रभाव कसा तयार करावा ते शिकाल.
+<h2><span class="mw-headline" id="Programming_in_Nyquist">एन.वाय.क्विस्ट मध्ये संगणकाची आज्ञावली</span></h2>
+<p>एन.वाय.क्विस्ट लिस्पपासून वेगळे करणे हे ध्वनीसह कार्य करण्यासाठी रचना केलेले आहे, आणि त्यात बरेच अंगभूत आदिम आणि कार्ये आहेत जे ध्वनींचे संश्लेषण, विश्लेषण आणि हाताळणी करतात. ऑड्यासिटी मध्ये, हे अंगभूत कार्यच्या एन.वाय.क्विस्ट पॅलेटच्या बाहेर जटिल प्रभाव तयार करणे तुलनेने सोपे करते.
+</p><p>एन.वाय.क्विस्ट मध्ये, एक व्हेरिएबल एक ध्वनि धारण करू शकतो तितक्याच सहजपणे तो संख्या किंवा स्ट्रिंग धरू शकतो. अशी बरीच कार्ये प्रदान केली आहेत जी तुम्हाला ध्वनि स्ट्रेच, विरूपित आणि अतिशय कार्यक्षमतेने एकत्र करण्यास अनुमती देतात. ध्वनि "फाडणे" आणि त्याच्या वैयक्तिक नमुन्यांमध्ये प्रवेश करणे देखील शक्य आहे, परंतु ते या शिकवणीच्या व्याप्तीच्या पलीकडे आहे.
+</p><p>ऑड्यासिटीमध्ये एन.वाय.क्विस्ट अभिव्यक्ती वापरून पाहण्यासाठी, तुम्ही प्रभाव यादीमध्ये <a href="nyquist_prompt.html" title="Nyquist Prompt">एन.वाय.क्विस्ट प्रॉम्प्ट</a> वापरू शकता. तुम्ही जो काही ध्वनि निवडला आहे तो व्हेरिएबल <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">*ट्रॅक*</span> मध्ये असेल आणि निवड तुम्ही प्रविष्ट केलेल्या एन.वाय.क्विस्ट अभिव्यक्तीच्या परिणामासह बदलली जाईल. भाग 3 मध्ये: <a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins">एन.वाय.क्विस्ट प्लग-इन तयार करणे</a>, तुम्ही एन.वाय.क्विस्ट वापरून प्लग-इन प्रभाव कसा तयार करायचा ते शिकाल.
 </p>
 <h3><span class="mw-headline" id="Synthesizing">संश्लेषण</span></h3>
-<p>पुढील कार्ये सर्व नवीन आवाज तयार करतात. आपण ते "व्युत्पन्न" प्लग-इन प्रभाव तयार करण्यासाठी वापरू शकता किंवा आपण या संश्लेषित ध्वनी निवडलेल्या ध्वनीसह एकत्रित करू शकता मनोरंजक प्रभाव तयार करण्यासाठी.
+<p>पुढील कार्ये सर्व नवीन आवाज तयार करतात. आपण ते "व्युत्पन्न" प्लग-इन प्रभाव तयार करण्यासाठी वापरू शकता किंवा आपण या संश्लेषित ध्वनि निवडलेल्या ध्वनीसह एकत्रित करू शकता मनोरंजक प्रभाव तयार करण्यासाठी.
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
@@ -68,82 +68,82 @@
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> एक स्थिर (शांत) सिग्नल व्युत्पन्न करते
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>हर्ट्जमधील विशिष्ट वारंवारतेवर साइन वेव्ह व्युत्पन्न करते.</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(साइन पिच [कालावधी])</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">दर्शविलेल्या खेळपट्टीवर आणि कालावधीवर साइन वेव्ह व्युत्पन्न करते. खेळपट्टी एक एमआयडीआय टीप क्रमांक आहे, ज्यामध्ये मध्यवर्ती सीसाठी 60 आहे.
-</td> </tr>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दर्शविलेल्या खेळपट्टीवर आणि कालावधीवर साइन वेव्ह व्युत्पन्न करते. पिच एक MIDI नोट क्रमांक आहे, मध्य C साठी 60 आहे.
+</td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एचझेस्कोस हर्ट्ज)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(hzosc हर्ट्ज)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हर्ट्जमधील विशिष्ट वारंवारतेवर साइन वेव्ह व्युत्पन्न करते.
-</td> </tr>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Hz मध्ये विशिष्ट वारंवारतेवर साइन वेव्ह निर्माण करते.
+</td></tr>
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-सॉ हर्ट्ज)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हर्ट्झमधील विशिष्ट वारंवारतेवर भूतलाची लाट निर्माण करते.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Hz मध्ये विशिष्ट वारंवारतेवर सॉटूथ वेव्ह व्युत्पन्न करते.
 </td></tr>
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-थ्री हर्ट्ज)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हर्ट्जमधील विशिष्ट वारंवारतेवर त्रिकोण लहर निर्माण करते.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> Hz मध्ये एका विशिष्ट फ्रिक्वेन्सीवर त्रिकोणी लहर निर्माण करते.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-पल्स हर्ट्ज पूर्वाग्रह)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(ऑस्क-पल्स हर्ट्ज बायस)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>( ध्वनीची उच्चनीचता पीक)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(प्लक पिच)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr></table>
-<p> <b> लिफाफे </ b>
-</p> <p> नाइक्विस्ट ला लिफाफ्यांकरिता समर्थन आहे. आवाजावर एक लिफाफा लावून, आपण त्याच्या विशालतेचे एकूण आकार नियंत्रित करू शकता. लिफाफा तयार करण्याचा सर्वात सोपा मार्ग म्हणजे <<> एनव्ही </ p> कार्य, ज्यामध्ये 7 मापदंड लागतात ज्यांचा वापर संश्लेषित संगीत नोट्स आकारण्यासाठी केला जातो: हल्ला वेळ, किडणे, प्रकाशन वेळ, हल्ला पातळी, किडणे पातळी , पातळी कायम ठेवण्यासाठी आणि एकंदर कालावधी. खालील आकृती पहा:
-</p> <p> <a href="https://alphamanual.audacityteam.org/man/File:नाइक्विस्ट-envelope.gif" class="image"><img alt="नाइक्विस्ट-envelope.gif" src="../m/images/d/d9/नाइक्विस्ट_envelope.gif" width="467" height="200" /></a>
-</p> <p> आवाजावर एक लिफाफा लागू करण्यासाठी, फक्त <tt> मल्ट </ p> कार्य वापरा. म्हणून <tt> s </tt> एक आवाज असल्यास, नंतर त्यावर लागू असलेल्या साध्या लिफाफाचा हा आवाज आहेः
+<p><b>लिफाफे</b>
+</p><p>एन.वाय.क्विस्ट ला लिफाफ्यांसाठी समर्थन आहे. ध्वनीवर लिफाफा लागू करून, तुम्ही त्याच्या विशालतेचा एकूण आकार नियंत्रित करू शकता. लिफाफा तयार करण्याचा सर्वात सोपा मार्ग म्हणजे <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">env</span> फंक्शन, ज्यामध्ये 7 मापदंड लागतात जे सामान्यतः संश्लेषित संगीत नोट्सला आकार देण्यासाठी वापरले जातात : आक्रमण वेळ, क्षय वेळ, प्रकाशन वेळ, आक्रमण पातळी, क्षय पातळी, टिकाव पातळी आणि एकूण कालावधी. खालील आकृती पहा:
+</p><p><a href="https://alphamanual.audacityteam.org/man/File:Nyquist-envelope.gif" class="image"><img alt="Nyquist-envelope.gif" src="../m/images/d/d9/nyquist_envelope.gif" width="467" height="200" /></a>
+</p><p>ध्वनीवर लिफाफा लागू करण्यासाठी, फक्त <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">मल्ट</span> फंक्शन वापरा. त्यामुळे जर <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">*ट्रॅक*</span> हा ध्वनि असेल, तर त्यावर लागू केलेला साधा लिफाफा हा आवाज आहे:
 </p>
-<pre>  (मल्टी एस (साधारण ०.१ ०.० ०.२.० ०.० ०.० ०.०))
+<pre>  (मल्ट *ट्रॅक* (env 0.1 0.1 0.2 1.0 0.5 0.3 1.0))
 </pre>
-<p> सर्वात सामान्य प्रकारचा एक लिफाफा म्हणजे एक तुकडा-आधारित रेषीय कार्य, <<> pwl </tt> कार्यद्वारे तयार केले जाऊ शकते. Pwl कार्य मापदंडची सूची घेते जे (वेळ, मूल्य) जोड दर्शवते. (0, 0) ची एक प्रारंभिक प्रारंभिक (वेळ, मूल्य) ची जोड आणि 0 चे अंतर्भूत अंतिम मूल्य असते. अंतिम वेळ अंतर्निहित नसल्यामुळे नेहमीच एक मापदंडची विचित्र संख्या असावी. उदाहरणार्थ:
+<p>लिफाफाच्या सर्वात सामान्य प्रकारांपैकी एक म्हणजे तुकडा-निहाय रेखीय कार्य, जे <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">pwl</span> फंक्शनसह तयार केले जाऊ शकते. pwl फंक्शन मापदंडची सूची घेते जे (वेळ, मूल्य) जोडी दर्शवते. (0, 0) ची एक अंतर्निहित प्रारंभिक (वेळ, मूल्य) जोडी आहे आणि 0 चे अंतर्निहित अंतिम मूल्य आहे. अंतिम वेळ अंतर्निहित नसल्यामुळे नेहमी मापदंडची विषम संख्या असावी. उदाहरणार्थ:
 </p>
-<pre>  ; सममितीय वाढीस 0.7 (वेळी 1) आणि 0 वर मागे पडणे (वेळी 2):
-  (पूल 1.0 0.7 2.0)
+<pre>  ; सममितीय वाढ 0.7 (1 वेळी) आणि 0 वर घसरते (2 वेळी):
+  (pwl 1.0 0.7 2.0)
 </pre>
 <h3><span class="mw-headline" id="Combining_sounds">एकत्रित आवाज</span></h3>
-<p> <tt> मल्ट </ p> कार्येसह दोन ध्वनी गुणाकार करण्याव्यतिरिक्त, आपण <<> जोडा </ p> कार्येसह दोन आवाज (किंवा लिफाफे) जोडू शकता.
+<p><span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">मल्ट</span> फंक्शनसह दोन ध्वनि गुणाकार करण्याव्यतिरिक्त, आपण <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">अॅड</span>  फंक्शनसह दोन ध्वनि (किंवा लिफाफे) जोडू शकता.
 </p>
-<h3><span class="mw-headline" id="Filters">गाळणे</span></h3>
-<p> नाइक्विस्ट अंगभूत अनेक सामान्य गाळणेसह येते. येथे काही सामान्य गोष्टी आहेत:
+<h3><span class="mw-headline" id="Filters">फिल्टर</span></h3>
+<p>एन.वाय.क्विस्ट अंगभूत अनेक सामान्य फिल्टरसह येते. येथे काही अधिक सामान्य आहेत:
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
 <tr>
-<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एलपी ध्वनी कट ऑफ)</b>
+<td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एलपी ध्वनि कट ऑफ)</b>
 </td>
 <td style="border-top:0.05pt solid #000000;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एचपी ध्वनी कट ऑफ)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(एचपी ध्वनि कट ऑफ)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> हाय-पास गाळणे (फर्स्ट-ऑर्डर बटरवर्थ). कट ऑफ एक फ्लोट किंवा सिग्नल असू शकतो (वेळानुसार गाळणेिंगसाठी) आणि हर्ट्ज व्यक्त करतो.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> उच्च-पास फिल्टर (प्रथम-ऑर्डर बटरवर्थ). कट-ऑफ फ्लोट किंवा सिग्नल असू शकतो (वेळ-वेगवेगळ्या फिल्टरिंगसाठी) आणि हर्ट्झ व्यक्त करतो.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(कंघी ध्वनी हर्ट्ज क्षय)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(कोम्ब ध्वनि हर्ट्ज क्षय)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">आवाजासाठी एक कंघी गाळणे लागू करते, जे हर्ट्जच्या बहुगुणित फ्रिक्वेन्सीवर जोर देते (येथे प्रतिध्वनी करते).
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ध्वनीवर कोम्ब फिल्टर लागू करते, जे Hz च्या पटीत असलेल्या फ्रिक्वेन्सीवर जोर देते (प्रतिध्वनी देते).
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(अल्पास ध्वनी क्षय हर्ट्ज)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(अल्पास ध्वनि क्षय हर्ट्ज)</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ऑल-पास गाळणे, कंघी गाळणेच्या अनुनादांशिवाय विलंब प्रभाव तयार करते.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ऑल-पास फिल्टर, कोम्ब फिल्टरच्या अनुनादशिवाय विलंब प्रभाव निर्माण करतो.
 </td></tr>
 <tr>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(notch2साउंडहर्ट्ज)</b>
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(notch2 ध्वनि हर्ट्ज)</b>
 </td>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;">
 </td></tr></table>
 <h3><span class="mw-headline" id="Transforming_and_combining_sounds">स्वर बदलणे आणि एकत्रित करणे</span></h3>
-<p>नाइक्विस्ट मध्ये ध्वनीचे रूपांतर कसे करता येईल या सर्व मार्गांचे स्पष्टीकरण या प्रास्ताविक शिकवण्याच्या व्याप्तीच्या पलीकडे आहे. हे कार्य ध्वनी थेट सुधारित करत नाहीत तर त्याऐवजी नाइक्विस्ट सुधारित करतात <i>वातावरण</i>. हे बदल ध्वनीवर परिणाम करण्यासाठी, आपण हे वापरणे आवश्यक आहे <tt>क्यू</tt> कार्य.
+<p>Nyquist मध्‍ये ध्‍वनी बदलण्‍याचे सर्व मार्ग समजावून सांगण्‍यासाठी या प्रास्ताविक ट्युटोरियलच्‍या आवाक्‍याबाहेर आहे. ही फंक्शन्स थेट ध्वनि सुधारत नाहीत, परंतु त्याऐवजी Nyquist  <i>वातावरण</i> सुधारित करतात . हे बदल ध्वनीवर परिणाम करण्यासाठी, तुम्ही <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">क्यू</span> फंक्शन वापरणे आवश्यक आहे.
 </p><p><br />
 </p>
 <table style="border-spacing:0; width: 50em;">
@@ -155,7 +155,7 @@
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(मोज पट्टी घटक (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या घटकाद्वारे ध्वनीचे मोठेपणाचे प्रमाण मोजले जाते.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेल्या घटकाद्वारे ध्वनीचे विस्तारचे प्रमाण मोजले जाते.
 </td></tr>
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(जोरात डीबी (क्यू आवाज))</b>
@@ -165,47 +165,30 @@
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(टी वर (क्यू आवाज))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेला आवाज सेकंदामध्ये एका विशिष्ट वेळी प्रारंभ करतो. याचा वापर सुरूवातीस किंवा शेवटी शांतता जोडण्यासाठी केला जाऊ शकत नाही, परंतु दोन किंवा अधिक ध्वनी एकत्रित करताना याचा वापर केला जाऊ शकतो.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दिलेला आवाज विशिष्ट वेळी सेकंदात सुरू करतो. हे सुरुवातीला किंवा शेवटी शांतता जोडण्यासाठी वापरले जाऊ शकत नाही, परंतु दोन किंवा अधिक ध्वनि एकत्र करताना ते वापरले जाऊ शकते.
 </td></tr>
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(सेक (क्यू एस 1) (क्यू एस 2))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ध्वनी एस 1 च्या नंतर ध्वनी एस 1 चा क्रम तयार करते.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> ध्वनि एस 1 च्या नंतर ध्वनि एस 1 चा क्रम तयार करते.
 </td></tr>
 <tr>
 <td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:0.05pt solid #000000;border-right:none;padding:0.049cm;"> <b>(सिम (क्यू एस 1) (क्यू एस 2))</b>
 </td>
-<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दोन ध्वनी एकत्र करतात जेणेकरून ते एकाच वेळी वाजवले जातील.
+<td style="border-top:none;border-bottom:0.05pt solid #000000;border-left:none;border-right:0.05pt solid #000000;padding:0.049cm;"> दोन ध्वनि एकत्र करतात जेणेकरून ते एकाच वेळी वाजवले जातील.
 </td></tr></table>
 <h2><span class="mw-headline" id="Links">दुवे</span></h2>
-<p><a href="creating_नाइक्विस्ट_plug_ins.html" title="Creating नाइक्विस्ट Plug-ins"><b>&gt;</b>&#160; नाइक्विस्ट प्लगइन तयार करत आहे</a> <br />
-</p><p><a href="introduction_to_नाइक्विस्ट_and_lisp_programming.html" title="Introduction to नाइक्विस्ट and Lisp Programming"><b>&lt;</b>&#160; नाइक्विस्ट आणि लिस्प संगणकाची आज्ञावलीची ओळख</a> <br />
-</p><p><a href="नाइक्विस्ट.html" title="नाइक्विस्ट"><b>|&lt;</b> नाइक्विस्ट</a>
+<p><a href="creating_nyquist_plug_ins.html" title="Creating Nyquist Plug-ins"><b>&gt;</b>&#160; एन.वाय.क्विस्ट प्लगइन तयार करत आहे</a> <br />
+</p><p><a href="introduction_to_nyquist_and_lisp_programming.html" title="Introduction to Nyquist and Lisp Programming"><b>&lt;</b>&#160; एन.वाय.क्विस्ट आणि लिस्प संगणकाची आज्ञावलीची ओळख</a> <br />
+</p><p><a href="nyquist.html" title="Nyquist"><b>|&lt;</b> एन.वाय.क्विस्ट</a>
 </p>
-<!-- 
-NewPP limit report
-Cached time: 20180917112111
-Cache expiry: 86400
-Dynamic content: false
-CPU time usage: 0.064 seconds
-Real time usage: 0.069 seconds
-Preprocessor visited node count: 31/1000000
-Preprocessor generated node count: 48/1000000
-Post‐expand include size: 0/2097152 bytes
-Template argument size: 0/2097152 bytes
-Highest expansion depth: 2/40
-Expensive parser function count: 0/100
--->
 
-<!-- 
-Transclusion expansion time report (%,ms,calls,template)
-100.00%    0.000      1 - -total
--->
 
-<!-- Saved in parser cache with key helpmediawiki:pcache:idhash:6399-0!*!0!!en!5!* and timestamp 20180917112111 and revision id 60403
- -->
+
+
+
 </div>
-										<!-- end content -->
+										
 										<div class="visualClear"></div>
 				</div>
 			</div>
@@ -221,33 +204,37 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
 		<h3>निर्देशक</h3>
 		<div class='pBody'>
-			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तकाचे मुखपृष्ठ</span></a></li>
-<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरणे</span></a>
-<ul><li> <a href="audacity_tour_guide.html" title="Audacity सहल मार्गदर्शक"><span title="A quick tour of selected features of Audacity. It doesn’t tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
-<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्य</span></a></li>
-<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">प्रारंभ करणे</span></a></li>
-<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवण्या</span></a></li>
-<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">टिपा</span></a></li></ul></li>
-<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ओडिसीटीचा जीयूआय</span></a>
-<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी बार</span></a></li>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
 <li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
-<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">गीतपट्टा</span></a></li>
-<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">प्रभाव</span></a></li></ul></li>
-<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change key-bindings, add plug-ins">ऑड्यासिटी सानुकूलित करत आहे</span></a>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
 <ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
-<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">कि-बाइंडिंगची सूची पाहू शकता</span></a></li>
-<li> <a href="installing_effect_generator_and_analyzer_plug_ins.html" title="Installing Effect, Generator and Analyzer plug-ins"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li></ul></li></ul>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
 		</div>
 		</div>
 		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
 		<h3>संदर्भ</h3>
 		<div class='pBody'>
 			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
-<ul><li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
 <li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
-<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, नाइक्विस्ट and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
 <li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
-<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">सामान्य प्रश्न</span></a></li></ul>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
 		</div>
 		</div>
 		
@@ -256,13 +243,12 @@ Transclusion expansion time report (%,ms,calls,template)
 		<div class='pBody'>
 			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
 <li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
-<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">माहितीपुस्तकाचे मुखपृष्ठ</a></span></li>
-<li> <span title="Visual &#39;What Is That?&#39; guide to Audacity"><a rel="nofollow" class="external text" href="https://wit.audacityteam.org//">डब्लू आय टी(WIT)</a></span></li></ul>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
 		</div>
 		</div>
 		
 			
-			</div><!-- end of the left (by default at least) column -->
+			</div>
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
@@ -272,9 +258,7 @@ Transclusion expansion time report (%,ms,calls,template)
 									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					
-		<div align="center"><ul id="f_list"><li>ही आवृत्ती 2018-09-17 रोजी तयार केली गेली -
-<a href="https://alphamanual.audacityteam.org/man/Programming_in_नाइक्विस्ट">या पृष्ठाची सद्य आवृत्ती तपासा (विकास पुस्तिका)
-</a></li></ul></div>
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
 </div>
 		</div>
 		</body></html>

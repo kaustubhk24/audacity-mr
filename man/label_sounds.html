@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>नावपट्टी ध्वनि - ऑड्यासिटी माहितीपुस्तिका</title>
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+
+<meta name="generator" content="MediaWiki 1.28.2"/>
+<link rel="shortcut icon" href="../favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://alphamanual.audacityteam.org/m/opensearch_desc.php" title="Audacity Development Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://alphamanual.audacityteam.org/m/api.php?action=rsd"/>
+<link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/"/>
+
+<link rel="stylesheet" href="../m/skins/monobook/main.css/303.css" media="screen" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Label_Sounds rootpage-Label_Sounds skin-monobook action-view"><div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">नावपट्टी ध्वनी</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">ऑड्यासिटी विकास माहितीपुस्तिकेवरून</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">येथून जा : <a href="#column-one">निर्देशक</a>, <a href="https://alphamanual.audacityteam.org/man/Label_Sounds#searchInput">शोधा</a></div>
+
+					
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="intro"><i><b>नावपट्टी ध्वनी</b></i> हे एक साधन आहे जे लांब ध्वनिमुद्रणामधील भिन्न गाणी किंवा विभाग (किंवा सायलेन्स) लेबल करण्यासाठी उपयुक्त ठरू शकते, जसे की एलपी किंवा कॅसेटमधील गीतपट्टा.
+<div class="note">हे विश्लेषक ऑड्यासिटीच्या मागील आवृत्त्यांमधील जुन्या "ध्वनि फाइंडर" चे अपग्रेड आहे. हे अधिक अचूक आणि मागील आवृत्त्यांपेक्षा अधिक बहुमुखी आहे, दोन्ही प्रदेश नावपट्ट्या आणि पॉइंट लेबल्सना समर्थन देते.<p>हे <a href="sound_finder.html" title="Sound Finder">ध्वनि शोधक</a> आणि <a href="silence_finder.html" title="Silence Finder">शांतता शोधक</a> यांची जागा घेते</p></div> </div>
+<div id="sound"></div>
+<dl><dd><b>याद्वारे प्रवेश :</b> <span class="menu">विश्लेषण &gt; नावपट्टी ध्वनी...</span></dd>
+<dd><span title="Label Sounds effect dialog"><img alt="Label Sounds.png" src="../m/images/8/8a/label_sounds.png" width="571" height="360" /></span></dd></dl>
+<p><br />
+<b>नावपट्टी ध्वनी</b> निवडलेल्या गीतपट्ट्यामधील ध्वनि पातळी शोधतो. जेव्हा गीतपट्टा पातळी निर्दिष्ट आरंभ पातळी ओलांडते, तेव्हा तो "ध्वनी" मानल्या जातो आणि जेव्हा पातळी खाली असते तेव्हा तो "शांत" मानल्या जातो. 
+</p><p>प्रत्येक ध्वनीच्या आधी किंवा नंतर बिंदू नावपट्टी जोडण्याचे पर्याय आहेत, प्रत्येक ध्वनीभोवती प्रदेश नावपट्टी किंवा प्रत्येक ध्वनि दरम्यान प्रदेश नावपट्टी (प्रभावीपणे शांततेला नाव देणे).
+</p>
+<div class="note">ध्वनिवर १० एमएस भागांमध्ये प्रक्रिया केली जाते, (०.०१ सेकंदांच्या अंतराने), अशा प्रकारे लेबल प्लेसमेंट आवाजाच्या आधी/नंतर ०.०१ सेकंदांपर्यंत असू शकते.</div>
+<p>साधारणपणे प्रभाव एकाच गीतपट्ट्यावर लागू होईल. एकाधिक गीतपट्टे निवडल्यास, प्रत्येक गीतपट्ट्यावर प्रक्रिया केली जाते आणि सर्व नावपट्ट्या एकाच नावपट्टी गीतपट्ट्यामध्ये तयार केल्या जातील.
+</p>
+<div style="margin-top:12px; margin-bottom:12px; margin-left:24px; margin-right:24px">
+<table style="background:#FEFFD0; color:black; border:1px solid #999999; padding-left:12px; padding-right:12px" width="100%" align="center">
+
+<tr>
+<td width="30px" valign="top" align="center"><a href="https://alphamanual.audacityteam.org/man/File:Bulbicon.png" class="image" title="Bulb icon"><img alt="Bulb icon" src="../m/images/d/d7/bulbicon.png" width="32" height="32" /></a>
+</td>
+<td align="left" valign="top">"नावपट्टी ध्वनी" हेतुपुरस्सर जास्तीत जास्त १०००० नावपट्टींपर्यंत मर्यादित आहे. <p> तुम्हाला अधिक नावपट्ट्या तयार करण्याची आवश्यकता असल्‍याची शक्यता नसल्‍यास, गीतपट्ट्यावर विभागांमध्‍ये प्रक्रिया करा, परंतु हे लक्षात ठेवा की ऑड्यासिटी खूप मोठ्या संख्येने लेबलांसह सुस्त होऊ शकते.</p>
+</td></tr></table>
+</div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Controls:">नियंत्रणे :</span></h2>
+<ul><li><b>आरंभ पातळी (डीबी):</b> (पूर्वनियोजित : -३० डीबी) </li></ul>
+<dl><dd> जेव्हा ध्वनि या पातळीच्या खाली असेल तेव्हा तो 'शांत' मानल्या जातो. हे संयोजन जितके कमी (अधिक नकारात्मक) असेल तितकी शांत पार्श्वभूमी पातळी "शांत" म्हणून ओळखली जाणे आवश्यक आहे. गीतपट्ट्याच्या गोंगाटाच्या पातळीच्या खाली सेट केल्यास, संपूर्ण गीतपट्टाएक सतत आवाज म्हणून दिसेल.</dd></dl>
+<ul><li><b>आरंभ मापन :</b> (पूर्वनियोजित "शिखर पातळी")
+<ul><li> <b>शिखर पातळी :</b> आरंभ मापन प्रत्येक १० एमएस कालावधीतील <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Amplitude#Peak_amplitude">शिखर मोठेपणावर</a> आधारित आहे.</li>
+<li><b>सरासरी पातळी :</b> आरंभ प्रत्येक १० एमएस साठी परिपूर्ण सरासरी पातळी म्हणून मोजले जाते. हे सेटिंग विनाइल ध्वनीमुद्रितिंगमध्ये लेबलिंग क्लिक टाळण्यात मदत करू शकते. लक्षात घ्या की शिखर पातळी सहसा शिखर पातळीपेक्षा कमी असेल.</li>
+<li><b>आरएमएस पातळी :</b> आरंभ आरएमएस पातळी म्हणून मोजला जातो. 'सरासरी पातळी' मापन प्रमाणे, याला नावपट्टी क्लिक करण्याची शक्यता कमी आहे. आरएमएस पातळी 'प्रमुख आरएमएस' किंवा 'तफावत' प्रभावासह मोजली जाऊ शकते.
+</li></ul></li></ul>
+<ul><li><b>किमान शांतता कालावधी :</b> (पूर्वनियोजित :  १ सेकंद)</li></ul>
+<dl><dd> जेव्हा या कालावधीची (किंवा जास्त) 'शांतता' आढळते, तेव्हा आधीचा ध्वनि आणि पुढील ध्वनि हे वेगळे ध्वनि मानले जातात, परंतु मागील ध्वनि किमान 'किमान आवाज कालावधी' असेल. वैध मूल्ये 0.01 सेकंद ते 1 तास दरम्यान आहेत. <a href="#Minimum_Silence_Duration">खालील उदाहरणे</a> पहा .</dd></dl>
+<ul><li><b>किमान नावपट्टी मध्यांतर :</b> (पूर्वनियोजित : १ सेकंद)</li></ul>
+<dl><dd> नावपट्टी क्षेत्रामध्ये लहान ध्वनि गटबद्ध करण्यास अनुमती देते. हे सुनिश्चित करते की नावपट्टी या लांबीपेक्षा कमी अंतराने असतील. प्रत्यक्षात हे कमीत कमी निर्दिष्ट लांबीच्या ध्वनींचा समूह तयार करण्यासाठी लहान ध्वनि एकत्र करते. वैध मूल्ये ०.०१ सेकंद ते २ तासांपर्यंत आहेत. <a href="#Minimum_label_interval">खालील उदाहरणे</a> पहा.</dd></dl>
+<ul><li><b>नावपट्टी प्रकार :</b> (पूर्वनियोजित : ध्वनीभोवतीचा प्रदेश) ध्वनी/शांतता एकतर <a href="label_tracks.html#type" title="Label Tracks">बिंदू नावपट्टी</a> किंवा <a href="label_tracks.html#type" title="Label Tracks"> प्रदेश नावपट्टी</a> सह जोडल्या जातात.
+<ul><li><b>ध्वनीच्या पूर्वी बिंदू </b>  हा पर्याय प्रत्येक आढळलेल्या ध्वनि किंवा ध्वनीच्या समूहा <i>पूर्वी</i> बिंदू नावपट्टी ठेवतो.</li>
+<li><b>ध्वनी नंतर बिंदू</b> हा पर्याय प्रत्येक आढळलेल्या ध्वनि किंवा ध्वनीच्या समूहा<i>नंतर</i> बिंदू नावपट्टी ठेवतो. </li>
+<li><b>ध्वनिभोवतीचा प्रदेश</b>  हा पर्याय प्रत्येक शोधलेल्या ध्वनि किंवा ध्वनींच्या समूहा <i>भोवती</i> प्रदेश नावपट्टी ठेवतो.</li>
+<li><b>ध्वनींमधला प्रदेश</b> हा पर्याय प्रत्येक शोधलेल्या ध्वनि किंवा ध्वनींच्या गटा <i>मध्ये</i> प्रदेश लेबल ठेवतो . प्रत्यक्षात हे शांत प्रदेशांना नावे ठेवते.</li></ul></li></ul>
+<ul><li><b>कमाल अग्रगण्य शांतता :</b> (पूर्वनियोजित :  ० सेकंद)
+<ul><li> <i>ध्वनिला</i> नावपट्टी जोडताना, बिंदू नावपट्टी करताना , बिंदू नावपट्टीची किंवा प्रदेश नावपट्टीची सुरूवात या रकमेपर्यंत ध्वनि सुरू होण्यापूर्वी ठेवली जाईल. पूर्वीचा आवाज ओव्हरलॅप न करता असे करण्यासाठी पुरेशी जागा नसल्यास, हे अंतर आपोआप कमी होते. नावपट्टी वेळ=० पूर्वी लावली जाणार नाहीत आणि मागील ध्वनि ओव्हरलॅप होणार नाहीत. किंवा प्रदेश लेबलची सुरूवात या रकमेपर्यंत ध्वनि सुरू होण्यापूर्वी ठेवली जाईल. पूर्वीचा आवाज ओव्हरलॅप न करता असे करण्यासाठी पुरेशी जागा नसल्यास, हे अंतर आपोआप कमी होते. नावपट्टी वेळ = ० पूर्वी लावली जाणार नाहीत  आणि मागील ध्वनि ओव्हरलॅप होणार नाहीत.</li>
+<li> <i>ध्वनी दरम्यानच्या शांत प्रदेशांना</i> लेबल करताना , एक बिंदू लेबल किंवा प्रदेश लेबलची सुरूवात मागील आवाजाच्या समाप्तीनंतर या रकमेद्वारे ऑफसेट केली जाईल. <a href="#Maximum_leading_.2F_trailing_silence">खालील उदाहरणे</a> पहा.</li></ul></li></ul>
+<ul><li><b>कमाल अनुगामी शांतता :</b> (पूर्वनियोजित :  ० सेकंद)</li></ul>
+<dl><dd> हे समायोजन फक्त प्रदेश नावपट्ट्यांद्वारे वापरली जाते.
+<ul><li> <i>ध्वनी </i> लेबल करताना , प्रदेश लेबलचा शेवट आवाजाच्या समाप्तीनंतर या अंतरावर ठेवला जाईल, परंतु पुढील ध्वनीच्या आधी असे करण्यास जागा असेल.</li>
+<li> <i>ध्वनी दरम्यानच्या शांत प्रदेशांना</i> लेबल करताना , प्रदेश लेबलचा शेवट पुढील ध्वनि सुरू होण्यापूर्वी हे अंतर ठेवले जाईल, जर तसे करण्यास जागा असेल. जर <b> कमाल अग्रगण्य शांतता </b> आणि <b>कमाल अनुगामी शांतता</b> यांची एकत्रित लांबी मागील आणि पुढील आवाजांमधील जागेपेक्षा जास्त असेल, तर एक बिंदू लेबल तयार केले जाईल. <a href="#Maximum_leading_.2F_trailing_silence">खालील उदाहरणे</a> पहा.</li></ul></dd></dl>
+<ul><li><b>नावपट्टी मजकूर :</b> (पूर्वनियजित  "ध्वनि  ##१")</li></ul>
+<dl><dd> हा मजकूर आहे जो प्रत्येक नावपट्टीमध्ये प्रविष्ट केला जाईल. 
+<ul><li> काउंटर जोडण्यासाठी '#' चिन्ह हे विशेष 'प्लेसहोल्डर' वर्ण आहे. क्रमिक '#' चिन्हांची संख्या दर्शविल्या जाणार्‍या अंकांची किमान संख्या निर्धारित करते. '#' चिन्हांमागे पूर्णांक (संपूर्ण) संख्या असणे आवश्यक आहे, जे प्रारंभिक संख्या सेट करते. उदाहरण: ###3 एक तीन अंकी काउंटर जोडेल ज्याची गणना होईल: 003, 004, 005... सलग लेबलांसाठी. लेबल मजकुराच्या आधी, नंतर किंवा त्यामध्ये एक काउंटर ठेवला जाऊ शकतो, परंतु लेबलमध्ये फक्त एक काउंटर वापरला जाऊ शकतो.</li></ul></dd></dl>
+<p><br />
+</p>
+<div id="buttons"></div>
+<h2><span class="mw-headline" id="Buttons">बटणे</span></h2>
+<p>आज्ञा बटणावर क्लिक केल्याने खालील परिणाम मिळतात :
+</p>
+<ul><li><span class="button">'व्यवस्थापित करा'</span> या ड्रॉपडाउन यादी आपल्याला साधनाचे प्रीसेट स्थापित करण्यास आणि साधनेबद्दल काही तपशील पाहण्यास आपणाला सक्षम करते. तपशीलांसाठी <a href="manage_presets.html" title="Manage presets">'प्रीसेट्स व्यवस्थापित करा'</a> पहा. </li>
+<li><span class="button">'ठीक आहे' </span> हे निवड केलेल्या ध्वनिला आत्ताच्या सेटिंगचे प्रभाव लागू करून संवाद बंद करते. </li>
+<li><span class="button">'रद्द करा' </span> हे दिलेले प्रभाव रद्द करून ध्वनि काहीही बदल न करता सोडून देते आणि संवाद बंद करते. </li>
+<li><a href="help_button.html" title="Help Button"><img alt="Help Button" src="../m/images/d/d6/help_button.png" width="27" height="27" /></a> हे पान माहितीपुस्तिकेमधील योग्य पानावर आपल्याला आणते  </li></ul>
+<p><br />
+</p>
+<div id="tips"></div>
+<h2><span class="mw-headline" id="Tips">टिपा</span></h2>
+<ul><li> 'आरंभ' खूप कमी सेट केला असल्यास, 'शांतता' आरंभ पातळीच्या वर असू शकते, ज्यामुळे 'शांतता' 'ध्वनी' म्हणून दिसू शकते.</li>
+<li> 'आरंभ' खूप जास्त सेट केल्यास, आवाजाची सुरुवात किंवा शेवट चुकू शकतो.</li>
+<li> जर 'किमान शांतता कालावधी' खूप लहान असेल, तर 'शांतता' म्हणून लहान अंतर पाहिल्यामुळे हेतूपेक्षा जास्त नावपट्ट्या असू शकतात.</li>
+<li> 'किमान शांतता कालावधी' खूप मोठा असल्यास, गाण्यांमधील अंतर दिसू शकत नाही.</li>
+<li> विनाइल ध्वनीमुद्रितिंगसाठी, 'सरासरी' किंवा 'आरएमएस' मापनाची शिफारस केली जाते जेणेकरून 'ध्वनि' म्हणून कडकडाटाची नोंदणी होण्याची शक्यता कमी होईल.</li>
+<li>  <a href="splitting_a_recording_into_separate_tracks.html" title="Splitting a recording into separate tracks">ध्वनिमुद्रणाला वेगळ्या गीतपट्ट्यामध्ये विभाजित करताना</a>, <span style="line-height:1.1em;letter-spacing:-0.04em;background-color:#FDEEF4;padding:3px;font-family:monospace;font-size:1.1em;border:1px dashed black">अल्बम ##१ च्या नावावर </span>  <b>नावपट्टी मजकूर</b> सेट करणे आणि नंतर धारिका नावांसाठी नावपट्टी नावे वापरून नावपट्टीवर आधारित <a href="export_multiple.html" title="Export Multiple">एकाधिक निर्यात</a> करणे उपयुक्त ठरू शकते. </li></ul>
+<p><br />
+</p>
+<div id="examples"></div>
+<h2><span class="mw-headline" id="Examples">उदाहरणे</span></h2>
+<div class="intro">या उदाहरणांमध्ये, उदाहरणामध्ये नमूद केलेले समायोजन वगळता सर्व समायोजन पूर्वनियोजित मूल्यांवर आहेत.</div>
+<h3><span class="mw-headline" id="Minimum_Silence_Duration">किमान शांतता कालावधी</span></h3>
+<div class="example">या उदाहरणात, पहिली शांतता २ सेकंद, दुसरी शांतता ५ सेकंद आणि अंतिम शांतता १ सेकंद आहे.
+<ul><li><b>किमान मौन कालावधी: ४.००० सेकंद</b></li></ul>
+<p><a href="https://alphamanual.audacityteam.org/man/File:Label-sounds-min-silence.png" class="image"><img alt="Label-sounds-min-silence.png" src="../m/images/e/e0/label_sounds_min_silence.png" width="886" height="270" /></a>
+</p>
+<ul><li>पहिले आणि शेवटचे शांततेकडे दुर्लक्ष केले जाते हे पहा कारण ते प्रत्येक ४ सेकंदांपेक्षा कमी आहेत. मधली शांतता ५ सेकंदांची असते, त्यामुळे हे दोन आवाजांमधील अंतर म्हणून ओळखले जाते.</div></li></ul>
+<h3><span class="mw-headline" id="Minimum_label_interval">किमान लेबल अंतराल</span></h3>
+<div class="example">या उदाहरणात, प्रत्येक आवाज आणि प्रत्येक शांतता सुमारे १.७६ सेकंद लांब आहे.
+<ul><li><b>किमान लेबल अंतराल: १०.००० सेकंद</b></li></ul>
+<p><a href="https://alphamanual.audacityteam.org/man/File:Label-sounds-min-interval.png" class="image"><img alt="Label-sounds-min-interval.png" src="../m/images/b/b5/label_sounds_min_interval.png" width="886" height="262" /></a>
+</p>
+<ul><li>पहिले ४ ध्वनि एकत्रितपणे एकत्रित केले आहेत हे पहा, "ध्वनी ०१" हे लेबल तयार केले आहे जे सुमारे १२.४ सेकंद लांब आहे.</li>
+<li>पुढील लेबल, "ध्वनी ०२" पुढील ध्वनीच्या सुरूवातीस सुरू होते आणि पुढील ४ ध्वनि गटबद्ध करते, सुमारे १२.४ सेकंदांच्या लेबल क्षेत्रासह.</li>
+<li>अंतिम लेबल, "ध्वनी ०३" पुढील ध्वनीच्या सुरूवातीस सुरू होते आणि निवडीच्या शेवटी समाप्त होते. हे "१० सेकंद किमान" पासून सूट आहे कारण ते निवडलेल्या ध्वनिच्या शेवटी पोहोचले आहे.</div></li></ul>
+<h3><span class="mw-headline" id="Label_type">नावपट्टी प्रकार</span></h3>
+<div class="example">या उदाहरणात, प्रत्येक लेबल गीतपट्टा"लेबल प्रकार" आणि "लेबल मजकूर" सेटिंग्ज व्यतिरिक्त पूर्वनियोजित सेटिंग्जसह तयार केला गेला.
+<ol><li>पहिला नावपट्टी गीतपट्टा : <b> नावपट्टी प्रकार : आवाजाच्या आधी बिंदू</b></li>
+<li>दुसरा नावपट्टी गीतपट्टा : <b>नावपट्टी प्रकार: आवाजानंतर बिंदू </b></li>
+<li>तिसरा नावपट्टी गीतपट्टा: <b>नावपट्टी प्रकार: आवाजाच्या आसपासचा प्रदेश</b></li>
+<li>चौथा नावपट्टी गीतपट्टा: <b>नावपट्टी प्रकार: आवाजांमधील प्रदेश</b></li></ol>
+<a href="https://alphamanual.audacityteam.org/man/File:Label-sounds-types.png" class="image"><img alt="Label-sounds-types.png" src="../m/images/7/71/label_sounds_types.png" width="886" height="479" /></a></div>
+<h3><span class="mw-headline" id="Maximum_leading_.2F_trailing_silence">कमाल अग्रगण्य / अनुगामी शांतता</span></h3>
+<div class="example">या उदाहरणात, अंतर ५ सेकंद, २ सेकंद आणि ३ सेकंद आहे.
+<ul><li> <b>कमाल अग्रगण्य शांतता : २.५ सेकंद</b></li>
+<li> <b>कमाल अनुगामी शांतता : ० सेकंद</b></li></ul>
+<p><a href="https://alphamanual.audacityteam.org/man/File:Label-sounds-leading.png" class="image"><img alt="Label-sounds-leading.png" src="../m/images/c/c9/label_sounds_leading.png" width="886" height="258" /></a>
+</p>
+<ul><li> पहिली नावपट्टी "ध्वनी ०१" गीतपट्ट्याच्या सुरूवातीस सुरू होते हे पहा. वेळ = ० पूर्वी नावपट्ट्या तयार केल्या जाणार नाहीत.</li>
+<li> दुसरी नावपट्टी, "ध्वनी ०२" दुसरा आवाज सुरू होण्याच्या २.५ सेकंद आधी सुरू होते.</li>
+<li> तिसरी नावपट्टी, "ध्वनी ०३" हा तिसरा ध्वनि सुरू होण्याच्या २.५ सेकंद आधी सुरू झाल्यास मागील ध्वनि ओव्हरलॅप करेल, परंतु मागील ध्वनि ओव्हरलॅप करण्यास परवानगी नाही. म्हणून ही नावपट्टी शक्य तितक्या लवकर सुरू होते - दुसऱ्या आवाजाच्या शेवटी.</li>
+<li> अंतिम नावपट्टी, "ध्वनी ०४" मध्ये अंतिम आवाज सुरू होण्यापूर्वी २.५ सेकंद सुरू होण्यासाठी पुरेशी जागा आहे.</div></li></ul>
+<p><br />
+</p>
+<div class="example">या उदाहरणात, अंतर ५ सेकंद, २ सेकंद आणि ३ सेकंद आहे.
+<ul><li> <b>कमाल अग्रगण्य शांतता: २.५ सेकंद</b></li>
+<li> <b>कमाल अनुगामी शांतता: २.५ सेकंद</b></li></ul>
+<p><a href="https://alphamanual.audacityteam.org/man/File:Label-sounds-leading-trailing.png" class="image"><img alt="Label-sounds-leading-trailing.png" src="../m/images/d/d9/label_sounds_leading_trailing.png" width="886" height="261" /></a>
+</p>
+<ul><li>नावपट्ट्या इतर नावपट्ट्यांना ओव्हरलॅप करू <i>शकतात</i> परंतु मागील किंवा पुढील ध्वनि ओव्हरलॅप करू शकत <i>नाहीत</i> हे पहा.</li>
+<li>हे देखील लक्षात घ्या की अंतिम नावपट्टी अंतिम ध्वनीच्या शेवटी २.५ सेकंदांपर्यंत वाढवते, जरी ती गीतपट्ट्याच्या शेवटाच्या पलीकडे आहे.</div></li></ul>
+<p><br />
+</p>
+<div class="example">या उदाहरणात, अंतर ५ सेकंद, २ सेकंद आणि ३ सेकंद आहे.
+<ul><li> <b>कमाल अग्रगण्य शांतता: १ सेकंद</b></li>
+<li> <b>कमाल अनुगामी शांतता: १ सेकंद</b></li>
+<li> <b>नावपट्टी प्रकार: आवाजांमधील प्रदेश</b></li>
+<li> <b>नावपट्टी मजकूर: मौन ##१</b></li></ul>
+<p><a href="https://alphamanual.audacityteam.org/man/File:Label-between-sounds-leading-trailing.png" class="image"><img alt="Label-between-sounds-leading-trailing.png" src="../m/images/2/2a/label_between_sounds_leading_trailing.png" width="886" height="264" /></a>
+</p>
+<ul><li> नावपट्ट्या ध्वनि दरम्यान आहेत हे पहा</li>
+<li> प्रत्येक नावपट्टीची सुरुवात मागील ध्वनीच्या १ सेकंद नंतर आहे</li>
+<li> प्रत्येक नावपट्टीचा शेवट पुढील ध्वनीच्या १ सेकंदापूर्वी आहे</li>
+<li> दुसरी नावपट्टी, "मौन ०२" बिंदू नावपट्टीवर खाली कोसळली आहे</div></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Links">दुवे</span></h2>
+<p><a href="index_of_effects_generators_and_analyzers.html#analyzers" title="Index of Effects, Generators and Analyzers"><b>|&lt;</b> प्रभाव, जनरेटर आणि विश्लेषकांची अनुक्रमणिका</a>
+</p><p><a href="analyze_menu.html" title="Analyze Menu"><b>|&lt;</b> विश्लेषण यादी</a>
+</p>
+
+
+
+
+
+</div>
+										
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			
+					
+				
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../index.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+					
+		<div class="generated-sidebar portlet" id="p-Navigation" role="navigation">
+		<h3>निर्देशक</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html" title="Main Page"><span title="Front page, complete with clickable image of Audacity screen.">माहितीपुस्तिकेचे मुखपृष्ठ</span></a></li>
+<li> <a href="../index.html#using" title="Main Page"><span title="Quick Help, Audacity Foundations, Editing with Audacity, Help with Advanced Topics">ऑड्यासिटी वापरताना</span></a>
+<ul><li> <a href="audacity_tour_guide.html" title="Audacity Tour Guide"><span title="A quick tour of selected features of Audacity. It doesn't tell you how to use features it would be much too long if it did. Rather it tells you about some of the features that exist in Audacity and will help you learn a little about those.">सहल मार्गदर्शक</span></a></li>
+<li> <a href="new_features_in_this_release.html" title="New features in this release"><span title="An overview of the key new functionality that has been introduced in this release">नवीन वैशिष्ट्ये</span></a></li>
+<li> <a href="../quick_help.html" title="Quick Help"><span title="A brief guide to help you get started with Audacity">सुरुवात करताना</span></a></li>
+<li> <a href="tutorials.html" title="Tutorials"><span title="A guide to the tutorials that provide step-by-step instructions for performing common tasks in Audacity">शिकवणी</span></a></li>
+<li> <a href="tips.html" title="Tips"><span title="A guide to particular aspects of working with Audacity: Navigation. Playback, Audio Alignment">सल्ले</span></a></li></ul></li>
+<li> <a href="../index.html#reference" title="Main Page"><span title="The components of the Audacity Graphical User Interface">ऑड्यासिटी जि.यु.आय.</span></a>
+<ul><li> <a href="menu_reference.html" title="Menu Reference"><span title="A guide to the menus and submenus in Audacity">यादी पट्टी</span></a></li>
+<li> <a href="toolbars_overview.html" title="Toolbars Overview"><span title="A guide to the various Toolbars used in Audacity">साधनपट्टी</span></a></li>
+<li> <a href="tracks_menu_add_new.html" title="Tracks Menu: Add New"><span title="A guide to the various types of track">संगीतपट्टे</span></a></li>
+<li> <a href="index_of_effects_generators_and_analyzers.html" title="Index of Effects, Generators and Analyzers"><span title="A quick index to the Effects, Generators and Analyzers that are shipped with Audacity">परिणाम</span></a></li></ul></li>
+<li> <a href="customization.html" title="Customization"><span title="Adjust settings, change keyboard shortcuts, add plug-ins">कस्टममाइजिंग ऑड्यासिटी</span></a>
+<ul><li> <a href="preferences.html" title="Preferences"><span title="A guide to Preferences, which let you change most of the default behaviors of Audacity">प्राधान्ये</span></a></li>
+<li> <a href="keyboard_shortcut_reference.html" title="Keyboard Shortcut Reference"><span title="A list of all the commands in the Audacity menus and all pre-defined keyboard shortcuts">सोपे मार्ग</span></a></li>
+<li> <a href="customization.html#plug-ins" title="Customization"><span title="You can download and install plug-ins to add extra functionality to Audacity. Plug-ins can give you extra effects, or more audio generation and analysis capability.">प्लग-इन्स</span></a></li>
+<li> <a href="themes.html" title="Themes"><span title="Audacity now comes supplied with four pre-configured, user-selectable themes. This enables you to choose the look and feel you prefer for Audacity&#39;s interface.">संकल्पना</span></a></li>
+<li> <a href="customizing_toolbar_layout.html" title="Customizing Toolbar Layout"><span title="Audacity&#39;s toolbars can all be re-positioned (in the tooldocks or free-floating) and some can be resized.">साधनपट्टी</span></a></li></ul></li></ul>
+		</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Reference" role="navigation">
+		<h3>संदर्भ</h3>
+		<div class='pBody'>
+			<ul><li> <a href="../index.html#reference" title="Main Page"><span title="Reference guide to the Audacity project window - you can hover over and click on the image to learn more">संदर्भ</span></a>
+<ul><li> <a href="searching_the_manual.html" title="Searching the Manual"><span title="Tips on how to Search the Audacity Manual">माहितीपुस्तिका बघा</span></a></li>
+<li> <a href="digital_audio.html" title="Digital Audio"><span title="A beginner&#39;s guide to digital audio">डिजिटल ध्वनी</span></a></li>
+<li> <a href="glossary.html" title="Glossary"><span title="Brief explanations of technical terms related to digital audio, with some links to Wikipedia for much more comprehensive explanations">शब्दकोष</span></a></li>
+<li> <a href="scripting_reference.html" title="Scripting Reference"><span title="Audacity Commands that are in menus, that can be used from Macros, Nyquist and Python">सर्व आज्ञा</span></a></li>
+<li> <a href="faq_errors.html" title="FAQ:Errors"><span title="FAQ on common errors encountered when using Audacity">त्रुटी</span></a></li>
+<li> <a href="subject_index.html" title="Subject Index"><span title="A short, limited, index of the Manual">अनुक्रमणिका</span></a></li></ul></li>
+<li> <a href="faq.html" title="FAQ"><span title="Frequently Asked Questions - most common questions are answered in the FAQ">वारंवार विचारले जाणारे प्रश्न</span></a></li></ul>
+		</div>
+		</div>
+		
+		<div class="generated-sidebar portlet" id="p-Useful_Links" role="navigation">
+		<h3>उपयुक्त दुवे</h3>
+		<div class='pBody'>
+			<ul><li> <span title="Audacity Forum (best place for support requests)"><a rel="nofollow" class="external text" href="https://forum.audacityteam.org/index.php">मंच</a></span></li>
+<li> <span title="Audacity Wiki Home Page"><a rel="nofollow" class="external text" href="https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">विकी</a></span></li>
+<li> <span title="Audacity Latest Release"><a rel="nofollow" class="external text" href="https://www.audacityteam.org/download/">नवीनतम प्रकाशन</a></span></li></ul>
+		</div>
+		</div>
+		
+			
+			</div>
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									
+							</div>
+					<div id="f-poweredbyico">
+									<a href="https://www.mediawiki.org/"><img src="../m/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/m/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /m/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					
+		<div align="center"><ul id="f_list"><li>ही आवृत्ती २०२१-०३-०९ रोजी तयार केली गेली - <a href="https://alphamanual.audacityteam.org/man/Bass_and_Treble">या पानाची चालू आवृत्ती तपासा (विकास पुस्तिका)</a></li></ul></div>
+</div>
+		</div>
+		</body></html>
